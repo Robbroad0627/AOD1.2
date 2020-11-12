@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Bonehead Games
+
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance;

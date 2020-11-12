@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
+//Bonehead Games
+
 public class CameraController : MonoBehaviour {
 
     public Transform target;

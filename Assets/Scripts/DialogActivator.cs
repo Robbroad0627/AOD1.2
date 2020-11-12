@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Bonehead Games
+
 public class DialogActivator : MonoBehaviour {
 
     public string[] lines;

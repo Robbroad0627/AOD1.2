@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Bonehead Games
+
 public class BattleMagicSelect : MonoBehaviour {
 
     public string spellName;

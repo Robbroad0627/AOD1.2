@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Bonehead Games
+
 public class AreaExit : MonoBehaviour {
 
     public string areaToLoad;

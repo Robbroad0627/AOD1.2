@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Bonehead Games
+
 public class Item : MonoBehaviour {
     [Header("Item Type")]
     public bool isItem;

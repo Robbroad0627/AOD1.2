@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Bonehead Games
+
 [System.Serializable]
-public class BAttleType {
+public class BattleType {
 
     public string[] enemies;
     public int rewardXP;

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Bonehead Games
+
 public class PlayerController : MonoBehaviour {
 
     public Rigidbody2D theRB;

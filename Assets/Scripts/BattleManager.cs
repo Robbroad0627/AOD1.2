@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+//Bonehead Games
+
 public class BattleManager : MonoBehaviour {
 
     public static BattleManager instance;

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Bonehead Games
+
 public class ShopKeeper : MonoBehaviour {
 
     private bool canOpen;

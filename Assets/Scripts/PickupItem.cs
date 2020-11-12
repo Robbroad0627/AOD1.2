@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Bonehead Games
+
 public class PickupItem : MonoBehaviour {
 
     private bool canPickup;
