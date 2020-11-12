@@ -46,6 +46,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
@@ -57,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -69,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 971942665
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 988d560df8d322a468c97243cbfd76e8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a8aaa184cf2fe6644bff33f86a85e862, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,6 +110,6 @@ MonoBehaviour:
   armrPower: 5
   hasDied: 0
   theSprite: {fileID: 212612185695992934}
-  deadSprite: {fileID: 21300000, guid: a0d42006e8540384ca282e78ca2bf5c6, type: 3}
-  aliveSprite: {fileID: 21300000, guid: a0d42006e8540384ca282e78ca2bf5c6, type: 3}
+  deadSprite: {fileID: 21300014, guid: a8aaa184cf2fe6644bff33f86a85e862, type: 3}
+  aliveSprite: {fileID: 21300000, guid: a8aaa184cf2fe6644bff33f86a85e862, type: 3}
   fadeSpeed: 1
