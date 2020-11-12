@@ -45,6 +45,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,15 +69,14 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 438648119
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 9135130128162984572, guid: 174045f936d70fd49a34f4aca68b149c,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: a3a0aa5ed9c16ad4dbb268acbe8d5e3e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 25.1, y: 26.648073}
+  m_Size: {x: 42.809998, y: 29.829037}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
