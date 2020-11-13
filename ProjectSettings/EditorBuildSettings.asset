@@ -15,59 +15,35 @@ EditorBuildSettings:
     path: Assets/Scenes/1. Operators/GameOver.unity
     guid: 745897f15f894284c8b4274b75cf9a1e
   - enabled: 1
+    path: Assets/Scenes/1. Operators/Credits.unity
+    guid: 0d2d0350bb636db4c885cefcfc0ec49f
+  - enabled: 1
     path: Assets/Scenes/1. Operators/TheEnd.unity
     guid: 44bf588b59f467e49a27e91784ab4bde
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Continents/Haven/Haven.unity
     guid: 5dfcf7ccb152de9428921d0dd8d44b89
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Continents/Haven/Altir/Altir.unity
     guid: 67278d8bf4f059e45ab62cb47f2eb57d
   - enabled: 1
     path: Assets/Scenes/Continents/Haven/Altir/Altir Shop.unity
     guid: a1967ac4dcc5e794898c99a6fcab76f9
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Continents/Haven/Calimere/Calimere.unity
     guid: d0765a0c82f44db43858ee5ecb9bb81d
   - enabled: 1
     path: Assets/Scenes/Continents/Haven/Calimere/Calimere Shop.unity
     guid: 4b81d5986f460444eac521c1c08ab37a
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Continents/Haven/Pana/Pana.unity
     guid: 746a97a51c5a9064d9c8993ba8db8a36
   - enabled: 1
     path: Assets/Scenes/Continents/Haven/Pana/Pana Shop.unity
     guid: 1b28f0f7c0e70f64cb7b0866620d0034
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Continents/Haven/Tearle/Tearle.unity
     guid: b48bf779b235724478584260646c97ad
@@ -80,4 +56,118 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Continents/Haven/Tearle/Tower Sub-2.unity
     guid: 4948ea13ecb69964fa69f19cc05f9a33
+  - enabled: 1
+    path: Assets/Scenes/Continents/Haven/Tearle/Tower Sub-3.unity
+    guid: f07fec99a09b6154db96aae94c27705d
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Continents/Larsu/Larsu.unity
+    guid: 326e867bda33ef74e8b54e46da227dd2
+  - enabled: 1
+    path: Assets/Scenes/Continents/Larsu/Bajang/Bajang.unity
+    guid: dee7872390f20d24c816989282b0d170
+  - enabled: 1
+    path: Assets/Scenes/Continents/Larsu/Chulu/Chulu.unity
+    guid: 64eaa97a46bed474097df5dd7741f0a2
+  - enabled: 1
+    path: Assets/Scenes/Continents/Larsu/Quala/Quala.unity
+    guid: 2e1fa2a9bd035d549bf34638ae0af656
+  - enabled: 1
+    path: Assets/Scenes/Continents/Larsu/Sula/Sula.unity
+    guid: c10533f22a4dd9643bcc856d0969f21d
+  - enabled: 1
+    path: Assets/Scenes/Continents/Larsu/Takala/Takala.unity
+    guid: 4786940f8cc256b46aaf76dff33eac27
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Mandu.unity
+    guid: ee8e3203e9e5ebd4796f63ca19cdcc15
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Dao Shin/Dao Shin.unity
+    guid: 769494de5f46afd419a3923653d9662e
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Gosu/Gosu.unity
+    guid: 40307c32a8c87a54a9bb93fcf19709c5
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Kisa/Kisa.unity
+    guid: a7c7309af5ff13441951545afa333166
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Lan/Lan.unity
+    guid: 3b3671705dc91184d8a2f140d7c9e7bb
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Mura/Mura.unity
+    guid: be917df3254325348981e7b510b6284e
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Naho/Naho.unity
+    guid: 13172cd7778864a4cae30b693bf62db5
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Nikko/Nikko.unity
+    guid: 20fc57d559fe52948b4a7e8162b907c0
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Sedo/Sedo.unity
+    guid: 08ec3261fdd3575459ef614e5730a79d
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Tekki/Tekki.unity
+    guid: b764d0e0b94afb142a93c03614faf30b
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Toda/Toda.unity
+    guid: 5c4d2e260c2cac44eb75f52a87f2e108
+  - enabled: 1
+    path: Assets/Scenes/Continents/Mandu/Xin/Xin.unity
+    guid: 3d639e4715e83fc48bf3e6301c026945
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Continents/Oluma/Oluma.unity
+    guid: a498e8f051443a74dba2cff430277e88
+  - enabled: 1
+    path: Assets/Scenes/Continents/Oluma/Al Abaden/Al Abaden.unity
+    guid: 1fe9f056fb43a9e409386aceea095134
+  - enabled: 1
+    path: Assets/Scenes/Continents/Oluma/Adlab.unity
+    guid: 00197b113541c7d438ac4a0e46e7e0c1
+  - enabled: 1
+    path: Assets/Scenes/Continents/Oluma/Biddaib.unity
+    guid: b68a070166e8f244599510d202bf06c8
+  - enabled: 1
+    path: Assets/Scenes/Continents/Oluma/Fawab.unity
+    guid: 98c8373c623ad504d95bfa0d711fd608
+  - enabled: 1
+    path: Assets/Scenes/Continents/Oluma/Karwiya.unity
+    guid: 9c540dd1d9047b84681d92a2a04d4833
+  - enabled: 1
+    path: Assets/Scenes/Continents/Oluma/Sililah/Sililah.unity
+    guid: f52d062c0a3e07d409af5bf2caf0adc8
+  - enabled: 1
+    path: Assets/Scenes/Continents/Oluma/Thumrar.unity
+    guid: b08e44930dd247e4cb7ff45c3e4e3f19
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Continents/Piltara/Piltara.unity
+    guid: 176c9079c0e4d2043acc0523a8f82919
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Continents/Senta/Senta.unity
+    guid: 37509d13b3367474ea3f43b53a77aa85
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
