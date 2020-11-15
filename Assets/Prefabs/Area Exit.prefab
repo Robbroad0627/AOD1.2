@@ -43,7 +43,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99c36e9deeec58a4b8a4c961f98bff94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionName: 
+  transitionName: Tearle Shop-1
 --- !u!1 &1854250573537122
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,6 +115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b0a82eb7211034bb1fd55c86afe427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaToLoad: Test
-  areaTransitionName: Countryside-1
+  areaToLoad: Tearle
+  areaTransitionName: Tearle-2
   waitToLoad: 1

@@ -46,6 +46,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -57,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -93,7 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: Death Merchant
   currentHp: 40
   maxHP: 40
@@ -104,8 +108,7 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 4921325582483158726, guid: b9b9486a39385a94fa10688a6313297a,
-    type: 3}
+  theSprite: {fileID: 4921325582483158726}
   deadSprite: {fileID: 21300000, guid: 6bdc6f7517d985347a5c69da3fcaa791, type: 3}
   aliveSprite: {fileID: 21300000, guid: a9c9943811c93be4f9cb6be851d0c474, type: 3}
   fadeSpeed: 1

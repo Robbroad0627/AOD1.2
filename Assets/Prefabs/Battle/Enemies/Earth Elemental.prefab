@@ -46,6 +46,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -57,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -93,7 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: Earth Elemental
   currentHp: 70
   maxHP: 70
@@ -104,8 +108,7 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 789632785134568385, guid: ca93a06adafb08b42834c4d2d3a8df4f,
-    type: 3}
+  theSprite: {fileID: 789632785134568385}
   deadSprite: {fileID: 21300000, guid: 14da72ba0c48e0449a0aadd7de3af158, type: 3}
   aliveSprite: {fileID: 21300000, guid: d5a352a6fb21676449753c86902ccdfa, type: 3}
   fadeSpeed: 1

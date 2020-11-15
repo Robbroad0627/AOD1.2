@@ -46,6 +46,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -57,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -93,7 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: Fire Elemental
   currentHp: 80
   maxHP: 80
@@ -104,8 +108,7 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 6479046176271683519, guid: 30d0287e7957b00429c159c5a81839f4,
-    type: 3}
+  theSprite: {fileID: 6479046176271683519}
   deadSprite: {fileID: 21300000, guid: 3127193f9eea3a1479fe6bd53dea8f82, type: 3}
   aliveSprite: {fileID: 21300000, guid: 37f043254b0a56449ae9f3f622a210aa, type: 3}
   fadeSpeed: 1
