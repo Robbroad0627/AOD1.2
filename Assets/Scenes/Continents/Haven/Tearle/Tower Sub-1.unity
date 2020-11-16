@@ -238,6 +238,191 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battle Zone (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[2]
+      value: Banded Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[1]
+      value: Bronze Gloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Bronze Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Cutlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Orc Blood Warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.y
@@ -332,6 +517,191 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Battle Zone (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[2]
+      value: Banded Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[1]
+      value: Bronze Gloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Bronze Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Cutlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Orc Blood Warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Greater Healing Potion
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -428,6 +798,191 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battle Zone (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[2]
+      value: Banded Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[1]
+      value: Bronze Gloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Bronze Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Cutlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Orc Blood Warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.y
@@ -522,6 +1077,191 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Battle Zone (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[2]
+      value: Banded Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[1]
+      value: Bronze Gloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Bronze Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Cutlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Orc Blood Warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Greater Healing Potion
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -656,7 +1396,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1869867345}
     m_Modifications:
     - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_Name
@@ -664,15 +1404,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.6
+      value: -1.0881219
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 98.52
+      value: 88.08041
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.02030359
+      value: 0.30936608
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.x
@@ -692,7 +1432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -733,6 +1473,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+--- !u!4 &615321102 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 615321101}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &655451010
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -744,6 +1490,251 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Battle Zone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[1]
+      value: Dagger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[2]
+      value: Long Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[2]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[1]
+      value: Hand Axe
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[2]
+      value: Long Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[1]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[2]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[1]
+      value: Dagger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[2]
+      value: Long Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[1]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[2]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[1]
+      value: Dagger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[2]
+      value: Long Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[2]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[1]
+      value: Water Rune
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[2]
+      value: Basic Staff
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: cannotFlee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: deactivateAfterStarting
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -840,6 +1831,191 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battle Zone (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[2]
+      value: Banded Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[1]
+      value: Bronze Gloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Bronze Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Cutlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Orc Blood Warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.y
@@ -934,6 +2110,171 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Battle Zone (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[3]
+      value: Orc Chieftan
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[2]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[2]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[3]
+      value: Orc Chieftan
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[2]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[1]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[2]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[3]
+      value: Orc Chieftan
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[2]
+      value: Greater Healing Potion
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -1030,6 +2371,191 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battle Zone (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[2]
+      value: Banded Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[1]
+      value: Bronze Gloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Bronze Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Cutlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Orc Blood Warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.y
@@ -1125,6 +2651,191 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battle Zone (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[2]
+      value: Banded Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[1]
+      value: Bronze Gloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Bronze Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Cutlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Orc Blood Warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.y
@@ -1213,7 +2924,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1869867345}
     m_Modifications:
     - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_Name
@@ -1221,23 +2932,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.11
+      value: -8.798121
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.7
+      value: -21.139591
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.02030359
+      value: 0.30936608
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.z
@@ -1249,7 +2960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1280,6 +2991,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+--- !u!4 &1225190843 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 1225190842}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1363121772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1292,15 +3009,265 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battle Zone (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: cannotFlee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: deactivateAfterStarting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[2]
+      value: Giant Wasp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[2]
+      value: Leather Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[1]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[2]
+      value: Buckler
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[1]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[2]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[1]
+      value: Leather Gloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[2]
+      value: Leather Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[1]
+      value: Bronze Gauntlet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[2]
+      value: Leather Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: Spider
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[2]
+      value: Giant Wasp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Bronze Armor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[1]
+      value: Dagger
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[2]
+      value: Potion of Greater Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Potion Of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Greater Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Giant Wasp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[0]
+      value: Bronze Helmet
+      objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.y
-      value: -16.329308
+      value: -16.784195
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Size.y
-      value: 36.893066
+      value: 35.98329
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -54309,6 +56276,191 @@ PrefabInstance:
       propertyPath: m_Name
       value: Battle Zone (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[2]
+      value: Banded Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[1]
+      value: Bronze Gloves
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Bronze Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Orc
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Cutlas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Orc Blood Warrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Orc Marauder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: 'Orc '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Greater Healing Potion
+      objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.y
@@ -54403,6 +56555,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Battle Zone (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[1]
+      value: Goblin
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[2]
+      value: Goblin Enforcer
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -54527,7 +56714,39 @@ Transform:
   - {fileID: 1153214688}
   - {fileID: 841458039}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1869867344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1869867345}
+  m_Layer: 0
+  m_Name: Exits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1869867345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869867344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.688122, y: 10.43959, z: -0.2890625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1225190843}
+  - {fileID: 615321102}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2100020448
 GameObject:

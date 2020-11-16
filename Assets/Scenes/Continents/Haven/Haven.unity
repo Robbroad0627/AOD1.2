@@ -338,9 +338,9 @@ MonoBehaviour:
     - Mountain Cyclops
     rewardXP: 380
     rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-    - Greater Potion of Healing
+    - Greater Healing Potion
+    - Greater Healing Potion
+    - Greater Healing Potion
   - enemies:
     - Specter
     - Specter
@@ -8275,8 +8275,8 @@ MonoBehaviour:
     - Jungle Cyclops
     rewardXP: 415
     rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
+    - Greater Healing Potion
+    - Greater Healing Potion
   - enemies:
     - Necromancer
     rewardXP: 300
@@ -8404,11 +8404,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.02
+      value: -1.39
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.89
+      value: -2.07
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
@@ -23434,9 +23434,9 @@ MonoBehaviour:
     - Succubus
     rewardXP: 1000
     rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-    - Greater Potion of Healing
+    - Greater Healing Potion
+    - Greater Healing Potion
+    - Greater Healing Potion
   - enemies:
     - Specter
     rewardXP: 200
@@ -96596,7 +96596,7 @@ MonoBehaviour:
     - Mountain Cyclops
     rewardXP: 190
     rewardItems:
-    - Greater Potion of Healing
+    - Greater Healing Potion
   - enemies:
     - Specter
     rewardXP: 200
