@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding:0;
+}
+
+body{
+    width: 100%;
+	height: 100%;
+	overflow: visible;
+	padding: 0;
+	margin: 0;
+}
+
+.webgl-content{
+	padding-bottom: 2.5rem;
+}
+
+.footer a{
+	text-decoration: none;
+	color:#AAA;
+}
+
+
+.footer{
+	position: absolute;
+	bottom: 0;
+	left:0;
+	width:100%;
+	text-decoration: none;
+}
+

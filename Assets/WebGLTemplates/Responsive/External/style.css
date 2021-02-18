@@ -1,0 +1,400 @@
+/*
+   Page content
+   
+1. CSS Reset
+2. Root (colors; font size, letter spacing)
+3. Menu bar
+4. Main content
+5. Logo
+6. Minimize, Almost Full Screen, Maximize icons
+7. Footer
+8.Responsiveness for different devices
+*/
+
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-family: Roboto;
+}
+
+
+/* Root */
+
+:root {
+    /* colors */
+    --black: #000000;
+    --white: #FFFFFF;
+    --blue: #648EC0;
+    --dark-blue: #33639D;
+    --light-blue: #E2EDFB;
+    --grey: #6F6F6F;
+    /* font size, letter spacing */
+    --base-Fsize: 16px;
+    --Fsize-18: 18px;
+    --Fsize-24: 24px;
+    --Fsize-60: 60px;
+    --letter-spacing-1: 1px;
+    --letter-spacing-05: 0.5px;
+}
+
+
+/* Menu bar */
+
+.navbar {
+    overflow: hidden;
+    background-color: var(--blue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.navbar a {
+    float: left;
+    font-size: var(--base-Fsize);
+    color: var(--white);
+    text-align: center;
+    padding: 21px 20px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: var(--base-Fsize);
+    color: var(--white);
+    padding: 21px 20px;
+    background-color: inherit;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--blue);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-68%);
+}
+
+.dropdown-content a {
+    float: none;
+    color: var(--white);
+    padding: 16px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    letter-spacing: var(--letter-spacing-1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Menu bar */
+
+.navigation-bar {
+    width: auto;
+}
+
+.navigation-bar ul {
+    height: 60px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #749CCC;
+    text-align: center;
+}
+
+.navigation-bar ul li {
+    display: inline-block;
+}
+
+.navigation-bar ul li a {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    padding: 19px 20px;
+    text-decoration: none;
+}
+
+.navigation-bar ul li a:hover:not(.active) {
+    background-color: #648EC0;
+}
+
+
+/* Main content */
+
+.main-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.logo-and-btns--grid {
+    float: left;
+    width: auto;
+    max-width: 900px;
+}
+
+.webgl {
+    width: 100%;
+    max-width: 350px;
+    overflow: hidden;
+    margin-bottom: -90px;
+    height: auto;
+}
+
+
+/* Logo */
+
+.logo {
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-column-gap: 15px;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.logo img {
+    display: block;
+    height: auto;
+    scale:80%;
+}
+
+.logo p {
+    display: block;
+    margin-block: 0;
+    margin-inline: 0;
+    padding: 11px 0;
+}
+
+.logo p a {
+    text-decoration: none;
+    color: #090505;
+    outline: none;
+}
+
+
+/* Minimize, Almost Full Screen, Maximize icons */
+
+.btns {
+    float: right;
+    scale: 70%;
+    width: auto;
+}
+
+.btns ul {
+    float: left;
+    list-style-type: none;
+    padding: 6px 20px 0 0;
+}
+
+.btns li {
+    margin-left: 10px
+}
+
+.btns li,
+.btns a {
+    width: 37px;
+    height: 30px;
+    display: inline-block;
+}
+
+#minimize {
+    background: url('btns.svg');
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+}
+
+#almost_full_screen {
+    background: url('btns.svg');
+    background-position: -37px 0px;
+    background-repeat: no-repeat;
+}
+
+#maximize {
+    background: url('btns.svg');
+    background-position: -74px 0px;
+    background-repeat: no-repeat;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 8%;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    padding-bottom: 40px;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #6F6F6F;
+    outline: none;
+}
+
+footer p a:hover {
+    color: #749CCC;
+    letter-spacing: 0.5px;
+}
+
+
+/*----Responsiveness for different devices----*/
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .webgl {
+        width: 100%;
+        max-width: 320px;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+    }
+    #bottom-container {
+        margin-top: 100px;
+    }
+}
+
+
+/* Extra small devices (landscape orientation- phones, 600px and down) */
+
+@media only screen and (max-width: 600px) and(orientation:landscape) {
+    .webgl {
+        width: 100%;
+        max-width: 290px;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+    }
+    #bottom-container {
+        margin-top: 100px;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .webgl {
+        width: 100%;
+        max-width: 650px;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+    }
+    #bottom-container {
+        margin-top: 100px;
+    }
+}
+
+
+/* Small devices (landscape orientation -portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) and(orientation:landscape) {
+    .webgl {
+        width: 100%;
+        max-width: 650px;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+    }
+    #bottom-container {
+        margin-top: 100px;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .webgl {
+        width: 100%;
+        max-width: 700px;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+    }
+    #bottom-container {
+        margin-top: 100px;
+    }
+}
+
+
+/* Medium devices (lanscape orientation- landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) and (orientation:landscape) {
+    .webgl {
+        width: 100%;
+        max-width: 700px;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+    }
+    #bottom-container {
+        margin-top: 100px;
+    }
+
+    .logo img {
+        display: block;
+        height: auto;
+        scale:100%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .webgl {
+        width: 100%;
+        max-width: 900px;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+    }
+    #bottom-container {
+        margin-top: 100px;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .webgl {
+        width: 100%;
+        max-width: 1180px;
+        position: relative;
+        overflow: hidden;
+        height: auto;
+    }
+    #bottom-container {
+        margin-top: 100px;
+    }
+}

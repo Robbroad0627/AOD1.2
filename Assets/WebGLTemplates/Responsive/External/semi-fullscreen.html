@@ -1,0 +1,35 @@
+<!-- Navigation bar -->
+<div class="navigation-bar">
+    <div class="main-content--grid">
+        <div class="logo-and-btns--grid">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="External/webgl-logo.png" alt="Unity WebGL Logo">
+                <div class="logo-name">
+                </div>
+            </div>
+
+            <!-- Minimize, Almost Full Screen, Maximize buttons -->
+            <div class="btns">
+                <ul>
+                    <li id="minimize"><a onclick='
+                        clearTopContent();
+                        dynamicPageLoading("External/normal_screen_top.html",pageSelector,true);
+                        dynamicPageLoading("External/normal_screen_bottom.html",pageSelector,false);
+                        document.getElementById("main-style").setAttribute("href","External/style.css");
+                        Resize();
+                        isInFirstScreen = true;
+                        '></a></li>
+                    <li id="maximize">
+                        <a onclick='
+                        unityInstance.SetFullscreen(1);
+                        unityInstance.SendMessage("_BrowserControls","ApplicationFullscreen");
+                        '>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

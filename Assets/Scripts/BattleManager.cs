@@ -56,10 +56,13 @@ public class BattleManager : MonoBehaviour {
 	void Start () {
         instance = this;
         DontDestroyOnLoad(gameObject);
-	}
-	
-	
-	void Update () {
+      
+    activeBattlers = new List<BattleChar>();
+
+    }
+
+
+    void Update () {
 		if(Input.GetKeyDown(KeyCode.T))
         {
             BattleStart(new string[] { "Eyeball"}, false);
