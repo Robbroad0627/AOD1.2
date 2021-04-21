@@ -37,6 +37,7 @@ public class CharacterAttributes : MonoBehaviour
         Thief
     };
 
+    
     public enum Vitals
     {
         HP,

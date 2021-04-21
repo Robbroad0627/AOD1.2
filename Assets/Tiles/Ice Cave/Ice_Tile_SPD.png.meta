@@ -11,6 +11,15 @@ TextureImporter:
   - first:
       213: -9039286935391188945
     second: Ice_Tile_SPD_2
+  - first:
+      213: -9165325710121966964
+    second: Ice_Tile_SPD_0
+  - first:
+      213: -7141776429109204812
+    second: Ice_Tile_SPD_1
+  - first:
+      213: -3365287651983021136
+    second: Ice_Tile_SPD_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +64,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1800
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -138,18 +147,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1163
-        width: 2359
-        height: 2366
+        y: 1174
+        width: 1800
+        height: 1800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ffbf6af86089ea00800000000000000
-      internalID: 786300798319443961
+      spriteID: c82ec6d93d83ec080800000000000000
+      internalID: -9165325710121966964
       vertices: []
       indices: 
       edges: []
@@ -158,19 +167,19 @@ TextureImporter:
       name: Ice_Tile_SPD_1
       rect:
         serializedVersion: 2
-        x: 4702
-        y: 0
-        width: 3534
-        height: 3529
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4817
+        y: 102
+        width: 1800
+        height: 1800
+      alignment: 9
+      pivot: {x: 0.55469185, y: 0.5121537}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c77fedcac713f63f0800000000000000
-      internalID: -905450588532181124
+      spriteID: 4b820bd2d2053ec90800000000000000
+      internalID: -7141776429109204812
       vertices: []
       indices: 
       edges: []
@@ -180,18 +189,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 8281
-        y: 2388
+        y: 2399
         width: 1091
-        height: 1088
+        height: 1039
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f28cd29ac600e8280800000000000000
-      internalID: -9039286935391188945
+      spriteID: 0bb2b88e5b81c41d0800000000000000
+      internalID: -3365287651983021136
       vertices: []
       indices: 
       edges: []

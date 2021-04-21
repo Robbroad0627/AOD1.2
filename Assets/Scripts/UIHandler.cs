@@ -20,6 +20,7 @@ public class UIHandler : MonoBehaviour
     public Text hpValue;
     public Text mpValue;
     public Text acValue;
+    public Text sexText;
 
 
     // Start is called before the first frame update

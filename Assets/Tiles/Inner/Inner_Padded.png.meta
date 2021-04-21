@@ -791,6 +791,87 @@ TextureImporter:
   - first:
       213: 21300524
     second: Inner_Padded_262
+  - first:
+      213: -7765340765311156896
+    second: Inner_Padded_0
+  - first:
+      213: 2580186581647319791
+    second: Inner_Padded_1
+  - first:
+      213: 8892348142542693023
+    second: Inner_Padded_2
+  - first:
+      213: 6380866370481033730
+    second: Inner_Padded_3
+  - first:
+      213: 2147142874637245378
+    second: Inner_Padded_4
+  - first:
+      213: -4414623821840939184
+    second: Inner_Padded_5
+  - first:
+      213: -8119882843213897026
+    second: Inner_Padded_6
+  - first:
+      213: 3880739403880594226
+    second: Inner_Padded_7
+  - first:
+      213: 1454984967426123365
+    second: Inner_Padded_8
+  - first:
+      213: 7675602670195044547
+    second: Inner_Padded_9
+  - first:
+      213: -4551933015216546100
+    second: Inner_Padded_10
+  - first:
+      213: -3451380355547274156
+    second: Inner_Padded_11
+  - first:
+      213: 8797256029484361561
+    second: Inner_Padded_12
+  - first:
+      213: -6805668387071752040
+    second: Inner_Padded_13
+  - first:
+      213: 2662269947271085146
+    second: Inner_Padded_14
+  - first:
+      213: 4326942827600112983
+    second: Inner_Padded_15
+  - first:
+      213: 1484671314125194947
+    second: Inner_Padded_16
+  - first:
+      213: 7514839878560215422
+    second: Inner_Padded_17
+  - first:
+      213: -3905707551388259020
+    second: Inner_Padded_18
+  - first:
+      213: -1282180840938844063
+    second: Inner_Padded_19
+  - first:
+      213: -1718645605185879969
+    second: Inner_Padded_20
+  - first:
+      213: 6631095850362908756
+    second: Inner_Padded_21
+  - first:
+      213: -3549468317928343412
+    second: Inner_Padded_22
+  - first:
+      213: 6492563147836134142
+    second: Inner_Padded_23
+  - first:
+      213: 6533372242571179382
+    second: Inner_Padded_24
+  - first:
+      213: 8312121420316480357
+    second: Inner_Padded_25
+  - first:
+      213: 2621866145602492386
+    second: Inner_Padded_26
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -861,9 +942,45 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 1024
     resizeAlgorithm: 1
     textureFormat: -1

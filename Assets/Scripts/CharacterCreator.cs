@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //Bonehead Games
 
@@ -8,6 +9,14 @@ public class CharacterCreator : MonoBehaviour
 {
     public CharacterAttributes.Races myRace;
     public CharacterAttributes.Classes myClass;
+    
+    public Image portrait;
+    public Text sexText;
+
+    private bool isMale = true;
+
+    public List<Sprite> portraitList;
+    public Sprite myPortrait;
 
     public Dictionary<CharacterAttributes.BaseAttributes, int> myAttributes;
     int baseValue = 10;
@@ -16,6 +25,17 @@ public class CharacterCreator : MonoBehaviour
     {
         myRace = CharacterAttributes.Races.Human;
         myClass = CharacterAttributes.Classes.Fighter;
+
+        //set default portrait
+        myPortrait = portraitList[0];
+        //update update portrait image on UI
+        portrait.sprite = myPortrait;
+
+        //update default gender
+        sexText.text= "Male";
+        if (!isMale)
+            sexText.text = "Female";
+
         
         myAttributes = new Dictionary<CharacterAttributes.BaseAttributes, int>();
         InitializeAttributes();
@@ -160,5 +180,47 @@ public class CharacterCreator : MonoBehaviour
         }
         CheckRace();
     }
-    
+    public void NextPortraitClicked()
+    {
+    int maxIndex = portraitList.Count;
+    int currentIndex = portraitList.IndexOf(myPortrait);
+
+       
+            currentIndex++;
+            if (currentIndex == maxIndex)
+            {
+                currentIndex = 0;
+            }
+        myPortrait = portraitList[currentIndex];
+        portrait.sprite = myPortrait;
+    }
+
+    public void PrevPortraitClicked()
+    {
+        int maxIndex = portraitList.Count;
+        int currentIndex = portraitList.IndexOf(myPortrait);
+
+
+        currentIndex--;
+        if (currentIndex == -1)
+        {
+            currentIndex = maxIndex -1;
+        }
+        myPortrait = portraitList[currentIndex];
+        portrait.sprite = myPortrait;
+    }
+
+    public void SexButtonClicked()
+    {
+        if (isMale)
+        {
+            isMale = false;
+            sexText.text = "Female";
+        }
+        else
+        {
+            isMale = true;
+            sexText.text = "Male";
+        }
+    }
 }
