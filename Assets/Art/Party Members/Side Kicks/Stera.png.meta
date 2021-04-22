@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 9828d40efeb27904082a1bb17e061cee
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3647444340004186143
+    second: Stera_0
+  - first:
+      213: -5391437696128098598
+    second: Stera_1
+  - first:
+      213: 6788483439544031340
+    second: Stera_2
+  - first:
+      213: -8164783616104424224
+    second: Stera_3
+  - first:
+      213: -6827206653945703773
+    second: Stera_4
+  - first:
+      213: -4273123955343452273
+    second: Stera_5
+  - first:
+      213: 7454008525689312526
+    second: Stera_6
+  - first:
+      213: 5723860274841419042
+    second: Stera_7
+  - first:
+      213: 6701374990027012410
+    second: Stera_8
+  - first:
+      213: -8973600130664349298
+    second: Stera_9
+  - first:
+      213: 3398006379745158771
+    second: Stera_10
+  - first:
+      213: -3394966579553878294
+    second: Stera_11
+  - first:
+      213: 2537706199014819268
+    second: Stera_12
+  - first:
+      213: -2832643103765937973
+    second: Stera_13
+  - first:
+      213: 4910646038309679179
+    second: Stera_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +86,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +118,351 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Stera_0
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 636
+        width: 107
+        height: 590
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1865ff5d435e9230800000000000000
+      internalID: 3647444340004186143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_1
+      rect:
+        serializedVersion: 2
+        x: 5750
+        y: 1218
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade52adfaf3cd25b0800000000000000
+      internalID: -5391437696128098598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_2
+      rect:
+        serializedVersion: 2
+        x: 6779
+        y: 1212
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68d4a9a8b9853e50800000000000000
+      internalID: 6788483439544031340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_3
+      rect:
+        serializedVersion: 2
+        x: 4359
+        y: 1178
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec9a2e5f8cd0be80800000000000000
+      internalID: -8164783616104424224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_4
+      rect:
+        serializedVersion: 2
+        x: 8875
+        y: 191
+        width: 802
+        height: 998
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2126768b3e041a0800000000000000
+      internalID: -6827206653945703773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1048
+        height: 729
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f879a801760d2b4c0800000000000000
+      internalID: -4273123955343452273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_6
+      rect:
+        serializedVersion: 2
+        x: 1934
+        y: 185
+        width: 760
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05d176d245f17760800000000000000
+      internalID: 7454008525689312526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_7
+      rect:
+        serializedVersion: 2
+        x: 3088
+        y: 197
+        width: 754
+        height: 906
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d74e9f79c3f6f40800000000000000
+      internalID: 5723860274841419042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_8
+      rect:
+        serializedVersion: 2
+        x: 4259
+        y: 191
+        width: 754
+        height: 975
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a393f3b4c01100d50800000000000000
+      internalID: 6701374990027012410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_9
+      rect:
+        serializedVersion: 2
+        x: 5453
+        y: 156
+        width: 754
+        height: 1016
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e814a5fa93e577380800000000000000
+      internalID: -8973600130664349298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_10
+      rect:
+        serializedVersion: 2
+        x: 6538
+        y: 176
+        width: 772
+        height: 984
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376a8398cc4282f20800000000000000
+      internalID: 3398006379745158771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_11
+      rect:
+        serializedVersion: 2
+        x: 7830
+        y: 191
+        width: 754
+        height: 935
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee3e5912e7a2e0d0800000000000000
+      internalID: -3394966579553878294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_12
+      rect:
+        serializedVersion: 2
+        x: 9983
+        y: 191
+        width: 874
+        height: 981
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5c598b75eb73320800000000000000
+      internalID: 2537706199014819268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stera_13
+      rect:
+        serializedVersion: 2
+        x: 11075
+        y: 66
+        width: 625
+        height: 1054
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc04298ea1e60b8d0800000000000000
+      internalID: -2832643103765937973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

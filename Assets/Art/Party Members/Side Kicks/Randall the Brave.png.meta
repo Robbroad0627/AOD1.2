@@ -1,7 +1,46 @@
 fileFormatVersion: 2
 guid: 5c8ef7f2f1f53654f995ba5ba6a982e6
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7478181321124563806
+    second: Randall the Brave_0
+  - first:
+      213: -787313931239314607
+    second: Randall the Brave_1
+  - first:
+      213: 987711260128145554
+    second: Randall the Brave_2
+  - first:
+      213: -1624060368024923879
+    second: Randall the Brave_3
+  - first:
+      213: 7261239613547665518
+    second: Randall the Brave_4
+  - first:
+      213: -5105130991202055210
+    second: Randall the Brave_5
+  - first:
+      213: -4470521878880867748
+    second: Randall the Brave_6
+  - first:
+      213: -8201974108427637336
+    second: Randall the Brave_7
+  - first:
+      213: 5073352452211949404
+    second: Randall the Brave_8
+  - first:
+      213: -2951783258349379098
+    second: Randall the Brave_9
+  - first:
+      213: -361538117769816302
+    second: Randall the Brave_10
+  - first:
+      213: -1515149064901928063
+    second: Randall the Brave_11
+  - first:
+      213: 1352320537654393989
+    second: Randall the Brave_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +80,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +112,309 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Randall the Brave_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1166
+        width: 1078
+        height: 657
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4b864a5b9283890800000000000000
+      internalID: -7478181321124563806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Randall the Brave_1
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 1501
+        width: 1075
+        height: 985
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ba3c1a626e215f0800000000000000
+      internalID: -787313931239314607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Randall the Brave_2
+      rect:
+        serializedVersion: 2
+        x: 2945
+        y: 1488
+        width: 922
+        height: 1063
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2907790782e05bd00800000000000000
+      internalID: 987711260128145554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Randall the Brave_3
+      rect:
+        serializedVersion: 2
+        x: 4241
+        y: 1506
+        width: 697
+        height: 1038
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911951e23bd2679e0800000000000000
+      internalID: -1624060368024923879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Randall the Brave_4
+      rect:
+        serializedVersion: 2
+        x: 5490
+        y: 1497
+        width: 701
+        height: 1054
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68d082f4fa15c460800000000000000
+      internalID: 7261239613547665518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Randall the Brave_5
+      rect:
+        serializedVersion: 2
+        x: 6733
+        y: 1497
+        width: 677
+        height: 1054
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db4091696ee629b0800000000000000
+      internalID: -5105130991202055210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Randall the Brave_6
+      rect:
+        serializedVersion: 2
+        x: 7914
+        y: 1501
+        width: 711
+        height: 1050
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5aa1b8790485f1c0800000000000000
+      internalID: -4470521878880867748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Randall the Brave_7
+      rect:
+        serializedVersion: 2
+        x: 9110
+        y: 1506
+        width: 722
+        height: 1028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad283a110cbc2e80800000000000000
+      internalID: -8201974108427637336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Randall the Brave_9
+      rect:
+        serializedVersion: 2
+        x: 5519
+        y: 0
+        width: 700
+        height: 1021
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1e32804c82907d0800000000000000
+      internalID: -2951783258349379098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Randall the Brave_10
+      rect:
+        serializedVersion: 2
+        x: 6762
+        y: 0
+        width: 677
+        height: 1002
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21711955ffe8bfaf0800000000000000
+      internalID: -361538117769816302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Randall the Brave_11
+      rect:
+        serializedVersion: 2
+        x: 7943
+        y: 0
+        width: 710
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b51ccf3fb19fae0800000000000000
+      internalID: -1515149064901928063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Randall the Brave_12
+      rect:
+        serializedVersion: 2
+        x: 9138
+        y: 7
+        width: 694
+        height: 1028
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cfa553d5864c210800000000000000
+      internalID: 1352320537654393989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

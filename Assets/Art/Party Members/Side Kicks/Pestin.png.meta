@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: 3c7cef9069a07d644af8bd6a64b3dbb2
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -5887638748662629402
+    second: Pestin_0
+  - first:
+      213: 4716949449917267016
+    second: Pestin_1
+  - first:
+      213: 2281018028930160738
+    second: Pestin_2
+  - first:
+      213: -2353828268242342782
+    second: Pestin_3
+  - first:
+      213: 3841246728259844113
+    second: Pestin_4
+  - first:
+      213: -3846254836014431665
+    second: Pestin_5
+  - first:
+      213: 7189765831369456976
+    second: Pestin_6
+  - first:
+      213: 5046159491350223376
+    second: Pestin_7
+  - first:
+      213: 6281055595772713137
+    second: Pestin_8
+  - first:
+      213: 7599286214413352270
+    second: Pestin_9
+  - first:
+      213: -6741677723172842367
+    second: Pestin_10
+  - first:
+      213: 6496518627381729543
+    second: Pestin_11
+  - first:
+      213: -5864991918892783416
+    second: Pestin_12
+  - first:
+      213: 7488421134986053738
+    second: Pestin_13
+  - first:
+      213: -6449691183708524952
+    second: Pestin_14
+  - first:
+      213: -7089921528488651136
+    second: Pestin_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +89,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +121,372 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pestin_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4794
+        width: 2169
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb732c80c7ea4ea0800000000000000
+      internalID: -5887638748662629402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_1
+      rect:
+        serializedVersion: 2
+        x: 5559
+        y: 5017
+        width: 745
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84cfac18888f57140800000000000000
+      internalID: 4716949449917267016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_2
+      rect:
+        serializedVersion: 2
+        x: 8625
+        y: 4794
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268d4acdfcdc7af10800000000000000
+      internalID: 2281018028930160738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_3
+      rect:
+        serializedVersion: 2
+        x: 8493
+        y: 4112
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c642149a5855fd0800000000000000
+      internalID: -2353828268242342782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_4
+      rect:
+        serializedVersion: 2
+        x: 5601
+        y: 2102
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1183f8c2c89de4530800000000000000
+      internalID: 3841246728259844113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 667
+        width: 1120
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f424bbfda9b5f9ac0800000000000000
+      internalID: -3846254836014431665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_6
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 800
+        width: 746
+        height: 925
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d740d3eed27c360800000000000000
+      internalID: 7189765831369456976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_7
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 820
+        width: 666
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a55e9525f870640800000000000000
+      internalID: 5046159491350223376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_8
+      rect:
+        serializedVersion: 2
+        x: 3594
+        y: 815
+        width: 543
+        height: 986
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8138039caca2750800000000000000
+      internalID: 6281055595772713137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_9
+      rect:
+        serializedVersion: 2
+        x: 4428
+        y: 815
+        width: 468
+        height: 919
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d71ac9c86167960800000000000000
+      internalID: 7599286214413352270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_10
+      rect:
+        serializedVersion: 2
+        x: 5159
+        y: 820
+        width: 441
+        height: 981
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1845e1864dfb072a0800000000000000
+      internalID: -6741677723172842367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_11
+      rect:
+        serializedVersion: 2
+        x: 5926
+        y: 818
+        width: 488
+        height: 937
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709dbc58545482a50800000000000000
+      internalID: 6496518627381729543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_12
+      rect:
+        serializedVersion: 2
+        x: 6827
+        y: 825
+        width: 610
+        height: 909
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8ebdf7cec5b9ea0800000000000000
+      internalID: -5864991918892783416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_13
+      rect:
+        serializedVersion: 2
+        x: 7817
+        y: 815
+        width: 816
+        height: 915
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a680f5fc8573ce760800000000000000
+      internalID: 7488421134986053738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pestin_15
+      rect:
+        serializedVersion: 2
+        x: 6291
+        y: 0
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0861a011fe98b9d90800000000000000
+      internalID: -7089921528488651136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

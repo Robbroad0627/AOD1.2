@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: 066798650c55584448fa2e8f6665aec7
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4244224692410953217
+    second: Stokess_0
+  - first:
+      213: 359165702424191840
+    second: Stokess_1
+  - first:
+      213: 2849906861631873919
+    second: Stokess_2
+  - first:
+      213: -2881664845018572931
+    second: Stokess_3
+  - first:
+      213: -431017783212876242
+    second: Stokess_4
+  - first:
+      213: 6906591058011232654
+    second: Stokess_5
+  - first:
+      213: -8298704304650171021
+    second: Stokess_6
+  - first:
+      213: 5530648427996130587
+    second: Stokess_7
+  - first:
+      213: 3736682901906123714
+    second: Stokess_8
+  - first:
+      213: 158343599903559178
+    second: Stokess_9
+  - first:
+      213: -3563915113609058707
+    second: Stokess_10
+  - first:
+      213: 7916188045414684700
+    second: Stokess_11
+  - first:
+      213: 6795947182777542777
+    second: Stokess_12
+  - first:
+      213: 8352531293958224599
+    second: Stokess_13
+  - first:
+      213: -7392161976775841486
+    second: Stokess_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +86,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +118,372 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Stokess_0
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 2304
+        width: 1084
+        height: 1267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff157ed012c7915c0800000000000000
+      internalID: -4244224692410953217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_1
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 2299
+        width: 1196
+        height: 1290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0636f7cad430cf400800000000000000
+      internalID: 359165702424191840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_2
+      rect:
+        serializedVersion: 2
+        x: 2465
+        y: 2318
+        width: 1058
+        height: 1290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f732482f037ec8720800000000000000
+      internalID: 2849906861631873919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_3
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 2313
+        width: 1127
+        height: 1276
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77dfe657154208d0800000000000000
+      internalID: -2881664845018572931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_4
+      rect:
+        serializedVersion: 2
+        x: 4650
+        y: 2313
+        width: 1334
+        height: 1252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e58bb1c97b40af0800000000000000
+      internalID: -431017783212876242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_5
+      rect:
+        serializedVersion: 2
+        x: 6009
+        y: 2313
+        width: 1114
+        height: 1267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8916ad79f329df50800000000000000
+      internalID: 6906591058011232654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_6
+      rect:
+        serializedVersion: 2
+        x: 7139
+        y: 2313
+        width: 1051
+        height: 1262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d4251476415dc80800000000000000
+      internalID: -8298704304650171021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_7
+      rect:
+        serializedVersion: 2
+        x: 8180
+        y: 2309
+        width: 1058
+        height: 1257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d2840517fc0cc40800000000000000
+      internalID: 5530648427996130587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_8
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 458
+        width: 1307
+        height: 1229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cbe36e2d4d5bd330800000000000000
+      internalID: 3736682901906123714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_9
+      rect:
+        serializedVersion: 2
+        x: 3143
+        y: 458
+        width: 1150
+        height: 1291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e45b84aac823200800000000000000
+      internalID: 158343599903559178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_10
+      rect:
+        serializedVersion: 2
+        x: 4395
+        y: 459
+        width: 812
+        height: 1650
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d66afab261e6a8ec0800000000000000
+      internalID: -3563915113609058707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_11
+      rect:
+        serializedVersion: 2
+        x: 5402
+        y: 458
+        width: 704
+        height: 1802
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c18d226e513fbdd60800000000000000
+      internalID: 7916188045414684700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_12
+      rect:
+        serializedVersion: 2
+        x: 6418
+        y: 462
+        width: 751
+        height: 1744
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978a5cdc4fd005e50800000000000000
+      internalID: 6795947182777542777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_13
+      rect:
+        serializedVersion: 2
+        x: 7276
+        y: 462
+        width: 862
+        height: 1596
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dab6bf45f62ae370800000000000000
+      internalID: 8352531293958224599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stokess_14
+      rect:
+        serializedVersion: 2
+        x: 8209
+        y: 462
+        width: 1005
+        height: 1396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2396024f8d3c96990800000000000000
+      internalID: -7392161976775841486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
