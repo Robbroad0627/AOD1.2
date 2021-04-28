@@ -1,7 +1,43 @@
 fileFormatVersion: 2
 guid: 5ddfd490c7a289b4698b88d8d0cd50a1
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8083174071934623952
+    second: yuanti_pure_blood_female_6_0
+  - first:
+      213: -333015850160810217
+    second: yuanti_pure_blood_female_6_1
+  - first:
+      213: -141360040983965934
+    second: yuanti_pure_blood_female_6_2
+  - first:
+      213: -2959305028788908794
+    second: yuanti_pure_blood_female_6_3
+  - first:
+      213: 7494575650058439090
+    second: yuanti_pure_blood_female_6_4
+  - first:
+      213: 5277457305131895325
+    second: yuanti_pure_blood_female_6_5
+  - first:
+      213: -2039509062687177526
+    second: yuanti_pure_blood_female_6_6
+  - first:
+      213: 7912193146797192702
+    second: yuanti_pure_blood_female_6_7
+  - first:
+      213: 9203243069408012792
+    second: yuanti_pure_blood_female_6_8
+  - first:
+      213: -2411015847121977365
+    second: yuanti_pure_blood_female_6_9
+  - first:
+      213: 42087905710708841
+    second: yuanti_pure_blood_female_6_10
+  - first:
+      213: 5246434804515229025
+    second: yuanti_pure_blood_female_6_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +77,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +109,309 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_0
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 5483
+        width: 944
+        height: 1246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d0af4fedf33d2070800000000000000
+      internalID: 8083174071934623952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_1
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 5473
+        width: 1012
+        height: 1205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717179249d3e06bf0800000000000000
+      internalID: -333015850160810217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_2
+      rect:
+        serializedVersion: 2
+        x: 3298
+        y: 5466
+        width: 946
+        height: 1263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f47bbaac9c90ef0800000000000000
+      internalID: -141360040983965934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_3
+      rect:
+        serializedVersion: 2
+        x: 4787
+        y: 5462
+        width: 946
+        height: 1267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d820161cf6ee6d0800000000000000
+      internalID: -2959305028788908794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2840
+        width: 715
+        height: 1077
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b9860488d4120860800000000000000
+      internalID: 7494575650058439090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_5
+      rect:
+        serializedVersion: 2
+        x: 1569
+        y: 2821
+        width: 677
+        height: 1337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a4da5357b4d3940800000000000000
+      internalID: 5277457305131895325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_6
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 2821
+        width: 894
+        height: 1534
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac44752305532b3e0800000000000000
+      internalID: -2039509062687177526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_7
+      rect:
+        serializedVersion: 2
+        x: 4597
+        y: 2805
+        width: 990
+        height: 1786
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef570251fb1cdcd60800000000000000
+      internalID: 7912193146797192702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 1336
+        height: 1555
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9e3ad8fcc78bf70800000000000000
+      internalID: 9203243069408012792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_9
+      rect:
+        serializedVersion: 2
+        x: 1638
+        y: 2
+        width: 1361
+        height: 1353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beff4747cd95a8ed0800000000000000
+      internalID: -2411015847121977365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_10
+      rect:
+        serializedVersion: 2
+        x: 3262
+        y: 0
+        width: 1278
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9681a3d2ab6859000800000000000000
+      internalID: 42087905710708841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_female_6_11
+      rect:
+        serializedVersion: 2
+        x: 4899
+        y: 0
+        width: 1250
+        height: 477
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d406c68a41fc840800000000000000
+      internalID: 5246434804515229025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
