@@ -1676,7 +1676,7 @@ GameObject:
   - component: {fileID: 1034414506}
   - component: {fileID: 1034414505}
   m_Layer: 0
-  m_Name: woman_for_longhouse
+  m_Name: Lady Lyla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1694,7 +1694,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Lady Lyla
+  - Are you here to help us?
+  - n- Gao
+  - We will do what we can
+  - n- Lady Lyla
+  - Thank you, I can only pray that you are successful.
+  - n- Gao
+  - We will do what we can.
+  - Thank you for the hospitality.
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -9714,7 +9723,7 @@ GameObject:
   - component: {fileID: 1428370777}
   - component: {fileID: 1428370776}
   m_Layer: 0
-  m_Name: male_for_long_house
+  m_Name: Baron Yar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9823,7 +9832,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Baron Yar
+  - Greetings travellers.  What brings you to our lands?
+  - n- Gao
+  - Thank you for the welcome.  We didn't have a chose on coming here.  A crazy wizard
+    named Jaru teleported us here without telling us where we were going.
+  - n- Baron Yar
+  - So word did make it to Jaru.  we sent word that we needed help but have not heard
+    back from him.
+  - So you are his idea of help.  I hope he knows what he is doing.
+  - n- Gao
+  - We will help if we can.  We have heard that it is warmingh up here and things
+    seems to be thawing.
+  - n- Baron Yar
+  - That is a very brief version of our problems.  The melting here has made a lot
+    of the wild life agitated and attacking many things.  The frost giants to the
+    north are lashing out and posing quite the threat to Northvill
+  - n- Gao
+  - Since we are here, we will see what we can to do help.
+  - n- Baron Yar
+  - On behalf of myself and my people, we thank you.
+  - n- Gao
+  - We thank you.
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -10034,7 +10065,7 @@ GameObject:
   - component: {fileID: 1593631534}
   - component: {fileID: 1593631533}
   m_Layer: 0
-  m_Name: artic_12
+  m_Name: Y'la
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10143,10 +10174,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Y'la
+  - I have been trying to convince the Baron and his wife, Lady Lyla , how dangerous
+    it is for everyone on Ashtir that it is getting warmer.
+  - We have an old White Dragon that has been sleeping for centuries and and over
+    time the cave in the mountain in which it lives is also starting to melt away. 
+    Eventually it will melt away and we will be faced with a very angry white dragon.
+  - n- Gao
+  - That sounds very dangerous
+  - n- Y'la
+  - I am afraid it could be the ned of all of us.
+  - n- Gao
+  - What do you plan to do about it?
+  - n- Y'la
+  - Funny you should ask.  I was hoping to find some brave adventurers to kill the
+    dragon.
+  - As dragons go, this one is not extremely large, even though it is an old dragon.
+  - n- Gao
+  - Oh....  And you are kind of implying that we might be the adventurers you are
+    looking for.
+  - n- Y'la
+  - That would be nice.  So can I get your assistance?
+  - n- Gao
+  - I think we can help you.
+  - n- Y'la
+  - That would be great.  Can you meet me near the ice mountain we you are ready
+    to kill the dragon.
+  - n- Gao
+  - Sounds good.  We will be there when we are ready.
+  - That would be great.  Can you meet me near the ice mountain we you are ready
+    to kill the dragon.
   isPerson: 1
-  shouldActivateQuest: 0
-  questToMark: 
+  shouldActivateQuest: 1
+  questToMark: Mountain
   markComplete: 0
 --- !u!61 &1593631534
 BoxCollider2D:
@@ -10448,7 +10509,7 @@ GameObject:
   - component: {fileID: 1661590219}
   - component: {fileID: 1661590218}
   m_Layer: 0
-  m_Name: arctic_2
+  m_Name: Rolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10557,7 +10618,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Rolf
+  - Greetings travellers.
+  - n- Gao
+  - Greetings to you as well.
+  - n- Rolf
+  - Beware, Y'la over there is going to try to get you to try and kill a white dragon.
+  - If you are going to take her up on her offer, make sure you have been around
+    the entire island to make sure you are accostumed to battling in the severe cold. 
+    I am dure every town will have some work for you.
+  - n- Gao
+  - Thank you for the good advice.
+  - n- Rolf
+  - You are welcome.  Hope you enjoy you rtime with us here on Ashtir.
+  - n- Gao
+  - Thank you.
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
