@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3469842055278906112}
   - component: {fileID: 2426496116611131999}
   m_Layer: 0
-  m_Name: ice_golem_0
+  m_Name: Ice Golem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,12 +99,12 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Ice Golem
-  currentHp: 0
-  maxHP: 0
+  currentHp: 75
+  maxHP: 75
   currentMP: 0
   maxMP: 0
-  strength: 0
-  defence: 0
+  strength: 16
+  defence: 7
   wpnPower: 0
   armrPower: 0
   hasDied: 0
