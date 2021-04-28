@@ -99,13 +99,13 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Ghoul
-  currentHp: 20
-  maxHP: 20
+  currentHp: 22
+  maxHP: 22
   currentMP: 0
   maxMP: 0
-  strength: 6
-  defence: 13
-  wpnPower: 0
+  strength: 13
+  defence: 12
+  wpnPower: 4
   armrPower: 0
   hasDied: 0
   theSprite: {fileID: 7252321846913204975}

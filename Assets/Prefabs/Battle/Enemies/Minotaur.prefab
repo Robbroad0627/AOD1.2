@@ -99,14 +99,14 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Minotaur
-  currentHp: 58
-  maxHP: 58
+  currentHp: 76
+  maxHP: 76
   currentMP: 0
   maxMP: 0
-  strength: 10
-  defence: 13
-  wpnPower: 0
-  armrPower: 0
+  strength: 18
+  defence: 14
+  wpnPower: 10
+  armrPower: 2
   hasDied: 0
   theSprite: {fileID: 6333189931719583467}
   deadSprite: {fileID: 21300000, guid: f564bedee3cd1174998a756bdbc2385d, type: 3}

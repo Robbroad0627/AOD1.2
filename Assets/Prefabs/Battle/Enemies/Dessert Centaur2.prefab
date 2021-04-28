@@ -100,13 +100,13 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Dessert Centaur
-  currentHp: 100
-  maxHP: 100
+  currentHp: 55
+  maxHP: 55
   currentMP: 0
   maxMP: 0
-  strength: 0
-  defence: 15
-  wpnPower: 0
+  strength: 18
+  defence: 12
+  wpnPower: 8
   armrPower: 0
   hasDied: 0
   theSprite: {fileID: 0}

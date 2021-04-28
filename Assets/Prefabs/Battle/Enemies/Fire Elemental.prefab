@@ -99,14 +99,14 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Fire Elemental
-  currentHp: 80
-  maxHP: 80
+  currentHp: 102
+  maxHP: 102
   currentMP: 0
   maxMP: 0
-  strength: 30
-  defence: 19
+  strength: 10
+  defence: 13
   wpnPower: 0
-  armrPower: 0
+  armrPower: 10
   hasDied: 0
   theSprite: {fileID: 6479046176271683519}
   deadSprite: {fileID: 21300000, guid: 3127193f9eea3a1479fe6bd53dea8f82, type: 3}

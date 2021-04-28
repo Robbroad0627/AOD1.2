@@ -99,13 +99,13 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Zombie
-  currentHp: 16
-  maxHP: 16
+  currentHp: 22
+  maxHP: 22
   currentMP: 0
   maxMP: 0
-  strength: 8
-  defence: 12
-  wpnPower: 0
+  strength: 13
+  defence: 8
+  wpnPower: 3
   armrPower: 0
   hasDied: 0
   theSprite: {fileID: 1554855404897912846}

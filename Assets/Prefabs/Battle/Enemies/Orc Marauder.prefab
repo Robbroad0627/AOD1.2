@@ -99,14 +99,14 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Orc Marauder
-  currentHp: 12
-  maxHP: 12
+  currentHp: 45
+  maxHP: 45
   currentMP: 0
   maxMP: 0
-  strength: 8
-  defence: 14
-  wpnPower: 0
-  armrPower: 0
+  strength: 16
+  defence: 16
+  wpnPower: 8
+  armrPower: 5
   hasDied: 0
   theSprite: {fileID: 1628293589647664121}
   deadSprite: {fileID: 21300000, guid: 5ef057a93ed17874b9b64b911637225b, type: 3}

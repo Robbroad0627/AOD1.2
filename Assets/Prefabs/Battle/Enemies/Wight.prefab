@@ -99,14 +99,14 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Wight
-  currentHp: 70
-  maxHP: 70
+  currentHp: 45
+  maxHP: 45
   currentMP: 0
   maxMP: 0
-  strength: 4
+  strength: 15
   defence: 14
-  wpnPower: 0
-  armrPower: 0
+  wpnPower: 4
+  armrPower: 4
   hasDied: 0
   theSprite: {fileID: 5246425334518367817}
   deadSprite: {fileID: 21300000, guid: 05d1bb42282d3fb478c614648c0038c1, type: 3}

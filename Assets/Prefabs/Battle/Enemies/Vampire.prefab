@@ -99,14 +99,14 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Vampire
-  currentHp: 125
-  maxHP: 125
+  currentHp: 144
+  maxHP: 144
   currentMP: 0
   maxMP: 0
-  strength: 10
-  defence: 19
-  wpnPower: 0
-  armrPower: 0
+  strength: 18
+  defence: 16
+  wpnPower: 9
+  armrPower: 2
   hasDied: 0
   theSprite: {fileID: 8869064145477057390}
   deadSprite: {fileID: 21300000, guid: cfdfc0ddfdedd444f9cc1c9c92e49854, type: 3}

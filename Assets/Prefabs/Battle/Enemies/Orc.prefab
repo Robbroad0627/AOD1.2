@@ -99,13 +99,13 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Orc
-  currentHp: 10
-  maxHP: 10
+  currentHp: 15
+  maxHP: 15
   currentMP: 0
   maxMP: 0
-  strength: 7
+  strength: 16
   defence: 13
-  wpnPower: 0
+  wpnPower: 5
   armrPower: 0
   hasDied: 0
   theSprite: {fileID: 6607324023726372265}

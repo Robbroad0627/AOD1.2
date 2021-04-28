@@ -99,14 +99,14 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Succubus
-  currentHp: 55
-  maxHP: 55
+  currentHp: 66
+  maxHP: 66
   currentMP: 0
   maxMP: 0
-  strength: 14
-  defence: 20
-  wpnPower: 0
-  armrPower: 0
+  strength: 8
+  defence: 15
+  wpnPower: 5
+  armrPower: 2
   hasDied: 0
   theSprite: {fileID: 3924993800274031469}
   deadSprite: {fileID: 21300000, guid: 3bc6183dd339d654788dde0fcba60b7b, type: 3}

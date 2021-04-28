@@ -99,13 +99,13 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Battle Tortoise
-  currentHp: 20
-  maxHP: 20
+  currentHp: 85
+  maxHP: 85
   currentMP: 0
   maxMP: 0
-  strength: 5
-  defence: 14
-  wpnPower: 0
+  strength: 20
+  defence: 16
+  wpnPower: 8
   armrPower: 0
   hasDied: 0
   theSprite: {fileID: 7476953327996122047}

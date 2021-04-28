@@ -99,14 +99,14 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Ogre
-  currentHp: 35
-  maxHP: 35
+  currentHp: 59
+  maxHP: 59
   currentMP: 0
   maxMP: 0
-  strength: 10
-  defence: 14
-  wpnPower: 0
-  armrPower: 0
+  strength: 19
+  defence: 11
+  wpnPower: 10
+  armrPower: 2
   hasDied: 0
   theSprite: {fileID: 2443106133101223294}
   deadSprite: {fileID: 21300000, guid: c4e96ffee4427894b8a331032c6da1b9, type: 3}

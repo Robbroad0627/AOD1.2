@@ -100,14 +100,14 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Centaur
-  currentHp: 129
-  maxHP: 129
+  currentHp: 115
+  maxHP: 115
   currentMP: 0
   maxMP: 0
-  strength: 0
-  defence: 17
-  wpnPower: 0
-  armrPower: 0
+  strength: 24
+  defence: 14
+  wpnPower: 10
+  armrPower: 2
   hasDied: 0
   theSprite: {fileID: 0}
   deadSprite: {fileID: 21300000, guid: 7974ad49aacda3e48a40d2972be2ee90, type: 3}
