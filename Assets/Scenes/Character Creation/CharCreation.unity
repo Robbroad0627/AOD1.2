@@ -2568,7 +2568,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '10
+  m_Text: '0
 
 '
 --- !u!222 &884513277
@@ -2946,12 +2946,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05217375ebf92904abf9c9975e31e215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myRace: 5
-  myClass: 0
-  portrait: {fileID: 1192081677}
+  raceText: {fileID: 0}
+  classText: {fileID: 0}
   sexText: {fileID: 1954489576}
+  portrait: {fileID: 1192081677}
   portraitList: []
   myPortrait: {fileID: 0}
+  myRace: 0
+  myClass: 0
+  myHP: 0
 --- !u!114 &1062214411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2990,22 +2993,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92167e680f8b6d4c8fcb1e654e7d803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mDwarf:
-  - {fileID: 21300000, guid: f84828ccfd3768b46ab457f4d988c2da, type: 3}
-  - {fileID: 21300000, guid: c803900d81413d84db7fb7197aac6354, type: 3}
-  - {fileID: 21300000, guid: 9231d16980e2f324c86d76f8b32f9607, type: 3}
-  - {fileID: 21300000, guid: b71605ad618b84e4dbeef73d91372a8f, type: 3}
-  - {fileID: 21300000, guid: 91b8a1a39406fa14da4df61c98c41af7, type: 3}
-  - {fileID: 21300000, guid: 1b625a084a0216e42b4009fbc19397f5, type: 3}
-  - {fileID: 21300000, guid: afc067d89c071a04db194e3783e6bcbb, type: 3}
-  fDwarf:
-  - {fileID: 21300000, guid: aeeec6b968807d04598587402915b311, type: 3}
-  - {fileID: 21300000, guid: 2a5b642637c98714ebefda974ad8adca, type: 3}
-  - {fileID: 21300000, guid: c451e4c0f192ff64c873f6623953792f, type: 3}
-  - {fileID: 21300000, guid: d11ddd99df79ff843916cbd4e0124688, type: 3}
-  - {fileID: 21300000, guid: c5e6b270f4fe3144a9e25cefaf03c605, type: 3}
-  - {fileID: 21300000, guid: 96c0df79bcf602e4187e3fe59a4e26ea, type: 3}
-  - {fileID: 21300000, guid: ec3f0ea23b6813d4f880b85947f0f29b, type: 3}
   mHuman:
   - {fileID: 21300000, guid: f8d365e41a1791b4382ccfcf6c5ce67c, type: 3}
   - {fileID: 21300000, guid: 96a1cb43be417454c9e48b52d5a71f42, type: 3}
@@ -3022,6 +3009,22 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6259b9ea45f1a2545816a1a89017920c, type: 3}
   - {fileID: 21300000, guid: b0f1cc4393119e941bdbdfdf779e61c4, type: 3}
   - {fileID: 21300000, guid: db4f4140893373149a4077352a6d16de, type: 3}
+  mDwarf:
+  - {fileID: 21300000, guid: f84828ccfd3768b46ab457f4d988c2da, type: 3}
+  - {fileID: 21300000, guid: c803900d81413d84db7fb7197aac6354, type: 3}
+  - {fileID: 21300000, guid: 9231d16980e2f324c86d76f8b32f9607, type: 3}
+  - {fileID: 21300000, guid: b71605ad618b84e4dbeef73d91372a8f, type: 3}
+  - {fileID: 21300000, guid: 91b8a1a39406fa14da4df61c98c41af7, type: 3}
+  - {fileID: 21300000, guid: 1b625a084a0216e42b4009fbc19397f5, type: 3}
+  - {fileID: 21300000, guid: afc067d89c071a04db194e3783e6bcbb, type: 3}
+  fDwarf:
+  - {fileID: 21300000, guid: aeeec6b968807d04598587402915b311, type: 3}
+  - {fileID: 21300000, guid: 2a5b642637c98714ebefda974ad8adca, type: 3}
+  - {fileID: 21300000, guid: c451e4c0f192ff64c873f6623953792f, type: 3}
+  - {fileID: 21300000, guid: d11ddd99df79ff843916cbd4e0124688, type: 3}
+  - {fileID: 21300000, guid: c5e6b270f4fe3144a9e25cefaf03c605, type: 3}
+  - {fileID: 21300000, guid: 96c0df79bcf602e4187e3fe59a4e26ea, type: 3}
+  - {fileID: 21300000, guid: ec3f0ea23b6813d4f880b85947f0f29b, type: 3}
   mElf:
   - {fileID: 21300000, guid: ff4341903a7ec1d42a87fdb431685c91, type: 3}
   - {fileID: 21300000, guid: 3141013029c5b114ea123a4604c16bd7, type: 3}
@@ -3038,17 +3041,17 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4764b95d21f115c48aa9306271b95f71, type: 3}
   - {fileID: 21300000, guid: bb852b34f2955ac4395300554d3e16d8, type: 3}
   - {fileID: 21300000, guid: 2b2bd92bf9564ad4ca0fb53109705a8f, type: 3}
-  mHalfElf:
+  mHalf_Elf:
   - {fileID: 21300000, guid: ec44bed32962dda49ba9cd396540a2b0, type: 3}
   - {fileID: 21300000, guid: 583f3041dd419064bb5673aa54fae88e, type: 3}
   - {fileID: 21300000, guid: 4701cb0f1d2d68e4c8bd9ba8885a6dcb, type: 3}
   - {fileID: 21300000, guid: 7e19068ff62582b4fad5c315710cb36a, type: 3}
   - {fileID: 21300000, guid: 2fbd562da9ab57f4499b1e3706584ffa, type: 3}
-  - {fileID: 21300000, guid: ca6b78270f993b14e972b59262652118, type: 3}
-  - {fileID: 21300000, guid: fd1fb7c3ced17164c887373dcf32fc4b, type: 3}
-  fHalfElf:
+  - {fileID: 21300000, guid: 44d4f0e8f82d415448c284fa52945f5c, type: 3}
+  - {fileID: 21300000, guid: 42128f8e385e90e46916dc83aeccc11e, type: 3}
+  fHalf_Elf:
   - {fileID: 21300000, guid: 9d30df2b3b6eb05418e52b33b63491ab, type: 3}
-  - {fileID: 21300000, guid: 77886bbf68f8e5f41b82216c4e52bd1b, type: 3}
+  - {fileID: 21300000, guid: 55a305a84d342aa44a49d1c6c452fe87, type: 3}
   - {fileID: 21300000, guid: a778b4d1ad334c946b49febc6035e11a, type: 3}
   - {fileID: 21300000, guid: b728f503f6a66d94184bfb9037a06a71, type: 3}
   - {fileID: 21300000, guid: 4b0bc931e0de9a3488a19f99eefaa436, type: 3}
@@ -3070,7 +3073,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e591835b3d711ac458eefe50a982b6e2, type: 3}
   - {fileID: 21300000, guid: fff937676d58c0a44869ce424fc31756, type: 3}
   - {fileID: 21300000, guid: 01eea582391b99c4db863ed12a8ebdcf, type: 3}
-  mHalfOrc:
+  mHalf_Orc:
   - {fileID: 21300000, guid: 90a60523766375943a8e7da9a52c8506, type: 3}
   - {fileID: 21300000, guid: 5da6d2083de6f9c47b5ad63b84dcaa58, type: 3}
   - {fileID: 21300000, guid: d60489ee020d1e048b472d96380bed7d, type: 3}
@@ -3078,7 +3081,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7bcbe29bd4dcbd541a8a4c2998e2b3a8, type: 3}
   - {fileID: 21300000, guid: 2634732530648dc47954b8edb791c2f6, type: 3}
   - {fileID: 21300000, guid: 63786c1f0d155a844b94969e89efea08, type: 3}
-  fHalfOrc:
+  fHalf_Orc:
   - {fileID: 21300000, guid: a995ab1a08613d046aebd417e1249500, type: 3}
   - {fileID: 21300000, guid: f63af9c34f7ca3e4586edc532eff6212, type: 3}
   - {fileID: 21300000, guid: ec1811528edc43344813232849d8e091, type: 3}
@@ -6452,7 +6455,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10
+  m_Text: 0
 --- !u!222 &2089559879
 CanvasRenderer:
   m_ObjectHideFlags: 0

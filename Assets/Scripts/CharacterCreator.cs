@@ -7,11 +7,8 @@ using UnityEngine.UI;
 
 public class CharacterCreator : MonoBehaviour
 {
-    public CharacterAttributes.Races myRace;
-    public CharacterAttributes.Classes myClass;
-    
+    public Text raceText, classText, sexText;
     public Image portrait;
-    public Text sexText;
 
     private bool isMale = true;
 
@@ -19,14 +16,41 @@ public class CharacterCreator : MonoBehaviour
     public Sprite myPortrait;
 
     public Dictionary<CharacterAttributes.BaseAttributes, int> myAttributes;
+
     int baseValue = 10;
+
+    public CharacterAttributes.Races myRace;
+    public CharacterAttributes.Classes myClass;
+
+    private int numAttributes = 6;
+
+    public int myHP;
+    public int myMP;
+
+    CharacterAttributes.Races oldRace;
+    CharacterAttributes.Classes oldClass;
     
-    public void InitCharacterCreator()
+    
+    // Use this for initialization
+        public void InitCharacterCreator()
     {
+        myAttributes = new Dictionary<CharacterAttributes.BaseAttributes, int>();
+
+        //set inital race
         myRace = CharacterAttributes.Races.Human;
+        raceText.text = myRace.ToString();
+
+        //set intial class
         myClass = CharacterAttributes.Classes.Fighter;
+        classText.text = myClass.ToString();
+        //InitializeAttributes();
+
+
+        //set initial attribute value
+        UpdateUI();
 
         //set default portrait
+        portraitList = GetComponent<PortraitHandler>().mHuman;
         myPortrait = portraitList[0];
         //update update portrait image on UI
         portrait.sprite = myPortrait;
@@ -35,7 +59,6 @@ public class CharacterCreator : MonoBehaviour
         sexText.text= "Male";
         if (!isMale)
             sexText.text = "Female";
-
         
         myAttributes = new Dictionary<CharacterAttributes.BaseAttributes, int>();
         InitializeAttributes();
@@ -48,10 +71,11 @@ public class CharacterCreator : MonoBehaviour
             if (myAttributes.ContainsKey(thisAttrib))
                 myAttributes[thisAttrib] = baseValue;
         else
-            {
+            
                 myAttributes.Add(thisAttrib, baseValue);
-            }
+            
         }
+        
     }
 
     public void CheckRace()
@@ -63,30 +87,48 @@ public class CharacterCreator : MonoBehaviour
                 myAttributes[CharacterAttributes.BaseAttributes.Constitution] += 1;
                 myAttributes[CharacterAttributes.BaseAttributes.Strength] += 1;
                 myAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 1;
+                portraitList = GetComponent<PortraitHandler>().mDwarf;
+                if (!isMale)
+                    portraitList = GetComponent<PortraitHandler>().fDwarf;
                 break;
             case CharacterAttributes.Races.Elf:
                 myAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
                 myAttributes[CharacterAttributes.BaseAttributes.Intelligence] += 1;
                 myAttributes[CharacterAttributes.BaseAttributes.Constitution] -= 1;
+                portraitList = GetComponent<PortraitHandler>().mElf;
+                if (!isMale)
+                    portraitList = GetComponent<PortraitHandler>().fElf;
                 break;
             case CharacterAttributes.Races.Half_Elf:
                 myAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
                 myAttributes[CharacterAttributes.BaseAttributes.Wisdom] += 1;
                 myAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 1;
+                portraitList = GetComponent<PortraitHandler>().mHalf_Elf;
+                if (!isMale)
+                    portraitList = GetComponent<PortraitHandler>().fHalf_Elf;
                 break;
             case CharacterAttributes.Races.Halfling:
                 myAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
                 myAttributes[CharacterAttributes.BaseAttributes.Wisdom] += 1;
                 myAttributes[CharacterAttributes.BaseAttributes.Strength] -= 1;
+                portraitList = GetComponent<PortraitHandler>().mHalfling;
+                if (!isMale)
+                    portraitList = GetComponent<PortraitHandler>().fHalfling;
                 break;
             case CharacterAttributes.Races.Half_Orc:
                 myAttributes[CharacterAttributes.BaseAttributes.Constitution] += 1;
                 myAttributes[CharacterAttributes.BaseAttributes.Strength] += 1;
                 myAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 2;
+                portraitList = GetComponent<PortraitHandler>().mHalf_Orc;
+                if (!isMale)
+                    portraitList = GetComponent<PortraitHandler>().fHalf_Orc;
                 break;
             case CharacterAttributes.Races.Human:
                 int ran = Random.Range(0, System.Enum.GetValues(typeof(CharacterAttributes.BaseAttributes)).Length);
                 myAttributes[(CharacterAttributes.BaseAttributes)ran] += 2;
+                portraitList = GetComponent<PortraitHandler>().mHuman;
+                if (!isMale)
+                    portraitList = GetComponent<PortraitHandler>().fHuman;
                 break;
 
             default:
@@ -95,6 +137,84 @@ public class CharacterCreator : MonoBehaviour
         }
     }
 
+    public void CheckClass()
+    {
+        myHP = baseValue;
+       
+        switch (myClass)
+        {
+            case CharacterAttributes.Classes.Cleric:
+                myHP = 8 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                myMP = 15 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                break;
+
+            case CharacterAttributes.Classes.Druid:
+                myHP = 8 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                myMP = 15 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                break;
+
+            case CharacterAttributes.Classes.Fighter:
+                myHP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                break;
+
+            case CharacterAttributes.Classes.Magic_User:
+                myHP = 6 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                myMP = 20 + myAttributes[CharacterAttributes.BaseAttributes.Intelligence];
+                break;
+
+            case CharacterAttributes.Classes.Paladin:
+                myHP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                myMP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                break;
+
+            case CharacterAttributes.Classes.Ranger:
+                myHP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                myMP = 15 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                break;
+
+            case CharacterAttributes.Classes.Thief:
+                myHP = 6 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                break;
+        }
+    }
+
+    private void UpdateUI()
+    {
+        CheckRace();
+        CheckClass();
+        myPortrait = portraitList[0];
+        portrait.sprite = myPortrait;
+
+        
+       
+
+        //Update the number value for attributes
+        //Found in UI Handler
+    }
+     
+    public void NextRaceClicked()
+    {
+        bool foundIt = false;
+
+        foreach (CharacterAttributes.Races thisRace in System.Enum.GetValues(typeof(CharacterAttributes.Races)))
+        {
+            if (foundIt)
+            {
+                //reset the race
+                myRace = thisRace;
+                foundIt = false;
+                break;
+            }
+            else if (myRace == thisRace)
+                foundIt = true;
+        }
+
+        if (foundIt)
+            myRace = 0;
+
+        raceText.text = myRace.ToString();
+        UpdateUI();
+    }
     public void ChangeClass(bool goNext)
     {
         bool foundIt = false;
@@ -137,7 +257,7 @@ public class CharacterCreator : MonoBehaviour
          }
 
     }
-
+   
     public void ChangeRace(bool goNext)
     {
         bool foundIt = false;
@@ -160,6 +280,7 @@ public class CharacterCreator : MonoBehaviour
             if (foundIt)
             {
                 myRace = 0;
+
             }
         }
         else
@@ -180,6 +301,9 @@ public class CharacterCreator : MonoBehaviour
         }
         CheckRace();
     }
+
+
+
     public void NextPortraitClicked()
     {
     int maxIndex = portraitList.Count;
@@ -200,7 +324,6 @@ public class CharacterCreator : MonoBehaviour
         int maxIndex = portraitList.Count;
         int currentIndex = portraitList.IndexOf(myPortrait);
 
-
         currentIndex--;
         if (currentIndex == -1)
         {
@@ -213,14 +336,11 @@ public class CharacterCreator : MonoBehaviour
     public void SexButtonClicked()
     {
         if (isMale)
-        {
-            isMale = false;
-            sexText.text = "Female";
-        }
-        else
-        {
-            isMale = true;
-            sexText.text = "Male";
-        }
+           sexText.text = "Female";
+      else
+           sexText.text = "Male";
+        isMale = !isMale;
+
+        UpdateUI();
     }
 }

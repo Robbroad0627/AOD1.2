@@ -124,6 +124,165 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &258268835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 258268838}
+  - component: {fileID: 258268837}
+  - component: {fileID: 258268836}
+  m_Layer: 0
+  m_Name: Zone5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &258268836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258268835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 250
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+    - Potion of Vitality
+  - enemies:
+    - Orc Marauder
+    - 250
+    rewardXP: 125
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+    - Potion of Healing
+    - Potion of Healing
+  - enemies:
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    rewardXP: 300
+    rewardItems:
+    - +1 Long Sword
+  - enemies:
+    - 'Orc '
+    - 'Orc '
+    rewardXP: 200
+    rewardItems:
+    - Throwing Hammer
+    - Throwing Hammer
+    - Potion of Vitality
+  - enemies:
+    - Ghoul
+    - Ghoul
+    rewardXP: 400
+    rewardItems:
+    - Potion of Vitality
+    - Mana Potion
+  - enemies:
+    - Mountain Cyclops
+    - Mountain Cyclops
+    rewardXP: 380
+    rewardItems:
+    - Greater Potion of Healing
+    - Greater Potion of Healing
+    - Greater Potion of Healing
+  - enemies:
+    - Specter
+    - Specter
+    rewardXP: 400
+    rewardItems:
+    - Ring of Protection +1
+    - Mana Potion
+  - enemies:
+    - Barbarian Skeleton
+    - Barbarian Skeleton
+    - Barbarian Skeleton
+    - Barbarian Skeleton
+    rewardXP: 300
+    rewardItems:
+    - Potion of Vitality
+    - +1 Long Sword
+  - enemies:
+    - Orc Marauder
+    - Goblin Militant
+    - Goblin Militant
+    - Goblin Militant
+    rewardXP: 350
+    rewardItems:
+    - +1 Long Sword
+    - Throwing Axe
+  - enemies:
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 500
+    rewardItems:
+    - Gold Band
+    - Throwing Axe
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &258268837
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258268835}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -5.7649746, y: 6.7763767}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.625454, y: 16.394894}
+  m_EdgeRadius: 0
+--- !u!4 &258268838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 258268835}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 89.2, y: 9.8, z: -0.2890625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &295425927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -198,7 +357,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &330448998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,7 +472,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -5.7649746, y: 4.0477734}
+  m_Offset: {x: -5.7649746, y: 6.7763767}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -324,7 +483,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.625454, y: 21.8521}
+  m_Size: {x: 20.625454, y: 16.394894}
   m_EdgeRadius: 0
 --- !u!4 &330449000
 Transform:
@@ -334,7 +493,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330448997}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.7, y: -15.257557, z: -0.2890625}
+  m_LocalPosition: {x: 89.2, y: -4.6, z: -0.2890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -494,7 +653,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &852162328
 PrefabInstance:
@@ -570,7 +729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1018156683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -669,7 +828,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 7.7275314, y: -9.944763}
+  m_Offset: {x: -3.7173023, y: -19.722267}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -680,7 +839,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 20.380154, y: 29.928947}
+  m_Size: {x: 43.269825, y: 15.527946}
   m_EdgeRadius: 0
 --- !u!4 &1018156685
 Transform:
@@ -690,11 +849,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018156682}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.671312, y: -4.954323, z: -0.2890625}
+  m_LocalPosition: {x: 46.3, y: 35.5, z: -0.2890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1082096842
 PrefabInstance:
@@ -21541,7 +21700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1309207704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21653,7 +21812,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.5331001, y: 3.066492}
+  m_Offset: {x: 4.83365, y: -4.209791}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -21664,7 +21823,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 25.409119, y: 26.758434}
+  m_Size: {x: 12.675618, y: 12.205868}
   m_EdgeRadius: 0
 --- !u!4 &1309207706
 Transform:
@@ -21674,11 +21833,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309207703}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.8, y: -19.0602, z: -0.2890625}
+  m_LocalPosition: {x: 8.9, y: 13.4, z: -0.2890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1336130410
 GameObject:
@@ -50066,7 +50225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1392168074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50161,7 +50320,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -29.438137, y: 6.807596}
+  m_Offset: {x: -26.103155, y: 6.807596}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -50172,7 +50331,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 21.606794, y: 26.8811}
+  m_Size: {x: 28.27676, y: 26.8811}
   m_EdgeRadius: 0
 --- !u!4 &1392168076
 Transform:
@@ -50182,7 +50341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392168073}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.126255, y: 3.6319947, z: -0.2890625}
+  m_LocalPosition: {x: 88, y: 1.1, z: -0.2890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -50636,6 +50795,162 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1422728526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1422728529}
+  - component: {fileID: 1422728528}
+  - component: {fileID: 1422728527}
+  m_Layer: 0
+  m_Name: Zone8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1422728527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422728526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Minotaur
+    rewardXP: 700
+    rewardItems:
+    - Gold Band
+    - Gold Band
+    - Gold Band
+  - enemies:
+    - Death Merchant
+    - Death Merchant
+    - Death Merchant
+    rewardXP: 750
+    rewardItems:
+    - Spirit Rune
+  - enemies:
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    rewardXP: 600
+    rewardItems:
+    - +1 Long Sword
+  - enemies:
+    - Ogre
+    - Ogre
+    rewardXP: 900
+    rewardItems:
+    - Amulet of Protection +2
+  - enemies:
+    - Ghoul
+    - Ghoul
+    - Ghoul
+    rewardXP: 600
+    rewardItems:
+    - Potion of Vitality
+    - Potion of Vitality
+    - Mana Potion
+    - Mana Potion
+  - enemies:
+    - Succubus
+    rewardXP: 1000
+    rewardItems:
+    - Greater Potion of Healing
+    - Greater Potion of Healing
+    - Greater Potion of Healing
+  - enemies:
+    - Specter
+    rewardXP: 200
+    rewardItems:
+    - Ring of Protection +1
+  - enemies:
+    - Orc Chieftan
+    rewardXP: 1100
+    rewardItems:
+    - Chainmail
+    - Chailmail Leggings
+  - enemies:
+    - Wight
+    rewardXP: 700
+    rewardItems:
+    - Chainmail Helmet
+    - Chainmail Gauntlets
+  - enemies:
+    - Earth Elemental
+    rewardXP: 1000
+    rewardItems:
+    - Earth Rune
+  - enemies:
+    - Fire Elemental
+    rewardXP: 1400
+    rewardItems:
+    - Fire Rune
+  - enemies:
+    - Water Elemental
+    rewardXP: 800
+    rewardItems:
+    - Water Rune
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1422728528
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422728526}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 5.515799, y: -5.1193256}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 14.039916, y: 10.386799}
+  m_EdgeRadius: 0
+--- !u!4 &1422728529
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422728526}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8, y: 24.9, z: -0.2890625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1870040569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50677,7 +50992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -50742,7 +51057,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1919128151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50856,7 +51171,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -8.954112, y: 7.359561}
+  m_Offset: {x: -7.438241, y: 12.816764}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -50867,7 +51182,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.908224, y: 24.795897}
+  m_Size: {x: 21.939966, y: 13.881491}
   m_EdgeRadius: 0
 --- !u!4 &1919128153
 Transform:
@@ -50877,7 +51192,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919128150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 38.126255, y: 3.6319947, z: -0.2890625}
+  m_LocalPosition: {x: 45.7, y: -11.9, z: -0.2890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -50991,7 +51306,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2011326641
 BoxCollider2D:
@@ -51062,7 +51377,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2093805000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51166,7 +51481,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 21.465363, y: 12.02061}
+  m_Offset: {x: 21.465363, y: 3.9864073}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -51177,7 +51492,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 26.022438, y: 25.04122}
+  m_Size: {x: 26.022438, y: 8.972813}
   m_EdgeRadius: 0
 --- !u!4 &2093805002
 Transform:
@@ -51187,7 +51502,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093804999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.785145, y: -0.9063399, z: -0.2890625}
+  m_LocalPosition: {x: -4.3, y: -5.8, z: -0.2890625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

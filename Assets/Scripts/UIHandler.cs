@@ -44,6 +44,7 @@ public class UIHandler : MonoBehaviour
         wisValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Wisdom].ToString();
         chaValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Charisma].ToString();
 
+       
     }
 
     public void NextRaceClicked()
