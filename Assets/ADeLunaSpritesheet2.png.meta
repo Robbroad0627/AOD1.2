@@ -1,0 +1,622 @@
+fileFormatVersion: 2
+guid: eb5aeaa03df1c0241a6d8f4f583a5315
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5597315909041049978
+    second: ADeLunaSpritesheet2_0
+  - first:
+      213: -8392527826750273593
+    second: ADeLunaSpritesheet2_1
+  - first:
+      213: 1168260791714626161
+    second: ADeLunaSpritesheet2_2
+  - first:
+      213: -894258729647320801
+    second: ADeLunaSpritesheet2_3
+  - first:
+      213: 3237661275604395313
+    second: ADeLunaSpritesheet2_4
+  - first:
+      213: -1671807814426863016
+    second: ADeLunaSpritesheet2_5
+  - first:
+      213: -4795827537667137800
+    second: ADeLunaSpritesheet2_6
+  - first:
+      213: -5896368791111099977
+    second: ADeLunaSpritesheet2_7
+  - first:
+      213: 4154002887601887757
+    second: ADeLunaSpritesheet2_8
+  - first:
+      213: -6991327195901934426
+    second: ADeLunaSpritesheet2_9
+  - first:
+      213: 5651821274065550734
+    second: ADeLunaSpritesheet2_10
+  - first:
+      213: 6833974640141746266
+    second: ADeLunaSpritesheet2_11
+  - first:
+      213: -6014544218087935898
+    second: ADeLunaSpritesheet2_12
+  - first:
+      213: -4642371854741531891
+    second: ADeLunaSpritesheet2_13
+  - first:
+      213: 449768420550384617
+    second: ADeLunaSpritesheet2_14
+  - first:
+      213: 8312926130019301294
+    second: ADeLunaSpritesheet2_15
+  - first:
+      213: -2817838509265683689
+    second: ADeLunaSpritesheet2_16
+  - first:
+      213: -2756997562315677066
+    second: ADeLunaSpritesheet2_17
+  - first:
+      213: 7317318225619684172
+    second: ADeLunaSpritesheet2_18
+  - first:
+      213: 4391869965861133260
+    second: ADeLunaSpritesheet2_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2837
+        width: 431
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e27f926d65252b0800000000000000
+      internalID: -5597315909041049978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_1
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 2997
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c708f63860c78b80800000000000000
+      internalID: -8392527826750273593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_2
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2837
+        width: 281
+        height: 844
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17aba27100f763010800000000000000
+      internalID: 1168260791714626161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_3
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 2837
+        width: 430
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1154126c64f693f0800000000000000
+      internalID: -894258729647320801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_4
+      rect:
+        serializedVersion: 2
+        x: 1390
+        y: 2997
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135207bb6cb7eec20800000000000000
+      internalID: 3237661275604395313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_5
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 2837
+        width: 281
+        height: 846
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a5d5086ab8cc8e0800000000000000
+      internalID: -1671807814426863016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_6
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 1894
+        width: 192
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe505d834cc17db0800000000000000
+      internalID: -4795827537667137800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_7
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 2066
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b99f1523d3eb2ea0800000000000000
+      internalID: -5896368791111099977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_8
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1896
+        width: 377
+        height: 831
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a157f0e9bf5a930800000000000000
+      internalID: 4154002887601887757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_9
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1894
+        width: 192
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4ccbbf4f0d9fe90800000000000000
+      internalID: -6991327195901934426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_10
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 2066
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8d3cae018d4f6e40800000000000000
+      internalID: 5651821274065550734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_11
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 1899
+        width: 365
+        height: 828
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a504dad2ab727de50800000000000000
+      internalID: 6833974640141746266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_12
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 952
+        width: 194
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6603dfa66eb088ca0800000000000000
+      internalID: -6014544218087935898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_13
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 950
+        width: 376
+        height: 831
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d031cdaf46bf29fb0800000000000000
+      internalID: -4642371854741531891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_14
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 958
+        width: 194
+        height: 854
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb181adef5ed3600800000000000000
+      internalID: 449768420550384617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_15
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 954
+        width: 365
+        height: 828
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7fcdf75427d5370800000000000000
+      internalID: 8312926130019301294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_16
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 19
+        width: 432
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b7dcc2ec605e8d0800000000000000
+      internalID: -2817838509265683689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_17
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 19
+        width: 296
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6726e83035d2db9d0800000000000000
+      internalID: -2756997562315677066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_18
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 18
+        width: 432
+        height: 847
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b8d8a48265c8560800000000000000
+      internalID: 7317318225619684172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ADeLunaSpritesheet2_19
+      rect:
+        serializedVersion: 2
+        x: 1503
+        y: 19
+        width: 296
+        height: 833
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb1cdef67e03fc30800000000000000
+      internalID: 4391869965861133260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
