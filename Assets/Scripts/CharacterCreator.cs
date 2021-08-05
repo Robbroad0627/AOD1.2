@@ -63,6 +63,7 @@ public class CharacterCreator : MonoBehaviour
         myAttributes = new Dictionary<CharacterAttributes.BaseAttributes, int>();
         InitializeAttributes();
         CheckRace();
+        
     }
     void InitializeAttributes()
     {
@@ -255,6 +256,7 @@ public class CharacterCreator : MonoBehaviour
                 lastClass = thisClass;
             }
          }
+        UpdateUI();
 
     }
    
@@ -300,6 +302,7 @@ public class CharacterCreator : MonoBehaviour
             }
         }
         CheckRace();
+        UpdateUI();
     }
 
 
@@ -343,4 +346,6 @@ public class CharacterCreator : MonoBehaviour
 
         UpdateUI();
     }
+
+
 }
