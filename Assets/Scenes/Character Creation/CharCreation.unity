@@ -733,8 +733,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1062214410}
-        m_TargetAssemblyTypeName: CharacterCreator, Assembly-CSharp
+      - m_Target: {fileID: 1062214409}
+        m_TargetAssemblyTypeName: UIHandler, Assembly-CSharp
         m_MethodName: SexButtonClicked
         m_Mode: 1
         m_Arguments:
@@ -1994,7 +1994,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -197, y: 84.827}
+  m_AnchoredPosition: {x: -207, y: -7}
   m_SizeDelta: {x: 344.34, y: 183.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &697116137
@@ -2950,6 +2950,7 @@ MonoBehaviour:
   classText: {fileID: 0}
   sexText: {fileID: 1954489576}
   portrait: {fileID: 1192081677}
+  isMale: 1
   portraitList: []
   myPortrait: {fileID: 0}
   myRace: 0
@@ -3725,7 +3726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 519, y: -75.46997}
+  m_AnchoredPosition: {x: 19, y: -95.509}
   m_SizeDelta: {x: 620.8, y: 141.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1268234315

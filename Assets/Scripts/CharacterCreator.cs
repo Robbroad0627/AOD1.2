@@ -10,7 +10,7 @@ public class CharacterCreator : MonoBehaviour
     public Text raceText, classText, sexText;
     public Image portrait;
 
-    private bool isMale = true;
+    public bool isMale = true;
 
     public List<Sprite> portraitList;
     public Sprite myPortrait;
@@ -30,43 +30,9 @@ public class CharacterCreator : MonoBehaviour
     CharacterAttributes.Races oldRace;
     CharacterAttributes.Classes oldClass;
     
-    
-    // Use this for initialization
-        public void InitCharacterCreator()
+   void InitializeAttributes()
     {
         myAttributes = new Dictionary<CharacterAttributes.BaseAttributes, int>();
-
-        //set inital race
-        myRace = CharacterAttributes.Races.Human;
-        raceText.text = myRace.ToString();
-
-        //set intial class
-        myClass = CharacterAttributes.Classes.Fighter;
-        classText.text = myClass.ToString();
-        //InitializeAttributes();
-
-
-        //set initial attribute value
-        UpdateUI();
-
-        //set default portrait
-        portraitList = GetComponent<PortraitHandler>().mHuman;
-        myPortrait = portraitList[0];
-        //update update portrait image on UI
-        portrait.sprite = myPortrait;
-
-        //update default gender
-        sexText.text= "Male";
-        if (!isMale)
-            sexText.text = "Female";
-        
-        myAttributes = new Dictionary<CharacterAttributes.BaseAttributes, int>();
-        InitializeAttributes();
-        CheckRace();
-        
-    }
-    void InitializeAttributes()
-    {
         foreach (CharacterAttributes.BaseAttributes thisAttrib in System.Enum.GetValues(typeof(CharacterAttributes.BaseAttributes)))
         {
             if (myAttributes.ContainsKey(thisAttrib))
@@ -78,6 +44,31 @@ public class CharacterCreator : MonoBehaviour
         }
         
     }
+
+    
+    // Use this for initialization
+    public void InitCharacterCreator()
+    {
+
+        //set initial attribute value
+        InitializeAttributes();
+
+        //set inital race
+        myRace = CharacterAttributes.Races.Human;
+       
+        //set intial class
+        myClass = CharacterAttributes.Classes.Fighter;
+
+
+        //set default portrait
+        
+        portrait.sprite = GetComponent<PortraitHandler>().mHuman[0];
+
+        
+        
+        
+    }
+ 
 
     public void CheckRace()
     {
@@ -136,12 +127,15 @@ public class CharacterCreator : MonoBehaviour
                 Debug.Log("ERROR - Race Not Found");
                 break;
         }
+        myPortrait = portraitList[0];
+        portrait.sprite = myPortrait;
+
     }
 
     public void CheckClass()
     {
         myHP = baseValue;
-       
+        myMP = 0;
         switch (myClass)
         {
             case CharacterAttributes.Classes.Cleric:
@@ -179,19 +173,6 @@ public class CharacterCreator : MonoBehaviour
         }
     }
 
-    private void UpdateUI()
-    {
-        CheckRace();
-        CheckClass();
-        myPortrait = portraitList[0];
-        portrait.sprite = myPortrait;
-
-        
-       
-
-        //Update the number value for attributes
-        //Found in UI Handler
-    }
      
     public void NextRaceClicked()
     {
@@ -214,7 +195,8 @@ public class CharacterCreator : MonoBehaviour
             myRace = 0;
 
         raceText.text = myRace.ToString();
-        UpdateUI();
+        CheckRace();
+        
     }
     public void ChangeClass(bool goNext)
     {
@@ -256,7 +238,8 @@ public class CharacterCreator : MonoBehaviour
                 lastClass = thisClass;
             }
          }
-        UpdateUI();
+
+        CheckClass();
 
     }
    
@@ -302,7 +285,6 @@ public class CharacterCreator : MonoBehaviour
             }
         }
         CheckRace();
-        UpdateUI();
     }
 
 
@@ -334,17 +316,6 @@ public class CharacterCreator : MonoBehaviour
         }
         myPortrait = portraitList[currentIndex];
         portrait.sprite = myPortrait;
-    }
-
-    public void SexButtonClicked()
-    {
-        if (isMale)
-           sexText.text = "Female";
-      else
-           sexText.text = "Male";
-        isMale = !isMale;
-
-        UpdateUI();
     }
 
 

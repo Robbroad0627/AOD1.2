@@ -23,6 +23,7 @@ public class UIHandler : MonoBehaviour
     public Text sexText;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,13 @@ public class UIHandler : MonoBehaviour
     {
         raceText.text = myCharCreator.myRace.ToString();
         classText.text = myCharCreator.myClass.ToString();
+        if (myCharCreator.isMale)
+            sexText.text = "Male";
+        else
+            sexText.text = "Female";
+
+    
+       
 
         strValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Strength].ToString();
         dexValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Dexterity].ToString();
@@ -43,8 +51,10 @@ public class UIHandler : MonoBehaviour
         intValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Intelligence].ToString();
         wisValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Wisdom].ToString();
         chaValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Charisma].ToString();
+        hpValue.text = myCharCreator.myHP.ToString();
+        mpValue.text = myCharCreator.myMP.ToString();
 
-       
+
     }
 
     public void NextRaceClicked()
@@ -70,4 +80,14 @@ public class UIHandler : MonoBehaviour
         myCharCreator.ChangeClass(false);
         UpdateUI();
     }
+
+    public void SexButtonClicked()
+    {
+
+        myCharCreator.isMale = !myCharCreator.isMale;
+        myCharCreator.CheckRace();
+        UpdateUI();
+    }
+
+
 }
