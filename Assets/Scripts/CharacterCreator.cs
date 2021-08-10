@@ -57,13 +57,11 @@ public class CharacterCreator : MonoBehaviour
         myRace = CharacterAttributes.Races.Human;
        
         //set intial class
-        myClass = CharacterAttributes.Classes.Fighter;
+        myClass = CharacterAttributes.Classes.Cleric;
 
 
-        //set default portrait
-        
-        portrait.sprite = GetComponent<PortraitHandler>().mHuman[0];
-
+        CheckRace();
+        CheckClass();
         
         
         
@@ -141,34 +139,48 @@ public class CharacterCreator : MonoBehaviour
             case CharacterAttributes.Classes.Cleric:
                 myHP = 8 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
                 myMP = 15 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                myPortrait = portraitList[0];
+                portrait.sprite = myPortrait;
                 break;
 
             case CharacterAttributes.Classes.Druid:
                 myHP = 8 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
                 myMP = 15 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                myPortrait = portraitList[1];
+                portrait.sprite = myPortrait;
                 break;
 
             case CharacterAttributes.Classes.Fighter:
                 myHP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                myPortrait = portraitList[2];
+                portrait.sprite = myPortrait;
                 break;
 
             case CharacterAttributes.Classes.Magic_User:
                 myHP = 6 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
                 myMP = 20 + myAttributes[CharacterAttributes.BaseAttributes.Intelligence];
+                myPortrait = portraitList[3];
+                portrait.sprite = myPortrait;
                 break;
 
             case CharacterAttributes.Classes.Paladin:
                 myHP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
                 myMP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                myPortrait = portraitList[4];
+                portrait.sprite = myPortrait;
                 break;
 
             case CharacterAttributes.Classes.Ranger:
                 myHP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
                 myMP = 15 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                myPortrait = portraitList[5];
+                portrait.sprite = myPortrait;
                 break;
 
             case CharacterAttributes.Classes.Thief:
                 myHP = 6 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                myPortrait = portraitList[6];
+                portrait.sprite = myPortrait;
                 break;
         }
     }
