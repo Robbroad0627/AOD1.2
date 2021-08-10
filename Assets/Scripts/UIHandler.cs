@@ -37,6 +37,8 @@ public class UIHandler : MonoBehaviour
     {
         raceText.text = myCharCreator.myRace.ToString();
         classText.text = myCharCreator.myClass.ToString();
+        myCharCreator.CheckRace();
+        myCharCreator.CheckClass();
         if (myCharCreator.isMale)
             sexText.text = "Male";
         else
