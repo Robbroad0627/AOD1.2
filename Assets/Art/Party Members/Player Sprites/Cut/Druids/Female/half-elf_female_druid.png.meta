@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 7f46dbe961ac8574a9eaec0336d9682c
+guid: a23bfce5a97749d45a83ee75e1441946
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6388844774845605346
-    second: female_half_elf_druid_0
+      213: 478856393154182472
+    second: half-elf_female_druid_0
   - first:
-      213: 2736577344681451478
-    second: female_half_elf_druid_1
+      213: -2366261269637709449
+    second: half-elf_female_druid_1
   - first:
-      213: 1170953255580251978
-    second: female_half_elf_druid_2
+      213: -8213106613530964363
+    second: half-elf_female_druid_2
   - first:
-      213: -6634377182480278028
-    second: female_half_elf_druid_3
+      213: -1014476624075386686
+    second: half-elf_female_druid_3
   - first:
-      213: 3763054230906275353
-    second: female_half_elf_druid_4
+      213: 4660388621305867195
+    second: half-elf_female_druid_4
   - first:
-      213: -2495778384782260338
-    second: female_half_elf_druid_5
+      213: -5713947498325965416
+    second: half-elf_female_druid_5
   - first:
-      213: 8924471235523105085
-    second: female_half_elf_druid_6
+      213: 9166161806014934648
+    second: half-elf_female_druid_6
   - first:
-      213: -5628440799296456092
-    second: female_half_elf_druid_7
+      213: 8331214459599713152
+    second: half-elf_female_druid_7
   - first:
-      213: 1486609896249687657
-    second: female_half_elf_druid_8
+      213: 5861390898730816033
+    second: half-elf_female_druid_8
   - first:
-      213: 232498324679550288
-    second: female_half_elf_druid_9
+      213: 7168061295173707786
+    second: half-elf_female_druid_9
   - first:
-      213: -1160899135635017972
-    second: female_half_elf_druid_10
+      213: -8340383824738833800
+    second: half-elf_female_druid_10
   - first:
-      213: -300153587804021674
-    second: female_half_elf_druid_11
+      213: 475601085475789532
+    second: half-elf_female_druid_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -161,12 +161,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: female_half_elf_druid_0
+      name: half-elf_female_druid_0
       rect:
         serializedVersion: 2
-        x: 319
+        x: 128
         y: 4930
-        width: 753
+        width: 755
         height: 1210
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -175,19 +175,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e568c1297cb9a850800000000000000
-      internalID: 6388844774845605346
+      spriteID: 84d316c3a5d35a600800000000000000
+      internalID: 478856393154182472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_half_elf_druid_1
+      name: half-elf_female_druid_1
       rect:
         serializedVersion: 2
-        x: 1444
+        x: 1255
         y: 4930
-        width: 827
+        width: 826
         height: 1210
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -196,19 +196,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6df9e1298964af520800000000000000
-      internalID: 2736577344681451478
+      spriteID: 771ca7989e9592fd0800000000000000
+      internalID: -2366261269637709449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_half_elf_druid_2
+      name: half-elf_female_druid_2
       rect:
         serializedVersion: 2
-        x: 2618
+        x: 2427
         y: 4930
-        width: 866
+        width: 867
         height: 1210
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -217,17 +217,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a47b27f28cf004010800000000000000
-      internalID: 1170953255580251978
+      spriteID: 57e4316cc0f250e80800000000000000
+      internalID: -8213106613530964363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_half_elf_druid_3
+      name: half-elf_female_druid_3
       rect:
         serializedVersion: 2
-        x: 3757
+        x: 3567
         y: 4939
         width: 749
         height: 1184
@@ -238,19 +238,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fd5e4c5a15fde3a0800000000000000
-      internalID: -6634377182480278028
+      spriteID: 2c09c05a2eadbe1f0800000000000000
+      internalID: -1014476624075386686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_half_elf_druid_4
+      name: half-elf_female_druid_4
       rect:
         serializedVersion: 2
         x: 0
         y: 3201
-        width: 1135
+        width: 946
         height: 1310
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -259,19 +259,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 91603bfa2ed093430800000000000000
-      internalID: 3763054230906275353
+      spriteID: bbb653062c60da040800000000000000
+      internalID: 4660388621305867195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_half_elf_druid_5
+      name: half-elf_female_druid_5
       rect:
         serializedVersion: 2
-        x: 1731
+        x: 1543
         y: 3206
-        width: 1649
+        width: 932
         height: 1173
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -280,17 +280,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8784f048c63d5dd0800000000000000
-      internalID: -2495778384782260338
+      spriteID: 8958c09260bf3b0b0800000000000000
+      internalID: -5713947498325965416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_half_elf_druid_6
+      name: half-elf_female_druid_6
       rect:
         serializedVersion: 2
-        x: 3698
+        x: 3508
         y: 3197
         width: 1029
         height: 1143
@@ -301,19 +301,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d31db890e471adb70800000000000000
-      internalID: 8924471235523105085
+      spriteID: 87ee541299fb43f70800000000000000
+      internalID: 9166161806014934648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_half_elf_druid_7
+      name: half-elf_female_druid_7
       rect:
         serializedVersion: 2
-        x: 3257
+        x: 3066
         y: 2019
-        width: 1186
+        width: 1187
         height: 435
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -322,19 +322,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46a7e9ee9e2c3e1b0800000000000000
-      internalID: -5628440799296456092
+      spriteID: 083f90c096b6e9370800000000000000
+      internalID: 8331214459599713152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_half_elf_druid_8
+      name: half-elf_female_druid_8
       rect:
         serializedVersion: 2
-        x: 187
+        x: 0
         y: 0
-        width: 753
+        width: 751
         height: 1183
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -343,19 +343,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96efa8103df71a410800000000000000
-      internalID: 1486609896249687657
+      spriteID: 122de88a7f7d75150800000000000000
+      internalID: 5861390898730816033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_half_elf_druid_9
+      name: half-elf_female_druid_9
       rect:
         serializedVersion: 2
-        x: 1312
+        x: 1123
         y: 0
-        width: 827
+        width: 825
         height: 1210
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -364,19 +364,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 055e5659efff93300800000000000000
-      internalID: 232498324679550288
+      spriteID: a082e0b15c11a7360800000000000000
+      internalID: 7168061295173707786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_half_elf_druid_10
+      name: half-elf_female_druid_10
       rect:
         serializedVersion: 2
-        x: 2486
+        x: 2296
         y: 0
-        width: 867
+        width: 866
         height: 1132
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -385,19 +385,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0faa680368a3efe0800000000000000
-      internalID: -1160899135635017972
+      spriteID: 87a2704c911014c80800000000000000
+      internalID: -8340383824738833800
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: female_half_elf_druid_11
+      name: half-elf_female_druid_11
       rect:
         serializedVersion: 2
-        x: 3625
+        x: 3435
         y: 5
-        width: 750
+        width: 1102
         height: 1184
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -406,8 +406,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65cd1e4f6e3a5dbf0800000000000000
-      internalID: -300153587804021674
+      spriteID: cda139adaaca99600800000000000000
+      internalID: 475601085475789532
       vertices: []
       indices: 
       edges: []

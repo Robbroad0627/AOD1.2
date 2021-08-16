@@ -41,12 +41,6 @@ TextureImporter:
   - first:
       213: 8271212881434134227
     second: human_male_druid_12
-  - first:
-      213: -6588033534840782428
-    second: human_male_druid_13
-  - first:
-      213: -2367145693222665189
-    second: human_male_druid_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -257,9 +251,9 @@ TextureImporter:
       name: human_male_druid_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 390
         y: 3205
-        width: 1378
+        width: 988
         height: 1289
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -275,13 +269,34 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: human_male_druid_5
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 3211
+        width: 1107
+        height: 1159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f00cea07e639370800000000000000
+      internalID: 8328121566185393929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: human_male_druid_6
       rect:
         serializedVersion: 2
-        x: 1765
-        y: 3075
-        width: 1054
-        height: 1295
+        x: 3463
+        y: 3187
+        width: 1105
+        height: 1161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,10 +314,10 @@ TextureImporter:
       name: human_male_druid_7
       rect:
         serializedVersion: 2
-        x: 3463
-        y: 3187
-        width: 1105
-        height: 1161
+        x: 2460
+        y: 1681
+        width: 1162
+        height: 733
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,10 +335,10 @@ TextureImporter:
       name: human_male_druid_9
       rect:
         serializedVersion: 2
-        x: 2460
-        y: 1710
-        width: 1162
-        height: 704
+        x: 0
+        y: 0
+        width: 829
+        height: 1175
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,13 +353,34 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
+      name: human_male_druid_10
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 8
+        width: 892
+        height: 1097
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e948862624a9430800000000000000
+      internalID: 3790415026813443640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
       name: human_male_druid_11
       rect:
         serializedVersion: 2
-        x: 0
+        x: 2408
         y: 0
-        width: 829
-        height: 1175
+        width: 892
+        height: 1096
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,48 +398,6 @@ TextureImporter:
       name: human_male_druid_12
       rect:
         serializedVersion: 2
-        x: 1216
-        y: 8
-        width: 892
-        height: 1097
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d6448bfa4049c270800000000000000
-      internalID: 8271212881434134227
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: human_male_druid_13
-      rect:
-        serializedVersion: 2
-        x: 2408
-        y: 0
-        width: 892
-        height: 1096
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a1447ba76a9294a0800000000000000
-      internalID: -6588033534840782428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: human_male_druid_14
-      rect:
-        serializedVersion: 2
         x: 3555
         y: 0
         width: 1013
@@ -415,8 +409,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b140edf9885362fd0800000000000000
-      internalID: -2367145693222665189
+      spriteID: 3d6448bfa4049c270800000000000000
+      internalID: 8271212881434134227
       vertices: []
       indices: 
       edges: []
