@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8428545583313953304}
   - component: {fileID: 8428545583313953305}
   - component: {fileID: 8428545583313953310}
+  - component: {fileID: -6140709612740221924}
   m_Layer: 0
   m_Name: Basil
   m_TagString: Untagged
@@ -114,3 +115,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -1508868414418210242, guid: 19f582729296cdc4db0756811489e9da,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-6140709612740221924
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8428545583313953311}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 11a34824692945b4db0a5bd59ce206c1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
