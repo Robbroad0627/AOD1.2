@@ -6758,8 +6758,8 @@ Transform:
   m_LocalPosition: {x: 26.26, y: -11.63, z: 710.59656}
   m_LocalScale: {x: 0.28, y: 0.2, z: 1}
   m_Children: []
-  m_Father: {fileID: 1751758391}
-  m_RootOrder: 4
+  m_Father: {fileID: 1476815807}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!61 &562785090
 BoxCollider2D:
@@ -6774,7 +6774,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014877796, y: 0.09542787}
+  m_Offset: {x: -0.35204887, y: -2.2649012}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6785,7 +6785,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9544053, y: 4.503314}
+  m_Size: {x: 5.5555544, y: 15.428253}
   m_EdgeRadius: 0
 --- !u!61 &562785091
 BoxCollider2D:
@@ -6800,7 +6800,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06695354, y: -0.04771316}
+  m_Offset: {x: -0.17389256, y: -2.3406086}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6811,7 +6811,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7492526, y: 3.294574}
+  m_Size: {x: 3.1943455, y: 10.847622}
   m_EdgeRadius: 0
 --- !u!114 &562785092
 MonoBehaviour:
@@ -27039,7 +27039,7 @@ Transform:
   m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children: []
   m_Father: {fileID: 1751758391}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1475608338
 MonoBehaviour:
@@ -27176,6 +27176,100 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1476815806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476815807}
+  - component: {fileID: 1476815808}
+  m_Layer: 0
+  m_Name: QuestActivation (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1476815807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476815806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 562785089}
+  m_Father: {fileID: 1751758391}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1476815808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476815806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 562785088}
+  questToCheck: Kill the slime
+  activeIfComplete: 1
+--- !u!1 &1496075137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1496075138}
+  - component: {fileID: 1496075139}
+  m_Layer: 0
+  m_Name: QuestActivation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1496075138
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496075137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1804993896}
+  m_Father: {fileID: 1751758391}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1496075139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496075137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1804993893}
+  questToCheck: Kill the slime
+  activeIfComplete: 0
 --- !u!1001 &1579085070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27790,9 +27884,9 @@ Transform:
   - {fileID: 207698528}
   - {fileID: 1711327024}
   - {fileID: 146857548}
-  - {fileID: 1804993896}
-  - {fileID: 562785089}
   - {fileID: 1475608337}
+  - {fileID: 1496075138}
+  - {fileID: 1476815807}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27910,11 +28004,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804993893}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 26.26, y: -11.630001, z: 710.59656}
-  m_LocalScale: {x: 0.28, y: 0.2, z: 1}
+  m_LocalPosition: {x: 26.26, y: -11.711, z: 710.59656}
+  m_LocalScale: {x: 0.28, y: 0.21249226, z: 1}
   m_Children: []
-  m_Father: {fileID: 1751758391}
-  m_RootOrder: 3
+  m_Father: {fileID: 1496075138}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!61 &1804993897
 BoxCollider2D:
@@ -27929,7 +28023,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.014877796, y: 0.09542787}
+  m_Offset: {x: 0.09017968, y: -2.4414845}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -27940,7 +28034,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9544053, y: 4.503314}
+  m_Size: {x: 5.895737, y: 14.724527}
   m_EdgeRadius: 0
 --- !u!61 &1804993898
 BoxCollider2D:
@@ -27955,7 +28049,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06695354, y: -0.04771316}
+  m_Offset: {x: 0.09322131, y: -1.9228239}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -27966,7 +28060,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7492526, y: 3.294574}
+  m_Size: {x: 3.4825528, y: 9.986149}
   m_EdgeRadius: 0
 --- !u!1001 &1811795848
 PrefabInstance:

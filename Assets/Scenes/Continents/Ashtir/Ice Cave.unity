@@ -647,13 +647,13 @@ MonoBehaviour:
     - Greater Healing Potion
     - Greater Healing Potion
     - Long Sword +2
-  activateOnEnter: 0
-  activateOnStay: 1
+  activateOnEnter: 1
+  activateOnStay: 0
   activateOnExit: 0
-  timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  timeBetweenBattles: 1
+  deactivateAfterStarting: 1
   cannotFlee: 1
-  shouldCompleteQuest: 0
+  shouldCompleteQuest: 1
   QuestToComplete: White Dragon
 --- !u!61 &470630198
 BoxCollider2D:
