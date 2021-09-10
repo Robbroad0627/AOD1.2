@@ -278,8 +278,7 @@ MonoBehaviour:
   m_Text: Age of Discovery is a Top Down 2D RPG.  The contols for this game are very
     simple and we will break them down for you.  To the left you will see a chatacter,
     this is your avatar.  This is what you will see when walking around the countryside
-    and in towns.  When you ayou are in combat you will see the image of the character
-    you created as well as the two party members you choose to join you.
+    and in towns.  When you ayou are in combat you will see the actual characters
 --- !u!222 &287444390
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -452,7 +451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -494, y: -452}
+  m_AnchoredPosition: {x: -241, y: -419}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &356614841
@@ -576,7 +575,7 @@ GameObject:
   - component: {fileID: 572578177}
   - component: {fileID: 572578176}
   m_Layer: 5
-  m_Name: Exit Game
+  m_Name: Main Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -646,8 +645,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 720277627}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Exit
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: NewGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -984,7 +983,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back to Main Menu
+  m_Text: Begin Playing
 --- !u!222 &747170167
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1130,6 +1129,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114476130633195974, guid: de1dfcbb0fed1fa4a87f5d8aa22e9ea0,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 720277631}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de1dfcbb0fed1fa4a87f5d8aa22e9ea0, type: 3}
 --- !u!1 &970363569
@@ -1145,12 +1149,12 @@ GameObject:
   - component: {fileID: 970363572}
   - component: {fileID: 970363571}
   m_Layer: 5
-  m_Name: New GAme
+  m_Name: Char Creator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &970363570
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1166,9 +1170,9 @@ RectTransform:
   m_Father: {fileID: 356614840}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 272.05, y: -54.2}
   m_SizeDelta: {x: 544.1, y: 108.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &970363571

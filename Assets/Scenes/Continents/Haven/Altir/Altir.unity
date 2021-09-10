@@ -832,8 +832,8 @@ MonoBehaviour:
     - Potion of Healing
     - Short Sword
   - enemies:
-    - Giant Wasp
-    rewardXP: 75
+    - Spider
+    rewardXP: 50
     rewardItems:
     - Potion of Healing
     - Short Sword
@@ -846,7 +846,7 @@ MonoBehaviour:
     - Short Sword
     - Steel Helmet
   - enemies:
-    - Giant Wasp
+    - Spider
     rewardXP: 50
     rewardItems:
     - Potion of Healing
@@ -8504,7 +8504,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.016443253}
@@ -29633,8 +29633,10 @@ MonoBehaviour:
     - Potion of Healing
     - Short Sword
   - enemies:
-    - Giant Wasp
-    rewardXP: 50
+    - Spider
+    - Spider
+    - Spider
+    rewardXP: 150
     rewardItems:
     - Potion of Healing
     - Short Sword
@@ -29926,15 +29928,15 @@ MonoBehaviour:
     - Potion of Healing
     - Short Sword
   - enemies:
-    - Giant Wasp
-    rewardXP: 75
+    - Spider
+    rewardXP: 50
     rewardItems:
     - Potion of Healing
     - Short Sword
     - Steel Helmet
   - enemies:
-    - Giant Wasp
-    rewardXP: 75
+    - Spider
+    rewardXP: 50
     rewardItems:
     - Potion of Healing
     - Short Sword

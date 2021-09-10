@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2466879227252152026}
   - component: {fileID: 673921202559878450}
   m_Layer: 0
-  m_Name: Djin 01
+  m_Name: Djin Elite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   wpnPower: 8
   armrPower: 3
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 2466879227252152026}
   deadSprite: {fileID: 21300032, guid: 06de76ccdbb8a884e8c161834a3650f5, type: 3}
   aliveSprite: {fileID: 21300030, guid: 06de76ccdbb8a884e8c161834a3650f5, type: 3}
   fadeSpeed: 1

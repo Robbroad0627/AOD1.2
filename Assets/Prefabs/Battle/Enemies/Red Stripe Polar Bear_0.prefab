@@ -69,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -769643867
-  m_SortingLayer: 3
+  m_SortingLayerID: 971942665
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -8853360973819154173, guid: 278b39dbfa0fb164bbf3eb4bc3bc955c,
     type: 3}
@@ -109,7 +109,7 @@ MonoBehaviour:
   wpnPower: 10
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 58341400466555745}
   deadSprite: {fileID: 3504349776479733572, guid: 278b39dbfa0fb164bbf3eb4bc3bc955c,
     type: 3}
   aliveSprite: {fileID: -8853360973819154173, guid: 278b39dbfa0fb164bbf3eb4bc3bc955c,

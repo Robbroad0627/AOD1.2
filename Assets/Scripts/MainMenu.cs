@@ -24,10 +24,7 @@ public class MainMenu : MonoBehaviour {
         }
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	
 
     public void Continue()
     {
@@ -37,6 +34,11 @@ public class MainMenu : MonoBehaviour {
     public void NewGame()
     {
         SceneManager.LoadScene(newGameScene);
+    }
+
+    public void Instructions()
+    {
+        SceneManager.LoadScene("Instructions");
     }
 
     public void Exit()

@@ -123,6 +123,63 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &150430987
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1296156905420382, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 15.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4423709803388196, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f8a1d1084ca0ab244baa90accde134b6, type: 3}
 --- !u!1001 &286080471
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -304,26 +361,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 250
+    - 'Orc '
+    - 'Orc '
+    rewardXP: 200
     rewardItems:
     - Throwing Axe
     - Throwing Axe
     - Potion of Vitality
   - enemies:
-    - Orc Marauder
-    - 250
-    rewardXP: 125
+    - Orc
+    - Goblin
+    - Goblin
+    rewardXP: 200
     rewardItems:
     - Throwing Axe
     - Throwing Axe
     - Potion of Healing
     - Potion of Healing
   - enemies:
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    rewardXP: 300
+    - Orc
+    - 'Orc '
+    rewardXP: 200
     rewardItems:
     - +1 Long Sword
   - enemies:
@@ -335,51 +393,50 @@ MonoBehaviour:
     - Throwing Hammer
     - Potion of Vitality
   - enemies:
-    - Ghoul
-    - Ghoul
+    - Brown Bear
+    - Brown Bear
     rewardXP: 400
     rewardItems:
     - Potion of Vitality
     - Mana Potion
   - enemies:
-    - Mountain Cyclops
-    - Mountain Cyclops
-    rewardXP: 380
+    - Giant Python
+    rewardXP: 400
     rewardItems:
     - Greater Healing Potion
     - Greater Healing Potion
     - Greater Healing Potion
   - enemies:
-    - Specter
-    - Specter
+    - Brown Bear
+    - Brown Bear
     rewardXP: 400
     rewardItems:
     - Ring of Protection +1
     - Mana Potion
   - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
     rewardXP: 300
     rewardItems:
     - Potion of Vitality
     - +1 Long Sword
   - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    - Goblin Militant
-    - Goblin Militant
-    rewardXP: 350
+    - 'Orc '
+    - 'Goblin '
+    - Goblin
+    - 'Goblin '
+    rewardXP: 250
     rewardItems:
     - +1 Long Sword
     - Throwing Axe
   - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 500
+    - 'Orc '
+    - 'Orc '
+    - 'Orc '
+    - 'Orc '
+    rewardXP: 400
     rewardItems:
     - Gold Band
     - Throwing Axe
@@ -5334,54 +5391,59 @@ MonoBehaviour:
     - Throwing Axe
     - +2 Long Sword
   - enemies:
-    - Reaver
+    - Wolf
+    - Wolf
+    - Wolf
     rewardXP: 150
     rewardItems:
     - Heralded Shield
   - enemies:
-    - Jungle Cyclops
+    - Battle Tortoise
     rewardXP: 100
     rewardItems:
     - Amulet of Protection +1
   - enemies:
-    - Ghast
-    rewardXP: 450
+    - Giant Python
+    rewardXP: 400
     rewardItems:
     - Ring of the Cat
   - enemies:
-    - Mountain Cyclops
-    - Jungle Cyclops
-    rewardXP: 415
+    - Owlbear
+    rewardXP: 700
     rewardItems:
     - Greater Healing Potion
     - Greater Healing Potion
   - enemies:
-    - Necromancer
+    - Goblin
+    - Goblin
+    - Goblin
+    - Goblin
+    - Goblin
+    - Goblin
     rewardXP: 300
     rewardItems:
     - Ring of Protection +1
   - enemies:
     - Necromancer
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
     rewardXP: 500
     rewardItems:
     - Chainmail
     - Chainmail Helmet
   - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    - Ogre
-    rewardXP: 650
+    - 'Orc '
+    - Goblin Enforcer
+    - Goblin
+    - Goblin
+    - Goblin
+    - Goblin
+    rewardXP: 375
     rewardItems:
     - Chainmail
   - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Blood Warrior
-    rewardXP: 400
+    - Orc
+    - 'Orc '
+    - 'Orc '
+    rewardXP: 300
     rewardItems:
     - Greater Potion of Healing
     - Greater Potion of Healing
@@ -19004,25 +19066,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Minotaur
+    - Owlbear
     rewardXP: 700
     rewardItems:
     - Gold Band
     - Gold Band
     - Gold Band
   - enemies:
-    - Death Merchant
-    - Death Merchant
-    - Death Merchant
-    rewardXP: 750
+    - Brown Bear
+    - Brown Bear
+    - Brown Bear
+    rewardXP: 600
     rewardItems:
     - Spirit Rune
   - enemies:
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    rewardXP: 600
+    - 'Orc '
+    - 'Orc '
+    - Orc
+    - 'Orc '
+    rewardXP: 400
     rewardItems:
     - +1 Long Sword
   - enemies:
@@ -19032,44 +19094,52 @@ MonoBehaviour:
     rewardItems:
     - Amulet of Protection +2
   - enemies:
-    - Ghoul
-    - Ghoul
-    - Ghoul
-    rewardXP: 600
+    - Owlbear
+    rewardXP: 700
     rewardItems:
     - Potion of Vitality
     - Potion of Vitality
     - Mana Potion
     - Mana Potion
   - enemies:
-    - Succubus
-    rewardXP: 1000
+    - Black bear
+    - Black bear
+    - Black bear
+    rewardXP: 300
     rewardItems:
     - Greater Healing Potion
     - Greater Healing Potion
     - Greater Healing Potion
   - enemies:
-    - Specter
+    - Brown Bear
     rewardXP: 200
     rewardItems:
     - Ring of Protection +1
   - enemies:
-    - Orc Chieftan
-    rewardXP: 1100
+    - Ogre
+    rewardXP: 450
     rewardItems:
     - Chainmail
     - Chailmail Leggings
   - enemies:
-    - Wight
-    rewardXP: 700
+    - Orc
+    - Orc
+    - Orc
+    - Orc
+    rewardXP: 400
     rewardItems:
     - Chainmail Helmet
     - Chainmail Gauntlets
   - enemies:
-    - Earth Elemental
-    rewardXP: 1000
+    - Goblin
+    - Goblin
+    - Goblin
+    - Goblin
+    - Goblin
+    - Goblin
+    rewardXP: 300
     rewardItems:
-    - Earth Rune
+    - 
   - enemies:
     - Fire Elemental
     rewardXP: 1400
@@ -97371,20 +97441,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Orc Marauder
-    rewardXP: 125
+    - Orc
+    rewardXP: 100
     rewardItems:
     - Throwing Axe
     - Throwing Axe
   - enemies:
-    - Orc Marauder
-    rewardXP: 125
+    - Black Bear
+    rewardXP: 100
     rewardItems:
-    - Throwing Axe
+    - Mana Potion
     - Throwing Axe
   - enemies:
-    - Orc Blood Warrior
-    rewardXP: 150
+    - 'Orc '
+    rewardXP: 100
     rewardItems:
     - +1 Long Sword
   - enemies:
@@ -97392,41 +97462,43 @@ MonoBehaviour:
     rewardXP: 100
     rewardItems:
     - Throwing Hammer
-    - Throwing Hammer
   - enemies:
-    - Ghoul
+    - Brown Bear
     rewardXP: 200
     rewardItems:
     - Potion of Vitality
     - Mana Potion
   - enemies:
-    - Mountain Cyclops
-    rewardXP: 190
+    - Giant Cobra
+    rewardXP: 200
     rewardItems:
     - Greater Healing Potion
   - enemies:
-    - Specter
+    - Wolf
+    - Wolf
+    - Wolf
+    - Wolf
     rewardXP: 200
     rewardItems:
     - Ring of Protection +1
   - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
+    - Goblin Enforcer
+    - Goblin Enforcer
     rewardXP: 150
     rewardItems:
     - Battle Axe
     - Battle Axe
   - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    rewardXP: 200
+    - Orc
+    - 'Goblin '
+    rewardXP: 150
     rewardItems:
     - Throwing Axe
     - Throwing Axe
   - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 250
+    - 'Orc '
+    - 'Orc '
+    rewardXP: 200
     rewardItems:
     - Throwing Axe
     - Throwing Axe
@@ -102285,8 +102357,8 @@ MonoBehaviour:
     - Goblin Enforcer
     - Goblin
     - Goblin Enforcer
-    - Goblin Militant
-    rewardXP: 700
+    - Goblin Enforcer
+    rewardXP: 400
     rewardItems:
     - Potion of Healing
     - Spellbook
@@ -102599,23 +102671,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    rewardXP: 100
+    - Goblin
+    - Goblin
+    - Goblin
+    rewardXP: 150
     rewardItems:
     - Leather Gloves
     - Shield
   - enemies:
-    - Flying Snake
-    - Flying Snake
+    - Wolf
+    - Wolf
     rewardXP: 100
     rewardItems:
     - Bronze Helmet
   - enemies:
-    - Revener
+    - Battle Tortoise
     rewardXP: 100
     rewardItems:
     - Battle Hammer
@@ -102626,39 +102696,39 @@ MonoBehaviour:
     - Crossbow
   - enemies:
     - Spider
-    rewardXP: 100
+    rewardXP: 50
     rewardItems:
     - Lucern Hammer
   - enemies:
-    - Soul Thief
-    - Soul Thief
-    - Soul Thief
-    rewardXP: 120
+    - Goblin
+    - Goblin
+    - Goblin
+    rewardXP: 150
     rewardItems:
     - Potion of Healing
     - Potion of Healing
   - enemies:
-    - Zombie
-    - Zombie
+    - Revener
+    - Revener
     rewardXP: 100
     rewardItems:
     - Potion of Healing
     - Potion of Healing
   - enemies:
     - Goblin Enforcer
-    rewardXP: 65
+    rewardXP: 75
     rewardItems:
     - Battle Axe
   - enemies:
-    - Goblin Militant
+    - Goblin Enforcer
     rewardXP: 75
     rewardItems:
     - Ring of the Owl
   - enemies:
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    rewardXP: 120
+    - Goblin Enforcer
+    - 'Goblin '
+    - 'Goblin '
+    rewardXP: 175
     rewardItems:
     - Food
     - Food
@@ -102906,14 +102976,15 @@ MonoBehaviour:
     - Mana Potion
     - Mana Potion
   - enemies:
-    - Orc Blood Warrior
+    - 'Orc '
+    - Goblin
     rewardXP: 150
     rewardItems:
     - Buckler
     - Short Sword
   - enemies:
-    - Orc Marauder
-    rewardXP: 125
+    - Black Bear
+    rewardXP: 100
     rewardItems:
     - Short Bow
   - enemies:

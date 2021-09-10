@@ -289,7 +289,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -197}
+  m_AnchoredPosition: {x: 0, y: -40}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &356614841
@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e4633cad10b0474e80cd5d467e25dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newGameScene: Calimere
+  newGameScene: 
   continueButton: {fileID: 1982984081}
   loadGameScene: LoadingScene
 --- !u!114 &720277628
@@ -798,6 +798,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114476130633195974, guid: de1dfcbb0fed1fa4a87f5d8aa22e9ea0,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 720277631}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de1dfcbb0fed1fa4a87f5d8aa22e9ea0, type: 3}
 --- !u!1 &970363569
@@ -813,7 +818,7 @@ GameObject:
   - component: {fileID: 970363572}
   - component: {fileID: 970363571}
   m_Layer: 5
-  m_Name: New GAme
+  m_Name: Instructions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -883,8 +888,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 720277627}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: NewGame
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: Instructions
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

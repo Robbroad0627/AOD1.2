@@ -1946,24 +1946,29 @@ MonoBehaviour:
   uiButtonsHolder: {fileID: 1695574381629516}
   movesList:
   - moveName: Slash
-    movePower: 40
+    movePower: 5
     moveCost: 0
     theEffect: {fileID: 114961059728432790, guid: 4c6daec28cffe264bb2df42cb07bd293,
       type: 3}
   - moveName: Fire
-    movePower: 50
+    movePower: 10
     moveCost: 5
     theEffect: {fileID: 114252193273743618, guid: 043b88d04f672484e9403308ddcf2aa8,
       type: 3}
   - moveName: Ice
-    movePower: 65
+    movePower: 10
     moveCost: 5
     theEffect: {fileID: 114608741124403118, guid: 6a6c937b3e2bab1469fa74d00472e528,
       type: 3}
-  - moveName: Plasma
-    movePower: 85
+  - moveName: Lightning
+    movePower: 15
     moveCost: 10
     theEffect: {fileID: 114011823187449262, guid: e4267b748e9498a4e96e8ccf7ac9f3ff,
+      type: 3}
+  - moveName: Magic Missile
+    movePower: 10
+    moveCost: 5
+    theEffect: {fileID: 114011823187449262, guid: f21b2f7782516b44b9eed515c7218f03,
       type: 3}
   enemyAttackEffect: {fileID: 1261278678591276, guid: 67aaab33d8f46774fb89c9aebaaa1801,
     type: 3}
