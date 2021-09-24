@@ -12,7 +12,7 @@ public class GameOver : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        AudioManager.instance.PlayBGM(4);
+      //  AudioManager.instance.PlayBGM(4);
 
         /* PlayerController.instance.gameObject.SetActive(false);
         GameMenu.instance.gameObject.SetActive(false);

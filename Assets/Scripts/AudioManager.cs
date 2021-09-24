@@ -7,7 +7,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour {
 
     public AudioSource[] sfx;
-    public AudioSource[] bgm;
+    //public AudioSource[] bgm;
 
     public static AudioManager instance;
 
@@ -30,7 +30,7 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    public void PlayBGM(int musicToPlay)
+    /*public void PlayBGM(int musicToPlay)
     {
         if (!bgm[musicToPlay].isPlaying)
         {
@@ -49,5 +49,5 @@ public class AudioManager : MonoBehaviour {
         {
             bgm[i].Stop();
         }
-    }
+    }*/
 }

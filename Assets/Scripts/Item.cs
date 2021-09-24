@@ -24,7 +24,23 @@ public class Item : MonoBehaviour {
     public int weaponStrength;
 
     public int armorStrength;
+    public bool head;
+    public bool body;
+    public bool hand;
+    public bool legs;
+    public bool feet;
+    public bool other;
+    public bool shield;
 
+
+    [Header("Usable By")]
+    public bool Cleric;
+    public bool Druid;
+    public bool Fighter;
+    public bool Mage;
+    public bool Paladin;
+    public bool Ranger;
+    public bool Thief;
 
     // Use this for initialization
     void Start () {

@@ -29649,12 +29649,11 @@ MonoBehaviour:
     - Short Sword
     - Steel Helmet
   - enemies:
-    - Giant Wasp
-    rewardXP: 75
+    - Scorpion
+    rewardXP: 650
     rewardItems:
-    - Potion of Healing
-    - Short Sword
-    - Steel Helmet
+    - Greater Healing Potion
+    - Greater Healing Potion
   activateOnEnter: 1
   activateOnStay: 1
   activateOnExit: 0
@@ -29928,12 +29927,12 @@ MonoBehaviour:
     - Potion of Healing
     - Short Sword
   - enemies:
-    - Spider
-    rewardXP: 50
+    - Giant Scorpion
+    rewardXP: 650
     rewardItems:
-    - Potion of Healing
-    - Short Sword
-    - Steel Helmet
+    - Greater Healing Potion
+    - Greater Healing Potion
+    - Greater Healing Potion
   - enemies:
     - Spider
     rewardXP: 50

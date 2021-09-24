@@ -575,7 +575,7 @@ GameObject:
   - component: {fileID: 572578177}
   - component: {fileID: 572578176}
   m_Layer: 5
-  m_Name: Main Menu
+  m_Name: New Game
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -728,8 +728,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 83.041, y: -212}
-  m_SizeDelta: {x: 1538.5173, y: 175.77997}
+  m_AnchoredPosition: {x: 83.041, y: -259.7}
+  m_SizeDelta: {x: 1538.5173, y: 271.1993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &622218507
 MonoBehaviour:
@@ -767,7 +767,8 @@ MonoBehaviour:
   m_Text: "-To move you will use the W,S,A,D keys or the Arrow Keys..  The  game
     also supports game controllers.  \n-To talk to NPC's you will use you left mouse
     button.\n-To open menus you will click the right mouse key button, then use the
-    left mouse button once you are interacting in any \n"
+    left mouse button once you are interacting in any \n- Please turn down you sound\n-
+    Game plays best at 16:9\n"
 --- !u!222 &622218508
 CanvasRenderer:
   m_ObjectHideFlags: 0

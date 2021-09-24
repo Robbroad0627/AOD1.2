@@ -104,7 +104,7 @@ public class BattleManager : MonoBehaviour {
             transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
             battleScene.SetActive(true);
 
-            AudioManager.instance.PlayBGM(0);
+            //AudioManager.instance.PlayBGM(0);
 
             for(int i = 0; i < playerPositions.Length; i++)
             {
@@ -472,7 +472,7 @@ public class BattleManager : MonoBehaviour {
             BattleReward.instance.OpenRewardScreen(rewardXP, rewardItems);
         }
 
-        AudioManager.instance.PlayBGM(FindObjectOfType<CameraController>().musicToPlay);
+       // AudioManager.instance.PlayBGM(FindObjectOfType<CameraController>().musicToPlay);
     }
 
     public IEnumerator GameOverCo()

@@ -281,13 +281,13 @@ MonoBehaviour:
     - Coastal Cyclops
     rewardXP: 300
     rewardItems:
-    - Amulet of Useful Knowledge
+    - Long Bow
   - enemies:
     - Ogre
     - Orc Marauder
     rewardXP: 575
     rewardItems:
-    - Ring of Protection +2
+    - War Hammer
   - enemies:
     - 'Orc '
     - Orc
@@ -296,11 +296,12 @@ MonoBehaviour:
     rewardXP: 400
     rewardItems:
     - Amulet of Protection +2
-    - +2 Long sword
+    - Cross Bow
   - enemies:
-    - Succubus
-    rewardXP: 1000
+    - Owlbear
+    rewardXP: 700
     rewardItems:
+    - Potion of Vitality
     - Potion of Vitality
   activateOnEnter: 0
   activateOnStay: 1
@@ -476,13 +477,13 @@ MonoBehaviour:
     - Coastal Cyclops
     rewardXP: 300
     rewardItems:
-    - Amulet of Useful Knowledge
+    - Amulet of the Battle Hardened
   - enemies:
     - Ogre
     - 'Orc '
     rewardXP: 550
     rewardItems:
-    - Ring of Protection +2
+    - Ring of Protection +1
   - enemies:
     - Orc
     - 'Orc '
@@ -491,7 +492,7 @@ MonoBehaviour:
     rewardXP: 400
     rewardItems:
     - Amulet of Protection +2
-    - +2 Long Sword
+    - +1 Long Sword
   - enemies:
     - Giant Python
     rewardXP: 450
@@ -1109,13 +1110,13 @@ MonoBehaviour:
     - Coastal Cyclops
     rewardXP: 300
     rewardItems:
-    - Amulet of Useful Knowledge
+    - Amulet of the Battle Hardened
   - enemies:
     - Ogre
     - 'Orc '
     rewardXP: 550
     rewardItems:
-    - Ring of Protection +2
+    - Ring of Protection +1
   - enemies:
     - Orc
     - 'Orc '
@@ -1123,8 +1124,8 @@ MonoBehaviour:
     - 'Orc '
     rewardXP: 400
     rewardItems:
-    - Amulet of Protection +2
-    - +2 Long sword
+    - Amulet of Protection +1
+    - +2 Long Sword
   - enemies:
     - Owlbear
     rewardXP: 700
@@ -8314,7 +8315,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.96
+      value: 4.11
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8333,12 +8334,12 @@ PrefabInstance:
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.46977997
+      value: 0.33876228
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.9395599
+      value: 1.6775246
       objectReference: {fileID: 0}
     - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
@@ -28682,13 +28683,13 @@ MonoBehaviour:
     - Coastal Cyclops
     rewardXP: 300
     rewardItems:
-    - Amulet of Useful Knowledge
+    - Amulet of the Battle Hardened
   - enemies:
     - Ogre
     - 'Orc '
     rewardXP: 550
     rewardItems:
-    - Ring of Protection +2
+    - Ring of Protection +1
   - enemies:
     - 'Orc '
     - 'Orc '
@@ -28697,8 +28698,8 @@ MonoBehaviour:
     - Ogre
     rewardXP: 850
     rewardItems:
-    - Amulet of Protection +2
-    - +2 Long sword
+    - Amulet of Protection +1
+    - +2 Long Sword
   - enemies:
     - Ogre
     - Ogre

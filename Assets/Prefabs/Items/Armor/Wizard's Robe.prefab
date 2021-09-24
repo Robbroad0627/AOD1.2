@@ -46,6 +46,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -57,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -69,12 +72,12 @@ SpriteRenderer:
   m_SortingLayerID: -76193021
   m_SortingLayer: 2
   m_SortingOrder: -1
-  m_Sprite: {fileID: 21300070, guid: ea436832529816b409d03908a83a9aa0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 937df7b7137c1664f834f0e071cc1d39, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.21, y: 0.24}
+  m_Size: {x: 5.66, y: 9.98}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -98,10 +101,24 @@ MonoBehaviour:
   itemName: Wizard's Robe
   description: The robe of a spell caster
   value: 2
-  itemSprite: {fileID: 21300070, guid: ea436832529816b409d03908a83a9aa0, type: 3}
+  itemSprite: {fileID: 21300000, guid: 937df7b7137c1664f834f0e071cc1d39, type: 3}
   amountToChange: 0
   affectHP: 0
   affectMP: 0
   affectStr: 0
   weaponStrength: 0
   armorStrength: 1
+  head: 0
+  body: 1
+  hand: 0
+  legs: 0
+  feet: 0
+  other: 0
+  shield: 0
+  Cleric: 0
+  Druid: 0
+  Fighter: 0
+  Mage: 1
+  Paladin: 0
+  Ranger: 0
+  Thief: 0

@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 6893304275124570463}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.91, y: 4.12, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.15, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +72,8 @@ SpriteRenderer:
   m_SortingLayerID: 971942665
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6df6d281e522d944b8904682cd78aae3, type: 3}
+  m_Sprite: {fileID: 5555361766786287061, guid: 45ba5d9c3ad624c42a05239d7e67035a,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -109,6 +110,8 @@ MonoBehaviour:
   armrPower: 0
   hasDied: 0
   theSprite: {fileID: 6607324023726372265}
-  deadSprite: {fileID: 21300000, guid: f2b875b523b7fe946b081df1b58b16cf, type: 3}
-  aliveSprite: {fileID: 21300000, guid: c0c3774ce7f8dc94586e7e143eafdc8b, type: 3}
+  deadSprite: {fileID: -496892395351192873, guid: 45ba5d9c3ad624c42a05239d7e67035a,
+    type: 3}
+  aliveSprite: {fileID: 5555361766786287061, guid: 45ba5d9c3ad624c42a05239d7e67035a,
+    type: 3}
   fadeSpeed: 1

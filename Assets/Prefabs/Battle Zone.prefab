@@ -45,7 +45,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 21.882826, y: -14.414749}
+  m_Offset: {x: 26.134367, y: -19.672865}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,7 +56,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 25.492031, y: 40.722183}
+  m_Size: {x: 12.953281, y: 15.156048}
   m_EdgeRadius: 0
 --- !u!114 &1816890875814037043
 MonoBehaviour:
@@ -72,41 +72,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Green Slime
-    - Green Slime
-    - Green Slime
-    rewardXP: 150
+    - Fire Elemental
+    rewardXP: 1000
     rewardItems:
-    - Leather Boots
-    - Leather Gloves
-    - Leather Helmet
-  - enemies:
-    - Green Slime
-    - Green Slime
-    rewardXP: 100
-    rewardItems:
-    - Leather Boots
-    - Leather Gloves
-  - enemies:
-    - Green Slime
-    rewardXP: 50
-    rewardItems:
-    - Leather Boots
-  - enemies:
-    - Green Slime
-    rewardXP: 50
-    rewardItems:
-    - Leather Boots
-  - enemies:
-    - Green Slime
-    rewardXP: 50
-    rewardItems:
-    - Leather Boots
+    - Greater Healing Potion
+    - Greater Healing Potion
+    - Greater Healing Potion
+    - Greater Healing Potion
   activateOnEnter: 1
   activateOnStay: 0
   activateOnExit: 0
-  timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  timeBetweenBattles: 5
+  deactivateAfterStarting: 1
   cannotFlee: 1
-  shouldCompleteQuest: 0
-  QuestToComplete: Kill the slime
+  shouldCompleteQuest: 1
+  QuestToComplete: Elemental

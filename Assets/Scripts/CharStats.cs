@@ -46,6 +46,8 @@ public class CharStats : MonoBehaviour {
         }
 	}
 
+
+
     public void AddExp(int expToAdd)
     {
         currentEXP += expToAdd;
@@ -58,7 +60,7 @@ public class CharStats : MonoBehaviour {
 
                 playerLevel++;
 
-                //determine whether to add to str or def based on odd or even
+                //determine whether to add to str or def based on odd or even level
                 if (playerLevel % 2 == 0)
                 {
                     strength++;
