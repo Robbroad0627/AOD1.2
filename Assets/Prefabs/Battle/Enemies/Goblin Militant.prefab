@@ -72,12 +72,13 @@ SpriteRenderer:
   m_SortingLayerID: 971942665
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 61831f8e7c6a51347b2f7835e7b61389, type: 3}
+  m_Sprite: {fileID: -7867452966424949964, guid: 0725bed832be95b4bb52bd6052b6a54e,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.21, y: 8.32}
+  m_Size: {x: 15.972893, y: 17.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -109,6 +110,8 @@ MonoBehaviour:
   armrPower: 0
   hasDied: 0
   theSprite: {fileID: 3894514626119239553}
-  deadSprite: {fileID: 21300000, guid: f0c0661acd9a71b4b85d8787366dfcbf, type: 3}
-  aliveSprite: {fileID: 21300000, guid: 42943ac88670bc4429692f1e013c6a0c, type: 3}
+  deadSprite: {fileID: 1582010960122685748, guid: 0725bed832be95b4bb52bd6052b6a54e,
+    type: 3}
+  aliveSprite: {fileID: -7867452966424949964, guid: 0725bed832be95b4bb52bd6052b6a54e,
+    type: 3}
   fadeSpeed: 1
