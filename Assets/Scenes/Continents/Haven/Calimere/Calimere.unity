@@ -348,7 +348,7 @@ MonoBehaviour:
   - Hey guys, I just have a little advice.  Long before I settled down here in Calimere,
     I was an aspiring adventurer.
   - Start small, get stronger, and know when it is better to run.
-  - heading outside of time this way you will encounter slimes, lots and lots of
+  - Heading outside of town this way you will encounter slimes, lots and lots of
     slime.  They are fairly easy to kill thus making them very good for practice
     and honing your skills.
   - n-Gao
@@ -6903,7 +6903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - n-Betru
-  - 'Oh my goodness you did '
+  - Oh my goodness you did it
   - n-Gao
   - Yes we did
   - n-Betru
@@ -7396,7 +7396,7 @@ PrefabInstance:
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: potentialBattles.Array.data[2].rewardXP
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -7708,7 +7708,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - n- Samson
-  - enjoy your shopping
+  - Enjoy your shopping
   - n- Gao
   - Thanks, we will.
   - n- Samson
@@ -8074,7 +8074,7 @@ PrefabInstance:
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: potentialBattles.Array.data[2].rewardXP
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -8159,7 +8159,7 @@ PrefabInstance:
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: potentialBattles.Array.data[8].rewardXP
-      value: 1000
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -9018,7 +9018,7 @@ MonoBehaviour:
   - n- Samson
   - Years ago someone came up with a brilliant idea.  They decided to make all stores
     lookvery similar
-  - The guys who thought of it made a fortun selling the plans to everyone who wanted
+  - The guys who thought of it made a fortune selling the plans to everyone who wanted
     a store.  They even sold them the materials at discount.
   - n- Gao
   - That is a smart idea.
@@ -9026,7 +9026,7 @@ MonoBehaviour:
   - Just behind me is the store, each store has a limited stock, but you can sell
     anythng you want to them and as much as you want.
   - It is a great way of making money and clearing up space in your inventory.
-  - 'But, they won''t sell to you or buy from you until you have wona battle.  '
+  - 'But, they won''t sell to you or buy from you until you have won a battle.  '
   - n- Gao
   - Thanks for the tip.  I appreciate it.
   - n- Samson
@@ -10261,6 +10261,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 845058513}
     - target: {fileID: 114476130633195974, guid: de1dfcbb0fed1fa4a87f5d8aa22e9ea0,
+        type: 3}
+      propertyPath: theMap
+      value: 
+      objectReference: {fileID: 2100020451}
+    - target: {fileID: 3057235161215452030, guid: de1dfcbb0fed1fa4a87f5d8aa22e9ea0,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 845058513}
+    - target: {fileID: 3057235161215452030, guid: de1dfcbb0fed1fa4a87f5d8aa22e9ea0,
         type: 3}
       propertyPath: theMap
       value: 
@@ -13293,7 +13303,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 57
-      m_TileSpriteIndex: 74
+      m_TileSpriteIndex: 75
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -13614,10 +13624,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300000, guid: cb796dd11667b3f4f8b64b6ce87c53fb, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: cb796dd11667b3f4f8b64b6ce87c53fb, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: e40c4c2ba4c73414cb88d9f5d972dac5, type: 3}
   m_TileMatrixArray:
@@ -29444,7 +29454,7 @@ PrefabInstance:
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: potentialBattles.Array.data[2].rewardXP
-      value: 10
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -30278,7 +30288,7 @@ MonoBehaviour:
   - n-Gao
   - Sure, what is it?
   - n-Betru
-  - On the east side of town there are some nasty green slime that have been making
+  - On the east side of town there are some nasty green slimes that have been making
     hard to walk along the coast.
   - There is a is a pack of 6 slimes that are very aggressive
   - Could you go kill them so the village will be safe.  I know one of them swallowed

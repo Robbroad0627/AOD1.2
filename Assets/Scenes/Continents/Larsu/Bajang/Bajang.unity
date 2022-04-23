@@ -823,6 +823,7 @@ GameObject:
   - component: {fileID: 396557817}
   - component: {fileID: 396557816}
   - component: {fileID: 396557819}
+  - component: {fileID: 396557820}
   m_Layer: 0
   m_Name: Larsu person_2
   m_TagString: Untagged
@@ -893,8 +894,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -848673109
-  m_SortingLayer: 0
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 759e371404f281e499de06b34a10d106, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -938,6 +939,32 @@ MonoBehaviour:
   shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
+--- !u!61 &396557820
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 396557815}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.18423605, y: -0.37118292}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.53, y: 9.52}
+    newSize: {x: 3.53, y: 9.52}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.074651, y: 14.311656}
+  m_EdgeRadius: 0
 --- !u!1 &479515488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,6 +1058,7 @@ GameObject:
   - component: {fileID: 822574358}
   - component: {fileID: 822574357}
   - component: {fileID: 822574360}
+  - component: {fileID: 822574361}
   m_Layer: 0
   m_Name: Larsu person_1
   m_TagString: Untagged
@@ -1101,8 +1129,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -848673109
-  m_SortingLayer: 0
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 8be2647788bffcf45a93d072efc6678e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1123,7 +1151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 822574356}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.507631, y: -16.71051, z: 64.266174}
+  m_LocalPosition: {x: 12.28, y: -20.76, z: 64.266174}
   m_LocalScale: {x: 0.2, y: 0.182, z: 1}
   m_Children: []
   m_Father: {fileID: 1722271153}
@@ -1146,6 +1174,32 @@ MonoBehaviour:
   shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
+--- !u!61 &822574361
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822574356}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0000019073486, y: 0.37118244}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4, y: 9.16}
+    newSize: {x: 4, y: 9.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 9.035969, y: 13.546724}
+  m_EdgeRadius: 0
 --- !u!213 &948264253
 Sprite:
   m_ObjectHideFlags: 0
@@ -123820,6 +123874,7 @@ GameObject:
   - component: {fileID: 1947464694}
   - component: {fileID: 1947464693}
   - component: {fileID: 1947464696}
+  - component: {fileID: 1947464697}
   m_Layer: 0
   m_Name: Larsu person_3
   m_TagString: Untagged
@@ -123890,8 +123945,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -848673109
-  m_SortingLayer: 0
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4cbb783bb2137af4d807c7ec730ea9e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -123912,7 +123967,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947464692}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.66, y: -12.39051, z: 64.266174}
+  m_LocalPosition: {x: 23.9, y: -13.05, z: 64.266174}
   m_LocalScale: {x: 0.2, y: 0.182, z: 1}
   m_Children: []
   m_Father: {fileID: 1722271153}
@@ -123935,6 +123990,32 @@ MonoBehaviour:
   shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
+--- !u!61 &1947464697
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947464692}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1535368, y: -0.1012342}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.38, y: 9.11}
+    newSize: {x: 3.38, y: 9.11}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.0034122, y: 14.576523}
+  m_EdgeRadius: 0
 --- !u!1 &1965684614
 GameObject:
   m_ObjectHideFlags: 0
@@ -123946,6 +124027,8 @@ GameObject:
   - component: {fileID: 1965684616}
   - component: {fileID: 1965684615}
   - component: {fileID: 1965684617}
+  - component: {fileID: 1965684619}
+  - component: {fileID: 1965684618}
   m_Layer: 0
   m_Name: aztec_warriors_jaugire_2_0
   m_TagString: Untagged
@@ -124035,6 +124118,58 @@ MonoBehaviour:
   shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
+--- !u!61 &1965684618
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965684614}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0888567, y: -0.055535674}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.02, y: 4.96}
+    newSize: {x: 3.02, y: 4.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.3747168, y: 7.2925014}
+  m_EdgeRadius: 0
+--- !u!61 &1965684619
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1965684614}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.02, y: 4.96}
+    newSize: {x: 3.02, y: 4.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.02, y: 4.96}
+  m_EdgeRadius: 0
 --- !u!4 &2001652515 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5712260009589536369, guid: 360aaafbc01305e479ea7bd6848569c4,

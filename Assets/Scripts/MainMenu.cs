@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 //Bonehead Games
 
-public class MainMenu : MonoBehaviour {
+public class MainMenu : MonoBehaviour
+{
 
     public string newGameScene;
 
@@ -13,18 +14,20 @@ public class MainMenu : MonoBehaviour {
 
     public string loadGameScene;
 
-	// Use this for initialization
-	void Start () {
-		if(PlayerPrefs.HasKey("Current_Scene"))
+    // Use this for initialization
+    void Start()
+    {
+        if (PlayerPrefs.HasKey("Current_Scene"))
         {
             continueButton.SetActive(true);
-        } else
+        }
+        else
         {
             continueButton.SetActive(false);
         }
-	}
-	
-	
+    }
+
+
 
     public void Continue()
     {
@@ -33,7 +36,7 @@ public class MainMenu : MonoBehaviour {
 
     public void NewGame()
     {
-        SceneManager.LoadScene(newGameScene);
+        SceneManager.LoadScene("Calimere");
     }
 
     public void Instructions()

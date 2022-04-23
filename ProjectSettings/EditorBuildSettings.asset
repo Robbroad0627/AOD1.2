@@ -23,55 +23,55 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1. Operators/TheEnd.unity
     guid: 44bf588b59f467e49a27e91784ab4bde
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Races/Dwarf.unity
     guid: 6bd0f6834e15a92419267f6173c34b51
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Races/Elf.unity
     guid: 8b156c27058e4ef4fb6328d2a063190c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Races/Half Elf.unity
     guid: f93c36029d75c6d47bd0b7f1f9cf5bfb
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Races/Half Orc.unity
     guid: 30ed6395ea950c040a08a73724f3c6e4
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Races/Halfling.unity
     guid: 9cf95bf7e504feb49b46ed8c59bc3781
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Races/Human.unity
     guid: 3b23d23a1647386438ced8d513dbc31c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Races/Races.unity
     guid: 8e935733cc28ff54b88ebeb679d39e1f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Classes/Classes.unity
     guid: b838a1ef3ac0e8d44bf1eb97471215aa
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Classes/Cleric.unity
     guid: 8a4c34f91cbcf3849824a7f242de986c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Classes/Druid.unity
     guid: c07240b47fc090145b8ca97f5472f71a
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Classes/Fighter.unity
     guid: 9384e0793de5e2041bde870b68171a61
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Classes/Magic User.unity
     guid: 40e66e1004a86be45a1a6e3d89792570
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/CharacterImageSelector.unity
     guid: 3d485772d49f60045aeb4047c1e07376
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/CharCreation.unity
     guid: cf0180f01f27afc4b904cafb890b1629
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Classes/Paladin.unity
     guid: 50353eb59d16ff14cb5916cd14727c4f
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Classes/Ranger.unity
     guid: 358db171aff63e04b9b10474b2927517
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Character Creation/Classes/Thief.unity
     guid: 0c11cb62f53d1b14a937b718f41f838c
   - enabled: 1
@@ -198,36 +198,39 @@ EditorBuildSettings:
     path: Assets/Scenes/Continents/Senta/Senta.unity
     guid: 37509d13b3367474ea3f43b53a77aa85
   - enabled: 0
-    path: Assets/Scenes/Continents/Ashtir/Ashtir.unity
-    guid: 9ac30ce2b51f172458a974e54e2e57a8
-  - enabled: 0
-    path: Assets/Scenes/Continents/Ashtir/Long House/Long House.unity
-    guid: 070f87631cf50c741a5794a386e696e5
-  - enabled: 0
-    path: Assets/Scenes/Continents/Ashtir/EastVill/EastVill.unity
-    guid: a10b23cf3c3d9274fad5e2694c3f4488
-  - enabled: 0
-    path: Assets/Scenes/Continents/Ashtir/EastVill/EastVill Shop.unity
-    guid: bb11a30d264852d4f804af09248e41bc
-  - enabled: 0
-    path: Assets/Scenes/Continents/Ashtir/NorthVill/Northvill.unity
-    guid: 4fbdb66311c13d84085545fd1d810dce
-  - enabled: 0
-    path: Assets/Scenes/Continents/Ashtir/NorthVill/Northvill Shop.unity
-    guid: 68291122e3be1724a841e67f12cc4ca5
-  - enabled: 0
-    path: Assets/Scenes/Continents/Ashtir/SouthVill/SouthVill.unity
-    guid: c6054a9b341cd984bb9a9595976b5334
-  - enabled: 0
-    path: Assets/Scenes/Continents/Ashtir/WestVill/WestVill.unity
-    guid: 12e644766e8ff2c44bf5c53d7b623bc0
-  - enabled: 0
-    path: Assets/Scenes/Continents/Ashtir/WestVill/Westvill Shop.unity
-    guid: d204f1ee1cc1d08438136bb4ff8718a6
-  - enabled: 0
-    path: Assets/Scenes/Continents/Ashtir/Ice Cave.unity
-    guid: 8f93b123a68bed64bbcb07d077142e78
-  - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/Ashtir.unity
+    guid: 9ac30ce2b51f172458a974e54e2e57a8
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/EastVill/EastVill.unity
+    guid: a10b23cf3c3d9274fad5e2694c3f4488
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/EastVill/EastVill Shop.unity
+    guid: bb11a30d264852d4f804af09248e41bc
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/NorthVill/Northvill.unity
+    guid: 4fbdb66311c13d84085545fd1d810dce
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/NorthVill/Northvill Shop.unity
+    guid: 68291122e3be1724a841e67f12cc4ca5
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/WestVill/WestVill.unity
+    guid: 12e644766e8ff2c44bf5c53d7b623bc0
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/WestVill/Westvill Shop.unity
+    guid: d204f1ee1cc1d08438136bb4ff8718a6
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/SouthVill/SouthVill.unity
+    guid: c6054a9b341cd984bb9a9595976b5334
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/SouthVill/Southvill Shop.unity
+    guid: a787214124efce44cb6a9432a2c3e671
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/Long House/Long House.unity
+    guid: 070f87631cf50c741a5794a386e696e5
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/Ice Cave.unity
+    guid: 8f93b123a68bed64bbcb07d077142e78
   m_configObjects: {}
