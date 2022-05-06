@@ -669,7 +669,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &330448998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -825,7 +825,7 @@ GameObject:
   - component: {fileID: 396557819}
   - component: {fileID: 396557820}
   m_Layer: 0
-  m_Name: Larsu person_2
+  m_Name: Itzel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -916,11 +916,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 396557815}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.067632, y: -14.670509, z: 64.266174}
+  m_LocalPosition: {x: 15.855894, y: -13.888939, z: 76.81554}
   m_LocalScale: {x: 0.2, y: 0.182, z: 1}
   m_Children: []
-  m_Father: {fileID: 1722271153}
-  m_RootOrder: 2
+  m_Father: {fileID: 427446117}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &396557819
 MonoBehaviour:
@@ -934,10 +934,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Itzel
+  - Hi, I am Itzel.  I am temprorarily in charge of the village.  My father was chieftan
+    but was killed a couple days ago and until we elect a new leader I am in charge.
+  - n- Player
+  - Hello Itzel.  We are sorry for your loss.
+  - may we ask how did he die?
+  - n- Itzel
+  - he was killed by snakes.
+  - He went out to investigate, with a couple warriors and  with Zolin, when a large
+    snake dropped out of a tree on him, the other one snake landed on the others
+    and kept them pinned to the ground.
+  - A small colorful snake came up and bit my father and he died quite quickly. 
+    Then the snake that was on him swallowed him whole and slithered off into the
+    jungle.
+  - It happened very, quickly and the snake that was on the warriors and Zolin then
+    hissed atthem and slithered away.  They were so shocked they ran back here without
+    chasing the snakes
+  - n- Player
+  - That is horrible.  Again we are so sorry for your loss.
+  - n- Itzel
+  - Could you.....  Could you...   Could you please avenge my father's death?
+  - I don't have much to pay you, but I will give you my father's most prized possession
+    if you would find and kill those snakes that hunt as a party.
+  - n- Player
+  - We would be honored to help you
+  - n- Itzel
+  - Thank you.  The snakes were last seen to the north of the pond and in the high
+    grasses
+  - n- Player
+  - We will look for them there
+  - n- Itzel
+  - Thank you.  I hope to see you soon.
+  - n- Player
+  - See you soon.
   isPerson: 1
-  shouldActivateQuest: 0
-  questToMark: 
+  shouldActivateQuest: 1
+  questToMark: More Snakes
   markComplete: 0
 --- !u!61 &396557820
 BoxCollider2D:
@@ -965,6 +999,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.074651, y: 14.311656}
   m_EdgeRadius: 0
+--- !u!4 &427446117 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+    type: 3}
+  m_PrefabInstance: {fileID: 883610487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &479515488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1012,6 +1052,212 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &499086357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 499086358}
+  - component: {fileID: 499086360}
+  - component: {fileID: 499086359}
+  m_Layer: 0
+  m_Name: Zone7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &499086358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499086357}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 69.2, y: 29.9, z: 63.97711}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1321511823}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &499086359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499086357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Giant Python
+    - Giant Python
+    rewardXP: 2000
+    rewardItems:
+    - Bastard Sword
+    - Throwing Axe
+  activateOnEnter: 1
+  activateOnStay: 0
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 1
+  cannotFlee: 1
+  shouldCompleteQuest: 1
+  QuestToComplete: More Snakes
+--- !u!61 &499086360
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499086357}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.6844177, y: -8.103863}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.252579, y: 5.3341675}
+  m_EdgeRadius: 0
+--- !u!1 &505254684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 505254688}
+  - component: {fileID: 505254687}
+  - component: {fileID: 505254686}
+  m_Layer: 0
+  m_Name: Gift
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!58 &505254686
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505254684}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02797845, y: 0.050361216}
+  serializedVersion: 2
+  m_Radius: 0.34332135
+--- !u!212 &505254687
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505254684}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 18d91459ded018f45a3b3b4a955c2a93, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &505254688
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505254684}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.915894, y: -15.028939, z: 76.81554}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427446117}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &509793424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2434758651056572089, guid: ad1680edb5e536a4da50947749261935,
+    type: 3}
+  m_PrefabInstance: {fileID: 883610487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &509793427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509793424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 505254684}
+  questToCheck: More Snakes
+  activeIfComplete: 1
 --- !u!114 &562109890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1060,7 +1306,7 @@ GameObject:
   - component: {fileID: 822574360}
   - component: {fileID: 822574361}
   m_Layer: 0
-  m_Name: Larsu person_1
+  m_Name: Sacmac
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1169,7 +1415,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Sacmac
+  - I love it when new people come to the village.  I get to learn of the outside
+    world.
+  - Where do you hail from?
+  - n- Player
+  - We come from the land of HavenWe come from Haven.
+  - And right before we came here to Larsu we were in Ashtir.
+  - n- Sacmac
+  - I have never heard of either place.  I have only heard of Mandu and Oluma.  What
+    is Haven like?
+  - n- Player
+  - Have is s small island nation about a third the size of Larsu.  We have four
+    seasons but our winters are nowhere near as cold as the summer of Ashtir
+  - n- Sacmac
+  - We only have two season.  Hot like it is now, and hot and wet when it rains all
+    the time for two cycles of the moon.
+  - What was Ashtir like?
+  - n- Player
+  - Ashtir was cold!  Bitter cold, blowing snow, ice, and more cold.  The people
+    are freiendly, but the land is harsh and makes the hearty.
+  - n- Sacmac
+  - I have heard of cold but it is so foreign to me.  Can you explain it more?
+  - n- Player
+  - That is tough.  That will take some serious thought to explain.
+  - .....
+  - .....
+  - I don't think we can really explain it.  Ihas to be be something that is experienced
+    to understand it.
+  - n- Sacmac
+  - Maybe I will have to go there myself one day.
+  - n- Player
+  - If you do, make sure you take many layers of clothing, because you will not survive
+    dressed like that.
+  - n- Sacmac
+  - Thank you for the advice.  Have a great day
+  - n- Player
+  - Have a great day yourself.
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -1200,6 +1483,95 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.035969, y: 13.546724}
   m_EdgeRadius: 0
+--- !u!1001 &883610487
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1722271153}
+    m_Modifications:
+    - target: {fileID: 2434758651056572089, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_Name
+      value: QuestManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 396557815}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: questToCheck
+      value: More Snakes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: questToCheck
+      value: More Snakes
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 1634658170}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.78826255
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.78157043
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.549363
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad1680edb5e536a4da50947749261935, type: 3}
 --- !u!213 &948264253
 Sprite:
   m_ObjectHideFlags: 0
@@ -1509,7 +1881,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1018156683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19608,7 +19980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1309207704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19780,6 +20152,7 @@ Transform:
   - {fileID: 330449000}
   - {fileID: 1309207706}
   - {fileID: 1018156685}
+  - {fileID: 499086358}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -122864,7 +123237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1392168074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122995,11 +123368,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4585574506691860, guid: de1dfcbb0fed1fa4a87f5d8aa22e9ea0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.89
+      value: 8.86
       objectReference: {fileID: 0}
     - target: {fileID: 4585574506691860, guid: de1dfcbb0fed1fa4a87f5d8aa22e9ea0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01
+      value: -1.56
       objectReference: {fileID: 0}
     - target: {fileID: 4585574506691860, guid: de1dfcbb0fed1fa4a87f5d8aa22e9ea0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -123576,6 +123949,194 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 924f4f042efe37a48b1871803844b402, type: 3}
+--- !u!1 &1634658170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1634658171}
+  - component: {fileID: 1634658175}
+  - component: {fileID: 1634658174}
+  - component: {fileID: 1634658173}
+  - component: {fileID: 1634658172}
+  m_Layer: 0
+  m_Name: Itzel (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1634658171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634658170}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 15.855894, y: -13.888939, z: 76.81554}
+  m_LocalScale: {x: 0.2, y: 0.182, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427446117}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1634658172
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634658170}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.18423605, y: -0.37118292}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.53, y: 9.52}
+    newSize: {x: 3.53, y: 9.52}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.074651, y: 14.311656}
+  m_EdgeRadius: 0
+--- !u!114 &1634658173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634658170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n- Itzel
+  - Thank Coatl, you have returned.  Were you successful
+  - n- Player
+  - Hello Itzel.  Hello Itzel, we were successful.
+  - They were not like other snakes we have faced, they had a pack mentality, and
+    it felt like battle tactics.
+  - n- Itzel
+  - I do not understand these things, but from how you say it it must be bad.
+  - n- Player
+  - It is definitely not good.
+  - Something definitely feels strange.
+  - n- Itzel
+  - I have this bauble that my father said has great properties, what ever that means. 
+    As promised it is now your as your reward
+  - n- Player
+  - We can't take that from you.  It wouldn't be right
+  - n- Itzel
+  - I would much rather you take it.  I can't bear to look at it.
+  - And whomever becomes our new chieftan will want it if they know I have it.
+  - n- Player
+  - That is not right.  How can they take what is yours.
+  - n- Itzel
+  - Please take it, you have earned it.  I can almost feel my father's spirit urging
+    me to give it to you.
+  - n- Player
+  - Thank you Itzel.  If you ever decide you want this back send word to us in Calimere
+    on Continent of Haven and we will return it to you.
+  - n- Itzel
+  - That is very kind of you.
+  - I have a ceremony to prepare for my father's pssing into the next world.  I bid
+    you a good day.
+  - n- Player
+  - Again we are sorry for your loss.   We will leave you be.
+  - Please have as good of a day as you can under the circumstances.
+  isPerson: 1
+  shouldActivateQuest: 0
+  questToMark: More Snakes
+  markComplete: 0
+--- !u!61 &1634658174
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634658170}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.53, y: 9.52}
+    newSize: {x: 3.53, y: 9.52}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.53, y: 9.52}
+  m_EdgeRadius: 0
+--- !u!212 &1634658175
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634658170}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 759e371404f281e499de06b34a10d106, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.53, y: 9.52}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1645181258
 GameObject:
   m_ObjectHideFlags: 0
@@ -123687,7 +124248,7 @@ Transform:
   m_Children:
   - {fileID: 1965684616}
   - {fileID: 822574359}
-  - {fileID: 396557818}
+  - {fileID: 427446117}
   - {fileID: 1947464695}
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -123721,7 +124282,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1919128151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123876,7 +124437,7 @@ GameObject:
   - component: {fileID: 1947464696}
   - component: {fileID: 1947464697}
   m_Layer: 0
-  m_Name: Larsu person_3
+  m_Name: Zolin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123985,7 +124546,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Zolin
+  - We were helpless.
+  - It happened so fast.
+  - Itzel will never forgive me.
+  - n- Player
+  - Hello
+  - n- Zolin
+  - ....
+  - .....
+  - n- Player
+  - We understand we will leave you be to process this and grieve.
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -124030,7 +124602,7 @@ GameObject:
   - component: {fileID: 1965684619}
   - component: {fileID: 1965684618}
   m_Layer: 0
-  m_Name: aztec_warriors_jaugire_2_0
+  m_Name: Mecatl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124113,7 +124685,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Mecatl
+  - Welcome to Bajang.  I am Jaguar Knight Mecatl.  I hope your journey here wasn't
+    too dangerous..
+  - n- Player
+  - Your land is beautiful but it is dangerous
+  - n- Mecatl
+  - Yes it is a lovel place, bit we seem to be invaded by new species of snakes and
+    the snakes that are indigenous to our land seem to be getting so much bigger
+    and more aggressive..
+  - n- Player
+  - That is very odd.  Wonder why that is.
+  - n- Mecatl
+  - It is almsot like they are out to kill us all.
+  - It is like they are being driven to erradicate us.  They are killing off the
+    animals we hunt, attacking our hunters, even harrassing us in the village some
+    nights.
+  - n- Player
+  - That is very, very strange
+  - n- Mecatl
+  - Enough with the dread, please enjoy yourselves here in Bajang.
+  - Have a great day
+  - n- Player
+  - Thank you, you have a great day as well.
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -124301,7 +124896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2093805000
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 129083476}
   - component: {fileID: 129083475}
   m_Layer: 0
-  m_Name: Larsu person_14
+  m_Name: Xocoli
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -231,7 +231,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.18, z: 1}
   m_Children: []
   m_Father: {fileID: 753270778}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &133633601
 GameObject:
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 133633603}
   - component: {fileID: 133633602}
   m_Layer: 0
-  m_Name: Larsu person_11
+  m_Name: Papan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -340,7 +340,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.18, z: 1}
   m_Children: []
   m_Father: {fileID: 753270778}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &153940749
 PrefabInstance:
@@ -514,7 +514,7 @@ GameObject:
   - component: {fileID: 285932196}
   - component: {fileID: 285932195}
   m_Layer: 0
-  m_Name: Larsu person_10
+  m_Name: Cuixtli
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -609,7 +609,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.18, z: 1}
   m_Children: []
   m_Father: {fileID: 753270778}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &286080471
 PrefabInstance:
@@ -656,7 +656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -760,7 +760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4618796693575320, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4618796693575320, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1033,7 +1033,7 @@ GameObject:
   - component: {fileID: 339274984}
   - component: {fileID: 339274983}
   m_Layer: 0
-  m_Name: eagle_nation_0
+  m_Name: Nochpin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1131,8 +1131,7 @@ SpriteRenderer:
   m_SortingLayerID: -76193021
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6923034004347825854, guid: 171daac799189254eb9ac83bd226eff1,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 171daac799189254eb9ac83bd226eff1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1140,7 +1139,7 @@ SpriteRenderer:
   m_Size: {x: 6.7922335, y: 10.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &339274986
@@ -1155,8 +1154,77 @@ Transform:
   m_LocalScale: {x: 0.194, y: 0.184, z: 1}
   m_Children: []
   m_Father: {fileID: 753270778}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &374186028
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 753270778}
+    m_Modifications:
+    - target: {fileID: 7309228892615779489, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Tizoc
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -14.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 64.266174
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5122287e2a808b41ad957c6bc5288c9, type: 3}
 --- !u!1001 &457088958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1588,6 +1656,7 @@ Transform:
   m_LocalPosition: {x: 1.1223692, y: 12.170509, z: -64.266174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1588454444}
   - {fileID: 339274986}
   - {fileID: 285932197}
   - {fileID: 133633604}
@@ -1613,7 +1682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &762080384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1628,91 +1697,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Orc Marauder
-    - Orc Marauder
+    - Flying Snake
     rewardXP: 250
     rewardItems:
     - Throwing Axe
     - Throwing Axe
     - Potion of Vitality
-  - enemies:
-    - Orc Marauder
-    - 250
-    rewardXP: 125
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    rewardXP: 300
-    rewardItems:
-    - +1 Long Sword
-  - enemies:
-    - 'Orc '
-    - 'Orc '
-    rewardXP: 200
-    rewardItems:
-    - Throwing Hammer
-    - Throwing Hammer
-    - Potion of Vitality
-  - enemies:
-    - Ghoul
-    - Ghoul
-    rewardXP: 400
-    rewardItems:
-    - Potion of Vitality
-    - Mana Potion
-  - enemies:
-    - Mountain Cyclops
-    - Mountain Cyclops
-    rewardXP: 380
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  - enemies:
-    - Specter
-    - Specter
-    rewardXP: 400
-    rewardItems:
-    - Ring of Protection +1
-    - Mana Potion
-  - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    rewardXP: 300
-    rewardItems:
-    - Potion of Vitality
-    - +1 Long Sword
-  - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    - Goblin Militant
-    - Goblin Militant
-    rewardXP: 350
-    rewardItems:
-    - +1 Long Sword
-    - Throwing Axe
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 500
-    rewardItems:
-    - Gold Band
-    - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
+  activateOnEnter: 1
+  activateOnStay: 0
   activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
+  deactivateAfterStarting: 1
+  cannotFlee: 1
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &762080385
@@ -1749,7 +1745,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762080383}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 71.37763, y: -21.77051, z: 63.97711}
+  m_LocalPosition: {x: 32.56, y: -21.77051, z: 63.97711}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 751122832}
@@ -1852,7 +1848,7 @@ GameObject:
   - component: {fileID: 963030710}
   - component: {fileID: 963030709}
   m_Layer: 0
-  m_Name: Larsu person_13
+  m_Name: Ohtli
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1947,7 +1943,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.18, z: 1}
   m_Children: []
   m_Father: {fileID: 753270778}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &974909476
 PrefabInstance:
@@ -1990,7 +1986,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4849429539440236, guid: 41d568113c653714782a64bfeeedbf6b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4849429539440236, guid: 41d568113c653714782a64bfeeedbf6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -117700,6 +117696,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1566486045}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1588454444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7309228892615779492, guid: a5122287e2a808b41ad957c6bc5288c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 374186028}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1738338574
 GameObject:
   m_ObjectHideFlags: 0
@@ -118218,7 +118220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
