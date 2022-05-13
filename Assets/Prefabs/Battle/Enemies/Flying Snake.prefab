@@ -108,11 +108,11 @@ MonoBehaviour:
   defence: 16
   wpnPower: 0
   armrPower: 0
+  XP: 100
   hasDied: 0
   theSprite: {fileID: 5875628856140993100}
   deadSprite: {fileID: -7838304401062115615, guid: 6d5f2ceaa546afa479121c18d48037df,
     type: 3}
   aliveSprite: {fileID: 6267793151046263684, guid: 6d5f2ceaa546afa479121c18d48037df,
     type: 3}
-  aliveAnim: {fileID: 7400000, guid: 34687d5fffe4e634fbff04e2a68ee6c7, type: 2}
   fadeSpeed: 1
