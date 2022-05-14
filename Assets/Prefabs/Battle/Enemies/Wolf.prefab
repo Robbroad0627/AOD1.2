@@ -100,16 +100,18 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Wolf
-  currentHp: 0
-  maxHP: 0
+  currentHp: 25
+  maxHP: 25
   currentMP: 0
   maxMP: 0
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  strength: 2
+  defence: 4
+  wpnPower: 2
+  armrPower: 4
+  XP: 100
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
+  theSprite: {fileID: 2583846206792944496}
+  deadSprite: {fileID: 5184831053750644559, guid: ea48d74ee8d048542ade5f114ba007a9,
+    type: 3}
   aliveSprite: {fileID: 0}
   fadeSpeed: 1

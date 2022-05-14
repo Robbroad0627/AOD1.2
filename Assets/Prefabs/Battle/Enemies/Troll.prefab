@@ -80,7 +80,7 @@ SpriteRenderer:
   m_Size: {x: 7.69, y: 6.22}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &1324549653863499401
@@ -107,6 +107,7 @@ MonoBehaviour:
   defence: 15
   wpnPower: 7
   armrPower: 0
+  XP: 0
   hasDied: 0
   theSprite: {fileID: 1731780411047966819}
   deadSprite: {fileID: 21300000, guid: c89589c6e69d1494bb87f900e8a2755b, type: 3}

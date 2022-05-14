@@ -69,8 +69,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 971942665
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b64e04c72476d484e8cc2a3734e6af85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 0
   movesAvailable:
-  - slash
+  - Slash
   charName: Yuan-ti Histachi
   currentHp: 0
   maxHP: 50
@@ -109,7 +109,7 @@ MonoBehaviour:
   armrPower: 3
   XP: 125
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 3381496399647094905}
   deadSprite: {fileID: 21300016, guid: b64e04c72476d484e8cc2a3734e6af85, type: 3}
   aliveSprite: {fileID: 21300000, guid: b64e04c72476d484e8cc2a3734e6af85, type: 3}
   fadeSpeed: 1
