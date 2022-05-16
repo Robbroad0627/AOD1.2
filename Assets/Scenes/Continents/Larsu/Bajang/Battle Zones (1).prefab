@@ -1,0 +1,2546 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3714536032123735230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7123544804755806490}
+  - component: {fileID: 3107600819023260060}
+  - component: {fileID: 6065327304604764378}
+  m_Layer: 0
+  m_Name: Boss Zone 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7123544804755806490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3714536032123735230}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 70.97344, y: -13.36191, z: 710.59656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6773417446049423271}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &3107600819023260060
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3714536032123735230}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.11871338, y: -7.9522476}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.0859528, y: 16.904495}
+  m_EdgeRadius: 0
+--- !u!114 &6065327304604764378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3714536032123735230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Green Slime
+    - Green Slime
+    - Green Slime
+    - Green Slime
+    - Green Slime
+    - Green Slime
+    rewardXP: 300
+    rewardItems:
+    - Gold Band
+    - Potion of Healing
+    - Leather Armor
+    - Potion of Healing
+    - Potion of Healing
+  activateOnEnter: 1
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 1
+  cannotFlee: 1
+  shouldCompleteQuest: 1
+  QuestToComplete: Kill the slime
+--- !u!1 &7948253594961045616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6773417446049423271}
+  m_Layer: 0
+  m_Name: Battle Zones (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6773417446049423271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7948253594961045616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0734429, y: 1.4319098, z: -710.59656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4143532966370710227}
+  - {fileID: 8858275157956361368}
+  - {fileID: 2941561916135268177}
+  - {fileID: 7079315260292677939}
+  - {fileID: 3847957030953050570}
+  - {fileID: 7123544804755806490}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2357121927806375142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6773417446049423271}
+    m_Modifications:
+    - target: {fileID: 1816890875814037042, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Name
+      value: Battle Zone
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: cannotFlee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnEnter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[2]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[3]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[4]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[2]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: shouldCompleteQuest
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Short Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Short Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.data[0]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[2]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: deactivateAfterStarting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -36.258053
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 79.66119
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 25.318499
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 25.772602
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.023445
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.29809
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 711.34656
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0829b7d1167478943a58a6d9fdca090d, type: 3}
+--- !u!4 &4143532966370710227 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+    type: 3}
+  m_PrefabInstance: {fileID: 2357121927806375142}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3193144667997153279
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6773417446049423271}
+    m_Modifications:
+    - target: {fileID: 1816890875814037042, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Name
+      value: Battle Zone (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnEnter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: cannotFlee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: Advice
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[3]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[4]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[2]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[3]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[1]
+      value: Short Bow
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: shouldCompleteQuest
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Leather Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.data[0]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[1]
+      value: Leather Armor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[2]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: deactivateAfterStarting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -54.80516
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.7045708
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -63.56417
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 6.294586
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 98.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 711.34656
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0829b7d1167478943a58a6d9fdca090d, type: 3}
+--- !u!4 &3847957030953050570 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3193144667997153279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3595106542720129380
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6773417446049423271}
+    m_Modifications:
+    - target: {fileID: 1816890875814037042, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Name
+      value: Battle Zone (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnEnter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: cannotFlee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[3]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[4]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[2]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[3]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[1]
+      value: Short Bow
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: shouldCompleteQuest
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Leather Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.data[0]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[1]
+      value: Leather Armor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[2]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: deactivateAfterStarting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -22.280682
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 69.14854
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -63.31513
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 25.055077
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.023445
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.29809
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 711.34656
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0829b7d1167478943a58a6d9fdca090d, type: 3}
+--- !u!4 &2941561916135268177 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+    type: 3}
+  m_PrefabInstance: {fileID: 3595106542720129380}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7194516839956527789
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6773417446049423271}
+    m_Modifications:
+    - target: {fileID: 1816890875814037042, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Name
+      value: Battle Zone (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: cannotFlee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnEnter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[2]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[1]
+      value: Leather Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[3]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[4]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: shouldCompleteQuest
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Leather Helmet
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Short Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.data[0]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[2]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: deactivateAfterStarting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -22.151245
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 69.40741
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -4.4555244
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 15.5813675
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 35.023445
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.29809
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 711.34656
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0829b7d1167478943a58a6d9fdca090d, type: 3}
+--- !u!4 &8858275157956361368 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+    type: 3}
+  m_PrefabInstance: {fileID: 7194516839956527789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8865374455656089350
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6773417446049423271}
+    m_Modifications:
+    - target: {fileID: 1816890875814037042, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Name
+      value: Battle Zone (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].enemies.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnEnter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: activateOnStay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: cannotFlee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: QuestToComplete
+      value: First Blood
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[3]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[4]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[2]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[3]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[1]
+      value: Short Bow
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: timeBetweenBattles
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[0].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: shouldCompleteQuest
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardXP
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].rewardItems.Array.data[0]
+      value: Leather Boots
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardXP
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardXP
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.data[0]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[8].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].enemies.Array.data[0]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardXP
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[9].rewardItems.Array.data[0]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[1].rewardItems.Array.data[1]
+      value: Leather Armor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[2].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[3].rewardItems.Array.data[2]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[4].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[5].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].enemies.Array.data[2]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[6].rewardItems.Array.data[1]
+      value: Potion of Healing
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].enemies.Array.data[1]
+      value: Green Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: potentialBattles.Array.data[7].rewardItems.Array.data[1]
+      value: Mana Potion
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: deactivateAfterStarting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -55.101425
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 3.5070496
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -63.56417
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 6.294586
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 94.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 711.34656
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0829b7d1167478943a58a6d9fdca090d, type: 3}
+--- !u!4 &7079315260292677939 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1816890875814037045, guid: 0829b7d1167478943a58a6d9fdca090d,
+    type: 3}
+  m_PrefabInstance: {fileID: 8865374455656089350}
+  m_PrefabAsset: {fileID: 0}

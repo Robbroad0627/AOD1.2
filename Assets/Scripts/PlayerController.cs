@@ -4,7 +4,8 @@ using UnityEngine;
 
 //Bonehead Games
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     public Rigidbody2D theRB;
     public float moveSpeed;
@@ -19,12 +20,14 @@ public class PlayerController : MonoBehaviour {
 
     public bool canMove = true;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         if (instance == null)
         {
             instance = this;
-        } else
+        }
+        else
         {
             if (instance != this)
             {
@@ -33,15 +36,17 @@ public class PlayerController : MonoBehaviour {
         }
 
         DontDestroyOnLoad(gameObject);
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (canMove)
         {
             theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
 
-        } else
+        }
+        else
         {
             theRB.velocity = Vector2.zero;
         }

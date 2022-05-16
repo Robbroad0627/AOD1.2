@@ -11,7 +11,7 @@ public class BattleChar : MonoBehaviour
     public string[] movesAvailable;
 
     public string charName;
-    public int currentHp, maxHP, currentMP, maxMP, strength, defence, wpnPower, armrPower, XP;
+    public int currentHp, maxHP, currentMP, maxMP, strength, defence, wpnPower, armrPower;
     public bool hasDied;
 
     public SpriteRenderer theSprite;

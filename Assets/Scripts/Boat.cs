@@ -7,7 +7,7 @@ using UnityEngine;
 public class Boat : MonoBehaviour
 {
 
-    public Rigidbody2D theRB;
+    public Rigidbody2D theRigidBody;
     public float moveSpeed;
 
     public Animator myAnim;
@@ -43,17 +43,17 @@ public class Boat : MonoBehaviour
     {
         if (canMove)
         {
-            theRB.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+            theRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
 
         }
         else
         {
-            theRB.velocity = Vector2.zero;
+            theRigidBody.velocity = Vector2.zero;
         }
 
 
-        myAnim.SetFloat("moveX", theRB.velocity.x);
-        myAnim.SetFloat("moveY", theRB.velocity.y);
+        myAnim.SetFloat("moveX", theRigidBody.velocity.x);
+        myAnim.SetFloat("moveY", theRigidBody.velocity.y);
 
         if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
         {
