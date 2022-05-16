@@ -822,36 +822,36 @@ MonoBehaviour:
     rewardXP: 225
     rewardItems:
     - Potion of Healing
-    - Short Sword
-    - Steel Helmet
+    - Throwing Dagger
+    - Mana Potion
   - enemies:
     - Giant Wasp
     - Giant Wasp
     rewardXP: 150
     rewardItems:
     - Potion of Healing
-    - Short Sword
+    - Caster's Staff
   - enemies:
     - Spider
     rewardXP: 50
     rewardItems:
     - Potion of Healing
-    - Short Sword
-    - Steel Helmet
+    - Short Bow
+    - Leather Pants
   - enemies:
     - Giant Wasp
     rewardXP: 75
     rewardItems:
     - Potion of Healing
     - Short Sword
-    - Steel Helmet
+    - Leather Boots
   - enemies:
     - Spider
     rewardXP: 50
     rewardItems:
     - Potion of Healing
     - Short Sword
-    - Steel Helmet
+    - Hand Axe
   activateOnEnter: 1
   activateOnStay: 1
   activateOnExit: 0
@@ -29565,8 +29565,8 @@ MonoBehaviour:
     rewardXP: 225
     rewardItems:
     - Potion of Healing
-    - Short Sword
-    - Steel Helmet
+    - Leather Armor
+    - Mana Potion
   - enemies:
     - Giant Wasp
     - Giant Wasp
@@ -29581,21 +29581,19 @@ MonoBehaviour:
     rewardXP: 150
     rewardItems:
     - Potion of Healing
-    - Short Sword
-    - Steel Helmet
+    - Mana Potion
   - enemies:
     - Giant Wasp
     rewardXP: 75
     rewardItems:
     - Potion of Healing
-    - Short Sword
-    - Steel Helmet
   - enemies:
     - Scorpion
     rewardXP: 650
     rewardItems:
-    - Greater Healing Potion
-    - Greater Healing Potion
+    - Potion of Healing
+    - Mana Potion
+    - Mana Potion
   activateOnEnter: 1
   activateOnStay: 1
   activateOnExit: 0
@@ -29860,14 +29858,14 @@ MonoBehaviour:
     rewardItems:
     - Potion of Healing
     - Short Sword
-    - Steel Helmet
+    - Leather Helmet
   - enemies:
     - Giant Wasp
     - Giant Wasp
     rewardXP: 150
     rewardItems:
     - Potion of Healing
-    - Short Sword
+    - Mana Potion
   - enemies:
     - Giant Scorpion
     rewardXP: 650
@@ -29880,15 +29878,12 @@ MonoBehaviour:
     rewardXP: 50
     rewardItems:
     - Potion of Healing
-    - Short Sword
-    - Steel Helmet
+    - Mana Potion
   - enemies:
     - Giant Wasp
     rewardXP: 75
     rewardItems:
     - Potion of Healing
-    - Short Sword
-    - Steel Helmet
   activateOnEnter: 1
   activateOnStay: 1
   activateOnExit: 0

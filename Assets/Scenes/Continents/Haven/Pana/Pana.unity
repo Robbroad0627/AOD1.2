@@ -352,7 +352,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1462527961}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &176049550
 MonoBehaviour:
@@ -371,7 +371,9 @@ MonoBehaviour:
     - Coastal Cyclops
     rewardXP: 300
     rewardItems:
-    - +1 Long Sword
+    - Long Sword
+    - Potion of Healing
+    - Potion of Healing
   activateOnEnter: 1
   activateOnStay: 1
   activateOnExit: 0
@@ -916,7 +918,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1462527961}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &403526531
 MonoBehaviour:
@@ -937,16 +939,16 @@ MonoBehaviour:
     - Orc
     rewardXP: 300
     rewardItems:
-    - Chainmail Gaunltlets
-    - Chainmail Helm
-    - Chainmail
+    - Potion of Healing
+    - Potion of Healing
+    - Mana Potion
   - enemies:
     - Orc
     - Orc
     rewardXP: 200
     rewardItems:
-    - Chainmail Gaunltlets
-    - Chainmail Helm
+    - Buckler
+    - Potion of Healing
   - enemies:
     - Orc
     rewardXP: 100
@@ -973,7 +975,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -12.455264, y: -3.9090328}
+  m_Offset: {x: -12.455264, y: -6.6854134}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -984,7 +986,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 18.699594, y: 16.199692}
+  m_Size: {x: 18.699594, y: 21.752453}
   m_EdgeRadius: 0
 --- !u!1001 &411040474
 PrefabInstance:
@@ -70931,9 +70933,8 @@ MonoBehaviour:
     - Orc
     rewardXP: 300
     rewardItems:
-    - Chainmail Gaunltlets
-    - Chainmail Helm
-    - Chainmail
+    - Potion of Healing
+    - Potion of Healing
   - enemies:
     - Orc
     - Orc
@@ -70951,7 +70952,7 @@ MonoBehaviour:
     - Orc
     rewardXP: 100
     rewardItems:
-    - Greater Healing Potion
+    - Potion of Healing
   - enemies:
     - Orc
     - Goblin
@@ -70960,7 +70961,8 @@ MonoBehaviour:
     - Goblin
     rewardXP: 300
     rewardItems:
-    - Chainmail Gaunltlets
+    - Leather Armor
+    - Buckler
   activateOnEnter: 1
   activateOnStay: 1
   activateOnExit: 0
@@ -70982,7 +70984,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -16.727062, y: -3.8261757}
+  m_Offset: {x: -16.727062, y: -7.396694}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -70993,7 +70995,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.492073, y: 60.988503}
+  m_Size: {x: 6.492073, y: 53.847466}
   m_EdgeRadius: 0
 --- !u!1 &568701403
 GameObject:
@@ -80391,16 +80393,16 @@ MonoBehaviour:
     - Orc
     rewardXP: 300
     rewardItems:
-    - Chainmail Gaunltlets
-    - Chainmail Helm
-    - Chainmail
+    - Potion of Healing
+    - Potion of Healing
+    - Mana Potion
   - enemies:
     - Orc
     - Orc
     rewardXP: 200
     rewardItems:
-    - Chainmail Gaunltlets
-    - Chainmail Helm
+    - Potion of Healing
+    - Short Sword
   - enemies:
     - Orc
     rewardXP: 100
@@ -80410,12 +80412,12 @@ MonoBehaviour:
     - Orc
     rewardXP: 100
     rewardItems:
-    - Chainmail Gaunltlets
+    - Short Bow
   - enemies:
     - Orc
     rewardXP: 100
     rewardItems:
-    - Greater Healing Potion
+    - Potion of Healing
   activateOnEnter: 1
   activateOnStay: 1
   activateOnExit: 0
@@ -80607,9 +80609,9 @@ MonoBehaviour:
     - Orc
     rewardXP: 300
     rewardItems:
-    - Chainmail Gaunltlets
-    - Chainmail Helm
-    - Chainmail
+    - Potion of Healing
+    - Potion of Healing
+    - Mana Potion
   - enemies:
     - Orc
     - Orc
@@ -80626,7 +80628,7 @@ MonoBehaviour:
     - Orc
     rewardXP: 100
     rewardItems:
-    - Chainmail Gaunltlets
+    - Potion of Healing
   - enemies:
     - Orc
     - Goblin
@@ -80635,7 +80637,8 @@ MonoBehaviour:
     - Goblin
     rewardXP: 300
     rewardItems:
-    - Greater Healing Potion
+    - Short Sword
+    - Potion of Healing
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
@@ -80657,7 +80660,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -16.20945, y: -4.1206226}
+  m_Offset: {x: -16.20945, y: -1.0425892}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -80668,7 +80671,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 7.527298, y: 60.947277}
+  m_Size: {x: 7.527298, y: 67.10335}
   m_EdgeRadius: 0
 --- !u!1001 &1339427260
 PrefabInstance:
@@ -80944,8 +80947,8 @@ Transform:
   - {fileID: 1295954486}
   - {fileID: 1730731957}
   - {fileID: 1275890857}
-  - {fileID: 176049549}
   - {fileID: 403526530}
+  - {fileID: 176049549}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81443,16 +81446,16 @@ MonoBehaviour:
     - Orc
     rewardXP: 300
     rewardItems:
-    - Chainmail Gaunltlets
-    - Chainmail Helm
-    - Chainmail
+    - Potion of Healing
+    - Potion of Healing
+    - Mana Potion
   - enemies:
     - Orc
     - Orc
     rewardXP: 200
     rewardItems:
-    - Chainmail Gaunltlets
-    - Chainmail Helm
+    - Potion of Healing
+    - Leather Armor
   - enemies:
     - Orc
     - Orc
@@ -81462,6 +81465,7 @@ MonoBehaviour:
     - Goblin
     rewardXP: 400
     rewardItems:
+    - Mana Potion
     - Mana Potion
   activateOnEnter: 1
   activateOnStay: 1
