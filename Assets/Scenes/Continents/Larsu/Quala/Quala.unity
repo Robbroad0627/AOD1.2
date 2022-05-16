@@ -152,9 +152,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2093805002}
-  - {fileID: 1919128153}
+  - {fileID: 1050616656}
   - {fileID: 1392168076}
-  - {fileID: 330449000}
+  - {fileID: 369844995}
   - {fileID: 1309207706}
   - {fileID: 1018156685}
   - {fileID: 568038618}
@@ -291,7 +291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -395,7 +395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4618796693575320, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4618796693575320, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -411,165 +411,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
---- !u!1 &330448997
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 330449000}
-  - component: {fileID: 330448999}
-  - component: {fileID: 330448998}
-  m_Layer: 0
-  m_Name: Zone4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &330448998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potentialBattles:
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 250
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-    - Potion of Vitality
-  - enemies:
-    - Orc Marauder
-    - 250
-    rewardXP: 125
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    rewardXP: 300
-    rewardItems:
-    - +1 Long Sword
-  - enemies:
-    - 'Orc '
-    - 'Orc '
-    rewardXP: 200
-    rewardItems:
-    - Throwing Hammer
-    - Throwing Hammer
-    - Potion of Vitality
-  - enemies:
-    - Ghoul
-    - Ghoul
-    rewardXP: 400
-    rewardItems:
-    - Potion of Vitality
-    - Mana Potion
-  - enemies:
-    - Mountain Cyclops
-    - Mountain Cyclops
-    rewardXP: 380
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  - enemies:
-    - Specter
-    - Specter
-    rewardXP: 400
-    rewardItems:
-    - Ring of Protection +1
-    - Mana Potion
-  - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    rewardXP: 300
-    rewardItems:
-    - Potion of Vitality
-    - +1 Long Sword
-  - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    - Goblin Militant
-    - Goblin Militant
-    rewardXP: 350
-    rewardItems:
-    - +1 Long Sword
-    - Throwing Axe
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 500
-    rewardItems:
-    - Gold Band
-    - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &330448999
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -6.252241, y: 7.594286}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 21.599987, y: 85.690216}
-  m_EdgeRadius: 0
---- !u!4 &330449000
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.677631, y: -19.37051, z: 63.97711}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 187739696}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &341071859
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,6 +587,145 @@ MonoBehaviour:
   shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
+--- !u!1 &369844994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 369844995}
+  - component: {fileID: 369844997}
+  - component: {fileID: 369844996}
+  m_Layer: 0
+  m_Name: Zone4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &369844995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369844994}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.27, y: -6.4705095, z: 63.97711}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 187739696}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &369844996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369844994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Black Snake
+    rewardXP: 300
+    rewardItems:
+    - Throwing Axe
+  - enemies:
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
+    rewardItems:
+    - Potion of Healing
+    - Mana Potion
+  - enemies:
+    - Coral Snake
+    rewardXP: 400
+    rewardItems:
+    - Long Sword
+  - enemies:
+    - 'Orc '
+    rewardXP: 100
+    rewardItems:
+    - Throwing Hammer
+    - Throwing Hammer
+  - enemies:
+    - Coral Snake
+    - Coral Snake
+    rewardXP: 800
+    rewardItems:
+    - Potion of Vitality
+    - Mana Potion
+  - enemies:
+    - Black Snake
+    - Black Snake
+    - Coral Snake
+    rewardXP: 1000
+    rewardItems:
+    - Greater Potion of Healing
+  - enemies:
+    - Black Snake
+    rewardXP: 300
+    rewardItems:
+    - Ring of Protection +1
+  - enemies:
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
+    rewardItems:
+    - Battle Axe
+  - enemies:
+    - Black Snake
+    - Coral Snake
+    rewardXP: 200
+    rewardItems:
+    - Warhammer
+  - enemies:
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
+    rewardItems:
+    - Rapier
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &369844997
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 369844994}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -17.823084, y: -6.2268295}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.173351, y: 92.56932}
+  m_EdgeRadius: 0
 --- !u!1 &376784509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1250,7 +1230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &568038616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1274,15 +1254,15 @@ MonoBehaviour:
     rewardXP: 450
     rewardItems:
     - Bastard Sword
-    - Throwing Axe
-  activateOnEnter: 0
+    - Potion of Vitality
+  activateOnEnter: 1
   activateOnStay: 1
   activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
+  deactivateAfterStarting: 1
+  cannotFlee: 1
+  shouldCompleteQuest: 1
+  QuestToComplete: It Had To Be Snakes
 --- !u!61 &568038617
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2114,7 +2094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1018156683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2129,75 +2109,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Ogre
-    rewardXP: 450
+    - Giant Cobra
+    rewardXP: 600
     rewardItems:
     - Bastard Sword
-    - Throwing Axe
-  - enemies:
-    - Ogre
-    rewardXP: 450
-    rewardItems:
-    - Throwing Axe
-    - +2 Long Sword
-  - enemies:
-    - Reaver
-    rewardXP: 150
-    rewardItems:
-    - Heralded Shield
-  - enemies:
-    - Jungle Cyclops
-    rewardXP: 100
-    rewardItems:
-    - Amulet of Protection +1
-  - enemies:
-    - Ghast
-    rewardXP: 450
-    rewardItems:
-    - Ring of the Cat
-  - enemies:
-    - Mountain Cyclops
-    - Jungle Cyclops
-    rewardXP: 415
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  - enemies:
-    - Necromancer
-    rewardXP: 300
-    rewardItems:
-    - Ring of Protection +1
-  - enemies:
-    - Necromancer
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    rewardXP: 500
-    rewardItems:
-    - Chainmail
-    - Chainmail Helmet
-  - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    - Ogre
-    rewardXP: 650
-    rewardItems:
-    - Chainmail
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Blood Warrior
-    rewardXP: 400
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  activateOnEnter: 0
+  activateOnEnter: 1
   activateOnStay: 1
   activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
+  deactivateAfterStarting: 1
+  cannotFlee: 1
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1018156684
@@ -2240,6 +2161,153 @@ Transform:
   m_Father: {fileID: 187739696}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1050616655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1050616656}
+  - component: {fileID: 1050616658}
+  - component: {fileID: 1050616657}
+  m_Layer: 0
+  m_Name: Zone2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1050616656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050616655}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.44237, y: -72, z: 63.97711}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 187739696}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1050616657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050616655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  potentialBattles:
+  - enemies:
+    - Black Snake
+    - Black Snake
+    - Black Snake
+    rewardXP: 900
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+  - enemies:
+    - Black Snake
+    - Coral Snake
+    rewardXP: 700
+    rewardItems:
+    - Potion of Healing
+    - Mana Potion
+  - enemies:
+    - Coral Snake
+    rewardXP: 400
+    rewardItems:
+    - Mana Potion
+  - enemies:
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
+    rewardItems:
+    - Potion of Healing
+  - enemies:
+    - Black Snake
+    - Coral Snake
+    - Black Snake
+    - Coral Snake
+    rewardXP: 1400
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+    - Bronze Helmet
+  - enemies:
+    - Coral Snake
+    - Coral Snake
+    rewardXP: 800
+    rewardItems:
+    - Mana Potion
+    - Mana Potion
+  - enemies:
+    - Black Snake
+    rewardXP: 300
+    rewardItems:
+    - Shield
+    - Short Sword
+  - enemies:
+    - Black Snake
+    rewardXP: 300
+    rewardItems:
+    - Short Bow
+  - enemies:
+    - Black Snake
+    - Coral Snake
+    rewardXP: 700
+    rewardItems:
+    - Long Sword
+  - enemies:
+    - Black Snake
+    - Black Snake
+    - Coral Snake
+    rewardXP: 1000
+    rewardItems:
+    - Mana Potion
+    - Ringmail
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 7
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1050616658
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050616655}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 53.318306, y: 20.447578}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 98.074524, y: 15.427765}
+  m_EdgeRadius: 0
 --- !u!1 &1260139655
 GameObject:
   m_ObjectHideFlags: 0
@@ -19765,7 +19833,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1309207704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19780,88 +19848,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Minotaur
-    rewardXP: 700
-    rewardItems:
-    - Gold Band
-    - Gold Band
-    - Gold Band
-  - enemies:
-    - Death Merchant
-    - Death Merchant
-    - Death Merchant
-    rewardXP: 750
-    rewardItems:
-    - Spirit Rune
-  - enemies:
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    rewardXP: 600
-    rewardItems:
-    - +1 Long Sword
-  - enemies:
-    - Ogre
-    - Ogre
-    rewardXP: 900
-    rewardItems:
-    - Amulet of Protection +2
-  - enemies:
-    - Ghoul
-    - Ghoul
-    - Ghoul
+    - Giant Python
     rewardXP: 600
     rewardItems:
     - Potion of Vitality
-    - Potion of Vitality
-    - Mana Potion
-    - Mana Potion
-  - enemies:
-    - Succubus
-    rewardXP: 1000
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  - enemies:
-    - Specter
-    rewardXP: 200
-    rewardItems:
-    - Ring of Protection +1
-  - enemies:
-    - Orc Chieftan
-    rewardXP: 1100
-    rewardItems:
-    - Chainmail
-    - Chailmail Leggings
-  - enemies:
-    - Wight
-    rewardXP: 700
-    rewardItems:
-    - Chainmail Helmet
-    - Chainmail Gauntlets
-  - enemies:
-    - Earth Elemental
-    rewardXP: 1000
-    rewardItems:
-    - Earth Rune
-  - enemies:
-    - Fire Elemental
-    rewardXP: 1400
-    rewardItems:
-    - Fire Rune
-  - enemies:
-    - Water Elemental
-    rewardXP: 800
-    rewardItems:
-    - Water Rune
-  activateOnEnter: 0
+  activateOnEnter: 1
   activateOnStay: 1
   activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
+  deactivateAfterStarting: 1
+  cannotFlee: 1
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1309207705
@@ -120866,7 +120862,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1392168074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120881,22 +120877,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Orc Marauder
-    rewardXP: 125
+    - Black Snake
+    rewardXP: 300
     rewardItems:
-    - Throwing Axe
     - Throwing Axe
   - enemies:
-    - Orc Marauder
-    rewardXP: 125
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
     rewardItems:
-    - Throwing Axe
-    - Throwing Axe
+    - Potion of Healing
+    - Mana Potion
   - enemies:
-    - Orc Blood Warrior
-    rewardXP: 150
+    - Coral Snake
+    rewardXP: 400
     rewardItems:
-    - +1 Long Sword
+    - Long Sword
   - enemies:
     - 'Orc '
     rewardXP: 100
@@ -120904,42 +120900,42 @@ MonoBehaviour:
     - Throwing Hammer
     - Throwing Hammer
   - enemies:
-    - Ghoul
-    rewardXP: 200
+    - Coral Snake
+    - Coral Snake
+    rewardXP: 800
     rewardItems:
     - Potion of Vitality
     - Mana Potion
   - enemies:
-    - Mountain Cyclops
-    rewardXP: 190
+    - Black Snake
+    - Black Snake
+    - Coral Snake
+    rewardXP: 1000
     rewardItems:
     - Greater Potion of Healing
   - enemies:
-    - Specter
-    rewardXP: 200
+    - Black Snake
+    rewardXP: 300
     rewardItems:
     - Ring of Protection +1
   - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    rewardXP: 150
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
     rewardItems:
     - Battle Axe
-    - Battle Axe
   - enemies:
-    - Orc Marauder
-    - Goblin Militant
+    - Black Snake
+    - Coral Snake
     rewardXP: 200
     rewardItems:
-    - Throwing Axe
-    - Throwing Axe
+    - Warhammer
   - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 250
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
     rewardItems:
-    - Throwing Axe
-    - Throwing Axe
+    - Rapier
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
@@ -120961,7 +120957,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -24.269009, y: -4.4856186}
+  m_Offset: {x: -21.810825, y: -6.2268295}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -120972,7 +120968,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 11.197807, y: 81.30272}
+  m_Size: {x: 11.197868, y: 92.56932}
   m_EdgeRadius: 0
 --- !u!4 &1392168076
 Transform:
@@ -122238,7 +122234,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4849429539440236, guid: 41d568113c653714782a64bfeeedbf6b, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4849429539440236, guid: 41d568113c653714782a64bfeeedbf6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -122522,164 +122518,6 @@ MonoBehaviour:
   shouldActivateQuest: 1
   questToMark: It Had To Be Snakes
   markComplete: 0
---- !u!1 &1919128150
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1919128153}
-  - component: {fileID: 1919128152}
-  - component: {fileID: 1919128151}
-  m_Layer: 0
-  m_Name: Zone2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1919128151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  potentialBattles:
-  - enemies:
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    rewardXP: 100
-    rewardItems:
-    - Leather Gloves
-    - Shield
-  - enemies:
-    - Flying Snake
-    - Flying Snake
-    rewardXP: 100
-    rewardItems:
-    - Bronze Helmet
-  - enemies:
-    - Revener
-    rewardXP: 100
-    rewardItems:
-    - Battle Hammer
-  - enemies:
-    - Battle Tortoise
-    rewardXP: 100
-    rewardItems:
-    - Crossbow
-  - enemies:
-    - Spider
-    rewardXP: 100
-    rewardItems:
-    - Lucern Hammer
-  - enemies:
-    - Soul Thief
-    - Soul Thief
-    - Soul Thief
-    rewardXP: 120
-    rewardItems:
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Zombie
-    - Zombie
-    rewardXP: 100
-    rewardItems:
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Goblin Enforcer
-    rewardXP: 65
-    rewardItems:
-    - Battle Axe
-  - enemies:
-    - Goblin Militant
-    rewardXP: 75
-    rewardItems:
-    - Ring of the Owl
-  - enemies:
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    rewardXP: 120
-    rewardItems:
-    - Food
-    - Food
-    - Food
-    - Food
-    - Potion of Healing
-  - enemies:
-    - Barabarian Skeleton
-    rewardXP: 75
-    rewardItems:
-    - throwing Axe
-    - throwing Axe
-  - enemies:
-    - Animated Dead
-    - Animated Dead
-    rewardXP: 100
-    rewardItems:
-    - Potion of Vitality
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &1919128152
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 26.135792, y: -4.0247574}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 89.088036, y: 20.218899}
-  m_EdgeRadius: 0
---- !u!4 &1919128153
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.377631, y: -42.67051, z: 63.97711}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 187739696}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1934965533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123147,7 +122985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -123306,7 +123144,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2093805000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123321,71 +123159,70 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 150
+    - Black Snake
+    - Black Snake
+    - Black Snake
+    rewardXP: 900
     rewardItems:
     - Potion of Healing
     - Potion of Healing
   - enemies:
-    - Orc
-    - Goblin
-    rewardXP: 150
+    - Black Snake
+    - Coral Snake
+    rewardXP: 700
     rewardItems:
     - Potion of Healing
     - Mana Potion
   - enemies:
-    - Orc
-    rewardXP: 100
+    - Coral Snake
+    rewardXP: 400
     rewardItems:
     - Mana Potion
   - enemies:
-    - Goblin
-    - Goblin
-    rewardXP: 100
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
     rewardItems:
     - Potion of Healing
   - enemies:
-    - Orc
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 250
+    - Black Snake
+    - Coral Snake
+    - Black Snake
+    - Coral Snake
+    rewardXP: 1400
     rewardItems:
     - Potion of Healing
     - Potion of Healing
-    - Leather Helmet
+    - Bronze Helmet
   - enemies:
-    - Giant Wasp
-    - Giant Wasp
-    rewardXP: 100
+    - Coral Snake
+    - Coral Snake
+    rewardXP: 800
     rewardItems:
     - Mana Potion
     - Mana Potion
   - enemies:
-    - Orc Blood Warrior
-    rewardXP: 150
+    - Black Snake
+    rewardXP: 300
     rewardItems:
-    - Buckler
+    - Shield
     - Short Sword
   - enemies:
-    - Orc Marauder
-    rewardXP: 125
+    - Black Snake
+    rewardXP: 300
     rewardItems:
     - Short Bow
   - enemies:
-    - Orc
-    - Goblin
-    rewardXP: 150
+    - Black Snake
+    - Coral Snake
+    rewardXP: 700
     rewardItems:
     - Amulet of Protection +1
   - enemies:
-    - Goblin
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 200
+    - Black Snake
+    - Black Snake
+    - Coral Snake
+    rewardXP: 1000
     rewardItems:
     - Mana Potion
     - Ringmail
@@ -123410,7 +123247,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 53.869656, y: 23.369034}
+  m_Offset: {x: 53.318306, y: 24.95422}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -123421,7 +123258,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 91.182335, y: 20.860977}
+  m_Size: {x: 98.074524, y: 24.03135}
   m_EdgeRadius: 0
 --- !u!4 &2093805002
 Transform:
