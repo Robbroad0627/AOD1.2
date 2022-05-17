@@ -99,10 +99,10 @@ MonoBehaviour:
   isWeapon: 0
   isArmour: 0
   itemName: Ring of the Bull
-  description: This magical ring increases the user's Hp by 1 point.
-  value: 1000
+  description: This magical ring increases the user's Hp by 20 point.s
+  value: 5000
   itemSprite: {fileID: 21300000, guid: cea818615d9a304439d998743ff3ce4f, type: 3}
-  amountToChange: 1
+  amountToChange: 20
   affectHP: 1
   affectMP: 0
   affectStr: 0
