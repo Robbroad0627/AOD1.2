@@ -273,21 +273,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Giant Cobra
-    rewardXP: 200
-    rewardItems:
-    - Ring of the Cat
-  - enemies:
-    - Coastal Cyclops
+    - Goblin
+    - Goblin
+    - Goblin
+    - Goblin
+    - Goblin
+    - Goblin
     rewardXP: 300
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+  - enemies:
+    - Orc
+    - Goblin
+    - Goblin
+    - Goblin
+    rewardXP: 250
     rewardItems:
     - Long Bow
   - enemies:
-    - Ogre
-    - Orc Marauder
-    rewardXP: 575
+    - Orc
+    - 'Orc '
+    rewardXP: 200
     rewardItems:
-    - War Hammer
+    - Throwing Hammer
   - enemies:
     - 'Orc '
     - Orc
@@ -295,14 +304,16 @@ MonoBehaviour:
     - 'Orc '
     rewardXP: 400
     rewardItems:
-    - Amulet of Protection +2
-    - Cross Bow
+    - Potion of Healing
+    - Potion of Healing
+    - Mana Potion
   - enemies:
-    - Owlbear
-    rewardXP: 700
+    - Brown Bear
+    - Brown Bear
+    rewardXP: 300
     rewardItems:
-    - Potion of Vitality
-    - Potion of Vitality
+    - Short Sword
+    - Buckler
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
@@ -6742,18 +6753,26 @@ MonoBehaviour:
     - Goblin
     rewardXP: 300
     rewardItems:
-    - Ring of the Cat
+    - Potion of Healing
+    - Potion of Healing
+    - Mana Potion
   - enemies:
-    - Coastal Cyclops
+    - Brown Bear
+    - Brown Bear
     rewardXP: 300
     rewardItems:
-    - Amulet of the Battle Hardened
+    - Potion of Healing
+    - Mana Potion
   - enemies:
-    - Ogre
-    - 'Orc '
-    rewardXP: 550
+    - Orc
+    - Goblin
+    - Goblin
+    - Goblin
+    - Goblin
+    rewardXP: 300
     rewardItems:
-    - Ring of Protection +1
+    - Potion of Healing
+    - Potion of Healing
   - enemies:
     - Orc
     - 'Orc '
@@ -6761,13 +6780,13 @@ MonoBehaviour:
     - 'Orc '
     rewardXP: 400
     rewardItems:
-    - Amulet of Protection +2
-    - +1 Long Sword
+    - Leather Helmet
+    - Short Sword
   - enemies:
-    - Giant Python
-    rewardXP: 450
+    - Brown Bear
+    rewardXP: 150
     rewardItems:
-    - Potion of Vitality
+    - Potion of Healing
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
@@ -7373,20 +7392,24 @@ MonoBehaviour:
   - enemies:
     - Brown Bear
     - Brown Bear
-    rewardXP: 400
+    rewardXP: 300
     rewardItems:
-    - Ring of the Cat
+    - Potion of Healing
+    - Potion of Healing
+    - Potion of Healing
   - enemies:
     - Coastal Cyclops
     rewardXP: 300
     rewardItems:
-    - Amulet of the Battle Hardened
+    - Potion of Healing
+    - Mana Potion
   - enemies:
-    - Ogre
+    - Orc
     - 'Orc '
-    rewardXP: 550
+    rewardXP: 200
     rewardItems:
-    - Ring of Protection +1
+    - Leather Pants
+    - Leather Boots
   - enemies:
     - Orc
     - 'Orc '
@@ -7394,8 +7417,9 @@ MonoBehaviour:
     - 'Orc '
     rewardXP: 400
     rewardItems:
-    - Amulet of Protection +1
-    - +2 Long Sword
+    - Potion of Healing
+    - Potion of Healing
+    - Mana Potion
   - enemies:
     - Owlbear
     rewardXP: 700
@@ -53809,40 +53833,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   potentialBattles:
   - enemies:
-    - Black Bear
-    - Black Bear
-    - Black Bear
-    - Black Bear
+    - 'Orc '
+    - 'Orc '
+    - 'Orc '
+    - 'Orc '
     rewardXP: 400
     rewardItems:
-    - Ring of the Cat
+    - Potion of Healing
+    - Potion of Healing
+    - Potion of Healing
   - enemies:
-    - Coastal Cyclops
+    - Brown Bear
+    rewardXP: 150
+    rewardItems:
+    - Potion of Healing
+    - Mana Potion
+  - enemies:
+    - 'Orc '
+    - 'Orc '
+    rewardXP: 200
+    rewardItems:
+    - Mana Potion
+    - Mana Potion
+  - enemies:
+    - Ogre
+    rewardXP: 400
+    rewardItems:
+    - Leather Armor
+    - Buckler
+    - Short Sword
+  - enemies:
+    - Brown Bear
+    - Brown Bear
     rewardXP: 300
     rewardItems:
-    - Amulet of the Battle Hardened
-  - enemies:
-    - Ogre
-    - 'Orc '
-    rewardXP: 550
-    rewardItems:
-    - Ring of Protection +1
-  - enemies:
-    - 'Orc '
-    - 'Orc '
-    - 'Orc '
-    - 'Orc '
-    - Ogre
-    rewardXP: 850
-    rewardItems:
-    - Amulet of Protection +1
-    - +2 Long Sword
-  - enemies:
-    - Ogre
-    - Ogre
-    rewardXP: 900
-    rewardItems:
-    - Potion of Vitality
+    - Potion of Healing
+    - Potion of Healing
+    - Mana Potion
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0

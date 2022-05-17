@@ -177,14 +177,14 @@ MonoBehaviour:
     rewardXP: 400
     rewardItems:
     - Leather Gloves
-    - Shield
+    - Mana Potion
   - enemies:
     - Ice Mephit
     - Ice Mephit
     - Ice Mephit
     rewardXP: 300
     rewardItems:
-    - Bronze Helmet
+    - Mana Potion
   - enemies:
     - Ice Mephit
     - Ice Mephit
@@ -193,7 +193,7 @@ MonoBehaviour:
     - Ice Mephit
     rewardXP: 500
     rewardItems:
-    - Battle Hammer
+    - Mana
     - Potion Of Healing
   - enemies:
     - Ice Mephit
@@ -204,7 +204,7 @@ MonoBehaviour:
     - Ice Mephit
     rewardXP: 600
     rewardItems:
-    - Crossbow
+    - Mana Potion
     - Potion Of Healing
     - Potion Of Healing
   - enemies:
@@ -214,7 +214,7 @@ MonoBehaviour:
     - Ice Golem
     rewardXP: 800
     rewardItems:
-    - Lucern Hammer
+    - Mana Potion
     - Potion Of Healing
     - Potion Of Healing
     - Potion Of Healing
@@ -390,7 +390,7 @@ MonoBehaviour:
     - Ice Mephit
     rewardXP: 400
     rewardItems:
-    - Leather Gloves
+    - Bronze Gloves
     - Shield
   - enemies:
     - Ice Mephit
@@ -407,7 +407,7 @@ MonoBehaviour:
     - Ice Mephit
     rewardXP: 500
     rewardItems:
-    - Battle Hammer
+    - Long Bow
     - Potion Of Healing
   - enemies:
     - Ice Mephit
@@ -418,7 +418,7 @@ MonoBehaviour:
     - Ice Mephit
     rewardXP: 600
     rewardItems:
-    - Crossbow
+    - Long Sword
     - Potion Of Healing
     - Potion Of Healing
   - enemies:
@@ -428,7 +428,7 @@ MonoBehaviour:
     - Ice Golem
     rewardXP: 800
     rewardItems:
-    - Lucern Hammer
+    - Bronze Boots
     - Potion Of Healing
     - Potion Of Healing
     - Potion Of Healing
@@ -519,14 +519,14 @@ MonoBehaviour:
     rewardXP: 400
     rewardItems:
     - Leather Gloves
-    - Shield
+    - Buckler
   - enemies:
     - Ice Mephit
     - Ice Mephit
     - Ice Mephit
     rewardXP: 300
     rewardItems:
-    - Bronze Helmet
+    - Bronze Gauntlets
   - enemies:
     - Ice Mephit
     - Ice Mephit
@@ -535,7 +535,7 @@ MonoBehaviour:
     - Ice Mephit
     rewardXP: 500
     rewardItems:
-    - Battle Hammer
+    - Bronze Armor
     - Potion Of Healing
   - enemies:
     - Ice Mephit
@@ -546,7 +546,7 @@ MonoBehaviour:
     - Ice Mephit
     rewardXP: 600
     rewardItems:
-    - Crossbow
+    - Long Bow
     - Potion Of Healing
     - Potion Of Healing
   - enemies:
@@ -556,7 +556,7 @@ MonoBehaviour:
     - Ice Golem
     rewardXP: 800
     rewardItems:
-    - Lucern Hammer
+    - Long Sword
     - Potion Of Healing
     - Potion Of Healing
     - Potion Of Healing
@@ -646,7 +646,7 @@ MonoBehaviour:
     - Greater Healing Potion
     - Greater Healing Potion
     - Greater Healing Potion
-    - Long Sword +2
+    - Long Sword 1
   activateOnEnter: 1
   activateOnStay: 0
   activateOnExit: 0
@@ -911,7 +911,7 @@ MonoBehaviour:
     - Ice Mephit
     rewardXP: 600
     rewardItems:
-    - Crossbow
+    - Hand Crossbow
     - Potion Of Healing
     - Potion Of Healing
   - enemies:
@@ -921,7 +921,7 @@ MonoBehaviour:
     - Ice Golem
     rewardXP: 800
     rewardItems:
-    - Lucern Hammer
+    - War Hammer
     - Potion Of Healing
     - Potion Of Healing
     - Potion Of Healing
@@ -1028,7 +1028,7 @@ MonoBehaviour:
     - Ice Mephit
     rewardXP: 500
     rewardItems:
-    - Battle Hammer
+    - Battle Axe
     - Potion Of Healing
   - enemies:
     - Ice Mephit
@@ -1039,7 +1039,7 @@ MonoBehaviour:
     - Ice Mephit
     rewardXP: 600
     rewardItems:
-    - Crossbow
+    - Cutlas
     - Potion Of Healing
     - Potion Of Healing
   - enemies:
@@ -1049,7 +1049,7 @@ MonoBehaviour:
     - Ice Golem
     rewardXP: 800
     rewardItems:
-    - Lucern Hammer
+    - Rapier
     - Potion Of Healing
     - Potion Of Healing
     - Potion Of Healing
@@ -80401,7 +80401,7 @@ MonoBehaviour:
     rewardXP: 1400
     rewardItems:
     - Greater Healing Potion
-    - Shield
+    - Buckler
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
