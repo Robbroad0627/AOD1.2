@@ -491,7 +491,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
@@ -572,17 +572,17 @@ PrefabInstance:
     - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: transitionName
-      value: Bajang-2
+      value: Sililah-2
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
-      value: Chulu Shop
+      value: Sililah Shop
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
-      value: Bajang Shop-1
+      value: Sililah Shop-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
@@ -599,15 +599,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4618796693575320, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 95.1
+      value: 20.95
       objectReference: {fileID: 0}
     - target: {fileID: 4618796693575320, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.3
+      value: -11.46
       objectReference: {fileID: 0}
     - target: {fileID: 4618796693575320, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.076171875
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4618796693575320, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 806549694}
   - component: {fileID: 806549693}
   m_Layer: 0
-  m_Name: Taz_NPC_0
+  m_Name: Tazmina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1458,7 +1458,7 @@ GameObject:
   - component: {fileID: 1087379234}
   - component: {fileID: 1087379233}
   m_Layer: 0
-  m_Name: Randeen_0
+  m_Name: Randeen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1490,7 +1490,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Randeen
+  - Wlecome to Sililah the gateway to the land of Oluma
+  - n- Player
+  - Thank you for the welcome.
+  - n- Randeen
+  - Where do you hail from?
+  - n-Player
+  - Originally form Haven, then a crazy wizard sent us to Ahtir.
+  - From Ashtir we caught a charter to Larsu
+  - From Larsu we came by boat to here.
+  - n- Randeen
+  - Very well travelled then
+  - n-Player
+  - Yes it has been a long journey.  We have seen much since we departed our homes.
+  - Has there been an increase in the heat here, or serpents attacking people?
+  - n- Randeen
+  - As you will see when you leave, we are a desert nation so it is always hot. 
+    I have not heard of serpents attacking people outside of the ordinary numbers.
+  - We get a lot of news coming in from other lands but news does not travel quickly
+    from our towns to here.
+  - n- Player
+  - Okay, Thank you
+  - n-Randeen
+  - Goodbye
+  - n-Player
+  - Goodbye
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -1508,7 +1534,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.16748333, y: -0.0000019073486}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1519,7 +1545,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8200002, y: 5.61}
+  m_Size: {x: 7.1751347, y: 8.876337}
   m_EdgeRadius: 0
 --- !u!61 &1087379235
 BoxCollider2D:
@@ -104020,7 +104046,7 @@ PrefabInstance:
     - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: transitionName
-      value: Lan-1
+      value: Sililah-1
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
