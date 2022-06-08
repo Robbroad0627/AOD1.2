@@ -72114,7 +72114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053269335}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.067764, y: -8.162046, z: 38.885563}
+  m_LocalPosition: {x: -6.36, y: -6.27, z: 38.885563}
   m_LocalScale: {x: 0.35, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 56745833}
@@ -72134,7 +72134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - n-Guard
-  - Can't talk, i am on duty.
+  - Sorry the shop is closed.
+  - It was ransacked by Orcs in the night.
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -72230,7 +72231,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -76193021
   m_SortingLayer: 2
-  m_SortingOrder: -1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 095fa5978781dc6499932a23ac24b58b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -80452,78 +80453,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 59.19334, y: 14.676069}
   m_EdgeRadius: 0
---- !u!1001 &1293677118
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1293864594}
-    m_Modifications:
-    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_Name
-      value: Shop Exit
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 26.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 17.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 283.8061
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.7053279
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7088812
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 89.712006
-      objectReference: {fileID: 0}
-    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
-        type: 3}
-      propertyPath: transitionName
-      value: Pana-2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
-        type: 3}
-      propertyPath: areaToLoad
-      value: Pana Shop
-      objectReference: {fileID: 0}
-    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
-        type: 3}
-      propertyPath: areaTransitionName
-      value: Pana Shop-1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
 --- !u!1 &1293864593
 GameObject:
   m_ObjectHideFlags: 0
@@ -80554,7 +80483,6 @@ Transform:
   - {fileID: 1933604602}
   - {fileID: 1170829805}
   - {fileID: 1667927485}
-  - {fileID: 2091935037}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -97080,12 +97008,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.139211, y: 5.7658615}
   m_EdgeRadius: 0
---- !u!4 &2091935037 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
-    type: 3}
-  m_PrefabInstance: {fileID: 1293677118}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2101477812
 PrefabInstance:
   m_ObjectHideFlags: 0

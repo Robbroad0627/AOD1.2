@@ -110,9 +110,39 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Continents/Haven/Tearle/Tower Sub-3.unity
     guid: f07fec99a09b6154db96aae94c27705d
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/Ashtir.unity
+    guid: 9ac30ce2b51f172458a974e54e2e57a8
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/EastVill/EastVill.unity
+    guid: a10b23cf3c3d9274fad5e2694c3f4488
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/EastVill/EastVill Shop.unity
+    guid: bb11a30d264852d4f804af09248e41bc
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/NorthVill/Northvill.unity
+    guid: 4fbdb66311c13d84085545fd1d810dce
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/NorthVill/Northvill Shop.unity
+    guid: 68291122e3be1724a841e67f12cc4ca5
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/WestVill/WestVill.unity
+    guid: 12e644766e8ff2c44bf5c53d7b623bc0
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/WestVill/Westvill Shop.unity
+    guid: d204f1ee1cc1d08438136bb4ff8718a6
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/SouthVill/SouthVill.unity
+    guid: c6054a9b341cd984bb9a9595976b5334
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/SouthVill/Southvill Shop.unity
+    guid: a787214124efce44cb6a9432a2c3e671
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/Long House/Long House.unity
+    guid: 070f87631cf50c741a5794a386e696e5
+  - enabled: 1
+    path: Assets/Scenes/Continents/Ashtir/Ice Cave.unity
+    guid: 8f93b123a68bed64bbcb07d077142e78
   - enabled: 1
     path: Assets/Scenes/Continents/Larsu/Larsu.unity
     guid: 326e867bda33ef74e8b54e46da227dd2
@@ -156,6 +186,33 @@ EditorBuildSettings:
     path: Assets/Scenes/Continents/Larsu/Temple3.unity
     guid: eec40101778955242b4d1c1f6012d9fc
   - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/Continents/Oluma/Oluma.unity
+    guid: a498e8f051443a74dba2cff430277e88
+  - enabled: 0
+    path: Assets/Scenes/Continents/Oluma/Al Abaden/Al Abaden.unity
+    guid: 1fe9f056fb43a9e409386aceea095134
+  - enabled: 0
+    path: Assets/Scenes/Continents/Oluma/Adlab/Adlab.unity
+    guid: 00197b113541c7d438ac4a0e46e7e0c1
+  - enabled: 0
+    path: Assets/Scenes/Continents/Oluma/Biddaib/Biddaib.unity
+    guid: b68a070166e8f244599510d202bf06c8
+  - enabled: 0
+    path: Assets/Scenes/Continents/Oluma/Fawab/Fawab.unity
+    guid: 98c8373c623ad504d95bfa0d711fd608
+  - enabled: 0
+    path: Assets/Scenes/Continents/Oluma/Karwiya.unity
+    guid: 9c540dd1d9047b84681d92a2a04d4833
+  - enabled: 0
+    path: Assets/Scenes/Continents/Oluma/Sililah/Sililah.unity
+    guid: f52d062c0a3e07d409af5bf2caf0adc8
+  - enabled: 0
+    path: Assets/Scenes/Continents/Oluma/Thumrar/Thumrar.unity
+    guid: b08e44930dd247e4cb7ff45c3e4e3f19
+  - enabled: 0
     path: Assets/Scenes/Continents/Mandu/Mandu.unity
     guid: ee8e3203e9e5ebd4796f63ca19cdcc15
   - enabled: 0
@@ -192,30 +249,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Continents/Mandu/Xin/Xin.unity
     guid: 3d639e4715e83fc48bf3e6301c026945
   - enabled: 0
-    path: Assets/Scenes/Continents/Oluma/Oluma.unity
-    guid: a498e8f051443a74dba2cff430277e88
-  - enabled: 0
-    path: Assets/Scenes/Continents/Oluma/Al Abaden/Al Abaden.unity
-    guid: 1fe9f056fb43a9e409386aceea095134
-  - enabled: 0
-    path: Assets/Scenes/Continents/Oluma/Adlab/Adlab.unity
-    guid: 00197b113541c7d438ac4a0e46e7e0c1
-  - enabled: 0
-    path: Assets/Scenes/Continents/Oluma/Biddaib/Biddaib.unity
-    guid: b68a070166e8f244599510d202bf06c8
-  - enabled: 0
-    path: Assets/Scenes/Continents/Oluma/Fawab/Fawab.unity
-    guid: 98c8373c623ad504d95bfa0d711fd608
-  - enabled: 0
-    path: Assets/Scenes/Continents/Oluma/Karwiya.unity
-    guid: 9c540dd1d9047b84681d92a2a04d4833
-  - enabled: 0
-    path: Assets/Scenes/Continents/Oluma/Sililah/Sililah.unity
-    guid: f52d062c0a3e07d409af5bf2caf0adc8
-  - enabled: 0
-    path: Assets/Scenes/Continents/Oluma/Thumrar/Thumrar.unity
-    guid: b08e44930dd247e4cb7ff45c3e4e3f19
-  - enabled: 0
     path: Assets/Scenes/Continents/Piltara/Piltara.unity
     guid: 176c9079c0e4d2043acc0523a8f82919
   - enabled: 0
@@ -224,37 +257,4 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Continents/Ashtir/Ashtir.unity
-    guid: 9ac30ce2b51f172458a974e54e2e57a8
-  - enabled: 1
-    path: Assets/Scenes/Continents/Ashtir/EastVill/EastVill.unity
-    guid: a10b23cf3c3d9274fad5e2694c3f4488
-  - enabled: 1
-    path: Assets/Scenes/Continents/Ashtir/EastVill/EastVill Shop.unity
-    guid: bb11a30d264852d4f804af09248e41bc
-  - enabled: 1
-    path: Assets/Scenes/Continents/Ashtir/NorthVill/Northvill.unity
-    guid: 4fbdb66311c13d84085545fd1d810dce
-  - enabled: 1
-    path: Assets/Scenes/Continents/Ashtir/NorthVill/Northvill Shop.unity
-    guid: 68291122e3be1724a841e67f12cc4ca5
-  - enabled: 1
-    path: Assets/Scenes/Continents/Ashtir/WestVill/WestVill.unity
-    guid: 12e644766e8ff2c44bf5c53d7b623bc0
-  - enabled: 1
-    path: Assets/Scenes/Continents/Ashtir/WestVill/Westvill Shop.unity
-    guid: d204f1ee1cc1d08438136bb4ff8718a6
-  - enabled: 1
-    path: Assets/Scenes/Continents/Ashtir/SouthVill/SouthVill.unity
-    guid: c6054a9b341cd984bb9a9595976b5334
-  - enabled: 1
-    path: Assets/Scenes/Continents/Ashtir/SouthVill/Southvill Shop.unity
-    guid: a787214124efce44cb6a9432a2c3e671
-  - enabled: 1
-    path: Assets/Scenes/Continents/Ashtir/Long House/Long House.unity
-    guid: 070f87631cf50c741a5794a386e696e5
-  - enabled: 1
-    path: Assets/Scenes/Continents/Ashtir/Ice Cave.unity
-    guid: 8f93b123a68bed64bbcb07d077142e78
   m_configObjects: {}
