@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5710049384087814996}
   - component: {fileID: 2704347574805522360}
   - component: {fileID: 4586343777225226078}
+  - component: {fileID: -5432252328754263654}
   m_Layer: 0
   m_Name: Coastal Cyclops
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 16
   wpnPower: 4
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 2704347574805522360}
   deadSprite: {fileID: -1470988758746785676, guid: a752df33e29790f42a70cc34d7c95a72,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -4252895621754917407, guid: a752df33e29790f42a70cc34d7c95a72,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-5432252328754263654
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939761038223639999}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c0e50e6181b784343a137501b8ac2d5b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

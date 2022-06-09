@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 946533301771353036}
   - component: {fileID: 7252321846913204975}
   - component: {fileID: 85779787459067250}
+  - component: {fileID: 4481367160091110972}
   m_Layer: 0
   m_Name: Ghoul
   m_TagString: Untagged
@@ -107,9 +108,27 @@ MonoBehaviour:
   defence: 12
   wpnPower: 4
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 7252321846913204975}
   deadSprite: {fileID: 21300000, guid: 5f4b5eba9ac69194b9b7d370bc5668be, type: 3}
   aliveSprite: {fileID: 21300000, guid: 3d8a65c5cff506e4cac3033997afb4b9, type: 3}
   fadeSpeed: 1
+--- !u!95 &4481367160091110972
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8916958229612656776}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8930523112092219930}
   - component: {fileID: 3824400839102077727}
   - component: {fileID: 8228611916029128262}
+  - component: {fileID: 8291131836707801679}
   m_Layer: 0
   m_Name: Nightmare
   m_TagString: Untagged
@@ -107,9 +108,27 @@ MonoBehaviour:
   defence: 13
   wpnPower: 6
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 3824400839102077727}
   deadSprite: {fileID: 21300000, guid: 74b988273e5ac4048a049d9e2010d3a0, type: 3}
   aliveSprite: {fileID: 21300000, guid: a1a7898f43ee82e4cb309ecaea076eb4, type: 3}
   fadeSpeed: 1
+--- !u!95 &8291131836707801679
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3808762579326850125}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

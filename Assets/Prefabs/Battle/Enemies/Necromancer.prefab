@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5298261246228026671}
   - component: {fileID: 555383934237580153}
   - component: {fileID: 1325132254405682445}
+  - component: {fileID: -436741048065466088}
   m_Layer: 0
   m_Name: Necromancer
   m_TagString: Untagged
@@ -107,9 +108,27 @@ MonoBehaviour:
   defence: 14
   wpnPower: 0
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 555383934237580153}
   deadSprite: {fileID: 21300000, guid: 58da5f4e856345748829cf875ac9b2df, type: 3}
   aliveSprite: {fileID: 21300000, guid: 0dbf9a1a5ad62fe44b3de0b65661fa63, type: 3}
   fadeSpeed: 1
+--- !u!95 &-436741048065466088
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2819958074621445588}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

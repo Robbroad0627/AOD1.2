@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6231923287725331762}
   - component: {fileID: 8869064145477057390}
   - component: {fileID: 3346791347886162886}
+  - component: {fileID: 1528646513619128744}
   m_Layer: 0
   m_Name: Vampire
   m_TagString: Untagged
@@ -107,9 +108,27 @@ MonoBehaviour:
   defence: 16
   wpnPower: 9
   armrPower: 2
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 8869064145477057390}
   deadSprite: {fileID: 21300000, guid: cfdfc0ddfdedd444f9cc1c9c92e49854, type: 3}
   aliveSprite: {fileID: 21300000, guid: 1a978348fa626fe4a9e6c54467a21a1e, type: 3}
   fadeSpeed: 1
+--- !u!95 &1528646513619128744
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7785579157706796408}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

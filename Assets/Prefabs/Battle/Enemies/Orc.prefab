@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8154548887985939631}
   - component: {fileID: 6607324023726372265}
   - component: {fileID: 7001048753391564841}
+  - component: {fileID: -2176538465486024459}
   m_Layer: 0
   m_Name: Orc
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 13
   wpnPower: 5
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 6607324023726372265}
   deadSprite: {fileID: -496892395351192873, guid: 45ba5d9c3ad624c42a05239d7e67035a,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 5555361766786287061, guid: 45ba5d9c3ad624c42a05239d7e67035a,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-2176538465486024459
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6893304275124570463}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a8980fbc9b565f2449db78cdc0e341ee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

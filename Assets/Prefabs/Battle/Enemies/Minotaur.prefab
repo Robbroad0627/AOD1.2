@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4143910632522189672}
   - component: {fileID: 6333189931719583467}
   - component: {fileID: 510419650718542902}
+  - component: {fileID: 1949569783655429144}
   m_Layer: 0
   m_Name: Minotaur
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 14
   wpnPower: 10
   armrPower: 2
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 6333189931719583467}
   deadSprite: {fileID: 3931071242134515011, guid: f008904408cb4b640a85a123a45e22e5,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 9042321911642273412, guid: f008904408cb4b640a85a123a45e22e5,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &1949569783655429144
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8236709702675344364}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

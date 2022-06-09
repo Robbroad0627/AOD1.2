@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1799722683831091963}
   - component: {fileID: 1731780411047966819}
   - component: {fileID: 1324549653863499401}
+  - component: {fileID: -501552592287734735}
   m_Layer: 0
   m_Name: Troll
   m_TagString: Untagged
@@ -107,9 +108,27 @@ MonoBehaviour:
   defence: 15
   wpnPower: 7
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 1731780411047966819}
   deadSprite: {fileID: 21300000, guid: c89589c6e69d1494bb87f900e8a2755b, type: 3}
   aliveSprite: {fileID: 21300000, guid: d6f4145d59d73b94fa9e4303aa8b6b7c, type: 3}
   fadeSpeed: 1
+--- !u!95 &-501552592287734735
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3214854054647837996}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

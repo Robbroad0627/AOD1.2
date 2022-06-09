@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3527614067575532232}
   - component: {fileID: 2443106133101223294}
   - component: {fileID: 7503355710286755173}
+  - component: {fileID: 5782599007046424436}
   m_Layer: 0
   m_Name: Ogre
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 11
   wpnPower: 10
   armrPower: 2
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 2443106133101223294}
   deadSprite: {fileID: 7209628147367737023, guid: 9b5f8ed234983aa4e89302502f4d2fad,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 2063777203212614812, guid: 9b5f8ed234983aa4e89302502f4d2fad,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &5782599007046424436
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6171006522004074591}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1a6698a43205a1d43822c77c27dc7e71, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

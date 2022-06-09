@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3845775775292953904}
   - component: {fileID: 7226729815648137719}
   - component: {fileID: 4609396368132097352}
+  - component: {fileID: 8298454333516612263}
   m_Layer: 0
   m_Name: Greater Demon
   m_TagString: Untagged
@@ -107,9 +108,27 @@ MonoBehaviour:
   defence: 19
   wpnPower: 8
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 7226729815648137719}
   deadSprite: {fileID: 21300000, guid: e6e88d5a8911dc9408afa35428bf6967, type: 3}
   aliveSprite: {fileID: 21300000, guid: 7cad2da84f0291e44aaf7064312af7a8, type: 3}
   fadeSpeed: 1
+--- !u!95 &8298454333516612263
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2804563107123294292}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

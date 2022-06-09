@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4266487477916557613}
   - component: {fileID: 6089648526543341897}
   - component: {fileID: 1793753066179100112}
+  - component: {fileID: 8645691434957680612}
   m_Layer: 0
   m_Name: Arctic Wolf
   m_TagString: Untagged
@@ -112,3 +113,22 @@ MonoBehaviour:
   deadSprite: {fileID: 21300030, guid: 3b8faf80d68feb64d9104095faf0af3a, type: 3}
   aliveSprite: {fileID: 21300002, guid: 3b8faf80d68feb64d9104095faf0af3a, type: 3}
   fadeSpeed: 1
+--- !u!95 &8645691434957680612
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5404340332750779790}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 803175677a26ba747b540870e0e0d3cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

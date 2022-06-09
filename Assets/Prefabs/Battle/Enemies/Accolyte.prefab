@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3477806252371076702}
   - component: {fileID: 4544079009883095494}
   - component: {fileID: 159916476167234111}
+  - component: {fileID: -8381692633879354056}
   m_Layer: 0
   m_Name: Accolyte
   m_TagString: Untagged
@@ -107,9 +108,27 @@ MonoBehaviour:
   defence: 16
   wpnPower: 0
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 4544079009883095494}
   deadSprite: {fileID: 21300000, guid: cf3d020af7788534da54c0eec7d5d14b, type: 3}
   aliveSprite: {fileID: 21300000, guid: d64fce91d1684e24492c89911bb86587, type: 3}
   fadeSpeed: 1
+--- !u!95 &-8381692633879354056
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3194668166075238989}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

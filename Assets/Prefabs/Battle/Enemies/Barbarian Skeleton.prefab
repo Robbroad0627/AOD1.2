@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7630923671255144450}
   - component: {fileID: 398444591676679437}
   - component: {fileID: 7442547295168426486}
+  - component: {fileID: 4493875477931640925}
   m_Layer: 0
   m_Name: Barbarian Skeleton
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 13
   wpnPower: 4
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 398444591676679437}
   deadSprite: {fileID: 5843423375941130569, guid: 41fb1b078fb56f541b6c991cfe7a083b,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -6250752351692591890, guid: 41fb1b078fb56f541b6c991cfe7a083b,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &4493875477931640925
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5857830186334123462}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

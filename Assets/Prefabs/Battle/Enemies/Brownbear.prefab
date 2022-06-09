@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3480491024902429519}
   - component: {fileID: 2664661936744812441}
   - component: {fileID: 231936349201434410}
+  - component: {fileID: 1365582210608164072}
   m_Layer: 0
   m_Name: Brownbear
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 3
   wpnPower: 6
   armrPower: 5
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 2664661936744812441}
   deadSprite: {fileID: -1485590946813334225, guid: 646f0fae9c451f24a8a1516732c29c6e,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 395638934714252959, guid: 646f0fae9c451f24a8a1516732c29c6e,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &1365582210608164072
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5385243454618432970}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fd939375666d0ed4cb0446526e694915, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

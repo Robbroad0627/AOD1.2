@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3948440487453076060}
   - component: {fileID: 5600044705409694040}
   - component: {fileID: 3102376416841317918}
+  - component: {fileID: 453516802043628098}
   m_Layer: 0
   m_Name: Giant Wasp
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 14
   wpnPower: 3
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 5600044705409694040}
   deadSprite: {fileID: 7132174833355055946, guid: 6bc06d20c13b67b438d2c7752f232acc,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 8317796218486468542, guid: 6bc06d20c13b67b438d2c7752f232acc,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &453516802043628098
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9022371636006410323}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8bdd5a6e1ee5c1b42a2e950c9f315d7e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

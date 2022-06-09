@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2852095791381891336}
   - component: {fileID: 6642565695650760445}
   - component: {fileID: 7787798595189815564}
+  - component: {fileID: -3626512360305404594}
   m_Layer: 0
   m_Name: Mountain Cyclops
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 12
   wpnPower: 10
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 6642565695650760445}
   deadSprite: {fileID: -4940853847714504249, guid: 98d96a29b44e87b47b399d227b7a7d4e,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -1620883388682312689, guid: 98d96a29b44e87b47b399d227b7a7d4e,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-3626512360305404594
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3969538214675828721}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

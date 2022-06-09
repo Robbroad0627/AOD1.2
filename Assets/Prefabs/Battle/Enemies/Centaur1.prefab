@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1215385522800159257}
   - component: {fileID: 4195953938112921696}
   - component: {fileID: 6370533333284118630}
+  - component: {fileID: 8004614888918802747}
   m_Layer: 0
   m_Name: Centaur1
   m_TagString: Untagged
@@ -108,10 +109,28 @@ MonoBehaviour:
   defence: 12
   wpnPower: 6
   armrPower: 2
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 4195953938112921696}
   deadSprite: {fileID: 21300000, guid: 553bbea666ae8e642b9a8b6f315fa450, type: 3}
   aliveSprite: {fileID: 8266993487111679855, guid: d01d41be310a3bf45a8f4faeef50e1a0,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &8004614888918802747
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943231280812956604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

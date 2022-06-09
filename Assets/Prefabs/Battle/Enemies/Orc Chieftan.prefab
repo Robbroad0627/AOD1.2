@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 328846813338098370}
   - component: {fileID: 541670812867536218}
   - component: {fileID: 315078547305424711}
+  - component: {fileID: 7440078917170524973}
   m_Layer: 0
   m_Name: Orc Chieftan
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 16
   wpnPower: 8
   armrPower: 5
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 541670812867536218}
   deadSprite: {fileID: 6243420196309317702, guid: 85f9b261f1779f149ab812fae4fd8e42,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 8878086145815685071, guid: 85f9b261f1779f149ab812fae4fd8e42,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &7440078917170524973
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6903400483099805934}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

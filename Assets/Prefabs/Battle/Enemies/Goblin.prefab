@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5081418921314467838}
   - component: {fileID: 3700448942312045888}
   - component: {fileID: 7710945186052476699}
+  - component: {fileID: 3257374545938549702}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Untagged
@@ -107,7 +108,6 @@ MonoBehaviour:
   defence: 15
   wpnPower: 6
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 3700448942312045888}
   deadSprite: {fileID: 3425864024802589502, guid: 27806d3e5119ff642bcc563146680a4b,
@@ -115,3 +115,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 864432499736724763, guid: 27806d3e5119ff642bcc563146680a4b,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &3257374545938549702
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9113699302769719583}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 427a3f27200f3fb46a9d0ed7b87dfa43, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

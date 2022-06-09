@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4594256280292702459}
   - component: {fileID: 5875628856140993100}
   - component: {fileID: 6746709294775462132}
+  - component: {fileID: 6377259382397728893}
   m_Layer: 0
   m_Name: Flying Snake
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 16
   wpnPower: 0
   armrPower: 0
-  XP: 200
   hasDied: 0
   theSprite: {fileID: 5875628856140993100}
   deadSprite: {fileID: -7838304401062115615, guid: 6d5f2ceaa546afa479121c18d48037df,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 6267793151046263684, guid: 6d5f2ceaa546afa479121c18d48037df,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &6377259382397728893
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1365523816177278384}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a0909c4f82a89f946a97f3c8f9c8bda4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

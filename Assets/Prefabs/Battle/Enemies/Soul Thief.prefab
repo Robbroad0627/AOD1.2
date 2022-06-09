@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2254079332671057513}
   - component: {fileID: 357024179204385133}
   - component: {fileID: 3345567453985566557}
+  - component: {fileID: 6341678709596136340}
   m_Layer: 0
   m_Name: Soul Thief
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 13
   wpnPower: 0
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 357024179204385133}
   deadSprite: {fileID: -3373235551196450940, guid: 1efa80640f1dc374fa99f0d302601a65,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -1516577087596727189, guid: 1efa80640f1dc374fa99f0d302601a65,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &6341678709596136340
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687044223621143622}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4656135192290656413}
   - component: {fileID: 1554855404897912846}
   - component: {fileID: 1831050956090995324}
+  - component: {fileID: -5134828291515064841}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Untagged
@@ -107,9 +108,27 @@ MonoBehaviour:
   defence: 8
   wpnPower: 3
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 1554855404897912846}
   deadSprite: {fileID: 21300000, guid: 7ca3d98e067fe0c43a4beb7768a65443, type: 3}
   aliveSprite: {fileID: 21300000, guid: 267abb1ca41725e41b80a11205e52ec6, type: 3}
   fadeSpeed: 1
+--- !u!95 &-5134828291515064841
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2368601544624066411}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

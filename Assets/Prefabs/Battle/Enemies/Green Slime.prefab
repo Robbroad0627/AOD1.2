@@ -109,7 +109,6 @@ MonoBehaviour:
   defence: 8
   wpnPower: 0
   armrPower: 0
-  XP: 50
   hasDied: 0
   theSprite: {fileID: 976921453684923527}
   deadSprite: {fileID: -6055977648921095268, guid: 9ce8f82653fe8e54bae5938d503d67e9,
@@ -127,7 +126,7 @@ Animator:
   m_GameObject: {fileID: 3983665659490405351}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 628d0a9c5aa1d604c9e8938a8ee3f809, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8ebbb613c717b0b499d2d2233673ed51, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

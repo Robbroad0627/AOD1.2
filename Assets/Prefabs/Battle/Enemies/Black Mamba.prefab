@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1652288280244510654}
   - component: {fileID: 636985852581641955}
   - component: {fileID: 7548218987225212324}
+  - component: {fileID: 6794044158657951155}
   m_Layer: 0
   m_Name: Black Mamba
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 7531735443947831347, guid: 7ee4d4920f40fc646b3a0268dcace4a5,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &6794044158657951155
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074548297380016769}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

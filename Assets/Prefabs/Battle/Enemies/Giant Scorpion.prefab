@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4367222916754873697}
   - component: {fileID: 1464974784515073741}
   - component: {fileID: 7232819504341933948}
+  - component: {fileID: 1433202098129618512}
   m_Layer: 0
   m_Name: Giant Scorpion
   m_TagString: Untagged
@@ -107,9 +108,27 @@ MonoBehaviour:
   defence: 6
   wpnPower: 0
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 1464974784515073741}
   deadSprite: {fileID: 21300016, guid: 7bcc4fe41afe5ce45aad0b797853e889, type: 3}
   aliveSprite: {fileID: 21300000, guid: 7bcc4fe41afe5ce45aad0b797853e889, type: 3}
   fadeSpeed: 1
+--- !u!95 &1433202098129618512
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3211383105900313072}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8ddac65a27ff49944956a6ed756b33cf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

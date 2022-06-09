@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5191742245578696460}
   - component: {fileID: 2583846206792944496}
   - component: {fileID: 4625263759247610095}
+  - component: {fileID: 3500114066360768520}
   m_Layer: 0
   m_Name: Wolf
   m_TagString: Untagged
@@ -108,10 +109,28 @@ MonoBehaviour:
   defence: 4
   wpnPower: 2
   armrPower: 4
-  XP: 100
   hasDied: 0
   theSprite: {fileID: 2583846206792944496}
   deadSprite: {fileID: 5184831053750644559, guid: ea48d74ee8d048542ade5f114ba007a9,
     type: 3}
   aliveSprite: {fileID: 0}
   fadeSpeed: 1
+--- !u!95 &3500114066360768520
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6545982333302466981}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ce63270a4d63c214aaeaa1b4cd488f1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

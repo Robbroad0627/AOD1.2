@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4037189364716570}
   - component: {fileID: 212260510501265018}
   - component: {fileID: 114811357314912286}
+  - component: {fileID: -46596465782722828}
   m_Layer: 0
   m_Name: Mad Gazer
   m_TagString: Untagged
@@ -109,7 +110,6 @@ MonoBehaviour:
   defence: 13
   wpnPower: 5
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 212260510501265018}
   deadSprite: {fileID: -1281505906264628439, guid: 0ef13031c95e79f4b82a8563a3245e32,
@@ -117,3 +117,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -4304360234476235740, guid: 0ef13031c95e79f4b82a8563a3245e32,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-46596465782722828
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598490336785454}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

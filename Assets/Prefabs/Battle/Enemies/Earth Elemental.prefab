@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2243270779962377905}
   - component: {fileID: 789632785134568385}
   - component: {fileID: 1069266359738703155}
+  - component: {fileID: -1897375284981965507}
   m_Layer: 0
   m_Name: Earth Elemental
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 17
   wpnPower: 8
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 789632785134568385}
   deadSprite: {fileID: -2439530957716187900, guid: 4f2cb2877ae4c27499f1f2ff3b4e893e,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 6218466838141179164, guid: 4f2cb2877ae4c27499f1f2ff3b4e893e,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-1897375284981965507
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585628197964180959}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

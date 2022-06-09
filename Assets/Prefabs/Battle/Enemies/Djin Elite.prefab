@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 51984934607493696}
   - component: {fileID: 2466879227252152026}
   - component: {fileID: 673921202559878450}
+  - component: {fileID: 5450355919322598311}
   m_Layer: 0
   m_Name: Djin Elite
   m_TagString: Untagged
@@ -107,9 +108,27 @@ MonoBehaviour:
   defence: 17
   wpnPower: 8
   armrPower: 3
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 2466879227252152026}
   deadSprite: {fileID: 21300032, guid: 06de76ccdbb8a884e8c161834a3650f5, type: 3}
   aliveSprite: {fileID: 21300030, guid: 06de76ccdbb8a884e8c161834a3650f5, type: 3}
   fadeSpeed: 1
+--- !u!95 &5450355919322598311
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963045466520318705}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

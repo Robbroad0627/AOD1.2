@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6920314191709431681}
   - component: {fileID: 1628293589647664121}
   - component: {fileID: 2878027401476073148}
+  - component: {fileID: 539778468651422249}
   m_Layer: 0
   m_Name: Orc Marauder
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 16
   wpnPower: 8
   armrPower: 5
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 1628293589647664121}
   deadSprite: {fileID: 2494080511057705493, guid: 5ad4e9e6531dd394d961fa5f91318f75,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -3715689369667293883, guid: 5ad4e9e6531dd394d961fa5f91318f75,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &539778468651422249
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026630249895349595}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 482605022647726943}
   - component: {fileID: 6867291595987219903}
   - component: {fileID: 7026180898543137641}
+  - component: {fileID: 3176735255963483333}
   m_Layer: 0
   m_Name: Orc Blood Warrior
   m_TagString: Untagged
@@ -108,7 +109,6 @@ MonoBehaviour:
   defence: 18
   wpnPower: 8
   armrPower: 4
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 6867291595987219903}
   deadSprite: {fileID: 6872512343248519788, guid: 0ccf19382b61b084cbe6ea7dd54add1b,
@@ -116,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 3244431381372691742, guid: 0ccf19382b61b084cbe6ea7dd54add1b,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &3176735255963483333
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6991386171244582233}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

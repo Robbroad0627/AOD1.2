@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6925379120067537334}
   - component: {fileID: 7812032967894885259}
   - component: {fileID: 1638169137843797150}
+  - component: {fileID: -1674199121604066904}
   m_Layer: 0
   m_Name: Necromancer Minion
   m_TagString: Untagged
@@ -107,9 +108,27 @@ MonoBehaviour:
   defence: 12
   wpnPower: 6
   armrPower: 4
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 7812032967894885259}
   deadSprite: {fileID: 21300000, guid: 9ffd03ccc08828c4399808268828efeb, type: 3}
   aliveSprite: {fileID: 21300000, guid: a44417067c37d2845ab51cc63595d75e, type: 3}
   fadeSpeed: 1
+--- !u!95 &-1674199121604066904
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2174137329490494389}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

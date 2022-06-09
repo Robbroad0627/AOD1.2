@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1215385522800159257}
   - component: {fileID: 4195953938112921696}
   - component: {fileID: 6370533333284118630}
+  - component: {fileID: 2194086354034359158}
   m_Layer: 0
   m_Name: Dessert Centaur2
   m_TagString: Untagged
@@ -108,10 +109,28 @@ MonoBehaviour:
   defence: 12
   wpnPower: 8
   armrPower: 0
-  XP: 0
   hasDied: 0
   theSprite: {fileID: 4195953938112921696}
   deadSprite: {fileID: 21300000, guid: 331267be9bdc4a04bbd2cc4794ca1fc7, type: 3}
   aliveSprite: {fileID: -4521277176693550941, guid: 03d3fcf71f4b2f741b842bf7e999923d,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &2194086354034359158
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943231280812956604}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
