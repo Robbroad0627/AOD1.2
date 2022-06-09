@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1535335751782575657}
   - component: {fileID: 115150675330680480}
   m_Layer: 0
-  m_Name: elf_female_thief_0
+  m_Name: FTElf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 6
+  maxHP: 6
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -108,7 +109,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 1535335751782575657}
+  deadSprite: {fileID: 5354598371735175618, guid: 6ee48bd16a44c1749b9e807fd58498c9,
+    type: 3}
+  aliveSprite: {fileID: 7363901762627861882, guid: 6ee48bd16a44c1749b9e807fd58498c9,
+    type: 3}
   fadeSpeed: 1

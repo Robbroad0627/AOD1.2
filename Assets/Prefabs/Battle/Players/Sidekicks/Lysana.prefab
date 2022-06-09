@@ -97,18 +97,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Nature's Fury
   charName: Lysana
   currentHp: 10
   maxHP: 10
-  currentMP: 5
-  maxMP: 5
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  currentMP: 10
+  maxMP: 10
+  strength: 9
+  defence: 8
+  wpnPower: 6
+  armrPower: 5
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 332729115369398856}
   deadSprite: {fileID: -590727569163531984, guid: c0fc2f834dfc895489a7fb11325529f5,
     type: 3}
   aliveSprite: {fileID: 2478318822984345595, guid: c0fc2f834dfc895489a7fb11325529f5,

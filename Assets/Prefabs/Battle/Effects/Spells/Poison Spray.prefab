@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 114011823187449262}
   - component: {fileID: 95613348880182530}
   m_Layer: 0
-  m_Name: Lightning
+  m_Name: Poison Spray
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,15 +73,16 @@ SpriteRenderer:
   m_SortingLayerID: 971942665
   m_SortingLayer: 4
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 7384dec0e667b8643bee02d3ecaf659c, type: 3}
+  m_Sprite: {fileID: 6886332570196773900, guid: b28ab839b5e4a21408a75ff0fc65725a,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.25, y: 6.25}
+  m_Size: {x: 2.85, y: 3.66}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &114011823187449262
@@ -108,7 +109,7 @@ Animator:
   m_GameObject: {fileID: 1494327823168184}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 50c220803a13135418d8dbe33c4d4930, type: 2}
+  m_Controller: {fileID: 9100000, guid: af0e63b1b87e9f24daecaab3492b6b26, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

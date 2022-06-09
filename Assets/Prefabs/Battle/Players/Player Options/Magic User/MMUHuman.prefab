@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1925700910196857874}
   - component: {fileID: 5151115104224019458}
   m_Layer: 0
-  m_Name: human_male_magic_user_0
+  m_Name: MMUHuman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Burning Hands
+  - Magic Missile
+  - Poison Spray
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 6
+  maxHP: 6
+  currentMP: 30
+  maxMP: 30
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 1925700910196857874}
+  deadSprite: {fileID: 2796444305563449168, guid: 2ebd3607ccc11c34da61fe7515159f6a,
+    type: 3}
+  aliveSprite: {fileID: 4644277949780968197, guid: 2ebd3607ccc11c34da61fe7515159f6a,
+    type: 3}
   fadeSpeed: 1

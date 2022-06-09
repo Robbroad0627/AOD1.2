@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2511141175016593917}
   - component: {fileID: 9192161306864529758}
   m_Layer: 0
-  m_Name: halfling_female_paladin_0
+  m_Name: FPHalfling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Thunderous Smite
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 10
+  maxHP: 10
+  currentMP: 10
+  maxMP: 10
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 2511141175016593917}
+  deadSprite: {fileID: 182182529803810093, guid: d54c87ca2a969724aa9db30f3a0f4e9b,
+    type: 3}
+  aliveSprite: {fileID: 6317858571895035533, guid: d54c87ca2a969724aa9db30f3a0f4e9b,
+    type: 3}
   fadeSpeed: 1

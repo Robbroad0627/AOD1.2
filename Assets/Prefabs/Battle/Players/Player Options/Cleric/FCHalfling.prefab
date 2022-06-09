@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3317840073820792473}
   - component: {fileID: 673535870703870766}
   m_Layer: 0
-  m_Name: female_halfling_cleric_0
+  m_Name: FCHalfling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Sacred Flame
   charName: 
   currentHp: 0
   maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentMP: 20
+  maxMP: 20
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 3317840073820792473}
+  deadSprite: {fileID: -5672486925307178659, guid: 69cee9e1aa7a66444b68fbd231cdca74,
+    type: 3}
+  aliveSprite: {fileID: -1086820718075519113, guid: 69cee9e1aa7a66444b68fbd231cdca74,
+    type: 3}
   fadeSpeed: 1

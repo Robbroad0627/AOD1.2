@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1492434005801846088}
   - component: {fileID: 7900399564059266042}
   m_Layer: 0
-  m_Name: male_orc_claric_sprite_0
+  m_Name: MCHalf Orc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Sacred Flame
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 8
+  maxHP: 8
+  currentMP: 20
+  maxMP: 20
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 1492434005801846088}
+  deadSprite: {fileID: 2022757172831367471, guid: 37f30f72ca11bb7438ac5e7de6f2fee1,
+    type: 3}
+  aliveSprite: {fileID: 2134929357565472747, guid: 37f30f72ca11bb7438ac5e7de6f2fee1,
+    type: 3}
   fadeSpeed: 1

@@ -97,18 +97,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Sacred Flame
   charName: Clarof
   currentHp: 8
   maxHP: 8
   currentMP: 20
   maxMP: 20
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  strength: 10
+  defence: 9
+  wpnPower: 6
+  armrPower: 8
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 7178051608358766578}
   deadSprite: {fileID: -6098140145210788413, guid: e2083f33ebe65f143be7d99870949c93,
     type: 3}
   aliveSprite: {fileID: -184157053164476258, guid: e2083f33ebe65f143be7d99870949c93,

@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 6
+  maxHP: 6
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -108,7 +109,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 4341060379052518744}
+  deadSprite: {fileID: -8926191600455720150, guid: 422fec83c410f5143852ad0cb98ce18c,
+    type: 3}
+  aliveSprite: {fileID: 1701621564746337586, guid: 422fec83c410f5143852ad0cb98ce18c,
+    type: 3}
   fadeSpeed: 1

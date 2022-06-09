@@ -97,18 +97,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Faerie Fire
+  - Shillelagh
   charName: Bola Treeman
   currentHp: 8
   maxHP: 8
   currentMP: 20
   maxMP: 20
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  strength: 9
+  defence: 7
+  wpnPower: 2
+  armrPower: 2
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 3883090793225853631}
   deadSprite: {fileID: 5209968454184369221, guid: 45bb99e39a35c774298b10508a4d7a25,
     type: 3}
   aliveSprite: {fileID: 8104503104247859951, guid: 45bb99e39a35c774298b10508a4d7a25,

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9208192818947046133}
   - component: {fileID: 2756757940132989618}
   m_Layer: 0
-  m_Name: male_dwarf_cleric_0
+  m_Name: MCDwarf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Sacred Flame
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 8
+  maxHP: 8
+  currentMP: 20
+  maxMP: 20
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 9208192818947046133}
+  deadSprite: {fileID: 8539758644657683219, guid: c113daba82928a640a1be329be0c40bd,
+    type: 3}
+  aliveSprite: {fileID: 3720032431872635183, guid: c113daba82928a640a1be329be0c40bd,
+    type: 3}
   fadeSpeed: 1

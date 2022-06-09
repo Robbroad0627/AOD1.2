@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 98178622606964295}
   - component: {fileID: 4128553453670265973}
   m_Layer: 0
-  m_Name: half-orc_male_fighter_0
+  m_Name: MFHalf Orc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 10
+  maxHP: 10
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -108,7 +109,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 98178622606964295}
+  deadSprite: {fileID: -846673490155389632, guid: d58a671d68cd5154ba37971c42ff2db3,
+    type: 3}
+  aliveSprite: {fileID: 3700737292265928091, guid: d58a671d68cd5154ba37971c42ff2db3,
+    type: 3}
   fadeSpeed: 1

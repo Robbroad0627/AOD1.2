@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 494030257414811694}
   - component: {fileID: 3255254138454352897}
   m_Layer: 0
-  m_Name: elf_male_fighter_0
+  m_Name: MFElf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 10
+  maxHP: 10
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -109,6 +110,8 @@ MonoBehaviour:
   armrPower: 0
   hasDied: 0
   theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  deadSprite: {fileID: 2484764031847114353, guid: 2d901316f8b9eb745aff68ff75988f17,
+    type: 3}
+  aliveSprite: {fileID: -7709059758776720698, guid: 2d901316f8b9eb745aff68ff75988f17,
+    type: 3}
   fadeSpeed: 1

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2813459901503845692}
   - component: {fileID: 3576145291924055415}
   m_Layer: 0
-  m_Name: human_female_fighter_0
+  m_Name: FFHuman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 10
+  maxHP: 10
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -108,7 +109,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 2813459901503845692}
+  deadSprite: {fileID: 1070974109583638521, guid: 5e082d66a2219e742b99e95df4d88eb4,
+    type: 3}
+  aliveSprite: {fileID: -5687950591562042086, guid: 5e082d66a2219e742b99e95df4d88eb4,
+    type: 3}
   fadeSpeed: 1

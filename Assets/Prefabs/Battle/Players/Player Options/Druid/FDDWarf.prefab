@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 639204103979539715}
   - component: {fileID: 8895135115018471927}
   m_Layer: 0
-  m_Name: dwarf_female_druid_0
+  m_Name: FDDWarf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,7 +97,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Faerie Fire
+  - Shillelagh
   charName: 
   currentHp: 0
   maxHP: 0
@@ -108,7 +111,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 639204103979539715}
+  deadSprite: {fileID: -7492467661361284663, guid: 18dc325ee5a2b29478e3bce2c842bfd9,
+    type: 3}
+  aliveSprite: {fileID: 3598825519524820947, guid: 18dc325ee5a2b29478e3bce2c842bfd9,
+    type: 3}
   fadeSpeed: 1

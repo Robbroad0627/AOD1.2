@@ -97,18 +97,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Faerie Fire
+  - Shillelagh
   charName: Tink
   currentHp: 8
   maxHP: 8
   currentMP: 20
   maxMP: 20
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  strength: 6
+  defence: 6
+  wpnPower: 6
+  armrPower: 2
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 5787505772920636534}
   deadSprite: {fileID: 9189558863484179495, guid: 26dc4be89b23f6f4891bbd7fa546a680,
     type: 3}
   aliveSprite: {fileID: -6510220698001139402, guid: 26dc4be89b23f6f4891bbd7fa546a680,

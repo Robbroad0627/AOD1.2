@@ -97,18 +97,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Thunderous Smite
   charName: Piran
   currentHp: 10
   maxHP: 10
-  currentMP: 5
-  maxMP: 5
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  currentMP: 10
+  maxMP: 10
+  strength: 9
+  defence: 9
+  wpnPower: 8
+  armrPower: 8
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 4571950323810846683}
   deadSprite: {fileID: 920143915783801029, guid: 50b0f3c2b9ccbe54097704e0b79c88fe,
     type: 3}
   aliveSprite: {fileID: 6869117417142578333, guid: 50b0f3c2b9ccbe54097704e0b79c88fe,

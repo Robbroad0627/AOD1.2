@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2416085406703433161}
   - component: {fileID: 7332581728860942832}
   m_Layer: 0
-  m_Name: male_elf_cleric_0
+  m_Name: MCElf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Sacred Flame
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 8
+  maxHP: 8
+  currentMP: 20
+  maxMP: 20
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 2416085406703433161}
+  deadSprite: {fileID: 6045477787621548090, guid: 79367f61856b48f48af70fbf2d72ef9d,
+    type: 3}
+  aliveSprite: {fileID: -3449157791645375816, guid: 79367f61856b48f48af70fbf2d72ef9d,
+    type: 3}
   fadeSpeed: 1

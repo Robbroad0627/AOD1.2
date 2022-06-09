@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7001971975968241091}
   - component: {fileID: 1082132787802515402}
+  - component: {fileID: -207152256711248169}
   m_Layer: 0
   m_Name: FTHalf Elf
   m_TagString: Untagged
@@ -83,3 +84,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-207152256711248169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2410980500661875417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb2191b6caf800b43b119bb7cd4440cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  movesAvailable:
+  - Slash
+  charName: 
+  currentHp: 6
+  maxHP: 6
+  currentMP: 0
+  maxMP: 0
+  strength: 0
+  defence: 0
+  wpnPower: 0
+  armrPower: 0
+  hasDied: 0
+  theSprite: {fileID: 1082132787802515402}
+  deadSprite: {fileID: -2147175732746174989, guid: cc89713d8152e874c9e7d8acc0d79e05,
+    type: 3}
+  aliveSprite: {fileID: -465812819040890956, guid: cc89713d8152e874c9e7d8acc0d79e05,
+    type: 3}
+  fadeSpeed: 1

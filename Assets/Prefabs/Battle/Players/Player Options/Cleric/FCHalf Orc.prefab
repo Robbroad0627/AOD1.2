@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 168126539018396760}
   - component: {fileID: 4508714207309460647}
   m_Layer: 0
-  m_Name: female_orc_cleric_0
+  m_Name: FCHalf Orc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Sacred Flame
   charName: 
   currentHp: 0
   maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentMP: 20
+  maxMP: 20
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 168126539018396760}
+  deadSprite: {fileID: -6560055624588564109, guid: 70894fc9b1421704c86ef1ef9a0dd93e,
+    type: 3}
+  aliveSprite: {fileID: -8063268781743055548, guid: 70894fc9b1421704c86ef1ef9a0dd93e,
+    type: 3}
   fadeSpeed: 1

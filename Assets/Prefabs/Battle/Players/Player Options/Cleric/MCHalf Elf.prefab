@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6573236316480268922}
   - component: {fileID: 4088853799017510669}
   m_Layer: 0
-  m_Name: male_half_elf_cleric_0
+  m_Name: MCHalf Elf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Sacred Flame
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 8
+  maxHP: 8
+  currentMP: 20
+  maxMP: 20
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 6573236316480268922}
+  deadSprite: {fileID: 8726383190581288094, guid: fe382e07611de274fbcd67364f892dc0,
+    type: 3}
+  aliveSprite: {fileID: -330289569912638312, guid: fe382e07611de274fbcd67364f892dc0,
+    type: 3}
   fadeSpeed: 1

@@ -98,18 +98,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Faerie Fire
+  - Shillelagh
   charName: Astell
   currentHp: 8
   maxHP: 8
   currentMP: 20
   maxMP: 20
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  strength: 9
+  defence: 4
+  wpnPower: 2
+  armrPower: 2
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 322778363240296398}
   deadSprite: {fileID: 7160779376716293748, guid: 81a52a2e1b1604a48980a04038855696,
     type: 3}
   aliveSprite: {fileID: 3400867514801767257, guid: 81a52a2e1b1604a48980a04038855696,

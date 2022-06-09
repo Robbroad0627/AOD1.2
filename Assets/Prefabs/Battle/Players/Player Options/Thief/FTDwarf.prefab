@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1834874753599086131}
   - component: {fileID: 1574829891882774585}
   m_Layer: 0
-  m_Name: dwarf_female_thief_0
+  m_Name: FTDwarf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 6
+  maxHP: 6
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -108,7 +109,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 1834874753599086131}
+  deadSprite: {fileID: 4490316435256977997, guid: 7f626cfde9ae5324580a1de92d3f9efb,
+    type: 3}
+  aliveSprite: {fileID: 2490053199551857444, guid: 7f626cfde9ae5324580a1de92d3f9efb,
+    type: 3}
   fadeSpeed: 1

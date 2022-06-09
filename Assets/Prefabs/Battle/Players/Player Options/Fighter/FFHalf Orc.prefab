@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6823574059905772309}
   - component: {fileID: 7142144788785309608}
   m_Layer: 0
-  m_Name: half-orc_female_fighter_0
+  m_Name: FFHalf Orc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 10
+  maxHP: 10
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -108,7 +109,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 6823574059905772309}
+  deadSprite: {fileID: -8388110704544713658, guid: dfc3d519430dd1d47a2b1573fceef934,
+    type: 3}
+  aliveSprite: {fileID: 3551220615260430479, guid: dfc3d519430dd1d47a2b1573fceef934,
+    type: 3}
   fadeSpeed: 1

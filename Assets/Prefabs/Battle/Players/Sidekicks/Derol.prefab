@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Burning Hands
+  - Magic Missile
+  - Poison Spray
   charName: Derol
   currentHp: 6
   maxHP: 6
-  currentMP: 25
-  maxMP: 25
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  currentMP: 30
+  maxMP: 30
+  strength: 4
+  defence: 4
+  wpnPower: 4
+  armrPower: 1
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 3520076351787311431}
   deadSprite: {fileID: 7058377635135797444, guid: 12ff8f88e48f9fc478ba0454e99936f8,
     type: 3}
   aliveSprite: {fileID: 876126201129552993, guid: 12ff8f88e48f9fc478ba0454e99936f8,

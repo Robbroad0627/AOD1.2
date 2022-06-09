@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1879160815677091170}
   - component: {fileID: 4720123066964379183}
   m_Layer: 0
-  m_Name: half-orc_male_magic_user_0
+  m_Name: MMUHalf Orc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Burning Hands
+  - Magic Missile
+  - Poison Spray
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 6
+  maxHP: 6
+  currentMP: 30
+  maxMP: 30
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 1879160815677091170}
+  deadSprite: {fileID: 5349540838259917177, guid: 8feb6c0d305018c41b22efde24631288,
+    type: 3}
+  aliveSprite: {fileID: 80111714220396912, guid: 8feb6c0d305018c41b22efde24631288,
+    type: 3}
   fadeSpeed: 1

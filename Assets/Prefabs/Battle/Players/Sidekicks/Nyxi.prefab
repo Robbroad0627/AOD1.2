@@ -97,18 +97,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: Nyxi
   currentHp: 6
   maxHP: 6
   currentMP: 0
   maxMP: 0
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  strength: 5
+  defence: 6
+  wpnPower: 6
+  armrPower: 2
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 1884669019411589071}
   deadSprite: {fileID: 0}
   aliveSprite: {fileID: 4139853994844387686, guid: d08b1234a500b664f87d7b72e78d661c,
     type: 3}

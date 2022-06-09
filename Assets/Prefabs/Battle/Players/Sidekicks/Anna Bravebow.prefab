@@ -98,18 +98,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Nature's Fury
   charName: Anna Bravebow
   currentHp: 10
   maxHP: 10
-  currentMP: 5
-  maxMP: 5
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  currentMP: 10
+  maxMP: 10
+  strength: 9
+  defence: 9
+  wpnPower: 6
+  armrPower: 2
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 2226624943697270246}
   deadSprite: {fileID: -4667402940638518750, guid: da606e902cc96f347ab4042b7430dad0,
     type: 3}
   aliveSprite: {fileID: 8814785463066485692, guid: da606e902cc96f347ab4042b7430dad0,

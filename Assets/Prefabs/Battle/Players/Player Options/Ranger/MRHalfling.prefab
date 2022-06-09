@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9204020896962501828}
   - component: {fileID: 8545854511956023842}
   m_Layer: 0
-  m_Name: halfling_male_ranger_0
+  m_Name: MRHalfling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Nature's Fury
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 10
+  maxHP: 10
+  currentMP: 10
+  maxMP: 10
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 9204020896962501828}
+  deadSprite: {fileID: -3079445170861323477, guid: 971703284a80b4d4385f9b36f674c451,
+    type: 3}
+  aliveSprite: {fileID: 8579951617378841389, guid: 971703284a80b4d4385f9b36f674c451,
+    type: 3}
   fadeSpeed: 1

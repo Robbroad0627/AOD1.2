@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3896289668116731191}
   - component: {fileID: 915484432700954604}
   m_Layer: 0
-  m_Name: human_female_ranger_0
+  m_Name: FRhuman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Nature's Fury
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 10
+  maxHP: 10
+  currentMP: 10
+  maxMP: 10
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
+  theSprite: {fileID: 3896289668116731191}
+  deadSprite: {fileID: -3140882437237511244, guid: 977421796b8d4464d80982dc3f884075,
+    type: 3}
   aliveSprite: {fileID: 0}
   fadeSpeed: 1

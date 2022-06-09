@@ -97,18 +97,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: Pestin
   currentHp: 10
   maxHP: 10
   currentMP: 0
   maxMP: 0
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  strength: 9
+  defence: 9
+  wpnPower: 8
+  armrPower: 8
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 6449720283947506010}
   deadSprite: {fileID: -3846254836014431665, guid: 3c7cef9069a07d644af8bd6a64b3dbb2,
     type: 3}
   aliveSprite: {fileID: 5046159491350223376, guid: 3c7cef9069a07d644af8bd6a64b3dbb2,

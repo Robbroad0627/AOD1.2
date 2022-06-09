@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3547635818283691742}
   - component: {fileID: 2411854147891747535}
   m_Layer: 0
-  m_Name: human_male_claric_0
+  m_Name: MCHuman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,18 +96,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Sacred Flame
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 8
+  maxHP: 8
+  currentMP: 20
+  maxMP: 20
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 3547635818283691742}
+  deadSprite: {fileID: -3931080112598541972, guid: fd65368d60698cc43a1a86e776271613,
+    type: 3}
+  aliveSprite: {fileID: 848697904276328819, guid: fd65368d60698cc43a1a86e776271613,
+    type: 3}
   fadeSpeed: 1

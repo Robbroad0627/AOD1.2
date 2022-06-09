@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 435792434873455287}
   - component: {fileID: 6882917055059557130}
   m_Layer: 0
-  m_Name: half-orc_female_ranger_0
+  m_Name: FRHalf Orc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Nature's Fury
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 10
+  maxHP: 10
+  currentMP: 10
+  maxMP: 10
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 435792434873455287}
+  deadSprite: {fileID: 8747954729121801275, guid: e21266f6db7db8f4c9ce7108b4b17cba,
+    type: 3}
+  aliveSprite: {fileID: 1402399897967107070, guid: e21266f6db7db8f4c9ce7108b4b17cba,
+    type: 3}
   fadeSpeed: 1

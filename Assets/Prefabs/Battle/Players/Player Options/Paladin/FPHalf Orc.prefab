@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6653551028376760368}
   - component: {fileID: 5859326707341401636}
   m_Layer: 0
-  m_Name: half-orc_female_paladin_0
+  m_Name: FPHalf Orc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Thunderous Smite
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 10
+  maxHP: 10
+  currentMP: 10
+  maxMP: 10
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 6653551028376760368}
+  deadSprite: {fileID: 4370816253642371422, guid: 8bf148d54f13c0e4a844b5a91dcdebd7,
+    type: 3}
+  aliveSprite: {fileID: -6461171192864589348, guid: 8bf148d54f13c0e4a844b5a91dcdebd7,
+    type: 3}
   fadeSpeed: 1

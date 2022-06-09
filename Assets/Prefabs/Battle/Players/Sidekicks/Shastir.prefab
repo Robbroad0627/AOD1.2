@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 142174933738037353}
   - component: {fileID: 142174933738037358}
+  - component: {fileID: 5461276117095870920}
   - component: {fileID: 2106859841852058790}
   m_Layer: 0
   m_Name: Shastir
@@ -84,6 +85,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5461276117095870920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142174933738037356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb2191b6caf800b43b119bb7cd4440cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  movesAvailable:
+  - Slash
+  - Burning Hands
+  - Magic Missile
+  - Poison Spray
+  charName: Shastir
+  currentHp: 6
+  maxHP: 6
+  currentMP: 30
+  maxMP: 30
+  strength: 4
+  defence: 4
+  wpnPower: 5
+  armrPower: 1
+  hasDied: 0
+  theSprite: {fileID: 142174933738037358}
+  deadSprite: {fileID: -7783066041680269491, guid: bf801c61aefcaf54aab19aae03d6ce9d,
+    type: 3}
+  aliveSprite: {fileID: -4504832730624173063, guid: bf801c61aefcaf54aab19aae03d6ce9d,
+    type: 3}
+  fadeSpeed: 1
 --- !u!95 &2106859841852058790
 Animator:
   serializedVersion: 3

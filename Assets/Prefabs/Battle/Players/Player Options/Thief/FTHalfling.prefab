@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2472203616304134990}
   - component: {fileID: 6688344852006382897}
   m_Layer: 0
-  m_Name: halfling_female_thief_0
+  m_Name: FTHalfling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -96,10 +96,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 6
+  maxHP: 6
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -107,7 +108,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 2472203616304134990}
+  deadSprite: {fileID: 83013141980881365, guid: d46cc2c377dbc9242853f838c25931f2,
+    type: 3}
+  aliveSprite: {fileID: 1904994374564204835, guid: d46cc2c377dbc9242853f838c25931f2,
+    type: 3}
   fadeSpeed: 1

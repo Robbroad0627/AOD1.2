@@ -97,18 +97,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: Mia
   currentHp: 10
   maxHP: 10
   currentMP: 0
   maxMP: 0
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  strength: 9
+  defence: 9
+  wpnPower: 6
+  armrPower: 5
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 3188631034822637520}
   deadSprite: {fileID: 3935919010145192865, guid: 810ff7987d10e064497125cb181bc3a1,
     type: 3}
   aliveSprite: {fileID: -8000295873018431050, guid: 810ff7987d10e064497125cb181bc3a1,

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2389017085363182322}
   - component: {fileID: 2694693467625165652}
   m_Layer: 0
-  m_Name: dwarf_male_magic_user_0
+  m_Name: MMUDwarf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Burning Hands
+  - Magic Missile
+  - Poison Spray
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 6
+  maxHP: 6
+  currentMP: 30
+  maxMP: 30
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 2389017085363182322}
+  deadSprite: {fileID: -8411005368068154924, guid: 5a2eb3214f7ca9b4aa9c69e41e3f41f6,
+    type: 3}
+  aliveSprite: {fileID: -6080489868938866231, guid: 5a2eb3214f7ca9b4aa9c69e41e3f41f6,
+    type: 3}
   fadeSpeed: 1

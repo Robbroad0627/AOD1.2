@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5405458466989989915}
   - component: {fileID: 7792305667980311457}
   m_Layer: 0
-  m_Name: half-orc_male_thief_0
+  m_Name: MTHalf Orc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 6
+  maxHP: 6
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -108,7 +109,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 5405458466989989915}
+  deadSprite: {fileID: 4148393138366810232, guid: 54ae5f173324c1949a35343cefb852ee,
+    type: 3}
+  aliveSprite: {fileID: -5483464208228992778, guid: 54ae5f173324c1949a35343cefb852ee,
+    type: 3}
   fadeSpeed: 1

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8603168915551289008}
   - component: {fileID: 5889957729083855359}
   m_Layer: 0
-  m_Name: human_female_paladin_0
+  m_Name: FPHuman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Thunderous Smite
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 10
+  maxHP: 10
+  currentMP: 10
+  maxMP: 10
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 8603168915551289008}
+  deadSprite: {fileID: -6602334961151760020, guid: 9167394128225b3449b250e9fd0f2290,
+    type: 3}
+  aliveSprite: {fileID: 6591101813353963816, guid: 9167394128225b3449b250e9fd0f2290,
+    type: 3}
   fadeSpeed: 1

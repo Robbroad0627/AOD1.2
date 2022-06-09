@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5754222809533760764}
   - component: {fileID: 6948844282457892658}
   m_Layer: 0
-  m_Name: human_male_fighter_0
+  m_Name: MFHuman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 10
+  maxHP: 10
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -108,7 +109,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 5754222809533760764}
+  deadSprite: {fileID: -6698733695020963922, guid: 242e13464aa706244b246baa2dcbcbcf,
+    type: 3}
+  aliveSprite: {fileID: -7769675119376188013, guid: 242e13464aa706244b246baa2dcbcbcf,
+    type: 3}
   fadeSpeed: 1

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8071766888133752016}
   - component: {fileID: 1634991013240082537}
   m_Layer: 0
-  m_Name: human_female_thief_0
+  m_Name: FTHuman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 6
+  maxHP: 6
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -108,7 +109,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 8071766888133752016}
+  deadSprite: {fileID: 4900579997821993111, guid: 0b434fde2ad305141b4285d378c76e14,
+    type: 3}
+  aliveSprite: {fileID: 7347382460766253980, guid: 0b434fde2ad305141b4285d378c76e14,
+    type: 3}
   fadeSpeed: 1

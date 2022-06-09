@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5561820347736335196}
   - component: {fileID: 4178323092607749121}
   m_Layer: 0
-  m_Name: elf_male_druid_0
+  m_Name: MDElf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Faerie Fire
+  - Shillelagh
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 8
+  maxHP: 8
+  currentMP: 20
+  maxMP: 20
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 5561820347736335196}
+  deadSprite: {fileID: -788773291591288772, guid: ec440f29e938eab428844d6406008e1d,
+    type: 3}
+  aliveSprite: {fileID: 1169060722201994260, guid: ec440f29e938eab428844d6406008e1d,
+    type: 3}
   fadeSpeed: 1

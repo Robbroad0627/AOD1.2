@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7333538638923146773}
   - component: {fileID: 6511916424901307004}
   m_Layer: 0
-  m_Name: male_halfling_druid_0
+  m_Name: MDHalfling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Faerie Fire
+  - Shillelagh
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 8
+  maxHP: 8
+  currentMP: 20
+  maxMP: 20
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 7333538638923146773}
+  deadSprite: {fileID: 2126004717620611062, guid: e95cddd9edae7ca479e81256d298b5ac,
+    type: 3}
+  aliveSprite: {fileID: 4305484941080463635, guid: e95cddd9edae7ca479e81256d298b5ac,
+    type: 3}
   fadeSpeed: 1

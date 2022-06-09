@@ -97,18 +97,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: Stera
   currentHp: 10
   maxHP: 10
   currentMP: 0
   maxMP: 0
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  strength: 9
+  defence: 8
+  wpnPower: 6
+  armrPower: 2
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 7266076887931078226}
   deadSprite: {fileID: -4273123955343452273, guid: 9828d40efeb27904082a1bb17e061cee,
     type: 3}
   aliveSprite: {fileID: -6827206653945703773, guid: 9828d40efeb27904082a1bb17e061cee,

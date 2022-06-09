@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3534493554511172178}
   - component: {fileID: 2876114917429767276}
   m_Layer: 0
-  m_Name: elf_male_thief_0
+  m_Name: MTElf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,10 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: 
-  currentHp: 0
-  maxHP: 0
+  currentHp: 6
+  maxHP: 6
   currentMP: 0
   maxMP: 0
   strength: 0
@@ -108,7 +109,9 @@ MonoBehaviour:
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 3534493554511172178}
+  deadSprite: {fileID: 8018102606224905561, guid: 77ed621d84355e34d85aa23614e301d7,
+    type: 3}
+  aliveSprite: {fileID: -5156471398958018760, guid: 77ed621d84355e34d85aa23614e301d7,
+    type: 3}
   fadeSpeed: 1

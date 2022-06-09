@@ -96,18 +96,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Faerie Fire
+  - Shillelagh
   charName: Caleb
   currentHp: 8
   maxHP: 8
   currentMP: 20
   maxMP: 20
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  strength: 8
+  defence: 9
+  wpnPower: 6
+  armrPower: 2
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 398411943293880831}
   deadSprite: {fileID: 6462226880125422349, guid: 6d2a6c77af1f90f4686fbe8180cef9f4,
     type: 3}
   aliveSprite: {fileID: 612823220888307, guid: 6d2a6c77af1f90f4686fbe8180cef9f4, type: 3}

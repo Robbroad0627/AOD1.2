@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6896526609209036240}
   - component: {fileID: 3628653310304591113}
   m_Layer: 0
-  m_Name: dwarf_female_claric_0
+  m_Name: FCDwarf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Sacred Flame
   charName: 
   currentHp: 0
   maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentMP: 20
+  maxMP: 20
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 6896526609209036240}
+  deadSprite: {fileID: 7743968119059259951, guid: d236522f170a60440a6d3fc16bc31d2f,
+    type: 3}
+  aliveSprite: {fileID: 4456008831077290196, guid: d236522f170a60440a6d3fc16bc31d2f,
+    type: 3}
   fadeSpeed: 1

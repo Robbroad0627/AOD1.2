@@ -96,18 +96,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Thunderous Hammer
   charName: Randall The Brave
   currentHp: 10
   maxHP: 10
-  currentMP: 5
-  maxMP: 5
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  currentMP: 10
+  maxMP: 10
+  strength: 11
+  defence: 8
+  wpnPower: 8
+  armrPower: 10
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 4384468769896297404}
   deadSprite: {fileID: -7478181321124563806, guid: 5c8ef7f2f1f53654f995ba5ba6a982e6,
     type: 3}
   aliveSprite: {fileID: 987711260128145554, guid: 5c8ef7f2f1f53654f995ba5ba6a982e6,

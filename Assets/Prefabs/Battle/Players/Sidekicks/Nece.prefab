@@ -97,18 +97,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: Nece
   currentHp: 6
   maxHP: 6
   currentMP: 0
   maxMP: 0
-  strength: 0
-  defence: 0
-  wpnPower: 0
-  armrPower: 0
+  strength: 6
+  defence: 6
+  wpnPower: 4
+  armrPower: 2
   hasDied: 0
-  theSprite: {fileID: 0}
+  theSprite: {fileID: 7309202497289623741}
   deadSprite: {fileID: -8389724927433411411, guid: 2f9b02222d41cd74f8b36810cafc61ec,
     type: 3}
   aliveSprite: {fileID: 5984263741255966209, guid: 2f9b02222d41cd74f8b36810cafc61ec,

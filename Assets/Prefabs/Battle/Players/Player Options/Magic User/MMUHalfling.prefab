@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2228438523832704261}
   - component: {fileID: 370128470754446663}
   m_Layer: 0
-  m_Name: halfling_male_magic_user_0
+  m_Name: MMUHalfling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Burning Hands
+  - Magic Missile
+  - Poison Spray
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 6
+  maxHP: 6
+  currentMP: 30
+  maxMP: 30
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 2228438523832704261}
+  deadSprite: {fileID: 5221784270918882582, guid: 8b0563fee107c96478995e6f08cda5a5,
+    type: 3}
+  aliveSprite: {fileID: -7182628650733699693, guid: 8b0563fee107c96478995e6f08cda5a5,
+    type: 3}
   fadeSpeed: 1

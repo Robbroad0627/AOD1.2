@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 194645917909972966}
   - component: {fileID: 7171124931820106456}
   m_Layer: 0
-  m_Name: dwarf_female_ranger_0
+  m_Name: FRDwarf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Nature's Fury
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 10
+  maxHP: 10
+  currentMP: 10
+  maxMP: 10
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 194645917909972966}
+  deadSprite: {fileID: 3922186306534514272, guid: 72325fa665441524e835149a3a2acde0,
+    type: 3}
+  aliveSprite: {fileID: 5434554662570183307, guid: 72325fa665441524e835149a3a2acde0,
+    type: 3}
   fadeSpeed: 1

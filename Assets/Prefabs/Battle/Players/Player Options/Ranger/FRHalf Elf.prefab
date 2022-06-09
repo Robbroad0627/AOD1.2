@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1872757987648824398}
   - component: {fileID: 5721754983580386741}
   m_Layer: 0
-  m_Name: half-elf_female_ranger_0
+  m_Name: FRHalf Elf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Nature's Fury
   charName: 
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentHp: 10
+  maxHP: 10
+  currentMP: 10
+  maxMP: 10
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 1872757987648824398}
+  deadSprite: {fileID: 627276311213051020, guid: c20dcd5c7f4aefb499760b7bcbca411a,
+    type: 3}
+  aliveSprite: {fileID: 4405852310571691019, guid: c20dcd5c7f4aefb499760b7bcbca411a,
+    type: 3}
   fadeSpeed: 1

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2573981358108727552}
   - component: {fileID: 2047835400213111926}
   m_Layer: 0
-  m_Name: female_elf_cleric_0
+  m_Name: FCElf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,18 +97,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
+  - Sacred Flame
   charName: 
   currentHp: 0
   maxHP: 0
-  currentMP: 0
-  maxMP: 0
+  currentMP: 20
+  maxMP: 20
   strength: 0
   defence: 0
   wpnPower: 0
   armrPower: 0
   hasDied: 0
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  theSprite: {fileID: 2573981358108727552}
+  deadSprite: {fileID: -4995451740560243492, guid: 0277c54b47986aa4ea7ada9756808653,
+    type: 3}
+  aliveSprite: {fileID: -6764565224542069073, guid: 0277c54b47986aa4ea7ada9756808653,
+    type: 3}
   fadeSpeed: 1
