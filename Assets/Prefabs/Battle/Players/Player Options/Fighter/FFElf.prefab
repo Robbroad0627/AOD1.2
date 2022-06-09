@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 111269054713429590}
   - component: {fileID: 7671853725517787588}
   - component: {fileID: 3862669253070614675}
+  - component: {fileID: 4490541072777466700}
   m_Layer: 0
   m_Name: FFElf
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -3015690082616783087, guid: b454d898cc270d944b77d3af87497694,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &4490541072777466700
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9018166391910690781}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

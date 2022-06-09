@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5925132790585649905}
   - component: {fileID: 6823574059905772309}
   - component: {fileID: 7142144788785309608}
+  - component: {fileID: -5343525345636132937}
   m_Layer: 0
   m_Name: FFHalf Orc
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 3551220615260430479, guid: dfc3d519430dd1d47a2b1573fceef934,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-5343525345636132937
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302000924691430316}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

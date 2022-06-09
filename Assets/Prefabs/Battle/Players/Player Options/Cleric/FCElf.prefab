@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8049588715580852222}
   - component: {fileID: 2573981358108727552}
   - component: {fileID: 2047835400213111926}
+  - component: {fileID: 1210889173451748157}
   m_Layer: 0
   m_Name: FCElf
   m_TagString: Untagged
@@ -116,3 +117,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -6764565224542069073, guid: 0277c54b47986aa4ea7ada9756808653,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &1210889173451748157
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692674145016557719}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

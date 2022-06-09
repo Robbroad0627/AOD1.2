@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1884669019411589068}
   - component: {fileID: 1884669019411589071}
   - component: {fileID: 1884669019411589070}
+  - component: {fileID: 7642348320616009167}
   m_Layer: 0
   m_Name: Nyxi
   m_TagString: Untagged
@@ -114,3 +115,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 4139853994844387686, guid: d08b1234a500b664f87d7b72e78d661c,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &7642348320616009167
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884669019411589057}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 019f1713155b18546b1099398a638274, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

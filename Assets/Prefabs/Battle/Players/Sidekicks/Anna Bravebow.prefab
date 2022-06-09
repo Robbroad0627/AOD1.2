@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2226624943697270246}
   - component: {fileID: 2226624943697270265}
   - component: {fileID: 4669615731702354652}
+  - component: {fileID: 1991746534477436032}
   m_Layer: 0
   m_Name: Anna Bravebow
   m_TagString: Untagged
@@ -126,10 +127,29 @@ Animation:
   m_GameObject: {fileID: 2226624943697270264}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: ec9c63bc635e64842b7c711729a3b2f8, type: 2}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: ec9c63bc635e64842b7c711729a3b2f8, type: 2}
+  - {fileID: 0}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!95 &1991746534477436032
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2226624943697270264}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dda7429c05573246a51205e8574d4e9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

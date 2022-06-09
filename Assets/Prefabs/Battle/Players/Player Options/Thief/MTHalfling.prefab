@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1365170833058832535}
   - component: {fileID: 6738809615472105110}
   - component: {fileID: 4160773295192121468}
+  - component: {fileID: -8524040193934713112}
   m_Layer: 0
   m_Name: MTHalfling
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -5881646890165808605, guid: cebf1d1d2c4fb6a4e9481cd0ab869eb4,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-8524040193934713112
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383737711364031168}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

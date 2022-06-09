@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 464855330737104279}
   - component: {fileID: 464855330737104280}
   - component: {fileID: 464855330737104281}
+  - component: {fileID: -8515499642148880723}
   m_Layer: 0
   m_Name: Cyndar
   m_TagString: Untagged
@@ -118,3 +119,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -8847541604755802333, guid: 85145f758498b064da5c21e51e57332a,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-8515499642148880723
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464855330737104282}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3ed05d50ec3313d4882cdd2b4c8a806c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

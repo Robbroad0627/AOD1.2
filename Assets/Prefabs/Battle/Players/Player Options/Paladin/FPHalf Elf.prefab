@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 170072519823202610}
   - component: {fileID: 3423471402235831584}
   - component: {fileID: 9153129709895361442}
+  - component: {fileID: -2987099896378195005}
   m_Layer: 0
   m_Name: FPHalf Elf
   m_TagString: Untagged
@@ -116,3 +117,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 3994289326955680643, guid: ee3735c3ce0d4be48836f5017cbe2d81,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-2987099896378195005
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2565306957659737535}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

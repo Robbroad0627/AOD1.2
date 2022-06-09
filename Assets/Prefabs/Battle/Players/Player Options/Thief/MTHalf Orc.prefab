@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4605446790722467507}
   - component: {fileID: 5405458466989989915}
   - component: {fileID: 7792305667980311457}
+  - component: {fileID: 5820186425268573075}
   m_Layer: 0
   m_Name: MTHalf Orc
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -5483464208228992778, guid: 54ae5f173324c1949a35343cefb852ee,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &5820186425268573075
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4408408836428716189}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4384468769896297405}
   - component: {fileID: 4384468769896297404}
   - component: {fileID: 4384468769896297395}
+  - component: {fileID: 7232528569761808412}
   m_Layer: 0
   m_Name: Randall the Brave
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 987711260128145554, guid: 5c8ef7f2f1f53654f995ba5ba6a982e6,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &7232528569761808412
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4384468769896297394}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eaca76cf69a3f71458692af46191fedb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

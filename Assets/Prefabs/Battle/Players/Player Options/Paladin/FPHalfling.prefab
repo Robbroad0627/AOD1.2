@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6284683726812322566}
   - component: {fileID: 2511141175016593917}
   - component: {fileID: 9192161306864529758}
+  - component: {fileID: 3558368128434266764}
   m_Layer: 0
   m_Name: FPHalfling
   m_TagString: Untagged
@@ -116,3 +117,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 6317858571895035533, guid: d54c87ca2a969724aa9db30f3a0f4e9b,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &3558368128434266764
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3200090060509136440}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

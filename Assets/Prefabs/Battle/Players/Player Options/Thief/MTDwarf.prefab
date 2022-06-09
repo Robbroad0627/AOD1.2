@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6449181133550647726}
   - component: {fileID: 8732705770913582238}
   - component: {fileID: 2474459083056817152}
+  - component: {fileID: -4209363269769214382}
   m_Layer: 0
   m_Name: MTDwarf
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 3908127123896803836, guid: 13e176242e52dbd4c962398c97f12d1d,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-4209363269769214382
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7158740330306288379}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

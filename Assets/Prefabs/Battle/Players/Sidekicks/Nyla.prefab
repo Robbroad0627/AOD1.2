@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6813121394998593942}
   - component: {fileID: 6813121394998593945}
   - component: {fileID: 6813121394998593944}
+  - component: {fileID: -862501444404681349}
   m_Layer: 0
   m_Name: Nyla
   m_TagString: Untagged
@@ -116,3 +117,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 5380668458326337041, guid: c8bd3a408388edd44909b2aa5fc4ff93,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-862501444404681349
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813121394998593947}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: def37f947f3345943a0ca0b9e3f9a4de, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

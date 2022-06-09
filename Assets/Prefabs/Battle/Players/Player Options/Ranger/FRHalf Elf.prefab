@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2601094019543219362}
   - component: {fileID: 1872757987648824398}
   - component: {fileID: 5721754983580386741}
+  - component: {fileID: -6720937914604879281}
   m_Layer: 0
   m_Name: FRHalf Elf
   m_TagString: Untagged
@@ -116,3 +117,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 4405852310571691019, guid: c20dcd5c7f4aefb499760b7bcbca411a,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-6720937914604879281
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3426708252425354595}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

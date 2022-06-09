@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3419946218935026191}
   - component: {fileID: 5038681738955861623}
   - component: {fileID: 7919667321671690416}
+  - component: {fileID: -6558483215569785975}
   m_Layer: 0
   m_Name: FCHuman
   m_TagString: Untagged
@@ -116,3 +117,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -2483015317491863175, guid: a1037d3ec319b2243a56f0e836a42027,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-6558483215569785975
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983442728272563495}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

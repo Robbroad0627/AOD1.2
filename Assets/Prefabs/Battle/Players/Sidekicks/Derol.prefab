@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3520076351787311430}
   - component: {fileID: 3520076351787311431}
   - component: {fileID: 3520076351787311424}
+  - component: {fileID: 434999636381864051}
   m_Layer: 0
   m_Name: Derol
   m_TagString: Untagged
@@ -118,3 +119,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 876126201129552993, guid: 12ff8f88e48f9fc478ba0454e99936f8,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &434999636381864051
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3520076351787311425}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b18b873d17e5a084fbd24dce7001ea5d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

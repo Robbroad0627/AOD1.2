@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6467646461751151164}
   - component: {fileID: 6653551028376760368}
   - component: {fileID: 5859326707341401636}
+  - component: {fileID: 4511409206378586145}
   m_Layer: 0
   m_Name: FPHalf Orc
   m_TagString: Untagged
@@ -116,3 +117,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -6461171192864589348, guid: 8bf148d54f13c0e4a844b5a91dcdebd7,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &4511409206378586145
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3025595285852242251}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

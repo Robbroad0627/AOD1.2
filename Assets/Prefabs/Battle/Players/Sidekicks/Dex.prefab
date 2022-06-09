@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7927878249483227475}
   - component: {fileID: 7927878249483227468}
   - component: {fileID: 7927878249483227469}
+  - component: {fileID: 871798635981088610}
   m_Layer: 0
   m_Name: Dex
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -6419843009650124306, guid: 4baf1a0147bb0084e9531a8397917174,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &871798635981088610
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927878249483227470}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9b60c044abd84d648a38f08f5c315e11, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

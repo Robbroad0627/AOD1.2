@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 398411943293880824}
   - component: {fileID: 398411943293880831}
   - component: {fileID: 398411943293880830}
+  - component: {fileID: 8168422566356086118}
   m_Layer: 0
   m_Name: Caleb
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
     type: 3}
   aliveSprite: {fileID: 612823220888307, guid: 6d2a6c77af1f90f4686fbe8180cef9f4, type: 3}
   fadeSpeed: 1
+--- !u!95 &8168422566356086118
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398411943293880829}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f80d3e8a037d48f41bc8b6b32fcd7aee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

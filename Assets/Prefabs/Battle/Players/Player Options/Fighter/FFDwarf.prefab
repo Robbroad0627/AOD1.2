@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7023973588423138030}
   - component: {fileID: 9179473751716587451}
   - component: {fileID: 3750084280677903629}
+  - component: {fileID: -7439911600242485383}
   m_Layer: 0
   m_Name: FFDwarf
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -2693973902178249373, guid: 6f0f289de01222540a86fb69fc724962,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-7439911600242485383
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089086107189373842}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

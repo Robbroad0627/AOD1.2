@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6449720283947506005}
   - component: {fileID: 6449720283947506010}
   - component: {fileID: 6449720283947506011}
+  - component: {fileID: -4114074683469525940}
   m_Layer: 0
   m_Name: Pestin
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 5046159491350223376, guid: 3c7cef9069a07d644af8bd6a64b3dbb2,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-4114074683469525940
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6449720283947506008}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: db7a36fd8b6588b4ab95f9cf602d656f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

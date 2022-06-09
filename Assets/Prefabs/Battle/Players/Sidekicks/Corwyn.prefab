@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8864749932578721158}
   - component: {fileID: 8864749932578721159}
   - component: {fileID: 8864749932578721156}
+  - component: {fileID: -4553219014990483495}
   m_Layer: 0
   m_Name: Corwyn
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -6847401433687493892, guid: 55a9c841c93240342a6208dc97f18147,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-4553219014990483495
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8864749932578721157}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 677fdf13ffed5e34fab6351c11bbe995, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

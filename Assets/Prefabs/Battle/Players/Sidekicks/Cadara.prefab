@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3437524595672385830}
   - component: {fileID: 3437524595672385829}
   - component: {fileID: 3437524595672385828}
+  - component: {fileID: 7577328904904218866}
   m_Layer: 0
   m_Name: Cadara
   m_TagString: Untagged
@@ -118,3 +119,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -3210897260319054539, guid: f35a46e118a6e25489a478339ec71437,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &7577328904904218866
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3437524595672385835}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5aea312740ccae141b56b2c6887b6f30, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

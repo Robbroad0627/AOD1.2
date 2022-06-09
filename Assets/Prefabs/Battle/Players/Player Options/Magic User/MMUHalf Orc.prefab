@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1228874598450639936}
   - component: {fileID: 1879160815677091170}
   - component: {fileID: 4720123066964379183}
+  - component: {fileID: 7330014822116531514}
   m_Layer: 0
   m_Name: MMUHalf Orc
   m_TagString: Untagged
@@ -118,3 +119,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 80111714220396912, guid: 8feb6c0d305018c41b22efde24631288,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &7330014822116531514
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5236850624730043562}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

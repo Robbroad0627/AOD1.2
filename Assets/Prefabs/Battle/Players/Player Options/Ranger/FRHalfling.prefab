@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 905860162950798053}
   - component: {fileID: 5450776154100494811}
   - component: {fileID: 4701920012534264489}
+  - component: {fileID: -2074646117308807353}
   m_Layer: 0
   m_Name: FRHalfling
   m_TagString: Untagged
@@ -116,3 +117,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -2206761145853492427, guid: 6e8871e074dcf8745843e3e61b239ad4,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-2074646117308807353
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3834332430754918822}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

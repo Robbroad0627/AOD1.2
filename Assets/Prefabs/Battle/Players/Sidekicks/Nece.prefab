@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7309202497289623740}
   - component: {fileID: 7309202497289623741}
   - component: {fileID: 7309202497289623742}
+  - component: {fileID: -3662937161932471530}
   m_Layer: 0
   m_Name: Nece
   m_TagString: Untagged
@@ -115,3 +116,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 5984263741255966209, guid: 2f9b02222d41cd74f8b36810cafc61ec,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &-3662937161932471530
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7309202497289623743}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4da79a3af34cad843b7fad8e15261ce0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

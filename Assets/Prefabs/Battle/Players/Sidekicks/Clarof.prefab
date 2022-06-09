@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7178051608358766577}
   - component: {fileID: 7178051608358766578}
   - component: {fileID: 7178051608358766579}
+  - component: {fileID: 2865084632953504591}
   m_Layer: 0
   m_Name: Clarof
   m_TagString: Untagged
@@ -116,3 +117,22 @@ MonoBehaviour:
   aliveSprite: {fileID: -184157053164476258, guid: e2083f33ebe65f143be7d99870949c93,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &2865084632953504591
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7178051608358766580}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b9a3da66e40dc31428817722f6b6a478, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

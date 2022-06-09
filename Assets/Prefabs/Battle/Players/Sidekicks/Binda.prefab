@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8134851696567309340}
   - component: {fileID: 8134851696567309331}
   - component: {fileID: 8134851696567309330}
+  - component: {fileID: 7257034248125964976}
   m_Layer: 0
   m_Name: Binda
   m_TagString: Untagged
@@ -116,3 +117,22 @@ MonoBehaviour:
   aliveSprite: {fileID: 1548303185482718318, guid: 13ebf39b8e770e5489cf12ce18850a38,
     type: 3}
   fadeSpeed: 1
+--- !u!95 &7257034248125964976
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8134851696567309329}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 15c716f069b385d449f717f785e54431, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
