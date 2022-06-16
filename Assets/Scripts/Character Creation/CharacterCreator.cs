@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 //Bonehead Games
@@ -9,6 +10,7 @@ public class CharacterCreator : MonoBehaviour
 {
     public Text raceText, classText, sexText;
     public Image portrait;
+    public InputField nameField;
 
     public bool isMale = true;
 
@@ -29,8 +31,12 @@ public class CharacterCreator : MonoBehaviour
 
     CharacterAttributes.Races oldRace;
     CharacterAttributes.Classes oldClass;
-    
-   void InitializeAttributes()
+
+    private void Start()
+    {
+        nameField = GameObject.Find("nameText").GetComponent<InputField>();
+    }
+    void InitializeAttributes()
     {
         myAttributes = new Dictionary<CharacterAttributes.BaseAttributes, int>();
         foreach (CharacterAttributes.BaseAttributes thisAttrib in System.Enum.GetValues(typeof(CharacterAttributes.BaseAttributes)))
@@ -330,5 +336,17 @@ public class CharacterCreator : MonoBehaviour
         portrait.sprite = myPortrait;
     }
 
+    public void SaveCharacterButtonPressed()
+    {
+        GameManager.instance.playerStats[0].name = nameField.text;
+        GameManager.instance.playerStats[0].charIamge = myPortrait;
+        GameManager.instance.playerStats[0].strength = myAttributes[CharacterAttributes.BaseAttributes.Strength];
+        GameManager.instance.playerStats[0].currentHP = myHP;
+        GameManager.instance.playerStats[0].maxHP = myHP;
+        GameManager.instance.playerStats[0].currentMP = myMP;
+        GameManager.instance.playerStats[0].maxMP = myMP;
+        GameManager.instance.playerStats[0].playerLevel = 1;
+        SceneManager.LoadScene("Calimere");
+    }
 
 }
