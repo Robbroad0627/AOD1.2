@@ -14,6 +14,8 @@ public class MainMenu : MonoBehaviour
 
     public string loadGameScene;
 
+    public string instructions;
+
     // Use this for initialization
     void Start()
     {
