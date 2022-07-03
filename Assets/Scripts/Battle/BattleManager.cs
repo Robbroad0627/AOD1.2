@@ -56,7 +56,7 @@ public class BattleManager : MonoBehaviour {
 	void Start () {
         instance = this;
         DontDestroyOnLoad(gameObject);
-      
+        playerPrefabs[0].charName = GameManager.instance.playerStats[0].charName;
     activeBattlers = new List<BattleChar>();
 
     }
@@ -106,14 +106,16 @@ public class BattleManager : MonoBehaviour {
 
             //AudioManager.instance.PlayBGM(0);
 
-            for(int i = 0; i < playerPositions.Length; i++)
+            for (int i = 0; i < playerPositions.Length; i++)
             {
-                if(GameManager.instance.playerStats[i].gameObject.activeInHierarchy)
+                if (GameManager.instance.playerStats[i].gameObject.activeInHierarchy)
                 {
-                    for(int j = 0; j < playerPrefabs.Length; j++)
+
+                    for (int j = 0; j < playerPrefabs.Length; j++)
                     {
-                        if(playerPrefabs[j].charName == GameManager.instance.playerStats[i].charName)
+                        if (playerPrefabs[j].charName == GameManager.instance.playerStats[i].charName)
                         {
+
                             BattleChar newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[i].rotation);
                             newPlayer.transform.parent = playerPositions[i];
                             activeBattlers.Add(newPlayer);
@@ -128,12 +130,14 @@ public class BattleManager : MonoBehaviour {
                             activeBattlers[i].defence = thePlayer.defence;
                             activeBattlers[i].wpnPower = thePlayer.wpnPwr;
                             activeBattlers[i].armrPower = thePlayer.armrPwr;
+
                         }
+
+
                     }
-
-
                 }
             }
+            
 
             for (int i = 0; i < enemiesToSpawn.Length; i++)
             {
