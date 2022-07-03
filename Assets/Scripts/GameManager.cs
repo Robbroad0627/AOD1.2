@@ -30,31 +30,35 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive)
+        if (GameObject.Find("Player"))
         {
-            PlayerController.instance.canMove = false;
-        } else
-        {
-            PlayerController.instance.canMove = true;
-        }
+            if (gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive)
+            {
+                PlayerController.instance.canMove = false;
+            }
+            else
+            {
+                PlayerController.instance.canMove = true;
+            }
 
-        if(Input.GetKeyDown(KeyCode.J))
-        {
-            AddItem("Iron Armor");
-            AddItem("Blabla");
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                AddItem("Iron Armor");
+                AddItem("Blabla");
 
-            RemoveItem("Health Potion");
-            RemoveItem("Bleep");
-        }
+                RemoveItem("Health Potion");
+                RemoveItem("Bleep");
+            }
 
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            SaveData();
-        }
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                SaveData();
+            }
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            LoadData();
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                LoadData();
+            }
         }
     }
 
