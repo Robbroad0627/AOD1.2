@@ -13228,7 +13228,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &224097571276651842
 RectTransform:
   m_ObjectHideFlags: 0
@@ -41175,7 +41175,7 @@ GameObject:
   - component: {fileID: 890841720871815505}
   - component: {fileID: 6548756809732728983}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Mini Map
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44220,7 +44220,7 @@ GameObject:
   - component: {fileID: 9198141482356488891}
   - component: {fileID: 5718472518129331244}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
