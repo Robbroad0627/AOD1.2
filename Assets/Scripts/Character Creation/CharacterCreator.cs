@@ -338,7 +338,7 @@ public class CharacterCreator : MonoBehaviour
 
     public void SaveCharacterButtonPressed()
     {
-        GameManager.instance.playerStats[0].charName = nameField.text.ToString();
+        GameManager.instance.playerStats[0].charName = nameField.text;
         Debug.Log(nameField.text.ToString());
         GameManager.instance.playerStats[0].charIamge = myPortrait;
         GameManager.instance.playerStats[0].strength = myAttributes[CharacterAttributes.BaseAttributes.Strength];
@@ -347,6 +347,7 @@ public class CharacterCreator : MonoBehaviour
         GameManager.instance.playerStats[0].currentMP = myMP;
         GameManager.instance.playerStats[0].maxMP = myMP;
         GameManager.instance.playerStats[0].playerLevel = 1;
+
         SceneManager.LoadScene("Calimere");
     }
 
