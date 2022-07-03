@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 //Bonehead Games
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
 
     public static GameManager instance;
 
@@ -19,51 +20,57 @@ public class GameManager : MonoBehaviour {
 
     public int currentGold;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         instance = this;
 
         DontDestroyOnLoad(gameObject);
 
         SortItems();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive)
-        {
-            PlayerController.instance.canMove = false;
-        } else
-        {
-            PlayerController.instance.canMove = true;
-        }
+    }
 
-        if(Input.GetKeyDown(KeyCode.J))
+    // Update is called once per frame
+    void Update()
+    {
+        if (GameObject.Find("Player"))
         {
-            AddItem("Iron Armor");
-            AddItem("Blabla");
+            if (gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive)
+            {
+                PlayerController.instance.canMove = false;
+            }
+            else
+            {
+                PlayerController.instance.canMove = true;
+            }
 
-            RemoveItem("Health Potion");
-            RemoveItem("Bleep");
-        }
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                AddItem("Iron Armor");
+                AddItem("Blabla");
 
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            SaveData();
-        }
+                RemoveItem("Health Potion");
+                RemoveItem("Bleep");
+            }
 
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            LoadData();
+            if (Input.GetKeyDown(KeyCode.O))
+            {
+                SaveData();
+            }
+
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                LoadData();
+            }
         }
     }
 
     public Item GetItemDetails(string itemToGrab)
     {
 
-        for(int i = 0; i < referenceItems.Length; i++)
+        for (int i = 0; i < referenceItems.Length; i++)
         {
-            if(referenceItems[i].itemName == itemToGrab)
+            if (referenceItems[i].itemName == itemToGrab)
             {
                 return referenceItems[i];
             }
@@ -92,7 +99,7 @@ public class GameManager : MonoBehaviour {
                     numberOfItems[i] = numberOfItems[i + 1];
                     numberOfItems[i + 1] = 0;
 
-                    if(itemsHeld[i] != "")
+                    if (itemsHeld[i] != "")
                     {
                         itemAFterSpace = true;
                     }
@@ -106,9 +113,9 @@ public class GameManager : MonoBehaviour {
         int newItemPosition = 0;
         bool foundSpace = false;
 
-        for(int i = 0; i < itemsHeld.Length; i++)
+        for (int i = 0; i < itemsHeld.Length; i++)
         {
-            if(itemsHeld[i] == "" || itemsHeld[i] == itemToAdd)
+            if (itemsHeld[i] == "" || itemsHeld[i] == itemToAdd)
             {
                 newItemPosition = i;
                 i = itemsHeld.Length;
@@ -116,12 +123,12 @@ public class GameManager : MonoBehaviour {
             }
         }
 
-        if(foundSpace)
+        if (foundSpace)
         {
             bool itemExists = false;
-            for(int i = 0; i < referenceItems.Length; i++)
+            for (int i = 0; i < referenceItems.Length; i++)
             {
-                if(referenceItems[i].itemName == itemToAdd)
+                if (referenceItems[i].itemName == itemToAdd)
                 {
                     itemExists = true;
 
@@ -129,11 +136,12 @@ public class GameManager : MonoBehaviour {
                 }
             }
 
-            if(itemExists)
+            if (itemExists)
             {
                 itemsHeld[newItemPosition] = itemToAdd;
                 numberOfItems[newItemPosition]++;
-            } else
+            }
+            else
             {
                 Debug.LogError(itemToAdd + " Does Not Exist!!");
             }
@@ -147,9 +155,9 @@ public class GameManager : MonoBehaviour {
         bool foundItem = false;
         int itemPosition = 0;
 
-        for(int i = 0; i < itemsHeld.Length; i++)
+        for (int i = 0; i < itemsHeld.Length; i++)
         {
-            if(itemsHeld[i] == itemToRemove)
+            if (itemsHeld[i] == itemToRemove)
             {
                 foundItem = true;
                 itemPosition = i;
@@ -158,17 +166,18 @@ public class GameManager : MonoBehaviour {
             }
         }
 
-        if(foundItem)
+        if (foundItem)
         {
             numberOfItems[itemPosition]--;
 
-            if(numberOfItems[itemPosition] <= 0)
+            if (numberOfItems[itemPosition] <= 0)
             {
                 itemsHeld[itemPosition] = "";
             }
 
             GameMenu.instance.ShowItems();
-        } else
+        }
+        else
         {
             Debug.LogError("Couldn't find " + itemToRemove);
         }
@@ -182,16 +191,17 @@ public class GameManager : MonoBehaviour {
         PlayerPrefs.SetFloat("Player_Position_z", PlayerController.instance.transform.position.z);
 
         //save character info
-        for(int i = 0; i < playerStats.Length; i++)
+        for (int i = 0; i < playerStats.Length; i++)
         {
-            if(playerStats[i].gameObject.activeInHierarchy)
+            if (playerStats[i].gameObject.activeInHierarchy)
             {
                 PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_active", 1);
-            } else
+            }
+            else
             {
                 PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_active", 0);
             }
-            
+
             PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Level", playerStats[i].playerLevel);
             PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentExp", playerStats[i].currentEXP);
             PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentHP", playerStats[i].currentHP);
@@ -207,7 +217,7 @@ public class GameManager : MonoBehaviour {
         }
 
         //store inventory data
-        for(int i = 0; i < itemsHeld.Length; i++)
+        for (int i = 0; i < itemsHeld.Length; i++)
         {
             PlayerPrefs.SetString("ItemInInventory_" + i, itemsHeld[i]);
             PlayerPrefs.SetInt("ItemAmount_" + i, numberOfItems[i]);
@@ -218,12 +228,13 @@ public class GameManager : MonoBehaviour {
     {
         PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
 
-        for(int i = 0; i < playerStats.Length; i++)
+        for (int i = 0; i < playerStats.Length; i++)
         {
-            if(PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_active") == 0)
+            if (PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_active") == 0)
             {
                 playerStats[i].gameObject.SetActive(false);
-            } else
+            }
+            else
             {
                 playerStats[i].gameObject.SetActive(true);
             }
@@ -242,7 +253,7 @@ public class GameManager : MonoBehaviour {
             playerStats[i].equippedArmr = PlayerPrefs.GetString("Player_" + playerStats[i].charName + "_EquippedArmr");
         }
 
-        for(int i = 0; i < itemsHeld.Length; i++)
+        for (int i = 0; i < itemsHeld.Length; i++)
         {
             itemsHeld[i] = PlayerPrefs.GetString("ItemInInventory_" + i);
             numberOfItems[i] = PlayerPrefs.GetInt("ItemAmount_" + i);

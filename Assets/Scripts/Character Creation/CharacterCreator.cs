@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 //Bonehead Games
@@ -9,6 +10,7 @@ public class CharacterCreator : MonoBehaviour
 {
     public Text raceText, classText, sexText;
     public Image portrait;
+    public InputField nameField;
 
     public bool isMale = true;
 
@@ -29,23 +31,27 @@ public class CharacterCreator : MonoBehaviour
 
     CharacterAttributes.Races oldRace;
     CharacterAttributes.Classes oldClass;
-    
-   void InitializeAttributes()
+
+    private void Start()
+    {
+        nameField = GameObject.Find("nameText").GetComponent<InputField>();
+    }
+    void InitializeAttributes()
     {
         myAttributes = new Dictionary<CharacterAttributes.BaseAttributes, int>();
         foreach (CharacterAttributes.BaseAttributes thisAttrib in System.Enum.GetValues(typeof(CharacterAttributes.BaseAttributes)))
         {
             if (myAttributes.ContainsKey(thisAttrib))
                 myAttributes[thisAttrib] = baseValue;
-        else
-            
+            else
+
                 myAttributes.Add(thisAttrib, baseValue);
-            
+
         }
-        
+
     }
 
-    
+
     // Use this for initialization
     public void InitCharacterCreator()
     {
@@ -55,18 +61,18 @@ public class CharacterCreator : MonoBehaviour
 
         //set inital race
         myRace = CharacterAttributes.Races.Human;
-       
+
         //set intial class
         myClass = CharacterAttributes.Classes.Cleric;
 
 
         CheckRace();
         CheckClass();
-        
-        
-        
+
+
+
     }
- 
+
 
     public void CheckRace()
     {
@@ -185,7 +191,7 @@ public class CharacterCreator : MonoBehaviour
         }
     }
 
-     
+
     public void NextRaceClicked()
     {
         bool foundIt = false;
@@ -208,7 +214,7 @@ public class CharacterCreator : MonoBehaviour
 
         raceText.text = myRace.ToString();
         CheckRace();
-        
+
     }
     public void ChangeClass(bool goNext)
     {
@@ -238,23 +244,23 @@ public class CharacterCreator : MonoBehaviour
         {
             int lastValue = System.Enum.GetValues(typeof(CharacterAttributes.Classes)).Length - 1;
 
-            CharacterAttributes.Classes lastClass = (CharacterAttributes.Classes) lastValue;
+            CharacterAttributes.Classes lastClass = (CharacterAttributes.Classes)lastValue;
 
             foreach (CharacterAttributes.Classes thisClass in System.Enum.GetValues(typeof(CharacterAttributes.Classes)))
             {
-               if (myClass == thisClass)
+                if (myClass == thisClass)
                 {
                     myClass = lastClass;
                     break;
                 }
                 lastClass = thisClass;
             }
-         }
+        }
 
         CheckClass();
 
     }
-   
+
     public void ChangeRace(bool goNext)
     {
         bool foundIt = false;
@@ -303,15 +309,15 @@ public class CharacterCreator : MonoBehaviour
 
     public void NextPortraitClicked()
     {
-    int maxIndex = portraitList.Count;
-    int currentIndex = portraitList.IndexOf(myPortrait);
+        int maxIndex = portraitList.Count;
+        int currentIndex = portraitList.IndexOf(myPortrait);
 
-       
-            currentIndex++;
-            if (currentIndex == maxIndex)
-            {
-                currentIndex = 0;
-            }
+
+        currentIndex++;
+        if (currentIndex == maxIndex)
+        {
+            currentIndex = 0;
+        }
         myPortrait = portraitList[currentIndex];
         portrait.sprite = myPortrait;
     }
@@ -324,11 +330,24 @@ public class CharacterCreator : MonoBehaviour
         currentIndex--;
         if (currentIndex == -1)
         {
-            currentIndex = maxIndex -1;
+            currentIndex = maxIndex - 1;
         }
         myPortrait = portraitList[currentIndex];
         portrait.sprite = myPortrait;
     }
 
+    public void SaveCharacterButtonPressed()
+    {
+        GameManager.instance.playerStats[0].charName = nameField.text.ToString();
+        Debug.Log(nameField.text.ToString());
+        GameManager.instance.playerStats[0].charIamge = myPortrait;
+        GameManager.instance.playerStats[0].strength = myAttributes[CharacterAttributes.BaseAttributes.Strength];
+        GameManager.instance.playerStats[0].currentHP = myHP;
+        GameManager.instance.playerStats[0].maxHP = myHP;
+        GameManager.instance.playerStats[0].currentMP = myMP;
+        GameManager.instance.playerStats[0].maxMP = myMP;
+        GameManager.instance.playerStats[0].playerLevel = 1;
+        SceneManager.LoadScene("Calimere");
+    }
 
 }
