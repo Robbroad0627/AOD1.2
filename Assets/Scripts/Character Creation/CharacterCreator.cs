@@ -338,7 +338,8 @@ public class CharacterCreator : MonoBehaviour
 
     public void SaveCharacterButtonPressed()
     {
-        GameManager.instance.playerStats[0].name = nameField.text;
+        GameManager.instance.playerStats[0].charName = nameField.text.ToString();
+        Debug.Log(nameField.text.ToString());
         GameManager.instance.playerStats[0].charIamge = myPortrait;
         GameManager.instance.playerStats[0].strength = myAttributes[CharacterAttributes.BaseAttributes.Strength];
         GameManager.instance.playerStats[0].currentHP = myHP;
