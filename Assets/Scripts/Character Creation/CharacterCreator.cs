@@ -99,7 +99,8 @@ public class CharacterCreator : MonoBehaviour
                 myAttributes[CharacterAttributes.BaseAttributes.Constitution] -= 1;
                 portraitList = GetComponent<PortraitHandler>().mElf;
                 mySex = "M";
-                if (!isMale) { 
+                if (!isMale)
+                {
                     portraitList = GetComponent<PortraitHandler>().fElf;
                     mySex = "F";
                 }
@@ -111,7 +112,8 @@ public class CharacterCreator : MonoBehaviour
                 myAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 1;
                 portraitList = GetComponent<PortraitHandler>().mHalf_Elf;
                 mySex = "M";
-                if (!isMale) { 
+                if (!isMale)
+                {
                     portraitList = GetComponent<PortraitHandler>().fHalf_Elf;
                     mySex = "F";
                 }
@@ -122,7 +124,8 @@ public class CharacterCreator : MonoBehaviour
                 myAttributes[CharacterAttributes.BaseAttributes.Strength] -= 1;
                 portraitList = GetComponent<PortraitHandler>().mHalfling;
                 mySex = "M";
-                if (!isMale) { 
+                if (!isMale)
+                {
                     portraitList = GetComponent<PortraitHandler>().fHalfling;
                     mySex = "F";
                 }
@@ -133,7 +136,8 @@ public class CharacterCreator : MonoBehaviour
                 myAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 2;
                 portraitList = GetComponent<PortraitHandler>().mHalf_Orc;
                 mySex = "M";
-                if (!isMale) { 
+                if (!isMale)
+                {
                     portraitList = GetComponent<PortraitHandler>().fHalf_Orc;
                     mySex = "F";
                 }
@@ -143,7 +147,8 @@ public class CharacterCreator : MonoBehaviour
                 myAttributes[(CharacterAttributes.BaseAttributes)ran] += 2;
                 portraitList = GetComponent<PortraitHandler>().mHuman;
                 mySex = "M";
-                if (!isMale) { 
+                if (!isMale)
+                {
                     portraitList = GetComponent<PortraitHandler>().fHuman;
                     mySex = "F";
                 }
@@ -250,7 +255,7 @@ public class CharacterCreator : MonoBehaviour
                 {
                     foundIt = false;
                     myClass = thisClass;
-                   
+
                     break;
                 }
                 else if (myClass == thisClass)
@@ -362,10 +367,6 @@ public class CharacterCreator : MonoBehaviour
     public void SaveCharacterButtonPressed()
     {
         GameManager.instance.playerStats[0].charName = nameField.text;
-<<<<<<< HEAD
-        Debug.Log(nameField.text.ToString());
-=======
->>>>>>> 06deddc2040ef5255fe5d71c1d1b1bc3b4ce09db
         GameManager.instance.playerStats[0].charIamge = myPortrait;
         GameManager.instance.playerStats[0].strength = myAttributes[CharacterAttributes.BaseAttributes.Strength];
         GameManager.instance.playerStats[0].currentHP = myHP;
@@ -373,13 +374,9 @@ public class CharacterCreator : MonoBehaviour
         GameManager.instance.playerStats[0].currentMP = myMP;
         GameManager.instance.playerStats[0].maxMP = myMP;
         GameManager.instance.playerStats[0].playerLevel = 1;
-<<<<<<< HEAD
-
-=======
-        GameManager.instance.playerStats[0].battleChar = Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/"+myClass+"/"+mySex+myRace);
+        GameManager.instance.playerStats[0].battleChar = Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
         GameManager.instance.playerStats[0].battleChar.isPlayer = true;
         Debug.Log("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
->>>>>>> 06deddc2040ef5255fe5d71c1d1b1bc3b4ce09db
         SceneManager.LoadScene("Calimere");
     }
 
