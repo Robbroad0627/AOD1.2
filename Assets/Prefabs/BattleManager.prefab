@@ -1979,6 +1979,41 @@ MonoBehaviour:
     moveCost: 5
     theEffect: {fileID: 114011823187449262, guid: f21b2f7782516b44b9eed515c7218f03,
       type: 3}
+  - moveName: Faerie Fire
+    movePower: 10
+    moveCost: 5
+    theEffect: {fileID: 114011823187449262, guid: 3c547a9e93ee0e04c81a4a639740ef64,
+      type: 3}
+  - moveName: Burning Hand
+    movePower: 10
+    moveCost: 5
+    theEffect: {fileID: 114011823187449262, guid: 00d46045d587a954baa77078a87a5b13,
+      type: 3}
+  - moveName: Nature's Fury
+    movePower: 10
+    moveCost: 5
+    theEffect: {fileID: 114011823187449262, guid: 3959457c7c8c5084dbaf8ec506f36571,
+      type: 3}
+  - moveName: Poison Spray
+    movePower: 10
+    moveCost: 5
+    theEffect: {fileID: 114011823187449262, guid: cb1259539efa7a746a5c893a3f52876b,
+      type: 3}
+  - moveName: Sacred Flame
+    movePower: 10
+    moveCost: 5
+    theEffect: {fileID: 114252193273743618, guid: 7317105e6ff4f734cb78b373efed2e65,
+      type: 3}
+  - moveName: Shillelagh
+    movePower: 10
+    moveCost: 5
+    theEffect: {fileID: 114011823187449262, guid: 698f5d1b91d9b954e939223489c0ba1a,
+      type: 3}
+  - moveName: Thunderous Smite
+    movePower: 10
+    moveCost: 5
+    theEffect: {fileID: 114011823187449262, guid: b1f33ccea8d89cf429357cc1c7fb3704,
+      type: 3}
   enemyAttackEffect: {fileID: 1261278678591276, guid: 67aaab33d8f46774fb89c9aebaaa1801,
     type: 3}
   theDamageNumber: {fileID: 114429894980074712, guid: add1341ff4b53074794f5f54ef4f216d,

@@ -223,35 +223,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - n-Sister
-  - Hello big brother
-  - n- Gao
+  - 'Hello '
+  - n-Player
   - Hello Sis
   - n- Sister
   - I know you are bored here and want to go off and explore the world like adventurers
     of old in the stories.
   - But it is dangerous out there
-  - n- Gao
+  - n-Player
   - I just can't stand not having been any where or not having done anything exciting.
   - n- Sister
   - Well take your friends with you to help keep you safe.
-  - n- Gao
+  - n-Player
   - That is a very smart idea.
   - n- Sister
   - I have lots of smart ideas, it is just that no one ever listens to me.
-  - n- Gao
+  - n-Player
   - Well they should.
   - n- Sister
   - Makesure you by the shop to buy weapons and armor before you leave
-  - n- Gao
+  - n-Player
   - Another great idea Sis!
   - n- Sister
   - I know.  I told you I have lots of them.
-  - n- Gao
+  - n-Player
   - Just don't go growing up on me while I am gone.
   - n- Sister
   - Be safe Gao.
   - I am going to miss you
-  - n- Gao
+  - n-Player
   - Bye
   - n- Sister
   - Bye
@@ -351,17 +351,17 @@ MonoBehaviour:
   - Heading outside of town this way you will encounter slimes, lots and lots of
     slime.  They are fairly easy to kill thus making them very good for practice
     and honing your skills.
-  - n-Gao
+  - n-Player
   - Thanks for the advice.  We appreciate it.
   - n-Gordon
   - Also, roads are safer than walking across the grasslands and open spaces.
   - And, healing potions are your best friend.
-  - n-Gao
+  - n-Player
   - We will buy some as soon as we can.
   - n-Gordon
   - Good luck out there.  Hope to talk to you again before you head out into the
     world.
-  - n-Gao
+  - n-Player
   - Thanks
   isPerson: 1
   shouldActivateQuest: 1
@@ -6904,11 +6904,11 @@ MonoBehaviour:
   lines:
   - n-Betru
   - Oh my goodness you did it
-  - n-Gao
+  - n-Player
   - Yes we did
   - n-Betru
   - Hopefully you are all healthy after that.
-  - n-Gao
+  - n-Player
   - It wasn't as easy as we thought it would be, but we learned from it
   - n-Betru
   - Thank you so much for helping protect the village.  I wish you well on your journey
@@ -7709,11 +7709,11 @@ MonoBehaviour:
   lines:
   - n- Samson
   - Enjoy your shopping
-  - n- Gao
+  - n-Player
   - Thanks, we will.
   - n- Samson
   - Good luck out in the world.
-  - n- Gao
+  - n-Player
   - Thank's Sampson
   isPerson: 1
   shouldActivateQuest: 0
@@ -9020,25 +9020,25 @@ MonoBehaviour:
     lookvery similar
   - The guys who thought of it made a fortune selling the plans to everyone who wanted
     a store.  They even sold them the materials at discount.
-  - n- Gao
+  - n-Player
   - That is a smart idea.
   - n- Samson
   - Just behind me is the store, each store has a limited stock, but you can sell
     anythng you want to them and as much as you want.
   - It is a great way of making money and clearing up space in your inventory.
   - 'But, they won''t sell to you or buy from you until you have won a battle.  '
-  - n- Gao
+  - n-Player
   - Thanks for the tip.  I appreciate it.
   - n- Samson
   - Good luck out there.  I wish I had the courage when I was younger to go off and
     see the world.  I have only ventured as far far as Altir.
   - Remember where you came from, when you are rich and famous.
-  - n- Gao
+  - n-Player
   - Thank you Samson, and good luck to you as well.
   - n- Samson
   - Come back after you have some kills and they will gladly sell to you.
   - Bye
-  - n- Gao
+  - n-Player
   - Bye
   isPerson: 1
   shouldActivateQuest: 1
@@ -29037,12 +29037,12 @@ MonoBehaviour:
   - I really wish the water wasn't so shallow so that we could have a dock here in
     Calimere
   - Instead we have to go all the way to Tearle
-  - n- Gao
+  - n-Player
   - That would be nice, but there really isn't much we can do to change that.
   - n- Nick
   - I don't know, Sampson says the water has been rising  each year, so maybe in
     time it will be deep enough here for a dock.
-  - n- Gao
+  - n-Player
   - That is interesting.
   - Have a great day.
   - n- Nick
@@ -29933,13 +29933,13 @@ MonoBehaviour:
   lines:
   - n-Gordon
   - Glad you took my advice
-  - n-Gao
+  - n-Player
   - We would llike to thank you for the advice, it was very helpful.
   - n-Gordon
   - You are very welome.
   - Good luck on your adventuring.  I will leave you to your business now.
   - Until we meet again.
-  - n-Gao
+  - n-Player
   - Goodbye.
   isPerson: 1
   shouldActivateQuest: 0
@@ -30179,11 +30179,11 @@ MonoBehaviour:
     to help her.
   - But if you have already helped her, I wish you luck out in the world, it is a
     pretty dangerous place these days.
-  - n-Gao
+  - n-Player
   - Thanks for the advice, we appreciate it.
   - n- Keller
   - Goodbye.
-  - n- Gao
+  - n-Player
   - Bye.
   isPerson: 1
   shouldActivateQuest: 0
@@ -30295,7 +30295,7 @@ MonoBehaviour:
   lines:
   - n-Betru
   - Gao, before heading out of town could you do me a favor?
-  - n-Gao
+  - n-Player
   - Sure, what is it?
   - n-Betru
   - On the east side of town there are some nasty green slimes that have been making
@@ -30303,7 +30303,7 @@ MonoBehaviour:
   - There is a is a pack of 6 slimes that are very aggressive
   - Could you go kill them so the village will be safe.  I know one of them swallowed
     a gold ring you could sell for lots of money.
-  - n-Gao
+  - n-Player
   - No problem we could use the practice.
   isPerson: 1
   shouldActivateQuest: 1
