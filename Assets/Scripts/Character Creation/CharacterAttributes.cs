@@ -20,9 +20,9 @@ public class CharacterAttributes : MonoBehaviour
     {
         Dwarf,
         Elf,
-        Half_Elf,
+        HalfElf,
         Halfling,
-        Half_Orc,
+        HalfOrc,
         Human,
     };
 
@@ -31,7 +31,7 @@ public class CharacterAttributes : MonoBehaviour
         Cleric,
         Druid,
         Fighter,
-        Magic_User,
+        MagicUser,
         Paladin,
         Ranger,
         Thief

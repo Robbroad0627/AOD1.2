@@ -80,7 +80,6 @@ public class BattleStarter : MonoBehaviour {
         GameManager.instance.battleActive = true;
         
         int selectedBattle = Random.Range(0, potentialBattles.Length);
-        Debug.Log(selectedBattle);
         BattleManager.instance.rewardItems = potentialBattles[selectedBattle].rewardItems;
         BattleManager.instance.rewardXP = potentialBattles[selectedBattle].rewardXP;
 

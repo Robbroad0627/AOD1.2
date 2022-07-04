@@ -7,6 +7,7 @@ using UnityEngine;
 public class CharStats : MonoBehaviour {
 
     public string charName;
+    public BattleChar battleChar;
     public int playerLevel = 1;
     public int currentEXP;
     public int[] expToNextLevel;
@@ -25,9 +26,10 @@ public class CharStats : MonoBehaviour {
     public string equippedWpn;
     public string equippedArmr;
     public Sprite charIamge;
+    
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         expToNextLevel = new int[maxLevel];
         expToNextLevel[1] = baseEXP;
 

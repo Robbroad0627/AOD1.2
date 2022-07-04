@@ -56,7 +56,7 @@ public class BattleManager : MonoBehaviour {
 	void Start () {
         instance = this;
         DontDestroyOnLoad(gameObject);
-        playerPrefabs[0].charName = GameManager.instance.playerStats[0].charName;
+       
     activeBattlers = new List<BattleChar>();
 
     }
@@ -95,6 +95,9 @@ public class BattleManager : MonoBehaviour {
     {
         if(!battleActive)
         {
+            playerPrefabs[0] = GameManager.instance.playerStats[0].battleChar;
+            playerPrefabs[0].charName = GameManager.instance.playerStats[0].charName;
+
             cannotFlee = setCannotFlee;
 
             battleActive = true;
