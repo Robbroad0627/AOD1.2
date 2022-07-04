@@ -38,7 +38,7 @@ public class MainMenu : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene("Calimere");
+        SceneManager.LoadScene("CharCreation");
     }
 
     public void Instructions()
