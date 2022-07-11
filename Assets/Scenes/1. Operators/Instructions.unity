@@ -645,7 +645,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 720277627}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: NewGame
+        m_MethodName: Races
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1038,7 +1038,7 @@ MonoBehaviour:
   newGameScene: Calimere
   continueButton: {fileID: 0}
   loadGameScene: LoadingScene
-  instructions: 
+  instructions: Instructions
 --- !u!114 &720277628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1790,7 +1790,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 720277627}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: NewGame
+        m_MethodName: Classes
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

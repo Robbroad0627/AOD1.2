@@ -365,7 +365,7 @@ GameObject:
   - component: {fileID: 402395878}
   - component: {fileID: 402395877}
   m_Layer: 0
-  m_Name: Races
+  m_Name: Classes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -433,7 +433,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 402395878}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1167197056}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: Classes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &402395878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,6 +720,7 @@ GameObject:
   - component: {fileID: 1167197055}
   - component: {fileID: 1167197054}
   - component: {fileID: 1167197053}
+  - component: {fileID: 1167197056}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -801,6 +814,22 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1167197056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167197051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e4633cad10b0474e80cd5d467e25dd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newGameScene: Calimere
+  continueButton: {fileID: 0}
+  loadGameScene: LoadingScene
+  instructions: Instructions
 --- !u!1 &1228948020
 GameObject:
   m_ObjectHideFlags: 0
@@ -1040,7 +1069,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back to Races Page
+  m_Text: Back to Classes Page
 --- !u!222 &1449059028
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1130,7 +1159,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1474015366}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1167197056}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: Instructions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1474015366
 MonoBehaviour:
   m_ObjectHideFlags: 0

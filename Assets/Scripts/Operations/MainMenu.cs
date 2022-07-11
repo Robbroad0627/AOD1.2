@@ -50,4 +50,79 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Races()
+    {
+        SceneManager.LoadScene("Races");
+    }
+
+    public void Classes()
+    {
+        SceneManager.LoadScene("Classes");
+    }
+
+    public void Dwarf()
+    {
+        SceneManager.LoadScene("Dwarf");
+    }
+
+    public void Elf()
+    {
+        SceneManager.LoadScene("Elf");
+    }
+
+    public void Human()
+    {
+        SceneManager.LoadScene("Human");
+    }
+
+    public void Halfling()
+    {
+        SceneManager.LoadScene("Halfling");
+    }
+
+    public void HalfOrc()
+    {
+        SceneManager.LoadScene("Half Orc");
+    }
+
+    public void HalfElf()
+    {
+        SceneManager.LoadScene("Half Elf");
+    }
+
+    public void Cleric()
+    {
+        SceneManager.LoadScene("Cleric");
+    }
+
+    public void Druid()
+    {
+        SceneManager.LoadScene("Druid");
+    }
+
+    public void Fighter()
+    {
+        SceneManager.LoadScene("Fighter");
+    }
+
+    public void MagicUser()
+    {
+        SceneManager.LoadScene("Magic User");
+    }
+
+    public void Paladin()
+    {
+        SceneManager.LoadScene("Paladin");
+    }
+
+    public void Ranger()
+    {
+        SceneManager.LoadScene("Ranger");
+    }
+
+    public void Thief()
+    {
+        SceneManager.LoadScene("Thief");
+    }
 }
