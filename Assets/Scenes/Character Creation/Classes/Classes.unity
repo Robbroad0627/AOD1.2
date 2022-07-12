@@ -1727,6 +1727,21 @@ MonoBehaviour:
   continueButton: {fileID: 0}
   loadGameScene: LoadingScene
   instructions: Instructions
+  races: Races
+  classes: Classes
+  dwarf: Dwarf
+  elf: Elf
+  halfelf: Half Elf
+  halforc: Half Orc
+  halfling: Halfling
+  human: Human
+  cleric: Clerc
+  druid: Druid
+  fighter: Fighter
+  magicuser: Magic User
+  paladin: Paladin
+  ranger: Ranger
+  thief: Thief
 --- !u!1 &1228948020
 GameObject:
   m_ObjectHideFlags: 0
