@@ -16,6 +16,36 @@ public class MainMenu : MonoBehaviour
 
     public string instructions;
 
+    public string races;
+
+    public string classes;
+
+    public string dwarf;
+
+    public string elf;
+
+    public string halfelf;
+
+    public string halforc;
+
+    public string halfling;
+
+    public string human;
+
+    public string cleric;
+
+    public string druid;
+
+    public string fighter;
+
+    public string magicuser;
+
+    public string paladin;
+
+    public string ranger;
+
+    public string thief;
+
     // Use this for initialization
     void Start()
     {
