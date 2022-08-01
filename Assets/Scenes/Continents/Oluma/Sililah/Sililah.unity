@@ -356,10 +356,72 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Hakam al-Neman
+  - Hello travellers what bring you to Sililah and the great land of Oluma
+  - n- Player
+  - We are travellin gteh world to see the sites and to adventure.
+  - n- Hakam al-Neman
+  - Excellent.  My name is   Hakam al-Neman, I am the mayor of this village.
+  - Sililah is the only port here in Oluma and the only settlement that is not in
+    the heart of the desert.
+  - n- Player
+  - That is good to know
+  - We have heard that is is hot here and that the sand will get everywhere.
+  - n- Hakam al-Neman
+  - Yes, the sand goes where it wishes and it is often the place we want it least.
+  - Loose clothing often helps with it not sticking as it can easily fall away, armor
+    on the other hand has a way of keeping it close to the body all the time.
+  - 'n- Player '
+  - That is good to know.
+  - We just came from Larsu and it was extremely hot there, but we were always damp.
+  - n- Hakam al-Neman
+  - Yes I have heard it is hot there, as well, but it will be nothing like this. 
+    Our heat can steal your breath, and the moisture from your body so always drink
+    clean water when you have the chance.
+  - Have you heard about the Oasis that was discovered in the centere of the continent?
+  - n- Player
+  - What is an Oasis?
+  - n- Hakam al-Neman
+  - An Oasis is often a pool of water and tress where there should be none.  They
+    are very rare and only last for a short time.
+  - People from Fawab went to investigate but never returned.
+  - n- Player
+  - That is troubling
+  - Has there been more snakes seen here recently?
+  - n- Hakam al-Neman
+  - Yes, and the snakes we have were always agressive but they have gotten much more
+    aggressive as of late.
+  - n- Player
+  - In Larsu there were many more snakes than usual, and they had become quite aggressive.
+  - We even battled snakemen and flying snakes.
+  - n- Hakam al-Neman
+  - Very funny you had me going for a second there.  Flying snakes, snakemen, I can
+    see you are quite the jokesters.  I will have to keep my eye on you.
+  - n- Player
+  - We wish it was just a joke, but it is true.  Very true.
+  - We joke and laugh at many things but we do not joke about innocent people dying.
+  - n- Hakam al-Neman
+  - You sound very sincere and I want to believe you but such wild ideas are hard
+    to swallow.
+  - n- Player
+  - It was shocking to us as well
+  - n- Hakam al-Neman
+  - My daughter is a historian you should speak to her to see if she has ever heard
+    of such a thing.
+  - Her name is Tazmina.  If you greet  her by calling her Taz, she will know it
+    is ok to talk.  I have called her that since she was a child, many people here
+    are frightened by a woman with an intellect, it took a lot for me to get her
+    an education, but she has great wisdom, well beyond her years.
+  - n- Player
+  - Thank you sir it is greatly appreciated, we will treat her with great respect.
+  - n- Hakam al-Neman
+  - That is all I can ask.  Goodbye
+  - n- Player
+  - Goodbye
   isPerson: 1
-  shouldActivateQuest: 0
-  questToMark: 
+  shouldActivateQuest: 1
+  questToMark: Taz
   markComplete: 0
 --- !u!61 &228055872
 BoxCollider2D:
@@ -476,7 +538,7 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 978822606}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &286080471
 PrefabInstance:
@@ -886,6 +948,238 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &555547324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 555547325}
+  - component: {fileID: 555547329}
+  - component: {fileID: 555547328}
+  - component: {fileID: 555547327}
+  - component: {fileID: 555547326}
+  m_Layer: 0
+  m_Name: Tazmina (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &555547325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555547324}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.959487, y: -19.436697, z: 71.53293}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1935029146}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &555547326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555547324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n- Player
+  - Hello Taz
+  - n- Tazmina
+  - Ok, now I can speak with you.
+  - I can you you have my father's permission
+  - n- Player
+  - First we would like to aplogoze for being so bold by approaching you.
+  - We were unaware of your customs and should have thought to ask on the boat ride
+    here about such imortant things.
+  - In our travels to Ashtir and Larse we never encountered a custom like this, and
+    on Haven it would be a completely foreign concept.
+  - n- Tazmina
+  - Oh you are well travelled.  I would love to leave here and see the world, explore
+    other cultures up close instead of just in books and through lectures.
+  - n- Player
+  - 'That is why your father told us we should speak with you.  '
+  - Ashtir is shrinking, that arctic region is getting warmer, and has made the animals
+    and creatures of that nation much more aggressive.
+  - n- Tazmina
+  - That is terrible, those poor people.  Is it true?  Is it really that cold there
+    that you can see your breath?
+  - n- Player
+  - Yes it is very cold there, and things freeze very quickly, and you see your breath
+    every moment you are outside.  I would hate to see how cold it is normally
+  - n- Tazmina
+  - I would like to experince the cold before I die
+  - n- Player
+  - We thought the same but it was much harder than we ever expected.
+  - The second thing we need to mention is Larsu is over run with very aggressive
+    snakes.
+  - We have even seen snakemen and flying snakes
+  - n- Tazmina
+  - Flying snakes?  There are tales of flying snakes back in the days before Piltara
+    sank into the depths of the ocean.
+  - It is even said they had several type of snake people.
+  - You know the story of Piltara
+  - n- Player
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - n- Tazmina
+  - Let me fill you in.  Many people think the land of Piltara is a myth and the
+    stories are fables to frighten and entertain.
+  - But in fact it was a very really place, and the the most horrifying stories are
+    nowhere near as gruesome as the truth.
+  - 'The land of Piltara '
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  isPerson: 1
+  shouldActivateQuest: 0
+  questToMark: Taz
+  markComplete: 1
+--- !u!61 &555547327
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555547324}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.043886185, y: 0.061790466}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.61, y: 3.79}
+    newSize: {x: 1.61, y: 3.79}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.7580528, y: 4.933136}
+  m_EdgeRadius: 0
+--- !u!61 &555547328
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555547324}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.61, y: 3.79}
+    newSize: {x: 1.61, y: 3.79}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.61, y: 3.79}
+  m_EdgeRadius: 0
+--- !u!212 &555547329
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555547324}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -5947163505982640537, guid: 68af419fe37fdd846a46073620e7dfba,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.61, y: 3.79}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &566621651
 GameObject:
   m_ObjectHideFlags: 0
@@ -8078,11 +8372,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 806549691}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.7477493, y: -20.218267, z: 58.983566}
+  m_LocalPosition: {x: -5.959487, y: -19.436697, z: 71.53293}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
-  m_Father: {fileID: 978822606}
-  m_RootOrder: 1
+  m_Father: {fileID: 1935029146}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &806549693
 MonoBehaviour:
@@ -8096,7 +8390,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Player
+  - Hello
+  - n- Tazmina
+  - You really should speak to my father before speaking to me.
+  - It is not our way to just approach a woman.
+  - n- Player
+  - Our apologies.  We will leave you be.
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -8233,9 +8534,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1770939223}
-  - {fileID: 806549692}
   - {fileID: 1087379232}
   - {fileID: 228055875}
+  - {fileID: 1935029146}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8471,7 +8772,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 978822606}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1087379233
 MonoBehaviour:
@@ -144983,6 +145284,91 @@ Transform:
   m_Father: {fileID: 454416989}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1935029145
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 978822606}
+    m_Modifications:
+    - target: {fileID: 2434758651056572089, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_Name
+      value: QuestManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 555547324}
+    - target: {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: questToCheck
+      value: Taz
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.78826255
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.78157043
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.549363
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad1680edb5e536a4da50947749261935, type: 3}
+--- !u!4 &1935029146 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+    type: 3}
+  m_PrefabInstance: {fileID: 1935029145}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2031192571
 PrefabInstance:
   m_ObjectHideFlags: 0
