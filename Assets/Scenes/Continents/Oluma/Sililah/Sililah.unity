@@ -1039,39 +1039,52 @@ MonoBehaviour:
     stories are fables to frighten and entertain.
   - But in fact it was a very really place, and the the most horrifying stories are
     nowhere near as gruesome as the truth.
-  - 'The land of Piltara '
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
+  - The land of Piltara was a very evil place, with a race called the Yaun-Ti.
+  - n- Player
+  - That is what Coatl said.
+  - n- Tazmina
+  - Wait.  You met Coatl?  Are you pulling my leg?
+  - n- Player
+  - No we met Coatl or an avatar of Coatl in Larsu, teh avatar was imprisoned in
+    the the temple to Coatl
+  - n-Tazmina
+  - Maybe I should be learning from you instead of me trying to explain things
+  - n- Player
+  - No, please continue, we feel so lost and out of sorts, there is so much we need
+    to know
+  - n- Tazmina
+  - The Yuan-Ti were cruel beings, some looked almost perfectly human, other had
+    snake bodies and human upper part, others had a snake head and human body.  The
+    most wretched were the ones they captured and changed into snake people but I
+    can not recall the name for them.
+  - n- Player
+  - Hstachi...
+  - n- Tazmina
+  - Yes Hstachi, how did yo know that?
+  - n- Player
+  - A person everyone in Haven though was crazy was babling about Hstachi.
+  - And we think we battled one in Larsu
+  - n- Tazmina
+  - That's impossible.  The Yuan-Ti disappeared thousands of years ago when they
+    warred with teh Elves and the Dwarves and the other older races.
+  - The Hstachi were captured people that were turned from Human to pathetic creatures. 
+    They were turned through blood magic.  But since the Yuan-Ti perished there is
+    no one to create new Hstachi.  At the end of the greatest battle the land of
+    Piltara sank into the ocean and the few Yuan-Ti that were found in other lands
+    were interrogated, and executed.
+  - N- Player
+  - Very interesting.
+  - That will give us a lot to think about.
+  - We thank you for your time, and please forgive us for our boldness earlier.
+  - n- Tazmina
+  - Nothing to forgive, you did not know our ways, but try to keep it in mind if
+    you plan to stay here in Oluma.
+  - n- Player
+  - We will definitely keep it in the front of our thoughts as we venture through
+    your land.
+  - n- Tazmina
+  - Goodbye, but please do come back if you learn more.  I love a good mystery.
+  - N- Goodbye
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: Taz
@@ -145018,7 +145031,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Faisal al-Rasul
+  - Hot enough for you
+  - Ha ha Ha
+  - n- Player Very funny, yes it is quite hot.
+  - n- Faisal al-Rasul
+  - As you head out into the desert it gets hotter
+  - n- Player
+  - Thank you for the warning
+  - n- Faisal al-Rasul
+  - Enough idle chit chat, I am a busy man.  Good bye
+  - n- Player
+  - Goodbye
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
