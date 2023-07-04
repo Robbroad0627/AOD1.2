@@ -1,7 +1,34 @@
 fileFormatVersion: 2
 guid: 5b639626b5ebd374b87791521a71281a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4057310039259892710
+    second: cloud_of_daggers_0
+  - first:
+      213: 2715966768005137388
+    second: cloud_of_daggers_1
+  - first:
+      213: 8877121878466841977
+    second: cloud_of_daggers_2
+  - first:
+      213: 2267558368486084194
+    second: cloud_of_daggers_3
+  - first:
+      213: 1353820396250603844
+    second: cloud_of_daggers_4
+  - first:
+      213: 8318339120155644772
+    second: cloud_of_daggers_5
+  - first:
+      213: -5245714637822177260
+    second: cloud_of_daggers_6
+  - first:
+      213: 7607122758165314011
+    second: cloud_of_daggers_7
+  - first:
+      213: -6527218792404481319
+    second: cloud_of_daggers_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +68,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -73,9 +100,246 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: cloud_of_daggers_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 6640
+        width: 3266
+        height: 2589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14b94e040a81b7c0800000000000000
+      internalID: -4057310039259892710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_of_daggers_1
+      rect:
+        serializedVersion: 2
+        x: 3997
+        y: 6736
+        width: 3261
+        height: 2493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce346bcb26d01b520800000000000000
+      internalID: 2715966768005137388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_of_daggers_2
+      rect:
+        serializedVersion: 2
+        x: 8075
+        y: 6680
+        width: 3262
+        height: 2501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97d4dd1c05fd13b70800000000000000
+      internalID: 8877121878466841977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_of_daggers_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3113
+        width: 3343
+        height: 2498
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ec315725cf77f10800000000000000
+      internalID: 2267558368486084194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_of_daggers_4
+      rect:
+        serializedVersion: 2
+        x: 4115
+        y: 3182
+        width: 3262
+        height: 2500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44122304a7cb9c210800000000000000
+      internalID: 1353820396250603844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_of_daggers_5
+      rect:
+        serializedVersion: 2
+        x: 8279
+        y: 3153
+        width: 3258
+        height: 2501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463dc1a7b5da07370800000000000000
+      internalID: 8318339120155644772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_of_daggers_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3258
+        height: 2492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 410da83745a7337b0800000000000000
+      internalID: -5245714637822177260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_of_daggers_7
+      rect:
+        serializedVersion: 2
+        x: 4132
+        y: 0
+        width: 3262
+        height: 2548
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd9bb3328dde19960800000000000000
+      internalID: 7607122758165314011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud_of_daggers_8
+      rect:
+        serializedVersion: 2
+        x: 8267
+        y: 37
+        width: 3270
+        height: 2496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da0a7b4719aa65a0800000000000000
+      internalID: -6527218792404481319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

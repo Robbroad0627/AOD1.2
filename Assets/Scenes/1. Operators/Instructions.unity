@@ -205,6 +205,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 52333470}
   m_CullTransparentMesh: 0
+--- !u!1 &78014287
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 78014288}
+  - component: {fileID: 78014290}
+  - component: {fileID: 78014289}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &78014288
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78014287}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 720277631}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 192.4, y: -652.3}
+  m_SizeDelta: {x: 144.7983, y: 190.27216}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &78014289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78014287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 7094002868571794031, guid: b076dfe4612dae942a81358ddff02cf5,
+    type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &78014290
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78014287}
+  m_CullTransparentMesh: 0
 --- !u!1 &287444387
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,10 +340,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 43d543549387a6949bd58c9e2794e24b, type: 3}
-    m_FontSize: 48
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 72
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -275,10 +351,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Age of Discovery is a Top Down 2D RPG.  The contols for this game are very
-    simple and we will break them down for you.  To the left you will see a chatacter,
-    this is your avatar.  This is what you will see when walking around the countryside
-    and in towns.  When you ayou are in combat you will see the actual characters.
+  m_Text: 'Hi, I am  Bron, and we have been friends for a very long time. I am a
+    druid and will be joining you on your adventures. So lets learn about the game.
+
+    Age
+    of Discovery is a Top Down 2D RPG.  The contols for this game are very simple
+    and we will break them down for you.  You will see a cloaked person walking and
+    interacting on the screen, this is your avatar, but in menus and in combat you
+    will see your actual character you have created.   '
 --- !u!222 &287444390
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -513,8 +593,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 83.041, y: -29}
-  m_SizeDelta: {x: 1538.5173, y: 55.14734}
+  m_AnchoredPosition: {x: 83.041, y: -44.6}
+  m_SizeDelta: {x: 1538.5173, y: 86.347626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &546150681
 MonoBehaviour:
@@ -538,10 +618,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 43d543549387a6949bd58c9e2794e24b, type: 3}
-    m_FontSize: 48
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 72
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -549,8 +629,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'In combat the image of the character you created will be on screen along
-    with the 2 other party members you created.
+  m_Text: 'Hi I am Bawb, I am a cleric and we have been friends for as long as I
+    can remember. You, Bron and myself have been inseparable for years, and I too
+    will be joining you on your adventures.
+
+    In combat the image of the character
+    you created will be on screen along with the 2 other party members you created.
 
 '
 --- !u!222 &546150682
@@ -560,6 +644,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546150679}
+  m_CullTransparentMesh: 0
+--- !u!1 &562830010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 562830011}
+  - component: {fileID: 562830013}
+  - component: {fileID: 562830012}
+  m_Layer: 5
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &562830011
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562830010}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 720277631}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1708.5, y: -757}
+  m_SizeDelta: {x: 125, y: 190.27216}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &562830012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562830010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9536612f2744fd3439b80a123eccd663, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &562830013
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 562830010}
   m_CullTransparentMesh: 0
 --- !u!1 &567135557
 GameObject:
@@ -859,8 +1018,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 83.041, y: -193}
-  m_SizeDelta: {x: 1538.5173, y: 271.1993}
+  m_AnchoredPosition: {x: 83.041, y: -208.2}
+  m_SizeDelta: {x: 1538.5173, y: 240.85208}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &622218507
 MonoBehaviour:
@@ -884,10 +1043,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 43d543549387a6949bd58c9e2794e24b, type: 3}
-    m_FontSize: 48
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 3
     m_MaxSize: 72
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1039,6 +1198,21 @@ MonoBehaviour:
   continueButton: {fileID: 0}
   loadGameScene: LoadingScene
   instructions: Instructions
+  races: 
+  classes: 
+  dwarf: 
+  elf: 
+  halfelf: 
+  halforc: 
+  halfling: 
+  human: 
+  cleric: 
+  druid: 
+  fighter: 
+  magicuser: 
+  paladin: 
+  ranger: 
+  thief: 
 --- !u!114 &720277628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1120,6 +1294,8 @@ RectTransform:
   - {fileID: 572578175}
   - {fileID: 567135558}
   - {fileID: 1809303696}
+  - {fileID: 78014288}
+  - {fileID: 562830011}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1863,17 +2039,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1965398020}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 720277631}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 170, y: -453.5}
-  m_SizeDelta: {x: 100, y: 195.03143}
+  m_AnchoredPosition: {x: 163.5, y: -445.6}
+  m_SizeDelta: {x: 86.99414, y: 179.13522}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1965398022
 MonoBehaviour:
@@ -1895,7 +2071,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300016, guid: 9536612f2744fd3439b80a123eccd663, type: 3}
+  m_Sprite: {fileID: -7601376746965008775, guid: ac8678ac431557843b7ea99d841b7a81,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

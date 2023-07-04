@@ -43,7 +43,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c76952862b77b3a498c16adc915c1bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Kira
+  charName: Bron
+  battleChar: {fileID: 0}
   playerLevel: 1
   currentEXP: 0
   expToNextLevel: 
@@ -58,9 +59,9 @@ MonoBehaviour:
   defence: 16
   wpnPwr: 6
   armrPwr: 5
-  equippedWpn: Spear
+  equippedWpn: Cudgel
   equippedArmr: Leather Armor
-  charIamge: {fileID: -1456688305891014241, guid: 26dc4be89b23f6f4891bbd7fa546a680,
+  charIamge: {fileID: -365265951389661645, guid: 5aaf1f8f0b18fa34a8db85d319073cd4,
     type: 3}
 --- !u!1 &1190594902282344
 GameObject:
@@ -345,24 +346,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c76952862b77b3a498c16adc915c1bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Fistilan
+  charName: Bawb
+  battleChar: {fileID: 0}
   playerLevel: 1
   currentEXP: 0
   expToNextLevel: 
   maxLevel: 100
   baseEXP: 1000
-  currentHP: 32
-  maxHP: 32
-  currentMP: 50
-  maxMP: 50
+  currentHP: 40
+  maxHP: 40
+  currentMP: 25
+  maxMP: 25
   mpLvlBonus: 000000000000000005000000000000000a00000000000000000000000c0000000000000000000000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  strength: 5
-  defence: 5
-  wpnPwr: 5
-  armrPwr: 2
-  equippedWpn: Basic Staff
-  equippedArmr: Wizard's Robe
-  charIamge: {fileID: -4504832730624173063, guid: bf801c61aefcaf54aab19aae03d6ce9d,
+  strength: 15
+  defence: 12
+  wpnPwr: 6
+  armrPwr: 7
+  equippedWpn: Warhammer
+  equippedArmr: Chainmail
+  charIamge: {fileID: 3491277826576900539, guid: b076dfe4612dae942a81358ddff02cf5,
     type: 3}
 --- !u!1 &1674758041330280
 GameObject:
@@ -408,6 +410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charName: Gao
+  battleChar: {fileID: 0}
   playerLevel: 1
   currentEXP: 0
   expToNextLevel: 

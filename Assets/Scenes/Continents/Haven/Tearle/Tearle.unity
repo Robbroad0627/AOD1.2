@@ -53420,12 +53420,12 @@ PrefabInstance:
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
-      value: Tower Sub-1
+      value: Credits
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
-      value: Tower Sub-1
+      value: Credits
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
@@ -53624,23 +53624,10 @@ MonoBehaviour:
   - n-Player
   - We are good, and yourself?
   - n- Allister
-  - Not so good.  Some creatures have chased me out of my tower and are tormenting
-    my pet Water Elemental.
-  - She is scared and has caused the giant whirlpool in the entrance of the cove.
-  - Now no boats can get in or leave Haven.
-  - n-Player
-  - That is terrible.
-  - n- Allister
-  - Would you be willing to eradicate the foul denizens that have taken over my tower?
-  - n-Player
-  - I think me and my friends would really like that.
-  - n- Allister
-  - My pet Elemntal is down in the sub cellar on the third level below the tower.
-  - You won't be able to get in to the above ground portions of the tower.  Luckily
-    I got them sealed off just as the trouble started.
-  - n-Player
-  - We'll get rid of your infestation.
-  - See you soon
+  - It is great that you made it this far.
+  - I hope you have enjoyed the game
+  - This is the end of the free demo.
+  - I hope to see you soon when we have a full launch of the game.
   isPerson: 1
   shouldActivateQuest: 1
   questToMark: Elemental
