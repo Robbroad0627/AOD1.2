@@ -8,7 +8,8 @@ public class Item : MonoBehaviour {
     [Header("Item Type")]
     public bool isItem;
     public bool isWeapon;
-    public bool isArmour;
+    //public bool isArmour;
+    public bool isArmour => armorSlot == ArmorLocation.NotArmor;
 
     [Header("Item Details")]
     public string itemName;
@@ -24,13 +25,15 @@ public class Item : MonoBehaviour {
     public int weaponStrength;
 
     public int armorStrength;
-    public bool head;
-    public bool body;
-    public bool hand;
-    public bool legs;
-    public bool feet;
-    public bool other;
-    public bool shield;
+
+    public ArmorLocation armorSlot = ArmorLocation.NotArmor;
+    //public bool head; 
+    //public bool body;
+    //public bool hand;
+    //public bool legs;
+    //public bool feet;
+    //public bool other;
+    //public bool shield;
 
 
     [Header("Usable By")]
@@ -41,6 +44,12 @@ public class Item : MonoBehaviour {
     public bool Paladin;
     public bool Ranger;
     public bool Thief;
+
+
+    public enum ArmorLocation
+    {
+        NotArmor=-1,Head, Body,Hand,Legs,Feet,Other,Shield
+    }
 
     // Use this for initialization
     void Start () {
@@ -97,15 +106,23 @@ public class Item : MonoBehaviour {
 
         if(isArmour)
         {
-            if (selectedChar.equippedArmr != "")
-            {
-                GameManager.instance.AddItem(selectedChar.equippedArmr);
-            }
-
-            selectedChar.equippedArmr = itemName;
-            selectedChar.armrPwr = armorStrength;
+            EquipArmour(selectedChar);
         }
 
         GameManager.instance.RemoveItem(itemName);
+    }
+
+    private void EquipArmour(CharStats selectedChar)
+    {
+        //Unequip armour if it is equipped
+        if (selectedChar.equippedArmr != "")
+        {
+            GameManager.instance.AddItem(selectedChar.equippedArmr);
+            Item prevArmour = GameManager.instance.GetItemDetails(selectedChar.equippedArmr);
+            selectedChar.armrPwr -= prevArmour.armorStrength;
+        }
+
+        selectedChar.equippedArmr = itemName;
+        selectedChar.armrPwr = armorStrength;
     }
 }
