@@ -97,7 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isItem: 0
   isWeapon: 0
-  isArmour: 1
   itemName: Leather Helmet
   description: A helemt made of Leather.  Increases Armor Class by 1 point.
   value: 5
@@ -108,13 +107,7 @@ MonoBehaviour:
   affectStr: 0
   weaponStrength: 0
   armorStrength: 1
-  head: 1
-  body: 0
-  hand: 0
-  legs: 0
-  feet: 0
-  other: 0
-  shield: 0
+  armorSlot: 0
   Cleric: 1
   Druid: 1
   Fighter: 1

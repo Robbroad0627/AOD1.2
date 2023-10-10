@@ -46,6 +46,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -57,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -94,7 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isItem: 1
   isWeapon: 0
-  isArmour: 0
   itemName: Potion of Healing
   description: This potion restores 10 Hit Points
   value: 50
@@ -105,3 +107,11 @@ MonoBehaviour:
   affectStr: 0
   weaponStrength: 0
   armorStrength: 0
+  armorSlot: -1
+  Cleric: 0
+  Druid: 0
+  Fighter: 0
+  Mage: 0
+  Paladin: 0
+  Ranger: 0
+  Thief: 0

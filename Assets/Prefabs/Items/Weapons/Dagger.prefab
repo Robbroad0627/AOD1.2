@@ -97,7 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isItem: 0
   isWeapon: 1
-  isArmour: 0
   itemName: Dagger
   description: A small blade that can be used for slashing or stabbing.  A very versatile
     weapon usable by everyone except healers.
@@ -109,13 +108,7 @@ MonoBehaviour:
   affectStr: 0
   weaponStrength: 4
   armorStrength: 0
-  head: 0
-  body: 0
-  hand: 0
-  legs: 0
-  feet: 0
-  other: 0
-  shield: 0
+  armorSlot: -1
   Cleric: 0
   Druid: 1
   Fighter: 1

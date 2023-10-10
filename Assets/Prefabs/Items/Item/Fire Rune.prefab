@@ -46,6 +46,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -57,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -67,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 486606989
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 18d91459ded018f45a3b3b4a955c2a93, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -94,7 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isItem: 1
   isWeapon: 0
-  isArmour: 0
   itemName: Fire Rune
   description: This rune has a glowing red emblem for fire.
   value: 5000
@@ -105,3 +107,11 @@ MonoBehaviour:
   affectStr: 0
   weaponStrength: 0
   armorStrength: 0
+  armorSlot: -1
+  Cleric: 0
+  Druid: 0
+  Fighter: 0
+  Mage: 0
+  Paladin: 0
+  Ranger: 0
+  Thief: 0
