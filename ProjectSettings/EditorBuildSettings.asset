@@ -32,30 +32,33 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/1. Operators/TheEnd.unity
     guid: 44bf588b59f467e49a27e91784ab4bde
-  - enabled: 1
-    path: Assets/Scenes/Character Creation/Races/Dwarf.unity
-    guid: 6bd0f6834e15a92419267f6173c34b51
-  - enabled: 1
-    path: Assets/Scenes/Character Creation/Races/Elf.unity
-    guid: 8b156c27058e4ef4fb6328d2a063190c
-  - enabled: 1
-    path: Assets/Scenes/Character Creation/Races/Half Elf.unity
-    guid: f93c36029d75c6d47bd0b7f1f9cf5bfb
-  - enabled: 1
-    path: Assets/Scenes/Character Creation/Races/Half Orc.unity
-    guid: 30ed6395ea950c040a08a73724f3c6e4
-  - enabled: 1
-    path: Assets/Scenes/Character Creation/Races/Halfling.unity
-    guid: 9cf95bf7e504feb49b46ed8c59bc3781
-  - enabled: 1
-    path: Assets/Scenes/Character Creation/Races/Human.unity
-    guid: 3b23d23a1647386438ced8d513dbc31c
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: Assets/Scenes/Character Creation/Races/Races.unity
     guid: 8e935733cc28ff54b88ebeb679d39e1f
   - enabled: 0
     path: Assets/Scenes/Character Creation/Classes/Classes.unity
     guid: b838a1ef3ac0e8d44bf1eb97471215aa
+  - enabled: 1
+    path: Assets/Scenes/Continents/World Map.unity
+    guid: 968d690e648672b429c5844f5402eaab
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -147,7 +150,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Continents/Ashtir/EastVill/EastVill Shop.unity
     guid: bb11a30d264852d4f804af09248e41bc
   - enabled: 0
-    path: Assets/Scenes/Continents/Ashtir/NorthVill/Northvill.unity
+    path: Assets/Scenes/Continents/Ashtir/NorthVill/NorthVill.unity
     guid: 4fbdb66311c13d84085545fd1d810dce
   - enabled: 0
     path: Assets/Scenes/Continents/Ashtir/NorthVill/Northvill Shop.unity

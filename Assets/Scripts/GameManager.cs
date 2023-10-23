@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
 
     public int currentGold;
 
+    public bool haveBoat;
+
     // Use this for initialization
     void Start()
     {
@@ -108,8 +110,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Add one of the named item to the inventory.
+    /// </summary>
+    /// <param name="itemToAdd"></param>
     public void AddItem(string itemToAdd)
     {
+        if(null == itemToAdd)
+        {
+            Debug.LogError("Couldn't add null item to player inventory.");
+            return;
+        }
         int newItemPosition = 0;
         bool foundSpace = false;
 

@@ -15,6 +15,8 @@ public class AreaExit : MonoBehaviour {
     public float waitToLoad = 1f;
     private bool shouldLoadAfterFade;
 
+    public bool needBoat = false;
+
 
 	void Start () {
         
@@ -37,6 +39,12 @@ public class AreaExit : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
+            if(needBoat && !GameManager.instance.haveBoat)
+            {
+                //Cant use boat area without one.
+                Debug.Log("Area needs boat but GameManager.haveBoat == false");
+                return;
+            }
             //SceneManager.LoadScene(areaToLoad);
             shouldLoadAfterFade = true;
             GameManager.instance.fadingBetweenAreas = true;

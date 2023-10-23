@@ -152,7 +152,7 @@ public class Item : MonoBehaviour {
 
             if(null != prevArmour)
             {
-                Debug.Log($"Unequip {prevArmour.itemName} from {selectedChar.name}  => -{prevArmour.armorStrength}");
+                Debug.Log($"Unequip {prevArmour.itemName} from {selectedChar.charName}  => -{prevArmour.armorStrength}");
                 selectedChar.armrPwr -= prevArmour.armorStrength;
             }
             
@@ -187,6 +187,6 @@ public class Item : MonoBehaviour {
 
         selectedChar.equippedArmr = itemName;
         selectedChar.armrPwr += newArmor.armorStrength;
-        Debug.Log($"Equip {newArmor.itemName} from {selectedChar.name}  => +{newArmor.armorStrength}");
+        Debug.Log($"Equip {newArmor.itemName} from {selectedChar.charName}  => +{newArmor.armorStrength}");
     }
 }
