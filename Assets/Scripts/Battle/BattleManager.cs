@@ -51,6 +51,17 @@ public class BattleManager : MonoBehaviour {
     public string[] rewardItems;
 
     public bool cannotFlee;
+
+    public Sprite backgroundSprite
+    {
+        set
+        {
+            backgroundSpriteRenderer.sprite = value;
+        }
+    }
+
+    public SpriteRenderer backgroundSpriteRenderer;
+
     private int m_outsideBattleBGM;
 
     void Start () {
@@ -146,15 +157,24 @@ public class BattleManager : MonoBehaviour {
             {
                 if (enemiesToSpawn[i] != "")
                 {
+                    bool found = false;
                     for (int j = 0; j < enemyPrefabs.Length; j++)
                     {
-                        if (enemyPrefabs[j].charName == enemiesToSpawn[i])
+                        if (enemyPrefabs[j].charName == enemiesToSpawn[i].Trim())
                         {
                             BattleChar newEnemy = Instantiate(enemyPrefabs[j], enemyPositions[i].position, enemyPositions[i].rotation);
                             newEnemy.transform.parent = enemyPositions[i];
                             activeBattlers.Add(newEnemy);
+                            found = true;
+                            break;
                         }
                     }
+
+                    if (!found)
+                    {
+                        Debug.LogError($"Could not find enemy prefab for <{enemiesToSpawn[i].Trim()}> is it in the BattleManagerList and spelled correctly?", this);
+                    }
+
                 }
             }
 
@@ -440,6 +460,12 @@ public class BattleManager : MonoBehaviour {
             }
         }
 
+    }
+
+    [ContextMenu("Force End Battle")]
+    void EndBattle()
+    {
+        StartCoroutine(EndBattleCo());
     }
 
     public IEnumerator EndBattleCo()
