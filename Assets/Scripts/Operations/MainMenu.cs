@@ -24,9 +24,9 @@ public class MainMenu : MonoBehaviour
 
     public string elf;
 
-    public string halfelf;
+    public string halfElf;
 
-    public string halforc;
+    public string halfOrc;
 
     public string halfling;
 
@@ -38,7 +38,7 @@ public class MainMenu : MonoBehaviour
 
     public string fighter;
 
-    public string magicuser;
+    public string magicUser;
 
     public string paladin;
 
@@ -81,6 +81,9 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+
+    //Customization Choices
+
     public void Races()
     {
         SceneManager.LoadScene("Races");
@@ -90,6 +93,8 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Classes");
     }
+
+    //Races
 
     public void Dwarf()
     {
@@ -120,6 +125,8 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Half Elf");
     }
+
+    //Races
 
     public void Cleric()
     {
