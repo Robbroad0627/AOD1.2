@@ -97,7 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isItem: 1
   isWeapon: 0
-  isArmour: 0
   itemName: Ring of Destus
   description: This magical ring was stolen many years ago and has been sought after
     ever since.
@@ -109,13 +108,7 @@ MonoBehaviour:
   affectStr: 0
   weaponStrength: 0
   armorStrength: 0
-  head: 0
-  body: 0
-  hand: 0
-  legs: 0
-  feet: 0
-  other: 1
-  shield: 0
+  armorSlot: -1
   Cleric: 1
   Druid: 1
   Fighter: 1

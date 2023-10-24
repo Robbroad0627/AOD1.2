@@ -97,7 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isItem: 0
   isWeapon: 1
-  isArmour: 0
   itemName: Spear
   description: The pointed weapon can be thrust at an opponent or thrown
   value: 1
@@ -108,13 +107,7 @@ MonoBehaviour:
   affectStr: 0
   weaponStrength: 6
   armorStrength: 0
-  head: 0
-  body: 0
-  hand: 0
-  legs: 0
-  feet: 0
-  other: 0
-  shield: 0
+  armorSlot: -1
   Cleric: 0
   Druid: 1
   Fighter: 1

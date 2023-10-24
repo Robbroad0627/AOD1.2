@@ -26,7 +26,14 @@ public class CharStats : MonoBehaviour {
     public string equippedWpn;
     public string equippedArmr;
     public Sprite charIamge;
-    
+    internal string equippedHeadArmr="";
+    internal string equippedBodyArmr="";
+    internal string equippedHandArmr="";
+    internal string equippedLegsArmr="";
+    internal string equippedFeetArmr="";
+    internal string equippedOtherArmr="";
+    internal string equippedShieldArmr="";
+
 
     // Use this for initialization
     void Start () {

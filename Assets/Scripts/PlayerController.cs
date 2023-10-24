@@ -4,6 +4,7 @@ using UnityEngine;
 
 //Bonehead Games
 
+[RequireComponent(typeof(SpriteRenderer))]
 public class PlayerController : MonoBehaviour
 {
 
@@ -20,12 +21,29 @@ public class PlayerController : MonoBehaviour
 
     public bool canMove = true;
 
+    private SpriteRenderer m_spriteRenderer;
+    private Animator m_animator;
+
+    public Sprite sprite {
+
+        get => m_spriteRenderer.sprite;
+    }
+
+    public RuntimeAnimatorController animationController
+    {
+
+        get => m_animator.runtimeAnimatorController;
+        set { m_animator.runtimeAnimatorController = value; }
+    }
+
     // Use this for initialization
     void Start()
     {
         if (instance == null)
         {
             instance = this;
+            m_spriteRenderer = GetComponent<SpriteRenderer>();
+            m_animator = GetComponent<Animator>();
         }
         else
         {

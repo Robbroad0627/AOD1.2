@@ -22,16 +22,27 @@ public class CameraController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //target = PlayerController.instance.transform;
-        target = FindObjectOfType<PlayerController>().transform;
 
-        halfHeight = Camera.main.orthographicSize;
-        halfWidth = halfHeight * Camera.main.aspect;
+        PlayerController pc = PlayerController.instance;
 
-        theMap.CompressBounds();
-        bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth, halfHeight, 0f);
-        topRightLimit = theMap.localBounds.max + new Vector3(-halfWidth, -halfHeight, 0f);
+        if(null != pc)
+        {
+            target = pc.transform;
+            halfHeight = Camera.main.orthographicSize;
+            halfWidth = halfHeight * Camera.main.aspect;
 
-        PlayerController.instance.SetBounds(theMap.localBounds.min, theMap.localBounds.max);
+            theMap.CompressBounds();
+            bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth, halfHeight, 0f);
+            topRightLimit = theMap.localBounds.max + new Vector3(-halfWidth, -halfHeight, 0f);
+
+            PlayerController.instance.SetBounds(theMap.localBounds.min, theMap.localBounds.max);
+        }
+        else
+        {
+            Debug.LogWarning("Camera can't find player this is normal on the main menu.");
+        }
+
+
 	}
 	
 	// LateUpdate is called once per frame after Update

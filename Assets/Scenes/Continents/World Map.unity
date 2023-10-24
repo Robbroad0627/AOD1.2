@@ -215,6 +215,17 @@ PrefabInstance:
       propertyPath: transitionName
       value: Larsu-5
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: playerSpriteOverride
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d4dc24b0e4d7864da7d95170a54dc8f,
+        type: 3}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: playerAnimatorOverride
+      value: 
+      objectReference: {fileID: 9100000, guid: 76377846a4915f445956d6b272160221, type: 2}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -368,6 +379,17 @@ PrefabInstance:
       propertyPath: transitionName
       value: Larsu-2
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: playerSpriteOverride
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d4dc24b0e4d7864da7d95170a54dc8f,
+        type: 3}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: playerAnimatorOverride
+      value: 
+      objectReference: {fileID: 9100000, guid: 76377846a4915f445956d6b272160221, type: 2}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -467,6 +489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Orc Marauder
@@ -615,7 +638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &387828080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -823,6 +846,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Ogre
@@ -1024,6 +1048,17 @@ PrefabInstance:
       propertyPath: transitionName
       value: Larsu-3
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: playerSpriteOverride
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d4dc24b0e4d7864da7d95170a54dc8f,
+        type: 3}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: playerAnimatorOverride
+      value: 
+      objectReference: {fileID: 9100000, guid: 76377846a4915f445956d6b272160221, type: 2}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -1124,6 +1159,17 @@ PrefabInstance:
       propertyPath: transitionName
       value: Larsu-4
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: playerSpriteOverride
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d4dc24b0e4d7864da7d95170a54dc8f,
+        type: 3}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: playerAnimatorOverride
+      value: 
+      objectReference: {fileID: 9100000, guid: 76377846a4915f445956d6b272160221, type: 2}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -44059,6 +44105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Minotaur
@@ -146611,6 +146658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Orc Marauder
@@ -149556,6 +149604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Mad Gazer
@@ -149752,6 +149801,17 @@ PrefabInstance:
       propertyPath: transitionName
       value: Larsu-1
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: playerSpriteOverride
+      value: 
+      objectReference: {fileID: 21300000, guid: 6d4dc24b0e4d7864da7d95170a54dc8f,
+        type: 3}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: playerAnimatorOverride
+      value: 
+      objectReference: {fileID: 9100000, guid: 76377846a4915f445956d6b272160221, type: 2}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -149794,6 +149854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Goblin

@@ -52,8 +52,19 @@ public class BattleManager : MonoBehaviour {
 
     public bool cannotFlee;
 
-	
-	void Start () {
+    public Sprite backgroundSprite
+    {
+        set
+        {
+            backgroundSpriteRenderer.sprite = value;
+        }
+    }
+
+    public SpriteRenderer backgroundSpriteRenderer;
+
+    private int m_outsideBattleBGM;
+
+    void Start () {
         instance = this;
         DontDestroyOnLoad(gameObject);
        
@@ -107,7 +118,7 @@ public class BattleManager : MonoBehaviour {
             transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
             battleScene.SetActive(true);
 
-            //AudioManager.instance.PlayBGM(0);
+            StartBattleMusic();
 
             for (int i = 0; i < playerPositions.Length; i++)
             {
@@ -140,21 +151,30 @@ public class BattleManager : MonoBehaviour {
                     }
                 }
             }
-            
+
 
             for (int i = 0; i < enemiesToSpawn.Length; i++)
             {
                 if (enemiesToSpawn[i] != "")
                 {
+                    bool found = false;
                     for (int j = 0; j < enemyPrefabs.Length; j++)
                     {
-                        if (enemyPrefabs[j].charName == enemiesToSpawn[i])
+                        if (enemyPrefabs[j].charName == enemiesToSpawn[i].Trim())
                         {
                             BattleChar newEnemy = Instantiate(enemyPrefabs[j], enemyPositions[i].position, enemyPositions[i].rotation);
                             newEnemy.transform.parent = enemyPositions[i];
                             activeBattlers.Add(newEnemy);
+                            found = true;
+                            break;
                         }
                     }
+
+                    if (!found)
+                    {
+                        Debug.LogError($"Could not find enemy prefab for <{enemiesToSpawn[i].Trim()}> is it in the BattleManagerList and spelled correctly?", this);
+                    }
+
                 }
             }
 
@@ -163,6 +183,13 @@ public class BattleManager : MonoBehaviour {
 
             UpdateUIStats();
         }
+    }
+
+    private void StartBattleMusic()
+    {
+        m_outsideBattleBGM = AudioManager.instance.bgmCurrentTrack;
+
+        AudioManager.instance.PlayBGM(0);
     }
 
     public void NextTurn()
@@ -435,6 +462,12 @@ public class BattleManager : MonoBehaviour {
 
     }
 
+    [ContextMenu("Force End Battle")]
+    void EndBattle()
+    {
+        StartCoroutine(EndBattleCo());
+    }
+
     public IEnumerator EndBattleCo()
     {
         battleActive = false;
@@ -445,6 +478,7 @@ public class BattleManager : MonoBehaviour {
         yield return new WaitForSeconds(.5f);
 
         UIFade.instance.FadeToBlack();
+        AudioManager.instance.PlayBGM(m_outsideBattleBGM);
 
         yield return new WaitForSeconds(1.5f);
 

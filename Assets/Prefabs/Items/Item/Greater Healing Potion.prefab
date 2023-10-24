@@ -97,7 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isItem: 1
   isWeapon: 0
-  isArmour: 0
   itemName: Greater Healing Potion
   description: This potion restores 25 hit points
   value: 150
@@ -108,13 +107,7 @@ MonoBehaviour:
   affectStr: 0
   weaponStrength: 0
   armorStrength: 0
-  head: 0
-  body: 0
-  hand: 0
-  legs: 0
-  feet: 0
-  other: 0
-  shield: 0
+  armorSlot: -1
   Cleric: 1
   Druid: 1
   Fighter: 1

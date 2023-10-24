@@ -46,6 +46,8 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -57,6 +59,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -67,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 486606989
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 5dc84652c68a66e4f97006f4f8dceb35, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -94,14 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isItem: 1
   isWeapon: 0
-  isArmor: 0
-  common: 1
-  uncommon: 0
-  rare: 0
-  veryRare: 0
-  extremelyrare: 0
-  oneOfAKind: 0
-  questItem: 0
   itemName: Food
   description: Restores 1 hit point
   value: 2
@@ -109,34 +104,14 @@ MonoBehaviour:
   amountToChange: 1
   affectHP: 1
   affectMP: 0
-  affectAC: 0
-  affectStrength: 0
-  affectAgility: 0
-  affectStamina: 0
-  affectIntelect: 0
-  isHealerUsable: 0
-  isDruidUsable: 0
-  isMageUsable: 0
-  isThiefUsable: 0
-  isWarriorUsable: 0
-  isPalladinUsable: 0
-  isRangerUsable: 0
-  isHeadArmor: 0
-  isBodyArmor: 0
-  isHandArmor: 0
-  isLegArmor: 0
-  isFootArmor: 0
-  isOtherArmor: 0
-  isShield: 0
-  headArmorStrength: 0
-  bodyArmorStrength: 0
-  handArmorStrength: 0
-  legArmorStrength: 0
-  footArmorStrength: 0
-  otherArmorStrength: 0
-  shieldStrength: 0
-  isPrimaryHand: 0
-  isSecondaryHand: 0
-  isTwoHands: 0
-  affectDamage: 0
+  affectStr: 0
   weaponStrength: 0
+  armorStrength: 0
+  armorSlot: -1
+  Cleric: 0
+  Druid: 0
+  Fighter: 0
+  Mage: 0
+  Paladin: 0
+  Ranger: 0
+  Thief: 0

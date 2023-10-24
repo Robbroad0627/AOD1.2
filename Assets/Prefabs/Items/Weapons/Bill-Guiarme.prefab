@@ -97,7 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isItem: 0
   isWeapon: 1
-  isArmour: 0
   itemName: Bill-Guiarme
   description: The two handed weapon, a polearm is often found on guards, but it
     is  effective in a variety combat situations
@@ -109,13 +108,7 @@ MonoBehaviour:
   affectStr: 0
   weaponStrength: 8
   armorStrength: 0
-  head: 0
-  body: 0
-  hand: 0
-  legs: 0
-  feet: 0
-  other: 0
-  shield: 0
+  armorSlot: -1
   Cleric: 0
   Druid: 0
   Fighter: 1

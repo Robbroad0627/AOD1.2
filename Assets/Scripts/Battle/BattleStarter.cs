@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class BattleStarter : MonoBehaviour {
 
+    public Sprite backgroundSprite;
     public BattleType[] potentialBattles;
 
     public bool activateOnEnter, activateOnStay, activateOnExit;
@@ -77,6 +78,10 @@ public class BattleStarter : MonoBehaviour {
     public IEnumerator StartBattleCo()
     {
         UIFade.instance.FadeToBlack();
+        if(null != backgroundSprite)
+        {
+            BattleManager.instance.backgroundSprite = backgroundSprite;
+        }
         GameManager.instance.battleActive = true;
         
         int selectedBattle = Random.Range(0, potentialBattles.Length);

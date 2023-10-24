@@ -8,7 +8,8 @@ public class Item : MonoBehaviour {
     [Header("Item Type")]
     public bool isItem;
     public bool isWeapon;
-    public bool isArmour;
+    //public bool isArmour;
+    public bool isArmour => armorSlot != ArmorLocation.NotArmor;
 
     [Header("Item Details")]
     public string itemName;
@@ -24,13 +25,15 @@ public class Item : MonoBehaviour {
     public int weaponStrength;
 
     public int armorStrength;
-    public bool head;
-    public bool body;
-    public bool hand;
-    public bool legs;
-    public bool feet;
-    public bool other;
-    public bool shield;
+
+    public ArmorLocation armorSlot = ArmorLocation.NotArmor;
+    //public bool head; 
+    //public bool body;
+    //public bool hand;
+    //public bool legs;
+    //public bool feet;
+    //public bool other;
+    //public bool shield;
 
 
     [Header("Usable By")]
@@ -41,6 +44,12 @@ public class Item : MonoBehaviour {
     public bool Paladin;
     public bool Ranger;
     public bool Thief;
+
+
+    public enum ArmorLocation
+    {
+        NotArmor=-1,Head, Body,Hand,Legs,Feet,Other,Shield
+    }
 
     // Use this for initialization
     void Start () {
@@ -97,15 +106,87 @@ public class Item : MonoBehaviour {
 
         if(isArmour)
         {
-            if (selectedChar.equippedArmr != "")
-            {
-                GameManager.instance.AddItem(selectedChar.equippedArmr);
-            }
-
-            selectedChar.equippedArmr = itemName;
-            selectedChar.armrPwr = armorStrength;
+            EquipArmour(selectedChar);
         }
 
         GameManager.instance.RemoveItem(itemName);
+    }
+
+    private void EquipArmour(CharStats selectedChar)
+    {
+        Item newArmor = GameManager.instance.GetItemDetails(itemName);
+
+        string currentArmorKey = "";
+
+        switch (newArmor.armorSlot)
+        {
+            case ArmorLocation.NotArmor:
+                throw new System.Exception("Can't equip non armor to armor.");
+            case ArmorLocation.Head:
+                currentArmorKey = selectedChar.equippedHeadArmr;
+                break;
+            case ArmorLocation.Body:
+                currentArmorKey = selectedChar.equippedBodyArmr;
+                break;
+            case ArmorLocation.Hand:
+                currentArmorKey = selectedChar.equippedHandArmr;
+                break;
+            case ArmorLocation.Legs:
+                currentArmorKey = selectedChar.equippedLegsArmr;
+                break;
+            case ArmorLocation.Feet:
+                currentArmorKey = selectedChar.equippedFeetArmr;
+                break;
+            case ArmorLocation.Other:
+                currentArmorKey = selectedChar.equippedOtherArmr;
+                break;
+            case ArmorLocation.Shield:
+                currentArmorKey = selectedChar.equippedShieldArmr;
+                break;
+        }
+        //Unequip armour if it is equipped
+        if (currentArmorKey != "")
+        {
+            GameManager.instance.AddItem(currentArmorKey);
+            Item prevArmour = GameManager.instance.GetItemDetails(currentArmorKey);
+
+            if(null != prevArmour)
+            {
+                Debug.Log($"Unequip {prevArmour.itemName} from {selectedChar.charName}  => -{prevArmour.armorStrength}");
+                selectedChar.armrPwr -= prevArmour.armorStrength;
+            }
+            
+        }
+
+        switch (newArmor.armorSlot)
+        {
+            case ArmorLocation.NotArmor:
+                throw new System.Exception("Can't equip non armor to armor.");
+            case ArmorLocation.Head:
+                 selectedChar.equippedHeadArmr = itemName;
+                break;
+            case ArmorLocation.Body:
+                 selectedChar.equippedBodyArmr = itemName;
+                break;
+            case ArmorLocation.Hand:
+                 selectedChar.equippedHandArmr = itemName;
+                break;
+            case ArmorLocation.Legs:
+                 selectedChar.equippedLegsArmr = itemName;
+                break;
+            case ArmorLocation.Feet:
+                 selectedChar.equippedFeetArmr = itemName;
+                break;
+            case ArmorLocation.Other:
+                 selectedChar.equippedOtherArmr = itemName;
+                break;
+            case ArmorLocation.Shield:
+                 selectedChar.equippedShieldArmr = itemName;
+                break;
+        }
+
+        selectedChar.equippedArmr = itemName;
+        selectedChar.armrPwr += newArmor.armorStrength;
+        Debug.Log($"Equip {newArmor.itemName} from {selectedChar.charName}  => +{newArmor.armorStrength}");
     }
 }

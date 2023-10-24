@@ -7,13 +7,25 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour {
 
     public AudioSource[] sfx;
-    //public AudioSource[] bgm;
+    public AudioSource[] bgm;
+
+    public int bgmCurrentTrack = -1;
 
     public static AudioManager instance;
 
    
     void Start () {
-        instance = this;
+
+        if(null == instance)
+        {
+            instance = this;
+        }
+
+        if(instance != this)
+        {
+            Destroy(this);
+        }
+        
 
         DontDestroyOnLoad(this.gameObject);
 	}
@@ -30,8 +42,16 @@ public class AudioManager : MonoBehaviour {
         }
     }
 
-    /*public void PlayBGM(int musicToPlay)
+    public void PlayBGM(int musicToPlay)
     {
+        bgmCurrentTrack = musicToPlay;
+        if (musicToPlay<0 || musicToPlay > bgm.Length)
+        {
+            Debug.LogWarning("Requested track does not exist, or restoring to state where no BGM, halting BGM.",this);
+            StopMusic();
+            return;
+        }
+        
         if (!bgm[musicToPlay].isPlaying)
         {
             StopMusic();
@@ -49,5 +69,5 @@ public class AudioManager : MonoBehaviour {
         {
             bgm[i].Stop();
         }
-    }*/
+    }
 }
