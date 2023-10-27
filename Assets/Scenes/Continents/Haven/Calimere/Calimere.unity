@@ -7196,7 +7196,7 @@ PrefabInstance:
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: potentialBattles.Array.data[4].rewardItems.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -7583,6 +7583,12 @@ PrefabInstance:
       propertyPath: deactivateAfterStarting
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: backgroundSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f,
+        type: 3}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.y
@@ -7884,7 +7890,7 @@ PrefabInstance:
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: potentialBattles.Array.data[4].rewardItems.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -8261,6 +8267,12 @@ PrefabInstance:
       propertyPath: deactivateAfterStarting
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: backgroundSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f,
+        type: 3}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.x
@@ -8374,6 +8386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f, type: 3}
   potentialBattles:
   - enemies:
     - Green Slime
@@ -8839,6 +8852,12 @@ PrefabInstance:
       propertyPath: deactivateAfterStarting
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: backgroundSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f,
+        type: 3}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.x
@@ -10119,6 +10138,12 @@ PrefabInstance:
       propertyPath: deactivateAfterStarting
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: backgroundSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f,
+        type: 3}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.x
@@ -29279,7 +29304,7 @@ PrefabInstance:
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: potentialBattles.Array.data[4].rewardItems.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
@@ -29651,6 +29676,12 @@ PrefabInstance:
       propertyPath: deactivateAfterStarting
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1816890875814037043, guid: 0829b7d1167478943a58a6d9fdca090d,
+        type: 3}
+      propertyPath: backgroundSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f,
+        type: 3}
     - target: {fileID: 1816890875814037044, guid: 0829b7d1167478943a58a6d9fdca090d,
         type: 3}
       propertyPath: m_Offset.x
