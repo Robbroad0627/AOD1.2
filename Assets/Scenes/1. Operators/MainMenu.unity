@@ -710,21 +710,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newGameScene: Calimere
-  continueButton: {fileID: 0}
+  continueButton: {fileID: 406606496}
   loadGameScene: LoadingScene
   instructions: Instructions
   races: Races
   classes: Classes
   dwarf: Dwarf
   elf: Elf
-  halfElf: 
-  halfOrc: 
+  halfElf: HalfElf
+  halfOrc: HalfOrc
   halfling: Halfling
   human: Human
   cleric: Cleric
   druid: Druid
   fighter: Fighter
-  magicUser: 
+  magicUser: MagicUser
   paladin: Paladin
   ranger: Ranger
   thief: Thief

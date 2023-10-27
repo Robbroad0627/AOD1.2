@@ -118,12 +118,12 @@ public class MainMenu : MonoBehaviour
 
     public void HalfOrc()
     {
-        SceneManager.LoadScene("Half Orc");
+        SceneManager.LoadScene("HalfOrc");
     }
 
     public void HalfElf()
     {
-        SceneManager.LoadScene("Half Elf");
+        SceneManager.LoadScene("HalfElf");
     }
 
     //Races
@@ -145,7 +145,7 @@ public class MainMenu : MonoBehaviour
 
     public void MagicUser()
     {
-        SceneManager.LoadScene("Magic User");
+        SceneManager.LoadScene("MagicUser");
     }
 
     public void Paladin()
