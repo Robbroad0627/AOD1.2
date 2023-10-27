@@ -814,6 +814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f, type: 3}
   potentialBattles:
   - enemies:
     - Giant Wasp
@@ -29557,6 +29558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f, type: 3}
   potentialBattles:
   - enemies:
     - Giant Wasp
@@ -29688,10 +29690,6 @@ MonoBehaviour:
   - And a wizard without a spell book is just a regular person.
   - n-Player
   - That is horrible.
-  - n-Fistilan
-  - I don't ask for much from the group, but I am asking that we help a fellow wizard
-    and hunt down these goblins.
-  - n-Player
   - Alright it is settled we will bring these goblins to a swift end.
   - n-Jaru
   - Thank you so much.  If they they are not here by the town they are probably to
@@ -29849,6 +29847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f, type: 3}
   potentialBattles:
   - enemies:
     - Giant Wasp
