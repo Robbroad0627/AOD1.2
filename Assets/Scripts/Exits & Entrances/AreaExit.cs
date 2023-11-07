@@ -45,6 +45,7 @@ public class AreaExit : MonoBehaviour {
                 Debug.Log("Area needs boat but GameManager.haveBoat == false");
                 return;
             }
+            this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
             //SceneManager.LoadScene(areaToLoad);
             shouldLoadAfterFade = true;
             GameManager.instance.fadingBetweenAreas = true;

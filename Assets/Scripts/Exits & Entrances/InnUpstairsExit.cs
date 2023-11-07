@@ -40,6 +40,7 @@ public class InnUpstairsExit :MonoBehaviour
                 return;
             }
             PlayerController.instance.areaTransitionName = Inn.s_downstairsTransitionName;
+            this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
             shouldLoadAfterFade = true;
             GameManager.instance.fadingBetweenAreas = true;
 
