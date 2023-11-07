@@ -20,7 +20,13 @@ public class GameManager : MonoBehaviour
 
     public int currentGold;
 
+    //Used to load data if the game was loaded form a scene instad of the main menu
+    //Should also be harmless if loading from main menu.
+    public bool dataLoadedOnce =false;
     public bool haveBoat;
+
+    //HACK: Assuming character zero is the player since this is not defined.
+    public string playerName => playerStats[0].charName;
 
     // Use this for initialization
     void Start()
@@ -28,6 +34,11 @@ public class GameManager : MonoBehaviour
         instance = this;
 
         DontDestroyOnLoad(gameObject);
+        if(!dataLoadedOnce)
+        {
+            LoadData();
+            //QuestManager.instance.LoadQuestData();
+        }
 
         SortItems();
     }
@@ -46,6 +57,8 @@ public class GameManager : MonoBehaviour
                 PlayerController.instance.canMove = true;
             }
 
+#if UNITY_EDITOR
+            //Cheats
             if (Input.GetKeyDown(KeyCode.J))
             {
                 AddItem("Iron Armor");
@@ -54,6 +67,7 @@ public class GameManager : MonoBehaviour
                 RemoveItem("Health Potion");
                 RemoveItem("Bleep");
             }
+#endif
 
             if (Input.GetKeyDown(KeyCode.O))
             {
@@ -66,6 +80,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
 
     public Item GetItemDetails(string itemToGrab)
     {
@@ -194,6 +209,42 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void ModalPromptSaveGame()
+    {
+        DialogManager.instance.Prompt("Do you want to save the game now?", SaveData, null);
+    }
+
+    public void ModalPromptInn(int goldCost)
+    {
+        var dm = DialogManager.instance;
+        if (currentGold >= goldCost)
+        {
+            dm.Prompt("Do you want to stay the night?", InnSequence, null);
+        }
+        else
+        {
+
+        }
+    }
+
+    public void FullRestoreParty()
+    {
+        foreach(var m in this.playerStats)
+        {
+            m.currentHP = m.maxHP;
+            m.currentMP = m.maxMP;
+        }
+    }
+
+    private void InnSequence()
+    {
+        UIFade.instance.FadeToBlack();
+        FullRestoreParty();
+        Inn.WarpUpstairs();
+        UIFade.instance.FadeFromBlack();
+        ModalPromptSaveGame();
+    }
+
     public void SaveData()
     {
         PlayerPrefs.SetString("Current_Scene", SceneManager.GetActiveScene().name);
@@ -237,8 +288,10 @@ public class GameManager : MonoBehaviour
 
     public void LoadData()
     {
+        dataLoadedOnce = true;
         PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
 
+        Debug.LogError("Character art loading not implemented");
         for (int i = 0; i < playerStats.Length; i++)
         {
             if (PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_active") == 0)
@@ -262,6 +315,12 @@ public class GameManager : MonoBehaviour
             playerStats[i].armrPwr = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_ArmrPwr");
             playerStats[i].equippedWpn = PlayerPrefs.GetString("Player_" + playerStats[i].charName + "_EquippedWpn");
             playerStats[i].equippedArmr = PlayerPrefs.GetString("Player_" + playerStats[i].charName + "_EquippedArmr");
+
+
+            string myClass = "Cleric";
+            string mySex = "F";
+            string myRace = "Dwarf";
+            playerStats[i].battleChar = Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
         }
 
         for (int i = 0; i < itemsHeld.Length; i++)
@@ -269,6 +328,8 @@ public class GameManager : MonoBehaviour
             itemsHeld[i] = PlayerPrefs.GetString("ItemInInventory_" + i);
             numberOfItems[i] = PlayerPrefs.GetInt("ItemAmount_" + i);
         }
+
+
     }
 }
 

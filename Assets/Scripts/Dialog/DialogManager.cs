@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,9 +13,17 @@ public class DialogManager : MonoBehaviour {
     public GameObject dialogBox;
     public GameObject nameBox;
 
+    [Header("Confirmation")]
+    public GameObject promptArea;
+    public Text yesButtonText, noButtonText;
+
+    [TextArea]
     public string[] dialogLines;
 
     public int currentLine;
+
+    private bool advanceDialogOnClick = true;
+
     private bool justStarted;
 
     public static DialogManager instance;
@@ -22,6 +31,9 @@ public class DialogManager : MonoBehaviour {
     private string questToMark;
     private bool markQuestComplete;
     private bool shouldMarkQuest;
+    
+    private Action yesAction;
+    private Action noAction;
 
     // Use this for initialization
     void Start () {
@@ -39,33 +51,10 @@ public class DialogManager : MonoBehaviour {
             {
                 if (!justStarted)
                 {
-                    currentLine++;
-
-                    if (currentLine >= dialogLines.Length)
-                    {
-                        dialogBox.SetActive(false);
-
-                        GameManager.instance.dialogActive = false;
-
-                        if(shouldMarkQuest)
-                        {
-                            shouldMarkQuest = false;
-                            if(markQuestComplete)
-                            {
-                                QuestManager.instance.MarkQuestComplete(questToMark);
-                            } else
-                            {
-                                QuestManager.instance.MarkQuestIncomplete(questToMark);
-                            }
-                        }
-                    }
-                    else
-                    {
-                        CheckIfName();
-
-                        dialogText.text = dialogLines[currentLine];
-                    }
-                } else
+                    if(advanceDialogOnClick)
+                    AdvanceDialog();
+                }
+                else
                 {
                     justStarted = false;
                 }
@@ -75,6 +64,37 @@ public class DialogManager : MonoBehaviour {
         }
 
 	}
+
+    private void AdvanceDialog()
+    {
+        currentLine++;
+
+        if (currentLine >= dialogLines.Length)
+        {
+            dialogBox.SetActive(false);
+
+            GameManager.instance.dialogActive = false;
+
+            if (shouldMarkQuest)
+            {
+                shouldMarkQuest = false;
+                if (markQuestComplete)
+                {
+                    QuestManager.instance.MarkQuestComplete(questToMark);
+                }
+                else
+                {
+                    QuestManager.instance.MarkQuestIncomplete(questToMark);
+                }
+            }
+        }
+        else
+        {
+            CheckIfName();
+
+            dialogText.text = dialogLines[currentLine];
+        }
+    }
 
     public void ShowDialog(string[] newLines, bool isPerson)
     {
@@ -99,6 +119,7 @@ public class DialogManager : MonoBehaviour {
         if(dialogLines[currentLine].StartsWith("n-"))
         {
             nameText.text = dialogLines[currentLine].Replace("n-", "");
+            nameText.text = nameText.text == "Player" ? GameManager.instance.playerName : nameText.text;
             currentLine++;
         }
     }
@@ -109,5 +130,48 @@ public class DialogManager : MonoBehaviour {
         markQuestComplete = markComplete;
 
         shouldMarkQuest = true;
+    }
+
+    public void Prompt(string message, Action yesAction, Action noAction,string yesString="yes",string noString="no",string title= "Confirm?")
+    {
+        advanceDialogOnClick = false;
+        dialogText.text = message;
+        nameText.text = title;
+
+        this.yesAction = yesAction;
+        this.noAction = noAction;
+
+        //Note:This forces the prompt into the next frame, if you don't do this then you can't chain prompts.
+        Invoke("PromptHelper", 0.01f);
+
+    }
+
+    private void  PromptHelper()
+    {
+        dialogBox.SetActive(true);
+        //GameManager.instance.dialogActive = true;
+        promptArea.SetActive(true);
+    }
+
+    public void DismissDialog()
+    {
+        dialogBox.SetActive(false);
+        //GameManager.instance.dialogActive = false;
+        promptArea.SetActive(false);
+        advanceDialogOnClick = true;
+    }
+
+    public void ExecuteNoAction()
+    {
+        noAction?.Invoke();
+        promptArea.SetActive(false);
+        DismissDialog();
+    }
+
+    public void ExecuteYesAction()
+    {
+        yesAction?.Invoke();
+        promptArea.SetActive(false);
+        DismissDialog();
     }
 }

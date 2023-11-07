@@ -42,8 +42,6 @@ public class PlayerController : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            m_spriteRenderer = GetComponent<SpriteRenderer>();
-            m_animator = GetComponent<Animator>();
         }
         else
         {
@@ -52,6 +50,12 @@ public class PlayerController : MonoBehaviour
                 Destroy(gameObject);
             }
         }
+
+
+        //NOTE:The designer set the instance somewhere so the only safe place to do initialization of component references is here.
+        //If you put them at singleton test time they will be null because instnace is already set.
+        m_spriteRenderer = GetComponent<SpriteRenderer>();
+        m_animator = GetComponent<Animator>();
 
         DontDestroyOnLoad(gameObject);
     }

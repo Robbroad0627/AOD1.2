@@ -1,25 +1,49 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Inn : MonoBehaviour
 {
-      private bool canOpen;
+    public bool canOpen;
+    public int goldCost = 1;
 
-    public string[] ItemsForSale = new string[40];
+    public AreaEntrance downstairsEntrance;
 
-	// Use this for initialization
-	void Start () {
-		
+    public static string s_downstairsTransitionName;
+    public static string s_downstairsSceneName;
+    public static int s_goldCost;
+
+    const string kUpstairsSceneName ="Inn Upper";
+
+    // Use this for initialization
+    void Start () {
+		if(null == downstairsEntrance)
+        {
+            var e = FindObjectOfType<AreaEntrance>();
+            if(null == e)
+            {
+                Debug.LogError("downstairsEntrance not set", this);
+            }
+            else
+            {
+                Debug.LogWarning("downstairsEntrance not set using first available entrance", this);
+            }
+            s_downstairsTransitionName = e.transitionName;
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if(canOpen && Input.GetButtonDown("Fire1") && PlayerController.instance.canMove && !Shop.instance.shopMenu.activeInHierarchy)
-        {
-            Shop.instance.itemsForSale = ItemsForSale;
 
-            Shop.instance.OpenShop();
+        //canOpen = !DialogManager.instance.dialogActive && canOpen;
+
+        if (canOpen && Input.GetButtonDown("Fire1") && PlayerController.instance.canMove && !Shop.instance.shopMenu.activeInHierarchy)
+        {
+            s_downstairsTransitionName = downstairsEntrance?.transitionName;
+            s_downstairsSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+            s_goldCost = goldCost;
+            GameManager.instance.ModalPromptInn(goldCost);
         }
 	}
 
@@ -37,5 +61,11 @@ public class Inn : MonoBehaviour
         {
             canOpen = false;
         }
+    }
+
+    public static void WarpUpstairs()
+    {
+        GameManager.instance.currentGold -= s_goldCost;
+        SceneManager.LoadScene(kUpstairsSceneName);
     }
 }

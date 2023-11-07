@@ -9,15 +9,29 @@ public class PlayerLoader : MonoBehaviour {
     public GameObject player;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		if(PlayerController.instance == null)
         {
             Instantiate(player);
+			//if(!GameManager.instance.dataLoadedOnce)
+   //         {
+			//	GameManager.instance.LoadData();
+   //         }
         }
 	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Start()
+    {
+        
+    }
+
+    private void OnValidate()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 }
