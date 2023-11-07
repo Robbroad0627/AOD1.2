@@ -219,7 +219,7 @@ public class GameManager : MonoBehaviour
         var dm = DialogManager.instance;
         if (currentGold >= goldCost)
         {
-            dm.Prompt("Do you want to stay the night?", InnSequence, null);
+            dm.Prompt($"Do you want to stay the night? It will cost {goldCost}", InnSequence, null);
         }
         else
         {
@@ -239,18 +239,41 @@ public class GameManager : MonoBehaviour
     private void InnSequence()
     {
         UIFade.instance.FadeToBlack();
+        //HACK: The screen fader is too dumb to do callbacks so just use a timer.
+        GameManager.instance.fadingBetweenAreas = false;
+        Invoke("InnPostFade", 1.5f);
+
+    }
+
+    private void InnPostFade()
+    {
         FullRestoreParty();
         Inn.WarpUpstairs();
+        
         UIFade.instance.FadeFromBlack();
+        GameManager.instance.fadingBetweenAreas = false;
         ModalPromptSaveGame();
     }
 
     public void SaveData()
     {
-        PlayerPrefs.SetString("Current_Scene", SceneManager.GetActiveScene().name);
-        PlayerPrefs.SetFloat("Player_Position_x", PlayerController.instance.transform.position.x);
-        PlayerPrefs.SetFloat("Player_Position_y", PlayerController.instance.transform.position.y);
-        PlayerPrefs.SetFloat("Player_Position_z", PlayerController.instance.transform.position.z);
+        if (Inn.isUpstairs)
+        {
+            if (null != Inn.s_downstairsTransitionPosition)
+            {
+                StorePlayerScene(Inn.s_downstairsSceneName);
+                StorePlayerPosition((Vector3)Inn.s_downstairsTransitionPosition);
+            }
+            else
+            {
+                Debug.LogError("SAVE ABORT! Saving while upstairs aborted could not safely restore downstairs scene.");
+            }
+        }
+        else
+        {
+            StorePlayerScene(SceneManager.GetActiveScene().name);
+            StorePlayerPosition(PlayerController.instance.transform.position);
+        }
 
         //save character info
         for (int i = 0; i < playerStats.Length; i++)
@@ -284,6 +307,14 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetString("ItemInInventory_" + i, itemsHeld[i]);
             PlayerPrefs.SetInt("ItemAmount_" + i, numberOfItems[i]);
         }
+    }
+
+    private static void StorePlayerScene(string sceneName) => PlayerPrefs.SetString("Current_Scene", sceneName );
+    private static void StorePlayerPosition(Vector3 pos)
+    {
+        PlayerPrefs.SetFloat("Player_Position_x", pos.x);
+        PlayerPrefs.SetFloat("Player_Position_y", pos.y);
+        PlayerPrefs.SetFloat("Player_Position_z", pos.z);
     }
 
     public void LoadData()

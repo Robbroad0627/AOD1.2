@@ -24,6 +24,7 @@ public class InnUpstairsExit :MonoBehaviour
             {
                 shouldLoadAfterFade = false;
                 SceneManager.LoadScene(areaToLoad);
+                Inn.isUpstairs = false;
             }
         }
     }
@@ -38,12 +39,11 @@ public class InnUpstairsExit :MonoBehaviour
                 Debug.Log("Area needs boat but GameManager.haveBoat == false");
                 return;
             }
-            PlayerController.instance.areaTransitionName = areaTransitionName;
-            SceneManager.LoadScene(areaToLoad);
-            //shouldLoadAfterFade = true;
-            //GameManager.instance.fadingBetweenAreas = true;
+            PlayerController.instance.areaTransitionName = Inn.s_downstairsTransitionName;
+            shouldLoadAfterFade = true;
+            GameManager.instance.fadingBetweenAreas = true;
 
-            //UIFade.instance.FadeToBlack();
+            UIFade.instance.FadeToBlack();
 
             
         }

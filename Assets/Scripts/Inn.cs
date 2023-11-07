@@ -11,8 +11,10 @@ public class Inn : MonoBehaviour
     public AreaEntrance downstairsEntrance;
 
     public static string s_downstairsTransitionName;
+    public static Vector3? s_downstairsTransitionPosition;
     public static string s_downstairsSceneName;
     public static int s_goldCost;
+    public static bool isUpstairs = false;
 
     const string kUpstairsSceneName ="Inn Upper";
 
@@ -27,7 +29,7 @@ public class Inn : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("downstairsEntrance not set using first available entrance", this);
+                Debug.LogWarning($"downstairsEntrance not set using first available entrance {e.transitionName}", this);
             }
             s_downstairsTransitionName = e.transitionName;
         }
@@ -41,6 +43,7 @@ public class Inn : MonoBehaviour
         if (canOpen && Input.GetButtonDown("Fire1") && PlayerController.instance.canMove && !Shop.instance.shopMenu.activeInHierarchy)
         {
             s_downstairsTransitionName = downstairsEntrance?.transitionName;
+            s_downstairsTransitionPosition = downstairsEntrance?.transform.position;
             s_downstairsSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
             s_goldCost = goldCost;
             GameManager.instance.ModalPromptInn(goldCost);
@@ -66,6 +69,8 @@ public class Inn : MonoBehaviour
     public static void WarpUpstairs()
     {
         GameManager.instance.currentGold -= s_goldCost;
+        PlayerController.instance.areaTransitionName = "Inn-Upper";
         SceneManager.LoadScene(kUpstairsSceneName);
+        isUpstairs = true;
     }
 }
