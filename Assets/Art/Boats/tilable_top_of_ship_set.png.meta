@@ -1,0 +1,790 @@
+fileFormatVersion: 2
+guid: 4ccfbef051562d94c9ceca287087ebca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5485417368604977507
+    second: tilable_top_of_ship_set_0
+  - first:
+      213: 1055537613804121383
+    second: tilable_top_of_ship_set_1
+  - first:
+      213: 2052217720733901924
+    second: tilable_top_of_ship_set_2
+  - first:
+      213: 5449468088231793576
+    second: tilable_top_of_ship_set_3
+  - first:
+      213: 9142530813551948042
+    second: tilable_top_of_ship_set_4
+  - first:
+      213: 7609184828001627346
+    second: tilable_top_of_ship_set_5
+  - first:
+      213: -7207410205117926628
+    second: tilable_top_of_ship_set_6
+  - first:
+      213: -3549633741449371242
+    second: tilable_top_of_ship_set_7
+  - first:
+      213: -6620371318394551836
+    second: tilable_top_of_ship_set_8
+  - first:
+      213: -6491920061725141560
+    second: tilable_top_of_ship_set_9
+  - first:
+      213: -5774465920412634129
+    second: tilable_top_of_ship_set_10
+  - first:
+      213: -5235652330707383537
+    second: tilable_top_of_ship_set_11
+  - first:
+      213: -3145266227292254110
+    second: tilable_top_of_ship_set_12
+  - first:
+      213: -7801439459714970360
+    second: tilable_top_of_ship_set_13
+  - first:
+      213: -2211238719212632347
+    second: tilable_top_of_ship_set_14
+  - first:
+      213: 9075560814023461868
+    second: tilable_top_of_ship_set_15
+  - first:
+      213: 2368688645253534106
+    second: tilable_top_of_ship_set_16
+  - first:
+      213: -5860895832459245757
+    second: tilable_top_of_ship_set_17
+  - first:
+      213: -5466174883022399958
+    second: tilable_top_of_ship_set_18
+  - first:
+      213: -4751434692172350064
+    second: tilable_top_of_ship_set_19
+  - first:
+      213: -4212927709075241390
+    second: tilable_top_of_ship_set_20
+  - first:
+      213: -558989551447497627
+    second: tilable_top_of_ship_set_21
+  - first:
+      213: -6789174352230844744
+    second: tilable_top_of_ship_set_22
+  - first:
+      213: -836778607860648723
+    second: tilable_top_of_ship_set_23
+  - first:
+      213: -5582098945513566249
+    second: tilable_top_of_ship_set_24
+  - first:
+      213: -4067160304675037573
+    second: tilable_top_of_ship_set_25
+  - first:
+      213: -5577857404109743683
+    second: tilable_top_of_ship_set_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_0
+      rect:
+        serializedVersion: 2
+        x: 6058
+        y: 3172
+        width: 1091
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3692574a80e102c40800000000000000
+      internalID: 5485417368604977507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_1
+      rect:
+        serializedVersion: 2
+        x: 7867
+        y: 2703
+        width: 1082
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72dabd50ed506ae00800000000000000
+      internalID: 1055537613804121383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_2
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1480
+        width: 3292
+        height: 1394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4642b16d421fa7c10800000000000000
+      internalID: 2052217720733901924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_3
+      rect:
+        serializedVersion: 2
+        x: 4494
+        y: 1546
+        width: 651
+        height: 1262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a312ed8a5660ab40800000000000000
+      internalID: 5449468088231793576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_4
+      rect:
+        serializedVersion: 2
+        x: 5094
+        y: 1746
+        width: 312
+        height: 887
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01b3d1f55bc0ee70800000000000000
+      internalID: 9142530813551948042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_5
+      rect:
+        serializedVersion: 2
+        x: 5560
+        y: 1639
+        width: 333
+        height: 1102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc245f2941499960800000000000000
+      internalID: 7609184828001627346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_6
+      rect:
+        serializedVersion: 2
+        x: 6124
+        y: 1644
+        width: 344
+        height: 1200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13bb6dda922afb90800000000000000
+      internalID: -7207410205117926628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_7
+      rect:
+        serializedVersion: 2
+        x: 6670
+        y: 1618
+        width: 320
+        height: 1215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6916b2e3bea2dbec0800000000000000
+      internalID: -3549633741449371242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_8
+      rect:
+        serializedVersion: 2
+        x: 7227
+        y: 1608
+        width: 296
+        height: 1215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e188e5bc57bf14a0800000000000000
+      internalID: -6620371318394551836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_9
+      rect:
+        serializedVersion: 2
+        x: 7668
+        y: 1649
+        width: 292
+        height: 1138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c514aa791118e5a0800000000000000
+      internalID: -6491920061725141560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_10
+      rect:
+        serializedVersion: 2
+        x: 8083
+        y: 1669
+        width: 292
+        height: 1023
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3b43ef6d9fcdfa0800000000000000
+      internalID: -5774465920412634129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_11
+      rect:
+        serializedVersion: 2
+        x: 8508
+        y: 1798
+        width: 262
+        height: 815
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b8db4e1f93757b0800000000000000
+      internalID: -5235652330707383537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_12
+      rect:
+        serializedVersion: 2
+        x: 8811
+        y: 1900
+        width: 251
+        height: 615
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2605636d705c954d0800000000000000
+      internalID: -3145266227292254110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_13
+      rect:
+        serializedVersion: 2
+        x: 9134
+        y: 2013
+        width: 189
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d49fa2528bbb390800000000000000
+      internalID: -7801439459714970360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_14
+      rect:
+        serializedVersion: 2
+        x: 9344
+        y: 2087
+        width: 164
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6cdbbb91a1051e0800000000000000
+      internalID: -2211238719212632347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_15
+      rect:
+        serializedVersion: 2
+        x: 9560
+        y: 2018
+        width: 543
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cebc259d97ed2fd70800000000000000
+      internalID: 9075560814023461868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_16
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 998
+        width: 1153
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9196d3e5c54fd020800000000000000
+      internalID: 2368688645253534106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_17
+      rect:
+        serializedVersion: 2
+        x: 7924
+        y: 1115
+        width: 1014
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34703b0fa4ae9aea0800000000000000
+      internalID: -5860895832459245757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_18
+      rect:
+        serializedVersion: 2
+        x: 9154
+        y: 1013
+        width: 368
+        height: 507
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a269949a7ee3424b0800000000000000
+      internalID: -5466174883022399958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_19
+      rect:
+        serializedVersion: 2
+        x: 9421
+        y: 1074
+        width: 251
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d799752538f0eb0800000000000000
+      internalID: -4751434692172350064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_20
+      rect:
+        serializedVersion: 2
+        x: 9734
+        y: 1059
+        width: 92
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2568b24d19ca885c0800000000000000
+      internalID: -4212927709075241390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_21
+      rect:
+        serializedVersion: 2
+        x: 9964
+        y: 295
+        width: 226
+        height: 1292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56421d0f6f11e38f0800000000000000
+      internalID: -558989551447497627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_22
+      rect:
+        serializedVersion: 2
+        x: 9761
+        y: 886
+        width: 121
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b67611b5e108c1a0800000000000000
+      internalID: -6789174352230844744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_23
+      rect:
+        serializedVersion: 2
+        x: 6555
+        y: 459
+        width: 2153
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4f1d22a4a2364f0800000000000000
+      internalID: -836778607860648723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_24
+      rect:
+        serializedVersion: 2
+        x: 9144
+        y: 172
+        width: 348
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfc49395966882b0800000000000000
+      internalID: -5582098945513566249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_25
+      rect:
+        serializedVersion: 2
+        x: 9380
+        y: 115
+        width: 282
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e564b604b8e87c0800000000000000
+      internalID: -4067160304675037573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tilable_top_of_ship_set_26
+      rect:
+        serializedVersion: 2
+        x: 9652
+        y: 85
+        width: 169
+        height: 697
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db991446e387792b0800000000000000
+      internalID: -5577857404109743683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

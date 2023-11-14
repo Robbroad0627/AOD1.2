@@ -1,0 +1,790 @@
+fileFormatVersion: 2
+guid: 62a08f23b151f9047bbd5de36f5cac36
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2259971941005156147
+    second: Asian_TIle_SPD_0
+  - first:
+      213: 2800198587476811769
+    second: Asian_TIle_SPD_1
+  - first:
+      213: 3412700519272041872
+    second: Asian_TIle_SPD_2
+  - first:
+      213: 8016219808464468514
+    second: Asian_TIle_SPD_3
+  - first:
+      213: -3452627539749304269
+    second: Asian_TIle_SPD_4
+  - first:
+      213: -6310675296833586215
+    second: Asian_TIle_SPD_5
+  - first:
+      213: 5195670175739880850
+    second: Asian_TIle_SPD_6
+  - first:
+      213: 1750157696951322876
+    second: Asian_TIle_SPD_7
+  - first:
+      213: 4931796523832366591
+    second: Asian_TIle_SPD_8
+  - first:
+      213: -3494911044287654896
+    second: Asian_TIle_SPD_9
+  - first:
+      213: 5447202823937629657
+    second: Asian_TIle_SPD_10
+  - first:
+      213: -7744162168410964780
+    second: Asian_TIle_SPD_11
+  - first:
+      213: 3857377419553824377
+    second: Asian_TIle_SPD_12
+  - first:
+      213: 8202238101197241266
+    second: Asian_TIle_SPD_13
+  - first:
+      213: -2318063119705057046
+    second: Asian_TIle_SPD_14
+  - first:
+      213: -5961325815656666723
+    second: Asian_TIle_SPD_15
+  - first:
+      213: 2816158773084468751
+    second: Asian_TIle_SPD_16
+  - first:
+      213: -2781282099771926843
+    second: Asian_TIle_SPD_17
+  - first:
+      213: -2265670795902178047
+    second: Asian_TIle_SPD_18
+  - first:
+      213: -2044449104032798585
+    second: Asian_TIle_SPD_19
+  - first:
+      213: -1267591964176267056
+    second: Asian_TIle_SPD_20
+  - first:
+      213: -6315919600744476722
+    second: Asian_TIle_SPD_21
+  - first:
+      213: -240746585043763352
+    second: Asian_TIle_SPD_22
+  - first:
+      213: 4872056316840182079
+    second: Asian_TIle_SPD_23
+  - first:
+      213: -8291426637801398047
+    second: Asian_TIle_SPD_24
+  - first:
+      213: -4565703341727927624
+    second: Asian_TIle_SPD_25
+  - first:
+      213: 6869759410760260180
+    second: Asian_TIle_SPD_26
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 9419
+        width: 1167
+        height: 1165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f56f9a1880d5f10800000000000000
+      internalID: 2259971941005156147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 11770
+        width: 1171
+        height: 1172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff1b1b77cd4cd620800000000000000
+      internalID: 2800198587476811769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_2
+      rect:
+        serializedVersion: 2
+        x: 2358
+        y: 11767
+        width: 1169
+        height: 1175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09d40008a095c5f20800000000000000
+      internalID: 3412700519272041872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_3
+      rect:
+        serializedVersion: 2
+        x: 2359
+        y: 9418
+        width: 1167
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a79fca1755f3f60800000000000000
+      internalID: 8016219808464468514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_4
+      rect:
+        serializedVersion: 2
+        x: 4708
+        y: 9417
+        width: 1169
+        height: 1169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338038f9b8dc510d0800000000000000
+      internalID: -3452627539749304269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_5
+      rect:
+        serializedVersion: 2
+        x: 4708
+        y: 11767
+        width: 1171
+        height: 1175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dbb66fb04afb68a0800000000000000
+      internalID: -6310675296833586215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_6
+      rect:
+        serializedVersion: 2
+        x: 7060
+        y: 9414
+        width: 1168
+        height: 1169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295211b3f7aba1840800000000000000
+      internalID: 5195670175739880850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_7
+      rect:
+        serializedVersion: 2
+        x: 7063
+        y: 11768
+        width: 1170
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf803b3172fc94810800000000000000
+      internalID: 1750157696951322876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_8
+      rect:
+        serializedVersion: 2
+        x: 9418
+        y: 9416
+        width: 1169
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5d8830fc2417440800000000000000
+      internalID: 4931796523832366591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_9
+      rect:
+        serializedVersion: 2
+        x: 9419
+        y: 11766
+        width: 1166
+        height: 1171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01415ab0ce49f7fc0800000000000000
+      internalID: -3494911044287654896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_10
+      rect:
+        serializedVersion: 2
+        x: 2358
+        y: 7067
+        width: 1171
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd9e4c9b1a589b40800000000000000
+      internalID: 5447202823937629657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_11
+      rect:
+        serializedVersion: 2
+        x: 4709
+        y: 7063
+        width: 1169
+        height: 1166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc78d4c985378490800000000000000
+      internalID: -7744162168410964780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_12
+      rect:
+        serializedVersion: 2
+        x: 7067
+        y: 7064
+        width: 1165
+        height: 1168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e5e196358288530800000000000000
+      internalID: 3857377419553824377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_13
+      rect:
+        serializedVersion: 2
+        x: 9416
+        y: 7060
+        width: 1169
+        height: 1169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb3901881434d170800000000000000
+      internalID: 8202238101197241266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_14
+      rect:
+        serializedVersion: 2
+        x: 11917
+        y: 7049
+        width: 875
+        height: 1056
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8db0fcfd594dfd0800000000000000
+      internalID: -2318063119705057046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_15
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 4708
+        width: 1168
+        height: 1172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d992b6f41cd154da0800000000000000
+      internalID: -5961325815656666723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_16
+      rect:
+        serializedVersion: 2
+        x: 4711
+        y: 4703
+        width: 1175
+        height: 1181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06bcc4cb71051720800000000000000
+      internalID: 2816158773084468751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_17
+      rect:
+        serializedVersion: 2
+        x: 7061
+        y: 4708
+        width: 1170
+        height: 1176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c611f68aa6e669d0800000000000000
+      internalID: -2781282099771926843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_18
+      rect:
+        serializedVersion: 2
+        x: 9412
+        y: 4707
+        width: 1173
+        height: 1175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d26484a68be80e0800000000000000
+      internalID: -2265670795902178047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_19
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 2356
+        width: 1170
+        height: 1171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78862c03f58a0a3e0800000000000000
+      internalID: -2044449104032798585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_20
+      rect:
+        serializedVersion: 2
+        x: 4713
+        y: 2356
+        width: 1169
+        height: 1178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8422713db986ee0800000000000000
+      internalID: -1267591964176267056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_21
+      rect:
+        serializedVersion: 2
+        x: 7059
+        y: 2353
+        width: 1173
+        height: 1180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfc2b716985958a0800000000000000
+      internalID: -6315919600744476722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_22
+      rect:
+        serializedVersion: 2
+        x: 9416
+        y: 2354
+        width: 1169
+        height: 1174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ff395a142b8acf0800000000000000
+      internalID: -240746585043763352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_23
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 0
+        width: 1173
+        height: 1178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3105fa28650d9340800000000000000
+      internalID: 4872056316840182079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_24
+      rect:
+        serializedVersion: 2
+        x: 4712
+        y: 0
+        width: 1173
+        height: 1182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0e2ac176feeec80800000000000000
+      internalID: -8291426637801398047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_25
+      rect:
+        serializedVersion: 2
+        x: 7059
+        y: 0
+        width: 1174
+        height: 1178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b23e76300d53a0c0800000000000000
+      internalID: -4565703341727927624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Asian_TIle_SPD_26
+      rect:
+        serializedVersion: 2
+        x: 9412
+        y: 0
+        width: 1174
+        height: 1175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a13ca59c9465f50800000000000000
+      internalID: 6869759410760260180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

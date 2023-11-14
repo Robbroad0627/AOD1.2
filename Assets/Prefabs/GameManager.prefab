@@ -1,0 +1,431 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1059803243072380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4614331974979114}
+  - component: {fileID: 114770232976062586}
+  m_Layer: 0
+  m_Name: Player2 Stat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4614331974979114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059803243072380}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4094487156371976}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114770232976062586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059803243072380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c76952862b77b3a498c16adc915c1bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Bron
+  battleChar: {fileID: 0}
+  playerLevel: 1
+  currentEXP: 0
+  expToNextLevel: 
+  maxLevel: 100
+  baseEXP: 1000
+  currentHP: 40
+  maxHP: 40
+  currentMP: 25
+  maxMP: 25
+  mpLvlBonus: 000000000000000005000000000000000a00000000000000000000000c0000000000000000000000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  strength: 12
+  defence: 16
+  wpnPwr: 6
+  armrPwr: 5
+  equippedWpn: Cudgel
+  equippedArmr: Leather Armor
+  charIamge: {fileID: -365265951389661645, guid: 5aaf1f8f0b18fa34a8db85d319073cd4,
+    type: 3}
+--- !u!1 &1190594902282344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4094487156371976}
+  - component: {fileID: 114004588852274480}
+  - component: {fileID: 114145718813029494}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4094487156371976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190594902282344}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.410368, y: -0.2842971, z: -0.048828125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4364162826067014}
+  - {fileID: 4614331974979114}
+  - {fileID: 4946554146672954}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114004588852274480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190594902282344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18f511f74eb2254592c491f3e6427f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStats:
+  - {fileID: 114805641206825704}
+  - {fileID: 114770232976062586}
+  - {fileID: 114531474561540294}
+  gameMenuOpen: 0
+  dialogActive: 0
+  fadingBetweenAreas: 0
+  shopActive: 0
+  battleActive: 0
+  itemsHeld:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  numberOfItems: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  referenceItems:
+  - {fileID: 6438999362444165937, guid: 8e49d2f9f425d5a4fb56096ab6837798, type: 3}
+  - {fileID: 1250656631917855487, guid: ec38c91e5843c07419c91c2896980ee0, type: 3}
+  - {fileID: 399548341512991641, guid: 9321509350a48564cb4b513a73ad97e4, type: 3}
+  - {fileID: 3467978730859886754, guid: 956a33f4e8581f74cbe650c7ebe2ab79, type: 3}
+  - {fileID: 8615096395204611443, guid: 6d7e4058ef62a404d9cce9d142f1f978, type: 3}
+  - {fileID: 7132883311047574160, guid: 12fe73af63332824e918c5a854d38f4f, type: 3}
+  - {fileID: 8335365703536433541, guid: ae1672efeaaa57b409a31f5bace49659, type: 3}
+  - {fileID: 5529999625746111348, guid: bf78eed6200e059448961ee06b515d66, type: 3}
+  - {fileID: 2976493415985216376, guid: c3b105e481b0c47488a8bdb520f882b9, type: 3}
+  - {fileID: 8445919567327349873, guid: 35f7bc252b389f0498988155dca773ce, type: 3}
+  - {fileID: 4472487481699318047, guid: c692831aef396524b98bd4867262573a, type: 3}
+  - {fileID: 3611465433404365617, guid: 23fd02cffe7d49a4bb5cd0fe6f7373fa, type: 3}
+  - {fileID: 2014827479467709615, guid: edf37f8f439990b45b99c0b2c12039d5, type: 3}
+  - {fileID: 1254306643965033536, guid: 182d75c6b9c4296419281c96f6828a50, type: 3}
+  - {fileID: 8055566520735498974, guid: 1d377cbaf134ca64590db85a93e4a4b7, type: 3}
+  - {fileID: 4421303936409925349, guid: 774d702a00fae6a48b1695d7aee1b8c0, type: 3}
+  - {fileID: 7106433585675457730, guid: 29b3c253a07130d448f534bb13c71a2c, type: 3}
+  - {fileID: 2337602450246890960, guid: e90161eb13d70e14083ff68528656378, type: 3}
+  - {fileID: 8243341985549301509, guid: 9719f005ca7b7ad488044579935dfd18, type: 3}
+  - {fileID: 5076505344689821801, guid: db9c22726d8ee514f9cb61313a25270b, type: 3}
+  - {fileID: 2682663875575375400, guid: aaf86a38b3d6d0a439759a142e1ec709, type: 3}
+  - {fileID: 5025023382583828763, guid: e4b8e4ed1b531124aa085f8507a99e48, type: 3}
+  - {fileID: 3947939249472092201, guid: cda726a24eb1727428432a20c7f4aaf9, type: 3}
+  - {fileID: 394842403504633641, guid: 0376c60ea46ea0d48a71909eab54e1a1, type: 3}
+  - {fileID: 4740484544960985746, guid: 80c26b2dc3514af42b693badb653c279, type: 3}
+  - {fileID: 4351316045700018635, guid: af58797cda993c34faf5ac4d8bb063e1, type: 3}
+  - {fileID: 5660258365550880443, guid: 50578f3821ae3824d93377eee887fed3, type: 3}
+  - {fileID: 7282419146737850056, guid: cbd8b4a34dbdcec4098425115dd269f1, type: 3}
+  - {fileID: 6272421895013384085, guid: 710004ae3f89eb24f95c8ec7f83f6983, type: 3}
+  - {fileID: 7551226397189076851, guid: 106f336e592aac3498e5ef33efd9307f, type: 3}
+  - {fileID: 3216278483925813167, guid: 26043c0df5e483445871250c47b39b2b, type: 3}
+  - {fileID: 5938932532869966853, guid: 9860204779389d642b5f8d4493bb3081, type: 3}
+  - {fileID: 7779906226560467860, guid: 4d4f03cd54d4e7948ac7e75be53ec4e0, type: 3}
+  - {fileID: 9207416312416747537, guid: 724f3760787a8864c94d2471980ba8ec, type: 3}
+  - {fileID: 2940763818419292682, guid: 4d642065e3cbda34680e94d5410f9263, type: 3}
+  - {fileID: 3136514327153966052, guid: af5a1094348b1754f9c834e5eeda135d, type: 3}
+  - {fileID: 3713595765262455151, guid: f3b796bdee70e9d448bc8c56f005fdc8, type: 3}
+  - {fileID: 8040706620034556659, guid: 236740b847db2e741926d03bdc541b1a, type: 3}
+  - {fileID: 8747287270643058742, guid: 553a2fa4a17f7f349a191c80c8afba2b, type: 3}
+  - {fileID: 5040586510780905177, guid: c6085951e1b8fe548b523dd405b1d629, type: 3}
+  - {fileID: 6196863062287066482, guid: bc2a64595df65334baad5880b1c85ebb, type: 3}
+  - {fileID: 2499059482797449955, guid: 940fc22b89e7b7a4f9b82666b2cf803b, type: 3}
+  - {fileID: 4571112831802124524, guid: 1bb2e5b813414e2478e2f19174f340ef, type: 3}
+  - {fileID: 2767434331874199514, guid: e631820f21e6c7249955fa85c3c6ca56, type: 3}
+  - {fileID: 5256025377476240779, guid: 73620b756fb03c847a29d4da960331f9, type: 3}
+  - {fileID: 5093871494946537876, guid: 7e1c700a5f3099c428d0d70bbf8d8528, type: 3}
+  - {fileID: 6079287559989446045, guid: 539b352d171ade2418b128dbc27eb171, type: 3}
+  - {fileID: 995549422937571057, guid: 3f9fe3395c9202d41a6900d5997770b9, type: 3}
+  - {fileID: 7189525153974418733, guid: be89237699e021545ac40a10c20febc4, type: 3}
+  - {fileID: 824207151363190005, guid: 8376d3c9da1309d409e704122262fa2b, type: 3}
+  - {fileID: 386423008078219055, guid: 4ebf357a83110b846945eea8b20f5bca, type: 3}
+  - {fileID: 8860760415349997297, guid: c8579002de8cc93489ac5e2d2b578d5b, type: 3}
+  - {fileID: 4973641750378291152, guid: 159edff398555674c8e33602d320e347, type: 3}
+  - {fileID: 8272663541574246774, guid: 2aa31bae57a2b3349ae7b8f6ad203e56, type: 3}
+  - {fileID: 2088063097226050031, guid: 443b83a38fc135e47af5eaf72dda8373, type: 3}
+  - {fileID: 3778161067348233928, guid: 2190c592e593d444fa9bebd44b47d4c0, type: 3}
+  - {fileID: 4990195447252499318, guid: 5556ff0ce0617e6449a02037560f9b55, type: 3}
+  - {fileID: 2797543593060537173, guid: af942ece32b10694693f0a4cdd170cf3, type: 3}
+  - {fileID: 4899471793509586893, guid: d76e51f3e96bbe24b9f9b1e7ecdb92e0, type: 3}
+  - {fileID: 7871345964440890091, guid: e1de790d5179c1e478742c2b22fba206, type: 3}
+  - {fileID: 3743518936583578115, guid: 058215870c868f44d9f22c8feef23e95, type: 3}
+  - {fileID: 7100590468438744727, guid: 727e0b5c7444ed745b47d3180b04dfb4, type: 3}
+  - {fileID: 4316243839011832027, guid: e86ca908c59074e44815c90a42048a39, type: 3}
+  - {fileID: 1062771282870019027, guid: 84c7f066b76d77740bdd81ac03cf362c, type: 3}
+  - {fileID: 1945579912039837023, guid: 62cda02d726dd714fa2feaca2c6cdf4a, type: 3}
+  - {fileID: 5131717897209316058, guid: ac5a5fd0acdb5e2449642cc8b91f7ac7, type: 3}
+  - {fileID: 2153882268156285289, guid: b8b8e1bde13acce429f026a178335a8b, type: 3}
+  - {fileID: 2462381290713791322, guid: a32276cf425fa05439d5308b3479937a, type: 3}
+  - {fileID: 5756550409187083350, guid: 84659e0cdacdfcb4abb93ad227186e45, type: 3}
+  - {fileID: 1423939662038276509, guid: 48e997d59549cbd44922858dc12686ce, type: 3}
+  - {fileID: 8817399322208275053, guid: 6eb4f52e0143ca7419826fe6de832bfc, type: 3}
+  - {fileID: 5042201159196090667, guid: 8286260652796534a9e67d4aeded1b60, type: 3}
+  - {fileID: 4223740064898704393, guid: 3d7a889e24dce0f4f9738e8f14ec20c8, type: 3}
+  - {fileID: 3682740753861048685, guid: 6fe8ffa7016cb644eb9c3468c59d9509, type: 3}
+  - {fileID: 2876747882115434338, guid: c884449e6d6d7004f80737bc231a3d2d, type: 3}
+  - {fileID: 1151948209566834396, guid: b279ae8d4af8d8d41b19ef32a3c032b5, type: 3}
+  - {fileID: 8722881853839804712, guid: 2de0e6723e56d014284a7ffc1428347c, type: 3}
+  - {fileID: 4543469008039780174, guid: 200ecd2360d8f1741ad3d5c5d93e17ed, type: 3}
+  - {fileID: 6553082239987172254, guid: 2f4205652f2582945a5d13233d3ba571, type: 3}
+  - {fileID: 2678977109229279173, guid: 0ace2a040e5969847bedad09ff78ae1a, type: 3}
+  - {fileID: 3046592161373638242, guid: 36a19e78c50054e43b2805255a859f71, type: 3}
+  - {fileID: 2578204303423718573, guid: 4af9f624143447747b09865b7e030bc3, type: 3}
+  - {fileID: 5415014344334785974, guid: 4d93322e4a11e7d4d9dc3c3931840f59, type: 3}
+  - {fileID: 5514441297510498300, guid: faca35b75d5cc6847b1b200e89952458, type: 3}
+  - {fileID: 6456899447153085028, guid: 0130f74cb8dd3c34da9217157ef2c7b9, type: 3}
+  - {fileID: 3320234009768113006, guid: ffa1f72c60434ae45958b64742f9ff73, type: 3}
+  - {fileID: 9203610247238503790, guid: 048290556b6c80b479ce141b2c3d67a5, type: 3}
+  - {fileID: 1158951516343048511, guid: 9895ddd10f517124f86a39594ff418ea, type: 3}
+  - {fileID: 5721741802645592209, guid: f1ce3cca37335b14f8273f8fa05ecc64, type: 3}
+  - {fileID: 7599835693490095247, guid: 57d7717ed26480f4fa7240e762a174bc, type: 3}
+  - {fileID: 4477018725755097194, guid: 137946cb9cdee7640b0f707422a8cda1, type: 3}
+  - {fileID: 8625286809325431789, guid: 3ea0cfb8ca9b3ea43b529010fcfd997b, type: 3}
+  - {fileID: 4557281945610157121, guid: 86642e4d05db91e4d9f341f15baa7dbe, type: 3}
+  - {fileID: 6113416121766821935, guid: 0db5b735612cc7840ad847c93764f916, type: 3}
+  - {fileID: 1157358586356952064, guid: c51ee580707dc884186401268a2e1ed4, type: 3}
+  - {fileID: 2353887120726204672, guid: 9df706e5528b1bb4fbe2bc6537a541f1, type: 3}
+  - {fileID: 3275954364237457325, guid: acb53fd308a594547a7ed8c580573753, type: 3}
+  - {fileID: 4936131732132532373, guid: cf9411591b886f34696429f8dd2bffb7, type: 3}
+  - {fileID: 7345735784075596656, guid: 21303cc723cc97741a5b3b963f53436a, type: 3}
+  - {fileID: 1458206738716542461, guid: 884e8e97764c8244ab1e7549dcf5a736, type: 3}
+  - {fileID: 2619555056443726684, guid: 1c94c012bcd457646a0672c1e61cc8ab, type: 3}
+  - {fileID: 1150639524810738127, guid: 17d3757170d1cfe448f1acc5781586d4, type: 3}
+  - {fileID: 2743842491811306345, guid: 86fe93c24b3d5024ebeee20044ad4124, type: 3}
+  - {fileID: 1917206931216329498, guid: 39f66851884e4de49a76b3341742de4f, type: 3}
+  currentGold: 100
+--- !u!114 &114145718813029494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190594902282344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630f1ebe0ae4c2f41a80210562d04a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questMarkerNames:
+  - 
+  - Kill the slime
+  - Spellbook
+  - Glade
+  - Elemental
+  - Wolves
+  - Giants
+  - Walruses
+  - Polar Bears
+  - White Dragon
+  - Mountain
+  - Advice
+  - First Blood
+  - Welcome To Larsu
+  - Snakes
+  - It Had To Be Snakes
+  - More Snakes
+  - They Can Fly
+  - Snakeman
+  - Gift
+  - Clue
+  - To The Rescue
+  questMarkersComplete: 
+--- !u!1 &1527901407061400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4946554146672954}
+  - component: {fileID: 114531474561540294}
+  m_Layer: 0
+  m_Name: Player3 Stat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4946554146672954
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527901407061400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4094487156371976}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114531474561540294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527901407061400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c76952862b77b3a498c16adc915c1bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Bawb
+  battleChar: {fileID: 0}
+  playerLevel: 1
+  currentEXP: 0
+  expToNextLevel: 
+  maxLevel: 100
+  baseEXP: 1000
+  currentHP: 40
+  maxHP: 40
+  currentMP: 25
+  maxMP: 25
+  mpLvlBonus: 000000000000000005000000000000000a00000000000000000000000c0000000000000000000000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  strength: 15
+  defence: 12
+  wpnPwr: 6
+  armrPwr: 7
+  equippedWpn: Warhammer
+  equippedArmr: Chainmail
+  charIamge: {fileID: 3491277826576900539, guid: b076dfe4612dae942a81358ddff02cf5,
+    type: 3}
+--- !u!1 &1674758041330280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4364162826067014}
+  - component: {fileID: 114805641206825704}
+  m_Layer: 0
+  m_Name: Player1 Stat
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4364162826067014
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674758041330280}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4094487156371976}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114805641206825704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674758041330280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c76952862b77b3a498c16adc915c1bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  charName: Gao
+  battleChar: {fileID: 0}
+  playerLevel: 1
+  currentEXP: 0
+  expToNextLevel: 
+  maxLevel: 100
+  baseEXP: 1000
+  currentHP: 40
+  maxHP: 40
+  currentMP: 25
+  maxMP: 25
+  mpLvlBonus: 000000000000000005000000000000000a00000000000000000000000c0000000000000000000000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  strength: 15
+  defence: 12
+  wpnPwr: 6
+  armrPwr: 7
+  equippedWpn: Hand Axe
+  equippedArmr: Chainmail
+  charIamge: {fileID: -5505771170712996083, guid: 2d901316f8b9eb745aff68ff75988f17,
+    type: 3}

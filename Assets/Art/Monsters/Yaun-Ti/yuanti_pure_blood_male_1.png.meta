@@ -1,0 +1,574 @@
+fileFormatVersion: 2
+guid: 156accdb6be37d84abcdf5c384744e14
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7678353449503951396
+    second: yuanti_pure_blood_male_1_0
+  - first:
+      213: 457414757361734660
+    second: yuanti_pure_blood_male_1_1
+  - first:
+      213: -1406021933653487152
+    second: yuanti_pure_blood_male_1_2
+  - first:
+      213: 8221770569744974769
+    second: yuanti_pure_blood_male_1_3
+  - first:
+      213: 2993880632204763107
+    second: yuanti_pure_blood_male_1_4
+  - first:
+      213: 7500934825152042082
+    second: yuanti_pure_blood_male_1_5
+  - first:
+      213: 4232891880798971968
+    second: yuanti_pure_blood_male_1_6
+  - first:
+      213: -4121416721219232246
+    second: yuanti_pure_blood_male_1_7
+  - first:
+      213: 4635116476647409659
+    second: yuanti_pure_blood_male_1_8
+  - first:
+      213: 2364474361983235224
+    second: yuanti_pure_blood_male_1_9
+  - first:
+      213: -3820054124764515392
+    second: yuanti_pure_blood_male_1_10
+  - first:
+      213: 1748955652773945818
+    second: yuanti_pure_blood_male_1_11
+  - first:
+      213: 2264661069802783556
+    second: yuanti_pure_blood_male_1_12
+  - first:
+      213: -1023143737551190570
+    second: yuanti_pure_blood_male_1_13
+  - first:
+      213: -6135675444818621189
+    second: yuanti_pure_blood_male_1_14
+  - first:
+      213: -3754994531020735705
+    second: yuanti_pure_blood_male_1_15
+  - first:
+      213: 5369353046431185133
+    second: yuanti_pure_blood_male_1_16
+  - first:
+      213: -2304028478410865062
+    second: yuanti_pure_blood_male_1_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_0
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 5931
+        width: 699
+        height: 1105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5fb662832017590800000000000000
+      internalID: -7678353449503951396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_1
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 5932
+        width: 793
+        height: 1016
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404519f5c40195600800000000000000
+      internalID: 457414757361734660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_2
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 5936
+        width: 729
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d11d22308ecc7ce0800000000000000
+      internalID: -1406021933653487152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_3
+      rect:
+        serializedVersion: 2
+        x: 3551
+        y: 5925
+        width: 699
+        height: 1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3096ab5c8991270800000000000000
+      internalID: 8221770569744974769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4410
+        width: 1075
+        height: 1106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef9c7e92966c8920800000000000000
+      internalID: 2993880632204763107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_5
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 4406
+        width: 780
+        height: 1055
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2645b885b7ca81860800000000000000
+      internalID: 7500934825152042082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_6
+      rect:
+        serializedVersion: 2
+        x: 2414
+        y: 4403
+        width: 951
+        height: 1104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04868af1db04eba30800000000000000
+      internalID: 4232891880798971968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_7
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 4410
+        width: 933
+        height: 1157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e5f580459cdc6c0800000000000000
+      internalID: -4121416721219232246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2669
+        width: 912
+        height: 1435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7012ba0ed335040800000000000000
+      internalID: 4635116476647409659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_9
+      rect:
+        serializedVersion: 2
+        x: 1090
+        y: 2677
+        width: 907
+        height: 1212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894778a97ec40d020800000000000000
+      internalID: 2364474361983235224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_10
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 2692
+        width: 1024
+        height: 1072
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c335a653017cfac0800000000000000
+      internalID: -3820054124764515392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_11
+      rect:
+        serializedVersion: 2
+        x: 3671
+        y: 2609
+        width: 792
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1a08b56e9854810800000000000000
+      internalID: 1748955652773945818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_12
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 1761
+        width: 1053
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443404a8e31bd6f10800000000000000
+      internalID: 2264661069802783556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_13
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1661
+        width: 477
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5881901301dc1f0800000000000000
+      internalID: -1023143737551190570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_14
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 0
+        width: 697
+        height: 1108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfccf7ee0b3b9daa0800000000000000
+      internalID: -6135675444818621189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_15
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 2
+        width: 794
+        height: 1016
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b79fc6e5493ebc0800000000000000
+      internalID: -3754994531020735705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_16
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 0
+        width: 732
+        height: 1110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8313ec526c38a40800000000000000
+      internalID: 5369353046431185133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yuanti_pure_blood_male_1_17
+      rect:
+        serializedVersion: 2
+        x: 3472
+        y: 0
+        width: 697
+        height: 1101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56cfef5e427600e0800000000000000
+      internalID: -2304028478410865062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

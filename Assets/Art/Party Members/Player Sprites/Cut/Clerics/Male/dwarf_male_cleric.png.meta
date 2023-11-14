@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: c113daba82928a640a1be329be0c40bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3720032431872635183
+    second: male_dwarf_cleric_0
+  - first:
+      213: 8335431485708721877
+    second: male_dwarf_cleric_1
+  - first:
+      213: -4095589195462200516
+    second: male_dwarf_cleric_2
+  - first:
+      213: 317302164085433287
+    second: male_dwarf_cleric_3
+  - first:
+      213: -8790332583076120722
+    second: male_dwarf_cleric_4
+  - first:
+      213: 4626988818337998830
+    second: male_dwarf_cleric_5
+  - first:
+      213: 7083472515101807955
+    second: male_dwarf_cleric_6
+  - first:
+      213: -155933146949075803
+    second: male_dwarf_cleric_7
+  - first:
+      213: -1329699376219324083
+    second: male_dwarf_cleric_8
+  - first:
+      213: 8330753917252484799
+    second: male_dwarf_cleric_9
+  - first:
+      213: -711012952135597486
+    second: male_dwarf_cleric_10
+  - first:
+      213: -1797985968290864812
+    second: male_dwarf_cleric_11
+  - first:
+      213: -6761332830437516294
+    second: male_dwarf_cleric_12
+  - first:
+      213: -1666075958929706939
+    second: male_dwarf_cleric_13
+  - first:
+      213: 8539758644657683219
+    second: male_dwarf_cleric_14
+  - first:
+      213: 7032742262716620643
+    second: male_dwarf_cleric_15
+  - first:
+      213: 3926041909626677382
+    second: male_dwarf_cleric_16
+  - first:
+      213: 4865628234925782940
+    second: male_dwarf_cleric_17
+  - first:
+      213: -6940311726799218608
+    second: male_dwarf_cleric_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: male_dwarf_cleric_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 4848
+        width: 799
+        height: 883
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2173b689c530a330800000000000000
+      internalID: 3720032431872635183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_1
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 4847
+        width: 796
+        height: 897
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de5643f5c66da370800000000000000
+      internalID: 8335431485708721877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_2
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 4859
+        width: 861
+        height: 885
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c333c8a735b8927c0800000000000000
+      internalID: -4095589195462200516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_3
+      rect:
+        serializedVersion: 2
+        x: 2993
+        y: 4854
+        width: 802
+        height: 890
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c366c813a8476400800000000000000
+      internalID: 317302164085433287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3583
+        width: 910
+        height: 696
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67b430c617720680800000000000000
+      internalID: -8790332583076120722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_5
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 3883
+        width: 785
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7adb0c0dd563040800000000000000
+      internalID: 4626988818337998830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_6
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 3349
+        width: 723
+        height: 952
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 355d2eef8bc8d4260800000000000000
+      internalID: 7083472515101807955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_7
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 3339
+        width: 543
+        height: 1091
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac346701a306ddf0800000000000000
+      internalID: -155933146949075803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1925
+        width: 963
+        height: 901
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41836e5675fb8de0800000000000000
+      internalID: -1329699376219324083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_9
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1923
+        width: 586
+        height: 1110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbe370dac88cc9370800000000000000
+      internalID: 8330753917252484799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_10
+      rect:
+        serializedVersion: 2
+        x: 1911
+        y: 2430
+        width: 283
+        height: 491
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2528145bc79f126f0800000000000000
+      internalID: -711012952135597486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_11
+      rect:
+        serializedVersion: 2
+        x: 2003
+        y: 2374
+        width: 914
+        height: 811
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451e2e8b9454c07e0800000000000000
+      internalID: -1797985968290864812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_12
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 2352
+        width: 646
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbd5912d9bea22a0800000000000000
+      internalID: -6761332830437516294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_13
+      rect:
+        serializedVersion: 2
+        x: 2494
+        y: 1216
+        width: 437
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5403d2b1eb8e0e8e0800000000000000
+      internalID: -1666075958929706939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_14
+      rect:
+        serializedVersion: 2
+        x: 2766
+        y: 1306
+        width: 979
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31b7462ed31538670800000000000000
+      internalID: 8539758644657683219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_15
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1
+        width: 802
+        height: 884
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36fd91ea3d1599160800000000000000
+      internalID: 7032742262716620643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_16
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 795
+        height: 901
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6882894d05a1c7630800000000000000
+      internalID: 3926041909626677382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_17
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 0
+        width: 861
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97bcd7b91f268340800000000000000
+      internalID: 4865628234925782940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: male_dwarf_cleric_18
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 0
+        width: 799
+        height: 882
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05897ad714f0faf90800000000000000
+      internalID: -6940311726799218608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
