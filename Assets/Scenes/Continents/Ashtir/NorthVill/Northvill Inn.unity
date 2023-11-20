@@ -1572,17 +1572,17 @@ PrefabInstance:
     - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: transitionName
-      value: Altir Shop-1
+      value: Northvill Inn-1
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
-      value: Altir
+      value: 'NorthVill '
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
-      value: Altir-2
+      value: NorthVill-3
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
@@ -5295,10 +5295,21 @@ PrefabInstance:
       propertyPath: downstairsEntrance
       value: 
       objectReference: {fileID: 1773152441}
+    - target: {fileID: 4313278416809100296, guid: 73b6b367d4a49d141bbad1cf36013958,
+        type: 3}
+      propertyPath: goldCost
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4313278416809100297, guid: 73b6b367d4a49d141bbad1cf36013958,
         type: 3}
       propertyPath: m_Name
       value: Inn Keeper
       objectReference: {fileID: 0}
+    - target: {fileID: 4313278416809100298, guid: 73b6b367d4a49d141bbad1cf36013958,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3f59904d97a6f4b4a9aea9fff5400bda,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73b6b367d4a49d141bbad1cf36013958, type: 3}
