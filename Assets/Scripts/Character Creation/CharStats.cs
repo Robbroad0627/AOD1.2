@@ -8,6 +8,7 @@ public class CharStats : MonoBehaviour {
 
     public string charName;
     public BattleChar battleChar;
+    public BattleMove.CharacterClass characterClass;
     public int playerLevel = 1;
     public int currentEXP;
     public int[] expToNextLevel;
@@ -34,6 +35,7 @@ public class CharStats : MonoBehaviour {
     internal string equippedOtherArmr="";
     internal string equippedShieldArmr="";
 
+    public bool isDead => currentHP <= 0;
 
     // Use this for initialization
     void Start () {
@@ -91,5 +93,29 @@ public class CharStats : MonoBehaviour {
         {
             currentEXP = 0;
         }
+    }
+
+    public bool ApplyMove(CharStats caster, BattleMove move)
+    {
+        if(caster.currentMP>=move.moveCost)
+        {
+            caster.currentMP -= move.moveCost;
+            move.Apply(this);
+            return true;
+        }
+        return false;
+    }
+
+    internal string[] GetAllowedMovesNames(BattleMove[] movesList,bool inBattle=true)
+    {
+        List<string> l = new List<string>();
+        foreach(var m in movesList)
+        {
+            if(m.MoveAllowed(this))
+            {
+                l.Add(m.moveName);
+            }
+        }
+        return l.ToArray();
     }
 }

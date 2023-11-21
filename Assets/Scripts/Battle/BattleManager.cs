@@ -136,6 +136,7 @@ public class BattleManager : MonoBehaviour {
 
 
                             CharStats thePlayer = GameManager.instance.playerStats[i];
+                            activeBattlers[i].movesAvailable = thePlayer.GetAllowedMovesNames(movesList);
                             activeBattlers[i].currentHp = thePlayer.currentHP;
                             activeBattlers[i].maxHP = thePlayer.maxHP;
                             activeBattlers[i].currentMP = thePlayer.currentMP;
@@ -407,6 +408,11 @@ public class BattleManager : MonoBehaviour {
 
     public void OpenMagicMenu()
     {
+        if(activeBattlers[currentTurn].movesAvailable.Length < 1)
+        {
+            Debug.LogError("Prevented spell menu softlock add a close button and/or disable spells if move list is empty");
+            return;
+        }
         magicMenu.SetActive(true);
 
         for(int i = 0; i < magicButtons.Length; i++)

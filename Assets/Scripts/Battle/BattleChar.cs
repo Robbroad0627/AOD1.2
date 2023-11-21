@@ -18,7 +18,7 @@ public class BattleChar : MonoBehaviour
     public SpriteRenderer theSprite;
     public Sprite deadSprite, aliveSprite;
 
-
+    public bool isDead => currentHp <= 0;
     private bool shouldFade;
     public float fadeSpeed = 1f;
 
