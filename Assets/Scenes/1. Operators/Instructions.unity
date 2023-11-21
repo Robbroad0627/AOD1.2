@@ -729,7 +729,7 @@ MonoBehaviour:
     will be joining you on your adventures.
 
     In combat the image of the character
-    you created will be on screen along with the 2 other party members you created.
+    you created will be on screen along with the 2 other Bron and myself.
 
 '
 --- !u!222 &546150682
@@ -1018,7 +1018,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "-To move you will use the W,S,A,D keys or the Arrow Keys..  The  game
-    also supports game controllers.  \n-To talk to NPC's you will use you left mouse
+    also supports game controllers.  \n-To talk to NPC's you will use your left mouse
     button.\n-To open menus you will click the right mouse key button, then use the
     left mouse button once you are interacting in any \n- Please turn down you sound\n-
     Game plays best at 16:9\n"
@@ -1681,6 +1681,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114598948439684554, guid: ecb221534c7cdd54abe1bbf679139c65,
+        type: 3}
+      propertyPath: bgmCurrentTrack
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecb221534c7cdd54abe1bbf679139c65, type: 3}

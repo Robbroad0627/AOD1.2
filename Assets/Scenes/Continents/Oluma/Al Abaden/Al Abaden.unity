@@ -319,6 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Orc Marauder
@@ -692,12 +693,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719380114}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 50.8, y: -7.6, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22.06266, y: -4.7794704, z: 188.6979}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_Father: {fileID: 1088841057}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &753876925
 PrefabInstance:
@@ -1231,6 +1232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Ogre
@@ -1499,12 +1501,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070945335}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.26, y: 9.35, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.522659, y: 12.17053, z: 188.6979}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1088841057}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1088841056
 GameObject:
@@ -1535,6 +1537,10 @@ Transform:
   m_Children:
   - {fileID: 856522358}
   - {fileID: 1155177823}
+  - {fileID: 1070945338}
+  - {fileID: 1110774159}
+  - {fileID: 719380117}
+  - {fileID: 1874347942}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1701,12 +1707,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1110774156}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.28, y: 9.47, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 23.54266, y: 12.290529, z: 188.6979}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1088841057}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1155177821
 GameObject:
@@ -1785,7 +1791,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155177821}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7973385, y: 12.290529, z: 188.6979}
+  m_LocalPosition: {x: -1.7973385, y: 14.05, z: 188.6979}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 1088841057}
@@ -6031,6 +6037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Minotaur
@@ -102517,6 +102524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Orc Marauder
@@ -103660,12 +103668,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874347939}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.07, y: -7.54, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.6673393, y: -4.7194705, z: 188.6979}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_Father: {fileID: 1088841057}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1877945887
 PrefabInstance:
@@ -103811,6 +103819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Mad Gazer
@@ -104186,6 +104195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 0}
   potentialBattles:
   - enemies:
     - Goblin
