@@ -1582,7 +1582,7 @@ PrefabInstance:
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
-      value: Eastvill-3
+      value: EastVill-3
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
@@ -5290,6 +5290,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4313278416809100293, guid: 73b6b367d4a49d141bbad1cf36013958,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2559
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313278416809100293, guid: 73b6b367d4a49d141bbad1cf36013958,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.178
+      objectReference: {fileID: 0}
     - target: {fileID: 4313278416809100296, guid: 73b6b367d4a49d141bbad1cf36013958,
         type: 3}
       propertyPath: downstairsEntrance
@@ -5305,5 +5315,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Inn Keeper
       objectReference: {fileID: 0}
+    - target: {fileID: 4313278416809100298, guid: 73b6b367d4a49d141bbad1cf36013958,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2e7d3b7e7d3637c4e95c8fed9edcfc7e,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73b6b367d4a49d141bbad1cf36013958, type: 3}
