@@ -124,6 +124,118 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &60324580
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 471610717}
+    m_Modifications:
+    - target: {fileID: 1494555687094228, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_Name
+      value: Oluma  Exit 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -44.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.295107
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.99999636
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.002700687
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180.309
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 102.46972
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5456
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.9508506
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.082503855
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.4135006
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.12357995
+      objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: transitionName
+      value: Sililah-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaTransitionName
+      value: Oluma-1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
 --- !u!1 &105432053
 GameObject:
   m_ObjectHideFlags: 0
@@ -557,11 +669,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.102268
+      value: 1.49
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.847923
+      value: 17.06
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.z
@@ -605,11 +717,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.02
+      value: -2.87
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
@@ -634,7 +746,7 @@ PrefabInstance:
     - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: transitionName
-      value: Sililah-2
+      value: Sililah-4
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
@@ -741,20 +853,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f, type: 3}
   potentialBattles:
   - enemies:
     - Orc Marauder
     - Orc Marauder
-    rewardXP: 250
+    rewardXP: 900
     rewardItems:
     - Throwing Axe
     - Throwing Axe
     - Potion of Vitality
   - enemies:
     - Orc Marauder
-    - 250
-    rewardXP: 125
+    - Orc Marauder
+    rewardXP: 900
     rewardItems:
     - Throwing Axe
     - Throwing Axe
@@ -763,45 +875,49 @@ MonoBehaviour:
   - enemies:
     - Orc Blood Warrior
     - Orc Blood Warrior
-    rewardXP: 300
+    rewardXP: 1000
     rewardItems:
     - +1 Long Sword
   - enemies:
-    - 'Orc '
-    - 'Orc '
-    rewardXP: 200
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    rewardXP: 1000
     rewardItems:
     - Throwing Hammer
     - Throwing Hammer
     - Potion of Vitality
   - enemies:
-    - Ghoul
-    - Ghoul
-    rewardXP: 400
+    - Orc Blood Warrior
+    - Orc Marauder
+    rewardXP: 950
     rewardItems:
     - Potion of Vitality
     - Mana Potion
   - enemies:
-    - Mountain Cyclops
-    - Mountain Cyclops
-    rewardXP: 380
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    rewardXP: 1800
     rewardItems:
     - Greater Potion of Healing
     - Greater Potion of Healing
     - Greater Potion of Healing
   - enemies:
-    - Specter
-    - Specter
-    rewardXP: 400
+    - Goblin Militant
+    - Goblin Militant
+    rewardXP: 900
     rewardItems:
     - Ring of Protection +1
     - Mana Potion
   - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    rewardXP: 300
+    - Goblin Militant
+    - Goblin Militant
+    - Goblin Militant
+    - Goblin Militant
+    - Goblin Militant
+    - Goblin Militant
+    rewardXP: 2700
     rewardItems:
     - Potion of Vitality
     - +1 Long Sword
@@ -810,7 +926,7 @@ MonoBehaviour:
     - Goblin Militant
     - Goblin Militant
     - Goblin Militant
-    rewardXP: 350
+    rewardXP: 1800
     rewardItems:
     - +1 Long Sword
     - Throwing Axe
@@ -819,7 +935,7 @@ MonoBehaviour:
     - Orc Marauder
     - Orc Marauder
     - Orc Marauder
-    rewardXP: 500
+    rewardXP: 1800
     rewardItems:
     - Gold Band
     - Throwing Axe
@@ -871,6 +987,12 @@ Transform:
   m_Father: {fileID: 454416989}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &350442849 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 60324580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &454416988
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,8 +1024,8 @@ Transform:
   - {fileID: 1919128153}
   - {fileID: 1392168076}
   - {fileID: 330449000}
-  - {fileID: 1309207706}
-  - {fileID: 1018156685}
+  - {fileID: 1937445845}
+  - {fileID: 1700817222}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -938,6 +1060,7 @@ Transform:
   - {fileID: 286080472}
   - {fileID: 1837422441}
   - {fileID: 648769628}
+  - {fileID: 350442849}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8842,150 +8965,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41d568113c653714782a64bfeeedbf6b, type: 3}
---- !u!1 &1018156682
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1018156685}
-  - component: {fileID: 1018156684}
-  - component: {fileID: 1018156683}
-  m_Layer: 0
-  m_Name: Zone6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1018156683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018156682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
-  potentialBattles:
-  - enemies:
-    - Ogre
-    rewardXP: 450
-    rewardItems:
-    - Bastard Sword
-    - Throwing Axe
-  - enemies:
-    - Ogre
-    rewardXP: 450
-    rewardItems:
-    - Throwing Axe
-    - +2 Long Sword
-  - enemies:
-    - Reaver
-    rewardXP: 150
-    rewardItems:
-    - Heralded Shield
-  - enemies:
-    - Jungle Cyclops
-    rewardXP: 100
-    rewardItems:
-    - Amulet of Protection +1
-  - enemies:
-    - Ghast
-    rewardXP: 450
-    rewardItems:
-    - Ring of the Cat
-  - enemies:
-    - Mountain Cyclops
-    - Jungle Cyclops
-    rewardXP: 415
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  - enemies:
-    - Necromancer
-    rewardXP: 300
-    rewardItems:
-    - Ring of Protection +1
-  - enemies:
-    - Necromancer
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    rewardXP: 500
-    rewardItems:
-    - Chainmail
-    - Chainmail Helmet
-  - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    - Ogre
-    rewardXP: 650
-    rewardItems:
-    - Chainmail
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Blood Warrior
-    rewardXP: 400
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &1018156684
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018156682}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 2.9359846, y: -9.944763}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 29.963247, y: 29.928947}
-  m_EdgeRadius: 0
---- !u!4 &1018156685
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018156682}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.27097, y: -7.717589, z: 52.46011}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 454416989}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1087379231
 GameObject:
   m_ObjectHideFlags: 0
@@ -15899,163 +15878,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1309207703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1309207706}
-  - component: {fileID: 1309207705}
-  - component: {fileID: 1309207704}
-  m_Layer: 0
-  m_Name: Zone5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1309207704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309207703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
-  potentialBattles:
-  - enemies:
-    - Minotaur
-    rewardXP: 700
-    rewardItems:
-    - Gold Band
-    - Gold Band
-    - Gold Band
-  - enemies:
-    - Death Merchant
-    - Death Merchant
-    - Death Merchant
-    rewardXP: 750
-    rewardItems:
-    - Spirit Rune
-  - enemies:
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    rewardXP: 600
-    rewardItems:
-    - +1 Long Sword
-  - enemies:
-    - Ogre
-    - Ogre
-    rewardXP: 900
-    rewardItems:
-    - Amulet of Protection +2
-  - enemies:
-    - Ghoul
-    - Ghoul
-    - Ghoul
-    rewardXP: 600
-    rewardItems:
-    - Potion of Vitality
-    - Potion of Vitality
-    - Mana Potion
-    - Mana Potion
-  - enemies:
-    - Succubus
-    rewardXP: 1000
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  - enemies:
-    - Specter
-    rewardXP: 200
-    rewardItems:
-    - Ring of Protection +1
-  - enemies:
-    - Orc Chieftan
-    rewardXP: 1100
-    rewardItems:
-    - Chainmail
-    - Chailmail Leggings
-  - enemies:
-    - Wight
-    rewardXP: 700
-    rewardItems:
-    - Chainmail Helmet
-    - Chainmail Gauntlets
-  - enemies:
-    - Earth Elemental
-    rewardXP: 1000
-    rewardItems:
-    - Earth Rune
-  - enemies:
-    - Fire Elemental
-    rewardXP: 1400
-    rewardItems:
-    - Fire Rune
-  - enemies:
-    - Water Elemental
-    rewardXP: 800
-    rewardItems:
-    - Water Rune
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &1309207705
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309207703}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2.8325024, y: -2.618391}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 28.007923, y: 38.1282}
-  m_EdgeRadius: 0
---- !u!4 &1309207706
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309207703}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.070972, y: 31.382412, z: 52.46011}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 454416989}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1336130410
 GameObject:
   m_ObjectHideFlags: 0
@@ -144520,68 +144342,71 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f, type: 3}
   potentialBattles:
   - enemies:
     - Orc Marauder
-    rewardXP: 125
+    rewardXP: 450
     rewardItems:
     - Throwing Axe
     - Throwing Axe
   - enemies:
     - Orc Marauder
-    rewardXP: 125
+    rewardXP: 450
     rewardItems:
     - Throwing Axe
     - Throwing Axe
   - enemies:
     - Orc Blood Warrior
-    rewardXP: 150
+    rewardXP: 500
     rewardItems:
     - +1 Long Sword
   - enemies:
-    - 'Orc '
-    rewardXP: 100
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 900
     rewardItems:
     - Throwing Hammer
     - Throwing Hammer
   - enemies:
-    - Ghoul
-    rewardXP: 200
+    - Orc Marauder
+    rewardXP: 450
     rewardItems:
     - Potion of Vitality
     - Mana Potion
   - enemies:
-    - Mountain Cyclops
-    rewardXP: 190
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 1350
     rewardItems:
     - Greater Potion of Healing
   - enemies:
-    - Specter
+    - Orc Marauder
     rewardXP: 200
     rewardItems:
     - Ring of Protection +1
   - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    rewardXP: 150
+    - Goblin Militant
+    - Goblin Militant
+    rewardXP: 900
     rewardItems:
     - Battle Axe
     - Battle Axe
   - enemies:
     - Orc Marauder
     - Goblin Militant
-    rewardXP: 200
+    rewardXP: 900
     rewardItems:
     - Throwing Axe
     - Throwing Axe
   - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 250
+    - Goblin Militant
+    - Goblin Militant
+    rewardXP: 900
     rewardItems:
-    - Throwing Axe
-    - Throwing Axe
+    - Greater Potion of Healing
+    - Greater Potion of Healing
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
@@ -144624,8 +144449,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392168073}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.17097, y: 11.982411, z: 52.46011}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 65.7, y: 11.982411, z: 52.46011}
+  m_LocalScale: {x: 1.3, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 454416989}
   m_RootOrder: 2
@@ -145240,6 +145065,170 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1700817221
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1700817222}
+  - component: {fileID: 1700817224}
+  - component: {fileID: 1700817223}
+  m_Layer: 0
+  m_Name: Zone5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1700817222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700817221}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -36.9, y: 0.08241129, z: 52.46011}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 454416989}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1700817223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700817221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f, type: 3}
+  potentialBattles:
+  - enemies:
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 900
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+    - Potion of Vitality
+  - enemies:
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 900
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+    - Potion of Healing
+    - Potion of Healing
+  - enemies:
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    rewardXP: 1000
+    rewardItems:
+    - +1 Long Sword
+  - enemies:
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    rewardXP: 1000
+    rewardItems:
+    - Throwing Hammer
+    - Throwing Hammer
+    - Potion of Vitality
+  - enemies:
+    - Orc Blood Warrior
+    - Orc Marauder
+    rewardXP: 950
+    rewardItems:
+    - Potion of Vitality
+    - Mana Potion
+  - enemies:
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    rewardXP: 1800
+    rewardItems:
+    - Greater Potion of Healing
+    - Greater Potion of Healing
+    - Greater Potion of Healing
+  - enemies:
+    - Goblin Militant
+    - Goblin Militant
+    rewardXP: 900
+    rewardItems:
+    - Ring of Protection +1
+    - Mana Potion
+  - enemies:
+    - Goblin Militant
+    - Goblin Militant
+    - Goblin Militant
+    - Goblin Militant
+    - Goblin Militant
+    - Goblin Militant
+    rewardXP: 2700
+    rewardItems:
+    - Potion of Vitality
+    - +1 Long Sword
+  - enemies:
+    - Orc Marauder
+    - Goblin Militant
+    - Goblin Militant
+    - Goblin Militant
+    rewardXP: 1800
+    rewardItems:
+    - +1 Long Sword
+    - Throwing Axe
+  - enemies:
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 1800
+    rewardItems:
+    - Gold Band
+    - Throwing Axe
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1700817224
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700817221}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -6.252241, y: 4.0477734}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 21.599987, y: 21.8521}
+  m_EdgeRadius: 0
 --- !u!1 &1770939222
 GameObject:
   m_ObjectHideFlags: 0
@@ -145423,11 +145412,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.102268
+      value: -5.78
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.847923
+      value: -2.08
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.z
@@ -145471,11 +145460,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.02
+      value: -3.24
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
@@ -145550,15 +145539,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f, type: 3}
   potentialBattles:
   - enemies:
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    rewardXP: 100
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1250
     rewardItems:
     - Leather Gloves
     - Shield
@@ -145584,51 +145573,49 @@ MonoBehaviour:
     rewardItems:
     - Lucern Hammer
   - enemies:
-    - Soul Thief
-    - Soul Thief
-    - Soul Thief
-    rewardXP: 120
-    rewardItems:
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Zombie
-    - Zombie
-    rewardXP: 100
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 750
     rewardItems:
     - Potion of Healing
     - Potion of Healing
   - enemies:
     - Goblin Enforcer
-    rewardXP: 65
+    - Goblin Enforcer
+    rewardXP: 500
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+  - enemies:
+    - Goblin Enforcer
+    rewardXP: 250
     rewardItems:
     - Battle Axe
   - enemies:
     - Goblin Militant
-    rewardXP: 75
+    rewardXP: 450
     rewardItems:
     - Ring of the Owl
   - enemies:
     - Necromancer's Minion
     - Necromancer's Minion
     - Necromancer's Minion
-    rewardXP: 120
+    rewardXP: 2150
     rewardItems:
-    - Food
-    - Food
-    - Food
-    - Food
+    - Battle Axe
+    - Mana Potion
     - Potion of Healing
   - enemies:
-    - Barabarian Skeleton
-    rewardXP: 75
+    - Goblin Militant
+    rewardXP: 450
     rewardItems:
     - throwing Axe
     - throwing Axe
   - enemies:
-    - Animated Dead
-    - Animated Dead
-    rewardXP: 100
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 500
     rewardItems:
     - Potion of Vitality
   activateOnEnter: 0
@@ -145673,8 +145660,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1919128150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -36.32903, y: -19.117588, z: 52.46011}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -36.32903, y: -37.5, z: 52.46011}
+  m_LocalScale: {x: 1, y: 1.2875, z: 1}
   m_Children: []
   m_Father: {fileID: 454416989}
   m_RootOrder: 1
@@ -145764,6 +145751,149 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1935029145}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1937445844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1937445845}
+  - component: {fileID: 1937445847}
+  - component: {fileID: 1937445846}
+  m_Layer: 0
+  m_Name: Zone6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1937445845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937445844}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.3, y: 11.982411, z: 52.46011}
+  m_LocalScale: {x: 1.3, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 454416989}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1937445846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937445844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f, type: 3}
+  potentialBattles:
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Orc Blood Warrior
+    rewardXP: 500
+    rewardItems:
+    - +1 Long Sword
+  - enemies:
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 900
+    rewardItems:
+    - Throwing Hammer
+    - Throwing Hammer
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Potion of Vitality
+    - Mana Potion
+  - enemies:
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 1350
+    rewardItems:
+    - Greater Potion of Healing
+  - enemies:
+    - Orc Marauder
+    rewardXP: 200
+    rewardItems:
+    - Ring of Protection +1
+  - enemies:
+    - Goblin Militant
+    - Goblin Militant
+    rewardXP: 900
+    rewardItems:
+    - Battle Axe
+    - Battle Axe
+  - enemies:
+    - Orc Marauder
+    - Goblin Militant
+    rewardXP: 900
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Goblin Militant
+    - Goblin Militant
+    rewardXP: 900
+    rewardItems:
+    - Greater Potion of Healing
+    - Greater Potion of Healing
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1937445847
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937445844}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -28.724915, y: -4.4856186}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.10962, y: 81.30272}
+  m_EdgeRadius: 0
 --- !u!1001 &2031192571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -145777,11 +145907,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.3477306
+      value: 11.45
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.742077
+      value: 65.9
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.z
@@ -145821,7 +145951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.0125003
+      value: 102.46972
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalScale.x
@@ -145829,11 +145959,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.561
+      value: 14.9
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: -0.5456
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
@@ -146085,54 +146215,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: a2632a02bebd08649a591d20d0b7236f, type: 3}
   potentialBattles:
   - enemies:
-    - Giant Scorpion
-    - Goblin
-    - Goblin
-    rewardXP: 150
+    - Desert Centaur
+    rewardXP: 450
     rewardItems:
-    - Potion of Healing
-    - Potion of Healing
+    - Long Sword
   - enemies:
-    - Orc
-    - Goblin
-    rewardXP: 150
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 300
     rewardItems:
     - Potion of Healing
     - Mana Potion
   - enemies:
-    - Orc
-    rewardXP: 100
+    - Orc Marauder
+    rewardXP: 450
     rewardItems:
     - Mana Potion
+    - Potion of Healing
   - enemies:
-    - Goblin
-    - Goblin
-    rewardXP: 100
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 500
     rewardItems:
+    - Potion of Healing
+    - Potion of Healing
     - Potion of Healing
   - enemies:
     - Orc
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 250
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 750
     rewardItems:
     - Potion of Healing
     - Potion of Healing
     - Leather Helmet
   - enemies:
-    - Giant Wasp
-    - Giant Wasp
-    rewardXP: 100
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 900
     rewardItems:
+    - Mana Potion
     - Mana Potion
     - Mana Potion
   - enemies:
     - Orc Blood Warrior
-    rewardXP: 150
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    rewardXP: 1500
     rewardItems:
     - Buckler
     - Short Sword
@@ -146140,19 +146273,19 @@ MonoBehaviour:
     - Orc Marauder
     rewardXP: 125
     rewardItems:
-    - Short Bow
+    - Long Bow
   - enemies:
-    - Orc
-    - Goblin
-    rewardXP: 150
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 500
     rewardItems:
     - Amulet of Protection +1
   - enemies:
-    - Goblin
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 200
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1000
     rewardItems:
     - Mana Potion
     - Ringmail
@@ -146198,8 +146331,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093804999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -62.62903, y: 17.9, z: 52.46011}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -62.62903, y: -1.8, z: 52.46011}
+  m_LocalScale: {x: 1, y: 1.6176561, z: 1}
   m_Children: []
   m_Father: {fileID: 454416989}
   m_RootOrder: 0
