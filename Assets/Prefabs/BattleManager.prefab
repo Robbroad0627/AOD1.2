@@ -1957,63 +1957,153 @@ MonoBehaviour:
   - moveName: Slash
     movePower: 5
     moveCost: 0
+    allowOutsideBattle: 0
     theEffect: {fileID: 114961059728432790, guid: 4c6daec28cffe264bb2df42cb07bd293,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 0
+      minimumLevel: 1
+    - characterClass: 1
+      minimumLevel: 1
+    - characterClass: 2
+      minimumLevel: 1
+    - characterClass: 3
+      minimumLevel: 1
+    - characterClass: 4
+      minimumLevel: 1
+    - characterClass: 5
+      minimumLevel: 1
+    - characterClass: 6
+      minimumLevel: 1
   - moveName: Fire
     movePower: 10
     moveCost: 5
+    allowOutsideBattle: 0
     theEffect: {fileID: 114252193273743618, guid: 043b88d04f672484e9403308ddcf2aa8,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 5
   - moveName: Ice
     movePower: 10
     moveCost: 5
+    allowOutsideBattle: 0
     theEffect: {fileID: 114608741124403118, guid: 6a6c937b3e2bab1469fa74d00472e528,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 5
   - moveName: Lightning
     movePower: 15
     moveCost: 10
+    allowOutsideBattle: 0
     theEffect: {fileID: 114011823187449262, guid: e4267b748e9498a4e96e8ccf7ac9f3ff,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 5
   - moveName: Magic Missile
     movePower: 10
     moveCost: 5
+    allowOutsideBattle: 0
     theEffect: {fileID: 114011823187449262, guid: f21b2f7782516b44b9eed515c7218f03,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 1
   - moveName: Faerie Fire
     movePower: 10
     moveCost: 5
+    allowOutsideBattle: 0
     theEffect: {fileID: 114011823187449262, guid: 3c547a9e93ee0e04c81a4a639740ef64,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 0
+    classSpecificFilter:
+    - characterClass: 1
+      minimumLevel: 1
+    - characterClass: 5
+      minimumLevel: 5
   - moveName: Burning Hands
     movePower: 10
     moveCost: 5
+    allowOutsideBattle: 0
     theEffect: {fileID: 114011823187449262, guid: 00d46045d587a954baa77078a87a5b13,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 1
   - moveName: Nature's Fury
     movePower: 10
     moveCost: 5
+    allowOutsideBattle: 0
     theEffect: {fileID: 114011823187449262, guid: 3959457c7c8c5084dbaf8ec506f36571,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 1
+      minimumLevel: 1
+    - characterClass: 5
+      minimumLevel: 5
   - moveName: Poison Spray
     movePower: 10
     moveCost: 5
+    allowOutsideBattle: 0
     theEffect: {fileID: 114011823187449262, guid: cb1259539efa7a746a5c893a3f52876b,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 1
   - moveName: Sacred Flame
     movePower: 10
     moveCost: 5
+    allowOutsideBattle: 0
     theEffect: {fileID: 114252193273743618, guid: 7317105e6ff4f734cb78b373efed2e65,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 0
+      minimumLevel: 1
+    - characterClass: 4
+      minimumLevel: 10
   - moveName: Shillelagh
     movePower: 10
     moveCost: 5
+    allowOutsideBattle: 0
     theEffect: {fileID: 114011823187449262, guid: 698f5d1b91d9b954e939223489c0ba1a,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 1
+      minimumLevel: 0
   - moveName: Thunderous Smite
     movePower: 10
     moveCost: 5
+    allowOutsideBattle: 0
     theEffect: {fileID: 114011823187449262, guid: b1f33ccea8d89cf429357cc1c7fb3704,
       type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 4
+      minimumLevel: 5
   enemyAttackEffect: {fileID: 1261278678591276, guid: 67aaab33d8f46774fb89c9aebaaa1801,
     type: 3}
   theDamageNumber: {fileID: 114429894980074712, guid: add1341ff4b53074794f5f54ef4f216d,
