@@ -2104,6 +2104,28 @@ MonoBehaviour:
     classSpecificFilter:
     - characterClass: 4
       minimumLevel: 5
+  - moveName: Avenging Fire
+    movePower: 20
+    moveCost: 10
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114252193273743618, guid: 043b88d04f672484e9403308ddcf2aa8,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 21
+  - moveName: Cleansing Flame
+    movePower: 30
+    moveCost: 20
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114252193273743618, guid: 043b88d04f672484e9403308ddcf2aa8,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 31
   enemyAttackEffect: {fileID: 1261278678591276, guid: 67aaab33d8f46774fb89c9aebaaa1801,
     type: 3}
   theDamageNumber: {fileID: 114429894980074712, guid: add1341ff4b53074794f5f54ef4f216d,

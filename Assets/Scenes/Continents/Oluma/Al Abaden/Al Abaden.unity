@@ -103360,7 +103360,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n-Faadi el-Akbar
+  - Greetings stranger
+  - n-Playe
+  - Good day to you
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -104396,6 +104416,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: questToMark
+      value: Sisters
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: markComplete
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: shouldActivateQuest
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8b050d4bf5e4744f88649f69255b6ed, type: 3}
