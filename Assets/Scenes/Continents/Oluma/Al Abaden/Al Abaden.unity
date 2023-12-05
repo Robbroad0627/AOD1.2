@@ -295,7 +295,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
---- !u!1 &330448997
+--- !u!1 &327596700
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,132 +303,278 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 330449000}
-  - component: {fileID: 330448999}
-  - component: {fileID: 330448998}
+  - component: {fileID: 327596701}
+  - component: {fileID: 327596706}
+  - component: {fileID: 327596705}
+  - component: {fileID: 327596704}
+  - component: {fileID: 327596703}
+  - component: {fileID: 327596702}
   m_Layer: 0
-  m_Name: Zone4
+  m_Name: Saabira el-Harron (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &330448998
+--- !u!4 &327596701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327596700}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1600331011}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &327596702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
+  m_GameObject: {fileID: 327596700}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
-  potentialBattles:
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 250
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-    - Potion of Vitality
-  - enemies:
-    - Orc Marauder
-    - 250
-    rewardXP: 125
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    rewardXP: 300
-    rewardItems:
-    - +1 Long Sword
-  - enemies:
-    - 'Orc '
-    - 'Orc '
-    rewardXP: 200
-    rewardItems:
-    - Throwing Hammer
-    - Throwing Hammer
-    - Potion of Vitality
-  - enemies:
-    - Ghoul
-    - Ghoul
-    rewardXP: 400
-    rewardItems:
-    - Potion of Vitality
-    - Mana Potion
-  - enemies:
-    - Mountain Cyclops
-    - Mountain Cyclops
-    rewardXP: 380
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  - enemies:
-    - Specter
-    - Specter
-    rewardXP: 400
-    rewardItems:
-    - Ring of Protection +1
-    - Mana Potion
-  - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    rewardXP: 300
-    rewardItems:
-    - Potion of Vitality
-    - +1 Long Sword
-  - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    - Goblin Militant
-    - Goblin Militant
-    rewardXP: 350
-    rewardItems:
-    - +1 Long Sword
-    - Throwing Axe
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 500
-    rewardItems:
-    - Gold Band
-    - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &330448999
+  lines:
+  - n-Saabira el-Harron
+  - Greetings Strangers.  It is good to see that you have learned our custom of speaking
+    to a woman's male relative or husband before speaking to her.
+  - n-Player
+  - We are learning but we are bound to make mistakes.
+  - n-Saabira el-Harron
+  - Mistakes are fine as long as you learn from them.
+  - What is not tolerated in this land is foreigners who come in and try to press
+    their ways on us and act like our ways are inferior.
+  - n-Player
+  - That would bother us as well.
+  - n-Saabira el-Harron
+  - Are you here to help us with the attacks on the villages
+  - n-Player
+  - This is the first we have heard of this.
+  - Please tell us more.
+  - n-Saabira el-Harron
+  - Oh no.  Maybe I shouldn't have said anything.
+  - But, lives are at stake.
+  - My cousing in Fawab had wrote to me about peiple going missingin the night in
+    villages all over Oluma
+  - n-Player
+  - That is terrible
+  - n-Saabira el-Harron
+  - Elders have been saying it is just people who have decided to look for thier
+    fotunes elsewhere.  But I think it is too many people to be that.
+  - n-Player
+  - That does sound odd
+  - Maybe it si something we will keep our eye out for
+  - n-Saabira el-Harron
+  - Thank you
+  - n-Player
+  - You are most welcome.
+  - Good Bye
+  - n-Saabira el-Harron
+  - Good Bye
+  isPerson: 1
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
+--- !u!114 &327596703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327596700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 327596700}
+  questToCheck: Sisters
+  activeIfComplete: 1
+--- !u!61 &327596704
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
+  m_GameObject: {fileID: 327596700}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -6.252241, y: 4.0477734}
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.01, y: 2.46}
+    newSize: {x: 1.01, y: 2.46}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.01, y: 2.46}
+  m_EdgeRadius: 0
+--- !u!61 &327596705
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327596700}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.01, y: 2.46}
+    newSize: {x: 1.01, y: 2.46}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.01, y: 2.46}
+  m_EdgeRadius: 0
+--- !u!212 &327596706
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327596700}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 944938e6344b832438bc1e3445eb2cf7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.01, y: 2.46}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &336631296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 336631297}
+  - component: {fileID: 336631299}
+  - component: {fileID: 336631298}
+  m_Layer: 0
+  m_Name: Zone8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &336631297
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336631296}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.9, y: 17.94615, z: 12.819831}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1576422020}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &336631298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336631296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Giant Cobra
+    rewardXP: 600
+    rewardItems:
+    - Greater Healing Potion
+    - Greater Healing Potion
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 1
+  shouldCompleteQuest: 1
+  QuestToComplete: Cobra
+--- !u!61 &336631299
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336631296}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.6799984, y: -20.60936}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -439,22 +585,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 21.599987, y: 21.8521}
+  m_Size: {x: 11.610065, y: 8.599754}
   m_EdgeRadius: 0
---- !u!4 &330449000
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 78, y: -7.8, z: -0.2890625}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &439546060
 GameObject:
   m_ObjectHideFlags: 0
@@ -489,7 +621,7 @@ Transform:
   - {fileID: 1333299772}
   - {fileID: 286080472}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &479515488
 GameObject:
@@ -536,8 +668,227 @@ Transform:
   - {fileID: 1403537856}
   - {fileID: 1389109435}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &540248866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 540248867}
+  - component: {fileID: 540248872}
+  - component: {fileID: 540248871}
+  - component: {fileID: 540248870}
+  - component: {fileID: 540248868}
+  - component: {fileID: 540248869}
+  m_Layer: 0
+  m_Name: Nabeela al-Salehi (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &540248867
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540248866}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.267166, y: -3.0315237, z: 42.81552}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2009272122}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &540248868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540248866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 540248866}
+  questToCheck: Sisters
+  activeIfComplete: 1
+--- !u!114 &540248869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540248866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n-Nabeela al-Salehi
+  - Greetings Strangers.  My Name is Nabeela al-Salehi
+  - n-Player
+  - 'Hello to you '
+  - n-Nabeela al-Salehi
+  - My brother sent you?
+  - n-Player
+  - Yes he did.  He said you might have information that we find valuable
+  - n-Nabeela al-Salehi
+  - I may.  It depends on what you are looking for.
+  - n-Player
+  - To be honest, we don't know exactly what we are looking for .
+  - We have witnessed animals and monsters becoming more aggressive, the world getting
+    hotter, a warning about coming doom, and seen snake men.
+  - n-Nabeela al-Salehi
+  - What!?!
+  - I thought the stories of snake men that have surfaced were being used to scare
+    people off from leaving their villages.
+  - n-Player
+  - No, they are real.
+  - n-Nabeela al-Salehi
+  - Where did you see one
+  - n-Player
+  - We have seen and killed many in Larsu.
+  - We also encountered them when we met Coatl
+  - n-Nabeela al-Salehi
+  - Ha, Ha, you had me for a second.
+  - n-Player
+  - No it's true
+  - n-Nabeela al-Salehi
+  - You met a God?
+  - n-Player
+  - We met the avatar of Coatl on this plane in his temple in the heart of Larsu. 
+    He warned us of great dangers and returning evil.
+  - n-Nabeela al-Salehi
+  - That give me an idea if what you say is true.
+  - n-Player
+  - Go on.
+  - n-Nabeela al-Salehi
+  - I have heard of more snake attacks
+  - Please kill a giant cobra for me and bring it back so I can inspect it.
+  - n-Player
+  - That is something we can do
+  - n-Nabeela al-Salehi
+  - I look forward to your return
+  - I have heard of a particularly aggressive one just north of the town
+  - n-Player
+  - We will be honored to take care of this for you.
+  - We will see you when we get back.
+  isPerson: 1
+  shouldActivateQuest: 1
+  questToMark: Cobra
+  markComplete: 0
+--- !u!61 &540248870
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540248866}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2.5}
+    newSize: {x: 1, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.5}
+  m_EdgeRadius: 0
+--- !u!61 &540248871
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540248866}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2.5}
+    newSize: {x: 1, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.5}
+  m_EdgeRadius: 0
+--- !u!212 &540248872
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540248866}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4d0a1f6ab30bb9f4bab8a1f340e9de06, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &719380114
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,7 +1209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n-Nabeela al-Salehi
+  - ......
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -1157,6 +1510,225 @@ PolygonCollider2D:
       - {x: 3.6899998, y: -2.7}
       - {x: 3.6899998, y: -2.9099998}
       - {x: 3.6999998, y: -2.9099998}
+--- !u!1 &946142212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 946142213}
+  - component: {fileID: 946142218}
+  - component: {fileID: 946142217}
+  - component: {fileID: 946142216}
+  - component: {fileID: 946142215}
+  - component: {fileID: 946142214}
+  m_Layer: 0
+  m_Name: Nabeela al-Salehi (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &946142213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946142212}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.267166, y: -3.0315237, z: 42.81552}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2009272122}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &946142214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946142212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n-Nabeela al-Salehi
+  - You have returned and much sooner than expected
+  - n-Player
+  - We try to be efficient
+  - n-Nabeela al-Salehi
+  - You have succeed
+  - n-Player
+  - Thank you
+  - n-Nabeela al-Salehi
+  - I don't see anything strange about this snake
+  - n-Player
+  - Snakes everywhere have become much more aggressive
+  - The worst was the flying snakes
+  - n-Nabeela al-Salehi
+  - What!?!
+  - Are you pulling my leg
+  - n-Player
+  - No, they are real.
+  - n-Nabeela al-Salehi
+  - Where did you see one
+  - n-Player
+  - We encountered them in Larsu
+  - They are aggressive and agile.  Thankfully they are not that strong.
+  - n-Nabeela al-Salehi
+  - I wonder if that is what the story was about in Biddaib
+  - n-Player
+  - Biddaib?
+  - n-Nabeela al-Salehi
+  - It is a town not far from here
+  - n-Player
+  - Oh ok.  I am sure we will venture there soon.
+  - n-Nabeela al-Salehi
+  - You really should
+  - n-Player
+  - Then it is settled we will make sure to go to Biddaib
+  - n-Nabeela al-Salehi
+  - Thank you for bringing me this.
+  - I think it has raised more questions for me
+  - n-Player
+  - You are not alone on that.  That is the only constant we have seen in our travels. 
+    Confusion and more questions
+  - n-Nabeela al-Salehi
+  - Please be safe in your travels
+  - I have some reading to do and to send a couple letters to colleagues
+  - n-Player
+  - Be safe and good bye
+  - We will see you when we get back.
+  - n-Nabeela al-Salehi
+  - Good Bye
+  isPerson: 0
+  shouldActivateQuest: 1
+  questToMark: Cobra
+  markComplete: 1
+--- !u!114 &946142215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946142212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 946142212}
+  questToCheck: Cobra
+  activeIfComplete: 1
+--- !u!61 &946142216
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946142212}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2.5}
+    newSize: {x: 1, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.5}
+  m_EdgeRadius: 0
+--- !u!61 &946142217
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946142212}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2.5}
+    newSize: {x: 1, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.5}
+  m_EdgeRadius: 0
+--- !u!212 &946142218
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 946142212}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 4d0a1f6ab30bb9f4bab8a1f340e9de06, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 2.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &991982741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1214,7 +1786,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41d568113c653714782a64bfeeedbf6b, type: 3}
---- !u!1 &1018156682
+--- !u!1 &1043762529
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1222,94 +1794,127 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1018156685}
-  - component: {fileID: 1018156684}
-  - component: {fileID: 1018156683}
+  - component: {fileID: 1043762530}
+  - component: {fileID: 1043762532}
+  - component: {fileID: 1043762531}
   m_Layer: 0
   m_Name: Zone6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1018156683
+  m_IsActive: 1
+--- !u!4 &1043762530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043762529}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.4, y: -6.8, z: 12.819831}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1576422020}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1043762531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018156682}
+  m_GameObject: {fileID: 1043762529}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
   potentialBattles:
   - enemies:
-    - Ogre
-    rewardXP: 450
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 900
     rewardItems:
-    - Bastard Sword
-    - Throwing Axe
+    - Gold Band
+    - Gold Band
   - enemies:
-    - Ogre
-    rewardXP: 450
+    - Silats
+    rewardXP: 5000
     rewardItems:
-    - Throwing Axe
-    - +2 Long Sword
+    - Spirit Rune
   - enemies:
-    - Reaver
-    rewardXP: 150
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    rewardXP: 600
     rewardItems:
-    - Heralded Shield
+    - +1 Long Sword
   - enemies:
-    - Jungle Cyclops
-    rewardXP: 100
+    - Efreeti
+    rewardXP: 7000
     rewardItems:
-    - Amulet of Protection +1
+    - Amulet of Protection +2
   - enemies:
-    - Ghast
-    rewardXP: 450
+    - Heway
+    - Heway
+    - Heway
+    rewardXP: 1350
     rewardItems:
-    - Ring of the Cat
+    - Potion of Vitality
+    - Potion of Vitality
+    - Mana Potion
+    - Mana Potion
   - enemies:
-    - Mountain Cyclops
-    - Jungle Cyclops
-    rewardXP: 415
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1800
     rewardItems:
     - Greater Potion of Healing
     - Greater Potion of Healing
+    - Greater Potion of Healing
   - enemies:
-    - Necromancer
-    rewardXP: 300
+    - Specter
+    rewardXP: 200
     rewardItems:
     - Ring of Protection +1
   - enemies:
-    - Necromancer
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    rewardXP: 500
+    - Stone Maiden
+    rewardXP: 5000
     rewardItems:
     - Chainmail
+    - Chailmail Leggings
+  - enemies:
+    - Djin
+    rewardXP: 5200
+    rewardItems:
     - Chainmail Helmet
+    - Chainmail Gauntlets
   - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    - Ogre
-    rewardXP: 650
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1800
     rewardItems:
-    - Chainmail
+    - Earth Rune
   - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Blood Warrior
-    rewardXP: 400
+    - Fire Elemental
+    rewardXP: 1400
     rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
+    - Long Sword
+  - enemies:
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1800
+    rewardItems:
+    - Long Bow
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
@@ -1318,20 +1923,20 @@ MonoBehaviour:
   cannotFlee: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
---- !u!61 &1018156684
+--- !u!61 &1043762532
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018156682}
+  m_GameObject: {fileID: 1043762529}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2.9359846, y: -9.944763}
+  m_Offset: {x: -0.89746094, y: 6.373892}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1342,22 +1947,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 29.963247, y: 29.928947}
+  m_Size: {x: 24.13784, y: 20.143635}
   m_EdgeRadius: 0
---- !u!4 &1018156685
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1018156682}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 64.2, y: -15.6, z: -0.2890625}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070945335
 GameObject:
   m_ObjectHideFlags: 0
@@ -1554,7 +2145,7 @@ Transform:
   - {fileID: 719380117}
   - {fileID: 1874347942}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1110774156
 GameObject:
@@ -6036,7 +6627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1309207704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6049,20 +6640,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
   potentialBattles:
   - enemies:
-    - Minotaur
-    rewardXP: 700
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 900
     rewardItems:
     - Gold Band
     - Gold Band
-    - Gold Band
   - enemies:
-    - Death Merchant
-    - Death Merchant
-    - Death Merchant
-    rewardXP: 750
+    - Silats
+    rewardXP: 5000
     rewardItems:
     - Spirit Rune
   - enemies:
@@ -6074,24 +6663,26 @@ MonoBehaviour:
     rewardItems:
     - +1 Long Sword
   - enemies:
-    - Ogre
-    - Ogre
-    rewardXP: 900
+    - Efreeti
+    rewardXP: 7000
     rewardItems:
     - Amulet of Protection +2
   - enemies:
-    - Ghoul
-    - Ghoul
-    - Ghoul
-    rewardXP: 600
+    - Heway
+    - Heway
+    - Heway
+    rewardXP: 1350
     rewardItems:
     - Potion of Vitality
     - Potion of Vitality
     - Mana Potion
     - Mana Potion
   - enemies:
-    - Succubus
-    rewardXP: 1000
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1800
     rewardItems:
     - Greater Potion of Healing
     - Greater Potion of Healing
@@ -6102,32 +6693,38 @@ MonoBehaviour:
     rewardItems:
     - Ring of Protection +1
   - enemies:
-    - Orc Chieftan
-    rewardXP: 1100
+    - Stone Maiden
+    rewardXP: 5000
     rewardItems:
     - Chainmail
     - Chailmail Leggings
   - enemies:
-    - Wight
-    rewardXP: 700
+    - Djin
+    rewardXP: 5200
     rewardItems:
     - Chainmail Helmet
     - Chainmail Gauntlets
   - enemies:
-    - Earth Elemental
-    rewardXP: 1000
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1800
     rewardItems:
     - Earth Rune
   - enemies:
     - Fire Elemental
     rewardXP: 1400
     rewardItems:
-    - Fire Rune
+    - Long Sword
   - enemies:
-    - Water Elemental
-    rewardXP: 800
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1800
     rewardItems:
-    - Water Rune
+    - Long Bow
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
@@ -6149,7 +6746,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.8325024, y: -2.618391}
+  m_Offset: {x: -0.89746094, y: 6.373892}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6160,7 +6757,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 28.007923, y: 38.1282}
+  m_Size: {x: 24.13784, y: 20.143635}
   m_EdgeRadius: 0
 --- !u!4 &1309207706
 Transform:
@@ -6170,11 +6767,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309207703}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 70, y: 23.5, z: -0.2890625}
+  m_LocalPosition: {x: 17.4, y: 57.04615, z: 12.819831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1576422020}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1333299771
 PrefabInstance:
@@ -102737,7 +103334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1392168074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102750,7 +103347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
   potentialBattles:
   - enemies:
     - Orc Marauder
@@ -102776,19 +103373,21 @@ MonoBehaviour:
     - Throwing Hammer
     - Throwing Hammer
   - enemies:
-    - Ghoul
-    rewardXP: 200
+    - Desert Centaur
+    rewardXP: 450
     rewardItems:
     - Potion of Vitality
     - Mana Potion
   - enemies:
-    - Mountain Cyclops
-    rewardXP: 190
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1350
     rewardItems:
-    - Greater Potion of Healing
+    - Greater Healing Potion
   - enemies:
-    - Specter
-    rewardXP: 200
+    - Djin Elite
+    rewardXP: 6200
     rewardItems:
     - Ring of Protection +1
   - enemies:
@@ -102808,7 +103407,9 @@ MonoBehaviour:
   - enemies:
     - Orc Marauder
     - Orc Marauder
-    rewardXP: 250
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 500
     rewardItems:
     - Throwing Axe
     - Throwing Axe
@@ -102854,11 +103455,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392168073}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 76.1, y: 4.1, z: -0.2890625}
+  m_LocalPosition: {x: 4.7, y: 37.64615, z: 12.819831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1576422020}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1395490105 stripped
 Transform:
@@ -103314,6 +103915,188 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1469009289
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1469009290}
+  - component: {fileID: 1469009292}
+  - component: {fileID: 1469009291}
+  m_Layer: 0
+  m_Name: Zone4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1469009290
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469009289}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 81.4, y: 37.64615, z: 12.819831}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1576422020}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1469009291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469009289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Orc Marauder
+    rewardXP: 125
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Orc Marauder
+    rewardXP: 125
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Orc Blood Warrior
+    rewardXP: 150
+    rewardItems:
+    - +1 Long Sword
+  - enemies:
+    - 'Orc '
+    rewardXP: 100
+    rewardItems:
+    - Throwing Hammer
+    - Throwing Hammer
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - Potion of Vitality
+    - Mana Potion
+  - enemies:
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1350
+    rewardItems:
+    - Greater Healing Potion
+  - enemies:
+    - Djin Elite
+    rewardXP: 6200
+    rewardItems:
+    - Ring of Protection +1
+  - enemies:
+    - Barbarian Skeleton
+    - Barbarian Skeleton
+    rewardXP: 150
+    rewardItems:
+    - Battle Axe
+    - Battle Axe
+  - enemies:
+    - Orc Marauder
+    - Goblin Militant
+    rewardXP: 200
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 500
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1469009292
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469009289}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -27.586647, y: -4.4856186}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.833084, y: 81.30272}
+  m_EdgeRadius: 0
+--- !u!1 &1576422019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1576422020}
+  m_Layer: 0
+  m_Name: BattleZones
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1576422020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576422019}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.832935, y: -33.54615, z: -13.108893}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2093805002}
+  - {fileID: 1979271394}
+  - {fileID: 1392168076}
+  - {fileID: 1469009290}
+  - {fileID: 1309207706}
+  - {fileID: 1043762530}
+  - {fileID: 1901537561}
+  - {fileID: 336631297}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581110965
 GameObject:
   m_ObjectHideFlags: 0
@@ -103363,27 +104146,67 @@ MonoBehaviour:
   lines:
   - n-Faadi el-Akbar
   - Greetings stranger
-  - n-Playe
+  - n-Player
   - Good day to you
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - n-Faadi el-Akbar
+  - What brings you to our part of the world?
+  - n-Player
+  - We have been adventuring throughout the world.
+  - We come from Haven, but have been to Ashtir and Larsu.
+  - And now we are here.
+  - n-Faadi el-Akbar
+  - How exciting.   I have never left Oluma but I would would like to.
+  - Have your travels been exciting?
+  - n-Player
+  - Very exciting and very dangerous.
+  - n-Faadi el-Akbar
+  - Oh.... do tell.
+  - n-Player
+  - It seems the world is getting hotter and there are a lot more aggressive snakes
+    everyehere we have been.
+  - well except for Ashtir.  That continent is melting into the ocean.
+  - n-Faadi el-Akbar
+  - Oh that is horrible.
+  - Are you here for our stone snakes?
+  - n-Player
+  - Stone snakes?  Are they real snakes made of stone or snakes that live in the
+    stones and rocks.
+  - n-Faadi el-Akbar
+  - They are snakes that are made of stone or are at least as tough as stone.
+  - n-Player
+  - Are they dangerous?
+  - n-Faadi el-Akbar
+  - Few who ever encounter one live to tell the tale.
+  - n-Player
+  - Great.   Exactly the kind of thing that we have been encountering since leaving
+    home.
+  - n-Bron
+  - We could always go back to Calimere and retire.
+  - ...
+  - n-Bawb
+  - Ha Ha Ha, it has taken years but Bron has finally told her first joke and it
+    is absolutely hilarious.
+  - n-Player
+  - We are not going back to Calimere to retire.
+  - n-Faadi el-Akbar
+  - If you are that brave, you should go out and hunt down a stone snake.
+  - It would be a great prize for the village and I bet Nabeela al-Salehi would love
+    to study it.  Just make sure to speak to her brother, Ifraab al-Yasin before
+    trying to talk to her
+  - She would then be able to figuire out how to heal people who get bit by one.
+  - n-Player
+  - We can give it a try
+  - n-Faadi el-Akbar
+  - Best of luck
+  - If you get one take it to Nabeela
+  - n-Player
+  - We will
+  - Good Bye
+  - n-Faadi el-Akbar
+  - Good Bye
   isPerson: 1
-  shouldActivateQuest: 0
-  questToMark: 
+  shouldActivateQuest: 1
+  questToMark: Stone Snake
   markComplete: 0
 --- !u!61 &1581110968
 BoxCollider2D:
@@ -103518,7 +104341,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.032836914, y: -19.531525, z: 42.81552}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 327596701}
   m_Father: {fileID: 2009272122}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -103534,7 +104358,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n-Saabira el-Harron
+  - ......
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -104043,7 +104869,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1877945887}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1919128150
+--- !u!1 &1901537558
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104051,131 +104877,61 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1919128153}
-  - component: {fileID: 1919128152}
-  - component: {fileID: 1919128151}
+  - component: {fileID: 1901537561}
+  - component: {fileID: 1901537560}
+  - component: {fileID: 1901537559}
   m_Layer: 0
-  m_Name: Zone2
+  m_Name: Zone7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1919128151
+  m_IsActive: 1
+--- !u!114 &1901537559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
+  m_GameObject: {fileID: 1901537558}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
   potentialBattles:
   - enemies:
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    rewardXP: 100
+    - NasNas
+    - NasNas
+    - NasNas
+    - NasNas
+    rewardXP: 1880
     rewardItems:
-    - Leather Gloves
-    - Shield
-  - enemies:
-    - Flying Snake
-    - Flying Snake
-    rewardXP: 100
-    rewardItems:
-    - Bronze Helmet
-  - enemies:
-    - Revener
-    rewardXP: 100
-    rewardItems:
-    - Battle Hammer
-  - enemies:
-    - Battle Tortoise
-    rewardXP: 100
-    rewardItems:
-    - Crossbow
-  - enemies:
-    - Spider
-    rewardXP: 100
-    rewardItems:
-    - Lucern Hammer
-  - enemies:
-    - Soul Thief
-    - Soul Thief
-    - Soul Thief
-    rewardXP: 120
-    rewardItems:
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Zombie
-    - Zombie
-    rewardXP: 100
-    rewardItems:
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Goblin Enforcer
-    rewardXP: 65
-    rewardItems:
-    - Battle Axe
-  - enemies:
-    - Goblin Militant
-    rewardXP: 75
-    rewardItems:
-    - Ring of the Owl
-  - enemies:
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    rewardXP: 120
-    rewardItems:
-    - Food
-    - Food
-    - Food
-    - Food
-    - Potion of Healing
-  - enemies:
-    - Barabarian Skeleton
-    rewardXP: 75
-    rewardItems:
-    - throwing Axe
-    - throwing Axe
-  - enemies:
-    - Animated Dead
-    - Animated Dead
-    rewardXP: 100
-    rewardItems:
-    - Potion of Vitality
+    - Bastard Sword
+    - Greater Healing Potion
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
   timeBetweenBattles: 10
   deactivateAfterStarting: 0
   cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &1919128152
+  shouldCompleteQuest: 1
+  QuestToComplete: Stone Snake
+--- !u!61 &1901537560
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
+  m_GameObject: {fileID: 1901537558}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 28.73061, y: -2.7049007}
+  m_Offset: {x: 3.6799984, y: -20.60936}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -104186,22 +104942,171 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 94.27766, y: 22.858612}
+  m_Size: {x: 11.610065, y: 8.599754}
   m_EdgeRadius: 0
---- !u!4 &1919128153
+--- !u!4 &1901537561
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
+  m_GameObject: {fileID: 1901537558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.6, y: -27, z: -0.2890625}
+  m_LocalPosition: {x: 43.36706, y: 17.94615, z: 12.819831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 1576422020}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1979271393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1979271394}
+  - component: {fileID: 1979271396}
+  - component: {fileID: 1979271395}
+  m_Layer: 0
+  m_Name: Zone2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1979271394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979271393}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -41.532936, y: -19.8, z: 12.819831}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1576422020}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1979271395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979271393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 750
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+  - enemies:
+    - Orc Blood Warrior
+    - Goblin Enforcer
+    rewardXP: 750
+    rewardItems:
+    - Potion of Healing
+    - Mana Potion
+  - enemies:
+    - Orc
+    rewardXP: 100
+    rewardItems:
+    - Mana Potion
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 500
+    rewardItems:
+    - Potion of Healing
+  - enemies:
+    - Orc Blood Warrior
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1250
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+    - Chain Helm
+  - enemies:
+    - Giant Python
+    - Giant Python
+    rewardXP: 1200
+    rewardItems:
+    - Mana Potion
+    - Mana Potion
+  - enemies:
+    - Orc Blood Warrior
+    rewardXP: 150
+    rewardItems:
+    - Buckler
+    - Short Sword
+  - enemies:
+    - Djin
+    rewardXP: 5200
+    rewardItems:
+    - Long Bow
+  - enemies:
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    rewardXP: 1000
+    rewardItems:
+    - Amulet of Protection +1
+  - enemies:
+    - Goblin Enforcer
+    - GoblGoblin Enforcerin
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1000
+    rewardItems:
+    - Mana Potion
+    - Ringmail
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 7
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1979271396
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979271393}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 55.253742, y: 20.648148}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 93.95052, y: 26.30275}
+  m_EdgeRadius: 0
 --- !u!1 &2009272121
 GameObject:
   m_ObjectHideFlags: 0
@@ -104232,9 +105137,11 @@ Transform:
   - {fileID: 1581110966}
   - {fileID: 1600331011}
   - {fileID: 768750197}
+  - {fileID: 540248867}
+  - {fileID: 946142213}
   - {fileID: 1395490105}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2031192571
 PrefabInstance:
@@ -104400,7 +105307,7 @@ PrefabInstance:
     - target: {fileID: 358731053049159875, guid: d8b050d4bf5e4744f88649f69255b6ed,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 358731053049159875, guid: d8b050d4bf5e4744f88649f69255b6ed,
         type: 3}
@@ -104419,6 +105326,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
         type: 3}
+      propertyPath: lines.Array.size
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
       propertyPath: questToMark
       value: Sisters
       objectReference: {fileID: 0}
@@ -104431,6 +105343,114 @@ PrefabInstance:
         type: 3}
       propertyPath: shouldActivateQuest
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[21]
+      value: n- Irfaan al-Yasin
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[22]
+      value: They are both single. Perhaps one of you is looking for a wife.
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[23]
+      value: How about you my sturdy dwarf?
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[24]
+      value: n-Bawb
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[25]
+      value: No, I wouldn't wish that upon any woman.
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[26]
+      value: Besides I get bossed around enough by Bronn
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[27]
+      value: n- Irfaan al-Yasin
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[28]
+      value: Is Bron your wife?
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[29]
+      value: n- Bawb
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[20]
+      value: Thank you so much.  We will definitely speak to them.  There is sso
+        much for us to learn about your great land.
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[19]
+      value: n-Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[18]
+      value: Feel free to talk to my sisters, they have spent most of their lives
+        with thier noses in books and know a great many things
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[17]
+      value: n- Irfaan al-Yasin
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[30]
+      value: Oh no.  We have just know each other all our lives and she tends to
+        think she can tell me what to do.
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[31]
+      value: n- Bron
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[32]
+      value: Bawb, stop making me look bad and stop babbling.
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[33]
+      value: n- Irfaan al-Yasin
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[34]
+      value: Ha Ha Ha...  I see what you mean.
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[35]
+      value: Have a pleasant day
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[36]
+      value: n- Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
+        type: 3}
+      propertyPath: lines.Array.data[37]
+      value: To you as well.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8b050d4bf5e4744f88649f69255b6ed, type: 3}
@@ -104451,7 +105471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2093805000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104464,20 +105484,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
   potentialBattles:
   - enemies:
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 150
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 750
     rewardItems:
     - Potion of Healing
     - Potion of Healing
   - enemies:
-    - Orc
-    - Goblin
-    rewardXP: 150
+    - Orc Blood Warrior
+    - Goblin Enforcer
+    rewardXP: 750
     rewardItems:
     - Potion of Healing
     - Mana Potion
@@ -104487,25 +105507,25 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
   - enemies:
-    - Goblin
-    - Goblin
-    rewardXP: 100
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 500
     rewardItems:
     - Potion of Healing
   - enemies:
-    - Orc
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 250
+    - Orc Blood Warrior
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1250
     rewardItems:
     - Potion of Healing
     - Potion of Healing
-    - Leather Helmet
+    - Chain Helm
   - enemies:
-    - Giant Wasp
-    - Giant Wasp
-    rewardXP: 100
+    - Giant Python
+    - Giant Python
+    rewardXP: 1200
     rewardItems:
     - Mana Potion
     - Mana Potion
@@ -104516,22 +105536,22 @@ MonoBehaviour:
     - Buckler
     - Short Sword
   - enemies:
-    - Orc Marauder
-    rewardXP: 125
+    - Djin
+    rewardXP: 5200
     rewardItems:
-    - Short Bow
+    - Long Bow
   - enemies:
-    - Orc
-    - Goblin
-    rewardXP: 150
+    - Orc Blood Warrior
+    - Orc Blood Warrior
+    rewardXP: 1000
     rewardItems:
     - Amulet of Protection +1
   - enemies:
-    - Goblin
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 200
+    - Goblin Enforcer
+    - GoblGoblin Enforcerin
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1000
     rewardItems:
     - Mana Potion
     - Ringmail
@@ -104556,7 +105576,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 55.253742, y: 22.241714}
+  m_Offset: {x: 55.253742, y: 20.648148}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -104567,7 +105587,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 93.95052, y: 23.115616}
+  m_Size: {x: 93.95052, y: 26.30275}
   m_EdgeRadius: 0
 --- !u!4 &2093805002
 Transform:
@@ -104577,9 +105597,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093804999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.7, y: 5.8, z: -0.2890625}
+  m_LocalPosition: {x: -41.532936, y: 43.9, z: 12.819831}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1576422020}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

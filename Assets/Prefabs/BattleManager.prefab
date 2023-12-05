@@ -2082,6 +2082,28 @@ MonoBehaviour:
       minimumLevel: 1
     - characterClass: 4
       minimumLevel: 10
+  - moveName: Sacred Flame 2
+    movePower: 30
+    moveCost: 10
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114252193273743618, guid: 7317105e6ff4f734cb78b373efed2e65,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 0
+      minimumLevel: 31
+  - moveName: Sacred Flame 3
+    movePower: 50
+    moveCost: 30
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114252193273743618, guid: 7317105e6ff4f734cb78b373efed2e65,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 0
+      minimumLevel: 51
   - moveName: Shillelagh
     movePower: 10
     moveCost: 5
@@ -2115,6 +2137,63 @@ MonoBehaviour:
     classSpecificFilter:
     - characterClass: 3
       minimumLevel: 21
+  - moveName: Cleansing Flame
+    movePower: 30
+    moveCost: 20
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114252193273743618, guid: 043b88d04f672484e9403308ddcf2aa8,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 31
+  - moveName: Cold Front
+    movePower: 30
+    moveCost: 20
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114608741124403118, guid: 6a6c937b3e2bab1469fa74d00472e528,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 1
+      minimumLevel: 31
+    - characterClass: 5
+      minimumLevel: 51
+  - moveName: Cleansing Flame 2
+    movePower: 50
+    moveCost: 30
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114252193273743618, guid: 043b88d04f672484e9403308ddcf2aa8,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 51
+  - moveName: Cleansing Flame
+    movePower: 30
+    moveCost: 20
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114252193273743618, guid: 043b88d04f672484e9403308ddcf2aa8,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 31
+  - moveName: Cleansing Flame
+    movePower: 30
+    moveCost: 20
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114252193273743618, guid: 043b88d04f672484e9403308ddcf2aa8,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 3
+      minimumLevel: 31
   - moveName: Cleansing Flame
     movePower: 30
     moveCost: 20

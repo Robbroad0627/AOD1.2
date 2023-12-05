@@ -45,6 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charName: Bron
   battleChar: {fileID: 0}
+  characterClass: 0
   playerLevel: 1
   currentEXP: 0
   expToNextLevel: 
@@ -267,6 +268,8 @@ MonoBehaviour:
   - {fileID: 2743842491811306345, guid: 86fe93c24b3d5024ebeee20044ad4124, type: 3}
   - {fileID: 1917206931216329498, guid: 39f66851884e4de49a76b3341742de4f, type: 3}
   currentGold: 100
+  dataLoadedOnce: 0
+  haveBoat: 0
 --- !u!114 &114145718813029494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,6 +304,14 @@ MonoBehaviour:
   - Snakeman
   - Gift
   - Clue
+  - To The Rescue
+  - Taz
+  - Sisters
+  - Cobra
+  - To The Rescue
+  - To The Rescue
+  - To The Rescue
+  - To The Rescue
   - To The Rescue
   questMarkersComplete: 
 --- !u!1 &1527901407061400
@@ -348,6 +359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charName: Bawb
   battleChar: {fileID: 0}
+  characterClass: 0
   playerLevel: 1
   currentEXP: 0
   expToNextLevel: 
@@ -411,6 +423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   charName: Gao
   battleChar: {fileID: 0}
+  characterClass: 0
   playerLevel: 1
   currentEXP: 0
   expToNextLevel: 
