@@ -2034,6 +2034,17 @@ MonoBehaviour:
       minimumLevel: 1
     - characterClass: 5
       minimumLevel: 5
+  - moveName: Faerie Fire2
+    movePower: 30
+    moveCost: 15
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114011823187449262, guid: 3c547a9e93ee0e04c81a4a639740ef64,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 0
+    classSpecificFilter:
+    - characterClass: 1
+      minimumLevel: 31
   - moveName: Burning Hands
     movePower: 10
     moveCost: 5
@@ -2058,6 +2069,17 @@ MonoBehaviour:
       minimumLevel: 1
     - characterClass: 5
       minimumLevel: 5
+  - moveName: Nature's Fury2
+    movePower: 30
+    moveCost: 15
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114011823187449262, guid: 3959457c7c8c5084dbaf8ec506f36571,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 1
+      minimumLevel: 31
   - moveName: Poison Spray
     movePower: 10
     moveCost: 5
@@ -2160,6 +2182,17 @@ MonoBehaviour:
     - characterClass: 1
       minimumLevel: 31
     - characterClass: 5
+      minimumLevel: 51
+  - moveName: Cold Front 2
+    movePower: 50
+    moveCost: 25
+    allowOutsideBattle: 0
+    theEffect: {fileID: 114608741124403118, guid: 6a6c937b3e2bab1469fa74d00472e528,
+      type: 3}
+    filterAction: 0
+    defaultMinimumLevel: 1
+    classSpecificFilter:
+    - characterClass: 1
       minimumLevel: 51
   - moveName: Cleansing Flame 2
     movePower: 50

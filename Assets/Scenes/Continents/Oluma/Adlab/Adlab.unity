@@ -124,6 +124,506 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &59677214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 59677215}
+  - component: {fileID: 59677220}
+  - component: {fileID: 59677219}
+  - component: {fileID: 59677218}
+  - component: {fileID: 59677217}
+  - component: {fileID: 59677216}
+  m_Layer: 0
+  m_Name: Faraj al-Hafeez (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &59677215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59677214}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 28.26, y: 30.16, z: 4.0936875}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1533868858}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &59677216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59677214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n-Faraj al-Hafeez
+  - You again
+  - n-Player
+  - Yes it is us.  We have a question.
+  - n-Faraj al-Hafeez
+  - What would you like to know
+  - n-Player
+  - Why did you not help the woman who came to town claiming her family had been
+    attacked
+  - n-Faraj al-Hafeez
+  - Why should I risk my life for a stranger.
+  - Besides there was no way of knowing if her story was true
+  - And if it was what could we do against a Djin
+  - ...
+  - n-Player
+  - It is called basic decency
+  - n-Faraj al-Hafeez
+  - It sounded dangerous and why should I risk my life for a stranger.
+  - n-Player
+  - Let us pray you never need help
+  - Good Bye
+  isPerson: 1
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
+--- !u!114 &59677217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59677214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 59677214}
+  questToCheck: Djin
+  activeIfComplete: 1
+--- !u!61 &59677218
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59677214}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.02, y: 2.52}
+    newSize: {x: 1.02, y: 2.52}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.02, y: 2.52}
+  m_EdgeRadius: 0
+--- !u!61 &59677219
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59677214}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.02, y: 2.52}
+    newSize: {x: 1.02, y: 2.52}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.02, y: 2.52}
+  m_EdgeRadius: 0
+--- !u!212 &59677220
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59677214}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: d8debccee86c6d945a284eb4ea2702b5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.02, y: 2.52}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1 &115458779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 115458780}
+  - component: {fileID: 115458785}
+  - component: {fileID: 115458784}
+  - component: {fileID: 115458783}
+  - component: {fileID: 115458782}
+  - component: {fileID: 115458781}
+  m_Layer: 0
+  m_Name: Izzat al-Hallal (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &115458780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115458779}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.480652, y: 24.99, z: 4.0936875}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1533868858}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &115458781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115458779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 115458779}
+  questToCheck: Sting of the Tail
+  activeIfComplete: 1
+--- !u!114 &115458782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115458779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n-Izzat al-Hallal
+  - Ah you have returned, I knew you could do it.
+  - n-Player
+  - Yes we have returned.
+  - n-Izzat al-Hallal
+  - Good., And you all survived
+  - n-Player
+  - Yes we survived
+  - n-Bron
+  - They were horrible
+  - n-Izzat al-Hallal
+  - The important things is you killed them and returned alive
+  - n-Player
+  - Yes we made
+  - n-Izzat al-Hallal
+  - That is most excelelnt
+  - I have pressing matters to attend to.  Have a great day
+  - 'n-Player '
+  - You mentioned proper compensation
+  - n-Izzat al-Hallal
+  - What?
+  - Helping our fine village is not compensation enough for you?
+  - You have our gratitude
+  - ...
+  - It is really quite mercenary of you to expect some sort of payment.  Especially
+    without a written contract.
+  - n-Bawb
+  - You know what?  It might be best if you run off to your pressing matters
+  - n-Bron
+  - 'Yes.  Run along. '
+  - Now!
+  isPerson: 1
+  shouldActivateQuest: 1
+  questToMark: Sting of the Tail
+  markComplete: 0
+--- !u!61 &115458783
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115458779}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.06, y: 2.5}
+    newSize: {x: 1.06, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.06, y: 2.5}
+  m_EdgeRadius: 0
+--- !u!61 &115458784
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115458779}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.06, y: 2.5}
+    newSize: {x: 1.06, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.06, y: 2.5}
+  m_EdgeRadius: 0
+--- !u!212 &115458785
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115458779}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6b761eac847f37d46bc18a16f84d5b01, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.06, y: 2.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!1001 &231923203
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 608744309}
+    m_Modifications:
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_Name
+      value: 'Inn Exit '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.047298
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.691408
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2319474
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4250998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.049373865
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.8407285
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.021082938
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.0421659
+      objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: transitionName
+      value: Adlab-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaToLoad
+      value: Adlab Inn
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaTransitionName
+      value: Adlab Inn-1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
 --- !u!1 &259159167
 GameObject:
   m_ObjectHideFlags: 0
@@ -156,7 +656,7 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 1533868858}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &259159169
 MonoBehaviour:
@@ -170,7 +670,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n-Faraj al-Hafeez
+  - Strangers welcome to Adlab
+  - n-Player
+  - Thank you for the welcome
+  - n-Faraj al-Hafeez
+  - What brings you to our town?
+  - n-Player
+  - We have been travelling the world, seeing the sites.
+  - n-Faraj al-Hafeez
+  - That is wonderful.
+  - ...
+  - That is all the time I have for idle chit chat.  I am a busy man.
+  - Good Bye
+  - n-Player
+  - Good Bye
   isPerson: 1
   shouldActivateQuest: 0
   questToMark: 
@@ -283,7 +798,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 608744309}
     m_Modifications:
     - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_Name
@@ -291,27 +806,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.16
+      value: 36.8373
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.85
+      value: 25.181408
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.02030359
+      value: 2.2319474
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.z
@@ -323,7 +838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -331,7 +846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4251
+      value: 1.4250998
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalScale.x
@@ -343,11 +858,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.06
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.02
+      value: -2.26
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
@@ -372,17 +887,17 @@ PrefabInstance:
     - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: transitionName
-      value: Bajang-2
+      value: Adlab-2
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
-      value: Chulu Shop
+      value: Adlab Shop
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
-      value: Bajang Shop-1
+      value: Adlab Shop-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
@@ -443,166 +958,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
---- !u!1 &330448997
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 330449000}
-  - component: {fileID: 330448999}
-  - component: {fileID: 330448998}
-  m_Layer: 0
-  m_Name: Zone4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &330448998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
-  potentialBattles:
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 250
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-    - Potion of Vitality
-  - enemies:
-    - Orc Marauder
-    - 250
-    rewardXP: 125
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    rewardXP: 300
-    rewardItems:
-    - +1 Long Sword
-  - enemies:
-    - 'Orc '
-    - 'Orc '
-    rewardXP: 200
-    rewardItems:
-    - Throwing Hammer
-    - Throwing Hammer
-    - Potion of Vitality
-  - enemies:
-    - Ghoul
-    - Ghoul
-    rewardXP: 400
-    rewardItems:
-    - Potion of Vitality
-    - Mana Potion
-  - enemies:
-    - Mountain Cyclops
-    - Mountain Cyclops
-    rewardXP: 380
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  - enemies:
-    - Specter
-    - Specter
-    rewardXP: 400
-    rewardItems:
-    - Ring of Protection +1
-    - Mana Potion
-  - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    rewardXP: 300
-    rewardItems:
-    - Potion of Vitality
-    - +1 Long Sword
-  - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    - Goblin Militant
-    - Goblin Militant
-    rewardXP: 350
-    rewardItems:
-    - +1 Long Sword
-    - Throwing Axe
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 500
-    rewardItems:
-    - Gold Band
-    - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &330448999
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -6.252241, y: 4.0477734}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 21.599987, y: 21.8521}
-  m_EdgeRadius: 0
---- !u!4 &330449000
+--- !u!4 &323751310 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 2031192571}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.952682, y: -5.8961825, z: 45.422268}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2035151437}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &339859654
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,8 +997,14 @@ Transform:
   - {fileID: 5612142162379291571}
   - {fileID: 1474531105}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &381201708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 231923203}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &479515488
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,8 +1050,948 @@ Transform:
   - {fileID: 1260139656}
   - {fileID: 1403537856}
   m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &489814034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 608744309}
+    m_Modifications:
+    - target: {fileID: 1494555687094228, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_Name
+      value: Oluma Exit (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -23.662703
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.181408
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2319474
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0012322159
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.141
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.0125003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 30.18179
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.23573542
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.4135006
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.12357995
+      objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: transitionName
+      value: Lan-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaTransitionName
+      value: Oluma-5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+--- !u!1 &511129941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 511129942}
+  - component: {fileID: 511129944}
+  - component: {fileID: 511129943}
+  m_Layer: 0
+  m_Name: Zone4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &511129942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511129941}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 42.5, y: 6.0038176, z: 45.422268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2035151437}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &511129943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511129941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - +1 Long Sword
+  - enemies:
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1350
+    rewardItems:
+    - Throwing Hammer
+    - Throwing Hammer
+  - enemies:
+    - Efreeti
+    rewardXP: 7000
+    rewardItems:
+    - Potion of Vitality
+    - Mana Potion
+  - enemies:
+    - Silats
+    rewardXP: 5000
+    rewardItems:
+    - Greater Potion of Healing
+  - enemies:
+    - Specter
+    rewardXP: 200
+    rewardItems:
+    - Ring of Protection +1
+  - enemies:
+    - Heway
+    - Heway
+    rewardXP: 900
+    rewardItems:
+    - Battle Axe
+    - Battle Axe
+  - enemies:
+    - Heway
+    - Heway
+    rewardXP: 900
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Nasnas
+    - Nasnas
+    rewardXP: 940
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &511129944
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511129941}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -26.796406, y: -4.4856186}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 16.252602, y: 81.30272}
+  m_EdgeRadius: 0
+--- !u!1 &546129948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 546129949}
+  - component: {fileID: 546129951}
+  - component: {fileID: 546129950}
+  m_Layer: 0
+  m_Name: Zone7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &546129949
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546129948}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.1, y: -13.696182, z: 45.422268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2035151437}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &546129950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546129948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Giant Scorpion
+    - Giant Scorpion
+    - Giant Scorpion
+    - Giant Scorpion
+    - Giant Scorpion
+    - Giant Scorpion
+    rewardXP: 3900
+    rewardItems:
+    - Bastard Sword
+    - Greater Healing Potion
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &546129951
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546129948}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -8.60173, y: -21.482376}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.8878174, y: 6.8537216}
+  m_EdgeRadius: 0
+--- !u!1 &608744308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 608744309}
+  m_Layer: 0
+  m_Name: Exits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &608744309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608744308}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.362702, y: -18.781408, z: -2.211644}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 623801574}
+  - {fileID: 381201708}
+  - {fileID: 323751310}
+  - {fileID: 1668280452}
+  - {fileID: 795654863}
+  - {fileID: 1664049528}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &623801574 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 286080471}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &701759992
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1533868858}
+    m_Modifications:
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[0]
+      value: n-Bron
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[1]
+      value: You had the chance to help someone in distress, and instead you decided
+        to mock them
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[2]
+      value: n-Bawb
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[3]
+      value: It really is a sad state of affairs
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[4]
+      value: n-Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[5]
+      value: you called her a crazy lady.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[6]
+      value: Would have it impositioned you so much to show a little kindness
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[7]
+      value: n-Rifat el-Salek
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[8]
+      value: Who are you to judge me or anyone in this villagge
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[9]
+      value: n-Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[10]
+      value: We are the ones who helped her. That is who we are.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[11]
+      value: Of all this places we have been in this world, I am afraid to say this
+        is the first time I have been disgusted with an entire village.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[12]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: shouldActivateQuest
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: questToMark
+      value: Disgust
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: markComplete
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 30.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 46.90921
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229434, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_Name
+      value: Rifat el-Salek (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229434, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 254e4a634b6f74e459e8f29d3a8a25fa, type: 3}
+--- !u!4 &701759993 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 701759992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &701759994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9023170970101229434, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 701759992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &701759995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701759994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 701759994}
+  questToCheck: Djin
+  activeIfComplete: 1
+--- !u!1 &791662616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 791662617}
+  - component: {fileID: 791662622}
+  - component: {fileID: 791662621}
+  - component: {fileID: 791662620}
+  - component: {fileID: 791662619}
+  - component: {fileID: 791662618}
+  m_Layer: 0
+  m_Name: Ilhaam el-Sarah (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &791662617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791662616}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 31.76065, y: 24.397865, z: 4.0936875}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1533868858}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &791662618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791662616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - ' n-Ilhaam el-Sarah'
+  - You have returned.
+  - But where is my family?
+  - Did you not find them
+  - n-Player
+  - We found what was left of them.
+  - It was horrible.  You are lucky to have escaped with your life
+  - n-Ilhaam el-Sarah
+  - .....
+  - No
+  - My mother..... My Father...... My Brother..... My Sisters
+  - I should have stayed
+  - n-Player
+  - Then you would have perished too
+  - n-Ilhaam el-Sarah
+  - I should have stayed
+  - What will I do without my family
+  - n-Player
+  - After the grieving you will start over
+  - But make sure you take time to mourn your loss
+  - It will do you no good to bottle things up and ignore your pain and loss
+  - n-Ilhaam el-Sarah
+  - Thank you for bringing me the truth
+  - I will never fogive the people of this village for not helping me find them right
+    away.
+  - 'n-Player '
+  - We suspect it would have led to their deaths as well.
+  - n-Ilhaam el-Sarah
+  - You may be right
+  - Maybe I should move on to a new village.
+  - n-Player
+  - That might be wise. It will probably help with teh grieving process
+  - n-Ilhaam el-Sarah
+  - Thank you.
+  - Good Bye
+  - n-Player
+  - Good Bye
+  - ...  And Good Luck
+  isPerson: 1
+  shouldActivateQuest: 0
+  questToMark: Djin
+  markComplete: 0
+--- !u!114 &791662619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791662616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 791662616}
+  questToCheck: Djin
+  activeIfComplete: 1
+--- !u!61 &791662620
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791662616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.04, y: 2.52}
+    newSize: {x: 1.04, y: 2.52}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 2.52}
+  m_EdgeRadius: 0
+--- !u!61 &791662621
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791662616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.04, y: 2.52}
+    newSize: {x: 1.04, y: 2.52}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 2.52}
+  m_EdgeRadius: 0
+--- !u!212 &791662622
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791662616}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: bfd25d502bc4c704086d0d95132fba26, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.04, y: 2.52}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &795654863 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 489814034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &957920653
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 957920654}
+  - component: {fileID: 957920656}
+  - component: {fileID: 957920655}
+  m_Layer: 0
+  m_Name: Zone5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &957920654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957920653}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -24.6, y: 41.8, z: 45.422268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2035151437}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &957920655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957920653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Heway
+    - Heway
+    rewardXP: 900
+    rewardItems:
+    - Bastard Sword
+    - Throwing Axe
+  - enemies:
+    - Heway
+    rewardXP: 450
+    rewardItems:
+    - Throwing Axe
+    - +2 Long Sword
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1000
+    rewardItems:
+    - Heralded Shield
+  - enemies:
+    - Djin
+    rewardXP: 5200
+    rewardItems:
+    - Amulet of Protection +1
+  - enemies:
+    - Stone Maiden
+    rewardXP: 5000
+    rewardItems:
+    - Ring of the Cat
+  - enemies:
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 1800
+    rewardItems:
+    - Greater Potion of Healing
+    - Greater Potion of Healing
+  - enemies:
+    - Necromancer
+    rewardXP: 300
+    rewardItems:
+    - Ring of Protection +1
+  - enemies:
+    - Accolyte
+    - Accolyte
+    - Accolyte
+    - Accolyte
+    rewardXP: 4000
+    rewardItems:
+    - Chainmail
+    - Chainmail Helm
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Chainmail
+  - enemies:
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 900
+    rewardItems:
+    - Greater Potion of Healing
+    - Greater Potion of Healing
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &957920656
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957920653}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 2.9359846, y: -9.944763}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 29.963247, y: 29.928947}
+  m_EdgeRadius: 0
 --- !u!1001 &991982741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -759,7 +2066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1018156683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,39 +2079,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
   potentialBattles:
   - enemies:
-    - Ogre
+    - Heway
     rewardXP: 450
     rewardItems:
     - Bastard Sword
     - Throwing Axe
   - enemies:
-    - Ogre
+    - Heway
     rewardXP: 450
     rewardItems:
     - Throwing Axe
     - +2 Long Sword
   - enemies:
-    - Reaver
-    rewardXP: 150
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1000
     rewardItems:
     - Heralded Shield
   - enemies:
-    - Jungle Cyclops
-    rewardXP: 100
+    - Djin
+    rewardXP: 5200
     rewardItems:
     - Amulet of Protection +1
   - enemies:
-    - Ghast
-    rewardXP: 450
+    - Stone Maiden
+    rewardXP: 5000
     rewardItems:
     - Ring of the Cat
   - enemies:
-    - Mountain Cyclops
-    - Jungle Cyclops
-    rewardXP: 415
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    - Orc Marauder
+    rewardXP: 1800
     rewardItems:
     - Greater Potion of Healing
     - Greater Potion of Healing
@@ -814,27 +2126,23 @@ MonoBehaviour:
     rewardItems:
     - Ring of Protection +1
   - enemies:
-    - Necromancer
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    rewardXP: 500
+    - Accolyte
+    - Accolyte
+    - Accolyte
+    - Accolyte
+    rewardXP: 4000
     rewardItems:
     - Chainmail
-    - Chainmail Helmet
+    - Chainmail Helm
   - enemies:
     - Orc Marauder
-    - Goblin Militant
-    - Ogre
-    rewardXP: 650
+    rewardXP: 450
     rewardItems:
     - Chainmail
   - enemies:
     - Orc Marauder
     - Orc Marauder
-    - Orc Blood Warrior
-    rewardXP: 400
+    rewardXP: 900
     rewardItems:
     - Greater Potion of Healing
     - Greater Potion of Healing
@@ -880,12 +2188,124 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1018156682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.1526794, y: -13.696182, z: 45.422268}
+  m_LocalPosition: {x: -24.6, y: -18.4, z: 45.422268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035151437}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1074956975
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 608744309}
+    m_Modifications:
+    - target: {fileID: 1494555687094228, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_Name
+      value: Oluma Exit (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 71.2373
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.98141
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2319474
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0012322159
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999993
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.141
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.0125003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 30.18179
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.23573542
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.4135006
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.12357995
+      objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: transitionName
+      value: Lan-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaTransitionName
+      value: Oluma-5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
 --- !u!1 &1237243133
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,10 +2403,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n-Izzat al-Hallal
+  - Awe strangers welcome to Adlab
+  - n-Player
+  - Thank you for the warm welcome
+  - n-Izzat al-Hallal
+  - I have been praying that brave sould would come to help us out and my prayers
+    have been answered
+  - n-Player
+  - ....
+  - n-Bron
+  - What are you talking about?
+  - n-Izzat al-Hallal
+  - We have some rather large scorpions just south of the town and they are quite
+    venomous.
+  - I am worried that one of our fine people may get stung and die
+  - n-Player
+  - And you want us to risk our lives to rid you of the scorpions.
+  - n-Izzat al-Hallal
+  - Be assured you will be compensated for your work.
+  - ...
+  - Now please go take care fo this for us.
+  - 'n-Player '
+  - We will see what we can do
+  - n-Izzat al-Hallal
+  - Yes. Yes. please hurry
   isPerson: 1
-  shouldActivateQuest: 0
-  questToMark: 
+  shouldActivateQuest: 1
+  questToMark: Sting of the Tail
   markComplete: 0
 --- !u!61 &1237243137
 BoxCollider2D:
@@ -5179,163 +6624,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1309207703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1309207706}
-  - component: {fileID: 1309207705}
-  - component: {fileID: 1309207704}
-  m_Layer: 0
-  m_Name: Zone5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1309207704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309207703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
-  potentialBattles:
-  - enemies:
-    - Minotaur
-    rewardXP: 700
-    rewardItems:
-    - Gold Band
-    - Gold Band
-    - Gold Band
-  - enemies:
-    - Death Merchant
-    - Death Merchant
-    - Death Merchant
-    rewardXP: 750
-    rewardItems:
-    - Spirit Rune
-  - enemies:
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    rewardXP: 600
-    rewardItems:
-    - +1 Long Sword
-  - enemies:
-    - Ogre
-    - Ogre
-    rewardXP: 900
-    rewardItems:
-    - Amulet of Protection +2
-  - enemies:
-    - Ghoul
-    - Ghoul
-    - Ghoul
-    rewardXP: 600
-    rewardItems:
-    - Potion of Vitality
-    - Potion of Vitality
-    - Mana Potion
-    - Mana Potion
-  - enemies:
-    - Succubus
-    rewardXP: 1000
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  - enemies:
-    - Specter
-    rewardXP: 200
-    rewardItems:
-    - Ring of Protection +1
-  - enemies:
-    - Orc Chieftan
-    rewardXP: 1100
-    rewardItems:
-    - Chainmail
-    - Chailmail Leggings
-  - enemies:
-    - Wight
-    rewardXP: 700
-    rewardItems:
-    - Chainmail Helmet
-    - Chainmail Gauntlets
-  - enemies:
-    - Earth Elemental
-    rewardXP: 1000
-    rewardItems:
-    - Earth Rune
-  - enemies:
-    - Fire Elemental
-    rewardXP: 1400
-    rewardItems:
-    - Fire Rune
-  - enemies:
-    - Water Elemental
-    rewardXP: 800
-    rewardItems:
-    - Water Rune
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &1309207705
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309207703}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2.8325024, y: -2.618391}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 28.007923, y: 38.1282}
-  m_EdgeRadius: 0
---- !u!4 &1309207706
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309207703}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.9526825, y: 25.403818, z: 45.422268}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2035151437}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1336130410
 GameObject:
   m_ObjectHideFlags: 0
@@ -100888,8 +102176,8 @@ Tilemap:
   - first: {x: 31, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 17
-      m_TileSpriteIndex: 19
+      m_TileIndex: 0
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -100898,8 +102186,8 @@ Tilemap:
   - first: {x: 32, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 17
-      m_TileSpriteIndex: 19
+      m_TileIndex: 3
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -100908,8 +102196,8 @@ Tilemap:
   - first: {x: 33, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 17
-      m_TileSpriteIndex: 19
+      m_TileIndex: 3
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -100918,8 +102206,8 @@ Tilemap:
   - first: {x: 34, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 17
-      m_TileSpriteIndex: 19
+      m_TileIndex: 3
+      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -100928,8 +102216,8 @@ Tilemap:
   - first: {x: 35, y: 2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 17
-      m_TileSpriteIndex: 19
+      m_TileIndex: 6
+      m_TileSpriteIndex: 16
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -101215,6 +102503,56 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 31, y: 3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 16
+      m_TileSpriteIndex: 18
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 32, y: 3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 33, y: 3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 34, y: 3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 35, y: 3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 11
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 45, y: 3, z: 0}
     second:
       serializedVersion: 2
@@ -101246,6 +102584,56 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 48, y: 3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 11
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 31, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 16
+      m_TileSpriteIndex: 18
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 32, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 33, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 34, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 35, y: 4, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 9
@@ -101290,6 +102678,56 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 9
       m_TileSpriteIndex: 11
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 31, y: 5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 32, y: 5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 17
+      m_TileSpriteIndex: 19
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 33, y: 5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 17
+      m_TileSpriteIndex: 19
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 34, y: 5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 17
+      m_TileSpriteIndex: 19
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 5
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 35, y: 5, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 2
+      m_TileSpriteIndex: 4
       m_TileMatrixIndex: 0
       m_TileColorIndex: 5
       m_TileObjectToInstantiateIndex: 65535
@@ -102327,25 +103765,25 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 3
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: a0d58f1b7bed7b245add8eac9e2b08c9, type: 2}
-  - m_RefCount: 3
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: ffd14a3a5df859d4f8992c61b99616c2, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 4b20ed4b5e63ae54db7f84b8743eff61, type: 2}
-  - m_RefCount: 178
+  - m_RefCount: 187
     m_Data: {fileID: 11400000, guid: c8346510ed14a694a81c861e45b0338d, type: 2}
   - m_RefCount: 121
     m_Data: {fileID: 11400000, guid: 10e35d52b338ede4197e3ed4608d581d, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 63711f7d14b26c947863f52e3db9ef82, type: 2}
   - m_RefCount: 83
     m_Data: {fileID: 11400000, guid: ee27cb23584957644bd379f852da68b8, type: 2}
   - m_RefCount: 62
     m_Data: {fileID: 11400000, guid: 30c1d99a6af747f4ab9181d048c93258, type: 2}
-  - m_RefCount: 21
+  - m_RefCount: 23
     m_Data: {fileID: 11400000, guid: 6c2fbe496e914004ba94333adc1cc34d, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -102359,9 +103797,9 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 286962628df896c4ab00cf772a2e91a2, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 3bbd737ba4528244297add4564bef107, type: 2}
-  - m_RefCount: 19
+  - m_RefCount: 21
     m_Data: {fileID: 11400000, guid: 3e2c6b9b2aeb1504b84da792c2e64478, type: 2}
-  - m_RefCount: 60
+  - m_RefCount: 58
     m_Data: {fileID: 11400000, guid: 434e5f96234b29249b56a70854d951bc, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 72abb2f2591aa704da23de9a6a3b4a74, type: 2}
@@ -102372,13 +103810,13 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 3
+  - m_RefCount: 4
     m_Data: {fileID: 21300000, guid: 115d2425292a84e45837f5639d95fa66, type: 3}
-  - m_RefCount: 3
+  - m_RefCount: 4
     m_Data: {fileID: 21300000, guid: d15082eedc362964286e501c7cf17a71, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 21300000, guid: 5c434b35df625ef4a92760b9fe048a62, type: 3}
-  - m_RefCount: 178
+  - m_RefCount: 187
     m_Data: {fileID: 21300000, guid: 19a0e24876f62234fa0d2b1f0ccf258f, type: 3}
   - m_RefCount: 121
     m_Data: {fileID: 21300000, guid: 0d15d3c6dfdd5544d87ae2eb1019d4f3, type: 3}
@@ -102390,7 +103828,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 62
     m_Data: {fileID: 21300000, guid: d8e6e1e7aba3b9a4987bae36967912fe, type: 3}
-  - m_RefCount: 21
+  - m_RefCount: 23
     m_Data: {fileID: 21300000, guid: fbcebe80ece5cfe4689cbea8a1a829a3, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -102400,18 +103838,18 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 1887dd9f7d01cbf44945ff9c6d8e8575, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: 64efa91ce32ff324a8ab00a1d4cb23f3, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 21300000, guid: dcfb56ea9885cd74e8db39d19ef56eae, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 3fc1152a8eee93f4b99fef0c5511480b, type: 3}
-  - m_RefCount: 19
+  - m_RefCount: 21
     m_Data: {fileID: 21300000, guid: 4ce751258ba887441ae87dd73de24a93, type: 3}
-  - m_RefCount: 60
+  - m_RefCount: 58
     m_Data: {fileID: 21300000, guid: 635b08bb15814f94abfea4567ab73926, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: 52d4f0be80fc75949b62c7747c049d67, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 560
+  - m_RefCount: 575
     m_Data:
       e00: 1
       e01: 0
@@ -102440,7 +103878,7 @@ Tilemap:
     m_Data: {r: -1.673568e+25, g: -1.673568e+25, b: -1.673568e+25, a: -1.673568e+25}
   - m_RefCount: 0
     m_Data: {r: -1.00152444e+33, g: -1.00152444e+33, b: -1.00152444e+33, a: -1.00152444e+33}
-  - m_RefCount: 560
+  - m_RefCount: 575
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -102483,7 +103921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1392168074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102496,40 +103934,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
   potentialBattles:
   - enemies:
-    - Orc Marauder
-    rewardXP: 125
+    - Desert Centaur
+    rewardXP: 450
     rewardItems:
     - Throwing Axe
     - Throwing Axe
   - enemies:
-    - Orc Marauder
-    rewardXP: 125
+    - Desert Centaur
+    rewardXP: 450
     rewardItems:
     - Throwing Axe
     - Throwing Axe
   - enemies:
-    - Orc Blood Warrior
-    rewardXP: 150
+    - Desert Centaur
+    rewardXP: 450
     rewardItems:
     - +1 Long Sword
   - enemies:
-    - 'Orc '
-    rewardXP: 100
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1350
     rewardItems:
     - Throwing Hammer
     - Throwing Hammer
   - enemies:
-    - Ghoul
-    rewardXP: 200
+    - Efreeti
+    rewardXP: 7000
     rewardItems:
     - Potion of Vitality
     - Mana Potion
   - enemies:
-    - Mountain Cyclops
-    rewardXP: 190
+    - Silats
+    rewardXP: 5000
     rewardItems:
     - Greater Potion of Healing
   - enemies:
@@ -102538,23 +103978,23 @@ MonoBehaviour:
     rewardItems:
     - Ring of Protection +1
   - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    rewardXP: 150
+    - Heway
+    - Heway
+    rewardXP: 900
     rewardItems:
     - Battle Axe
     - Battle Axe
   - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    rewardXP: 200
+    - Heway
+    - Heway
+    rewardXP: 900
     rewardItems:
     - Throwing Axe
     - Throwing Axe
   - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 250
+    - Nasnas
+    - Nasnas
+    rewardXP: 940
     rewardItems:
     - Throwing Axe
     - Throwing Axe
@@ -102600,7 +104040,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392168073}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.052681, y: 6.0038176, z: 45.422268}
+  m_LocalPosition: {x: -33.8, y: 6.0038176, z: 45.422268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035151437}
@@ -103054,6 +104494,118 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1405505429
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 608744309}
+    m_Modifications:
+    - target: {fileID: 1494555687094228, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_Name
+      value: Oluma Exit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 23.057297
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.618593
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.2319474
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.0125003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 32.111958
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.47836494
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.4135006
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.12357995
+      objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: transitionName
+      value: Lan-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaTransitionName
+      value: Oluma-5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
 --- !u!1001 &1474531104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -103157,13 +104709,29 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1237243135}
+  - {fileID: 115458780}
   - {fileID: 1975293408}
+  - {fileID: 791662617}
   - {fileID: 259159168}
+  - {fileID: 59677215}
   - {fileID: 2045366047}
+  - {fileID: 701759993}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1919128150
+--- !u!4 &1664049528 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 1074956975}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1668280452 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 1405505429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1773766435
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103171,131 +104739,135 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1919128153}
-  - component: {fileID: 1919128152}
-  - component: {fileID: 1919128151}
+  - component: {fileID: 1773766436}
+  - component: {fileID: 1773766438}
+  - component: {fileID: 1773766437}
   m_Layer: 0
   m_Name: Zone2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1919128151
+  m_IsActive: 1
+--- !u!4 &1773766436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773766435}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -80.747314, y: -48.6, z: 45.422268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2035151437}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1773766437
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
+  m_GameObject: {fileID: 1773766435}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
   potentialBattles:
   - enemies:
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    rewardXP: 100
-    rewardItems:
-    - Leather Gloves
-    - Shield
-  - enemies:
-    - Flying Snake
-    - Flying Snake
-    rewardXP: 100
-    rewardItems:
-    - Bronze Helmet
-  - enemies:
-    - Revener
-    rewardXP: 100
-    rewardItems:
-    - Battle Hammer
-  - enemies:
-    - Battle Tortoise
-    rewardXP: 100
-    rewardItems:
-    - Crossbow
-  - enemies:
-    - Spider
-    rewardXP: 100
-    rewardItems:
-    - Lucern Hammer
-  - enemies:
-    - Soul Thief
-    - Soul Thief
-    - Soul Thief
-    rewardXP: 120
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 750
     rewardItems:
     - Potion of Healing
     - Potion of Healing
   - enemies:
-    - Zombie
-    - Zombie
-    rewardXP: 100
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 700
     rewardItems:
     - Potion of Healing
-    - Potion of Healing
+    - Mana Potion
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Mana Potion
   - enemies:
     - Goblin Enforcer
-    rewardXP: 65
+    - Goblin Enforcer
+    rewardXP: 500
     rewardItems:
-    - Battle Axe
-  - enemies:
-    - Goblin Militant
-    rewardXP: 75
-    rewardItems:
-    - Ring of the Owl
-  - enemies:
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    rewardXP: 120
-    rewardItems:
-    - Food
-    - Food
-    - Food
-    - Food
     - Potion of Healing
   - enemies:
-    - Barabarian Skeleton
-    rewardXP: 75
+    - Orc Marauder
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1200
     rewardItems:
-    - throwing Axe
-    - throwing Axe
+    - Potion of Healing
+    - Potion of Healing
+    - Steel Helmet
   - enemies:
-    - Animated Dead
-    - Animated Dead
-    rewardXP: 100
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
     rewardItems:
-    - Potion of Vitality
+    - Mana Potion
+    - Mana Potion
+  - enemies:
+    - Orc Blood Warrior
+    rewardXP: 150
+    rewardItems:
+    - Buckler
+    - Short Sword
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Long Bow
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 150
+    rewardItems:
+    - Amulet of Protection +1
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1000
+    rewardItems:
+    - Mana Potion
+    - Ringmail
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
-  timeBetweenBattles: 10
+  timeBetweenBattles: 7
   deactivateAfterStarting: 0
   cannotFlee: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
---- !u!61 &1919128152
+--- !u!61 &1773766438
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
+  m_GameObject: {fileID: 1773766435}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 28.73061, y: -2.7049007}
+  m_Offset: {x: 55.76816, y: 19.081728}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -103306,22 +104878,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 94.27766, y: 22.858612}
+  m_Size: {x: 94.97936, y: 29.435589}
   m_EdgeRadius: 0
---- !u!4 &1919128153
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -54.44732, y: -25.096182, z: 45.422268}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2035151437}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1975293406
 GameObject:
   m_ObjectHideFlags: 0
@@ -103405,7 +104963,7 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
   m_Father: {fileID: 1533868858}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1975293409
 MonoBehaviour:
@@ -103419,10 +104977,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - ' '
+  - Please help me.
+  - My family was set upon by a nasty Djin and no one here is willing to help.
+  - These so called men are too scared to go out and rescue them.
+  - n-Player
+  - That is terrible.
+  - Tell us what happened and we will see what we can do.
+  - n-Ilhaam el-Sarah
+  - We were travelling through the sands with our wares to sell and we stopped for
+    the night.
+  - A stranger approached our encampment.
+  - Being hospitable people we welcomed him and asked him to share our fire.
+  - Then I started to get very sleepy.
+  - ...
+  - I felt like I was dreaming and then I saw that stranger transform and he started
+    chanting something.
+  - I watched my younger brother disappear, then my mother.
+  - The Djin walked over to my father and started to chant above him and my father
+    started to look hazy, almost see through. I rolled into the darkness and ran
+    off into the night.
+  - I was so worried he would chase me and catch em and make me disappear too.
+  - ...
+  - I am sure he made my sister disappear too.
+  - n-Player
+  - Where abouts did this happen.
+  - n-Ilhaam el-Sarah
+  - We were close to the new Oasis, that everyone is calling Karwiya
+  - It is so odd, we have seen small oasis pop up before, but never anything like
+    this.  This one is massive.
+  - 'n-Player '
+  - We will head out that way and see what we can find.
+  - n-Ilhaam el-Sarah
+  - Thank you.  It is so nice to meet brave people unlike the sheep of this village
+  - I will await your return
+  - n-Player
+  - Good Bye
+  - n-Ilhaam el-Sarah
+  - See you soon
   isPerson: 1
-  shouldActivateQuest: 0
-  questToMark: 
+  shouldActivateQuest: 1
+  questToMark: Djin
   markComplete: 0
 --- !u!61 &1975293410
 BoxCollider2D:
@@ -103481,31 +105077,31 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 608744309}
     m_Modifications:
     - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_Name
-      value: Mandu  Exit
+      value: Oluma Exit
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.42
+      value: 23.057297
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 42.36
+      value: 63.10141
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.02030359
+      value: 2.2319474
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.z
@@ -103517,7 +105113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -103533,7 +105129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.0125
+      value: 3.0125003
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalScale.x
@@ -103541,21 +105137,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.561
+      value: -10.97
       objectReference: {fileID: 0}
     - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.9508506
+      value: 32.111958
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.082503855
+      value: -0.47836494
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
@@ -103575,12 +105171,12 @@ PrefabInstance:
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
-      value: Mandu
+      value: Oluma
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
-      value: Mandu-6
+      value: Oluma-5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
@@ -103612,13 +105208,14 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2093805002}
-  - {fileID: 1919128153}
+  - {fileID: 1773766436}
   - {fileID: 1392168076}
-  - {fileID: 330449000}
-  - {fileID: 1309207706}
+  - {fileID: 511129942}
   - {fileID: 1018156685}
+  - {fileID: 546129949}
+  - {fileID: 957920654}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2045366046
 PrefabInstance:
@@ -103627,15 +105224,85 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533868858}
     m_Modifications:
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[0]
+      value: n-Rifat el-Salek
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[1]
+      value: Ah Strangers.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[2]
+      value: Have you had a chance to speak with the crazy lady.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[3]
+      value: She has such a wild tale.  If you have not heard it yet you really should.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[4]
+      value: I am certain it will make you laugh
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[5]
+      value: n-Bron
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[6]
+      value: Crazy Lady?
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[7]
+      value: n-Rifat el-Salek
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[8]
+      value: She is quite mad.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[9]
+      value: Such a fantasticla tale.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[10]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[11]
+      value: Well gotta run.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: lines.Array.data[12]
+      value: So much to do
+      objectReference: {fileID: 0}
     - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.90065
+      value: 16.67
       objectReference: {fileID: 0}
     - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30.397865
+      value: 30.12
       objectReference: {fileID: 0}
     - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
@@ -103665,7 +105332,7 @@ PrefabInstance:
     - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
@@ -103681,6 +105348,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 9023170970101229434, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
@@ -103712,7 +105384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2093805000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103725,48 +105397,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
   potentialBattles:
   - enemies:
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 150
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 750
     rewardItems:
     - Potion of Healing
     - Potion of Healing
   - enemies:
-    - Orc
-    - Goblin
-    rewardXP: 150
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 700
     rewardItems:
     - Potion of Healing
     - Mana Potion
   - enemies:
-    - Orc
-    rewardXP: 100
+    - Orc Marauder
+    rewardXP: 450
     rewardItems:
     - Mana Potion
   - enemies:
-    - Goblin
-    - Goblin
-    rewardXP: 100
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 500
     rewardItems:
     - Potion of Healing
   - enemies:
-    - Orc
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 250
+    - Orc Marauder
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1200
     rewardItems:
     - Potion of Healing
     - Potion of Healing
-    - Leather Helmet
+    - Steel Helmet
   - enemies:
-    - Giant Wasp
-    - Giant Wasp
-    rewardXP: 100
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
     rewardItems:
     - Mana Potion
     - Mana Potion
@@ -103778,21 +105450,21 @@ MonoBehaviour:
     - Short Sword
   - enemies:
     - Orc Marauder
-    rewardXP: 125
+    rewardXP: 450
     rewardItems:
-    - Short Bow
+    - Long Bow
   - enemies:
-    - Orc
-    - Goblin
+    - Orc Marauder
+    - Goblin Enforcer
     rewardXP: 150
     rewardItems:
     - Amulet of Protection +1
   - enemies:
-    - Goblin
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 200
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1000
     rewardItems:
     - Mana Potion
     - Ringmail
@@ -103817,7 +105489,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 55.253742, y: 22.241714}
+  m_Offset: {x: 55.76816, y: 19.081728}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -103828,7 +105500,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 93.95052, y: 23.115616}
+  m_Size: {x: 94.97936, y: 29.435589}
   m_EdgeRadius: 0
 --- !u!4 &2093805002
 Transform:
@@ -103838,7 +105510,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093804999}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -80.747314, y: 7.703818, z: 45.422268}
+  m_LocalPosition: {x: -80.747314, y: 12.8, z: 45.422268}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035151437}
