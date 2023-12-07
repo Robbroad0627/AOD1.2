@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-
+    private const string kPlayercharacterPreferenceKey = "!!!Special:Player";
     public static GameManager instance;
 
     public CharStats[] playerStats;
@@ -34,11 +34,11 @@ public class GameManager : MonoBehaviour
         instance = this;
 
         DontDestroyOnLoad(gameObject);
-        if(!dataLoadedOnce)
-        {
-            LoadData();
-            //QuestManager.instance.LoadQuestData();
-        }
+        //if(!dataLoadedOnce)
+        //{
+        //    LoadData();
+        //    //QuestManager.instance.LoadQuestData();
+        //}
 
         SortItems();
     }
@@ -275,31 +275,9 @@ public class GameManager : MonoBehaviour
             StorePlayerPosition(PlayerController.instance.transform.position);
         }
 
-        //save character info
-        for (int i = 0; i < playerStats.Length; i++)
-        {
-            if (playerStats[i].gameObject.activeInHierarchy)
-            {
-                PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_active", 1);
-            }
-            else
-            {
-                PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_active", 0);
-            }
-
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Level", playerStats[i].playerLevel);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentExp", playerStats[i].currentEXP);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentHP", playerStats[i].currentHP);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_MaxHP", playerStats[i].maxHP);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_CurrentMP", playerStats[i].currentMP);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_MaxMP", playerStats[i].maxMP);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Strength", playerStats[i].strength);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_Defence", playerStats[i].defence);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_WpnPwr", playerStats[i].wpnPwr);
-            PlayerPrefs.SetInt("Player_" + playerStats[i].charName + "_ArmrPwr", playerStats[i].armrPwr);
-            PlayerPrefs.SetString("Player_" + playerStats[i].charName + "_EquippedWpn", playerStats[i].equippedWpn);
-            PlayerPrefs.SetString("Player_" + playerStats[i].charName + "_EquippedArmr", playerStats[i].equippedArmr);
-        }
+        var playerCharacter = playerStats[0];
+        StoreCharacter(playerCharacter, kPlayercharacterPreferenceKey);
+        SaveNonCustomCharacters();
 
         //store inventory data
         for (int i = 0; i < itemsHeld.Length; i++)
@@ -307,6 +285,70 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetString("ItemInInventory_" + i, itemsHeld[i]);
             PlayerPrefs.SetInt("ItemAmount_" + i, numberOfItems[i]);
         }
+
+        //Store quests
+        var qm = QuestManager.instance;
+        qm.isReady = false;
+        PlayerPrefs.SetString("QuestsAvailable",JsonUtility.ToJson(qm.activeQuestNames));
+        PlayerPrefs.SetString("QuestsComplete",JsonUtility.ToJson(qm.completedQuestNames));
+        qm.isReady = true;
+    }
+
+    private void SaveNonCustomCharacters()
+    {
+        //save character info
+        for (int i = 1; i < playerStats.Length; i++)
+        {
+            CharStats currentCharacterStats = playerStats[i];
+
+            StoreCharacter(currentCharacterStats);
+        }
+    }
+
+    private static void StoreCharacter(CharStats currentCharacterStats,string charKey=null)
+    {
+        string charName = charKey ?? currentCharacterStats.charName;
+        //NOTE this hsould be bool, maintaining for backward compatability
+        if (currentCharacterStats.gameObject.activeInHierarchy)
+        {
+            PlayerPrefs.SetInt("Player_" + charName + "_active", 1);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Player_" + charName + "_active", 0);
+        }
+
+        PlayerPrefs.SetString("Player_" + charName + "_CharName", currentCharacterStats.charName);
+        PlayerPrefs.SetInt("Player_" + charName + "_Level", currentCharacterStats.playerLevel);
+        PlayerPrefs.SetInt("Player_" + charName + "_CurrentExp", currentCharacterStats.currentEXP);
+        PlayerPrefs.SetInt("Player_" + charName + "_CurrentHP", currentCharacterStats.currentHP);
+        PlayerPrefs.SetInt("Player_" + charName + "_MaxHP", currentCharacterStats.maxHP);
+        PlayerPrefs.SetInt("Player_" + charName + "_CurrentMP", currentCharacterStats.currentMP);
+        PlayerPrefs.SetInt("Player_" + charName + "_MaxMP", currentCharacterStats.maxMP);
+        PlayerPrefs.SetInt("Player_" + charName + "_Strength", currentCharacterStats.strength);
+        PlayerPrefs.SetInt("Player_" + charName + "_Defence", currentCharacterStats.defence);
+        PlayerPrefs.SetInt("Player_" + charName + "_WpnPwr", currentCharacterStats.wpnPwr);
+        PlayerPrefs.SetInt("Player_" + charName + "_ArmrPwr", currentCharacterStats.armrPwr);
+        StoreEquips(currentCharacterStats, charName);
+
+
+        //Store appearence
+        PlayerPrefs.SetString("Player_" + charName + "_Class", currentCharacterStats.classString);
+        PlayerPrefs.SetString("Player_" + charName + "_Sex", currentCharacterStats.sexString);
+        PlayerPrefs.SetString("Player_" + charName + "_Race", currentCharacterStats.raceString);
+    }
+
+    private static void StoreEquips(CharStats currentCharacterStats, string charKey)
+    {
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedWpn", currentCharacterStats.equippedWpn);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmr", currentCharacterStats.equippedArmr);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrBody", currentCharacterStats.equippedBodyArmr);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrFeet", currentCharacterStats.equippedFeetArmr);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrHand", currentCharacterStats.equippedHandArmr);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrLegs", currentCharacterStats.equippedLegsArmr);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrshield", currentCharacterStats.equippedShieldArmr);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrOther", currentCharacterStats.equippedOtherArmr);
+
     }
 
     private static void StorePlayerScene(string sceneName) => PlayerPrefs.SetString("Current_Scene", sceneName );
@@ -319,48 +361,123 @@ public class GameManager : MonoBehaviour
 
     public void LoadData()
     {
-        dataLoadedOnce = true;
-        PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
-
-        Debug.LogError("Character art loading not implemented");
-        for (int i = 0; i < playerStats.Length; i++)
+        var qm = QuestManager.instance;
+        if(null == qm)
         {
-            if (PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_active") == 0)
-            {
-                playerStats[i].gameObject.SetActive(false);
-            }
-            else
-            {
-                playerStats[i].gameObject.SetActive(true);
-            }
+            //HACK the quest manager wasn't created yet but important object
+            //liftetime managemnt is too messy so just retry after a timer
+            Invoke("LoadData", 0.2f);
+            return;
+        }
+        qm.isReady = false;
+        dataLoadedOnce = true;
 
-            playerStats[i].playerLevel = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_Level");
-            playerStats[i].currentEXP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentExp");
-            playerStats[i].currentHP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentHP");
-            playerStats[i].maxHP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_MaxHP");
-            playerStats[i].currentMP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_CurrentMP");
-            playerStats[i].maxMP = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_MaxMP");
-            playerStats[i].strength = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_Strength");
-            playerStats[i].defence = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_Defence");
-            playerStats[i].wpnPwr = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_WpnPwr");
-            playerStats[i].armrPwr = PlayerPrefs.GetInt("Player_" + playerStats[i].charName + "_ArmrPwr");
-            playerStats[i].equippedWpn = PlayerPrefs.GetString("Player_" + playerStats[i].charName + "_EquippedWpn");
-            playerStats[i].equippedArmr = PlayerPrefs.GetString("Player_" + playerStats[i].charName + "_EquippedArmr");
-
-
-            string myClass = "Cleric";
-            string mySex = "F";
-            string myRace = "Dwarf";
-            playerStats[i].battleChar = Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
+        var pc = PlayerController.instance;
+        if (null == pc)
+        {
+            //HACK the player controller wasn't created yet but important object
+            //liftetime managemnt is too messy so just retry after a timer
+            Invoke("LoadData", 0.1f);
+            return;
         }
 
+        PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
+
+        //Debug.LogError("Character art loading not implemented");
+
+        //Load the player
+        LoadCharacterByName(playerStats[0], kPlayercharacterPreferenceKey);
+        LoadAppearance(playerStats[0], kPlayercharacterPreferenceKey); //Onl;y the player's appearance is custom for now
+
+        LoadNonCustomCharacters(); // Load everyone else assuming hardcoded names
+
+        //Load inventory
         for (int i = 0; i < itemsHeld.Length; i++)
         {
             itemsHeld[i] = PlayerPrefs.GetString("ItemInInventory_" + i);
             numberOfItems[i] = PlayerPrefs.GetInt("ItemAmount_" + i);
         }
 
+        //Load quests
+        //NOTE order is important
+        qm.questMarkerNames=JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsAvailable"));
+        qm.completedQuestNames= JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsComplete"));
+        qm.isReady = true;
 
+
+    }
+
+    private void LoadNonCustomCharacters()
+    {
+        for (int i = 1; i < playerStats.Length; i++)
+        {
+            CharStats currentCharacterStats = playerStats[i];
+            string charName = currentCharacterStats.charName;
+            LoadCharacterByName(currentCharacterStats, charName);
+        }
+    }
+
+    private static void LoadCharacterByName(CharStats currentCharacterStats, string charName)
+    {
+        if (PlayerPrefs.GetInt("Player_" + charName + "_active") == 0)
+        {
+            currentCharacterStats.gameObject.SetActive(false);
+        }
+        else
+        {
+            currentCharacterStats.gameObject.SetActive(true);
+        }
+
+        currentCharacterStats.charName = PlayerPrefs.GetString("Player_" + charName + "_CharName") ?? currentCharacterStats.charName;
+        currentCharacterStats.playerLevel = PlayerPrefs.GetInt("Player_" + charName + "_Level");
+        currentCharacterStats.currentEXP = PlayerPrefs.GetInt("Player_" + charName + "_CurrentExp");
+        currentCharacterStats.currentHP = PlayerPrefs.GetInt("Player_" + charName + "_CurrentHP");
+        currentCharacterStats.maxHP = PlayerPrefs.GetInt("Player_" + charName + "_MaxHP");
+        currentCharacterStats.currentMP = PlayerPrefs.GetInt("Player_" + charName + "_CurrentMP");
+        currentCharacterStats.maxMP = PlayerPrefs.GetInt("Player_" + charName + "_MaxMP");
+        currentCharacterStats.strength = PlayerPrefs.GetInt("Player_" + charName + "_Strength");
+        currentCharacterStats.defence = PlayerPrefs.GetInt("Player_" + charName + "_Defence");
+        currentCharacterStats.wpnPwr = PlayerPrefs.GetInt("Player_" + charName + "_WpnPwr");
+        currentCharacterStats.armrPwr = PlayerPrefs.GetInt("Player_" + charName + "_ArmrPwr");
+        LoadEquips(currentCharacterStats, charName);
+
+        
+    }
+
+    private static void LoadAppearance(CharStats currentCharacterStats, string charName)
+    {
+        string myClass = PlayerPrefs.GetString("Player_" + charName + "_Class");
+        string mySex = PlayerPrefs.GetString("Player_" + charName + "_Sex");
+        string myRace = PlayerPrefs.GetString("Player_" + charName + "_Race");
+        currentCharacterStats.classString = myClass;
+        currentCharacterStats.sexString = mySex;
+        currentCharacterStats.raceString = myRace;
+
+        currentCharacterStats.battleChar = Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
+
+        if (currentCharacterStats.battleChar == null)
+        {
+            Debug.LogError($"Stored character info for {charName} did not match a known BattleChar, defaulting to human male");
+            myClass = "Cleric";
+            mySex = "M";
+            myRace = "Human";
+            currentCharacterStats.classString = myClass;
+            currentCharacterStats.sexString = mySex;
+            currentCharacterStats.raceString = myRace;
+            currentCharacterStats.battleChar = Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
+        }
+    }
+
+    private static void LoadEquips(CharStats currentCharacterStats, string charKey)
+    {
+        currentCharacterStats.equippedWpn = PlayerPrefs.GetString("Player_" + charKey + "_EquippedWpn");
+        currentCharacterStats.equippedArmr = PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmr");
+        currentCharacterStats.equippedBodyArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrBody" );
+        currentCharacterStats.equippedFeetArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrFeet" );
+        currentCharacterStats.equippedHandArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrHand");
+        currentCharacterStats.equippedLegsArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrLegs" );
+        currentCharacterStats.equippedShieldArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrshield" );
+        currentCharacterStats.equippedOtherArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrOther" );
     }
 }
 

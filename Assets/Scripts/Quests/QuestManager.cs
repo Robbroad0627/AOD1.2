@@ -7,8 +7,8 @@ using UnityEngine;
 
 public class QuestManager : MonoBehaviour {
 
-    public string[] questMarkerNames;
-    public bool[] questMarkersComplete;
+    public string[] questMarkerNames = new string[0];
+    public bool[] questMarkersComplete = new bool[0];
 
     public static QuestManager instance;
 
@@ -20,6 +20,50 @@ public class QuestManager : MonoBehaviour {
 
         questMarkersComplete = new bool[questMarkerNames.Length];
 	}
+
+    public string[] activeQuestNames => questMarkerNames;
+
+    internal bool isReady;
+
+    /// <summary>
+    /// HACK this value must be set after activeQuestNames
+    /// </summary>
+    public string[] completedQuestNames
+    {
+        get
+        {
+            List<string> l = new List<string>();
+            for(int i=0;i<questMarkersComplete.Length;i++)
+            {
+                if(questMarkersComplete[i])
+                {
+                    l.Add(questMarkerNames[i]);
+                }
+            }
+            return l.ToArray();
+        }
+
+        set
+        {
+            if(null == questMarkerNames) 
+            {
+                questMarkerNames = new string[0];
+                Debug.LogWarning("There was no quest marker array so I initialized it to empty");
+                return;
+            }
+            questMarkersComplete = new bool[questMarkerNames.Length];
+            foreach(string s in value)
+            {
+                for (int i = 0;i< questMarkerNames.Length;i++)
+                {
+                    if(questMarkerNames[i]==s)
+                    {
+                        questMarkersComplete[i] = true;
+                    }
+                }
+            }
+        }
+    }
 
 
     //HACK: Rob designed this it should definitely wrap a Quest object instead of just being loose like this, but too late to change it.
@@ -75,13 +119,13 @@ public class QuestManager : MonoBehaviour {
             }
         }
 
-        Debug.LogError("Quest " + questToFind + " does not exist");
-        return 0;
+        //Debug.LogError("Quest " + questToFind + " does not exist");
+        return -1;
     }
 
     public bool CheckIfComplete(string questToCheck)
     {
-        if(GetQuestNumber(questToCheck) != 0)
+        if(GetQuestNumber(questToCheck) >= 0)
         {
             return questMarkersComplete[GetQuestNumber(questToCheck)];
         }
@@ -91,13 +135,25 @@ public class QuestManager : MonoBehaviour {
 
     public void MarkQuestComplete(string questToMark)
     {
-        questMarkersComplete[GetQuestNumber(questToMark)] = true;
+        int i = GetQuestNumber(questToMark);
+        if (i < 0)
+        {
+            Debug.LogWarning($"Quest \"{questToMark}\" cannot be marked complete because it was not started.");
+            return;
+        }
+        questMarkersComplete[i] = true;
 
         UpdateLocalQuestObjects();
     }
 
     public void MarkQuestIncomplete(string questToMark)
     {
+        int i = GetQuestNumber(questToMark);
+        if (i < 0)
+        {
+            Debug.LogError($"Quest {questToMark} cannot be marked incomplete. Because it is not registered.");
+            return;
+        }
         questMarkersComplete[GetQuestNumber(questToMark)] = false;
 
         UpdateLocalQuestObjects();

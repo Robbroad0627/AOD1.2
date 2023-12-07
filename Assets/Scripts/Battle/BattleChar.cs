@@ -25,7 +25,7 @@ public class BattleChar : MonoBehaviour
 
     void Start()
     {
-
+        theSprite.sprite = aliveSprite;
     }
 
 

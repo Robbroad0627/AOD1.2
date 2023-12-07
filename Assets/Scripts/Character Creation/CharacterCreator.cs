@@ -376,6 +376,10 @@ public class CharacterCreator : MonoBehaviour
         GameManager.instance.playerStats[0].playerLevel = 1;
         GameManager.instance.playerStats[0].battleChar = Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
         GameManager.instance.playerStats[0].battleChar.isPlayer = true;
+        GameManager.instance.playerStats[0].classString = myClass.ToString();
+        GameManager.instance.playerStats[0].sexString = mySex;
+        GameManager.instance.playerStats[0].raceString = myRace.ToString();
+
         Debug.Log("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
         SceneManager.LoadScene("Calimere");
     }
