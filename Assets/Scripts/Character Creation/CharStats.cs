@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class CharStats : MonoBehaviour {
 
-    public string charName;
+    public string charName="?";
     public BattleChar battleChar;
     public BattleMove.CharacterClass characterClass;
     public int playerLevel = 1;
@@ -36,6 +36,18 @@ public class CharStats : MonoBehaviour {
     internal string equippedShieldArmr="";
 
     public bool isDead => currentHP <= 0;
+
+    public string sexString { get; internal set; }
+    public string raceString { get; internal set; }
+    public string classString { get => characterClass.ToString(); 
+    set
+        {
+            this.characterClass= (BattleMove.CharacterClass)Enum.Parse(typeof(BattleMove.CharacterClass), value, true);
+            
+        }
+
+    }
+
 
     // Use this for initialization
     void Start () {
