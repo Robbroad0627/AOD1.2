@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transitionName: Larsu-1
+  playerAnimatorOverride: {fileID: 0}
 --- !u!1 &1854250573537122
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,6 +116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0b0a82eb7211034bb1fd55c86afe427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaToLoad: Chulu
-  areaTransitionName: Chulu-1
+  areaToLoad: Biddaib
+  areaTransitionName: Biddaib-3
   waitToLoad: 1
+  needBoat: 0
