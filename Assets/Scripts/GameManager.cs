@@ -219,7 +219,7 @@ public class GameManager : MonoBehaviour
         var dm = DialogManager.instance;
         if (currentGold >= goldCost)
         {
-            dm.Prompt($"Do you want to stay the night? It will cost {goldCost}", InnSequence, null);
+            dm.Prompt($"Do you want to stay the night? It will cost {goldCost}g.", InnSequence, null);
         }
         else
         {
