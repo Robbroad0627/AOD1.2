@@ -3,7 +3,7 @@
  * Script: EssentialsLoader.cs
  * Date Created: 
  * Created By: Rob Broad
- * Edited By: Jeff Moreau
+ * Modified By: Jeff Moreau
  * Date Last Modified: June 13, 2024
  * Description: Script to Load all esential scripts
  * TODO: 
