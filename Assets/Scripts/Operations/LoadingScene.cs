@@ -15,16 +15,16 @@ public class LoadingScene : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(waitToLoad > 0)
-        {
+
             waitToLoad -= Time.deltaTime;
             if(waitToLoad <= 0)
             {
-                SceneManager.LoadScene(PlayerPrefs.GetString("Current_Scene"));
-
+            waitToLoad = 0;
                 GameManager.instance.LoadData();
                 QuestManager.instance.LoadQuestData();
+                SceneManager.LoadScene(PlayerPrefs.GetString("Current_Scene"));
+
             }
-        }
+        
 	}
 }
