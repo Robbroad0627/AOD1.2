@@ -13,32 +13,35 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadingScene : MonoBehaviour
+namespace AOD
 {
-    //VARIABLES
-    #region Inspector Variable Declarations and Initializations
-
-    //Do NOT rename these Variables unless you know what you are changing
-    [SerializeField] private float eLoadingWaitTime = 1.0f;
-
-    #endregion
-
-    //FUNCTIONS
-    #region Implementation Methods/Functions
-
-    void Update ()
+    public class LoadingScene : MonoBehaviour
     {
-        eLoadingWaitTime -= Time.deltaTime;
+        //VARIABLES
+        #region Inspector Variable Declarations and Initializations
 
-        if(eLoadingWaitTime <= 0)
+        //Do NOT rename these Variables unless you know what you are changing
+        [SerializeField] private float eLoadingWaitTime = 1.0f;
+
+        #endregion
+
+        //FUNCTIONS
+        #region Implementation Methods/Functions
+
+        void Update()
         {
-            eLoadingWaitTime = 0;
+            eLoadingWaitTime -= Time.deltaTime;
 
-            GameManager.instance.LoadData();
-            QuestManager.instance.LoadQuestData();
-            SceneManager.LoadScene(PlayerPrefs.GetString("Current_Scene"));
+            if (eLoadingWaitTime <= 0)
+            {
+                eLoadingWaitTime = 0;
+
+                GameManager.instance.LoadData();
+                QuestManager.instance.LoadQuestData();
+                SceneManager.LoadScene(PlayerPrefs.GetString("Current_Scene"));
+            }
         }
-	}
 
-    #endregion
+        #endregion
+    }
 }

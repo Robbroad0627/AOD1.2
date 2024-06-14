@@ -5,24 +5,30 @@ using UnityEngine.UI;
 
 //Bonehead Games
 
-public class BattleTargetButton : MonoBehaviour {
+namespace AOD
+{
+	public class BattleTargetButton : MonoBehaviour
+	{
 
-    public string moveName;
-    public int activeBattlerTarget;
-    public Text targetName;
+		public string moveName;
+		public int activeBattlerTarget;
+		public Text targetName;
 
-	// Use this for initialization
-	void Start () {
-		
+		// Use this for initialization
+		void Start()
+		{
+
+		}
+
+		// Update is called once per frame
+		void Update()
+		{
+
+		}
+
+		public void Press()
+		{
+			BattleManager.instance.PlayerAttack(moveName, activeBattlerTarget);
+		}
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    public void Press()
-    {
-        BattleManager.instance.PlayerAttack(moveName, activeBattlerTarget);
-    }
 }

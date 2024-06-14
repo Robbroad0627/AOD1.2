@@ -5,54 +5,60 @@ using UnityEngine.SceneManagement;
 
 //Bonehead Games
 
-public class AreaExit : MonoBehaviour {
+namespace AOD
+{
+    public class AreaExit : MonoBehaviour
+    {
 
-    public string areaToLoad;
+        public string areaToLoad;
 
-    public string areaTransitionName;
-
-   
-    public float waitToLoad = 1f;
-    private bool shouldLoadAfterFade;
-
-    public bool needBoat = false;
+        public string areaTransitionName;
 
 
-	void Start () {
-        
-    }
-	
-	
-	void Update () {
-		if(shouldLoadAfterFade)
+        public float waitToLoad = 1f;
+        private bool shouldLoadAfterFade;
+
+        public bool needBoat = false;
+
+
+        void Start()
         {
-            waitToLoad -= Time.deltaTime;
-            if(waitToLoad <= 0)
+
+        }
+
+
+        void Update()
+        {
+            if (shouldLoadAfterFade)
             {
-                shouldLoadAfterFade = false;
-                SceneManager.LoadScene(areaToLoad);
+                waitToLoad -= Time.deltaTime;
+                if (waitToLoad <= 0)
+                {
+                    shouldLoadAfterFade = false;
+                    SceneManager.LoadScene(areaToLoad);
+                }
             }
         }
-	}
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.tag == "Player")
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            if(needBoat && !GameManager.instance.haveBoat)
+            if (other.tag == "Player")
             {
-                //Cant use boat area without one.
-                Debug.Log("Area needs boat but GameManager.haveBoat == false");
-                return;
+                if (needBoat && !GameManager.instance.haveBoat)
+                {
+                    //Cant use boat area without one.
+                    Debug.Log("Area needs boat but GameManager.haveBoat == false");
+                    return;
+                }
+                this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
+                                    //SceneManager.LoadScene(areaToLoad);
+                shouldLoadAfterFade = true;
+                GameManager.instance.fadingBetweenAreas = true;
+
+                UIFade.instance.FadeToBlack();
+
+                PlayerController.instance.areaTransitionName = areaTransitionName;
             }
-            this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
-            //SceneManager.LoadScene(areaToLoad);
-            shouldLoadAfterFade = true;
-            GameManager.instance.fadingBetweenAreas = true;
-
-            UIFade.instance.FadeToBlack();
-
-            PlayerController.instance.areaTransitionName = areaTransitionName;
         }
     }
 }

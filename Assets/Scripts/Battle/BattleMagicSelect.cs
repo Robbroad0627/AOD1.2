@@ -5,36 +5,43 @@ using UnityEngine.UI;
 
 //Bonehead Games
 
-public class BattleMagicSelect : MonoBehaviour {
-
-    public string spellName;
-    public int spellCost;
-    public Text nameText;
-    public Text costText;
-
-	
-	void Start () {
-		
-	}
-	
-	
-	void Update () {
-		
-	}
-
-    public void Press()
+namespace AOD
+{
+    public class BattleMagicSelect : MonoBehaviour
     {
-        if (BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].currentMP >= spellCost)
+
+        public string spellName;
+        public int spellCost;
+        public Text nameText;
+        public Text costText;
+
+
+        void Start()
         {
-            BattleManager.instance.magicMenu.SetActive(false);
-            BattleManager.instance.OpenTargetMenu(spellName);
-            BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].currentMP -= spellCost;
-        } else
+
+        }
+
+
+        void Update()
         {
-            //let player know there is not enough MP
-            BattleManager.instance.battleNotice.theText.text = "Not Enough MP!";
-            BattleManager.instance.battleNotice.Activate();
-            BattleManager.instance.magicMenu.SetActive(false);
+
+        }
+
+        public void Press()
+        {
+            if (BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].currentMP >= spellCost)
+            {
+                BattleManager.instance.magicMenu.SetActive(false);
+                BattleManager.instance.OpenTargetMenu(spellName);
+                BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].currentMP -= spellCost;
+            }
+            else
+            {
+                //let player know there is not enough MP
+                BattleManager.instance.battleNotice.theText.text = "Not Enough MP!";
+                BattleManager.instance.battleNotice.Activate();
+                BattleManager.instance.magicMenu.SetActive(false);
+            }
         }
     }
 }

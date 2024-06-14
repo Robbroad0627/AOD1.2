@@ -5,42 +5,48 @@ using UnityEngine.UI;
 
 //Bonehead Games
 
-public class ItemButton : MonoBehaviour {
-
-    public Image buttonImage;
-    public Text amountText;
-    public int buttonValue;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    public void Press()
+namespace AOD
+{
+    public class ItemButton : MonoBehaviour
     {
-        if (GameMenu.instance.theMenu.activeInHierarchy)
+
+        public Image buttonImage;
+        public Text amountText;
+        public int buttonValue;
+
+        // Use this for initialization
+        void Start()
         {
-            if (GameManager.instance.itemsHeld[buttonValue] != "")
-            {
-                GameMenu.instance.SelectItem(GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[buttonValue]));
-            }
+
         }
 
-        if(Shop.instance.shopMenu.activeInHierarchy)
+        // Update is called once per frame
+        void Update()
         {
-            if(Shop.instance.buyMenu.activeInHierarchy)
+
+        }
+
+        public void Press()
+        {
+            if (GameMenu.instance.theMenu.activeInHierarchy)
             {
-                Shop.instance.SelectBuyItem(GameManager.instance.GetItemDetails(Shop.instance.itemsForSale[buttonValue]));
+                if (GameManager.instance.itemsHeld[buttonValue] != "")
+                {
+                    GameMenu.instance.SelectItem(GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[buttonValue]));
+                }
             }
 
-            if(Shop.instance.sellMenu.activeInHierarchy)
+            if (Shop.instance.shopMenu.activeInHierarchy)
             {
-                Shop.instance.SelectSellItem(GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[buttonValue]));
+                if (Shop.instance.buyMenu.activeInHierarchy)
+                {
+                    Shop.instance.SelectBuyItem(GameManager.instance.GetItemDetails(Shop.instance.itemsForSale[buttonValue]));
+                }
+
+                if (Shop.instance.sellMenu.activeInHierarchy)
+                {
+                    Shop.instance.SelectSellItem(GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[buttonValue]));
+                }
             }
         }
     }

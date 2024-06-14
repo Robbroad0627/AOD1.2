@@ -65,7 +65,7 @@ namespace AOD.ScriptableObjects
         public bool GetHPBonus => HPBonus;
         public bool GetMPBonus => MPBonus;
         public bool GetIsWeapon => IsWeapon;
-        public bool GetIsArmour => IsArmor;
+        public bool GetIsArmor => IsArmor;
         public bool GetStrBonus => StrBonus;
 
         public string GetName => Name;
