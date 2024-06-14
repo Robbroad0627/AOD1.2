@@ -18,7 +18,7 @@ public class LoadingScene : MonoBehaviour
     //VARIABLES
     #region Inspector Variable Declarations and Initializations
 
-    [SerializeField] private float mLoadingWaitTime;
+    [SerializeField] private float mLoadingWaitTime = 1.0f;
 
     #endregion
 

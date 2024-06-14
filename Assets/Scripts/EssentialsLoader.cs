@@ -17,11 +17,11 @@ public class EssentialsLoader : MonoBehaviour
     //VARIABLES
     #region Inspector Variable Declarations and Initializations
 
-    [SerializeField] private GameObject mPlayer;
-    [SerializeField] private GameObject mUIManager;
-    [SerializeField] private GameObject mGameManager;
-    [SerializeField] private GameObject mAudioManager;
-    [SerializeField] private GameObject mBattleManager;
+    [SerializeField] private GameObject mPlayer = null;
+    [SerializeField] private GameObject mUIManager = null;
+    [SerializeField] private GameObject mGameManager = null;
+    [SerializeField] private GameObject mAudioManager = null;
+    [SerializeField] private GameObject mBattleManager = null;
 
     #endregion
 
