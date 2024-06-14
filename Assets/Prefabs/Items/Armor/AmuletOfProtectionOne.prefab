@@ -95,29 +95,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ddf7c1ada77bbe419831ca4fc18005b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isItem: 0
-  isWeapon: 0
-  isArmour: 1
-  itemName: Amulet of Protection +1
-  description: Increases the users Armor Class by 1 point
-  value: 500
-  itemSprite: {fileID: 21300000, guid: 8b4a376ce869fba44afc8dabebe9d4f0, type: 3}
-  amountToChange: 1
-  affectHP: 0
-  affectMP: 0
-  affectStr: 0
-  weaponStrength: 0
-  armorStrength: 1
-  head: 0
-  body: 0
-  hand: 0
-  legs: 0
-  feet: 0
-  other: 1
-  Cleric: 1
-  Druid: 1
-  Fighter: 1
-  Mage: 1
-  Paladin: 1
-  Ranger: 1
-  Thief: 1
+  ItemData: {fileID: 11400000, guid: aa8f1adf26cfda6489d1a8531713a4aa, type: 2}

@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1db6f1936f895224dabc2717c26483fa, type: 3}
-  m_Name: TestItem
+  m_Name: AmuletOfProtectionOne
   m_EditorClassIdentifier: 
-  Name: New Item
-  Description: What am I?
-  Value: 0
-  SpriteIcon: {fileID: 0}
+  Name: Amulet of Protection +1
+  Description: Increases the users Armor Class by 1 point
+  Value: 500
+  SpriteIcon: {fileID: 21300000, guid: 8b4a376ce869fba44afc8dabebe9d4f0, type: 3}
   IsItem: 0
   StatBonusAmount: 0
   HPBonus: 0
@@ -24,6 +24,6 @@ MonoBehaviour:
   IsWeapon: 0
   AttackStrength: 0
   IsArmor: 0
-  ArmorAmount: 0
+  ArmorAmount: 1
   ArmorLocation: -1
-  ClassUseable: 
+  ClassUseable: 00000000010000000200000003000000040000000500000006000000
