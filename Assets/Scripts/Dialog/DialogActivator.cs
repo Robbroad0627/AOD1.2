@@ -17,6 +17,7 @@ public class DialogActivator : MonoBehaviour
     //VARIABLES
     #region Inspector Variable Declarations and Initializations
 
+    //Do NOT rename these Variables unless you know what you are changing
     [SerializeField] private string[] lines;
     [SerializeField] private bool isPerson = true;
     [SerializeField] private string questToMark = null;
@@ -25,7 +26,7 @@ public class DialogActivator : MonoBehaviour
     #endregion
     #region Private Variable Declarations Only
 
-    private bool mCanActivate;
+    private bool mCanTalk;
 
     #endregion
 
@@ -35,7 +36,7 @@ public class DialogActivator : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            mCanActivate = true;
+            mCanTalk = true;
         }
     }
 
@@ -43,7 +44,7 @@ public class DialogActivator : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            mCanActivate = false;
+            mCanTalk = false;
         }
     }
 
@@ -52,7 +53,7 @@ public class DialogActivator : MonoBehaviour
 
     void Update ()
     {
-		if (mCanActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
+		if (mCanTalk && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
         {
             DialogManager.instance.ShowDialog(lines, isPerson);
             DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);

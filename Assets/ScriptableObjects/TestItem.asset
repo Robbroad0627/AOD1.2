@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db6f1936f895224dabc2717c26483fa, type: 3}
+  m_Name: TestItem
+  m_EditorClassIdentifier: 
+  eIsItem: 0
+  eName: New Item
+  eDescription: What am I?
+  eValue: 0
+  eSprite: {fileID: 0}
+  eStatBonusAmount: 0
+  eHPBonus: 0
+  eMPBonus: 0
+  eStrBonus: 0
+  eIsWeapon: 0
+  eAttackStrength: 0
+  eIsArmor: 0
+  eArmorAmount: 0
+  eArmorSlot: -1
+  eClassType: 

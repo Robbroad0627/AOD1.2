@@ -18,7 +18,8 @@ public class LoadingScene : MonoBehaviour
     //VARIABLES
     #region Inspector Variable Declarations and Initializations
 
-    [SerializeField] private float mLoadingWaitTime = 1.0f;
+    //Do NOT rename these Variables unless you know what you are changing
+    [SerializeField] private float eLoadingWaitTime = 1.0f;
 
     #endregion
 
@@ -27,11 +28,11 @@ public class LoadingScene : MonoBehaviour
 
     void Update ()
     {
-        mLoadingWaitTime -= Time.deltaTime;
+        eLoadingWaitTime -= Time.deltaTime;
 
-        if(mLoadingWaitTime <= 0)
+        if(eLoadingWaitTime <= 0)
         {
-            mLoadingWaitTime = 0;
+            eLoadingWaitTime = 0;
 
             GameManager.instance.LoadData();
             QuestManager.instance.LoadQuestData();
