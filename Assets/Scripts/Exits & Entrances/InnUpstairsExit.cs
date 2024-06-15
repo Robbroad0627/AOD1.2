@@ -3,50 +3,53 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class InnUpstairsExit :MonoBehaviour
+namespace AOD
 {
-    [HideInInspector]
-    public string areaToLoad => Inn.s_downstairsSceneName;
-    [HideInInspector]
-    public string areaTransitionName => Inn.s_downstairsTransitionName;
-
-    public float waitToLoad = 1f;
-    private bool shouldLoadAfterFade;
-
-    public bool needBoat = false;
-
-    void Update()
+    public class InnUpstairsExit : MonoBehaviour
     {
-        if (shouldLoadAfterFade)
+        [HideInInspector]
+        public string areaToLoad => Inn.s_downstairsSceneName;
+        [HideInInspector]
+        public string areaTransitionName => Inn.s_downstairsTransitionName;
+
+        public float waitToLoad = 1f;
+        private bool shouldLoadAfterFade;
+
+        public bool needBoat = false;
+
+        void Update()
         {
-            waitToLoad -= Time.deltaTime;
-            if (waitToLoad <= 0)
+            if (shouldLoadAfterFade)
             {
-                shouldLoadAfterFade = false;
-                SceneManager.LoadScene(areaToLoad);
-                Inn.isUpstairs = false;
+                waitToLoad -= Time.deltaTime;
+                if (waitToLoad <= 0)
+                {
+                    shouldLoadAfterFade = false;
+                    SceneManager.LoadScene(areaToLoad);
+                    Inn.isUpstairs = false;
+                }
             }
         }
-    }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Player")
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            if (needBoat && !GameManager.instance.haveBoat)
+            if (other.tag == "Player")
             {
-                //Cant use boat area without one.
-                Debug.Log("Area needs boat but GameManager.haveBoat == false");
-                return;
+                if (needBoat && !GameManager.instance.haveBoat)
+                {
+                    //Cant use boat area without one.
+                    Debug.Log("Area needs boat but GameManager.haveBoat == false");
+                    return;
+                }
+                PlayerController.instance.areaTransitionName = Inn.s_downstairsTransitionName;
+                this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
+                shouldLoadAfterFade = true;
+                GameManager.instance.fadingBetweenAreas = true;
+
+                UIFade.instance.FadeToBlack();
+
+
             }
-            PlayerController.instance.areaTransitionName = Inn.s_downstairsTransitionName;
-            this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
-            shouldLoadAfterFade = true;
-            GameManager.instance.fadingBetweenAreas = true;
-
-            UIFade.instance.FadeToBlack();
-
-            
         }
     }
 }

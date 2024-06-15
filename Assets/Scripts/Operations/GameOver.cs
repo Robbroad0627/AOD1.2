@@ -5,45 +5,51 @@ using UnityEngine.SceneManagement;
 
 //Bonehead Games
 
-public class GameOver : MonoBehaviour {
-
-    public string mainMenuScene;
-    public string loadGameScene;
-
-	// Use this for initialization
-	void Start () {
-      //  AudioManager.instance.PlayBGM(4);
-
-        /* PlayerController.instance.gameObject.SetActive(false);
-        GameMenu.instance.gameObject.SetActive(false);
-         BattleManager.instance.gameObject.SetActive(false); */
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
-    public void QuitToMain()
+namespace AOD
+{
+    public class GameOver : MonoBehaviour
     {
-        Destroy(GameManager.instance.gameObject);
-        Destroy(PlayerController.instance.gameObject);
-        Destroy(GameMenu.instance.gameObject);
-        Destroy(AudioManager.instance.gameObject);
-        Destroy(BattleManager.instance.gameObject);
 
-        SceneManager.LoadScene(mainMenuScene);
-    }
+        public string mainMenuScene;
+        public string loadGameScene;
 
-    public void LoadLastSave()
-    {
-        Destroy(GameManager.instance.gameObject);
-        Destroy(PlayerController.instance.gameObject);
-        Destroy(GameMenu.instance.gameObject);
-       // Destroy(BattleManager.instance.gameObject);
+        // Use this for initialization
+        void Start()
+        {
+            //  AudioManager.instance.PlayBGM(4);
 
-        SceneManager.LoadScene(loadGameScene);
+            /* PlayerController.instance.gameObject.SetActive(false);
+            GameMenu.instance.gameObject.SetActive(false);
+             BattleManager.instance.gameObject.SetActive(false); */
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
+        public void QuitToMain()
+        {
+            Destroy(GameManager.instance.gameObject);
+            Destroy(PlayerController.instance.gameObject);
+            Destroy(GameMenu.instance.gameObject);
+            Destroy(AudioManager.instance.gameObject);
+            Destroy(BattleManager.instance.gameObject);
+
+            SceneManager.LoadScene(mainMenuScene);
+        }
+
+        public void LoadLastSave()
+        {
+            Destroy(GameManager.instance.gameObject);
+            Destroy(PlayerController.instance.gameObject);
+            Destroy(GameMenu.instance.gameObject);
+            // Destroy(BattleManager.instance.gameObject);
+
+            SceneManager.LoadScene(loadGameScene);
 
 
+        }
     }
 }
