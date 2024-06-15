@@ -1,67 +1,49 @@
-﻿/****************************************************************************************
- * Copyright: Bonehead Games
- * Script: DialogActivator.cs
- * Date Created: 
- * Created By: Rob Broad
- * Modified By: Jeff Moreau
- * Date Last Modified: June 13, 2024
- * Description: Start the dialog of the npc
- * TODO: 
- * Known Bugs: 
- ****************************************************************************************/
-
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-namespace AOD
-{
-    public class DialogActivator : MonoBehaviour
+//Bonehead Games
+
+public class DialogActivator : MonoBehaviour {
+
+    public string[] lines;
+
+    private bool canActivate;
+
+    public bool isPerson = true;
+
+    public bool shouldActivateQuest;
+    public string questToMark;
+    public bool markComplete;
+
+
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if(canActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
+        {
+            DialogManager.instance.ShowDialog(lines, isPerson);
+            DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+        }
+	}
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        //VARIABLES
-        #region Inspector Variable Declarations and Initializations
-
-        //Do NOT rename these Variables unless you know what you are changing
-        [SerializeField] private string[] lines;
-        [SerializeField] private bool isPerson = true;
-        [SerializeField] private string questToMark = null;
-        [SerializeField] private bool markComplete = false;
-
-        #endregion
-        #region Private Variable Declarations Only
-
-        private bool mCanTalk;
-
-        #endregion
-
-        //FUNCTIONS
-        #region Physics Methods/Functions
-        private void OnTriggerEnter2D(Collider2D other)
+        if(other.tag == "Player")
         {
-            if (other.tag == "Player")
-            {
-                mCanTalk = true;
-            }
+            canActivate = true;
         }
+    }
 
-        private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Player")
         {
-            if (other.tag == "Player")
-            {
-                mCanTalk = false;
-            }
+            canActivate = false;
         }
-
-        #endregion
-        #region Implementation Methods/Functions
-
-        void Update()
-        {
-            if (mCanTalk && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
-            {
-                DialogManager.instance.ShowDialog(lines, isPerson);
-                DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
-            }
-        }
-
-        #endregion
     }
 }

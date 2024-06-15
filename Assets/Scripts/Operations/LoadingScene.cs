@@ -1,47 +1,30 @@
-﻿/****************************************************************************************
- * Copyright: Bonehead Games
- * Script: LoadingScene.cs
- * Date Created: 
- * Created By: Rob Broad
- * Modified By: Jeff Moreau
- * Date Last Modified: June 13, 2024
- * Description: Script to Load all data
- * TODO: 
- * Known Bugs: 
- ****************************************************************************************/
-
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace AOD
-{
-    public class LoadingScene : MonoBehaviour
-    {
-        //VARIABLES
-        #region Inspector Variable Declarations and Initializations
+//Bonehead Games
 
-        //Do NOT rename these Variables unless you know what you are changing
-        [SerializeField] private float eLoadingWaitTime = 1.0f;
+public class LoadingScene : MonoBehaviour {
+    public float waitToLoad;
 
-        #endregion
-
-        //FUNCTIONS
-        #region Implementation Methods/Functions
-
-        void Update()
+	// Use this for initialization
+	void Start () {
+		
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		if(waitToLoad > 0)
         {
-            eLoadingWaitTime -= Time.deltaTime;
-
-            if (eLoadingWaitTime <= 0)
+            waitToLoad -= Time.deltaTime;
+            if(waitToLoad <= 0)
             {
-                eLoadingWaitTime = 0;
+                SceneManager.LoadScene(PlayerPrefs.GetString("Current_Scene"));
 
                 GameManager.instance.LoadData();
                 QuestManager.instance.LoadQuestData();
-                SceneManager.LoadScene(PlayerPrefs.GetString("Current_Scene"));
             }
         }
-
-        #endregion
-    }
+	}
 }
