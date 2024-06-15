@@ -157,7 +157,7 @@ Transform:
   - {fileID: 1263365906}
   - {fileID: 1858921662}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &100535589
 GameObject:
@@ -318,7 +318,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1666963348}
     m_Modifications:
     - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_Name
@@ -326,27 +326,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.16
+      value: -19.901474
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.85
+      value: 10.150179
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.02030359
+      value: 0.050865978
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.z
@@ -358,7 +358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -366,7 +366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.4251
+      value: 1.4250998
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalScale.x
@@ -407,20 +407,26 @@ PrefabInstance:
     - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: transitionName
-      value: Bajang-2
+      value: Fawab-2
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
-      value: Chulu Shop
+      value: Fawab Shop
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
-      value: Bajang Shop-1
+      value: Fawab Shop-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+--- !u!4 &286080472 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 286080471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &295425927
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -478,166 +484,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2d3c32235d5bb747bea5c98642bf77d, type: 3}
---- !u!1 &330448997
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 330449000}
-  - component: {fileID: 330448999}
-  - component: {fileID: 330448998}
-  m_Layer: 0
-  m_Name: Zone4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &330448998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
-  potentialBattles:
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 250
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-    - Potion of Vitality
-  - enemies:
-    - Orc Marauder
-    - 250
-    rewardXP: 125
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    rewardXP: 300
-    rewardItems:
-    - +1 Long Sword
-  - enemies:
-    - 'Orc '
-    - 'Orc '
-    rewardXP: 200
-    rewardItems:
-    - Throwing Hammer
-    - Throwing Hammer
-    - Potion of Vitality
-  - enemies:
-    - Ghoul
-    - Ghoul
-    rewardXP: 400
-    rewardItems:
-    - Potion of Vitality
-    - Mana Potion
-  - enemies:
-    - Mountain Cyclops
-    - Mountain Cyclops
-    rewardXP: 380
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  - enemies:
-    - Specter
-    - Specter
-    rewardXP: 400
-    rewardItems:
-    - Ring of Protection +1
-    - Mana Potion
-  - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    rewardXP: 300
-    rewardItems:
-    - Potion of Vitality
-    - +1 Long Sword
-  - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    - Goblin Militant
-    - Goblin Militant
-    rewardXP: 350
-    rewardItems:
-    - +1 Long Sword
-    - Throwing Axe
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 500
-    rewardItems:
-    - Gold Band
-    - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &330448999
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -6.252241, y: 4.0477734}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 21.599987, y: 21.8521}
-  m_EdgeRadius: 0
---- !u!4 &330449000
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330448997}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.952682, y: -5.8961825, z: 45.422268}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1523920929}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &479515488
 GameObject:
   m_ObjectHideFlags: 0
@@ -683,7 +529,7 @@ Transform:
   - {fileID: 1260139656}
   - {fileID: 1403537856}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &596909163
 GameObject:
@@ -1163,6 +1009,155 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &883681263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 883681264}
+  - component: {fileID: 883681266}
+  - component: {fileID: 883681265}
+  m_Layer: 0
+  m_Name: Zone2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &883681264
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883681263}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -80.747314, y: -6.3961825, z: 45.422268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1523920929}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &883681265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883681263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 750
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 700
+    rewardItems:
+    - Potion of Healing
+    - Mana Potion
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Mana Potion
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 500
+    rewardItems:
+    - Potion of Healing
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1200
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+    - Steel Helmet
+  - enemies:
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
+    rewardItems:
+    - Mana Potion
+    - Mana Potion
+  - enemies:
+    - Orc Blood Warrior
+    rewardXP: 150
+    rewardItems:
+    - Buckler
+    - Short Sword
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Long Bow
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 150
+    rewardItems:
+    - Amulet of Protection +1
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1000
+    rewardItems:
+    - Mana Potion
+    - Ringmail
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 7
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &883681266
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883681263}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 55.76816, y: 25.573427}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 94.97936, y: 16.45219}
+  m_EdgeRadius: 0
 --- !u!1001 &991982741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1232,7 +1227,7 @@ GameObject:
   - component: {fileID: 1018156684}
   - component: {fileID: 1018156683}
   m_Layer: 0
-  m_Name: Zone6
+  m_Name: BBGZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1362,8 +1357,555 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1523920929}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1079386080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1079386081}
+  - component: {fileID: 1079386083}
+  - component: {fileID: 1079386082}
+  m_Layer: 0
+  m_Name: Zone7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1079386081
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079386080}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -80.747314, y: -48.296185, z: 45.422268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1523920929}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1079386082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079386080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 750
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 700
+    rewardItems:
+    - Potion of Healing
+    - Mana Potion
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Mana Potion
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 500
+    rewardItems:
+    - Potion of Healing
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1200
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+    - Steel Helmet
+  - enemies:
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
+    rewardItems:
+    - Mana Potion
+    - Mana Potion
+  - enemies:
+    - Orc Blood Warrior
+    rewardXP: 150
+    rewardItems:
+    - Buckler
+    - Short Sword
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Long Bow
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 150
+    rewardItems:
+    - Amulet of Protection +1
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1000
+    rewardItems:
+    - Mana Potion
+    - Ringmail
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 7
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1079386083
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079386080}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 55.76816, y: 25.573427}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 94.97936, y: 16.45219}
+  m_EdgeRadius: 0
+--- !u!1001 &1115601877
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1666963348}
+    m_Modifications:
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_Name
+      value: Inn Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.050865978
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4250998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.049373865
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.8407285
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.021082938
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.0421659
+      objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: transitionName
+      value: Fawab-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaToLoad
+      value: Fawab Inn
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaTransitionName
+      value: Fawab Inn-1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+--- !u!4 &1115601878 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 1115601877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1134884798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1134884799}
+  - component: {fileID: 1134884801}
+  - component: {fileID: 1134884800}
+  m_Layer: 0
+  m_Name: Zone5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1134884799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134884798}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 42.452682, y: 6.0038176, z: 45.422268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1523920929}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1134884800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134884798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - +1 Long Sword
+  - enemies:
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1350
+    rewardItems:
+    - Throwing Hammer
+    - Throwing Hammer
+  - enemies:
+    - Efreeti
+    rewardXP: 7000
+    rewardItems:
+    - Potion of Vitality
+    - Mana Potion
+  - enemies:
+    - Silats
+    rewardXP: 5000
+    rewardItems:
+    - Greater Potion of Healing
+  - enemies:
+    - Specter
+    rewardXP: 200
+    rewardItems:
+    - Ring of Protection +1
+  - enemies:
+    - Heway
+    - Heway
+    rewardXP: 900
+    rewardItems:
+    - Battle Axe
+    - Battle Axe
+  - enemies:
+    - Heway
+    - Heway
+    rewardXP: 900
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Nasnas
+    - Nasnas
+    rewardXP: 940
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1134884801
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1134884798}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -28.724915, y: -4.4856186}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.10962, y: 81.30272}
+  m_EdgeRadius: 0
+--- !u!1 &1237235814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1237235815}
+  - component: {fileID: 1237235817}
+  - component: {fileID: 1237235816}
+  m_Layer: 0
+  m_Name: Zone4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1237235815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237235814}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -14.647316, y: 6.0038176, z: 45.422268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1523920929}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1237235816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237235814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - +1 Long Sword
+  - enemies:
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1350
+    rewardItems:
+    - Throwing Hammer
+    - Throwing Hammer
+  - enemies:
+    - Efreeti
+    rewardXP: 7000
+    rewardItems:
+    - Potion of Vitality
+    - Mana Potion
+  - enemies:
+    - Silats
+    rewardXP: 5000
+    rewardItems:
+    - Greater Potion of Healing
+  - enemies:
+    - Specter
+    rewardXP: 200
+    rewardItems:
+    - Ring of Protection +1
+  - enemies:
+    - Heway
+    - Heway
+    rewardXP: 900
+    rewardItems:
+    - Battle Axe
+    - Battle Axe
+  - enemies:
+    - Heway
+    - Heway
+    rewardXP: 900
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Nasnas
+    - Nasnas
+    rewardXP: 940
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1237235817
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237235814}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -28.724915, y: -4.4856186}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.10962, y: 81.30272}
+  m_EdgeRadius: 0
 --- !u!1 &1260139655
 GameObject:
   m_ObjectHideFlags: 0
@@ -11291,9 +11833,9 @@ Transform:
   - {fileID: 100535590}
   - {fileID: 613889048}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1309207703
+--- !u!1 &1297731733
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11301,129 +11843,135 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1309207706}
-  - component: {fileID: 1309207705}
-  - component: {fileID: 1309207704}
+  - component: {fileID: 1297731734}
+  - component: {fileID: 1297731736}
+  - component: {fileID: 1297731735}
   m_Layer: 0
-  m_Name: Zone5
+  m_Name: Zone1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1309207704
+  m_IsActive: 1
+--- !u!4 &1297731734
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297731733}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -80.747314, y: 12.800001, z: 45.422268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1523920929}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1297731735
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309207703}
+  m_GameObject: {fileID: 1297731733}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
   potentialBattles:
   - enemies:
-    - Minotaur
-    rewardXP: 700
-    rewardItems:
-    - Gold Band
-    - Gold Band
-    - Gold Band
-  - enemies:
-    - Death Merchant
-    - Death Merchant
-    - Death Merchant
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
     rewardXP: 750
     rewardItems:
-    - Spirit Rune
+    - Potion of Healing
+    - Potion of Healing
   - enemies:
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    - Orc Blood Warrior
-    rewardXP: 600
-    rewardItems:
-    - +1 Long Sword
-  - enemies:
-    - Ogre
-    - Ogre
-    rewardXP: 900
-    rewardItems:
-    - Amulet of Protection +2
-  - enemies:
-    - Ghoul
-    - Ghoul
-    - Ghoul
-    rewardXP: 600
-    rewardItems:
-    - Potion of Vitality
-    - Potion of Vitality
-    - Mana Potion
-    - Mana Potion
-  - enemies:
-    - Succubus
-    rewardXP: 1000
-    rewardItems:
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-    - Greater Potion of Healing
-  - enemies:
-    - Specter
-    rewardXP: 200
-    rewardItems:
-    - Ring of Protection +1
-  - enemies:
-    - Orc Chieftan
-    rewardXP: 1100
-    rewardItems:
-    - Chainmail
-    - Chailmail Leggings
-  - enemies:
-    - Wight
+    - Orc Marauder
+    - Goblin Enforcer
     rewardXP: 700
     rewardItems:
-    - Chainmail Helmet
-    - Chainmail Gauntlets
+    - Potion of Healing
+    - Mana Potion
   - enemies:
-    - Earth Elemental
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Mana Potion
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 500
+    rewardItems:
+    - Potion of Healing
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1200
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+    - Steel Helmet
+  - enemies:
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
+    rewardItems:
+    - Mana Potion
+    - Mana Potion
+  - enemies:
+    - Orc Blood Warrior
+    rewardXP: 150
+    rewardItems:
+    - Buckler
+    - Short Sword
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Long Bow
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 150
+    rewardItems:
+    - Amulet of Protection +1
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
     rewardXP: 1000
     rewardItems:
-    - Earth Rune
-  - enemies:
-    - Fire Elemental
-    rewardXP: 1400
-    rewardItems:
-    - Fire Rune
-  - enemies:
-    - Water Elemental
-    rewardXP: 800
-    rewardItems:
-    - Water Rune
+    - Mana Potion
+    - Ringmail
   activateOnEnter: 0
   activateOnStay: 1
   activateOnExit: 0
-  timeBetweenBattles: 10
+  timeBetweenBattles: 7
   deactivateAfterStarting: 0
   cannotFlee: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
---- !u!61 &1309207705
+--- !u!61 &1297731736
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309207703}
+  m_GameObject: {fileID: 1297731733}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.8325024, y: -2.618391}
+  m_Offset: {x: 55.76816, y: 25.573427}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -11434,22 +11982,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 28.007923, y: 38.1282}
+  m_Size: {x: 94.97936, y: 16.45219}
   m_EdgeRadius: 0
---- !u!4 &1309207706
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309207703}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.9526825, y: 25.403818, z: 45.422268}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1523920929}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1336130410
 GameObject:
   m_ObjectHideFlags: 0
@@ -107402,146 +107936,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &1392168073
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1392168076}
-  - component: {fileID: 1392168075}
-  - component: {fileID: 1392168074}
-  m_Layer: 0
-  m_Name: Zone3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1392168074
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392168073}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
-  potentialBattles:
-  - enemies:
-    - Orc Marauder
-    rewardXP: 125
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-  - enemies:
-    - Orc Marauder
-    rewardXP: 125
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-  - enemies:
-    - Orc Blood Warrior
-    rewardXP: 150
-    rewardItems:
-    - +1 Long Sword
-  - enemies:
-    - 'Orc '
-    rewardXP: 100
-    rewardItems:
-    - Throwing Hammer
-    - Throwing Hammer
-  - enemies:
-    - Ghoul
-    rewardXP: 200
-    rewardItems:
-    - Potion of Vitality
-    - Mana Potion
-  - enemies:
-    - Mountain Cyclops
-    rewardXP: 190
-    rewardItems:
-    - Greater Potion of Healing
-  - enemies:
-    - Specter
-    rewardXP: 200
-    rewardItems:
-    - Ring of Protection +1
-  - enemies:
-    - Barbarian Skeleton
-    - Barbarian Skeleton
-    rewardXP: 150
-    rewardItems:
-    - Battle Axe
-    - Battle Axe
-  - enemies:
-    - Orc Marauder
-    - Goblin Militant
-    rewardXP: 200
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-  - enemies:
-    - Orc Marauder
-    - Orc Marauder
-    rewardXP: 250
-    rewardItems:
-    - Throwing Axe
-    - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &1392168075
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392168073}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -28.724915, y: -4.4856186}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 20.10962, y: 81.30272}
-  m_EdgeRadius: 0
---- !u!4 &1392168076
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392168073}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.052681, y: 6.0038176, z: 45.422268}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1523920929}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1397434787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -107990,6 +108384,234 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &1428108877
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1666963348}
+    m_Modifications:
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_Name
+      value: Oluma Exit (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.050865978
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00085841445
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.0125003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.561
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.51906395
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -3.849967
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 23.707157
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 1.599772
+      objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: transitionName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaTransitionName
+      value: Oluma-3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+--- !u!4 &1428108878 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 1428108877}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1448271835
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1666963348}
+    m_Modifications:
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_Name
+      value: Oluma Exit (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.4998212
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.050865978
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.0125003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.561
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.51906395
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -3.849967
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 22.137619
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 1.5743642
+      objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: transitionName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaTransitionName
+      value: Oluma-3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+--- !u!4 &1448271836 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 1448271835}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1523920928
 GameObject:
   m_ObjectHideFlags: 0
@@ -108017,14 +108639,493 @@ Transform:
   m_LocalPosition: {x: 60.047318, y: -1.9038177, z: -45.71133}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2093805002}
-  - {fileID: 1919128153}
-  - {fileID: 1392168076}
-  - {fileID: 330449000}
-  - {fileID: 1309207706}
+  - {fileID: 1297731734}
+  - {fileID: 883681264}
+  - {fileID: 1703386652}
+  - {fileID: 1237235815}
+  - {fileID: 1134884799}
+  - {fileID: 1530181324}
+  - {fileID: 1079386081}
   - {fileID: 1018156685}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1530181323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1530181324}
+  - component: {fileID: 1530181326}
+  - component: {fileID: 1530181325}
+  m_Layer: 0
+  m_Name: Zone6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1530181324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530181323}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -80.747314, y: -48.296185, z: 45.422268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1523920929}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1530181325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530181323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 750
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 700
+    rewardItems:
+    - Potion of Healing
+    - Mana Potion
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Mana Potion
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 500
+    rewardItems:
+    - Potion of Healing
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1200
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+    - Steel Helmet
+  - enemies:
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
+    rewardItems:
+    - Mana Potion
+    - Mana Potion
+  - enemies:
+    - Orc Blood Warrior
+    rewardXP: 150
+    rewardItems:
+    - Buckler
+    - Short Sword
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Long Bow
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 150
+    rewardItems:
+    - Amulet of Protection +1
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1000
+    rewardItems:
+    - Mana Potion
+    - Ringmail
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 7
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1530181326
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530181323}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 55.76816, y: 25.573427}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 94.97936, y: 16.45219}
+  m_EdgeRadius: 0
+--- !u!1 &1666963347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1666963348}
+  m_Layer: 0
+  m_Name: Exits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1666963348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666963347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 42.061474, y: -4.300179, z: -0.030562388}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1115601878}
+  - {fileID: 286080472}
+  - {fileID: 2031192572}
+  - {fileID: 1998802102}
+  - {fileID: 1448271836}
+  - {fileID: 2095290220}
+  - {fileID: 1428108878}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1703386651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1703386652}
+  - component: {fileID: 1703386654}
+  - component: {fileID: 1703386653}
+  m_Layer: 0
+  m_Name: Zone3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1703386652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703386651}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -33.8, y: 6.0038176, z: 45.422268}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1523920929}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1703386653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703386651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Desert Centaur
+    rewardXP: 450
+    rewardItems:
+    - +1 Long Sword
+  - enemies:
+    - Desert Centaur
+    - Desert Centaur
+    - Desert Centaur
+    rewardXP: 1350
+    rewardItems:
+    - Throwing Hammer
+    - Throwing Hammer
+  - enemies:
+    - Efreeti
+    rewardXP: 7000
+    rewardItems:
+    - Potion of Vitality
+    - Mana Potion
+  - enemies:
+    - Silats
+    rewardXP: 5000
+    rewardItems:
+    - Greater Potion of Healing
+  - enemies:
+    - Specter
+    rewardXP: 200
+    rewardItems:
+    - Ring of Protection +1
+  - enemies:
+    - Heway
+    - Heway
+    rewardXP: 900
+    rewardItems:
+    - Battle Axe
+    - Battle Axe
+  - enemies:
+    - Heway
+    - Heway
+    rewardXP: 900
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  - enemies:
+    - Nasnas
+    - Nasnas
+    rewardXP: 940
+    rewardItems:
+    - Throwing Axe
+    - Throwing Axe
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 10
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1703386654
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703386651}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -28.724915, y: -4.4856186}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.10962, y: 81.30272}
+  m_EdgeRadius: 0
+--- !u!1 &1720546777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1720546780}
+  - component: {fileID: 1720546779}
+  - component: {fileID: 1720546778}
+  m_Layer: 0
+  m_Name: Zone6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1720546778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720546777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundSprite: {fileID: 21300000, guid: 275b4078b0763cf45bc32a2c715ded4b, type: 3}
+  potentialBattles:
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 750
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 700
+    rewardItems:
+    - Potion of Healing
+    - Mana Potion
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Mana Potion
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 500
+    rewardItems:
+    - Potion of Healing
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1200
+    rewardItems:
+    - Potion of Healing
+    - Potion of Healing
+    - Steel Helmet
+  - enemies:
+    - Black Snake
+    - Black Snake
+    rewardXP: 600
+    rewardItems:
+    - Mana Potion
+    - Mana Potion
+  - enemies:
+    - Orc Blood Warrior
+    rewardXP: 150
+    rewardItems:
+    - Buckler
+    - Short Sword
+  - enemies:
+    - Orc Marauder
+    rewardXP: 450
+    rewardItems:
+    - Long Bow
+  - enemies:
+    - Orc Marauder
+    - Goblin Enforcer
+    rewardXP: 150
+    rewardItems:
+    - Amulet of Protection +1
+  - enemies:
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    - Goblin Enforcer
+    rewardXP: 1000
+    rewardItems:
+    - Mana Potion
+    - Ringmail
+  activateOnEnter: 0
+  activateOnStay: 1
+  activateOnExit: 0
+  timeBetweenBattles: 7
+  deactivateAfterStarting: 0
+  cannotFlee: 0
+  shouldCompleteQuest: 0
+  QuestToComplete: 
+--- !u!61 &1720546779
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720546777}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 55.76816, y: 25.573427}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 94.97936, y: 16.45219}
+  m_EdgeRadius: 0
+--- !u!4 &1720546780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720546777}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -20.699997, y: -62.2, z: -0.2890625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1858921661
 GameObject:
@@ -108233,165 +109334,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1919128150
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1919128153}
-  - component: {fileID: 1919128152}
-  - component: {fileID: 1919128151}
-  m_Layer: 0
-  m_Name: Zone2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &1919128151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
-  potentialBattles:
-  - enemies:
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    - Mad Gazer
-    rewardXP: 100
-    rewardItems:
-    - Leather Gloves
-    - Shield
-  - enemies:
-    - Flying Snake
-    - Flying Snake
-    rewardXP: 100
-    rewardItems:
-    - Bronze Helmet
-  - enemies:
-    - Revener
-    rewardXP: 100
-    rewardItems:
-    - Battle Hammer
-  - enemies:
-    - Battle Tortoise
-    rewardXP: 100
-    rewardItems:
-    - Crossbow
-  - enemies:
-    - Spider
-    rewardXP: 100
-    rewardItems:
-    - Lucern Hammer
-  - enemies:
-    - Soul Thief
-    - Soul Thief
-    - Soul Thief
-    rewardXP: 120
-    rewardItems:
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Zombie
-    - Zombie
-    rewardXP: 100
-    rewardItems:
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Goblin Enforcer
-    rewardXP: 65
-    rewardItems:
-    - Battle Axe
-  - enemies:
-    - Goblin Militant
-    rewardXP: 75
-    rewardItems:
-    - Ring of the Owl
-  - enemies:
-    - Necromancer's Minion
-    - Necromancer's Minion
-    - Necromancer's Minion
-    rewardXP: 120
-    rewardItems:
-    - Food
-    - Food
-    - Food
-    - Food
-    - Potion of Healing
-  - enemies:
-    - Barabarian Skeleton
-    rewardXP: 75
-    rewardItems:
-    - throwing Axe
-    - throwing Axe
-  - enemies:
-    - Animated Dead
-    - Animated Dead
-    rewardXP: 100
-    rewardItems:
-    - Potion of Vitality
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  timeBetweenBattles: 10
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &1919128152
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 28.73061, y: -2.7049007}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 94.27766, y: 22.858612}
-  m_EdgeRadius: 0
---- !u!4 &1919128153
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1919128150}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -54.44732, y: -25.096182, z: 45.422268}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1523920929}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1984204434
 GameObject:
   m_ObjectHideFlags: 0
@@ -108569,6 +109511,120 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1998802101
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1666963348}
+    m_Modifications:
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_Name
+      value: Oluma Exit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.4998212
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.050865978
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.0125003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.561
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.51906395
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -3.849967
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 22.137619
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 1.5743642
+      objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: transitionName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaTransitionName
+      value: Oluma-3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+--- !u!4 &1998802102 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 1998802101}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2024628438
 GameObject:
   m_ObjectHideFlags: 0
@@ -108736,31 +109792,31 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1666963348}
     m_Modifications:
     - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_Name
-      value: Mandu  Exit
+      value: Oluma  Exit
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 33.42
+      value: 6.938526
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 42.36
+      value: -2.4998212
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.02030359
+      value: 0.050865978
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalRotation.z
@@ -108772,7 +109828,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -108788,7 +109844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.0125
+      value: 3.0125003
       objectReference: {fileID: 0}
     - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_LocalScale.x
@@ -108805,186 +109861,157 @@ PrefabInstance:
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.9508506
+      value: 0.51906395
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.082503855
+      value: -3.849967
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.4135006
+      value: 0.7038326
       objectReference: {fileID: 0}
     - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.12357995
+      value: -0.049478352
       objectReference: {fileID: 0}
     - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: transitionName
-      value: Lan-1
+      value: Fawab-1
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
-      value: Mandu
+      value: Oluma
       objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
-      value: Mandu-6
+      value: Oluma-3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
---- !u!1 &2093804999
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2093805002}
-  - component: {fileID: 2093805001}
-  - component: {fileID: 2093805000}
-  m_Layer: 0
-  m_Name: Zone1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &2093805000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093804999}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd69dda360402ee46997ba454dde2ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  backgroundSprite: {fileID: 0}
-  potentialBattles:
-  - enemies:
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 150
-    rewardItems:
-    - Potion of Healing
-    - Potion of Healing
-  - enemies:
-    - Orc
-    - Goblin
-    rewardXP: 150
-    rewardItems:
-    - Potion of Healing
-    - Mana Potion
-  - enemies:
-    - Orc
-    rewardXP: 100
-    rewardItems:
-    - Mana Potion
-  - enemies:
-    - Goblin
-    - Goblin
-    rewardXP: 100
-    rewardItems:
-    - Potion of Healing
-  - enemies:
-    - Orc
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 250
-    rewardItems:
-    - Potion of Healing
-    - Potion of Healing
-    - Leather Helmet
-  - enemies:
-    - Giant Wasp
-    - Giant Wasp
-    rewardXP: 100
-    rewardItems:
-    - Mana Potion
-    - Mana Potion
-  - enemies:
-    - Orc Blood Warrior
-    rewardXP: 150
-    rewardItems:
-    - Buckler
-    - Short Sword
-  - enemies:
-    - Orc Marauder
-    rewardXP: 125
-    rewardItems:
-    - Short Bow
-  - enemies:
-    - Orc
-    - Goblin
-    rewardXP: 150
-    rewardItems:
-    - Amulet of Protection +1
-  - enemies:
-    - Goblin
-    - Goblin
-    - Goblin
-    - Goblin
-    rewardXP: 200
-    rewardItems:
-    - Mana Potion
-    - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
-  timeBetweenBattles: 7
-  deactivateAfterStarting: 0
-  cannotFlee: 0
-  shouldCompleteQuest: 0
-  QuestToComplete: 
---- !u!61 &2093805001
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093804999}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 55.253742, y: 22.241714}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 93.95052, y: 23.115616}
-  m_EdgeRadius: 0
---- !u!4 &2093805002
+--- !u!4 &2031192572 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 2031192571}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093804999}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -80.747314, y: 7.703818, z: 45.422268}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1523920929}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2095290219
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1666963348}
+    m_Modifications:
+    - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_Name
+      value: Oluma Exit (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 60.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.050865978
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00085841445
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.098
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.0125003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.561
+      objectReference: {fileID: 0}
+    - target: {fileID: 4469010750423286, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.51906395
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -3.849967
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 23.707157
+      objectReference: {fileID: 0}
+    - target: {fileID: 61028343127646202, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 1.599772
+      objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: transitionName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: areaTransitionName
+      value: Oluma-3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
+--- !u!4 &2095290220 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
+    type: 3}
+  m_PrefabInstance: {fileID: 2095290219}
+  m_PrefabAsset: {fileID: 0}

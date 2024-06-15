@@ -8965,6 +8965,251 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41d568113c653714782a64bfeeedbf6b, type: 3}
+--- !u!1 &1085181768
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1085181769}
+  - component: {fileID: 1085181773}
+  - component: {fileID: 1085181772}
+  - component: {fileID: 1085181771}
+  - component: {fileID: 1085181770}
+  m_Layer: 0
+  m_Name: Tazmina (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1085181769
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085181768}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.959487, y: -19.436697, z: 71.53293}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1935029146}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1085181770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085181768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n- Player
+  - Hello Taz
+  - n- Tazmina
+  - Ok, now I can speak with you.
+  - I can you you have my father's permission
+  - n- Player
+  - First we would like to aplogoze for being so bold by approaching you.
+  - We were unaware of your customs and should have thought to ask on the boat ride
+    here about such imortant things.
+  - In our travels to Ashtir and Larsu we never encountered a custom like this, and
+    on Haven it would be a completely foreign concept.
+  - n- Tazmina
+  - Oh you are well travelled.  I would love to leave here and see the world, explore
+    other cultures up close instead of just in books and through lectures.
+  - n- Player
+  - 'That is why your father told us we should speak with you.  '
+  - Ashtir is shrinking, that arctic region is getting warmer, and has made the animals
+    and creatures of that nation much more aggressive.
+  - n- Tazmina
+  - That is terrible, those poor people.  Is it true?  Is it really that cold there
+    that you can see your breath?
+  - n- Player
+  - Yes it is very cold there, and things freeze very quickly, and you see your breath
+    every moment you are outside.  I would hate to see how cold it is normally
+  - n- Tazmina
+  - I would like to experince the cold before I die
+  - n- Player
+  - We thought the same but it was much harder than we ever expected.
+  - The second thing we need to mention is Larsu is over run with very aggressive
+    snakes.
+  - We have even seen snakemen and flying snakes
+  - n- Tazmina
+  - Flying snakes?  There are tales of flying snakes back in the days before Piltara
+    sank into the depths of the ocean.
+  - It is even said they had several type of snake people.
+  - You know the story of Piltara
+  - n- Player
+  - Vaguely, heard stories as child but really don't remember anything other than
+    the name.
+  - n- Tazmina
+  - Let me fill you in.  Many people think the land of Piltara is a myth and the
+    stories are fables to frighten and entertain.
+  - But in fact it was a very really place, and the the most horrifying stories are
+    nowhere near as gruesome as the truth.
+  - The land of Piltara was a very evil place, with a race called the Yaun-Ti.
+  - n- Player
+  - That is what Coatl said.
+  - n- Tazmina
+  - Wait.  You met Coatl?  Are you pulling my leg?
+  - n- Player
+  - No we met Coatl or an avatar of Coatl in Larsu, teh avatar was imprisoned in
+    the the temple to Coatl
+  - n-Tazmina
+  - Maybe I should be learning from you instead of me trying to explain things
+  - n- Player
+  - No, please continue, we feel so lost and out of sorts, there is so much we need
+    to know
+  - n- Tazmina
+  - The Yuan-Ti were cruel beings, some looked almost perfectly human, other had
+    snake bodies and human upper part, others had a snake head and human body.  The
+    most wretched were the ones they captured and changed into snake people but I
+    can not recall the name for them.
+  - n- Player
+  - Hstachi...
+  - n- Tazmina
+  - Yes Hstachi, how did yo know that?
+  - n- Player
+  - A person everyone in Haven though was crazy was babling about Hstachi.
+  - And we think we battled one in Larsu
+  - n- Tazmina
+  - That's impossible.  The Yuan-Ti disappeared thousands of years ago when they
+    warred with teh Elves and the Dwarves and the other older races.
+  - The Hstachi were captured people that were turned from Human to pathetic creatures. 
+    They were turned through blood magic.  But since the Yuan-Ti perished there is
+    no one to create new Hstachi.  At the end of the greatest battle the land of
+    Piltara sank into the ocean and the few Yuan-Ti that were found in other lands
+    were interrogated, and executed.
+  - N- Player
+  - Very interesting.
+  - That will give us a lot to think about.
+  - We thank you for your time, and please forgive us for our boldness earlier.
+  - n- Tazmina
+  - Nothing to forgive, you did not know our ways, but try to keep it in mind if
+    you plan to stay here in Oluma.
+  - n- Player
+  - We will definitely keep it in the front of our thoughts as we venture through
+    your land.
+  - n- Tazmina
+  - Goodbye, but please do come back if you learn more.  I love a good mystery.
+  - N- Goodbye
+  isPerson: 1
+  shouldActivateQuest: 0
+  questToMark: Taz
+  markComplete: 1
+--- !u!61 &1085181771
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085181768}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.043886185, y: 0.061790466}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.61, y: 3.79}
+    newSize: {x: 1.61, y: 3.79}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.7580528, y: 4.933136}
+  m_EdgeRadius: 0
+--- !u!61 &1085181772
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085181768}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.61, y: 3.79}
+    newSize: {x: 1.61, y: 3.79}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.61, y: 3.79}
+  m_EdgeRadius: 0
+--- !u!212 &1085181773
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085181768}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -5947163505982640537, guid: 68af419fe37fdd846a46073620e7dfba,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.61, y: 3.79}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1087379231
 GameObject:
   m_ObjectHideFlags: 0
@@ -145676,7 +145921,7 @@ PrefabInstance:
     - target: {fileID: 2434758651056572089, guid: ad1680edb5e536a4da50947749261935,
         type: 3}
       propertyPath: m_Name
-      value: QuestManagement
+      value: Taz
       objectReference: {fileID: 0}
     - target: {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935,
         type: 3}
