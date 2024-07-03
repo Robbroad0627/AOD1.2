@@ -6,70 +6,69 @@ using UnityEngine;
 
 public class Boat : MonoBehaviour
 {
+    //public Rigidbody2D theRigidBody;
+    //public float moveSpeed;
 
-    public Rigidbody2D theRigidBody;
-    public float moveSpeed;
+    //public Animator myAnim;
 
-    public Animator myAnim;
+    //public static Boat instance;
 
-    public static Boat instance;
+    //public string areaTransitionName;
+    //private Vector3 bottomLeftLimit;
+    //private Vector3 topRightLimit;
 
-    public string areaTransitionName;
-    private Vector3 bottomLeftLimit;
-    private Vector3 topRightLimit;
-
-    public bool canMove = true;
+    //public bool canMove = true;
 
     // Use this for initialization
     void Start()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            if (instance != this)
-            {
-                Destroy(gameObject);
-            }
-        }
+        //if (instance == null)
+        //{
+        //    instance = this;
+        //}
+        //else
+        //{
+        //    if (instance != this)
+        //    {
+        //        Destroy(gameObject);
+        //    }
+        //}
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (canMove)
-        {
-            theRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
+        //if (canMove)
+        //{
+        //    theRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
 
-        }
-        else
-        {
-            theRigidBody.velocity = Vector2.zero;
-        }
+        //}
+        //else
+        //{
+        //    theRigidBody.velocity = Vector2.zero;
+        //}
 
 
-        myAnim.SetFloat("moveX", theRigidBody.velocity.x);
-        myAnim.SetFloat("moveY", theRigidBody.velocity.y);
+        //myAnim.SetFloat("moveX", theRigidBody.velocity.x);
+        //myAnim.SetFloat("moveY", theRigidBody.velocity.y);
 
-        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
-        {
-            if (canMove)
-            {
-                myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
-                myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
-            }
-        }
+        //if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        //{
+        //    if (canMove)
+        //    {
+        //        myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+        //        myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+        //    }
+        //}
 
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
+        //transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
     }
 
-    public void SetBounds(Vector3 botLeft, Vector3 topRight)
-    {
-        bottomLeftLimit = botLeft + new Vector3(.5f, 1f, 0f);
-        topRightLimit = topRight + new Vector3(-.5f, -1f, 0f);
-    }
+    //public void SetBounds(Vector3 botLeft, Vector3 topRight)
+    //{
+    //    bottomLeftLimit = botLeft + new Vector3(.5f, 1f, 0f);
+    //    topRightLimit = topRight + new Vector3(-.5f, -1f, 0f);
+    //}
 }

@@ -8,18 +8,21 @@ using UnityEngine.SceneManagement;
 public class AreaExit : MonoBehaviour {
 
     public string areaToLoad;
-
     public string areaTransitionName;
-
    
     public float waitToLoad = 1f;
+
+    public GameObject boat;
+    public GameObject boatSpawn;
+
     private bool shouldLoadAfterFade;
+    private bool shouldRunAnimationBeforeFade;
 
     public bool needBoat = false;
 
 
 	void Start () {
-        
+
     }
 	
 	
@@ -39,20 +42,33 @@ public class AreaExit : MonoBehaviour {
     {
         if(other.tag == "Player")
         {
-            if(needBoat && !GameManager.instance.haveBoat)
+            if (needBoat && !GameManager.instance.haveBoat)
             {
                 //Cant use boat area without one.
                 Debug.Log("Area needs boat but GameManager.haveBoat == false");
                 return;
             }
-            this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
-            //SceneManager.LoadScene(areaToLoad);
-            shouldLoadAfterFade = true;
-            GameManager.instance.fadingBetweenAreas = true;
+            else if (needBoat && GameManager.instance.haveBoat)
+            {
+                Instantiate(boat, boatSpawn.transform);
+                var player = PlayerController.instance;
+                player.GetComponentInParent<Transform>().position = boatSpawn.transform.position;
+                player.GetComponentInParent<Transform>().position = boat.transform.localPosition;
+                player.GetComponentInParent<SpriteRenderer>().enabled = false;
+                player.GetComponentInParent<Collider2D>().enabled = false;
+                player.canMove = false;
+            }
+            else if (!needBoat)
+            {
+                this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
+                                    //SceneManager.LoadScene(areaToLoad);
+                shouldLoadAfterFade = true;
+                GameManager.instance.fadingBetweenAreas = true;
 
-            UIFade.instance.FadeToBlack();
+                UIFade.instance.FadeToBlack();
 
-            PlayerController.instance.areaTransitionName = areaTransitionName;
+                PlayerController.instance.areaTransitionName = areaTransitionName;
+            }
         }
     }
 }
