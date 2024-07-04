@@ -20,11 +20,11 @@ public class AreaExit : MonoBehaviour {
 
     public bool needBoat = false;
 
+    private PlayerController player;
 
 	void Start () {
-
+       
     }
-	
 	
 	void Update () {
 		if(shouldLoadAfterFade)
@@ -36,7 +36,24 @@ public class AreaExit : MonoBehaviour {
                 SceneManager.LoadScene(areaToLoad);
             }
         }
-	}
+
+        if (shouldRunAnimationBeforeFade)
+        {
+            if (Boat.instance.boatLeftPort)
+            {
+                this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
+                                    //SceneManager.LoadScene(areaToLoad);
+                shouldLoadAfterFade = true;
+                GameManager.instance.fadingBetweenAreas = true;
+
+                UIFade.instance.FadeToBlack();
+
+                player.areaTransitionName = areaTransitionName;
+                shouldRunAnimationBeforeFade = false;
+                //player.fade = false;
+            }
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -51,12 +68,11 @@ public class AreaExit : MonoBehaviour {
             else if (needBoat && GameManager.instance.haveBoat)
             {
                 Instantiate(boat, boatSpawn.transform);
-                var player = PlayerController.instance;
-                player.GetComponentInParent<Transform>().position = boatSpawn.transform.position;
-                player.GetComponentInParent<Transform>().position = boat.transform.localPosition;
-                player.GetComponentInParent<SpriteRenderer>().enabled = false;
-                player.GetComponentInParent<Collider2D>().enabled = false;
-                player.canMove = false;
+                player = PlayerController.instance;
+                player.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                player.gameObject.GetComponent<Collider2D>().enabled = false;
+                boat.GetComponent<Boat>().isPlayerOnBoat = true;
+                shouldRunAnimationBeforeFade = true;
             }
             else if (!needBoat)
             {

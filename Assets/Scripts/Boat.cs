@@ -9,37 +9,49 @@ public class Boat : MonoBehaviour
     //public Rigidbody2D theRigidBody;
     //public float moveSpeed;
 
-    //public Animator myAnim;
+    public Animator myAnim;
 
-    //public static Boat instance;
+    public static Boat instance;
 
     //public string areaTransitionName;
     //private Vector3 bottomLeftLimit;
     //private Vector3 topRightLimit;
 
-    //public bool canMove = true;
+    public bool isPlayerOnBoat = false;
+
+    public bool boatLeftPort = false;
 
     // Use this for initialization
     void Start()
     {
-        //if (instance == null)
-        //{
-        //    instance = this;
-        //}
-        //else
-        //{
-        //    if (instance != this)
-        //    {
-        //        Destroy(gameObject);
-        //    }
-        //}
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            if (instance != this)
+            {
+                Destroy(gameObject);
+            }
+        }
 
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isPlayerOnBoat)
+        {
+            PlayerController pc = PlayerController.instance;
+
+            if (pc != null) 
+            {
+                pc.gameObject.transform.position = transform.position;
+            }
+        }
+
         //if (canMove)
         //{
         //    theRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * moveSpeed;
@@ -71,4 +83,12 @@ public class Boat : MonoBehaviour
     //    bottomLeftLimit = botLeft + new Vector3(.5f, 1f, 0f);
     //    topRightLimit = topRight + new Vector3(-.5f, -1f, 0f);
     //}
+
+    public void BoatHasLeftPort()
+    {
+        boatLeftPort = true;
+        myAnim.Play("Base Layer.Boat_Port_Idle", 1);
+    }
 }
+
+
