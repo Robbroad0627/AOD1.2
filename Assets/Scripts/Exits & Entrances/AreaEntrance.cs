@@ -8,14 +8,35 @@ public class AreaEntrance : MonoBehaviour {
 
     public string transitionName;
 	public RuntimeAnimatorController playerAnimatorOverride;
+	public bool isPort;
+	public GameObject boatSpawn;
+	public GameObject boat;
 
 	private static RuntimeAnimatorController m_overridenAnimationController;
+	private PlayerController player;
 
 	
 	void Start () {
-		if(transitionName == PlayerController.instance.areaTransitionName)
+
+		player = PlayerController.instance;
+
+		if(transitionName == player.areaTransitionName)
         {
-            PlayerController.instance.transform.position = transform.position;
+			if (isPort)
+			{
+                Instantiate(boat, boatSpawn.transform);
+                boat.GetComponent<SpriteRenderer>().flipX = false;
+                boat.GetComponent<Boat>().boatLeavingPort = false;
+                boat.GetComponent<Boat>().boatEnteringPort = true;
+				
+			}
+			else
+			{
+				player.transform.position = transform.position;
+                player.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+                player.gameObject.GetComponent<Collider2D>().enabled = true;
+                player.canMove = true;
+            }
         }
 
         UIFade.instance.FadeFromBlack();

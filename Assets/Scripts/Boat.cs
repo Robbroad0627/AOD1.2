@@ -9,7 +9,9 @@ public class Boat : MonoBehaviour
     //public Rigidbody2D theRigidBody;
     //public float moveSpeed;
 
-    public Animator myAnim;
+    private Animator myAnim;
+    private Collider2D myCollider;
+    private SpriteRenderer myRenderer;
 
     public static Boat instance;
 
@@ -20,6 +22,8 @@ public class Boat : MonoBehaviour
     public bool isPlayerOnBoat = false;
 
     public bool boatLeftPort = false;
+    public bool boatEnteringPort = false;
+    public bool boatLeavingPort = false;
 
     // Use this for initialization
     void Start()
@@ -37,6 +41,10 @@ public class Boat : MonoBehaviour
         }
 
         DontDestroyOnLoad(gameObject);
+
+        myAnim = GetComponent<Animator>();
+        myCollider = GetComponent<Collider2D>();
+        myRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -48,8 +56,20 @@ public class Boat : MonoBehaviour
 
             if (pc != null) 
             {
-                pc.gameObject.transform.position = transform.position;
+                pc.transform.position = transform.position;
             }
+        }
+
+        if (boatEnteringPort)
+        {
+            myAnim.SetBool("Leave", false);
+            myAnim.SetBool("Enter", true);
+        }
+
+        if (boatLeavingPort)
+        {
+            myAnim.SetBool("Leave", true);
+            myAnim.SetBool("Enter", false);
         }
 
         //if (canMove)
@@ -87,7 +107,6 @@ public class Boat : MonoBehaviour
     public void BoatHasLeftPort()
     {
         boatLeftPort = true;
-        myAnim.Play("Base Layer.Boat_Port_Idle", 1);
     }
 }
 
