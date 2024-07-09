@@ -12,23 +12,15 @@ public class AreaExit : MonoBehaviour {
    
     public float waitToLoad = 1f;
 
-    public GameObject boat;
-    public GameObject boatSpawn;
+    public PortController portController;
 
-    private Boat boatController;
     private bool shouldLoadAfterFade;
     private bool shouldRunAnimationBeforeFade;
 
     public bool needBoat = false;
 
-    private PlayerController player;
-
 	void Start () {
-        //if (needBoat)
-        //{
-        //    boatController = Instantiate(boat, boatSpawn.transform).GetComponent<Boat>();
-        //    Boat.instance = boatController;            
-        //}
+        
     }
 	
 	void Update () {
@@ -38,14 +30,13 @@ public class AreaExit : MonoBehaviour {
             if(waitToLoad <= 0)
             {
                 shouldLoadAfterFade = false;
-                boat.SetActive(false);
                 SceneManager.LoadScene(areaToLoad);
             }
         }
 
         if (shouldRunAnimationBeforeFade)
         {
-            if (boatController.boatLeftPort)
+            if (Boat.boatLeftPort)
             {
                 this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
                                     //SceneManager.LoadScene(areaToLoad);
@@ -54,7 +45,7 @@ public class AreaExit : MonoBehaviour {
 
                 UIFade.instance.FadeToBlack();
 
-                player.areaTransitionName = areaTransitionName;
+                PlayerController.instance.areaTransitionName = areaTransitionName;
                 shouldRunAnimationBeforeFade = false;
             }
         }
@@ -72,16 +63,8 @@ public class AreaExit : MonoBehaviour {
             }
             else if (needBoat && GameManager.instance.haveBoat)
             {
-
-                //player = PlayerController.instance;
-                //player.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-                //player.gameObject.GetComponent<Collider2D>().enabled = false;
-                //player.canMove = false;
-                //boatController.isPlayerOnBoat = true;
-                //boatController.boatLeavingPort = true;
-                //boatController.myAnim.enabled = true;
-                //boatController.myCollider.enabled = true;
-                //shouldRunAnimationBeforeFade = true;
+                portController.PlayerEnterBoat();                
+                shouldRunAnimationBeforeFade = true;
             }
             else if (!needBoat)
             {

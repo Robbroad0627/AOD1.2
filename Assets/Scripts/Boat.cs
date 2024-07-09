@@ -19,11 +19,10 @@ public class Boat : MonoBehaviour
     //private Vector3 bottomLeftLimit;
     //private Vector3 topRightLimit;
 
-    public bool isPlayerOnBoat = false;
-
-    public bool boatLeftPort = false;
-    public bool boatEnteringPort = false;
-    public bool boatLeavingPort = false;
+    public static bool isPlayerOnBoat = false;
+    public static bool isEnteringPort = false;
+    public static bool isLeavingPort = false;
+    public static bool boatLeftPort = false;
 
     // Use this for initialization
     void Start()
@@ -60,16 +59,26 @@ public class Boat : MonoBehaviour
             }
         }
 
-        if (boatEnteringPort)
+        if (isEnteringPort)
         {
-            myAnim.SetBool("Leave", false);
+            myRenderer.flipX = false;
             myAnim.SetBool("Enter", true);
         }
 
-        if (boatLeavingPort)
+        if (!isEnteringPort)
         {
-            myAnim.SetBool("Leave", true);
             myAnim.SetBool("Enter", false);
+        }
+
+        if (isLeavingPort)
+        {
+            myRenderer.flipX = true;
+            myAnim.SetBool("Leave", true);
+        }
+
+        if (!isLeavingPort)
+        {
+            myAnim.SetBool("Leave", false);
         }
 
         //if (canMove)
@@ -104,9 +113,20 @@ public class Boat : MonoBehaviour
     //    topRightLimit = topRight + new Vector3(-.5f, -1f, 0f);
     //}
 
-    public void BoatHasLeftPort()
+    public void OnTriggerEnter2D(Collider2D collision)
     {
-        boatLeftPort = true;
+        if (isLeavingPort && collision.gameObject.name == "PortEntrance")
+        {
+            boatLeftPort = true;
+            isLeavingPort = false;
+        }
+
+        if (isEnteringPort && collision.gameObject.name == "DockedSpot")
+        {
+            isEnteringPort = false;
+            boatLeftPort = false;
+            PortController.boatIsDocked = true;
+        }
     }
 }
 

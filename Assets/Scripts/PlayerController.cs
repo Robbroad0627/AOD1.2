@@ -87,6 +87,17 @@ public class PlayerController : MonoBehaviour
         }
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
+
+        if (Boat.isPlayerOnBoat)
+        {
+            m_spriteRenderer.enabled = false;
+            GetComponent<Collider2D>().enabled = false;
+        }
+        else
+        {
+            m_spriteRenderer.enabled = true;
+            GetComponent<Collider2D>().enabled = true;
+        }
     }
 
     public void SetBounds(Vector3 botLeft, Vector3 topRight)

@@ -120,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.5}
+  m_Offset: {x: 0.100000024, y: 0.7}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -131,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.1}
   m_EdgeRadius: 0
 --- !u!114 &529756661
 MonoBehaviour:
@@ -145,10 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13159e4a2fa95d44b814c59557064cd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayerOnBoat: 0
-  boatLeftPort: 0
-  boatEnteringPort: 0
-  boatLeavingPort: 0
+  portController: {fileID: 4983232825581107134, guid: 797ee2b7c6b9a1542bdc266e01dfe850,
+    type: 3}
 --- !u!95 &2733370733762716489
 Animator:
   serializedVersion: 3
@@ -162,7 +160,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 909911975b1d0c34498f9376950e94a9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
