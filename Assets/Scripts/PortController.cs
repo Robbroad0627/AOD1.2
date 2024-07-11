@@ -11,6 +11,8 @@ public class PortController : MonoBehaviour
     public GameObject portAreaEntrance;
     public Transform dockedSpot;
     public Transform portEntrance;
+    
+    public Boat.Direction direction;
 
     public float disembarkTimer;
 
@@ -19,7 +21,6 @@ public class PortController : MonoBehaviour
     private AreaEntrance areaEntranceController;
 
     public static bool boatIsDocked = false;
-    //private bool boatIsEnteringPort;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class PortController : MonoBehaviour
         {
             boatController = Instantiate(boat).GetComponent<Boat>();
             Boat.instance = boatController;
+            Boat.instance.PortDirection(direction);
         }
 
         if (!Boat.boatLeftPort) 
@@ -63,20 +65,12 @@ public class PortController : MonoBehaviour
 
     public void PlayerEnterBoat()
     {
-        //PlayerController player = PlayerController.instance;
-        //player.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-        //player.gameObject.GetComponent<Collider2D>().enabled = false;
-
         Boat.isPlayerOnBoat = true;
         Boat.isLeavingPort = true;
     }
 
     public void PlayerExitBoat() 
     {
-        //PlayerController player = PlayerController.instance;
-        //player.gameObject.GetComponent<SpriteRenderer>().enabled = true;
-        //player.gameObject.GetComponent<Collider2D>().enabled = true;
-
         Boat.isPlayerOnBoat = false;
         boatIsDocked = false;
     }

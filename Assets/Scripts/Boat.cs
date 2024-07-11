@@ -6,12 +6,22 @@ using UnityEngine;
 
 public class Boat : MonoBehaviour
 {
+    public enum Direction
+    {
+        Left,
+        Right,
+        Up,
+        Down
+    } 
+
     //public Rigidbody2D theRigidBody;
     //public float moveSpeed;
 
     private Animator myAnim;
     private Collider2D myCollider;
     private SpriteRenderer myRenderer;
+
+    private Direction myDirection;
 
     public static Boat instance;
 
@@ -61,7 +71,6 @@ public class Boat : MonoBehaviour
 
         if (isEnteringPort)
         {
-            myRenderer.flipX = false;
             myAnim.SetBool("Enter", true);
         }
 
@@ -72,7 +81,6 @@ public class Boat : MonoBehaviour
 
         if (isLeavingPort)
         {
-            myRenderer.flipX = true;
             myAnim.SetBool("Leave", true);
         }
 
@@ -127,6 +135,35 @@ public class Boat : MonoBehaviour
             boatLeftPort = false;
             PortController.boatIsDocked = true;
         }
+    }
+
+    public void PortDirection(Direction dir)
+    {
+        myDirection = dir;
+
+        //switch ((int)dir)
+        //{
+        //    case 0:
+        //        myDirection = Direction.Left;
+        //        break;
+
+        //    case 1:
+        //        myDirection = Direction.Right;
+        //        break;
+
+        //    case 2:
+        //        myDirection = Direction.Up;
+        //        break;
+
+        //    case 3:
+        //        myDirection = Direction.Down;
+        //        break;
+
+        //    default:
+        //        Debug.Log("Invalid direction selection");
+        //        break;
+
+        //}
     }
 }
 
