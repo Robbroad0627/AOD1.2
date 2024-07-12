@@ -6988,7 +6988,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_Name
-      value: Haven Exit1 (3)
+      value: HavenPortExit
       objectReference: {fileID: 0}
     - target: {fileID: 1854250573537122, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
       propertyPath: m_IsActive
@@ -148862,6 +148862,11 @@ PrefabInstance:
         type: 3}
       propertyPath: boatIsDocked
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4983232825581107134, guid: 797ee2b7c6b9a1542bdc266e01dfe850,
+        type: 3}
+      propertyPath: direction
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4983232825581107135, guid: 797ee2b7c6b9a1542bdc266e01dfe850,
         type: 3}

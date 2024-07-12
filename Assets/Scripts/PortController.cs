@@ -52,8 +52,8 @@ public class PortController : MonoBehaviour
     {
         if (boatIsDocked) 
         {
+            boatController.gameObject.transform.position = dockedSpot.transform.position;
             boatController.gameObject.transform.SetParent(dockedSpot, false);
-            boatController.gameObject.transform.position = dockedSpot.position;
 
             disembarkTimer -= Time.deltaTime;
             if (disembarkTimer <= 0) 

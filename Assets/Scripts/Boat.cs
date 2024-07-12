@@ -65,8 +65,16 @@ public class Boat : MonoBehaviour
 
             if (pc != null) 
             {
+                pc.GetComponent<SpriteRenderer>().enabled = false;
+                pc.GetComponent<Collider2D>().enabled = false;
                 pc.transform.position = transform.position;
             }
+        }
+        else
+        {
+            PlayerController pc = PlayerController.instance;
+            pc.GetComponent<SpriteRenderer>().enabled = true;
+            pc.GetComponent<Collider2D>().enabled = true;
         }
 
         if (isEnteringPort)
@@ -74,19 +82,42 @@ public class Boat : MonoBehaviour
             myAnim.SetBool("Enter", true);
         }
 
-        if (!isEnteringPort)
-        {
-            myAnim.SetBool("Enter", false);
-        }
-
         if (isLeavingPort)
         {
             myAnim.SetBool("Leave", true);
         }
 
-        if (!isLeavingPort)
+        if (!isEnteringPort)
         {
-            myAnim.SetBool("Leave", false);
+            myAnim.SetBool("Enter", false);
+        }
+
+        //if (!isLeavingPort)
+        //{
+        //    myAnim.SetBool("Leave", false);
+        //}
+
+        switch ((int)myDirection) 
+        {
+            case 0: //myDirection.Left
+                myAnim.SetBool("LeftDir", true);
+                break;
+
+            case 1: //myDirection.Right
+                myAnim.SetBool("RightDir", true);
+                break;
+
+            case 2: //myDirection.Up
+                myAnim.SetBool("UpDir", true);
+                break;
+
+            case 3: //myDirection.Up
+                myAnim.SetBool("DownDir", true);
+                break;
+
+            default:
+                Debug.Log("No Valid Direction");
+                break;
         }
 
         //if (canMove)
