@@ -65,21 +65,56 @@ public class Boat : MonoBehaviour
 
             if (pc != null) 
             {
-                pc.GetComponent<SpriteRenderer>().enabled = false;
-                pc.GetComponent<Collider2D>().enabled = false;
+                //pc.GetComponent<SpriteRenderer>().enabled = false;
+                //pc.GetComponent<Collider2D>().enabled = false;
                 pc.transform.position = transform.position;
             }
         }
-        else
-        {
-            PlayerController pc = PlayerController.instance;
-            pc.GetComponent<SpriteRenderer>().enabled = true;
-            pc.GetComponent<Collider2D>().enabled = true;
-        }
+        //else
+        //{
+        //    PlayerController pc = PlayerController.instance;
+        //    pc.GetComponent<SpriteRenderer>().enabled = true;
+        //    pc.GetComponent<Collider2D>().enabled = true;
+        //}
 
         if (isEnteringPort)
         {
             myAnim.SetBool("Enter", true);
+
+            switch ((int)myDirection)
+            {
+                case 0: //opposite myDirection.Left
+                    myAnim.SetBool("RightDir", true);
+                    myAnim.SetBool("LeftDir", false);
+                    myAnim.SetBool("UpDir", false);
+                    myAnim.SetBool("DownDir", false);
+                    break;
+
+                case 1: //opposite myDirection.Right
+                    myAnim.SetBool("LeftDir", true);
+                    myAnim.SetBool("UpDir", false);
+                    myAnim.SetBool("DownDir", false);
+                    myAnim.SetBool("RightDir", false);
+                    break;
+
+                case 2: //opposite myDirection.Up
+                    myAnim.SetBool("DownDir", true);
+                    myAnim.SetBool("UpDir", false);
+                    myAnim.SetBool("LeftDir", false);
+                    myAnim.SetBool("RightDir", false);
+                    break;
+
+                case 3: //opposite myDirection.Down
+                    myAnim.SetBool("UpDir", true);
+                    myAnim.SetBool("LeftDir", false);
+                    myAnim.SetBool("RightDir", false);
+                    myAnim.SetBool("DownDir", false);
+                    break;
+
+                default:
+                    Debug.Log("No Valid Direction");
+                    break;
+            }
         }
 
         if (isLeavingPort)
@@ -90,34 +125,46 @@ public class Boat : MonoBehaviour
         if (!isEnteringPort)
         {
             myAnim.SetBool("Enter", false);
+
+            switch ((int)myDirection)
+            {
+                case 0: //myDirection.Left
+                    myAnim.SetBool("LeftDir", true);
+                    myAnim.SetBool("RightDir", false);
+                    myAnim.SetBool("UpDir", false);
+                    myAnim.SetBool("DownDir", false);
+                    break;
+
+                case 1: //myDirection.Right
+                    myAnim.SetBool("RightDir", true);
+                    myAnim.SetBool("UpDir", false);
+                    myAnim.SetBool("DownDir", false);
+                    myAnim.SetBool("LeftDir", false);
+                    break;
+
+                case 2: //myDirection.Up
+                    myAnim.SetBool("UpDir", true);
+                    myAnim.SetBool("DownDir", false);
+                    myAnim.SetBool("LeftDir", false);
+                    myAnim.SetBool("RightDir", false);
+                    break;
+
+                case 3: //myDirection.Down
+                    myAnim.SetBool("DownDir", true);
+                    myAnim.SetBool("LeftDir", false);
+                    myAnim.SetBool("RightDir", false);
+                    myAnim.SetBool("UpDir", false);
+                    break;
+
+                default:
+                    Debug.Log("No Valid Direction");
+                    break;
+            }
         }
 
-        //if (!isLeavingPort)
-        //{
-        //    myAnim.SetBool("Leave", false);
-        //}
-
-        switch ((int)myDirection) 
+        if (!isLeavingPort)
         {
-            case 0: //myDirection.Left
-                myAnim.SetBool("LeftDir", true);
-                break;
-
-            case 1: //myDirection.Right
-                myAnim.SetBool("RightDir", true);
-                break;
-
-            case 2: //myDirection.Up
-                myAnim.SetBool("UpDir", true);
-                break;
-
-            case 3: //myDirection.Up
-                myAnim.SetBool("DownDir", true);
-                break;
-
-            default:
-                Debug.Log("No Valid Direction");
-                break;
+            myAnim.SetBool("Leave", false);
         }
 
         //if (canMove)
@@ -158,6 +205,7 @@ public class Boat : MonoBehaviour
         {
             boatLeftPort = true;
             isLeavingPort = false;
+            PortController.boatIsLeaving = true;
         }
 
         if (isEnteringPort && collision.gameObject.name == "DockedSpot")

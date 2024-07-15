@@ -21,6 +21,7 @@ public class PortController : MonoBehaviour
     private AreaEntrance areaEntranceController;
 
     public static bool boatIsDocked = false;
+    public static bool boatIsLeaving = false;
 
     // Start is called before the first frame update
     void Start()
@@ -32,34 +33,40 @@ public class PortController : MonoBehaviour
         {
             boatController = Instantiate(boat).GetComponent<Boat>();
             Boat.instance = boatController;
-            Boat.instance.PortDirection(direction);
         }
 
         if (!Boat.boatLeftPort) 
         {
             boatController.gameObject.transform.SetParent(dockedSpot, false);
             boatController.gameObject.transform.position = dockedSpot.position;
+            boatController.PortDirection(direction);
         }
         else if (Boat.boatLeftPort)
         {
             boatController.gameObject.transform.SetParent(portEntrance, false);
             boatController.gameObject.transform.position = portEntrance.position;
+            boatController.PortDirection(direction);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (boatIsDocked) 
+        if (boatIsDocked)
         {
-            boatController.gameObject.transform.position = dockedSpot.transform.position;
             boatController.gameObject.transform.SetParent(dockedSpot, false);
 
             disembarkTimer -= Time.deltaTime;
-            if (disembarkTimer <= 0) 
+            if (disembarkTimer <= 0)
             {
                 PlayerExitBoat();
             }
+        }
+
+        if (boatIsLeaving)
+        {
+            boatController.gameObject.transform.SetParent(portEntrance, false);
+            boatIsLeaving = false;
         }
     }
 
