@@ -38,13 +38,11 @@ public class PortController : MonoBehaviour
         if (!Boat.boatLeftPort) 
         {
             boatController.gameObject.transform.SetParent(dockedSpot, false);
-            boatController.gameObject.transform.position = dockedSpot.position;
             boatController.PortDirection(direction);
         }
         else if (Boat.boatLeftPort)
         {
             boatController.gameObject.transform.SetParent(portEntrance, false);
-            boatController.gameObject.transform.position = portEntrance.position;
             boatController.PortDirection(direction);
         }
     }
@@ -55,7 +53,6 @@ public class PortController : MonoBehaviour
         if (boatIsDocked)
         {
             boatController.gameObject.transform.SetParent(dockedSpot, false);
-
             disembarkTimer -= Time.deltaTime;
             if (disembarkTimer <= 0)
             {

@@ -203,6 +203,7 @@ public class Boat : MonoBehaviour
     {
         if (isLeavingPort && collision.gameObject.name == "PortEntrance")
         {
+            transform.position = collision.transform.position;
             boatLeftPort = true;
             isLeavingPort = false;
             PortController.boatIsLeaving = true;
@@ -210,6 +211,7 @@ public class Boat : MonoBehaviour
 
         if (isEnteringPort && collision.gameObject.name == "DockedSpot")
         {
+            transform.position = collision.transform.position;
             isEnteringPort = false;
             boatLeftPort = false;
             PortController.boatIsDocked = true;

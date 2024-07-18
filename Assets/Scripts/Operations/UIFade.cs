@@ -10,7 +10,8 @@ public class UIFade : MonoBehaviour {
     public static UIFade instance;
 
     public Image fadeScreen;
-    public float fadeSpeed;
+    public float fadeOutSpeed;
+    public float fadeInSpeed;
 
     public bool shouldFadeToBlack;
     public bool shouldFadeFromBlack;
@@ -28,7 +29,7 @@ public class UIFade : MonoBehaviour {
 
         if (shouldFadeToBlack)
         {
-            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeOutSpeed * Time.deltaTime));
 
             if(Mathf.Approximately(fadeScreen.color.a, 1f))
             {
@@ -38,7 +39,7 @@ public class UIFade : MonoBehaviour {
 
         if (shouldFadeFromBlack)
         {
-            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
+            fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeInSpeed * Time.deltaTime));
 
             if (Mathf.Approximately(fadeScreen.color.a, 0f))
             {
