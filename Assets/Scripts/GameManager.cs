@@ -214,6 +214,19 @@ public class GameManager : MonoBehaviour
         DialogManager.instance.Prompt("Do you want to save the game now?", SaveData, null);
     }
 
+    public void ModalPromptBoatTrip(int goldCost)
+    {
+        var dm = DialogManager.instance;
+        if(currentGold >= goldCost)
+        {
+            dm.Prompt($"Do you want to travel by boat? It will cost {goldCost}g.", null, null);
+        }
+        else
+        {
+
+        }
+    }
+
     public void ModalPromptInn(int goldCost)
     {
         var dm = DialogManager.instance;
