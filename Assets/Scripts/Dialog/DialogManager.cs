@@ -132,11 +132,13 @@ public class DialogManager : MonoBehaviour {
         shouldMarkQuest = true;
     }
 
-    public void Prompt(string message, Action yesAction, Action noAction,string yesString="yes",string noString="no",string title= "Confirm?")
+    public void Prompt(string message, Action yesAction, Action noAction,string yesString = "Yes",string noString = "No",string title= "Confirm?")
     {
         advanceDialogOnClick = false;
         dialogText.text = message;
         nameText.text = title;
+        yesButtonText.text = yesString;
+        noButtonText.text = noString;
 
         this.yesAction = yesAction;
         this.noAction = noAction;
@@ -144,6 +146,21 @@ public class DialogManager : MonoBehaviour {
         //Note:This forces the prompt into the next frame, if you don't do this then you can't chain prompts.
         Invoke("PromptHelper", 0.01f);
 
+    }
+    
+    public void PortPrompt(string message, Action yesAction, Action noAction, string yesString, string noString, string title = "Boat Captian")
+    {
+        advanceDialogOnClick = false;
+        dialogText.text = message;
+        nameText.text = title;
+        yesButtonText.text = yesString;
+        noButtonText.text = noString;
+
+        this.yesAction = yesAction;
+        this.noAction = noAction;
+
+        //Note:This forces the prompt into the next frame, if you don't do this then you can't chain prompts.
+        Invoke("PromptHelper", 0.01f);
     }
 
     private void  PromptHelper()
@@ -163,6 +180,8 @@ public class DialogManager : MonoBehaviour {
 
     public void ExecuteNoAction()
     {
+        var captian = BoatCaptian.FindObjectOfType<BoatCaptian>();
+        captian.boatTripConfirmed = false;
         noAction?.Invoke();
         promptArea.SetActive(false);
         DismissDialog();

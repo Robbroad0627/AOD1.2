@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -219,7 +220,7 @@ public class GameManager : MonoBehaviour
         var dm = DialogManager.instance;
         if(currentGold >= goldCost)
         {
-            dm.Prompt($"Do you want to travel by boat? It will cost {goldCost}g.", null, null);
+            dm.Prompt($"Do you want to travel by boat? It will cost {goldCost}g.", PortChoice, null, "Yes", "No", "Boat Captian");
         }
         else
         {
@@ -247,6 +248,32 @@ public class GameManager : MonoBehaviour
             m.currentHP = m.maxHP;
             m.currentMP = m.maxMP;
         }
+    }
+    
+    private void PortChoice()
+    {
+        var dm = DialogManager.instance;
+        var captian = BoatCaptian.FindObjectOfType<BoatCaptian>();
+        captian.boatTripConfirmed = true;
+        var nextContinent = captian.nextContinent;
+        var preContinent = captian.previousContinent;
+        var nextAreatoLoad = captian.nextAreaToLoad;
+        var preAreatoLoad = captian.previousAreaToLoad;
+        dm.PortPrompt($"Where would you like to go?", NextPortChoice, PreviousPortChoice, $"{nextContinent} - {nextAreatoLoad}", $"{preContinent} - {preAreatoLoad}", "Boat Captian");
+    }
+
+    private void NextPortChoice()
+    {
+        var captian = BoatCaptian.FindObjectOfType<BoatCaptian>();
+        captian.boatTripConfirmed = false;
+        captian.boatDestinationConfirmedNext = true;        
+    }
+
+    private void PreviousPortChoice()
+    {
+        var captian = BoatCaptian.FindObjectOfType<BoatCaptian>();
+        captian.boatTripConfirmed = false;
+        captian.boatDestinationConfirmedPre = true;
     }
 
     private void InnSequence()

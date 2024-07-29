@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //Bonehead Games
 
@@ -11,7 +12,12 @@ public class PortController : MonoBehaviour
     public GameObject portAreaEntrance;
     public Transform dockedSpot;
     public Transform portEntrance;
-    
+
+    private string areaToLoad;
+    private string areaTransitionName;
+
+    public float waitToLoad = 1f;
+
     public Boat.Direction direction;
 
     public float disembarkTimer;
@@ -19,6 +25,9 @@ public class PortController : MonoBehaviour
     private Boat boatController;
     private AreaExit areaExitController;
     private AreaEntrance areaEntranceController;
+
+    private bool shouldLoadAfterFade;
+    private bool shouldRunAnimationBeforeFade;
 
     public static bool boatIsDocked = false;
     public static bool boatIsLeaving = false;
@@ -50,6 +59,32 @@ public class PortController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (shouldLoadAfterFade)
+        {
+            waitToLoad -= Time.deltaTime;
+            if (waitToLoad <= 0)
+            {
+                shouldLoadAfterFade = false;
+                SceneManager.LoadScene(areaToLoad);
+            }
+        }
+
+        if (shouldRunAnimationBeforeFade)
+        {
+            if (Boat.boatLeftPort)
+            {
+                this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
+                                    //SceneManager.LoadScene(areaToLoad);
+                shouldLoadAfterFade = true;
+                GameManager.instance.fadingBetweenAreas = true;
+
+                UIFade.instance.FadeToBlack();
+
+                PlayerController.instance.areaTransitionName = areaTransitionName;
+                shouldRunAnimationBeforeFade = false;
+            }
+        }
+
         if (boatIsDocked)
         {
             boatController.gameObject.transform.SetParent(dockedSpot, false);
@@ -67,10 +102,13 @@ public class PortController : MonoBehaviour
         }
     }
 
-    public void PlayerEnterBoat()
+    public void PlayerEnterBoat(string toLoad, string transitionName)
     {
         Boat.isPlayerOnBoat = true;
         Boat.isLeavingPort = true;
+        areaToLoad = toLoad;
+        areaTransitionName = transitionName;
+        
     }
 
     public void PlayerExitBoat() 
