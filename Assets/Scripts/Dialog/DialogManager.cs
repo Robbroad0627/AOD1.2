@@ -180,7 +180,7 @@ public class DialogManager : MonoBehaviour {
 
     public void ExecuteNoAction()
     {
-        var captian = BoatCaptian.FindObjectOfType<BoatCaptian>();
+        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = false;
         noAction?.Invoke();
         promptArea.SetActive(false);

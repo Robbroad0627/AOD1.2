@@ -10,6 +10,7 @@ public class PortController : MonoBehaviour
     public GameObject boat;
     public GameObject portAreaExit;
     public GameObject portAreaEntrance;
+    public GameObject boatCaptain;
     public Transform dockedSpot;
     public Transform portEntrance;
 
@@ -23,6 +24,7 @@ public class PortController : MonoBehaviour
     public float disembarkTimer;
 
     private Boat boatController;
+    private BoatCaptain boatCaptainController;
     private AreaExit areaExitController;
     private AreaEntrance areaEntranceController;
 
@@ -37,6 +39,7 @@ public class PortController : MonoBehaviour
     {
         areaExitController = portAreaExit.GetComponent<AreaExit>();
         areaEntranceController = portAreaEntrance.GetComponent<AreaEntrance>();
+        boatCaptainController = boatCaptain.GetComponent<BoatCaptain>();
 
         if (Boat.instance == null) 
         {
@@ -59,6 +62,15 @@ public class PortController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Boat.isPlayerOnBoat)
+        {
+            boatCaptain.SetActive(false);
+        }
+        else
+        {
+            boatCaptain.SetActive(true);
+        }
+
         if (shouldLoadAfterFade)
         {
             waitToLoad -= Time.deltaTime;
@@ -106,6 +118,7 @@ public class PortController : MonoBehaviour
     {
         Boat.isPlayerOnBoat = true;
         Boat.isLeavingPort = true;
+        shouldRunAnimationBeforeFade = true;
         areaToLoad = toLoad;
         areaTransitionName = transitionName;
         
@@ -113,6 +126,8 @@ public class PortController : MonoBehaviour
 
     public void PlayerExitBoat() 
     {
+        boatCaptainController.boatDestinationConfirmedNext = false;
+        boatCaptainController.boatDestinationConfirmedPre = false;
         Boat.isPlayerOnBoat = false;
         boatIsDocked = false;
     }

@@ -253,7 +253,7 @@ public class GameManager : MonoBehaviour
     private void PortChoice()
     {
         var dm = DialogManager.instance;
-        var captian = BoatCaptian.FindObjectOfType<BoatCaptian>();
+        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = true;
         var nextContinent = captian.nextContinent;
         var preContinent = captian.previousContinent;
@@ -264,14 +264,14 @@ public class GameManager : MonoBehaviour
 
     private void NextPortChoice()
     {
-        var captian = BoatCaptian.FindObjectOfType<BoatCaptian>();
+        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = false;
         captian.boatDestinationConfirmedNext = true;        
     }
 
     private void PreviousPortChoice()
     {
-        var captian = BoatCaptian.FindObjectOfType<BoatCaptian>();
+        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = false;
         captian.boatDestinationConfirmedPre = true;
     }
