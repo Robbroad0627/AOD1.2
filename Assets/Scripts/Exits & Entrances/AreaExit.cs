@@ -63,8 +63,8 @@ public class AreaExit : MonoBehaviour {
             }
             else if (needBoat && GameManager.instance.haveBoat)
             {
-                //portController.PlayerEnterBoat();                
-                shouldRunAnimationBeforeFade = true;
+                portController.PlayerEnterBoat(areaToLoad, areaTransitionName);                
+                //shouldRunAnimationBeforeFade = true;
             }
             else if (!needBoat)
             {
