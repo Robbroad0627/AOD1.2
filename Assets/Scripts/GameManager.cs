@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -48,7 +49,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameObject.Find("Player"))
         {
-            if (gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive)
+            if (gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive || Boat.isPlayerOnBoat)
             {
                 PlayerController.instance.canMove = false;
             }
@@ -214,6 +215,19 @@ public class GameManager : MonoBehaviour
         DialogManager.instance.Prompt("Do you want to save the game now?", SaveData, null);
     }
 
+    public void ModalPromptBoatTrip(int goldCost)
+    {
+        var dm = DialogManager.instance;
+        if(currentGold >= goldCost)
+        {
+            dm.Prompt($"Do you want to travel by boat? It will cost {goldCost}g.", PortChoice, null, "Yes", "No", "Boat Captian");
+        }
+        else
+        {
+
+        }
+    }
+
     public void ModalPromptInn(int goldCost)
     {
         var dm = DialogManager.instance;
@@ -234,6 +248,32 @@ public class GameManager : MonoBehaviour
             m.currentHP = m.maxHP;
             m.currentMP = m.maxMP;
         }
+    }
+    
+    private void PortChoice()
+    {
+        var dm = DialogManager.instance;
+        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
+        captian.boatTripConfirmed = true;
+        var nextContinent = captian.nextContinent;
+        var preContinent = captian.previousContinent;
+        var nextAreatoLoad = captian.nextAreaToLoad;
+        var preAreatoLoad = captian.previousAreaToLoad;
+        dm.PortPrompt($"Where would you like to go?", NextPortChoice, PreviousPortChoice, $"{nextContinent} - {nextAreatoLoad}", $"{preContinent} - {preAreatoLoad}", "Boat Captian");
+    }
+
+    private void NextPortChoice()
+    {
+        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
+        captian.boatTripConfirmed = false;
+        captian.boatDestinationConfirmedNext = true;        
+    }
+
+    private void PreviousPortChoice()
+    {
+        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
+        captian.boatTripConfirmed = false;
+        captian.boatDestinationConfirmedPre = true;
     }
 
     private void InnSequence()

@@ -8,14 +8,24 @@ public class AreaEntrance : MonoBehaviour {
 
     public string transitionName;
 	public RuntimeAnimatorController playerAnimatorOverride;
+	public PortController portController;
+	public bool isPort;
 
 	private static RuntimeAnimatorController m_overridenAnimationController;
 
 	
 	void Start () {
+
 		if(transitionName == PlayerController.instance.areaTransitionName)
         {
-            PlayerController.instance.transform.position = transform.position;
+			if (isPort && Boat.boatLeftPort)
+			{
+				Boat.isEnteringPort = true;
+			}
+			else
+			{
+				PlayerController.instance.transform.position = transform.position;
+            }
         }
 
         UIFade.instance.FadeFromBlack();
@@ -41,6 +51,13 @@ public class AreaEntrance : MonoBehaviour {
 	
 	
 	void Update () {
-		
-	}
+        if (transitionName == PlayerController.instance.areaTransitionName)
+        {
+			if (!Boat.isPlayerOnBoat)
+			{
+                PlayerController.instance.transform.position = transform.position;
+				PlayerController.instance.areaTransitionName = null;
+			}
+        }
+    }
 }

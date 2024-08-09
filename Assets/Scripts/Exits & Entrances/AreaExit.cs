@@ -8,20 +8,20 @@ using UnityEngine.SceneManagement;
 public class AreaExit : MonoBehaviour {
 
     public string areaToLoad;
-
     public string areaTransitionName;
-
    
     public float waitToLoad = 1f;
+
+    public PortController portController;
+
     private bool shouldLoadAfterFade;
+    private bool shouldRunAnimationBeforeFade;
 
     public bool needBoat = false;
-
 
 	void Start () {
         
     }
-	
 	
 	void Update () {
 		if(shouldLoadAfterFade)
@@ -33,26 +33,50 @@ public class AreaExit : MonoBehaviour {
                 SceneManager.LoadScene(areaToLoad);
             }
         }
-	}
+
+        if (shouldRunAnimationBeforeFade)
+        {
+            if (Boat.boatLeftPort)
+            {
+                this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
+                                    //SceneManager.LoadScene(areaToLoad);
+                shouldLoadAfterFade = true;
+                GameManager.instance.fadingBetweenAreas = true;
+
+                UIFade.instance.FadeToBlack();
+
+                PlayerController.instance.areaTransitionName = areaTransitionName;
+                shouldRunAnimationBeforeFade = false;
+            }
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.tag == "Player")
         {
-            if(needBoat && !GameManager.instance.haveBoat)
+            if (needBoat && !GameManager.instance.haveBoat)
             {
                 //Cant use boat area without one.
                 Debug.Log("Area needs boat but GameManager.haveBoat == false");
                 return;
             }
-            this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
-            //SceneManager.LoadScene(areaToLoad);
-            shouldLoadAfterFade = true;
-            GameManager.instance.fadingBetweenAreas = true;
+            else if (needBoat && GameManager.instance.haveBoat)
+            {
+                portController.PlayerEnterBoat(areaToLoad, areaTransitionName);                
+                //shouldRunAnimationBeforeFade = true;
+            }
+            else if (!needBoat)
+            {
+                this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
+                                    //SceneManager.LoadScene(areaToLoad);
+                shouldLoadAfterFade = true;
+                GameManager.instance.fadingBetweenAreas = true;
 
-            UIFade.instance.FadeToBlack();
+                UIFade.instance.FadeToBlack();
 
-            PlayerController.instance.areaTransitionName = areaTransitionName;
+                PlayerController.instance.areaTransitionName = areaTransitionName;
+            }
         }
     }
 }
