@@ -651,11 +651,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13159e4a2fa95d44b814c59557064cd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theRigidBody: {fileID: 387828083}
-  moveSpeed: 3
-  myAnim: {fileID: 0}
-  areaTransitionName: 
-  canMove: 1
 --- !u!212 &387828081
 SpriteRenderer:
   m_ObjectHideFlags: 0
