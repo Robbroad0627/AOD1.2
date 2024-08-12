@@ -24,7 +24,7 @@ public class BattleManager : MonoBehaviour {
 
     public int currentTurn;
     public bool turnWaiting;
-
+    private bool battlerReady;
     public GameObject uiButtonsHolder;
 
     public BattleMove[] movesList;
@@ -70,6 +70,8 @@ public class BattleManager : MonoBehaviour {
        
     activeBattlers = new List<BattleChar>();
 
+        battlerReady = false;
+
     }
 
 
@@ -95,10 +97,11 @@ public class BattleManager : MonoBehaviour {
                 }
             }
 
-            if(Input.GetKeyDown(KeyCode.N))
+            if (Input.GetKeyDown(KeyCode.N))
             {
                 NextTurn();
             }
+
         }
 	}
 
@@ -182,6 +185,19 @@ public class BattleManager : MonoBehaviour {
             turnWaiting = true;
             currentTurn = Random.Range(0, activeBattlers.Count);
 
+            if (activeBattlers[currentTurn].isPlayer)
+            {
+                Vector3 playerpos = new Vector3(activeBattlers[currentTurn].gameObject.transform.position.x - 1.5f, activeBattlers[currentTurn].gameObject.transform.position.y, activeBattlers[currentTurn].gameObject.transform.position.z);
+                activeBattlers[currentTurn].transform.position = playerpos;
+                activeBattlers[currentTurn].gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
+            }
+            else
+            {
+                Vector3 newpos = new Vector3(activeBattlers[currentTurn].gameObject.transform.position.x + 1.5f, activeBattlers[currentTurn].gameObject.transform.position.y, activeBattlers[currentTurn].gameObject.transform.position.z);
+                activeBattlers[currentTurn].transform.position = newpos;
+                activeBattlers[currentTurn].gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
+            }
+
             UpdateUIStats();
         }
     }
@@ -195,10 +211,36 @@ public class BattleManager : MonoBehaviour {
 
     public void NextTurn()
     {
+        if (activeBattlers[currentTurn].isPlayer)
+        {
+            Vector3 playerpos = new Vector3(activeBattlers[currentTurn].gameObject.transform.position.x + 1.5f, activeBattlers[currentTurn].gameObject.transform.position.y, activeBattlers[currentTurn].gameObject.transform.position.z);
+            activeBattlers[currentTurn].transform.position = playerpos;
+            activeBattlers[currentTurn].gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+        }
+        else
+        {
+            Vector3 newpos = new Vector3(activeBattlers[currentTurn].gameObject.transform.position.x - 1.5f, activeBattlers[currentTurn].gameObject.transform.position.y, activeBattlers[currentTurn].gameObject.transform.position.z);
+            activeBattlers[currentTurn].transform.position = newpos;
+            activeBattlers[currentTurn].gameObject.GetComponent<SpriteRenderer>().color = Color.white;
+        }
         currentTurn++;
-        if(currentTurn >= activeBattlers.Count)
+
+        if (currentTurn >= activeBattlers.Count)
         {
             currentTurn = 0;
+        }
+
+        if (activeBattlers[currentTurn].isPlayer)
+        {
+            Vector3 playerpos = new Vector3(activeBattlers[currentTurn].gameObject.transform.position.x - 1.5f, activeBattlers[currentTurn].gameObject.transform.position.y, activeBattlers[currentTurn].gameObject.transform.position.z);
+            activeBattlers[currentTurn].transform.position = playerpos;
+            activeBattlers[currentTurn].gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
+        }
+        else
+        {
+            Vector3 newpos = new Vector3(activeBattlers[currentTurn].gameObject.transform.position.x + 1.5f, activeBattlers[currentTurn].gameObject.transform.position.y, activeBattlers[currentTurn].gameObject.transform.position.z);
+            activeBattlers[currentTurn].transform.position = newpos;
+            activeBattlers[currentTurn].gameObject.GetComponent<SpriteRenderer>().color = Color.yellow;
         }
 
         turnWaiting = true;
@@ -273,6 +315,8 @@ public class BattleManager : MonoBehaviour {
 
     public IEnumerator EnemyMoveCo()
     {
+        /*Vector3 newpos = new Vector3(activeBattlers[currentTurn].gameObject.transform.position.x + 0.5f, activeBattlers[currentTurn].gameObject.transform.position.y, activeBattlers[currentTurn].gameObject.transform.position.z);
+        activeBattlers[currentTurn].transform.position = newpos;*/
         turnWaiting = false;
         yield return new WaitForSeconds(1f);
         EnemyAttack();
@@ -355,7 +399,7 @@ public class BattleManager : MonoBehaviour {
 
     public void PlayerAttack(string moveName, int selectedTarget)
     {
-
+        
         int movePower = 0;
         for (int i = 0; i < movesList.Length; i++)
         {
