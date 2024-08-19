@@ -135,6 +135,19 @@ public class BattleManager : MonoBehaviour {
 
                             BattleChar newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[i].rotation);
                             newPlayer.transform.parent = playerPositions[i];
+                            if (i == 0)
+                            {
+                                newPlayer.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                            }
+                            else if (i == 1)
+                            {
+                                newPlayer.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 0;
+                            }
+                            else if (i == 2)
+                            {
+                                newPlayer.gameObject.GetComponent<SpriteRenderer>().sortingOrder = 2;
+                            }
+
                             activeBattlers.Add(newPlayer);
 
 
