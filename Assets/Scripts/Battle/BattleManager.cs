@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 //Bonehead Games
 
 public class BattleManager : MonoBehaviour {
-
+    
     public static BattleManager instance;
 
     private bool battleActive;
 
     public GameObject battleScene;
-
+    public GameObject minimap;
     public Transform[] playerPositions;
     public Transform[] enemyPositions;
 

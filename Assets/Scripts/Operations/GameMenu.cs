@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 //Bonehead Games
 
 public class GameMenu : MonoBehaviour {
-
+    public GameObject minimap;
     public GameObject theMenu;
     public GameObject[] windows;
 
@@ -59,6 +59,15 @@ public class GameMenu : MonoBehaviour {
             }
 
             AudioManager.instance.PlaySFX(5);
+        }
+
+        if (GameManager.instance.battleActive)
+        {
+            minimap.SetActive(false);
+        }
+        else
+        {
+            minimap.SetActive(true);
         }
 	}
 
