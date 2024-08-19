@@ -366,7 +366,7 @@ public class BattleManager : MonoBehaviour {
 
         activeBattlers[target].currentHp -= damageToGive;
 
-        Instantiate(theDamageNumber, activeBattlers[target].transform.position, activeBattlers[target].transform.rotation).SetDamage(damageToGive);
+        Instantiate(theDamageNumber, activeBattlers[target].transform.position, Quaternion.identity).SetDamage(damageToGive);
 
         UpdateUIStats();
     }
