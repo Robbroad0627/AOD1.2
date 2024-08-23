@@ -18,6 +18,9 @@ public class AttackEffect : MonoBehaviour
     //VARIABLES
     #region Inspector/Exposed Variables
 
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
     // The Proper way to instantiate variables to be edited in the editor
     // without exposing them outside of this script
     // [SerializeField] private int soundEffect;
