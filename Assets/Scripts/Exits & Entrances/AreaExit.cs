@@ -23,22 +23,17 @@ public class AreaExit : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    // The Proper way to expose variables to the editor
-    // without exposing them outside of this script
-    // [SerializeField] private variable variableName = initialvalue;
-    // Example:
-    // [SerializeField] private float health = 10.0f;
-    public string areaToLoad;
-    public string areaTransitionName;
-    public float waitToLoad = 1f;
-    public PortController portController;
-    public bool needBoat = false;
+    [SerializeField] private string areaToLoad = "";
+    [SerializeField] private string areaTransitionName = "";
+    [SerializeField] private float waitToLoad = 1f;
+    [SerializeField] private bool needBoat = false;
+    [SerializeField] private PortController portController = null;
 
     #endregion
     #region Private Variable Declarations Only
 
-    private bool shouldLoadAfterFade;
-    private bool shouldRunAnimationBeforeFade;
+    private bool mShouldLoadAfterFade;
+    private bool mShouldRunAnimationBeforeFade;
 
     #endregion
 
@@ -47,7 +42,7 @@ public class AreaExit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if (other.tag == "Player")
         {
             if (needBoat && !GameManager.instance.haveBoat)
             {
@@ -62,9 +57,9 @@ public class AreaExit : MonoBehaviour
             }
             else if (!needBoat)
             {
-                this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
+                enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
                                     //SceneManager.LoadScene(areaToLoad);
-                shouldLoadAfterFade = true;
+                mShouldLoadAfterFade = true;
                 GameManager.instance.fadingBetweenAreas = true;
 
                 UIFade.instance.FadeToBlack();
@@ -79,30 +74,30 @@ public class AreaExit : MonoBehaviour
 
     private void Update ()
     {
-		if (shouldLoadAfterFade)
+		if (mShouldLoadAfterFade)
         {
             waitToLoad -= Time.deltaTime;
 
-            if(waitToLoad <= 0)
+            if (waitToLoad <= 0)
             {
-                shouldLoadAfterFade = false;
+                mShouldLoadAfterFade = false;
                 SceneManager.LoadScene(areaToLoad);
             }
         }
 
-        if (shouldRunAnimationBeforeFade)
+        if (mShouldRunAnimationBeforeFade)
         {
             if (Boat.boatLeftPort)
             {
-                this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
+                enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
                                     //SceneManager.LoadScene(areaToLoad);
-                shouldLoadAfterFade = true;
+                mShouldLoadAfterFade = true;
                 GameManager.instance.fadingBetweenAreas = true;
 
                 UIFade.instance.FadeToBlack();
 
                 PlayerController.instance.areaTransitionName = areaTransitionName;
-                shouldRunAnimationBeforeFade = false;
+                mShouldRunAnimationBeforeFade = false;
             }
         }
     }

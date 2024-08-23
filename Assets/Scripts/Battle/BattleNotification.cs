@@ -8,16 +8,12 @@ using UnityEngine.UI;
 public class BattleNotification : MonoBehaviour {
 
     public float awakeTime;
-    private float awakeCounter;
     public Text theText;
 
+    private float awakeCounter;
 	
-	void Start () {
-		
-	}
-	
-	
-	void Update () {
+	void Update ()
+    {
 		if(awakeCounter > 0)
         {
             awakeCounter -= Time.deltaTime;

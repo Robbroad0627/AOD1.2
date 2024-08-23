@@ -29,9 +29,9 @@ public class Inn : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning($"downstairsEntrance not set using first available entrance {e.transitionName}", this);
+                Debug.LogWarning($"downstairsEntrance not set using first available entrance {e.GetTransitionName}", this);
             }
-            s_downstairsTransitionName = e.transitionName;
+            s_downstairsTransitionName = e.GetTransitionName;
         }
 	}
 	
@@ -42,7 +42,7 @@ public class Inn : MonoBehaviour
 
         if (canOpen && Input.GetButtonDown("Fire1") && PlayerController.instance.canMove && !Shop.instance.shopMenu.activeInHierarchy)
         {
-            s_downstairsTransitionName = downstairsEntrance?.transitionName;
+            s_downstairsTransitionName = downstairsEntrance?.GetTransitionName;
             s_downstairsTransitionPosition = downstairsEntrance?.transform.position;
             s_downstairsSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
             s_goldCost = goldCost;

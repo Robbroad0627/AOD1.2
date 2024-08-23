@@ -80,13 +80,13 @@ public class BattleStarter : MonoBehaviour {
         UIFade.instance.FadeToBlack();
         if(null != backgroundSprite)
         {
-            BattleManager.instance.backgroundSprite = backgroundSprite;
+            BattleManager.instance.SetBackgroundSprite(backgroundSprite);
         }
         GameManager.instance.battleActive = true;
         
         int selectedBattle = Random.Range(0, potentialBattles.Length);
-        BattleManager.instance.rewardItems = potentialBattles[selectedBattle].rewardItems;
-        BattleManager.instance.rewardXP = potentialBattles[selectedBattle].rewardXP;
+        BattleManager.instance.SetRewardItems(potentialBattles[selectedBattle].rewardItems);
+        BattleManager.instance.SetRewardXP(potentialBattles[selectedBattle].rewardXP);
 
         yield return new WaitForSeconds(1.5f);
 

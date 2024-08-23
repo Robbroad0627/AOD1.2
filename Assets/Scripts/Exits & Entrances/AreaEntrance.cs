@@ -22,20 +22,22 @@ public class AreaEntrance : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    // The Proper way to expose variables to the editor
-    // without exposing them outside of this script
-    // [SerializeField] private variable variableName = initialvalue;
-    // Example:
-    // [SerializeField] private float health = 10.0f;
-    public string transitionName;
-	public RuntimeAnimatorController playerAnimatorOverride;
-	public PortController portController;
-	public bool isPort;
+    [SerializeField] private string transitionName = "";
+	[SerializeField] private RuntimeAnimatorController playerAnimatorOverride = null;
+	[SerializeField] private bool isPort = false;
+	[SerializeField] private PortController portController = null;
 
     #endregion
     #region Private Variable Declarations Only
 
-    private static RuntimeAnimatorController m_overridenAnimationController;
+    private static RuntimeAnimatorController mOverridenAnimationController;
+
+    #endregion
+
+    //GETTERS/SETTERS
+    #region Getters/Accessors
+
+    public string GetTransitionName => transitionName;
 
     #endregion
 
@@ -58,21 +60,21 @@ public class AreaEntrance : MonoBehaviour
         UIFade.instance.FadeFromBlack();
         GameManager.instance.fadingBetweenAreas = false;
 
-		if (null != playerAnimatorOverride)
+		if (playerAnimatorOverride != null)
         {
-			if (null != m_overridenAnimationController)
+			if (mOverridenAnimationController != null)
 			{
 				//store the default sprite and but only if we don't already have one
-				m_overridenAnimationController = PlayerController.instance.animationController;
+				mOverridenAnimationController = PlayerController.instance.animationController;
 			}
 
 			//replace the player sprite
 			PlayerController.instance.animationController = playerAnimatorOverride;
 		}
-		else if ( null == playerAnimatorOverride && null != m_overridenAnimationController)
+		else if (playerAnimatorOverride == null && mOverridenAnimationController != null)
         {
 			//restore the sprite if the overide field is empty
-			PlayerController.instance.animationController = m_overridenAnimationController;
+			PlayerController.instance.animationController = mOverridenAnimationController;
 		}
 	}
 

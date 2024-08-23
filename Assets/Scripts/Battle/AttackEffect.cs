@@ -21,13 +21,8 @@ public class AttackEffect : MonoBehaviour
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
-    // The Proper way to instantiate variables to be edited in the editor
-    // without exposing them outside of this script
-    // [SerializeField] private variable variableName = initialvalue;
-    // Example:
-    // [SerializeField] private float health = 10.0f;
-    public int soundEffect;
-    public float effectLength;
+    [SerializeField] private int soundEffect = 0;
+    [SerializeField] private float effectLength = 0.0f;
 
     #endregion
 
