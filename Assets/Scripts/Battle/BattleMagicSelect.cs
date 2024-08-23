@@ -23,15 +23,26 @@ public class BattleMagicSelect : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    // The Proper way to expose variables to the editor
-    // without exposing them outside of this script
-    // [SerializeField] private variable variableName = initialvalue;
-    // Example:
-    // [SerializeField] private float health = 10.0f;
-    public string spellName;
-    public int spellCost;
-    public Text nameText;
-    public Text costText;
+    [SerializeField] private string spellName = "";
+    [SerializeField] private int spellCost = 0;
+    [SerializeField] private Text nameText = null;
+    [SerializeField] private Text costText = null;
+
+    #endregion
+
+    //GETTERS/SETTERS
+    #region Getters/Accessors
+
+    public Text GetNameText => nameText;
+    public Text GetCostText => costText;
+    public int GetSpellCost => spellCost;
+    public string GetSpellName => spellName;
+
+    #endregion
+    #region Setters/Mutators
+
+    public int SetSpellCost(int cost) => spellCost = cost;
+    public string SetSpellName(string newName) => spellName = newName;
 
     #endregion
 
@@ -40,18 +51,18 @@ public class BattleMagicSelect : MonoBehaviour
 
     public void Press()
     {
-        if (BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].currentMP >= spellCost)
+        if (BattleManager.instance.GetActiveBattlers[BattleManager.instance.GetCurrentTurn].GetCurrentMP >= spellCost)
         {
-            BattleManager.instance.magicMenu.SetActive(false);
+            BattleManager.instance.GetMagicMenu.SetActive(false);
             BattleManager.instance.OpenTargetMenu(spellName);
-            BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].currentMP -= spellCost;
+            BattleManager.instance.GetActiveBattlers[BattleManager.instance.GetCurrentTurn].SetCurrentMP(BattleManager.instance.GetActiveBattlers[BattleManager.instance.GetCurrentTurn].GetCurrentMP - spellCost);
         }
         else
         {
             //let player know there is not enough MP
-            BattleManager.instance.battleNotice.theText.text = "Not Enough MP!";
-            BattleManager.instance.battleNotice.Activate();
-            BattleManager.instance.magicMenu.SetActive(false);
+            BattleManager.instance.GetBattleNotice.theText.text = "Not Enough MP!";
+            BattleManager.instance.GetBattleNotice.Activate();
+            BattleManager.instance.GetMagicMenu.SetActive(false);
         }
     }
 

@@ -23,31 +23,62 @@ public class BattleChar : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    // The Proper way to expose variables to the editor
-    // without exposing them outside of this script
-    // [SerializeField] private variable variableName = initialvalue;
-    // Example:
-    // [SerializeField] private float health = 10.0f;
-    public bool isPlayer;
-    public string[] movesAvailable;
-    public string charName="";
-    public int currentHp, maxHP, currentMP, maxMP, strength, defence, wpnPower, armrPower;
-    public bool hasDied;
-    public SpriteRenderer theSprite;
-    public Sprite deadSprite, aliveSprite;
-    public float fadeSpeed = 1f;
+    [SerializeField] private bool isPlayer = false;
+    [SerializeField] private string[] movesAvailable = null;
+    [SerializeField] private string charName = "";
+    [SerializeField] private int currentHp = 0;
+    [SerializeField] private int maxHP = 0;
+    [SerializeField] private int currentMP = 0;
+    [SerializeField] private int maxMP = 0;
+    [SerializeField] private int strength = 0;
+    [SerializeField] private int defence = 0;
+    [SerializeField] private int wpnPower = 0;
+    [SerializeField] private int armrPower = 0;
+    [SerializeField] private bool hasDied = false;
+    [SerializeField] private SpriteRenderer theSprite = null;
+    [SerializeField] private Sprite deadSprite = null;
+    [SerializeField] private Sprite aliveSprite = null;
+    [SerializeField] private float fadeSpeed = 1.0f;
 
     #endregion
     #region Private Variable Declarations Only
 
-    private bool shouldFade;
+    private bool mShouldFade;
 
     #endregion
 
     //GETTERS/SETTERS
     #region Getters/Accessors
 
-    public bool isDead => currentHp <= 0;
+    public int GetMaxHP => maxHP;
+    public int GetMaxMP => maxMP;
+    public int GetDefence => defence;
+    public int GetStrength => strength;
+    public bool GetIsPlayer => isPlayer;
+    public int GetCurrentHP => currentHp;
+    public int GetCurrentMP => currentMP;
+    public int GetWeaponPower => wpnPower;
+    public int GetArmorPower => armrPower;
+    public string GetCharName => charName;
+    public Sprite GetDeadSprite => deadSprite;
+    public Sprite GetAliveSprite => aliveSprite;
+    public SpriteRenderer GetSprite => theSprite;
+    public string[] GetMovesAvailable => movesAvailable;
+
+    #endregion
+    #region Setters/Mutators
+
+    public int SetMaxMP(int amount) => maxMP = amount;
+    public int SetMaxHP(int amount) => maxHP = amount;
+    public int SetDefense(int amount) => defence = amount;
+    public bool SetIsPlayer(bool yesNo) => isPlayer = yesNo;
+    public int SetStrength(int amount) => strength = amount;
+    public int SetCurrentHP(int amount) => currentHp = amount;
+    public string SetCharName(string name) => charName = name;
+    public int SetCurrentMP(int amount) => currentMP = amount;
+    public int SetArmorPower(int amount) => armrPower = amount;
+    public int SetWeaponPower(int amount) => wpnPower = amount;
+    public string[] SetMovesAvailable(string[] moves) => movesAvailable = moves;
 
     #endregion
 
@@ -56,6 +87,7 @@ public class BattleChar : MonoBehaviour
 
     private void Start()
     {
+        mShouldFade = false;
         theSprite.sprite = aliveSprite;
     }
 
@@ -64,7 +96,7 @@ public class BattleChar : MonoBehaviour
 
     private void Update()
     {
-        if (shouldFade)
+        if (mShouldFade)
         {
             theSprite.color = new Color(Mathf.MoveTowards(theSprite.color.r, 1f, fadeSpeed * Time.deltaTime), 
                                         Mathf.MoveTowards(theSprite.color.g, 0f, fadeSpeed * Time.deltaTime), 
@@ -83,7 +115,7 @@ public class BattleChar : MonoBehaviour
 
     public void EnemyFade()
     {
-        shouldFade = true;
+        mShouldFade = true;
     }
 
     public static implicit operator BattleChar(CharStats v)
