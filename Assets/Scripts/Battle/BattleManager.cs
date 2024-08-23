@@ -305,10 +305,10 @@ public class BattleManager : MonoBehaviour
 
     private void DealDamage(int target, int movePower)
     {
-        var atkPwr = activeBattlers[currentTurn].GetStrength + activeBattlers[currentTurn].GetWeaponPower;
-        var defPwr = activeBattlers[target].GetDefence + activeBattlers[target].GetArmorPower;
-        var damageCalc = (atkPwr / defPwr) * movePower * Random.Range(.9f, 1.1f);
-        var damageToGive = Mathf.RoundToInt(damageCalc);
+        float atkPwr = activeBattlers[currentTurn].GetStrength + activeBattlers[currentTurn].GetWeaponPower;
+        float defPwr = activeBattlers[target].GetDefence + activeBattlers[target].GetArmorPower;
+        float damageCalc = (atkPwr / defPwr) * movePower * Random.Range(.9f, 1.1f);
+        int damageToGive = Mathf.RoundToInt(damageCalc);
 
         Debug.Log(activeBattlers[currentTurn].GetCharName + " is dealing " + damageCalc + "(" + damageToGive + ") damage to " + activeBattlers[target].GetCharName);
 
