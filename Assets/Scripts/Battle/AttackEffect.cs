@@ -23,8 +23,9 @@ public class AttackEffect : MonoBehaviour
     // You will have to reenter all values in the inspector to ALL Objects that
     // The Proper way to instantiate variables to be edited in the editor
     // without exposing them outside of this script
-    // [SerializeField] private int soundEffect;
-    // [SerializeField] private float effectLength;
+    // [SerializeField] private variable variableName = initialvalue;
+    // Example:
+    // [SerializeField] private float health = 10.0f;
     public int soundEffect;
     public float effectLength;
 
@@ -33,7 +34,7 @@ public class AttackEffect : MonoBehaviour
     //FUNCTIONS
     #region Initialization Functions/Methods
 
-    void Start ()
+    private void Start ()
     {
         AudioManager.instance.PlaySFX(soundEffect);
 	}
@@ -41,7 +42,7 @@ public class AttackEffect : MonoBehaviour
     #endregion
     #region Implementation Functions/Methods
 
-    void Update ()
+    private void Update ()
     {
         Destroy(gameObject, effectLength);
 	}

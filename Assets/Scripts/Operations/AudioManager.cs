@@ -44,9 +44,9 @@ public class AudioManager : MonoBehaviour
     // reference this script.
     // The Proper way to expose variables to the editor
     // without exposing them outside of this script
-    // [SerializeField] private AudioSource[] sfx = null;
-    // [SerializeField] private AudioSource[] bgm = null;
-    // [SerializeField] private int bgmCurrentTrack = -1;
+    // [SerializeField] private variable variableName = initialvalue;
+    // Example:
+    // [SerializeField] private float health = 10.0f;
     public AudioSource[] sfx = null;
     public AudioSource[] bgm = null;
     public int bgmCurrentTrack = -1;

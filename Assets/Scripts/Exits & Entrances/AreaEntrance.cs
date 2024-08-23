@@ -1,22 +1,49 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: AreaEntrance.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 23, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 
-//Bonehead Games
+public class AreaEntrance : MonoBehaviour
+{
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-public class AreaEntrance : MonoBehaviour {
-
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    // The Proper way to expose variables to the editor
+    // without exposing them outside of this script
+    // [SerializeField] private variable variableName = initialvalue;
+    // Example:
+    // [SerializeField] private float health = 10.0f;
     public string transitionName;
 	public RuntimeAnimatorController playerAnimatorOverride;
 	public PortController portController;
 	public bool isPort;
 
-	private static RuntimeAnimatorController m_overridenAnimationController;
+    #endregion
+    #region Private Variable Declarations Only
 
-	
-	void Start () {
+    private static RuntimeAnimatorController m_overridenAnimationController;
 
-		if(transitionName == PlayerController.instance.areaTransitionName)
+    #endregion
+
+    //FUNCTIONS
+    #region Initialization Methods/Functions
+    private void Start ()
+	{
+		if (transitionName == PlayerController.instance.areaTransitionName)
         {
 			if (isPort && Boat.boatLeftPort)
 			{
@@ -31,7 +58,7 @@ public class AreaEntrance : MonoBehaviour {
         UIFade.instance.FadeFromBlack();
         GameManager.instance.fadingBetweenAreas = false;
 
-		if(null != playerAnimatorOverride)
+		if (null != playerAnimatorOverride)
         {
 			if (null != m_overridenAnimationController)
 			{
@@ -48,9 +75,12 @@ public class AreaEntrance : MonoBehaviour {
 			PlayerController.instance.animationController = m_overridenAnimationController;
 		}
 	}
-	
-	
-	void Update () {
+
+    #endregion
+    #region Implementation Private Methods/Functions
+
+    private void Update ()
+	{
         if (transitionName == PlayerController.instance.areaTransitionName)
         {
 			if (!Boat.isPlayerOnBoat)
@@ -60,4 +90,6 @@ public class AreaEntrance : MonoBehaviour {
 			}
         }
     }
+
+    #endregion
 }
