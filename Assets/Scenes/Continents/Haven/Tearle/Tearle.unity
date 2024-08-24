@@ -33111,7 +33111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &685953242
 Transform:
   m_ObjectHideFlags: 0
@@ -33124,6 +33124,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1040827293}
+  - {fileID: 1834682344}
   m_Father: {fileID: 251994253}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33536,11 +33537,12 @@ MonoBehaviour:
   - I believe we are.
   - n- Allister
   - Excellent!.  It will be weeks before word gets around that boats can travel here
-    again.  But I have an idea.....
+    again. But that will be after the whirlpool dies down, that could take months...hopefully
+    only months and not years.  But I have an idea.....
   - n-Player
   - ???
   - n- Allister
-  - Yes, I have a brilliant idea.  I will teleport you to The island nation of Altir.
+  - Yes, I have a brilliant idea.  I will teleport you to the island nation of Ashtir.
   - There have been reports of strange things there and you may just be the help
     they need.
   - n-Player
@@ -54117,7 +54119,7 @@ MonoBehaviour:
   - Why in heaven's name woud you have a pet water elemental.
   - n- Allister
   - I do experiments on exotic creatures to better understand their nature.
-  - The fire elemental and got out of his pen, he chased me out of the catacombs.
+  - The fire elemental got out of his pen, he chased me out of the catacombs.
   - And now I am too scared to go back down there and even more scared for my baby.
   - n-Bron
   - You experiment on creatures?
@@ -54127,8 +54129,8 @@ MonoBehaviour:
   - n-Bron
   - We are going down there to rescue the water elemental.
   - n-Bawb
-  - Wait just a second. You want to go down there and battle a fire elemental, and
-    who knows what else.
+  - Wait just a second. You want us to go down there and battle a fire elemental,
+    and who knows what else.
   - What else is down there?
   - n- Allister
   - Spiders, scorpions, some slimes here and there. Slimes make a marvelous clean
@@ -54141,6 +54143,8 @@ MonoBehaviour:
   - n-Bron
   - We are rescuing the water elemental.
   - n-Bawb
+  - We are not
+  - n-Bron
   - We are rescuing the water elemental. Did my words go over your head?
   - n-Player
   - I guess we are going to rescue the water elemental.
@@ -54554,12 +54558,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834682339}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 70.29, y: -4.14, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 685953242}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1834682345
 MonoBehaviour:
