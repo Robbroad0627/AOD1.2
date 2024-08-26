@@ -142,6 +142,7 @@ public class GameManager : MonoBehaviour
     }
 
     #endregion
+    #region Public Functions/Methods
 
     public Item GetItemDetails(string itemToGrab)
     {
@@ -293,6 +294,92 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void SaveData()
+    {
+        if (Inn.isUpstairs)
+        {
+            if (Inn.s_downstairsTransitionPosition != null)
+            {
+                StorePlayerScene(Inn.s_downstairsSceneName);
+                StorePlayerPosition((Vector3)Inn.s_downstairsTransitionPosition);
+            }
+            else
+            {
+                Debug.LogError("SAVE ABORT! Saving while upstairs aborted could not safely restore downstairs scene.");
+            }
+        }
+        else
+        {
+            StorePlayerScene(SceneManager.GetActiveScene().name);
+            StorePlayerPosition(PlayerController.instance.transform.position);
+        }
+
+        var playerCharacter = playerStats[0];
+
+        StoreCharacter(playerCharacter, PLAYER_PREFERENCE_KEY);
+        SaveNonCustomCharacters();
+
+        //store inventory data
+        for (int i = 0 ; i < itemsHeld.Length ; i++)
+        {
+            PlayerPrefs.SetString("ItemInInventory_" + i, itemsHeld[i]);
+            PlayerPrefs.SetInt("ItemAmount_" + i, numberOfItems[i]);
+        }
+
+        //Store quests
+        var questManager = QuestManager.instance;
+        questManager.isReady = false;
+        PlayerPrefs.SetString("QuestsAvailable", JsonUtility.ToJson(questManager.activeQuestNames));
+        PlayerPrefs.SetString("QuestsComplete", JsonUtility.ToJson(questManager.completedQuestNames));
+        questManager.isReady = true;
+    }
+
+    public void LoadData()
+    {
+        var questManager = QuestManager.instance;
+
+        if (questManager == null)
+        {
+            Invoke("LoadData", 0.2f);
+            return;
+        }
+
+        questManager.isReady = false;
+        dataLoadedOnce = true;
+
+        var playerCharacter = PlayerController.instance;
+
+        if (playerCharacter == null)
+        {
+            Invoke("LoadData", 0.1f);
+            return;
+        }
+
+        PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
+
+        //Load the player
+        LoadCharacterByName(playerStats[0], PLAYER_PREFERENCE_KEY);
+        LoadAppearance(playerStats[0], PLAYER_PREFERENCE_KEY); //Only the player's appearance is custom for now
+
+        LoadNonCustomCharacters(); // Load everyone else assuming hardcoded names
+
+        //Load inventory
+        for (int i = 0 ; i < itemsHeld.Length ; i++)
+        {
+            itemsHeld[i] = PlayerPrefs.GetString("ItemInInventory_" + i);
+            numberOfItems[i] = PlayerPrefs.GetInt("ItemAmount_" + i);
+        }
+
+        //Load quests
+        //NOTE order is important
+        questManager.questMarkerNames = JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsAvailable"));
+        questManager.completedQuestNames = JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsComplete"));
+        questManager.isReady = true;
+    }
+
+    #endregion
+    #region Private Funtions/Methods
+
     private void FullRestoreParty()
     {
         foreach (var character in playerStats)
@@ -343,46 +430,6 @@ public class GameManager : MonoBehaviour
         UIFade.instance.FadeFromBlack();
         fadingBetweenAreas = false;
         ModalPromptSaveGame();
-    }
-
-    public void SaveData()
-    {
-        if (Inn.isUpstairs)
-        {
-            if (Inn.s_downstairsTransitionPosition != null)
-            {
-                StorePlayerScene(Inn.s_downstairsSceneName);
-                StorePlayerPosition((Vector3)Inn.s_downstairsTransitionPosition);
-            }
-            else
-            {
-                Debug.LogError("SAVE ABORT! Saving while upstairs aborted could not safely restore downstairs scene.");
-            }
-        }
-        else
-        {
-            StorePlayerScene(SceneManager.GetActiveScene().name);
-            StorePlayerPosition(PlayerController.instance.transform.position);
-        }
-
-        var playerCharacter = playerStats[0];
-
-        StoreCharacter(playerCharacter, PLAYER_PREFERENCE_KEY);
-        SaveNonCustomCharacters();
-
-        //store inventory data
-        for (int i = 0; i < itemsHeld.Length; i++)
-        {
-            PlayerPrefs.SetString("ItemInInventory_" + i, itemsHeld[i]);
-            PlayerPrefs.SetInt("ItemAmount_" + i, numberOfItems[i]);
-        }
-
-        //Store quests
-        var questManager = QuestManager.instance;
-        questManager.isReady = false;
-        PlayerPrefs.SetString("QuestsAvailable",JsonUtility.ToJson(questManager.activeQuestNames));
-        PlayerPrefs.SetString("QuestsComplete",JsonUtility.ToJson(questManager.completedQuestNames));
-        questManager.isReady = true;
     }
 
     private void SaveNonCustomCharacters()
@@ -447,49 +494,6 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetFloat("Player_Position_x", pos.x);
         PlayerPrefs.SetFloat("Player_Position_y", pos.y);
         PlayerPrefs.SetFloat("Player_Position_z", pos.z);
-    }
-
-    public void LoadData()
-    {
-        var questManager = QuestManager.instance;
-
-        if (questManager == null)
-        {
-            Invoke("LoadData", 0.2f);
-            return;
-        }
-
-        questManager.isReady = false;
-        dataLoadedOnce = true;
-
-        var playerCharacter = PlayerController.instance;
-
-        if (playerCharacter == null)
-        {
-            Invoke("LoadData", 0.1f);
-            return;
-        }
-
-        PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
-
-        //Load the player
-        LoadCharacterByName(playerStats[0], PLAYER_PREFERENCE_KEY);
-        LoadAppearance(playerStats[0], PLAYER_PREFERENCE_KEY); //Only the player's appearance is custom for now
-
-        LoadNonCustomCharacters(); // Load everyone else assuming hardcoded names
-
-        //Load inventory
-        for (int i = 0; i < itemsHeld.Length; i++)
-        {
-            itemsHeld[i] = PlayerPrefs.GetString("ItemInInventory_" + i);
-            numberOfItems[i] = PlayerPrefs.GetInt("ItemAmount_" + i);
-        }
-
-        //Load quests
-        //NOTE order is important
-        questManager.questMarkerNames=JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsAvailable"));
-        questManager.completedQuestNames= JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsComplete"));
-        questManager.isReady = true;
     }
 
     private void LoadNonCustomCharacters()
@@ -562,4 +566,6 @@ public class GameManager : MonoBehaviour
         currentCharacterStats.SetEquippedShield(PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrshield"));
         currentCharacterStats.SetEquippedOtherArmor(PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrOther"));
     }
+
+    #endregion
 }
