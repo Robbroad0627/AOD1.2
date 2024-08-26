@@ -6,7 +6,7 @@
  * Description: Deals with Audio for the Game
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 23, 2024
+ * Date Last Modified: August 26, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
@@ -48,14 +48,14 @@ public class AudioManager : MonoBehaviour
     #endregion
     #region Private Variables
 
-    private int bgmCurrentTrack;
+    private int mBGMCurrentTrack;
 
     #endregion
 
     //GETTERS/SETTERS
     #region Getters/Accessors
 
-    public int GetCurrentBackgroundMusic => bgmCurrentTrack;
+    public int GetCurrentBackgroundMusic => mBGMCurrentTrack;
 
     #endregion
 
@@ -69,7 +69,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        bgmCurrentTrack = -1;
+        mBGMCurrentTrack = -1;
     }
 
     #endregion
@@ -85,7 +85,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBGM(int musicToPlay)
     {
-        bgmCurrentTrack = musicToPlay;
+        mBGMCurrentTrack = musicToPlay;
 
         if ((musicToPlay < 0) || (musicToPlay > bgm.Length))
         {
