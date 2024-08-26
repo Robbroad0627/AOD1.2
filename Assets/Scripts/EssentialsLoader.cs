@@ -1,25 +1,46 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: EssentialsLoader.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 26, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 
-//Bonehead Games
+public class EssentialsLoader : MonoBehaviour
+{
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-public class EssentialsLoader : MonoBehaviour {
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private GameObject UIScreen = null;
+    [SerializeField] private GameObject player = null;
+    [SerializeField] private GameObject gameMan = null;
+    [SerializeField] private GameObject audioMan = null;
+    [SerializeField] private GameObject battleMan = null;
 
-    public GameObject UIScreen;
-    public GameObject player;
-    public GameObject gameMan;
-    public GameObject audioMan;
-    public GameObject battleMan;
+    #endregion
 
-	// Use this for initialization
-	void Start () {
-		if(UIFade.instance == null)
+    //FUNCTIONS
+    #region Initialization Functions/Methods
+
+    void Start ()
+    {
+		if (UIFade.instance == null)
         {
             UIFade.instance = Instantiate(UIScreen).GetComponent<UIFade>();
         }
 
-        if(PlayerController.instance == null)
+        if (PlayerController.instance == null)
         {
             PlayerController clone = Instantiate(player).GetComponent<PlayerController>();
             PlayerController.instance = clone;
@@ -30,19 +51,16 @@ public class EssentialsLoader : MonoBehaviour {
             GameManager.instance = Instantiate(gameMan).GetComponent<GameManager>();
         }
 
-        if(AudioManager.instance == null)
+        if (AudioManager.instance == null)
         {
             AudioManager.instance = Instantiate(audioMan).GetComponent<AudioManager>();
         }
 
-        if(BattleManager.instance == null)
+        if (BattleManager.instance == null)
         {
             BattleManager.instance = Instantiate(battleMan).GetComponent<BattleManager>();
         }
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    #endregion
 }
