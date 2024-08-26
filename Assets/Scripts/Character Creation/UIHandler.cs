@@ -35,11 +35,11 @@ public class UIHandler : MonoBehaviour
 
     void UpdateUI()
     {
-        raceText.text = myCharCreator.myRace.ToString();
-        classText.text = myCharCreator.myClass.ToString();
+        raceText.text = myCharCreator.GetPlayerRace.ToString();
+        classText.text = myCharCreator.GetPlayerClass.ToString();
         myCharCreator.CheckRace();
         myCharCreator.CheckClass();
-        if (myCharCreator.isMale)
+        if (myCharCreator.GetIsMale)
             sexText.text = "Male";
         else
             sexText.text = "Female";
@@ -47,14 +47,14 @@ public class UIHandler : MonoBehaviour
     
        
 
-        strValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Strength].ToString();
-        dexValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Dexterity].ToString();
-        conValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Constitution].ToString();
-        intValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Intelligence].ToString();
-        wisValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Wisdom].ToString();
-        chaValue.text = myCharCreator.myAttributes[CharacterAttributes.BaseAttributes.Charisma].ToString();
-        hpValue.text = myCharCreator.myHP.ToString();
-        mpValue.text = myCharCreator.myMP.ToString();
+        strValue.text = myCharCreator.GetPlayerAttributes[CharacterAttributes.BaseAttributes.Strength].ToString();
+        dexValue.text = myCharCreator.GetPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity].ToString();
+        conValue.text = myCharCreator.GetPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution].ToString();
+        intValue.text = myCharCreator.GetPlayerAttributes[CharacterAttributes.BaseAttributes.Intelligence].ToString();
+        wisValue.text = myCharCreator.GetPlayerAttributes[CharacterAttributes.BaseAttributes.Wisdom].ToString();
+        chaValue.text = myCharCreator.GetPlayerAttributes[CharacterAttributes.BaseAttributes.Charisma].ToString();
+        hpValue.text = myCharCreator.GetPlayerHP.ToString();
+        mpValue.text = myCharCreator.GetPlayerMP.ToString();
 
 
     }
@@ -85,11 +85,8 @@ public class UIHandler : MonoBehaviour
 
     public void SexButtonClicked()
     {
-
-        myCharCreator.isMale = !myCharCreator.isMale;
+        myCharCreator.SetIsMale(!myCharCreator.GetIsMale);
         myCharCreator.CheckRace();
         UpdateUI();
     }
-
-
 }
