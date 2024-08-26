@@ -1,62 +1,77 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: CameraController.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 26, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-//Bonehead Games
+public class CameraController : MonoBehaviour
+{
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-public class CameraController : MonoBehaviour {
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private Transform target;
+    [SerializeField] private Tilemap theMap;
 
-    public Transform target;
+    #endregion
+    #region Private Variables
 
-    public Tilemap theMap;
-    private Vector3 bottomLeftLimit;
-    private Vector3 topRightLimit;
+    private float mCameraWidth;
+    private float mCameraHeight;
+    private Vector3 mTopRightLimit;
+    private Vector3 mBottomLeftLimit;
 
-    private float halfHeight;
-    private float halfWidth;
+    #endregion
 
-   // public int musicToPlay;
-   // private bool musicStarted;
+    //FUNCTIONS
+    #region Initialization Functions/Methods
 
-	// Use this for initialization
-	void Start () {
-        //target = PlayerController.instance.transform;
+    private void Start ()
+    {
+        PlayerController thePlayerController = PlayerController.instance;
 
-        PlayerController pc = PlayerController.instance;
-
-        if(null != pc)
+        if (thePlayerController != null)
         {
-            target = pc.transform;
-            halfHeight = Camera.main.orthographicSize;
-            halfWidth = halfHeight * Camera.main.aspect;
+            target = thePlayerController.transform;
+            mCameraHeight = Camera.main.orthographicSize;
+            mCameraWidth = mCameraHeight * Camera.main.aspect;
 
             theMap.CompressBounds();
-            bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth, halfHeight, 0f);
-            topRightLimit = theMap.localBounds.max + new Vector3(-halfWidth, -halfHeight, 0f);
+            mBottomLeftLimit = theMap.localBounds.min + new Vector3(mCameraWidth, mCameraHeight, 0f);
+            mTopRightLimit = theMap.localBounds.max + new Vector3(-mCameraWidth, -mCameraHeight, 0f);
 
-            PlayerController.instance.SetBounds(theMap.localBounds.min, theMap.localBounds.max);
+            thePlayerController.SetBounds(theMap.localBounds.min, theMap.localBounds.max);
         }
         else
         {
             Debug.LogWarning("Camera can't find player this is normal on the main menu.");
         }
-
-
 	}
-	
-	// LateUpdate is called once per frame after Update
-	void LateUpdate () {
+
+    #endregion
+    #region Implementation functions/Methods
+
+    private void LateUpdate ()
+    {
         Vector3 vector3 = new Vector3(target.position.x, target.position.y, transform.position.z);
         transform.position = vector3;
 
         //keep the camera inside the bounds
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x), Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
-
-       // if(!musicStarted)
-       // {
-         //   musicStarted = true;
-          //  AudioManager.instance.PlayBGM(musicToPlay);
-        //}
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, mBottomLeftLimit.x, mTopRightLimit.x), Mathf.Clamp(transform.position.y, mBottomLeftLimit.y, mTopRightLimit.y), transform.position.z);
 	}
+
+    #endregion
 }
