@@ -129,7 +129,7 @@ public class DialogManager : MonoBehaviour
         {
             dialogBox.SetActive(false);
 
-            GameManager.instance.dialogActive = false;
+            GameManager.instance.SetDialogActive(false);
 
             if (mShouldMarkQuest)
             {
@@ -158,7 +158,7 @@ public class DialogManager : MonoBehaviour
         if (mDialogLines[mCurrentLine].StartsWith("n-"))
         {
             nameText.text = mDialogLines[mCurrentLine].Replace("n-", "");
-            nameText.text = nameText.text == "Player" ? GameManager.instance.playerName : nameText.text;
+            nameText.text = nameText.text == "Player" ? GameManager.instance.GetPlayerName : nameText.text;
             mCurrentLine++;
         }
     }
@@ -190,7 +190,7 @@ public class DialogManager : MonoBehaviour
         dialogBox.SetActive(true);
         mJustStarted = true;
         nameBox.SetActive(isPerson);
-        GameManager.instance.dialogActive = true;
+        GameManager.instance.SetDialogActive(true);
     }
 
     public void ShouldActivateQuestAtEnd(string questName, bool markComplete)

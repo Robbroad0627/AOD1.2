@@ -1,51 +1,110 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: GameManager.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 26, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//Bonehead Games
-
 public class GameManager : MonoBehaviour
 {
-    private const string kPlayercharacterPreferenceKey = "!!!Special:Player";
+    //SINGLETON
+    #region Singleton
+
     public static GameManager instance;
 
-    public CharStats[] playerStats;
+    private void Singleton()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+    }
 
-    public bool gameMenuOpen, dialogActive, fadingBetweenAreas, shopActive, battleActive;
+    #endregion
 
-    public string[] itemsHeld;
-    public int[] numberOfItems;
-    public Item[] referenceItems;
+    //VARIABLES
+    #region Constant Variable Declarations and Initializations
 
-    public int currentGold;
+    private const string PLAYER_PREFERENCE_KEY = "!!!Special:Player";
 
-    //Used to load data if the game was loaded form a scene instad of the main menu
-    //Should also be harmless if loading from main menu.
-    public bool dataLoadedOnce =false;
-    public bool haveBoat;
+    #endregion
+    #region Inspector/Exposed Variables
 
-    //HACK: Assuming character zero is the player since this is not defined.
-    public string playerName => playerStats[0].GetCharacterName;
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private CharStats[] playerStats = null;
+    [SerializeField] private bool gameMenuOpen = false;
+    [SerializeField] private bool dialogActive = false;
+    [SerializeField] private bool fadingBetweenAreas = false;
+    [SerializeField] private bool shopActive = false;
+    [SerializeField] private bool battleActive = false;
+    [SerializeField] private string[] itemsHeld = null;
+    [SerializeField] private int[] numberOfItems = null;
+    [SerializeField] private Item[] referenceItems = null;
+    [SerializeField] private int currentGold = 0;
+    [SerializeField] private bool dataLoadedOnce = false;
+    [SerializeField] private bool haveBoat = false;
 
-    // Use this for initialization
-    void Start()
+    #endregion
+
+    //GETTERS/SETTERS
+    #region Getters/Accessors
+
+    public bool GetHasBoat => haveBoat;
+    public int GetCurrentGold => currentGold;
+    public string[] GetItemsHeld => itemsHeld;
+    public bool GetBattleActive => battleActive;
+    public int[] GetNumberOfItems => numberOfItems;
+    public CharStats[] GetCharacterStats => playerStats;
+    public string GetPlayerName => playerStats[0].GetCharacterName;
+
+    #endregion
+    #region Setters/Mutators
+
+    public bool SetShopActive(bool yesNo) => shopActive = yesNo;
+    public int SetCurrentGold(int amount) => currentGold = amount;
+    public bool SetBattleActive(bool yesNo) => battleActive = yesNo;
+    public bool SetDialogActive(bool yesNo) => dialogActive = yesNo;
+    public bool SetGameMenuOpen(bool yesNo) => gameMenuOpen = yesNo;
+    public bool SetFadingBetweenAreas(bool yesNo) => fadingBetweenAreas = yesNo;
+
+    #endregion
+
+    //FUNCTIONS
+    #region Initialization Functions/Methods
+
+    private void Awake()
+    {
+        Singleton();
+    }
+
+    private void Start()
     {
         instance = this;
-
         DontDestroyOnLoad(gameObject);
-        //if(!dataLoadedOnce)
-        //{
-        //    LoadData();
-        //    //QuestManager.instance.LoadQuestData();
-        //}
-
         SortItems();
     }
 
-    // Update is called once per frame
-    void Update()
+    #endregion
+    #region Implementation Functions/Methods
+
+    private void Update()
     {
         if (GameObject.Find("Player"))
         {
@@ -58,7 +117,7 @@ public class GameManager : MonoBehaviour
                 PlayerController.instance.canMove = true;
             }
 
-#if UNITY_EDITOR
+            #if UNITY_EDITOR
             //Cheats
             if (Input.GetKeyDown(KeyCode.J))
             {
@@ -68,7 +127,7 @@ public class GameManager : MonoBehaviour
                 RemoveItem("Health Potion");
                 RemoveItem("Bleep");
             }
-#endif
+            #endif
 
             if (Input.GetKeyDown(KeyCode.O))
             {
@@ -80,13 +139,13 @@ public class GameManager : MonoBehaviour
                 LoadData();
             }
         }
-
     }
 
+    #endregion
+    #region Public Functions/Methods
 
     public Item GetItemDetails(string itemToGrab)
     {
-
         for (int i = 0; i < referenceItems.Length; i++)
         {
             if (referenceItems[i].itemName == itemToGrab)
@@ -95,32 +154,29 @@ public class GameManager : MonoBehaviour
             }
         }
 
-
-
-
         return null;
     }
 
     public void SortItems()
     {
-        bool itemAFterSpace = true;
+        bool itemAfterSpace = true;
 
-        while (itemAFterSpace)
+        while (itemAfterSpace)
         {
-            itemAFterSpace = false;
+            itemAfterSpace = false;
+
             for (int i = 0; i < itemsHeld.Length - 1; i++)
             {
                 if (itemsHeld[i] == "")
                 {
                     itemsHeld[i] = itemsHeld[i + 1];
                     itemsHeld[i + 1] = "";
-
                     numberOfItems[i] = numberOfItems[i + 1];
                     numberOfItems[i + 1] = 0;
 
                     if (itemsHeld[i] != "")
                     {
-                        itemAFterSpace = true;
+                        itemAfterSpace = true;
                     }
                 }
             }
@@ -133,11 +189,12 @@ public class GameManager : MonoBehaviour
     /// <param name="itemToAdd"></param>
     public void AddItem(string itemToAdd)
     {
-        if(null == itemToAdd)
+        if (itemToAdd == null)
         {
             Debug.LogError("Couldn't add null item to player inventory.");
             return;
         }
+
         int newItemPosition = 0;
         bool foundSpace = false;
 
@@ -154,6 +211,7 @@ public class GameManager : MonoBehaviour
         if (foundSpace)
         {
             bool itemExists = false;
+
             for (int i = 0; i < referenceItems.Length; i++)
             {
                 if (referenceItems[i].itemName == itemToAdd)
@@ -218,89 +276,29 @@ public class GameManager : MonoBehaviour
 
     public void ModalPromptBoatTrip(int goldCost)
     {
-        var dm = DialogManager.instance;
-        if(currentGold >= goldCost)
-        {
-            dm.Prompt($"Do you want to travel by boat? It will cost {goldCost}g.", PortChoice, null, "Yes", "No", "Boat Captian");
-        }
-        else
-        {
+        var dialogManager = DialogManager.instance;
 
+        if (currentGold >= goldCost)
+        {
+            dialogManager.Prompt($"Do you want to travel by boat? It will cost {goldCost}g.", PortChoice, null, "Yes", "No", "Boat Captian");
         }
     }
 
     public void ModalPromptInn(int goldCost)
     {
-        var dm = DialogManager.instance;
+        var dialogManager = DialogManager.instance;
+
         if (currentGold >= goldCost)
         {
-            dm.Prompt($"Do you want to stay the night? It will cost {goldCost}g.", InnSequence, null);
+            dialogManager.Prompt($"Do you want to stay the night? It will cost {goldCost}g.", InnSequence, null);
         }
-        else
-        {
-
-        }
-    }
-
-    public void FullRestoreParty()
-    {
-        foreach (var character in playerStats)
-        {
-            character.SetCurrentHP(character.GetMaxHP);
-            character.SetCurrentMP(character.GetMaxMP);
-        }
-    }
-    
-    private void PortChoice()
-    {
-        var dm = DialogManager.instance;
-        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
-        captian.boatTripConfirmed = true;
-        var nextContinent = captian.nextContinent;
-        var preContinent = captian.previousContinent;
-        var nextAreatoLoad = captian.nextAreaToLoad;
-        var preAreatoLoad = captian.previousAreaToLoad;
-        dm.PortPrompt($"Where would you like to go?", NextPortChoice, PreviousPortChoice, $"{nextContinent} - {nextAreatoLoad}", $"{preContinent} - {preAreatoLoad}", "Boat Captian");
-    }
-
-    private void NextPortChoice()
-    {
-        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
-        captian.boatTripConfirmed = false;
-        captian.boatDestinationConfirmedNext = true;        
-    }
-
-    private void PreviousPortChoice()
-    {
-        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
-        captian.boatTripConfirmed = false;
-        captian.boatDestinationConfirmedPre = true;
-    }
-
-    private void InnSequence()
-    {
-        UIFade.instance.FadeToBlack();
-        //HACK: The screen fader is too dumb to do callbacks so just use a timer.
-        GameManager.instance.fadingBetweenAreas = false;
-        Invoke("InnPostFade", 1.5f);
-
-    }
-
-    private void InnPostFade()
-    {
-        FullRestoreParty();
-        Inn.WarpUpstairs();
-        
-        UIFade.instance.FadeFromBlack();
-        GameManager.instance.fadingBetweenAreas = false;
-        ModalPromptSaveGame();
     }
 
     public void SaveData()
     {
         if (Inn.isUpstairs)
         {
-            if (null != Inn.s_downstairsTransitionPosition)
+            if (Inn.s_downstairsTransitionPosition != null)
             {
                 StorePlayerScene(Inn.s_downstairsSceneName);
                 StorePlayerPosition((Vector3)Inn.s_downstairsTransitionPosition);
@@ -317,22 +315,121 @@ public class GameManager : MonoBehaviour
         }
 
         var playerCharacter = playerStats[0];
-        StoreCharacter(playerCharacter, kPlayercharacterPreferenceKey);
+
+        StoreCharacter(playerCharacter, PLAYER_PREFERENCE_KEY);
         SaveNonCustomCharacters();
 
         //store inventory data
-        for (int i = 0; i < itemsHeld.Length; i++)
+        for (int i = 0 ; i < itemsHeld.Length ; i++)
         {
             PlayerPrefs.SetString("ItemInInventory_" + i, itemsHeld[i]);
             PlayerPrefs.SetInt("ItemAmount_" + i, numberOfItems[i]);
         }
 
         //Store quests
-        var qm = QuestManager.instance;
-        qm.isReady = false;
-        PlayerPrefs.SetString("QuestsAvailable",JsonUtility.ToJson(qm.activeQuestNames));
-        PlayerPrefs.SetString("QuestsComplete",JsonUtility.ToJson(qm.completedQuestNames));
-        qm.isReady = true;
+        var questManager = QuestManager.instance;
+        questManager.isReady = false;
+        PlayerPrefs.SetString("QuestsAvailable", JsonUtility.ToJson(questManager.activeQuestNames));
+        PlayerPrefs.SetString("QuestsComplete", JsonUtility.ToJson(questManager.completedQuestNames));
+        questManager.isReady = true;
+    }
+
+    public void LoadData()
+    {
+        var questManager = QuestManager.instance;
+
+        if (questManager == null)
+        {
+            Invoke("LoadData", 0.2f);
+            return;
+        }
+
+        questManager.isReady = false;
+        dataLoadedOnce = true;
+
+        var playerCharacter = PlayerController.instance;
+
+        if (playerCharacter == null)
+        {
+            Invoke("LoadData", 0.1f);
+            return;
+        }
+
+        PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
+
+        //Load the player
+        LoadCharacterByName(playerStats[0], PLAYER_PREFERENCE_KEY);
+        LoadAppearance(playerStats[0], PLAYER_PREFERENCE_KEY); //Only the player's appearance is custom for now
+
+        LoadNonCustomCharacters(); // Load everyone else assuming hardcoded names
+
+        //Load inventory
+        for (int i = 0 ; i < itemsHeld.Length ; i++)
+        {
+            itemsHeld[i] = PlayerPrefs.GetString("ItemInInventory_" + i);
+            numberOfItems[i] = PlayerPrefs.GetInt("ItemAmount_" + i);
+        }
+
+        //Load quests
+        //NOTE order is important
+        questManager.questMarkerNames = JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsAvailable"));
+        questManager.completedQuestNames = JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsComplete"));
+        questManager.isReady = true;
+    }
+
+    #endregion
+    #region Private Funtions/Methods
+
+    private void FullRestoreParty()
+    {
+        foreach (var character in playerStats)
+        {
+            character.SetCurrentHP(character.GetMaxHP);
+            character.SetCurrentMP(character.GetMaxMP);
+        }
+    }
+    
+    private void PortChoice()
+    {
+        var dialogManager = DialogManager.instance;
+        var captian = FindObjectOfType<BoatCaptain>();
+        captian.boatTripConfirmed = true;
+        var nextContinent = captian.nextContinent;
+        var preContinent = captian.previousContinent;
+        var nextAreatoLoad = captian.nextAreaToLoad;
+        var preAreatoLoad = captian.previousAreaToLoad;
+        dialogManager.PortPrompt($"Where would you like to go?", NextPortChoice, PreviousPortChoice, $"{nextContinent} - {nextAreatoLoad}", $"{preContinent} - {preAreatoLoad}", "Boat Captian");
+    }
+
+    private void NextPortChoice()
+    {
+        var captian = FindObjectOfType<BoatCaptain>();
+        captian.boatTripConfirmed = false;
+        captian.boatDestinationConfirmedNext = true;        
+    }
+
+    private void PreviousPortChoice()
+    {
+        var captian = FindObjectOfType<BoatCaptain>();
+        captian.boatTripConfirmed = false;
+        captian.boatDestinationConfirmedPre = true;
+    }
+
+    private void InnSequence()
+    {
+        UIFade.instance.FadeToBlack();
+        fadingBetweenAreas = false;
+        Invoke("InnPostFade", 1.5f);
+
+    }
+
+    private void InnPostFade()
+    {
+        FullRestoreParty();
+        Inn.WarpUpstairs();
+        UIFade.instance.FadeFromBlack();
+        fadingBetweenAreas = false;
+        ModalPromptSaveGame();
     }
 
     private void SaveNonCustomCharacters()
@@ -346,10 +443,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private static void StoreCharacter(CharStats currentCharacterStats,string charKey=null)
+    private static void StoreCharacter(CharStats currentCharacterStats, string charKey=null)
     {
         string charName = charKey ?? currentCharacterStats.GetCharacterName;
-        //NOTE this hsould be bool, maintaining for backward compatability
+        //NOTE this should be bool, maintaining for backward compatability
         if (currentCharacterStats.gameObject.activeInHierarchy)
         {
             PlayerPrefs.SetInt("Player_" + charName + "_active", 1);
@@ -372,7 +469,6 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("Player_" + charName + "_ArmrPwr", currentCharacterStats.GetArmorPower);
         StoreEquips(currentCharacterStats, charName);
 
-
         //Store appearence
         PlayerPrefs.SetString("Player_" + charName + "_Class", currentCharacterStats.GetClass.ToString());
         PlayerPrefs.SetString("Player_" + charName + "_Sex", currentCharacterStats.GetSex);
@@ -389,63 +485,15 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrLegs", currentCharacterStats.GetEquippedLegArmor);
         PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrshield", currentCharacterStats.GetEquippedShield);
         PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrOther", currentCharacterStats.GetEquippedOtherArmor);
-
     }
 
     private static void StorePlayerScene(string sceneName) => PlayerPrefs.SetString("Current_Scene", sceneName );
+
     private static void StorePlayerPosition(Vector3 pos)
     {
         PlayerPrefs.SetFloat("Player_Position_x", pos.x);
         PlayerPrefs.SetFloat("Player_Position_y", pos.y);
         PlayerPrefs.SetFloat("Player_Position_z", pos.z);
-    }
-
-    public void LoadData()
-    {
-        var qm = QuestManager.instance;
-        if(null == qm)
-        {
-            //HACK the quest manager wasn't created yet but important object
-            //liftetime managemnt is too messy so just retry after a timer
-            Invoke("LoadData", 0.2f);
-            return;
-        }
-        qm.isReady = false;
-        dataLoadedOnce = true;
-
-        var pc = PlayerController.instance;
-        if (null == pc)
-        {
-            //HACK the player controller wasn't created yet but important object
-            //liftetime managemnt is too messy so just retry after a timer
-            Invoke("LoadData", 0.1f);
-            return;
-        }
-
-        PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
-
-        //Debug.LogError("Character art loading not implemented");
-
-        //Load the player
-        LoadCharacterByName(playerStats[0], kPlayercharacterPreferenceKey);
-        LoadAppearance(playerStats[0], kPlayercharacterPreferenceKey); //Onl;y the player's appearance is custom for now
-
-        LoadNonCustomCharacters(); // Load everyone else assuming hardcoded names
-
-        //Load inventory
-        for (int i = 0; i < itemsHeld.Length; i++)
-        {
-            itemsHeld[i] = PlayerPrefs.GetString("ItemInInventory_" + i);
-            numberOfItems[i] = PlayerPrefs.GetInt("ItemAmount_" + i);
-        }
-
-        //Load quests
-        //NOTE order is important
-        qm.questMarkerNames=JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsAvailable"));
-        qm.completedQuestNames= JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsComplete"));
-        qm.isReady = true;
-
-
     }
 
     private void LoadNonCustomCharacters()
@@ -481,8 +529,6 @@ public class GameManager : MonoBehaviour
         currentCharacterStats.SetWeaponPower(PlayerPrefs.GetInt("Player_" + charName + "_WpnPwr"));
         currentCharacterStats.SetArmorPower(PlayerPrefs.GetInt("Player_" + charName + "_ArmrPwr"));
         LoadEquips(currentCharacterStats, charName);
-
-        
     }
 
     private static void LoadAppearance(CharStats currentCharacterStats, string charName)
@@ -520,4 +566,6 @@ public class GameManager : MonoBehaviour
         currentCharacterStats.SetEquippedShield(PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrshield"));
         currentCharacterStats.SetEquippedOtherArmor(PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrOther"));
     }
+
+    #endregion
 }

@@ -25,9 +25,9 @@ public class ItemButton : MonoBehaviour {
     {
         if (GameMenu.instance.theMenu.activeInHierarchy)
         {
-            if (GameManager.instance.itemsHeld[buttonValue] != "")
+            if (GameManager.instance.GetItemsHeld[buttonValue] != "")
             {
-                GameMenu.instance.SelectItem(GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[buttonValue]));
+                GameMenu.instance.SelectItem(GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[buttonValue]));
             }
         }
 
@@ -40,7 +40,7 @@ public class ItemButton : MonoBehaviour {
 
             if(Shop.instance.sellMenu.activeInHierarchy)
             {
-                Shop.instance.SelectSellItem(GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[buttonValue]));
+                Shop.instance.SelectSellItem(GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[buttonValue]));
             }
         }
     }

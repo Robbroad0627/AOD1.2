@@ -33,7 +33,7 @@ public class InnUpstairsExit :MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (needBoat && !GameManager.instance.haveBoat)
+            if (needBoat && !GameManager.instance.GetHasBoat)
             {
                 //Cant use boat area without one.
                 Debug.Log("Area needs boat but GameManager.haveBoat == false");
@@ -42,7 +42,7 @@ public class InnUpstairsExit :MonoBehaviour
             PlayerController.instance.areaTransitionName = Inn.s_downstairsTransitionName;
             this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
             shouldLoadAfterFade = true;
-            GameManager.instance.fadingBetweenAreas = true;
+            GameManager.instance.SetFadingBetweenAreas(true);
 
             UIFade.instance.FadeToBlack();
 

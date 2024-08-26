@@ -369,11 +369,11 @@ public class BattleManager : MonoBehaviour
     {
         if (!mIsBattleActive)
         {
-            playerPrefabs[0] = GameManager.instance.playerStats[0].GetBattleCharacter;
-            playerPrefabs[0].SetCharName(GameManager.instance.playerStats[0].GetCharacterName);
+            playerPrefabs[0] = GameManager.instance.GetCharacterStats[0].GetBattleCharacter;
+            playerPrefabs[0].SetCharName(GameManager.instance.GetCharacterStats[0].GetCharacterName);
             mCanFlee = setCannotFlee;
             mIsBattleActive = true;
-            GameManager.instance.battleActive = true;
+            GameManager.instance.SetBattleActive(true);
             transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
             battleScene.SetActive(true);
 
@@ -381,11 +381,11 @@ public class BattleManager : MonoBehaviour
 
             for (int i = 0; i < playerPositions.Length; i++)
             {
-                if (GameManager.instance.playerStats[i].gameObject.activeInHierarchy)
+                if (GameManager.instance.GetCharacterStats[i].gameObject.activeInHierarchy)
                 {
                     for (int j = 0; j < playerPrefabs.Length; j++)
                     {
-                        if (playerPrefabs[j].GetCharName == GameManager.instance.playerStats[i].GetCharacterName)
+                        if (playerPrefabs[j].GetCharName == GameManager.instance.GetCharacterStats[i].GetCharacterName)
                         {
                             BattleChar newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[i].rotation);
                             newPlayer.transform.parent = playerPositions[i];
@@ -405,7 +405,7 @@ public class BattleManager : MonoBehaviour
 
                             mActiveBattlers.Add(newPlayer);
 
-                            CharStats thePlayer = GameManager.instance.playerStats[i];
+                            CharStats thePlayer = GameManager.instance.GetCharacterStats[i];
 
                             mActiveBattlers[i].SetMovesAvailable(thePlayer.GetAllowedMovesNames(movesList));
                             mActiveBattlers[i].SetCurrentHP(thePlayer.GetCurrentHP);
@@ -623,12 +623,12 @@ public class BattleManager : MonoBehaviour
         {
             if (mActiveBattlers[i].GetIsPlayer)
             {
-                for (int j = 0; j < GameManager.instance.playerStats.Length; j++)
+                for (int j = 0; j < GameManager.instance.GetCharacterStats.Length; j++)
                 {
-                    if (mActiveBattlers[i].GetCharName == GameManager.instance.playerStats[j].GetCharacterName)
+                    if (mActiveBattlers[i].GetCharName == GameManager.instance.GetCharacterStats[j].GetCharacterName)
                     {
-                        GameManager.instance.playerStats[j].SetCurrentHP(mActiveBattlers[i].GetCurrentHP);
-                        GameManager.instance.playerStats[j].SetCurrentMP(mActiveBattlers[i].GetCurrentMP);
+                        GameManager.instance.GetCharacterStats[j].SetCurrentHP(mActiveBattlers[i].GetCurrentHP);
+                        GameManager.instance.GetCharacterStats[j].SetCurrentMP(mActiveBattlers[i].GetCurrentMP);
                     }
                 }
             }
@@ -643,7 +643,7 @@ public class BattleManager : MonoBehaviour
 
         if (mIsFleeing)
         {
-            GameManager.instance.battleActive = false;
+            GameManager.instance.SetBattleActive(false);
             mIsFleeing = false;
         }
         else

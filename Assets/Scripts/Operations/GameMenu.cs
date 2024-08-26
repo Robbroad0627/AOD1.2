@@ -55,13 +55,13 @@ public class GameMenu : MonoBehaviour {
             {
                 theMenu.SetActive(true);
                 UpdateMainStats();
-                GameManager.instance.gameMenuOpen = true;
+                GameManager.instance.SetGameMenuOpen(true);
             }
 
             AudioManager.instance.PlaySFX(5);
         }
 
-        if (GameManager.instance.battleActive)
+        if (GameManager.instance.GetBattleActive)
         {
             minimap.SetActive(false);
         }
@@ -73,7 +73,7 @@ public class GameMenu : MonoBehaviour {
 
     public void UpdateMainStats()
     {
-        playerStats = GameManager.instance.playerStats;
+        playerStats = GameManager.instance.GetCharacterStats;
 
         for(int i = 0; i < playerStats.Length; i++)
         {
@@ -95,7 +95,7 @@ public class GameMenu : MonoBehaviour {
             }
         }
 
-        goldText.text = GameManager.instance.currentGold.ToString() + "g";
+        goldText.text = GameManager.instance.GetCurrentGold.ToString() + "g";
     }
 
     public void ToggleWindow(int windowNumber)
@@ -125,7 +125,7 @@ public class GameMenu : MonoBehaviour {
 
         theMenu.SetActive(false);
 
-        GameManager.instance.gameMenuOpen = false;
+        GameManager.instance.SetGameMenuOpen(false);
 
         itemCharChoiceMenu.SetActive(false);
     }
@@ -177,11 +177,11 @@ public class GameMenu : MonoBehaviour {
         {
             itemButtons[i].buttonValue = i;
 
-            if (GameManager.instance.itemsHeld[i] != "")
+            if (GameManager.instance.GetItemsHeld[i] != "")
             {
                 itemButtons[i].buttonImage.gameObject.SetActive(true);
-                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemSprite;
-                itemButtons[i].amountText.text = GameManager.instance.numberOfItems[i].ToString();
+                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[i]).itemSprite;
+                itemButtons[i].amountText.text = GameManager.instance.GetNumberOfItems[i].ToString();
             }
             else
             {
@@ -223,8 +223,8 @@ public class GameMenu : MonoBehaviour {
 
         for (int i = 0; i < itemCharChoiceNames.Length; i++)
         {
-            itemCharChoiceNames[i].text = GameManager.instance.playerStats[i].GetCharacterName;
-            itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
+            itemCharChoiceNames[i].text = GameManager.instance.GetCharacterStats[i].GetCharacterName;
+            itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.GetCharacterStats[i].gameObject.activeInHierarchy);
         }
     }
 

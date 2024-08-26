@@ -58,7 +58,7 @@ public class AreaEntrance : MonoBehaviour
         }
 
         UIFade.instance.FadeFromBlack();
-        GameManager.instance.fadingBetweenAreas = false;
+        GameManager.instance.SetFadingBetweenAreas(false);
 
 		if (playerAnimatorOverride != null)
         {
