@@ -878,7 +878,7 @@ MonoBehaviour:
   lines:
   - n- Lady Lyla
   - Thak you so much for helping us.
-  - n- Gao
+  - n- Player
   - You are very welcome Lady Lyla.
   isPerson: 1
   shouldActivateQuest: 0
@@ -1036,20 +1036,20 @@ MonoBehaviour:
   lines:
   - n- Y'la
   - Wow, I can't believe you did it.  You are strong party of adventurers.
-  - n- Gao
+  - n- Player
   - It was a tough battle, but we survived.
   - n- Y'la
   - I am glad you made.
-  - n- Gao
+  - n- Player
   - Thank you.
   - n- Y'la
   - So what do you plan to do now?
-  - n- Gao
+  - n- Player
   - Once we are finished here in Ashtir we are going to continue to explore the world.
   - Still trying to figure out why it is warming up here.
   - n- Y'la
   - Stay safe.
-  - n- Gao
+  - n- Player
   - Thank you
   isPerson: 1
   shouldActivateQuest: 0
@@ -2086,11 +2086,11 @@ MonoBehaviour:
   lines:
   - n- Lady Lyla
   - Are you here to help us?
-  - n- Gao
+  - n- Player
   - We will do what we can
   - n- Lady Lyla
   - Thank you, I can only pray that you are successful.
-  - n- Gao
+  - n- Player
   - We will do what we can.
   - Thank you for the hospitality.
   isPerson: 1
@@ -2263,7 +2263,7 @@ MonoBehaviour:
   lines:
   - n- Rolf
   - Welcome back and thank you for dealing with the dragon
-  - n- Gao
+  - n- Player
   - You are welcome.
   isPerson: 1
   shouldActivateQuest: 0
@@ -10326,25 +10326,25 @@ MonoBehaviour:
   lines:
   - n- Baron Yar
   - Greetings travellers.  What brings you to our lands?
-  - n- Gao
-  - Thank you for the welcome.  We didn't have a chose on coming here.  A crazy wizard
-    named Jaru teleported us here without telling us where we were going.
+  - n- Player
+  - Thank you for the welcome.  We didn't have a choice on coming here.  A crazy
+    wizard named Jaru teleported us here without telling us where we were going.
   - n- Baron Yar
-  - So word did make it to Jaru.  we sent word that we needed help but have not heard
+  - So word did make it to Jaru.  We sent word that we needed help but have not heard
     back from him.
   - So you are his idea of help.  I hope he knows what he is doing.
-  - n- Gao
-  - We will help if we can.  We have heard that it is warmingh up here and things
+  - n- Player
+  - We will help if we can.  We have heard that it is warming up here and things
     seems to be thawing.
   - n- Baron Yar
   - That is a very brief version of our problems.  The melting here has made a lot
     of the wild life agitated and attacking many things.  The frost giants to the
     north are lashing out and posing quite the threat to Northvill
-  - n- Gao
+  - n- Player
   - Since we are here, we will see what we can to do help.
   - n- Baron Yar
   - On behalf of myself and my people, we thank you.
-  - n- Gao
+  - n- Player
   - We thank you.
   isPerson: 1
   shouldActivateQuest: 0
@@ -10667,32 +10667,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - n- Y'la
-  - I have been trying to convince the Baron and his wife, Lady Lyla , how dangerous
+  - I have been trying to convince the Baron and his wife, Lady Lyla, how dangerous
     it is for everyone on Ashtir that it is getting warmer.
   - We have an old White Dragon that has been sleeping for centuries and and over
     time the cave in the mountain in which it lives is also starting to melt away. 
     Eventually it will melt away and we will be faced with a very angry white dragon.
-  - n- Gao
+  - n- Player
   - That sounds very dangerous
   - n- Y'la
-  - I am afraid it could be the ned of all of us.
-  - n- Gao
+  - I am afraid it could be the end of all of us.
+  - n- Player
   - What do you plan to do about it?
   - n- Y'la
   - Funny you should ask.  I was hoping to find some brave adventurers to kill the
     dragon.
   - As dragons go, this one is not extremely large, even though it is an old dragon.
-  - n- Gao
+  - n- Player
   - Oh....  And you are kind of implying that we might be the adventurers you are
     looking for.
   - n- Y'la
   - That would be nice.  So can I get your assistance?
-  - n- Gao
-  - I think we can help you.
+  - n- Bawb
+  - A fire elemental was hard enough, but I draw the line at dragons.
+  - n- Bron
+  - More glory for me, and you will get to hear my tale in taverns around the world
+    of how I went after a dragon while you hung back with the old ladies and knitted.
+  - n- Bawb
+  - Wait a second.
+  - n- Player
+  - I guess are gonna try to help you.
   - n- Y'la
   - That would be great.  Can you meet me near the ice mountain we you are ready
     to kill the dragon.
-  - n- Gao
+  - n- Player
   - Sounds good.  We will be there when we are ready.
   isPerson: 1
   shouldActivateQuest: 1
@@ -11110,18 +11117,18 @@ MonoBehaviour:
   lines:
   - n- Rolf
   - Greetings travellers.
-  - n- Gao
+  - n- Player
   - Greetings to you as well.
   - n- Rolf
   - Beware, Y'la over there is going to try to get you to try and kill a white dragon.
   - If you are going to take her up on her offer, make sure you have been around
     the entire island to make sure you are accostumed to battling in the severe cold. 
     I am dure every town will have some work for you.
-  - n- Gao
+  - n- Player
   - Thank you for the good advice.
   - n- Rolf
-  - You are welcome.  Hope you enjoy you rtime with us here on Ashtir.
-  - n- Gao
+  - You are welcome.  Hope you enjoy your time with us here on Ashtir.
+  - n- Player
   - Thank you.
   isPerson: 1
   shouldActivateQuest: 0
@@ -11202,21 +11209,21 @@ MonoBehaviour:
   lines:
   - n- Baron Yar
   - You made it back.  I am so happy
-  - n- Gao
-  - Thank you for theconcern.  we were glad to help.
+  - n- Player
+  - Thank you for the concern.  We were glad to help.
   - n- Baron Yar
   - Do you have any ideas on what is causing the warming of our lands.
-  - n- Gao
+  - n- Player
   - None so far, but it does have me puzzled.  Will definitely have to give it some
     more serious  thought.
   - n- Baron Yar
   - You are always welcome everywhere within our land.  We all hope to see you again.
-  - n- Gao
-  - Thank you Baron Yar.  I can see several sleeles nights until I figure out why
+  - n- Player
+  - Thank you Baron Yar.  I can see several sleepless nights until I figure out why
     your land is warming up so much.
   - n- Baron Yar
   - Please stay safe.
-  - n- Gao
+  - n- Player
   - Thak you, I hope you and all your citizens stay safe as well.
   isPerson: 1
   shouldActivateQuest: 0

@@ -1,21 +1,37 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: BattleMove.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 23, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
+using System;
 using UnityEngine;
 
-//Bonehead Games
-
 [System.Serializable]
-public class BattleMove {
-
+public class BattleMove
+{
     public enum CharacterClass
     {
-        Cleric,Druid,Fighter,MagicUser,Paladin,Ranger,Thief
+        Cleric,
+        Druid,
+        Fighter,
+        MagicUser,
+        Paladin,
+        Ranger,
+        Thief
     }
 
     public enum MoveFilterMode
     {
-        DisallowMoveForClassIfNotListed,OverrideDefaultLevelForClass
+        DisallowMoveForClassIfNotListed,
+        OverrideDefaultLevelForClass
     }
 
     [System.Serializable]
