@@ -68,7 +68,7 @@ public class Inn : MonoBehaviour
 
     public static void WarpUpstairs()
     {
-        GameManager.instance.currentGold -= s_goldCost;
+        GameManager.instance.SetCurrentGold(GameManager.instance.GetCurrentGold - s_goldCost);
         PlayerController.instance.areaTransitionName = "Inn-Upper";
         SceneManager.LoadScene(kUpstairsSceneName);
         isUpstairs = true;

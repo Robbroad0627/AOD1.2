@@ -114,11 +114,11 @@ public class BattleReward : MonoBehaviour
 
     public void CloseRewardScreen()
     {
-        for (int i = 0; i < GameManager.instance.playerStats.Length; i++)
+        for (int i = 0; i < GameManager.instance.GetCharacterStats.Length; i++)
         {
-            if(GameManager.instance.playerStats[i].gameObject.activeInHierarchy)
+            if(GameManager.instance.GetCharacterStats[i].gameObject.activeInHierarchy)
             {
-                GameManager.instance.playerStats[i].AddExp(mXPEarned);
+                GameManager.instance.GetCharacterStats[i].AddExp(mXPEarned);
             }
         }
 
@@ -128,7 +128,7 @@ public class BattleReward : MonoBehaviour
         }
 
         rewardScreen.SetActive(false);
-        GameManager.instance.battleActive = false;
+        GameManager.instance.SetBattleActive(false);
 
         if (mCompletesQuest)
         {

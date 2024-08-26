@@ -44,13 +44,13 @@ public class AreaExit : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            if (needBoat && !GameManager.instance.haveBoat)
+            if (needBoat && !GameManager.instance.GetHasBoat)
             {
                 //Cant use boat area without one.
                 Debug.Log("Area needs boat but GameManager.haveBoat == false");
                 return;
             }
-            else if (needBoat && GameManager.instance.haveBoat)
+            else if (needBoat && GameManager.instance.GetHasBoat)
             {
                 portController.PlayerEnterBoat(areaToLoad, areaTransitionName);                
                 //shouldRunAnimationBeforeFade = true;
@@ -60,7 +60,7 @@ public class AreaExit : MonoBehaviour
                 enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
                                     //SceneManager.LoadScene(areaToLoad);
                 mShouldLoadAfterFade = true;
-                GameManager.instance.fadingBetweenAreas = true;
+                GameManager.instance.SetFadingBetweenAreas(true);
 
                 UIFade.instance.FadeToBlack();
 
@@ -92,7 +92,7 @@ public class AreaExit : MonoBehaviour
                 enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
                                     //SceneManager.LoadScene(areaToLoad);
                 mShouldLoadAfterFade = true;
-                GameManager.instance.fadingBetweenAreas = true;
+                GameManager.instance.SetFadingBetweenAreas(true);
 
                 UIFade.instance.FadeToBlack();
 

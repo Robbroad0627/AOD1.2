@@ -116,7 +116,7 @@ public class BattleStarter : MonoBehaviour
             BattleManager.instance.SetBackgroundSprite(backgroundSprite);
         }
 
-        GameManager.instance.battleActive = true;
+        GameManager.instance.SetBattleActive(true);
         
         int selectedBattle = Random.Range(0, potentialBattles.Length);
         BattleManager.instance.SetRewardItems(potentialBattles[selectedBattle].rewardItems);

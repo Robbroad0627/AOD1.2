@@ -16,18 +16,82 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private const string kPlayercharacterPreferenceKey = "!!!Special:Player";
-    public static GameManager instance;
-    public CharStats[] playerStats;
-    public bool gameMenuOpen, dialogActive, fadingBetweenAreas, shopActive, battleActive;
-    public string[] itemsHeld;
-    public int[] numberOfItems;
-    public Item[] referenceItems;
-    public int currentGold;
-    public bool dataLoadedOnce =false;
-    public bool haveBoat;
+    //SINGLETON
+    #region Singleton
 
-    public string playerName => playerStats[0].GetCharacterName;
+    public static GameManager instance;
+
+    private void Singleton()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+    }
+
+    #endregion
+
+    //VARIABLES
+    #region Constant Variable Declarations and Initializations
+
+    private const string PLAYER_PREFERENCE_KEY = "!!!Special:Player";
+
+    #endregion
+    #region Inspector/Exposed Variables
+
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private CharStats[] playerStats = null;
+    [SerializeField] private bool gameMenuOpen = false;
+    [SerializeField] private bool dialogActive = false;
+    [SerializeField] private bool fadingBetweenAreas = false;
+    [SerializeField] private bool shopActive = false;
+    [SerializeField] private bool battleActive = false;
+    [SerializeField] private string[] itemsHeld = null;
+    [SerializeField] private int[] numberOfItems = null;
+    [SerializeField] private Item[] referenceItems = null;
+    [SerializeField] private int currentGold = 0;
+    [SerializeField] private bool dataLoadedOnce = false;
+    [SerializeField] private bool haveBoat = false;
+
+    #endregion
+
+    //GETTERS/SETTERS
+    #region Getters/Accessors
+
+    public bool GetHasBoat => haveBoat;
+    public int GetCurrentGold => currentGold;
+    public string[] GetItemsHeld => itemsHeld;
+    public bool GetBattleActive => battleActive;
+    public int[] GetNumberOfItems => numberOfItems;
+    public CharStats[] GetCharacterStats => playerStats;
+    public string GetPlayerName => playerStats[0].GetCharacterName;
+
+    #endregion
+    #region Setters/Mutators
+
+    public bool SetShopActive(bool yesNo) => shopActive = yesNo;
+    public int SetCurrentGold(int amount) => currentGold = amount;
+    public bool SetBattleActive(bool yesNo) => battleActive = yesNo;
+    public bool SetDialogActive(bool yesNo) => dialogActive = yesNo;
+    public bool SetGameMenuOpen(bool yesNo) => gameMenuOpen = yesNo;
+    public bool SetFadingBetweenAreas(bool yesNo) => fadingBetweenAreas = yesNo;
+
+    #endregion
+
+    //FUNCTIONS
+
+    private void Awake()
+    {
+        Singleton();
+    }
 
     private void Start()
     {
@@ -297,7 +361,7 @@ public class GameManager : MonoBehaviour
 
         var playerCharacter = playerStats[0];
 
-        StoreCharacter(playerCharacter, kPlayercharacterPreferenceKey);
+        StoreCharacter(playerCharacter, PLAYER_PREFERENCE_KEY);
         SaveNonCustomCharacters();
 
         //store inventory data
@@ -403,8 +467,8 @@ public class GameManager : MonoBehaviour
         PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
 
         //Load the player
-        LoadCharacterByName(playerStats[0], kPlayercharacterPreferenceKey);
-        LoadAppearance(playerStats[0], kPlayercharacterPreferenceKey); //Onl;y the player's appearance is custom for now
+        LoadCharacterByName(playerStats[0], PLAYER_PREFERENCE_KEY);
+        LoadAppearance(playerStats[0], PLAYER_PREFERENCE_KEY); //Onl;y the player's appearance is custom for now
 
         LoadNonCustomCharacters(); // Load everyone else assuming hardcoded names
 

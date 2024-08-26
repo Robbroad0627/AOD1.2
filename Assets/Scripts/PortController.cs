@@ -62,7 +62,7 @@ public class PortController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Boat.isPlayerOnBoat || GameManager.instance.haveBoat)
+        if (Boat.isPlayerOnBoat || GameManager.instance.GetHasBoat)
         {
             boatCaptain.SetActive(false);
             portAreaExit.SetActive(true);
@@ -90,7 +90,7 @@ public class PortController : MonoBehaviour
                 this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
                                     //SceneManager.LoadScene(areaToLoad);
                 shouldLoadAfterFade = true;
-                GameManager.instance.fadingBetweenAreas = true;
+                GameManager.instance.SetFadingBetweenAreas(true);
 
                 UIFade.instance.FadeToBlack();
 
