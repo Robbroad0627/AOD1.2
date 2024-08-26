@@ -16,28 +16,54 @@ using UnityEngine.UI;
 
 public class BattleNotification : MonoBehaviour
 {
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-    public float awakeTime;
-    public Text theText;
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private float awakeTime = 2.0f;
+    [SerializeField] private Text theText = null;
 
-    private float awakeCounter;
-	
-	void Update ()
+    #endregion
+    #region Private Variables
+
+    private float mAwakeCounter;
+
+    #endregion
+
+    //GETTERS/SETTERS
+    #region Setters/Mutators
+
+    public string SetNotificationText(string newText) => theText.text = newText;
+
+    #endregion
+
+    //FUNCTIONS
+    #region Implementation Methods/Functions
+
+    void Update ()
     {
-		if(awakeCounter > 0)
+		if(mAwakeCounter > 0)
         {
-            awakeCounter -= Time.deltaTime;
+            mAwakeCounter -= Time.deltaTime;
 
-            if(awakeCounter <= 0)
+            if(mAwakeCounter <= 0)
             {
                 gameObject.SetActive(false);
             }
         }
 	}
 
+    #endregion
+    #region Public Functions/Methods
+
     public void Activate()
     {
         gameObject.SetActive(true);
-        awakeCounter = awakeTime;
+        mAwakeCounter = awakeTime;
     }
+
+    #endregion
 }
