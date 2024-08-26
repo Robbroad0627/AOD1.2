@@ -1,11 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: CharStats.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 26, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
+using System;
 using UnityEngine;
+using System.Collections.Generic;
 
-//Bonehead Games
-
-public class CharStats : MonoBehaviour {
-
+public class CharStats : MonoBehaviour
+{
     public string charName="?";
     public BattleChar battleChar;
     public BattleMove.CharacterClass characterClass;
@@ -14,7 +25,6 @@ public class CharStats : MonoBehaviour {
     public int[] expToNextLevel;
     public int maxLevel = 100;
     public int baseEXP = 1000;
-
     public int currentHP;
     public int maxHP = 100;
     public int currentMP;
@@ -43,33 +53,29 @@ public class CharStats : MonoBehaviour {
     set
         {
             this.characterClass= (BattleMove.CharacterClass)Enum.Parse(typeof(BattleMove.CharacterClass), value, true);
-            
         }
-
     }
 
 
-    // Use this for initialization
-    void Start () {
+    private void Start ()
+    {
         expToNextLevel = new int[maxLevel];
         expToNextLevel[1] = baseEXP;
 
-        for(int i = 2; i < expToNextLevel.Length; i++)
+        for (int i = 2; i < expToNextLevel.Length; i++)
         {
             expToNextLevel[i] = Mathf.FloorToInt(expToNextLevel[i - 1] * 1.05f);
         }
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	private void Update ()
+    {
+        // Remove before final compile
         if(Input.GetKeyDown(KeyCode.K))
         {
             AddExp(1000);
         }
 	}
-
-
 
     public void AddExp(int expToAdd)
     {
@@ -109,18 +115,20 @@ public class CharStats : MonoBehaviour {
 
     public bool ApplyMove(CharStats caster, BattleMove move)
     {
-        if(caster.currentMP>=move.moveCost)
+        if (caster.currentMP>=move.moveCost)
         {
             caster.currentMP -= move.moveCost;
             move.Apply(this);
             return true;
         }
+
         return false;
     }
 
     internal string[] GetAllowedMovesNames(BattleMove[] movesList,bool inBattle=true)
     {
         List<string> l = new List<string>();
+
         foreach(var m in movesList)
         {
             if(m.MoveAllowed(this))
@@ -128,6 +136,7 @@ public class CharStats : MonoBehaviour {
                 l.Add(m.moveName);
             }
         }
+
         return l.ToArray();
     }
 }
