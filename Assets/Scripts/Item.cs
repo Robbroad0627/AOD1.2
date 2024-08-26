@@ -65,43 +65,43 @@ public class Item : MonoBehaviour {
     {
         CharStats selectedChar = GameManager.instance.playerStats[charToUseOn];
 
-        if(isItem)
+        if (isItem)
         {
-            if(affectHP)
+            if (affectHP)
             {
-                selectedChar.currentHP += amountToChange;
+                selectedChar.SetCurrentHP(selectedChar.GetCurrentHP + amountToChange);
 
-                if(selectedChar.currentHP > selectedChar.maxHP)
+                if (selectedChar.GetCurrentHP > selectedChar.GetMaxHP)
                 {
-                    selectedChar.currentHP = selectedChar.maxHP;
+                    selectedChar.SetCurrentHP(selectedChar.GetMaxHP);
                 }
             }
 
-            if(affectMP)
+            if (affectMP)
             {
-                selectedChar.currentMP += amountToChange;
+                selectedChar.SetCurrentMP(selectedChar.GetCurrentMP + amountToChange);
 
-                if (selectedChar.currentMP > selectedChar.maxMP)
+                if (selectedChar.GetCurrentMP > selectedChar.GetMaxMP)
                 {
-                    selectedChar.currentMP = selectedChar.maxMP;
+                    selectedChar.SetCurrentMP(selectedChar.GetMaxMP);
                 }
             }
 
-            if(affectStr)
+            if (affectStr)
             {
-                selectedChar.strength += amountToChange;
+                selectedChar.SetStrength(selectedChar.GetStrength + amountToChange);
             }
         }
 
         if(isWeapon)
         {
-            if(selectedChar.equippedWpn != "")
+            if(selectedChar.GetEquippedWeapon != "")
             {
-                GameManager.instance.AddItem(selectedChar.equippedWpn);
+                GameManager.instance.AddItem(selectedChar.GetEquippedWeapon);
             }
 
-            selectedChar.equippedWpn = itemName;
-            selectedChar.wpnPwr = weaponStrength;
+            selectedChar.SetEquippedWeapon(itemName);
+            selectedChar.SetWeaponPower(weaponStrength);
         }
 
         if(isArmour)
@@ -123,25 +123,25 @@ public class Item : MonoBehaviour {
             case ArmorLocation.NotArmor:
                 throw new System.Exception("Can't equip non armor to armor.");
             case ArmorLocation.Head:
-                currentArmorKey = selectedChar.equippedHeadArmr;
+                currentArmorKey = selectedChar.GetEquippedHeadArmor;
                 break;
             case ArmorLocation.Body:
-                currentArmorKey = selectedChar.equippedBodyArmr;
+                currentArmorKey = selectedChar.GetEquippedBodyArmor;
                 break;
             case ArmorLocation.Hand:
-                currentArmorKey = selectedChar.equippedHandArmr;
+                currentArmorKey = selectedChar.GetEquippedHandArmor;
                 break;
             case ArmorLocation.Legs:
-                currentArmorKey = selectedChar.equippedLegsArmr;
+                currentArmorKey = selectedChar.GetEquippedLegArmor;
                 break;
             case ArmorLocation.Feet:
-                currentArmorKey = selectedChar.equippedFeetArmr;
+                currentArmorKey = selectedChar.GetEquippedFootArmor;
                 break;
             case ArmorLocation.Other:
-                currentArmorKey = selectedChar.equippedOtherArmr;
+                currentArmorKey = selectedChar.GetEquippedOtherArmor;
                 break;
             case ArmorLocation.Shield:
-                currentArmorKey = selectedChar.equippedShieldArmr;
+                currentArmorKey = selectedChar.GetEquippedShield;
                 break;
         }
         //Unequip armour if it is equipped
@@ -152,8 +152,8 @@ public class Item : MonoBehaviour {
 
             if(null != prevArmour)
             {
-                Debug.Log($"Unequip {prevArmour.itemName} from {selectedChar.charName}  => -{prevArmour.armorStrength}");
-                selectedChar.armrPwr -= prevArmour.armorStrength;
+                Debug.Log($"Unequip {prevArmour.itemName} from {selectedChar.GetCharacterName}  => -{prevArmour.armorStrength}");
+                selectedChar.SetArmorPower(selectedChar.GetArmorPower - prevArmour.armorStrength);
             }
             
         }
@@ -163,30 +163,30 @@ public class Item : MonoBehaviour {
             case ArmorLocation.NotArmor:
                 throw new System.Exception("Can't equip non armor to armor.");
             case ArmorLocation.Head:
-                 selectedChar.equippedHeadArmr = itemName;
+                 selectedChar.SetEquippedHeadArmor(itemName);
                 break;
             case ArmorLocation.Body:
-                 selectedChar.equippedBodyArmr = itemName;
+                 selectedChar.SetEquippedBodyArmor(itemName);
                 break;
             case ArmorLocation.Hand:
-                 selectedChar.equippedHandArmr = itemName;
+                 selectedChar.SetEquippedHandArmor(itemName);
                 break;
             case ArmorLocation.Legs:
-                 selectedChar.equippedLegsArmr = itemName;
+                 selectedChar.SetEquippedLegArmor(itemName);
                 break;
             case ArmorLocation.Feet:
-                 selectedChar.equippedFeetArmr = itemName;
+                 selectedChar.SetEquippedFootArmor(itemName);
                 break;
             case ArmorLocation.Other:
-                 selectedChar.equippedOtherArmr = itemName;
+                 selectedChar.SetEquippedOtherArmor(itemName);
                 break;
             case ArmorLocation.Shield:
-                 selectedChar.equippedShieldArmr = itemName;
+                 selectedChar.SetEquippedShield(itemName);
                 break;
         }
 
-        selectedChar.equippedArmr = itemName;
-        selectedChar.armrPwr += newArmor.armorStrength;
-        Debug.Log($"Equip {newArmor.itemName} from {selectedChar.charName}  => +{newArmor.armorStrength}");
+        selectedChar.SetEquippedArmor(itemName);
+        selectedChar.SetArmorPower(selectedChar.GetArmorPower + newArmor.armorStrength);
+        Debug.Log($"Equip {newArmor.itemName} from {selectedChar.GetCharacterName}  => +{newArmor.armorStrength}");
     }
 }

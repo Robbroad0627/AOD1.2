@@ -58,18 +58,19 @@ public class BattleMove
     {
         return MoveAllowed(character) && allowOutsideBattle;
     }
+
     public bool MoveAllowed(CharStats character)
     {
-        int? lvl = MinLevelForClass(character.characterClass);
+        int? lvl = MinLevelForClass(character.GetClass);
 #pragma warning disable CS0162 // Unreachable code detected
         switch (filterAction)
         {
             case MoveFilterMode.DisallowMoveForClassIfNotListed:
-                return lvl != null && character.playerLevel >= lvl;
+                return lvl != null && character.GetLevel >= lvl;
                 break;
 
             case MoveFilterMode.OverrideDefaultLevelForClass:
-                return lvl == null? character.playerLevel >= defaultMinimumLevel : character.playerLevel>=lvl;
+                return lvl == null? character.GetLevel >= defaultMinimumLevel : character.GetLevel >= lvl;
                 break;
         }
 #pragma warning restore CS0162 // Unreachable code detected

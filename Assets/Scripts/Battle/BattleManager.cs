@@ -369,8 +369,8 @@ public class BattleManager : MonoBehaviour
     {
         if (!mIsBattleActive)
         {
-            playerPrefabs[0] = GameManager.instance.playerStats[0].battleChar;
-            playerPrefabs[0].SetCharName(GameManager.instance.playerStats[0].charName);
+            playerPrefabs[0] = GameManager.instance.playerStats[0].GetBattleCharacter;
+            playerPrefabs[0].SetCharName(GameManager.instance.playerStats[0].GetCharacterName);
             mCanFlee = setCannotFlee;
             mIsBattleActive = true;
             GameManager.instance.battleActive = true;
@@ -385,7 +385,7 @@ public class BattleManager : MonoBehaviour
                 {
                     for (int j = 0; j < playerPrefabs.Length; j++)
                     {
-                        if (playerPrefabs[j].GetCharName == GameManager.instance.playerStats[i].charName)
+                        if (playerPrefabs[j].GetCharName == GameManager.instance.playerStats[i].GetCharacterName)
                         {
                             BattleChar newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[i].rotation);
                             newPlayer.transform.parent = playerPositions[i];
@@ -408,14 +408,14 @@ public class BattleManager : MonoBehaviour
                             CharStats thePlayer = GameManager.instance.playerStats[i];
 
                             mActiveBattlers[i].SetMovesAvailable(thePlayer.GetAllowedMovesNames(movesList));
-                            mActiveBattlers[i].SetCurrentHP(thePlayer.currentHP);
-                            mActiveBattlers[i].SetMaxHP(thePlayer.maxHP);
-                            mActiveBattlers[i].SetCurrentMP(thePlayer.currentMP);
-                            mActiveBattlers[i].SetMaxMP(thePlayer.maxMP);
-                            mActiveBattlers[i].SetStrength(thePlayer.strength);
-                            mActiveBattlers[i].SetDefense(thePlayer.defence);
-                            mActiveBattlers[i].SetWeaponPower(thePlayer.wpnPwr);
-                            mActiveBattlers[i].SetArmorPower(thePlayer.armrPwr);
+                            mActiveBattlers[i].SetCurrentHP(thePlayer.GetCurrentHP);
+                            mActiveBattlers[i].SetMaxHP(thePlayer.GetMaxHP);
+                            mActiveBattlers[i].SetCurrentMP(thePlayer.GetCurrentMP);
+                            mActiveBattlers[i].SetMaxMP(thePlayer.GetMaxMP);
+                            mActiveBattlers[i].SetStrength(thePlayer.GetStrength);
+                            mActiveBattlers[i].SetDefense(thePlayer.GetDefence);
+                            mActiveBattlers[i].SetWeaponPower(thePlayer.GetWeaponPower);
+                            mActiveBattlers[i].SetArmorPower(thePlayer.GetArmorPower);
                         }
                     }
                 }
@@ -625,10 +625,10 @@ public class BattleManager : MonoBehaviour
             {
                 for (int j = 0; j < GameManager.instance.playerStats.Length; j++)
                 {
-                    if (mActiveBattlers[i].GetCharName == GameManager.instance.playerStats[j].charName)
+                    if (mActiveBattlers[i].GetCharName == GameManager.instance.playerStats[j].GetCharacterName)
                     {
-                        GameManager.instance.playerStats[j].currentHP = mActiveBattlers[i].GetCurrentHP;
-                        GameManager.instance.playerStats[j].currentMP = mActiveBattlers[i].GetCurrentMP;
+                        GameManager.instance.playerStats[j].SetCurrentHP(mActiveBattlers[i].GetCurrentHP);
+                        GameManager.instance.playerStats[j].SetCurrentMP(mActiveBattlers[i].GetCurrentMP);
                     }
                 }
             }

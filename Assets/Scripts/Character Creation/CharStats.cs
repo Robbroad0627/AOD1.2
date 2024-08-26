@@ -1,75 +1,154 @@
-﻿using System;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: CharStats.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 26, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
+using System;
 using UnityEngine;
+using System.Collections.Generic;
 
-//Bonehead Games
+public class CharStats : MonoBehaviour
+{
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-public class CharStats : MonoBehaviour {
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private string charName="?";
+    [SerializeField] private BattleChar battleChar;
+    [SerializeField] private BattleMove.CharacterClass characterClass;
+    [SerializeField] private int playerLevel = 1;
+    [SerializeField] private int currentEXP;
+    [SerializeField] private int[] expToNextLevel;
+    [SerializeField] private int maxLevel = 100;
+    [SerializeField] private int baseEXP = 1000;
+    [SerializeField] private int currentHP;
+    [SerializeField] private int maxHP = 100;
+    [SerializeField] private int currentMP;
+    [SerializeField] private int maxMP = 30;
+    [SerializeField] private int[] mpLvlBonus;
+    [SerializeField] private int strength;
+    [SerializeField] private int defence;
+    [SerializeField] private int wpnPwr;
+    [SerializeField] private int armrPwr;
+    [SerializeField] private string equippedWpn;
+    [SerializeField] private string equippedArmr;
+    [SerializeField] private Sprite charIamge;
 
-    public string charName="?";
-    public BattleChar battleChar;
-    public BattleMove.CharacterClass characterClass;
-    public int playerLevel = 1;
-    public int currentEXP;
-    public int[] expToNextLevel;
-    public int maxLevel = 100;
-    public int baseEXP = 1000;
+    #endregion
+    #region Private Variables
 
-    public int currentHP;
-    public int maxHP = 100;
-    public int currentMP;
-    public int maxMP = 30;
-    public int[] mpLvlBonus;
-    public int strength;
-    public int defence;
-    public int wpnPwr;
-    public int armrPwr;
-    public string equippedWpn;
-    public string equippedArmr;
-    public Sprite charIamge;
-    internal string equippedHeadArmr="";
-    internal string equippedBodyArmr="";
-    internal string equippedHandArmr="";
-    internal string equippedLegsArmr="";
-    internal string equippedFeetArmr="";
-    internal string equippedOtherArmr="";
-    internal string equippedShieldArmr="";
+    private string mSex;
+    private string mRace;
+    private string mEquippedHeadArmr;
+    private string mEquippedBodyArmr;
+    private string mEquippedHandArmr;
+    private string mEquippedLegsArmr;
+    private string mEquippedFeetArmr;
+    private string mEquippedOtherArmr;
+    private string mEquippedShieldArmr;
 
-    public bool isDead => currentHP <= 0;
+    #endregion
 
-    public string sexString { get; internal set; }
-    public string raceString { get; internal set; }
-    public string classString { get => characterClass.ToString(); 
-    set
-        {
-            this.characterClass= (BattleMove.CharacterClass)Enum.Parse(typeof(BattleMove.CharacterClass), value, true);
-            
-        }
+    //GETTERS/SETTERS
+    #region Getters/Accessors
 
-    }
+    public int GetMaxHP => maxHP;
+    public int GetMaxMP => maxMP;
+    public string GetSex => mSex;
+    public string GetRace => mRace;
+    public int GetDefence => defence;
+    public int GetLevel => playerLevel;
+    public int GetStrength => strength;
+    public int GetWeaponPower => wpnPwr;
+    public int GetArmorPower => armrPwr;
+    public int GetCurrentHP => currentHP;
+    public int GetCurrentMP => currentMP;
+    public Sprite GetSprite => charIamge;
+    public int GetCurrentXP => currentEXP;
+    public string GetCharacterName => charName;
+    public string GetEquippedWeapon => equippedWpn;
+    public string GetEquippedArmor => equippedArmr;
+    public int[] GetXPToNextLevel => expToNextLevel;
+    public BattleChar GetBattleCharacter => battleChar;
+    public string GetEquippedLegArmor => mEquippedLegsArmr;
+    public string GetEquippedShield => mEquippedShieldArmr;
+    public string GetEquippedHeadArmor => mEquippedHandArmr;
+    public string GetEquippedBodyArmor => mEquippedBodyArmr;
+    public string GetEquippedHandArmor => mEquippedHandArmr;
+    public string GetEquippedFootArmor => mEquippedFeetArmr;
+    public string GetEquippedOtherArmor => mEquippedOtherArmr;
+    public BattleMove.CharacterClass GetClass => characterClass;
 
+    #endregion
+    #region Setters/Mutators
 
-    // Use this for initialization
-    void Start () {
+    public int SetMaxHP(int hp) => maxHP = hp;
+    public int SetMaxMP(int mp) => maxMP = mp;
+    public string SetSex(string sex) => mSex = sex;
+    public int SetCurrentMP(int mp) => currentMP = mp;
+    public int SetCurrentHP(int hp) => currentHP = hp;
+    public int SetCurrentXP(int xp) => currentEXP = xp;
+    public string SetRace(string race) => mRace = race;
+    public int SetLevel(int newLevel) => playerLevel = newLevel;
+    public int SetDefense(int newDefense) => defence = newDefense;
+    public string SetCharacterName(string name) => charName = name;
+    public int SetArmorPower(int armorPower) => armrPwr = armorPower;
+    public int SetStrength(int newStrength) => strength = newStrength;
+    public int SetWeaponPower(int weaponPower) => wpnPwr = weaponPower;
+    public Sprite SetSprite(Sprite newSprite) => charIamge = newSprite;
+    public string SetEquippedArmor(string newArmor) => equippedArmr = newArmor;
+    public string SetEquippedWeapon(string newWeapon) => equippedWpn = newWeapon;
+    public string SetEquippedShield(string newShield) => mEquippedShieldArmr = newShield;
+    public string SetEquippedOtherArmor(string newOther) => mEquippedOtherArmr = newOther;
+    public string SetEquippedLegArmor(string newLegArmor) => mEquippedLegsArmr = newLegArmor;
+    public string SetEquippedHeadArmor(string newHeadArmor) => mEquippedHeadArmr = newHeadArmor;
+    public string SetEquippedBodyArmor(string newBodyArmor) => mEquippedBodyArmr = newBodyArmor;
+    public string SetEquippedFootArmor(string newFootArmor) => mEquippedFeetArmr = newFootArmor;
+    public string SetEquippedHandArmor(string newHandArmor) => mEquippedHandArmr = newHandArmor;
+    public BattleChar SetBattleCharacter(BattleChar newBattleChar) => battleChar = newBattleChar;
+    public BattleMove.CharacterClass SetClass(string newClass) => characterClass = (BattleMove.CharacterClass)Enum.Parse(typeof(BattleMove.CharacterClass), newClass, true);
+
+    #endregion
+
+    //FUNCTIONS
+    #region Initialization Functions/Methods
+
+    private void Start ()
+    {
         expToNextLevel = new int[maxLevel];
         expToNextLevel[1] = baseEXP;
 
-        for(int i = 2; i < expToNextLevel.Length; i++)
+        for (int i = 2; i < expToNextLevel.Length; i++)
         {
             expToNextLevel[i] = Mathf.FloorToInt(expToNextLevel[i - 1] * 1.05f);
         }
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-        if(Input.GetKeyDown(KeyCode.K))
+
+    #endregion
+    #region Implementation Functions/Methods
+
+    private void Update ()
+    {
+        // Remove before final compile
+        if (Input.GetKeyDown(KeyCode.K))
         {
             AddExp(1000);
         }
 	}
 
-
+    #endregion
+    #region Public Functions/Methods
 
     public void AddExp(int expToAdd)
     {
@@ -101,33 +180,38 @@ public class CharStats : MonoBehaviour {
             }
         }
 
-        if(playerLevel >= maxLevel)
+        if (playerLevel >= maxLevel)
         {
             currentEXP = 0;
         }
     }
 
-    public bool ApplyMove(CharStats caster, BattleMove move)
+    public bool ApplyMove(CharStats character, BattleMove action)
     {
-        if(caster.currentMP>=move.moveCost)
+        if (character.currentMP >= action.moveCost)
         {
-            caster.currentMP -= move.moveCost;
-            move.Apply(this);
+            character.currentMP -= action.moveCost;
+            action.Apply(this);
             return true;
         }
+
         return false;
     }
 
-    internal string[] GetAllowedMovesNames(BattleMove[] movesList,bool inBattle=true)
+    public string[] GetAllowedMovesNames(BattleMove[] actionList, bool inBattle=true)
     {
-        List<string> l = new List<string>();
-        foreach(var m in movesList)
+        List<string> allowedActionsList = new List<string>();
+
+        foreach (var action in actionList)
         {
-            if(m.MoveAllowed(this))
+            if (action.MoveAllowed(this))
             {
-                l.Add(m.moveName);
+                allowedActionsList.Add(action.moveName);
             }
         }
-        return l.ToArray();
+
+        return allowedActionsList.ToArray();
     }
+
+    #endregion
 }
