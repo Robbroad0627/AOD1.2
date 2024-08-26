@@ -362,16 +362,16 @@ MonoBehaviour:
   - n-Saabira el-Harron
   - Oh no.  Maybe I shouldn't have said anything.
   - But, lives are at stake.
-  - My cousing in Fawab had wrote to me about peiple going missingin the night in
+  - My cousin in Fawab had wrote to me about peiple going missingin the night in
     villages all over Oluma
   - n-Player
   - That is terrible
   - n-Saabira el-Harron
   - Elders have been saying it is just people who have decided to look for thier
-    fotunes elsewhere.  But I think it is too many people to be that.
+    fortunes elsewhere.  But I think it is too many people to be that.
   - n-Player
   - That does sound odd
-  - Maybe it si something we will keep our eye out for
+  - Maybe it is something we will keep our eye out for
   - n-Saabira el-Harron
   - Thank you
   - n-Player
@@ -553,12 +553,11 @@ MonoBehaviour:
     rewardItems:
     - Greater Healing Potion
     - Greater Healing Potion
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 1
   QuestToComplete: Cobra
 --- !u!61 &336631299
@@ -745,8 +744,8 @@ MonoBehaviour:
   - I may.  It depends on what you are looking for.
   - n-Player
   - To be honest, we don't know exactly what we are looking for .
-  - We have witnessed animals and monsters becoming more aggressive, the world getting
-    hotter, a warning about coming doom, and seen snake men.
+  - We have witnessed animals and monsters becoming more aggressive, the world is
+    getting hotter, a warning about coming doom, and seen snake men.
   - n-Nabeela al-Salehi
   - What!?!
   - I thought the stories of snake men that have surfaced were being used to scare
@@ -1915,12 +1914,11 @@ MonoBehaviour:
     rewardXP: 1800
     rewardItems:
     - Long Bow
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1043762532
@@ -6725,12 +6723,11 @@ MonoBehaviour:
     rewardXP: 1800
     rewardItems:
     - Long Bow
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1309207705
@@ -103413,12 +103410,11 @@ MonoBehaviour:
     rewardItems:
     - Throwing Axe
     - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1392168075
@@ -104025,12 +104021,11 @@ MonoBehaviour:
     rewardItems:
     - Throwing Axe
     - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1469009292
@@ -104164,7 +104159,7 @@ MonoBehaviour:
   - n-Player
   - It seems the world is getting hotter and there are a lot more aggressive snakes
     everyehere we have been.
-  - well except for Ashtir.  That continent is melting into the ocean.
+  - Well except for Ashtir.  That continent is melting into the ocean.
   - n-Faadi el-Akbar
   - Oh that is horrible.
   - Are you here for our stone snakes?
@@ -104176,7 +104171,7 @@ MonoBehaviour:
   - n-Player
   - Are they dangerous?
   - n-Faadi el-Akbar
-  - Few who ever encounter one live to tell the tale.
+  - Few who ever encounter one lives to tell the tale.
   - n-Player
   - Great.   Exactly the kind of thing that we have been encountering since leaving
     home.
@@ -104910,12 +104905,11 @@ MonoBehaviour:
     rewardItems:
     - Bastard Sword
     - Greater Healing Potion
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 1
   QuestToComplete: Stone Snake
 --- !u!61 &1901537560
@@ -105073,12 +105067,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1979271396
@@ -105392,8 +105385,8 @@ PrefabInstance:
     - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
         type: 3}
       propertyPath: lines.Array.data[20]
-      value: Thank you so much.  We will definitely speak to them.  There is sso
-        much for us to learn about your great land.
+      value: Thank you so much.  We will definitely speak to them.  There is so much
+        for us to learn about your great land.
       objectReference: {fileID: 0}
     - target: {fileID: 358731053049159900, guid: d8b050d4bf5e4744f88649f69255b6ed,
         type: 3}
@@ -105565,12 +105558,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &2093805001

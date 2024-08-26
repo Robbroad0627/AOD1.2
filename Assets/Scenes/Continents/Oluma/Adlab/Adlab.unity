@@ -186,11 +186,11 @@ MonoBehaviour:
   - Besides there was no way of knowing if her story was true
   - And if it was what could we do against a Djin
   - ...
-  - n-Player
+  - n-Bron
   - It is called basic decency
   - n-Faraj al-Hafeez
   - It sounded dangerous and why should I risk my life for a stranger.
-  - n-Player
+  - n-Bron
   - Let us pray you never need help
   - Good Bye
   isPerson: 1
@@ -1272,12 +1272,11 @@ MonoBehaviour:
     rewardItems:
     - Throwing Axe
     - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &511129944
@@ -1363,12 +1362,11 @@ MonoBehaviour:
     rewardItems:
     - Bastard Sword
     - Greater Healing Potion
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &546129951
@@ -1480,7 +1478,7 @@ PrefabInstance:
     - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
       propertyPath: lines.Array.data[5]
-      value: you called her a crazy lady.
+      value: You called her a crazy lady.
       objectReference: {fileID: 0}
     - target: {fileID: 9023170970101229432, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
@@ -1711,7 +1709,7 @@ MonoBehaviour:
   - You may be right
   - Maybe I should move on to a new village.
   - n-Player
-  - That might be wise. It will probably help with teh grieving process
+  - That might be wise. It will probably help with the grieving process
   - n-Ilhaam el-Sarah
   - Thank you.
   - Good Bye
@@ -1958,12 +1956,11 @@ MonoBehaviour:
     rewardItems:
     - Greater Potion of Healing
     - Greater Potion of Healing
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &957920656
@@ -2146,12 +2143,11 @@ MonoBehaviour:
     rewardItems:
     - Greater Potion of Healing
     - Greater Potion of Healing
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1018156684
@@ -2409,7 +2405,7 @@ MonoBehaviour:
   - n-Player
   - Thank you for the warm welcome
   - n-Izzat al-Hallal
-  - I have been praying that brave sould would come to help us out and my prayers
+  - I have been praying that brave souls would come to help us out and my prayers
     have been answered
   - n-Player
   - ....
@@ -103998,12 +103994,11 @@ MonoBehaviour:
     rewardItems:
     - Throwing Axe
     - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1392168075
@@ -104846,12 +104841,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1773766438
@@ -104978,7 +104972,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - ' '
+  - n-Ilhaam el-Sarah
   - Please help me.
   - My family was set upon by a nasty Djin and no one here is willing to help.
   - These so called men are too scared to go out and rescue them.
@@ -105468,12 +105462,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &2093805001

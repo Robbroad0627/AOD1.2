@@ -269,7 +269,7 @@ Transform:
   - {fileID: 228035080}
   - {fileID: 1264409508}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &228035079
 GameObject:
@@ -474,7 +474,7 @@ MonoBehaviour:
   - n- Player
   - We are travelling the world to see the sites and to adventure.
   - n- Hakam al-Neman
-  - Excellent.  My name is   Hakam al-Neman, I am the mayor of this village.
+  - Excellent.  My name is Hakam al-Neman, I am the mayor of this village.
   - Sililah is the only port here in Oluma and the only settlement that is not in
     the heart of the desert.
   - n- Player
@@ -939,12 +939,11 @@ MonoBehaviour:
     rewardItems:
     - Gold Band
     - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &330448999
@@ -1021,7 +1020,7 @@ Transform:
   - {fileID: 1937445845}
   - {fileID: 1700817222}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &471610716
 GameObject:
@@ -1105,7 +1104,7 @@ Transform:
   - {fileID: 1389109435}
   - {fileID: 566621652}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555547324
 GameObject:
@@ -1126,7 +1125,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &555547325
 Transform:
   m_ObjectHideFlags: 0
@@ -1158,7 +1157,7 @@ MonoBehaviour:
   - Hello Taz
   - n- Tazmina
   - Ok, now I can speak with you.
-  - I can you you have my father's permission
+  - I can see you have my father's permission
   - n- Player
   - First we would like to aplogoze for being so bold by approaching you.
   - We were unaware of your customs and should have thought to ask on the boat ride
@@ -1204,7 +1203,7 @@ MonoBehaviour:
   - n- Tazmina
   - Wait.  You met Coatl?  Are you pulling my leg?
   - n- Player
-  - No we met Coatl or an avatar of Coatl in Larsu, teh avatar was imprisoned in
+  - No we met Coatl or an avatar of Coatl in Larsu, the avatar was imprisoned in
     the the temple to Coatl
   - n-Tazmina
   - Maybe I should be learning from you instead of me trying to explain things
@@ -1225,7 +1224,7 @@ MonoBehaviour:
   - And we think we battled one in Larsu
   - n- Tazmina
   - That's impossible.  The Yuan-Ti disappeared thousands of years ago when they
-    warred with teh Elves and the Dwarves and the other older races.
+    warred with the Elves and the Dwarves and the other older races.
   - The Hstachi were captured people that were turned from Human to pathetic creatures. 
     They were turned through blood magic.  But since the Yuan-Ti perished there is
     no one to create new Hstachi.  At the end of the greatest battle the land of
@@ -8516,7 +8515,7 @@ PrefabInstance:
     - target: {fileID: 4983232825581107135, guid: 797ee2b7c6b9a1542bdc266e01dfe850,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4983232825581107135, guid: 797ee2b7c6b9a1542bdc266e01dfe850,
         type: 3}
@@ -8911,7 +8910,7 @@ Transform:
   - {fileID: 228055875}
   - {fileID: 1935029146}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &991982741
 PrefabInstance:
@@ -8989,7 +8988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1085181769
 Transform:
   m_ObjectHideFlags: 0
@@ -9017,99 +9016,80 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - n- Player
-  - Hello Taz
   - n- Tazmina
-  - Ok, now I can speak with you.
-  - I can you you have my father's permission
+  - Welcome Back.
   - n- Player
-  - First we would like to aplogoze for being so bold by approaching you.
-  - We were unaware of your customs and should have thought to ask on the boat ride
-    here about such imortant things.
-  - In our travels to Ashtir and Larsu we never encountered a custom like this, and
-    on Haven it would be a completely foreign concept.
+  - Thank you.
+  - We were referred to you by your cousin Aadam al Yassin in Biddaib
   - n- Tazmina
-  - Oh you are well travelled.  I would love to leave here and see the world, explore
-    other cultures up close instead of just in books and through lectures.
+  - Really? What can I help you with?
   - n- Player
-  - 'That is why your father told us we should speak with you.  '
-  - Ashtir is shrinking, that arctic region is getting warmer, and has made the animals
-    and creatures of that nation much more aggressive.
+  - We were tasked by an unscrupous person to retrieve a scroll and we were paid
+    with this book.
+  - But we cannot read this book, whenever we look at it the words seem to jumble.
   - n- Tazmina
-  - That is terrible, those poor people.  Is it true?  Is it really that cold there
-    that you can see your breath?
+  - May I see the book?
   - n- Player
-  - Yes it is very cold there, and things freeze very quickly, and you see your breath
-    every moment you are outside.  I would hate to see how cold it is normally
+  - Ofcourse.
   - n- Tazmina
-  - I would like to experince the cold before I die
+  - The writing feels familiar but I do not recognize it. That is quite puzzling.
   - n- Player
-  - We thought the same but it was much harder than we ever expected.
-  - The second thing we need to mention is Larsu is over run with very aggressive
-    snakes.
-  - We have even seen snakemen and flying snakes
+  - That is disappointing.
   - n- Tazmina
-  - Flying snakes?  There are tales of flying snakes back in the days before Piltara
-    sank into the depths of the ocean.
-  - It is even said they had several type of snake people.
-  - You know the story of Piltara
+  - When I look at the writing and concentrate on it, it looks like it is moving.
+  - ...
+  - I seem to recall a legend about a crystal that translates any written language
+    into a language that the reader will understand.
   - n- Player
-  - Vaguely, heard stories as child but really don't remember anything other than
-    the name.
+  - Where can we find this crystal?
   - n- Tazmina
-  - Let me fill you in.  Many people think the land of Piltara is a myth and the
-    stories are fables to frighten and entertain.
-  - But in fact it was a very really place, and the the most horrifying stories are
-    nowhere near as gruesome as the truth.
-  - The land of Piltara was a very evil place, with a race called the Yaun-Ti.
-  - n- Player
-  - That is what Coatl said.
+  - That is where things get complicated.
+  - n- Bawb
+  - Uh oh. It is always something.
   - n- Tazmina
-  - Wait.  You met Coatl?  Are you pulling my leg?
+  - Exactly.
+  - ...
+  - The crystal is rumored to be in the land of Mandu. It is eiter in a temple guarded
+    by some warrior monks or in the imperial palace.
   - n- Player
-  - No we met Coatl or an avatar of Coatl in Larsu, teh avatar was imprisoned in
-    the the temple to Coatl
+  - Warrior Monks?  What are warrior monks?
   - n-Tazmina
-  - Maybe I should be learning from you instead of me trying to explain things
+  - Religous warriors who have honed their bodies in to weapons.
   - n- Player
-  - No, please continue, we feel so lost and out of sorts, there is so much we need
-    to know
+  - Oh like Bawb. He is a warrior for his god.
+  - n- Bawb
+  - Fellow clerics should be reasonable folk.  Just let me do the talking when we
+    meet them.
   - n- Tazmina
-  - The Yuan-Ti were cruel beings, some looked almost perfectly human, other had
-    snake bodies and human upper part, others had a snake head and human body.  The
-    most wretched were the ones they captured and changed into snake people but I
-    can not recall the name for them.
+  - Umm... No.
+  - Sorry Bawb thaey are not clerics.
+  - Frowm what I hear and have read, these are people who meditate and practice their
+    exotic fighting style day in and day out.  But they do not possess the ability
+    to cast spells.
   - n- Player
-  - Hstachi...
+  - Ok, so if we want to understand the book we will need to go to Mandu.
   - n- Tazmina
-  - Yes Hstachi, how did yo know that?
-  - n- Player
-  - A person everyone in Haven though was crazy was babling about Hstachi.
-  - And we think we battled one in Larsu
-  - n- Tazmina
-  - That's impossible.  The Yuan-Ti disappeared thousands of years ago when they
-    warred with teh Elves and the Dwarves and the other older races.
-  - The Hstachi were captured people that were turned from Human to pathetic creatures. 
-    They were turned through blood magic.  But since the Yuan-Ti perished there is
-    no one to create new Hstachi.  At the end of the greatest battle the land of
-    Piltara sank into the ocean and the few Yuan-Ti that were found in other lands
-    were interrogated, and executed.
+  - Sorry I could not read the book and translate it for you.
+  - There is a person in Thumrar that can help with a little lore about Mandu. It
+    might be wise to know their customs before arriving.  He knows a great many things
+    about a lot of places.
   - N- Player
-  - Very interesting.
-  - That will give us a lot to think about.
-  - We thank you for your time, and please forgive us for our boldness earlier.
+  - Thank you for telling us about him.
+  - What is his name?
   - n- Tazmina
-  - Nothing to forgive, you did not know our ways, but try to keep it in mind if
-    you plan to stay here in Oluma.
+  - ' I don''t recall.... sorry.'
+  - I also hear that somethings seems off in Fawab might worth checking out before
+    heading out on a boat.
   - n- Player
-  - We will definitely keep it in the front of our thoughts as we venture through
-    your land.
+  - I guess we should look into what is going on here and find this person in Thumrar
+    before heading off to Mandu.
   - n- Tazmina
-  - Goodbye, but please do come back if you learn more.  I love a good mystery.
-  - N- Goodbye
+  - 'Goodbye, but please do come back if you learn more.  '
+  - N- Player
+  - Goodbye
   isPerson: 1
   shouldActivateQuest: 0
-  questToMark: Taz
+  questToMark: The Book
   markComplete: 1
 --- !u!61 &1085181771
 BoxCollider2D:
@@ -9269,7 +9249,7 @@ MonoBehaviour:
   - n- Randeen
   - Where do you hail from?
   - n-Player
-  - Originally form Haven, then a crazy wizard sent us to Ahtir.
+  - Originally form Haven, then a crazy wizard sent us to Ashtir.
   - From Ashtir we caught a charter to Larsu
   - From Larsu we came by boat to here.
   - n- Randeen
@@ -144657,12 +144637,11 @@ MonoBehaviour:
     rewardItems:
     - Greater Potion of Healing
     - Greater Potion of Healing
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1392168075
@@ -145445,12 +145424,11 @@ MonoBehaviour:
     rewardItems:
     - Gold Band
     - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1700817224
@@ -145529,7 +145507,8 @@ MonoBehaviour:
   - n- Faisal al-Rasul
   - Hot enough for you
   - Ha ha Ha
-  - n- Player Very funny, yes it is quite hot.
+  - 'n- Player '
+  - Very funny, yes it is quite hot.
   - n- Faisal al-Rasul
   - As you head out into the desert it gets hotter
   - n- Player
@@ -145868,12 +145847,11 @@ MonoBehaviour:
     rewardXP: 500
     rewardItems:
     - Potion of Vitality
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1919128152
@@ -145928,6 +145906,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Taz
       objectReference: {fileID: 0}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: questToCheck
+      value: The Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 1085181768}
     - target: {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935,
         type: 3}
       propertyPath: objectToActivate
@@ -146110,12 +146098,11 @@ MonoBehaviour:
     rewardItems:
     - Greater Potion of Healing
     - Greater Potion of Healing
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1937445847
@@ -146539,12 +146526,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &2093805001
@@ -146696,8 +146682,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transitionName: Sililah-P
   playerAnimatorOverride: {fileID: 0}
-  portController: {fileID: 657787631}
   isPort: 1
+  portController: {fileID: 657787631}
 --- !u!114 &114882825612068015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146713,8 +146699,8 @@ MonoBehaviour:
   areaToLoad: Chulu
   areaTransitionName: Chulu-P
   waitToLoad: 1
-  portController: {fileID: 657787631}
   needBoat: 1
+  portController: {fileID: 657787631}
 --- !u!114 &3556962031427033508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146798,7 +146784,7 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &3556962031427033514
 BoxCollider2D:

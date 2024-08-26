@@ -175,12 +175,11 @@ MonoBehaviour:
     rewardXP: 6200
     rewardItems:
     - 'Scroll '
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: The Book
 --- !u!61 &35444856
@@ -515,12 +514,11 @@ MonoBehaviour:
     rewardItems:
     - Throwing Axe
     - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &209811223
@@ -664,12 +662,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &267155059
@@ -1019,12 +1016,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &317936130
@@ -1161,12 +1157,11 @@ MonoBehaviour:
     rewardItems:
     - Throwing Axe
     - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &406750244
@@ -1399,7 +1394,7 @@ MonoBehaviour:
   - n- Aadam al Yassin
   - What brings you to Biddaib?
   - n- Player
-  - We are travelling through the lasd looking to solve a few mysteries here and
+  - We are travelling through the land looking to solve a few mysteries here and
     around the world
   - n- Aadam al Yassin
   - Sounds interesting
@@ -106844,19 +106839,19 @@ MonoBehaviour:
   - Now we are wanting to find out why there is so much activity with serpents,
   - n- Zain al-Ammar
   - Ah yes. There is much talk about the snakes being more active.
-  - This was written about mny years ago.
+  - This was written about many years ago.
   - I have a book about it in my library.
   - n- Player
-  - May we see the book?  Perhps borrow it for a little while.
+  - May we see the book?  Perhaps borrow it for a little while.
   - n- Bron
   - It would be most helpful
   - n- Zain al-Ammar
-  - I am afraid taht is out of the question.
+  - I am afraid that is out of the question.
   - n- Player
   - Then why did you bring it up?
   - n- Zain al-Ammar
   - I am sorry for that.   I should not have done that.
-  - I would let you have the book but while it is in my library, I do not have possession
+  - I would let you have the book, but while it is in my library, I do not have possession
     of my library.
   - A D'jinn has my library.
   - n- Player
@@ -107429,12 +107424,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1817139463
