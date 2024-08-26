@@ -87,6 +87,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     //FUNCTIONS
+    #region Initialization Functions/Methods
 
     private void Awake()
     {
@@ -99,6 +100,9 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         SortItems();
     }
+
+    #endregion
+    #region Implementation Functions/Methods
 
     private void Update()
     {
@@ -137,6 +141,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    #endregion
+
     public Item GetItemDetails(string itemToGrab)
     {
         for (int i = 0; i < referenceItems.Length; i++)
@@ -152,11 +158,11 @@ public class GameManager : MonoBehaviour
 
     public void SortItems()
     {
-        bool itemAFterSpace = true;
+        bool itemAfterSpace = true;
 
-        while (itemAFterSpace)
+        while (itemAfterSpace)
         {
-            itemAFterSpace = false;
+            itemAfterSpace = false;
 
             for (int i = 0; i < itemsHeld.Length - 1; i++)
             {
@@ -169,7 +175,7 @@ public class GameManager : MonoBehaviour
 
                     if (itemsHeld[i] != "")
                     {
-                        itemAFterSpace = true;
+                        itemAfterSpace = true;
                     }
                 }
             }
@@ -182,7 +188,7 @@ public class GameManager : MonoBehaviour
     /// <param name="itemToAdd"></param>
     public void AddItem(string itemToAdd)
     {
-        if(null == itemToAdd)
+        if (itemToAdd == null)
         {
             Debug.LogError("Couldn't add null item to player inventory.");
             return;
@@ -269,25 +275,25 @@ public class GameManager : MonoBehaviour
 
     public void ModalPromptBoatTrip(int goldCost)
     {
-        var dm = DialogManager.instance;
+        var dialogManager = DialogManager.instance;
 
-        if(currentGold >= goldCost)
+        if (currentGold >= goldCost)
         {
-            dm.Prompt($"Do you want to travel by boat? It will cost {goldCost}g.", PortChoice, null, "Yes", "No", "Boat Captian");
+            dialogManager.Prompt($"Do you want to travel by boat? It will cost {goldCost}g.", PortChoice, null, "Yes", "No", "Boat Captian");
         }
     }
 
     public void ModalPromptInn(int goldCost)
     {
-        var dm = DialogManager.instance;
+        var dialogManager = DialogManager.instance;
 
         if (currentGold >= goldCost)
         {
-            dm.Prompt($"Do you want to stay the night? It will cost {goldCost}g.", InnSequence, null);
+            dialogManager.Prompt($"Do you want to stay the night? It will cost {goldCost}g.", InnSequence, null);
         }
     }
 
-    public void FullRestoreParty()
+    private void FullRestoreParty()
     {
         foreach (var character in playerStats)
         {
@@ -298,26 +304,26 @@ public class GameManager : MonoBehaviour
     
     private void PortChoice()
     {
-        var dm = DialogManager.instance;
-        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
+        var dialogManager = DialogManager.instance;
+        var captian = FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = true;
         var nextContinent = captian.nextContinent;
         var preContinent = captian.previousContinent;
         var nextAreatoLoad = captian.nextAreaToLoad;
         var preAreatoLoad = captian.previousAreaToLoad;
-        dm.PortPrompt($"Where would you like to go?", NextPortChoice, PreviousPortChoice, $"{nextContinent} - {nextAreatoLoad}", $"{preContinent} - {preAreatoLoad}", "Boat Captian");
+        dialogManager.PortPrompt($"Where would you like to go?", NextPortChoice, PreviousPortChoice, $"{nextContinent} - {nextAreatoLoad}", $"{preContinent} - {preAreatoLoad}", "Boat Captian");
     }
 
     private void NextPortChoice()
     {
-        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
+        var captian = FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = false;
         captian.boatDestinationConfirmedNext = true;        
     }
 
     private void PreviousPortChoice()
     {
-        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
+        var captian = FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = false;
         captian.boatDestinationConfirmedPre = true;
     }
@@ -325,7 +331,7 @@ public class GameManager : MonoBehaviour
     private void InnSequence()
     {
         UIFade.instance.FadeToBlack();
-        GameManager.instance.fadingBetweenAreas = false;
+        fadingBetweenAreas = false;
         Invoke("InnPostFade", 1.5f);
 
     }
@@ -335,7 +341,7 @@ public class GameManager : MonoBehaviour
         FullRestoreParty();
         Inn.WarpUpstairs();
         UIFade.instance.FadeFromBlack();
-        GameManager.instance.fadingBetweenAreas = false;
+        fadingBetweenAreas = false;
         ModalPromptSaveGame();
     }
 
@@ -343,7 +349,7 @@ public class GameManager : MonoBehaviour
     {
         if (Inn.isUpstairs)
         {
-            if (null != Inn.s_downstairsTransitionPosition)
+            if (Inn.s_downstairsTransitionPosition != null)
             {
                 StorePlayerScene(Inn.s_downstairsSceneName);
                 StorePlayerPosition((Vector3)Inn.s_downstairsTransitionPosition);
@@ -372,11 +378,11 @@ public class GameManager : MonoBehaviour
         }
 
         //Store quests
-        var qm = QuestManager.instance;
-        qm.isReady = false;
-        PlayerPrefs.SetString("QuestsAvailable",JsonUtility.ToJson(qm.activeQuestNames));
-        PlayerPrefs.SetString("QuestsComplete",JsonUtility.ToJson(qm.completedQuestNames));
-        qm.isReady = true;
+        var questManager = QuestManager.instance;
+        questManager.isReady = false;
+        PlayerPrefs.SetString("QuestsAvailable",JsonUtility.ToJson(questManager.activeQuestNames));
+        PlayerPrefs.SetString("QuestsComplete",JsonUtility.ToJson(questManager.completedQuestNames));
+        questManager.isReady = true;
     }
 
     private void SaveNonCustomCharacters()
@@ -445,20 +451,20 @@ public class GameManager : MonoBehaviour
 
     public void LoadData()
     {
-        var qm = QuestManager.instance;
+        var questManager = QuestManager.instance;
 
-        if(null == qm)
+        if (questManager == null)
         {
             Invoke("LoadData", 0.2f);
             return;
         }
 
-        qm.isReady = false;
+        questManager.isReady = false;
         dataLoadedOnce = true;
 
-        var pc = PlayerController.instance;
+        var playerCharacter = PlayerController.instance;
 
-        if (null == pc)
+        if (playerCharacter == null)
         {
             Invoke("LoadData", 0.1f);
             return;
@@ -468,7 +474,7 @@ public class GameManager : MonoBehaviour
 
         //Load the player
         LoadCharacterByName(playerStats[0], PLAYER_PREFERENCE_KEY);
-        LoadAppearance(playerStats[0], PLAYER_PREFERENCE_KEY); //Onl;y the player's appearance is custom for now
+        LoadAppearance(playerStats[0], PLAYER_PREFERENCE_KEY); //Only the player's appearance is custom for now
 
         LoadNonCustomCharacters(); // Load everyone else assuming hardcoded names
 
@@ -481,9 +487,9 @@ public class GameManager : MonoBehaviour
 
         //Load quests
         //NOTE order is important
-        qm.questMarkerNames=JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsAvailable"));
-        qm.completedQuestNames= JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsComplete"));
-        qm.isReady = true;
+        questManager.questMarkerNames=JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsAvailable"));
+        questManager.completedQuestNames= JsonUtility.FromJson<string[]>(PlayerPrefs.GetString("QuestsComplete"));
+        questManager.isReady = true;
     }
 
     private void LoadNonCustomCharacters()
