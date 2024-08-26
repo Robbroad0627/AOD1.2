@@ -16,39 +16,97 @@ using UnityEngine.UI;
 
 public class BattleReward : MonoBehaviour
 {
+    //SINGLETON
+    #region Singleton
 
     public static BattleReward instance;
-    public Text xpText, itemText;
-    public GameObject rewardScreen;
-    public string[] rewardItems;
-    public int xpEarned;
-    public bool markQuestComplete;
-    public string questToMark;
 
-	private void Start ()
+    private void Singleton()
     {
-        instance = this;
-	}
-	
-	private void Update ()
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+    }
+
+    #endregion
+
+    //VARIABLES
+    #region Inspector/Exposed Variables
+
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private GameObject rewardScreen;
+    [SerializeField] private Text xpText;
+    [SerializeField] private Text itemText;
+
+    #endregion
+    #region Private Variables
+
+    private int mXPEarned;
+    private bool mCompletesQuest;
+    private string[] mRewardItems;
+    private string mQuestToComplete;
+
+    #endregion
+
+    //GETTERS/SETTERS
+    #region Setters/Mutators
+
+    public bool SetCompletesQuest(bool yesNo) => mCompletesQuest = yesNo;
+    public string SetQuestToComplete(string quest) => mQuestToComplete = quest;
+
+    #endregion
+
+    //FUNCTIONS
+    #region Initialization Methods/Functions
+
+    private void Awake ()
     {
+        Singleton();
+    }
+
+    private void Start()
+    {
+        mXPEarned = 0;
+        mRewardItems = null;
+        mQuestToComplete = "";
+        mCompletesQuest = false;
+    }
+
+    #endregion
+    #region Implementation Functions/Methods
+
+    private void Update ()
+    {
+        // For testing only remove before game is published
 		if (Input.GetKeyDown(KeyCode.Y))
         {
             OpenRewardScreen(54, new string[] { "Short sword", "Leather Armor" });
         }
 	}
 
-    public void OpenRewardScreen(int xp, string[] rewards)
-    {
-        xpEarned = xp;
-        rewardItems = rewards;
+    #endregion
+    #region Public Functions/Methods
 
-        xpText.text = "Everyone earned " + xpEarned + " xp!";
+    public void OpenRewardScreen(int earnedXP, string[] rewardedItems)
+    {
+        mXPEarned = earnedXP;
+        mRewardItems = rewardedItems;
+
+        xpText.text = "Everyone earned " + mXPEarned + " xp!";
         itemText.text = "";
 
-        for (int i = 0; i < rewardItems.Length; i++)
+        for (int i = 0; i < mRewardItems.Length; i++)
         {
-            itemText.text += rewards[i] + "\n";
+            itemText.text += rewardedItems[i] + "\n";
         }
 
         rewardScreen.SetActive(true);
@@ -60,21 +118,23 @@ public class BattleReward : MonoBehaviour
         {
             if(GameManager.instance.playerStats[i].gameObject.activeInHierarchy)
             {
-                GameManager.instance.playerStats[i].AddExp(xpEarned);
+                GameManager.instance.playerStats[i].AddExp(mXPEarned);
             }
         }
 
-        for (int i = 0; i < rewardItems.Length; i++)
+        for (int i = 0; i < mRewardItems.Length; i++)
         {
-            GameManager.instance.AddItem(rewardItems[i]);
+            GameManager.instance.AddItem(mRewardItems[i]);
         }
 
         rewardScreen.SetActive(false);
         GameManager.instance.battleActive = false;
 
-        if (markQuestComplete)
+        if (mCompletesQuest)
         {
-            QuestManager.instance.MarkQuestComplete(questToMark);
+            QuestManager.instance.MarkQuestComplete(mQuestToComplete);
         }
     }
+
+    #endregion
 }

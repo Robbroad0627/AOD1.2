@@ -1,53 +1,61 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: BattleStarter.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 26, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
+using System.Collections;
 
-//Bonehead Games
+public class BattleStarter : MonoBehaviour
+{
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-public class BattleStarter : MonoBehaviour {
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private Sprite backgroundSprite = null;
+    [SerializeField] private BattleType[] potentialBattles = null;
+    [SerializeField] private float timeBetweenBattles = 10.0f;
+    [SerializeField] private bool activateOnEnter = false;
+    [SerializeField] private bool activateOnExit = false;
+    [SerializeField] private bool cannotFlee = false;
+    [SerializeField] private bool deactivateAfterStarting = false;
+    [SerializeField] private bool shouldCompleteQuest = false;
+    [SerializeField] private string QuestToComplete = "";
 
-    public Sprite backgroundSprite;
-    public BattleType[] potentialBattles;
+    #endregion
+    #region Private Variables
 
-    public bool activateOnEnter, activateOnStay, activateOnExit;
+    private bool mIsPlayerInArea;
+    private float mBattleCountdownTimer;
 
-    private bool inArea;
-    public float timeBetweenBattles = 10f;
-    private float betweenBattleCounter;
+    #endregion
 
-    public bool deactivateAfterStarting;
+    //FUNCTIONS
+    #region Initialization Methods/Functions
 
-    public bool cannotFlee;
-
-    public bool shouldCompleteQuest;
-    public string QuestToComplete;
-
-	// Use this for initialization
-	void Start () {
-        betweenBattleCounter = Random.Range(timeBetweenBattles * .5f, timeBetweenBattles * 1.5f);
+    private void Start ()
+    {
+        mIsPlayerInArea = false;
+        mBattleCountdownTimer = Random.Range(timeBetweenBattles * .5f, timeBetweenBattles * 1.5f);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(inArea && PlayerController.instance.canMove)
-        {
-            if(Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
-            {
-                betweenBattleCounter -= Time.deltaTime;
-            }
 
-            if(betweenBattleCounter <= 0)
-            {
-                betweenBattleCounter = Random.Range(timeBetweenBattles * .5f, timeBetweenBattles * 1.5f);
-
-                StartCoroutine(StartBattleCo());
-            }
-        }
-	}
+    #endregion
+    #region Physics Functions/Methods
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             if (activateOnEnter)
             {
@@ -55,14 +63,14 @@ public class BattleStarter : MonoBehaviour {
             }
             else
             {
-                inArea = true;
+                mIsPlayerInArea = true;
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             if (activateOnExit)
             {
@@ -70,18 +78,44 @@ public class BattleStarter : MonoBehaviour {
             }
             else
             {
-                inArea = false;
+                mIsPlayerInArea = false;
             }
         }
     }
 
+    #endregion
+    #region Implementation Functions/Methods
+
+    private void Update ()
+    {
+		if (mIsPlayerInArea && PlayerController.instance.canMove)
+        {
+            if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
+            {
+                mBattleCountdownTimer -= Time.deltaTime;
+            }
+
+            if (mBattleCountdownTimer <= 0)
+            {
+                mBattleCountdownTimer = Random.Range(timeBetweenBattles * .5f, timeBetweenBattles * 1.5f);
+
+                StartCoroutine(StartBattleCo());
+            }
+        }
+	}
+
+    #endregion
+    #region Coroutines
+
     public IEnumerator StartBattleCo()
     {
         UIFade.instance.FadeToBlack();
-        if(null != backgroundSprite)
+
+        if (backgroundSprite != null)
         {
             BattleManager.instance.SetBackgroundSprite(backgroundSprite);
         }
+
         GameManager.instance.battleActive = true;
         
         int selectedBattle = Random.Range(0, potentialBattles.Length);
@@ -94,12 +128,14 @@ public class BattleStarter : MonoBehaviour {
         
         UIFade.instance.FadeFromBlack();
 
-        if(deactivateAfterStarting)
+        if (deactivateAfterStarting)
         {
             gameObject.SetActive(false);
         }
 
-        BattleReward.instance.markQuestComplete = shouldCompleteQuest;
-        BattleReward.instance.questToMark = QuestToComplete;
+        BattleReward.instance.SetCompletesQuest(shouldCompleteQuest);
+        BattleReward.instance.SetQuestToComplete(QuestToComplete);
     }
+
+    #endregion
 }
