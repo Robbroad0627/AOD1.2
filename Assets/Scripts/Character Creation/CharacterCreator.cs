@@ -18,241 +18,182 @@ using UnityEngine.SceneManagement;
 
 public class CharacterCreator : MonoBehaviour
 {
-    public Text raceText, classText, mySexText;
-    public Image portrait;
-    public InputField nameField;
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-    public bool isMale = true;
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private Image portrait;
+    [SerializeField] private InputField nameField;
 
-    public List<Sprite> portraitList;
-    public Sprite myPortrait;
-    public Sprite theSprite;
+    #endregion
+    #region Private Variables
 
-    public Dictionary<CharacterAttributes.BaseAttributes, int> myAttributes;
+    private bool mIsMale;
+    private int mPlayerHP;
+    private int mPlayerMP;
+    private int mBaseValue;
+    private string mPlayerSex;
+    private Sprite mPlayerPortrait;
+    private int mNumberOfAttributes;
+    private List<Sprite> mPortraitList;
+    private CharacterAttributes.Races mPlayerRace;
+    private CharacterAttributes.Classes mPlayerClass;
+    private Dictionary<CharacterAttributes.BaseAttributes, int> mPlayerAttributes;
 
-    int baseValue = 10;
+    #endregion
 
-    public CharacterAttributes.Races myRace;
-    public CharacterAttributes.Classes myClass;
-    public string mySex;
+    //GETTERS/SETTERS
+    #region Getters/Accessors
 
-    private int numAttributes = 6;
+    public bool GetIsMale => mIsMale;
+    public int GetPlayerHP => mPlayerHP;
+    public int GetPlayerMP => mPlayerMP;
+    public CharacterAttributes.Races GetPlayerRace => mPlayerRace;
+    public CharacterAttributes.Classes GetPlayerClass => mPlayerClass;
+    public Dictionary<CharacterAttributes.BaseAttributes, int> GetPlayerAttributes => mPlayerAttributes;
 
-    public int myHP;
-    public int myMP;
+    #endregion
+    #region Setters/Mutators
 
-    CharacterAttributes.Races oldRace;
-    CharacterAttributes.Classes oldClass;
+    public bool SetIsMale(bool male) => mIsMale = male;
 
-    private void Start()
+    #endregion
+
+    //FUNCTIONS
+    #region Initialization Functions/Methods
+
+    private void Awake()
     {
+        mIsMale = true;
+        mBaseValue = 10;
+        mNumberOfAttributes = 6;
         nameField = GameObject.Find("nameText").GetComponent<InputField>();
     }
-    void InitializeAttributes()
-    {
-        myAttributes = new Dictionary<CharacterAttributes.BaseAttributes, int>();
-        foreach (CharacterAttributes.BaseAttributes thisAttrib in System.Enum.GetValues(typeof(CharacterAttributes.BaseAttributes)))
-        {
-            if (myAttributes.ContainsKey(thisAttrib))
-                myAttributes[thisAttrib] = baseValue;
-            else
 
-                myAttributes.Add(thisAttrib, baseValue);
-
-        }
-
-    }
-
-
-    // Use this for initialization
-    public void InitCharacterCreator()
-    {
-
-        //set initial attribute value
-        InitializeAttributes();
-
-        //set inital race
-        myRace = CharacterAttributes.Races.Human;
-
-        //set intial class
-        myClass = CharacterAttributes.Classes.Cleric;
-
-
-        CheckRace();
-        CheckClass();
-
-
-
-    }
-
+    #endregion
+    #region Public Functions/Methods
 
     public void CheckRace()
     {
         InitializeAttributes();
-        switch (myRace)
+
+        switch (mPlayerRace)
         {
             case CharacterAttributes.Races.Dwarf:
-                myAttributes[CharacterAttributes.BaseAttributes.Constitution] += 1;
-                myAttributes[CharacterAttributes.BaseAttributes.Strength] += 1;
-                myAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 1;
-                portraitList = GetComponent<PortraitHandler>().mDwarf;
-                mySex = "M";
-                if (!isMale)
-                {
-                    portraitList = GetComponent<PortraitHandler>().fDwarf;
-                    mySex = "F";
-                }
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution] += 1;
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength] += 1;
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 1;
+                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mDwarf : GetComponent<PortraitHandler>().fDwarf;
+                mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
-            case CharacterAttributes.Races.Elf:
-                myAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
-                myAttributes[CharacterAttributes.BaseAttributes.Intelligence] += 1;
-                myAttributes[CharacterAttributes.BaseAttributes.Constitution] -= 1;
-                portraitList = GetComponent<PortraitHandler>().mElf;
-                mySex = "M";
-                if (!isMale)
-                {
-                    portraitList = GetComponent<PortraitHandler>().fElf;
-                    mySex = "F";
-                }
 
+            case CharacterAttributes.Races.Elf:
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Intelligence] += 1;
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution] -= 1;
+                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mElf : GetComponent<PortraitHandler>().fElf;
+                mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
+
             case CharacterAttributes.Races.HalfElf:
-                myAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
-                myAttributes[CharacterAttributes.BaseAttributes.Wisdom] += 1;
-                myAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 1;
-                portraitList = GetComponent<PortraitHandler>().mHalf_Elf;
-                mySex = "M";
-                if (!isMale)
-                {
-                    portraitList = GetComponent<PortraitHandler>().fHalf_Elf;
-                    mySex = "F";
-                }
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Wisdom] += 1;
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 1;
+                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mHalf_Elf : GetComponent<PortraitHandler>().fHalf_Elf;
+                mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
+
             case CharacterAttributes.Races.Halfling:
-                myAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
-                myAttributes[CharacterAttributes.BaseAttributes.Wisdom] += 1;
-                myAttributes[CharacterAttributes.BaseAttributes.Strength] -= 1;
-                portraitList = GetComponent<PortraitHandler>().mHalfling;
-                mySex = "M";
-                if (!isMale)
-                {
-                    portraitList = GetComponent<PortraitHandler>().fHalfling;
-                    mySex = "F";
-                }
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Wisdom] += 1;
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength] -= 1;
+                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mHalfling : GetComponent<PortraitHandler>().fHalfling;
+                mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
+
             case CharacterAttributes.Races.HalfOrc:
-                myAttributes[CharacterAttributes.BaseAttributes.Constitution] += 1;
-                myAttributes[CharacterAttributes.BaseAttributes.Strength] += 1;
-                myAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 2;
-                portraitList = GetComponent<PortraitHandler>().mHalf_Orc;
-                mySex = "M";
-                if (!isMale)
-                {
-                    portraitList = GetComponent<PortraitHandler>().fHalf_Orc;
-                    mySex = "F";
-                }
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution] += 1;
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength] += 1;
+                mPlayerAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 2;
+                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mHalf_Orc : GetComponent<PortraitHandler>().fHalf_Orc;
+                mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
+
             case CharacterAttributes.Races.Human:
                 int ran = Random.Range(0, System.Enum.GetValues(typeof(CharacterAttributes.BaseAttributes)).Length);
-                myAttributes[(CharacterAttributes.BaseAttributes)ran] += 2;
-                portraitList = GetComponent<PortraitHandler>().mHuman;
-                mySex = "M";
-                if (!isMale)
-                {
-                    portraitList = GetComponent<PortraitHandler>().fHuman;
-                    mySex = "F";
-                }
+                mPlayerAttributes[(CharacterAttributes.BaseAttributes)ran] += 2;
+                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mHuman : GetComponent<PortraitHandler>().fHuman;
+                mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
 
             default:
                 Debug.Log("ERROR - Race Not Found");
                 break;
         }
-        myPortrait = portraitList[0];
-        portrait.sprite = myPortrait;
 
+        mPlayerPortrait = mPortraitList[0];
+        portrait.sprite = mPlayerPortrait;
     }
 
     public void CheckClass()
     {
-        myHP = baseValue;
-        myMP = 0;
-        switch (myClass)
+        mPlayerHP = mBaseValue;
+        mPlayerMP = 0;
+
+        switch (mPlayerClass)
         {
             case CharacterAttributes.Classes.Cleric:
-                myHP = 8 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
-                myMP = 15 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
-                myPortrait = portraitList[0];
-                portrait.sprite = myPortrait;
+                mPlayerHP = 8 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                mPlayerMP = 15 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                mPlayerPortrait = mPortraitList[0];
+                portrait.sprite = mPlayerPortrait;
                 break;
 
             case CharacterAttributes.Classes.Druid:
-                myHP = 8 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
-                myMP = 15 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
-                myPortrait = portraitList[1];
-                portrait.sprite = myPortrait;
+                mPlayerHP = 8 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                mPlayerMP = 15 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                mPlayerPortrait = mPortraitList[1];
+                portrait.sprite = mPlayerPortrait;
                 break;
 
             case CharacterAttributes.Classes.Fighter:
-                myHP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
-                myPortrait = portraitList[2];
-                portrait.sprite = myPortrait;
+                mPlayerHP = 10 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                mPlayerPortrait = mPortraitList[2];
+                portrait.sprite = mPlayerPortrait;
                 break;
 
             case CharacterAttributes.Classes.MagicUser:
-                myHP = 6 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
-                myMP = 20 + myAttributes[CharacterAttributes.BaseAttributes.Intelligence];
-                myPortrait = portraitList[3];
-                portrait.sprite = myPortrait;
+                mPlayerHP = 6 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                mPlayerMP = 20 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Intelligence];
+                mPlayerPortrait = mPortraitList[3];
+                portrait.sprite = mPlayerPortrait;
                 break;
 
             case CharacterAttributes.Classes.Paladin:
-                myHP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
-                myMP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
-                myPortrait = portraitList[4];
-                portrait.sprite = myPortrait;
+                mPlayerHP = 10 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                mPlayerMP = 10 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                mPlayerPortrait = mPortraitList[4];
+                portrait.sprite = mPlayerPortrait;
                 break;
 
             case CharacterAttributes.Classes.Ranger:
-                myHP = 10 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
-                myMP = 15 + myAttributes[CharacterAttributes.BaseAttributes.Wisdom];
-                myPortrait = portraitList[5];
-                portrait.sprite = myPortrait;
+                mPlayerHP = 10 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                mPlayerMP = 15 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Wisdom];
+                mPlayerPortrait = mPortraitList[5];
+                portrait.sprite = mPlayerPortrait;
                 break;
 
             case CharacterAttributes.Classes.Thief:
-                myHP = 6 + myAttributes[CharacterAttributes.BaseAttributes.Constitution];
-                myPortrait = portraitList[6];
-                portrait.sprite = myPortrait;
+                mPlayerHP = 6 + mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution];
+                mPlayerPortrait = mPortraitList[6];
+                portrait.sprite = mPlayerPortrait;
                 break;
         }
     }
 
-
-    public void NextRaceClicked()
-    {
-        bool foundIt = false;
-
-        foreach (CharacterAttributes.Races thisRace in System.Enum.GetValues(typeof(CharacterAttributes.Races)))
-        {
-            if (foundIt)
-            {
-                //reset the race
-                myRace = thisRace;
-                foundIt = false;
-                break;
-            }
-            else if (myRace == thisRace)
-                foundIt = true;
-        }
-
-        if (foundIt)
-            myRace = 0;
-
-        raceText.text = myRace.ToString();
-        CheckRace();
-
-    }
     public void ChangeClass(bool goNext)
     {
         bool foundIt = false;
@@ -264,18 +205,19 @@ public class CharacterCreator : MonoBehaviour
                 if (foundIt)
                 {
                     foundIt = false;
-                    myClass = thisClass;
+                    mPlayerClass = thisClass;
 
                     break;
                 }
-                else if (myClass == thisClass)
+                else if (mPlayerClass == thisClass)
                 {
                     foundIt = true;
                 }
             }
+
             if (foundIt)
             {
-                myClass = 0;
+                mPlayerClass = 0;
             }
         }
         else
@@ -286,17 +228,17 @@ public class CharacterCreator : MonoBehaviour
 
             foreach (CharacterAttributes.Classes thisClass in System.Enum.GetValues(typeof(CharacterAttributes.Classes)))
             {
-                if (myClass == thisClass)
+                if (mPlayerClass == thisClass)
                 {
-                    myClass = lastClass;
+                    mPlayerClass = lastClass;
                     break;
                 }
+
                 lastClass = thisClass;
             }
         }
 
         CheckClass();
-
     }
 
     public void ChangeRace(bool goNext)
@@ -310,18 +252,18 @@ public class CharacterCreator : MonoBehaviour
                 if (foundIt)
                 {
                     foundIt = false;
-                    myRace = thisRace;
+                    mPlayerRace = thisRace;
                     break;
                 }
-                else if (myRace == thisRace)
+                else if (mPlayerRace == thisRace)
                 {
                     foundIt = true;
                 }
             }
+
             if (foundIt)
             {
-                myRace = 0;
-
+                mPlayerRace = 0;
             }
         }
         else
@@ -332,66 +274,134 @@ public class CharacterCreator : MonoBehaviour
 
             foreach (CharacterAttributes.Races thisRace in System.Enum.GetValues(typeof(CharacterAttributes.Races)))
             {
-                if (myRace == thisRace)
+                if (mPlayerRace == thisRace)
                 {
-                    myRace = lastRace;
+                    mPlayerRace = lastRace;
                     break;
                 }
+
                 lastRace = thisRace;
             }
         }
+
         CheckRace();
     }
 
+    public void InitCharacterCreator()
+    {
+        //set initial attribute value
+        InitializeAttributes();
 
+        //set inital race
+        mPlayerRace = CharacterAttributes.Races.Human;
+
+        //set intial class
+        mPlayerClass = CharacterAttributes.Classes.Cleric;
+
+        CheckRace();
+        CheckClass();
+    }
+
+    #endregion
+    #region Private Functions/Methods
+
+    private void InitializeAttributes()
+    {
+        mPlayerAttributes = new Dictionary<CharacterAttributes.BaseAttributes, int>();
+
+        foreach (CharacterAttributes.BaseAttributes thisAttrib in System.Enum.GetValues(typeof(CharacterAttributes.BaseAttributes)))
+        {
+            if (mPlayerAttributes.ContainsKey(thisAttrib))
+            {
+                mPlayerAttributes[thisAttrib] = mBaseValue;
+            }
+            else
+            {
+                mPlayerAttributes.Add(thisAttrib, mBaseValue);
+            }
+        }
+    }
+
+    #endregion
+    #region Buttons
+
+    public void NextRaceClicked()
+    {
+        bool foundIt = false;
+
+        foreach (CharacterAttributes.Races thisRace in System.Enum.GetValues(typeof(CharacterAttributes.Races)))
+        {
+            if (foundIt)
+            {
+                //reset the race
+                mPlayerRace = thisRace;
+                foundIt = false;
+                break;
+            }
+            else if (mPlayerRace == thisRace)
+            {
+                foundIt = true;
+            }
+        }
+
+        if (foundIt)
+        {
+            mPlayerRace = 0;
+        }
+
+        CheckRace();
+
+    }
 
     public void NextPortraitClicked()
     {
-        int maxIndex = portraitList.Count;
-        int currentIndex = portraitList.IndexOf(myPortrait);
-
-
+        int maxIndex = mPortraitList.Count;
+        int currentIndex = mPortraitList.IndexOf(mPlayerPortrait);
         currentIndex++;
+
         if (currentIndex == maxIndex)
         {
             currentIndex = 0;
         }
-        myPortrait = portraitList[currentIndex];
-        portrait.sprite = myPortrait;
+
+        mPlayerPortrait = mPortraitList[currentIndex];
+        portrait.sprite = mPlayerPortrait;
     }
 
     public void PrevPortraitClicked()
     {
-        int maxIndex = portraitList.Count;
-        int currentIndex = portraitList.IndexOf(myPortrait);
-
+        int maxIndex = mPortraitList.Count;
+        int currentIndex = mPortraitList.IndexOf(mPlayerPortrait);
         currentIndex--;
+
         if (currentIndex == -1)
         {
             currentIndex = maxIndex - 1;
         }
-        myPortrait = portraitList[currentIndex];
-        portrait.sprite = myPortrait;
+
+        mPlayerPortrait = mPortraitList[currentIndex];
+        portrait.sprite = mPlayerPortrait;
     }
 
     public void SaveCharacterButtonPressed()
     {
         GameManager.instance.playerStats[0].charName = nameField.text;
-        GameManager.instance.playerStats[0].charIamge = myPortrait;
-        GameManager.instance.playerStats[0].strength = myAttributes[CharacterAttributes.BaseAttributes.Strength];
-        GameManager.instance.playerStats[0].currentHP = myHP;
-        GameManager.instance.playerStats[0].maxHP = myHP;
-        GameManager.instance.playerStats[0].currentMP = myMP;
-        GameManager.instance.playerStats[0].maxMP = myMP;
+        GameManager.instance.playerStats[0].charIamge = mPlayerPortrait;
+        GameManager.instance.playerStats[0].strength = mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength];
+        GameManager.instance.playerStats[0].currentHP = mPlayerHP;
+        GameManager.instance.playerStats[0].maxHP = mPlayerHP;
+        GameManager.instance.playerStats[0].currentMP = mPlayerMP;
+        GameManager.instance.playerStats[0].maxMP = mPlayerMP;
         GameManager.instance.playerStats[0].playerLevel = 1;
-        GameManager.instance.playerStats[0].battleChar = Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
+        GameManager.instance.playerStats[0].battleChar = Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + mPlayerClass + "/" + mPlayerSex + mPlayerRace);
         GameManager.instance.playerStats[0].battleChar.SetIsPlayer(true);
-        GameManager.instance.playerStats[0].classString = myClass.ToString();
-        GameManager.instance.playerStats[0].sexString = mySex;
-        GameManager.instance.playerStats[0].raceString = myRace.ToString();
+        GameManager.instance.playerStats[0].classString = mPlayerClass.ToString();
+        GameManager.instance.playerStats[0].sexString = mPlayerSex;
+        GameManager.instance.playerStats[0].raceString = mPlayerRace.ToString();
 
-        Debug.Log("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
+        Debug.Log("Prefabs/Players/PlayerOptions/" + mPlayerClass + "/" + mPlayerSex + mPlayerRace);
         SceneManager.LoadScene("Calimere");
     }
 
+    #endregion
 }
