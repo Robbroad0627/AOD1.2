@@ -243,12 +243,11 @@ MonoBehaviour:
     - Mana Potion
     - Potion of Healing
     - Potion of Healing
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &28789893
@@ -380,11 +379,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78592613}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.26763, y: -11.540509, z: 64.266174}
+  m_LocalPosition: {x: 43.055893, y: -10.758939, z: 76.81554}
   m_LocalScale: {x: 0.2, y: 0.18, z: 1}
   m_Children: []
-  m_Father: {fileID: 1398048365}
-  m_RootOrder: 5
+  m_Father: {fileID: 1954907461}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &78592615
 MonoBehaviour:
@@ -580,12 +579,11 @@ MonoBehaviour:
     - Potion of Vitality
     - Potion of Vitality
     - Potion of Vitality
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &133195373
@@ -857,15 +855,16 @@ MonoBehaviour:
   - It is a sad day when an Eagle Knight is forced to guard a village
   - n- Player
   - How so?
-  - Jaguar Knights usally protect villages and make up a large part of our armies.
+  - Jaguar Knights usually protect villages and make up a large part of our armies.
   - Eagle Knights are the elite, we protect the rulers, and high priests.  We only
     go into battle against invading armies from other nations.
   - n- Player
-  - There is suspicion that there might besomething controlling the snakes makingthem
-    attack the people of Larsu.
+  - There is suspicion that there might besomething controlling the snakes making
+    them attack the people of Larsu.
   - n- Teuimac
   - That sounds very odd and makes no sense to me.
-  - n- Player it is a strange time.
+  - n- Player
+  - It is a strange time.
   - n- Teuimac
   - Yes it is.  I must get back to my duties.
   - Goodbye
@@ -1592,12 +1591,11 @@ MonoBehaviour:
     - Gold Band
     - Gold Band
     - Potion of Vitality
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &330448999
@@ -1739,12 +1737,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Potion of Healing
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &535730133
@@ -1817,12 +1814,11 @@ MonoBehaviour:
     rewardItems:
     - Bastard Sword
     - Throwing Axe
-  activateOnEnter: 1
-  activateOnStay: 0
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 0
   QuestToComplete: They Can Fly
 --- !u!61 &568038617
@@ -2366,12 +2362,11 @@ MonoBehaviour:
     - Mana Potion
     - Potion of Healing
     - Potion of Healing
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &991239426
@@ -2438,12 +2433,11 @@ MonoBehaviour:
     rewardItems:
     - Bastard Sword
     - Potion of Healing
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1018156684
@@ -2591,11 +2585,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1081112035}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 42.26763, y: -11.540509, z: 64.266174}
+  m_LocalPosition: {x: 43.055893, y: -10.758939, z: 76.81554}
   m_LocalScale: {x: 0.2, y: 0.18, z: 1}
   m_Children: []
-  m_Father: {fileID: 1398048365}
-  m_RootOrder: 4
+  m_Father: {fileID: 1954907461}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1081112039
 MonoBehaviour:
@@ -21734,12 +21728,11 @@ MonoBehaviour:
     rewardXP: 800
     rewardItems:
     - Water Rune
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1309207705
@@ -122419,8 +122412,6 @@ Transform:
   - {fileID: 728718490}
   - {fileID: 1936110797}
   - {fileID: 1954907461}
-  - {fileID: 1081112038}
-  - {fileID: 78592614}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -123253,12 +123244,11 @@ MonoBehaviour:
     rewardXP: 1000
     rewardItems:
     - Potion of Vitality
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1919128152

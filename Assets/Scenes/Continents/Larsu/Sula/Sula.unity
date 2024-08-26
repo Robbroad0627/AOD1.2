@@ -1047,7 +1047,7 @@ MonoBehaviour:
   - n- Nochpin
   - Hello again travellers
   - n- Player
-  - we came to tell you we found some Jaguar Knight hide armor, it was quite bloody,
+  - We came to tell you we found some Jaguar Knight hide armor, it was quite bloody,
     and the remains of a body.
   - The creatures and insects did quite the number on it, but looking at the area
     there was quite teh battle so it looks likethe missing Jaguar Knight put up quite
@@ -1286,12 +1286,11 @@ MonoBehaviour:
     rewardXP: 600
     rewardItems:
     - Potion of Vitality
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &330448999
@@ -1789,8 +1788,8 @@ MonoBehaviour:
   - n- Patli
   - Oh yes, I knew I was right.  I can't wait to rub it in Papan's face
   - n- Player
-  - That probably isn't wise to do.  Papan is under a lot fo pressure right now.
-  - I bet she feels bad for not believing you, but she has a lot fo things to deal
+  - That probably isn't wise to do.  Papan is under a lot of pressure right now.
+  - I bet she feels bad for not believing you, but she has a lot of things to deal
     with.  How about you giver her a break.
   - n- tizoc
   - I guess.
@@ -2439,12 +2438,11 @@ MonoBehaviour:
     rewardXP: 600
     rewardItems:
     - Potion of Vitality
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &676931293
@@ -2586,12 +2584,11 @@ MonoBehaviour:
     - Long Sword
     - Mana Potion
     - Potion of Vitality
-  activateOnEnter: 1
-  activateOnStay: 0
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 0
   QuestToComplete: Snakeman
 --- !u!61 &762080385
@@ -2702,7 +2699,8 @@ MonoBehaviour:
   - We know nothng of that.
   - n- Papan
   - I must get word out to the other villages and to the temple
-  - Sorry to cut this short but I have to compse my thoughts before sending out messages
+  - Sorry to cut this short but I have to compose my thoughts before sending out
+    messages
   - Goodbye
   - n- Player
   - Goodbye, and keep your faith.
@@ -2958,8 +2956,6 @@ MonoBehaviour:
   - Fibbing is bad, but staying true to your beliefs is also important.
   - n- Tizoc
   - I know what I saw.
-  - .....
-  - .....
   - .....
   - n- Player
   - Goodbye.
@@ -3301,7 +3297,7 @@ MonoBehaviour:
   - n- Player
   - Thank you for the greeting.
   - n- Ohtli
-  - Please be careful while you are here.  we would hate to have the deaths of strangers
+  - Please be careful while you are here.  We would hate to have the deaths of strangers
     on our heads.
   - n- Player
   - We are tougher than we look, and if anything befalls us it is our responsibility
@@ -3309,7 +3305,6 @@ MonoBehaviour:
   - n- Ohtli
   - Have a good day.
   - 'n- Player '
-  - You too.
   - You too.
   isPerson: 1
   shouldActivateQuest: 0
@@ -3438,12 +3433,11 @@ MonoBehaviour:
     - Bastard Sword
     - Potion of Healing
     - Potion of Healing
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1018156684
@@ -3648,12 +3642,11 @@ MonoBehaviour:
     rewardXP: 600
     rewardItems:
     - Potion of Vitality
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1222588529
@@ -21135,12 +21128,11 @@ MonoBehaviour:
     rewardXP: 600
     rewardItems:
     - Potion of Viatality
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1309207705
@@ -119411,12 +119403,11 @@ MonoBehaviour:
     - Bastard Sword
     - Mana Potion
     - Mana Potion
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1712985180
@@ -119685,12 +119676,11 @@ MonoBehaviour:
     rewardXP: 600
     rewardItems:
     - Potion of Vitality
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1919128152

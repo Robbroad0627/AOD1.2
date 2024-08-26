@@ -159,7 +159,7 @@ Transform:
   - {fileID: 773267405}
   - {fileID: 1231919651}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &92973091
 GameObject:
@@ -191,7 +191,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &92973093
 MonoBehaviour:
@@ -315,12 +315,11 @@ MonoBehaviour:
     rewardItems:
     - Short Sword
     - Buckler
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &100470397
@@ -6909,12 +6908,11 @@ MonoBehaviour:
     rewardXP: 150
     rewardItems:
     - Potion of Healing
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &247831945
@@ -6977,7 +6975,7 @@ Transform:
   - {fileID: 317936343}
   - {fileID: 277366751}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &268992062
 PrefabInstance:
@@ -7712,12 +7710,11 @@ MonoBehaviour:
     rewardXP: 700
     rewardItems:
     - Potion of Vitality
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &319550032
@@ -26822,7 +26819,7 @@ Transform:
   - {fileID: 186402725}
   - {fileID: 403443816}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &554025708
 PrefabInstance:
@@ -33093,7 +33090,7 @@ Transform:
   - {fileID: 100470395}
   - {fileID: 247831943}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685953241
 GameObject:
@@ -33264,7 +33261,7 @@ Transform:
   - {fileID: 741455639}
   - {fileID: 1339427261}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &773267405 stripped
 Transform:
@@ -34486,7 +34483,7 @@ Transform:
   - {fileID: 1480362144}
   - {fileID: 469177636}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1335640705
 PrefabInstance:
@@ -54397,12 +54394,11 @@ MonoBehaviour:
     - Potion of Healing
     - Potion of Healing
     - Mana Potion
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1690765379
@@ -149034,6 +149030,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PortController
       objectReference: {fileID: 0}
+    - target: {fileID: 4983232825581107132, guid: 797ee2b7c6b9a1542bdc266e01dfe850,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4983232825581107134, guid: 797ee2b7c6b9a1542bdc266e01dfe850,
         type: 3}
       propertyPath: portAreaExit
@@ -149098,7 +149099,7 @@ PrefabInstance:
     - target: {fileID: 4983232825581107135, guid: 797ee2b7c6b9a1542bdc266e01dfe850,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4983232825581107135, guid: 797ee2b7c6b9a1542bdc266e01dfe850,
         type: 3}

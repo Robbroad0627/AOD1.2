@@ -693,12 +693,11 @@ MonoBehaviour:
     rewardXP: 600
     rewardItems:
     - Rapier
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &369844997
@@ -1263,12 +1262,11 @@ MonoBehaviour:
     rewardItems:
     - Bastard Sword
     - Potion of Vitality
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 1
   QuestToComplete: It Had To Be Snakes
 --- !u!61 &568038617
@@ -1919,7 +1917,7 @@ PrefabInstance:
     - target: {fileID: 2434758651056572089, guid: ad1680edb5e536a4da50947749261935,
         type: 3}
       propertyPath: m_Name
-      value: QuestManagement
+      value: TlaltiaQuestManagement
       objectReference: {fileID: 0}
     - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
         type: 3}
@@ -2236,12 +2234,11 @@ MonoBehaviour:
     rewardXP: 600
     rewardItems:
     - Bastard Sword
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1018156684
@@ -2398,12 +2395,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1050616658
@@ -19977,12 +19973,11 @@ MonoBehaviour:
     rewardXP: 600
     rewardItems:
     - Potion of Vitality
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1309207705
@@ -121175,12 +121170,11 @@ MonoBehaviour:
     rewardXP: 600
     rewardItems:
     - Rapier
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1392168075
@@ -122730,7 +122724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - n- Tlaltia
+  - 'n- '
   - Welcome to Quala.  I am Tlaltia the leader for this village.
   - n- Player
   - Thank you for the welcome
@@ -123472,12 +123466,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &2093805001
