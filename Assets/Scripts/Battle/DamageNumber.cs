@@ -33,7 +33,7 @@ public class DamageNumber : MonoBehaviour
     //FUNCTIONS
     #region Implementation Functions/Methods
 
-    void Update ()
+    private void Update ()
     {
         Destroy(gameObject, lifetime);
         transform.position += new Vector3(0f, moveSpeed * Time.deltaTime, 0f);

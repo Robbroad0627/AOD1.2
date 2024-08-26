@@ -1,20 +1,38 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: DestroyOverLifetime.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 26, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 
-//Bonehead Games
+public class DestroyOverLifetime : MonoBehaviour
+{
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-public class DestroyOverLifetime : MonoBehaviour {
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private float lifetime;
 
-    public float lifetime;
+    #endregion
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    //FUNCTIONS
+    #region Implementation Functions/Methods
+
+    private void Update ()
+    {
         Destroy(gameObject, lifetime);
 	}
+
+    #endregion
 }
