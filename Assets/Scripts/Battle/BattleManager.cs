@@ -514,9 +514,9 @@ public class BattleManager : MonoBehaviour
             if (Enemies.Count > i && mActiveBattlers[Enemies[i]].GetCurrentHP > 0)
             {
                 targetButtons[i].gameObject.SetActive(true);
-                targetButtons[i].moveName = moveName;
-                targetButtons[i].activeBattlerTarget = Enemies[i];
-                targetButtons[i].targetName.text = mActiveBattlers[Enemies[i]].GetCharName;
+                targetButtons[i].SetMoveName(moveName);
+                targetButtons[i].SetTarget(Enemies[i]);
+                targetButtons[i].SetTargetName(mActiveBattlers[Enemies[i]].GetCharName);
             }
             else
             {
