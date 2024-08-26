@@ -1,8 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: CharacterAttributes.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 26, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
 
-//Bonehead Games
+using UnityEngine;
 
 public class CharacterAttributes : MonoBehaviour
 {
@@ -37,7 +46,6 @@ public class CharacterAttributes : MonoBehaviour
         Thief
     };
 
-    
     public enum Vitals
     {
         HP,
