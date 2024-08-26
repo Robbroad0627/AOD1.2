@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
     public bool haveBoat;
 
     //HACK: Assuming character zero is the player since this is not defined.
-    public string playerName => playerStats[0].charName;
+    public string playerName => playerStats[0].GetCharacterName;
 
     // Use this for initialization
     void Start()
@@ -244,10 +244,10 @@ public class GameManager : MonoBehaviour
 
     public void FullRestoreParty()
     {
-        foreach(var m in this.playerStats)
+        foreach (var character in playerStats)
         {
-            m.currentHP = m.maxHP;
-            m.currentMP = m.maxMP;
+            character.SetCurrentHP(character.GetMaxHP);
+            character.SetCurrentMP(character.GetMaxMP);
         }
     }
     
@@ -348,7 +348,7 @@ public class GameManager : MonoBehaviour
 
     private static void StoreCharacter(CharStats currentCharacterStats,string charKey=null)
     {
-        string charName = charKey ?? currentCharacterStats.charName;
+        string charName = charKey ?? currentCharacterStats.GetCharacterName;
         //NOTE this hsould be bool, maintaining for backward compatability
         if (currentCharacterStats.gameObject.activeInHierarchy)
         {
@@ -359,36 +359,36 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("Player_" + charName + "_active", 0);
         }
 
-        PlayerPrefs.SetString("Player_" + charName + "_CharName", currentCharacterStats.charName);
-        PlayerPrefs.SetInt("Player_" + charName + "_Level", currentCharacterStats.playerLevel);
-        PlayerPrefs.SetInt("Player_" + charName + "_CurrentExp", currentCharacterStats.currentEXP);
-        PlayerPrefs.SetInt("Player_" + charName + "_CurrentHP", currentCharacterStats.currentHP);
-        PlayerPrefs.SetInt("Player_" + charName + "_MaxHP", currentCharacterStats.maxHP);
-        PlayerPrefs.SetInt("Player_" + charName + "_CurrentMP", currentCharacterStats.currentMP);
-        PlayerPrefs.SetInt("Player_" + charName + "_MaxMP", currentCharacterStats.maxMP);
-        PlayerPrefs.SetInt("Player_" + charName + "_Strength", currentCharacterStats.strength);
-        PlayerPrefs.SetInt("Player_" + charName + "_Defence", currentCharacterStats.defence);
-        PlayerPrefs.SetInt("Player_" + charName + "_WpnPwr", currentCharacterStats.wpnPwr);
-        PlayerPrefs.SetInt("Player_" + charName + "_ArmrPwr", currentCharacterStats.armrPwr);
+        PlayerPrefs.SetString("Player_" + charName + "_CharName", currentCharacterStats.GetCharacterName);
+        PlayerPrefs.SetInt("Player_" + charName + "_Level", currentCharacterStats.GetLevel);
+        PlayerPrefs.SetInt("Player_" + charName + "_CurrentExp", currentCharacterStats.GetCurrentXP);
+        PlayerPrefs.SetInt("Player_" + charName + "_CurrentHP", currentCharacterStats.GetCurrentHP);
+        PlayerPrefs.SetInt("Player_" + charName + "_MaxHP", currentCharacterStats.GetMaxHP);
+        PlayerPrefs.SetInt("Player_" + charName + "_CurrentMP", currentCharacterStats.GetCurrentMP);
+        PlayerPrefs.SetInt("Player_" + charName + "_MaxMP", currentCharacterStats.GetMaxMP);
+        PlayerPrefs.SetInt("Player_" + charName + "_Strength", currentCharacterStats.GetStrength);
+        PlayerPrefs.SetInt("Player_" + charName + "_Defence", currentCharacterStats.GetDefence);
+        PlayerPrefs.SetInt("Player_" + charName + "_WpnPwr", currentCharacterStats.GetWeaponPower);
+        PlayerPrefs.SetInt("Player_" + charName + "_ArmrPwr", currentCharacterStats.GetArmorPower);
         StoreEquips(currentCharacterStats, charName);
 
 
         //Store appearence
-        PlayerPrefs.SetString("Player_" + charName + "_Class", currentCharacterStats.classString);
-        PlayerPrefs.SetString("Player_" + charName + "_Sex", currentCharacterStats.sexString);
-        PlayerPrefs.SetString("Player_" + charName + "_Race", currentCharacterStats.raceString);
+        PlayerPrefs.SetString("Player_" + charName + "_Class", currentCharacterStats.GetClass.ToString());
+        PlayerPrefs.SetString("Player_" + charName + "_Sex", currentCharacterStats.GetSex);
+        PlayerPrefs.SetString("Player_" + charName + "_Race", currentCharacterStats.GetRace);
     }
 
     private static void StoreEquips(CharStats currentCharacterStats, string charKey)
     {
-        PlayerPrefs.SetString("Player_" + charKey + "_EquippedWpn", currentCharacterStats.equippedWpn);
-        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmr", currentCharacterStats.equippedArmr);
-        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrBody", currentCharacterStats.equippedBodyArmr);
-        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrFeet", currentCharacterStats.equippedFeetArmr);
-        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrHand", currentCharacterStats.equippedHandArmr);
-        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrLegs", currentCharacterStats.equippedLegsArmr);
-        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrshield", currentCharacterStats.equippedShieldArmr);
-        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrOther", currentCharacterStats.equippedOtherArmr);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedWpn", currentCharacterStats.GetEquippedWeapon);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmr", currentCharacterStats.GetEquippedArmor);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrBody", currentCharacterStats.GetEquippedBodyArmor);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrFeet", currentCharacterStats.GetEquippedFootArmor);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrHand", currentCharacterStats.GetEquippedHandArmor);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrLegs", currentCharacterStats.GetEquippedLegArmor);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrshield", currentCharacterStats.GetEquippedShield);
+        PlayerPrefs.SetString("Player_" + charKey + "_EquippedArmrOther", currentCharacterStats.GetEquippedOtherArmor);
 
     }
 
@@ -453,7 +453,7 @@ public class GameManager : MonoBehaviour
         for (int i = 1; i < playerStats.Length; i++)
         {
             CharStats currentCharacterStats = playerStats[i];
-            string charName = currentCharacterStats.charName;
+            string charName = currentCharacterStats.GetCharacterName;
             LoadCharacterByName(currentCharacterStats, charName);
         }
     }
@@ -469,17 +469,17 @@ public class GameManager : MonoBehaviour
             currentCharacterStats.gameObject.SetActive(true);
         }
 
-        currentCharacterStats.charName = PlayerPrefs.GetString("Player_" + charName + "_CharName") ?? currentCharacterStats.charName;
-        currentCharacterStats.playerLevel = PlayerPrefs.GetInt("Player_" + charName + "_Level");
-        currentCharacterStats.currentEXP = PlayerPrefs.GetInt("Player_" + charName + "_CurrentExp");
-        currentCharacterStats.currentHP = PlayerPrefs.GetInt("Player_" + charName + "_CurrentHP");
-        currentCharacterStats.maxHP = PlayerPrefs.GetInt("Player_" + charName + "_MaxHP");
-        currentCharacterStats.currentMP = PlayerPrefs.GetInt("Player_" + charName + "_CurrentMP");
-        currentCharacterStats.maxMP = PlayerPrefs.GetInt("Player_" + charName + "_MaxMP");
-        currentCharacterStats.strength = PlayerPrefs.GetInt("Player_" + charName + "_Strength");
-        currentCharacterStats.defence = PlayerPrefs.GetInt("Player_" + charName + "_Defence");
-        currentCharacterStats.wpnPwr = PlayerPrefs.GetInt("Player_" + charName + "_WpnPwr");
-        currentCharacterStats.armrPwr = PlayerPrefs.GetInt("Player_" + charName + "_ArmrPwr");
+        currentCharacterStats.SetCharacterName(PlayerPrefs.GetString("Player_" + charName + "_CharName") ?? currentCharacterStats.GetCharacterName);
+        currentCharacterStats.SetLevel(PlayerPrefs.GetInt("Player_" + charName + "_Level"));
+        currentCharacterStats.SetCurrentXP(PlayerPrefs.GetInt("Player_" + charName + "_CurrentExp"));
+        currentCharacterStats.SetCurrentHP(PlayerPrefs.GetInt("Player_" + charName + "_CurrentHP"));
+        currentCharacterStats.SetMaxHP(PlayerPrefs.GetInt("Player_" + charName + "_MaxHP"));
+        currentCharacterStats.SetCurrentMP(PlayerPrefs.GetInt("Player_" + charName + "_CurrentMP"));
+        currentCharacterStats.SetMaxMP(PlayerPrefs.GetInt("Player_" + charName + "_MaxMP"));
+        currentCharacterStats.SetStrength(PlayerPrefs.GetInt("Player_" + charName + "_Strength"));
+        currentCharacterStats.SetDefense(PlayerPrefs.GetInt("Player_" + charName + "_Defence"));
+        currentCharacterStats.SetWeaponPower(PlayerPrefs.GetInt("Player_" + charName + "_WpnPwr"));
+        currentCharacterStats.SetArmorPower(PlayerPrefs.GetInt("Player_" + charName + "_ArmrPwr"));
         LoadEquips(currentCharacterStats, charName);
 
         
@@ -490,35 +490,34 @@ public class GameManager : MonoBehaviour
         string myClass = PlayerPrefs.GetString("Player_" + charName + "_Class");
         string mySex = PlayerPrefs.GetString("Player_" + charName + "_Sex");
         string myRace = PlayerPrefs.GetString("Player_" + charName + "_Race");
-        currentCharacterStats.classString = myClass;
-        currentCharacterStats.sexString = mySex;
-        currentCharacterStats.raceString = myRace;
+        currentCharacterStats.SetClass(myClass);
+        currentCharacterStats.SetSex(mySex);
+        currentCharacterStats.SetRace(myRace);
 
-        currentCharacterStats.battleChar = Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
+        currentCharacterStats.SetBattleCharacter(Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace));
 
-        if (currentCharacterStats.battleChar == null)
+        if (currentCharacterStats.GetBattleCharacter == null)
         {
             Debug.LogError($"Stored character info for {charName} did not match a known BattleChar, defaulting to human male");
             myClass = "Cleric";
             mySex = "M";
             myRace = "Human";
-            currentCharacterStats.classString = myClass;
-            currentCharacterStats.sexString = mySex;
-            currentCharacterStats.raceString = myRace;
-            currentCharacterStats.battleChar = Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace);
+            currentCharacterStats.SetClass(myClass);
+            currentCharacterStats.SetSex(mySex);
+            currentCharacterStats.SetRace(myRace);
+            currentCharacterStats.SetBattleCharacter(Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + myClass + "/" + mySex + myRace));
         }
     }
 
     private static void LoadEquips(CharStats currentCharacterStats, string charKey)
     {
-        currentCharacterStats.equippedWpn = PlayerPrefs.GetString("Player_" + charKey + "_EquippedWpn");
-        currentCharacterStats.equippedArmr = PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmr");
-        currentCharacterStats.equippedBodyArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrBody" );
-        currentCharacterStats.equippedFeetArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrFeet" );
-        currentCharacterStats.equippedHandArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrHand");
-        currentCharacterStats.equippedLegsArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrLegs" );
-        currentCharacterStats.equippedShieldArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrshield" );
-        currentCharacterStats.equippedOtherArmr=PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrOther" );
+        currentCharacterStats.SetEquippedWeapon(PlayerPrefs.GetString("Player_" + charKey + "_EquippedWpn"));
+        currentCharacterStats.SetEquippedArmor(PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmr"));
+        currentCharacterStats.SetEquippedBodyArmor(PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrBody"));
+        currentCharacterStats.SetEquippedFootArmor(PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrFeet"));
+        currentCharacterStats.SetEquippedHandArmor(PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrHand"));
+        currentCharacterStats.SetEquippedLegArmor(PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrLegs"));
+        currentCharacterStats.SetEquippedShield(PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrshield"));
+        currentCharacterStats.SetEquippedOtherArmor(PlayerPrefs.GetString("Player_" + charKey + "_EquippedArmrOther"));
     }
 }
-
