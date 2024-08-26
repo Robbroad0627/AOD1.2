@@ -67,7 +67,7 @@ public class DialogActivator : MonoBehaviour
 
     private void Update ()
     {
-		if (mCanActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.dialogBox.activeInHierarchy)
+		if (mCanActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.GetDialogBox.activeInHierarchy)
         {
             DialogManager.instance.ShowDialog(lines, isPerson);
             DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
