@@ -22,7 +22,7 @@ public class DestroyOverLifetime : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private float lifetime;
+    [SerializeField] private float lifetime = 0.0f;
 
     #endregion
 
