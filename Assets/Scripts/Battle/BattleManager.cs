@@ -546,7 +546,7 @@ public class BattleManager : MonoBehaviour
     {
         if (cannotFlee)
         {
-            battleNotice.theText.text = "Can not flee this battle!";
+            battleNotice.SetNotificationText("Can not flee this battle!");
             battleNotice.Activate();
         }
         else
@@ -564,7 +564,7 @@ public class BattleManager : MonoBehaviour
             else
             {
                 NextTurn();
-                battleNotice.theText.text = "Couldn't escape!";
+                battleNotice.SetNotificationText("Couldn't escape!");
                 battleNotice.Activate();
             }
         }
