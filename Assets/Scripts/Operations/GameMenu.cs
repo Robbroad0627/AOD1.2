@@ -81,14 +81,14 @@ public class GameMenu : MonoBehaviour {
             {
                 charStatHolder[i].SetActive(true);
 
-                nameText[i].text = playerStats[i].charName;
-                hpText[i].text = "HP: " + playerStats[i].currentHP + "/" + playerStats[i].maxHP;
-                mpText[i].text = "MP: " + playerStats[i].currentMP + "/" + playerStats[i].maxMP;
-                lvlText[i].text = "Lvl: " + playerStats[i].playerLevel;
-                expText[i].text = "" + playerStats[i].currentEXP + "/" + playerStats[i].expToNextLevel[playerStats[i].playerLevel];
-                expSlider[i].maxValue = playerStats[i].expToNextLevel[playerStats[i].playerLevel];
-                expSlider[i].value = playerStats[i].currentEXP;
-                charImage[i].sprite = playerStats[i].charIamge;
+                nameText[i].text = playerStats[i].GetCharacterName;
+                hpText[i].text = "HP: " + playerStats[i].GetCurrentHP + "/" + playerStats[i].GetMaxHP;
+                mpText[i].text = "MP: " + playerStats[i].GetCurrentMP + "/" + playerStats[i].GetMaxMP;
+                lvlText[i].text = "Lvl: " + playerStats[i].GetLevel;
+                expText[i].text = "" + playerStats[i].GetCurrentXP + "/" + playerStats[i].GetXPToNextLevel[playerStats[i].GetLevel];
+                expSlider[i].maxValue = playerStats[i].GetXPToNextLevel[playerStats[i].GetLevel];
+                expSlider[i].value = playerStats[i].GetCurrentXP;
+                charImage[i].sprite = playerStats[i].GetSprite;
             } else
             {
                 charStatHolder[i].SetActive(false);
@@ -140,46 +140,50 @@ public class GameMenu : MonoBehaviour {
         for(int i = 0; i < statusButtons.Length; i++)
         {
             statusButtons[i].SetActive(playerStats[i].gameObject.activeInHierarchy);
-            statusButtons[i].GetComponentInChildren<Text>().text = playerStats[i].charName;
+            statusButtons[i].GetComponentInChildren<Text>().text = playerStats[i].GetCharacterName;
         }
     }
 
     public void StatusChar(int selected)
     {
-        statusName.text = playerStats[selected].charName;
-        statusHP.text = "" + playerStats[selected].currentHP + "/" + playerStats[selected].maxHP;
-        statusMP.text = "" + playerStats[selected].currentMP + "/" + playerStats[selected].maxMP;
-        statusStr.text = playerStats[selected].strength.ToString();
-        statusDef.text = playerStats[selected].defence.ToString();
-        if(playerStats[selected].equippedWpn != "")
-        {
-            statusWpnEqpd.text = playerStats[selected].equippedWpn;
-        }
-        statusWpnPwr.text = playerStats[selected].wpnPwr.ToString();
-        if (playerStats[selected].equippedArmr != "")
-        {
-            statusArmrEqpd.text = playerStats[selected].equippedArmr;
-        }
-        statusArmrPwr.text = playerStats[selected].armrPwr.ToString();
-        statusExp.text = (playerStats[selected].expToNextLevel[playerStats[selected].playerLevel] - playerStats[selected].currentEXP).ToString();
-        statusImage.sprite = playerStats[selected].charIamge;
+        statusName.text = playerStats[selected].GetCharacterName;
+        statusHP.text = "" + playerStats[selected].GetCurrentHP + "/" + playerStats[selected].GetMaxHP;
+        statusMP.text = "" + playerStats[selected].GetCurrentMP + "/" + playerStats[selected].GetMaxMP;
+        statusStr.text = playerStats[selected].GetStrength.ToString();
+        statusDef.text = playerStats[selected].GetDefence.ToString();
 
+        if (playerStats[selected].GetEquippedWeapon != "")
+        {
+            statusWpnEqpd.text = playerStats[selected].GetEquippedWeapon;
+        }
+
+        statusWpnPwr.text = playerStats[selected].GetWeaponPower.ToString();
+
+        if (playerStats[selected].GetEquippedArmor != "")
+        {
+            statusArmrEqpd.text = playerStats[selected].GetEquippedArmor;
+        }
+
+        statusArmrPwr.text = playerStats[selected].GetArmorPower.ToString();
+        statusExp.text = (playerStats[selected].GetXPToNextLevel[playerStats[selected].GetLevel] - playerStats[selected].GetCurrentXP).ToString();
+        statusImage.sprite = playerStats[selected].GetSprite;
     }
 
     public void ShowItems()
     {
         GameManager.instance.SortItems();
 
-        for(int i = 0; i < itemButtons.Length; i++)
+        for (int i = 0; i < itemButtons.Length; i++)
         {
             itemButtons[i].buttonValue = i;
 
-            if(GameManager.instance.itemsHeld[i] != "")
+            if (GameManager.instance.itemsHeld[i] != "")
             {
                 itemButtons[i].buttonImage.gameObject.SetActive(true);
                 itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.itemsHeld[i]).itemSprite;
                 itemButtons[i].amountText.text = GameManager.instance.numberOfItems[i].ToString();
-            } else
+            }
+            else
             {
                 itemButtons[i].buttonImage.gameObject.SetActive(false);
                 itemButtons[i].amountText.text = "";
@@ -217,9 +221,9 @@ public class GameMenu : MonoBehaviour {
     {
         itemCharChoiceMenu.SetActive(true);
 
-        for(int i = 0; i < itemCharChoiceNames.Length; i++)
+        for (int i = 0; i < itemCharChoiceNames.Length; i++)
         {
-            itemCharChoiceNames[i].text = GameManager.instance.playerStats[i].charName;
+            itemCharChoiceNames[i].text = GameManager.instance.playerStats[i].GetCharacterName;
             itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.playerStats[i].gameObject.activeInHierarchy);
         }
     }
