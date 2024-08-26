@@ -1,90 +1,147 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: DialogManager.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 26, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-//Bonehead Games
-
-public class DialogManager : MonoBehaviour {
-
-    public Text dialogText;
-    public Text nameText;
-    public GameObject dialogBox;
-    public GameObject nameBox;
-
-    [Header("Confirmation")]
-    public GameObject promptArea;
-    public Text yesButtonText, noButtonText;
-
-    [TextArea]
-    public string[] dialogLines;
-
-    public int currentLine;
-
-    private bool advanceDialogOnClick = true;
-
-    private bool justStarted;
+public class DialogManager : MonoBehaviour
+{
+    //SINGLETON
+    #region Singleton
 
     public static DialogManager instance;
 
-    private string questToMark;
-    private bool markQuestComplete;
-    private bool shouldMarkQuest;
-    
-    private Action yesAction;
-    private Action noAction;
-
-    // Use this for initialization
-    void Start () {
-        instance = this;
-
-        //dialogText.text = dialogLines[currentLine];
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-        if(dialogBox.activeInHierarchy)
+    private void Singleton()
+    {
+        if (instance != null && instance != this)
         {
-            if(Input.GetButtonUp("Fire1"))
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+    }
+
+    #endregion
+
+    //VARIABLES
+    #region Inspector/Exposed Variables
+
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private Text dialogText = null;
+    [SerializeField] private Text nameText = null;
+    [SerializeField] private GameObject dialogBox = null;
+    [SerializeField] private GameObject nameBox = null;
+    [Header("Confirmation")]
+    [SerializeField] private GameObject promptArea = null;
+    [SerializeField] private Text yesButtonText = null;
+    [SerializeField] private Text noButtonText = null;
+
+    #endregion
+    #region Private Variables
+
+    private int mCurrentLine;
+    private Action mNoAction;
+    private bool mJustStarted;
+    private Action mYesAction;
+    private string mQuestToMark;
+    private string[] mDialogLines;
+    private bool mShouldMarkQuest;
+    private bool mMarkQuestComplete;
+    private bool mAdvanceDialogOnClick;
+
+    #endregion
+
+    //GETTERS/SETTERS
+    #region Getters/Accessors
+
+    public GameObject GetDialogBox => dialogBox;
+
+    #endregion
+
+    //FUNCTIONS
+    #region Initialization Functions/Methods
+
+    private void Awake()
+    {
+        Singleton();
+    }
+
+    private void Start()
+    {
+        mCurrentLine = 0;
+        mQuestToMark = "";
+        mDialogLines = null;
+        mJustStarted = false;
+        mShouldMarkQuest = false;
+        mMarkQuestComplete = false;
+        mAdvanceDialogOnClick = true;
+    }
+
+    #endregion
+    #region Implementation Functions/Methods
+
+    private void Update ()
+    {
+        if (dialogBox.activeInHierarchy)
+        {
+            if (Input.GetButtonUp("Fire1"))
             {
-                if (!justStarted)
+                if (!mJustStarted)
                 {
-                    if(advanceDialogOnClick)
-                    AdvanceDialog();
+                    if (mAdvanceDialogOnClick)
+                    {
+                        AdvanceDialog();
+                    }
                 }
                 else
                 {
-                    justStarted = false;
-                }
-
-                
+                    mJustStarted = false;
+                } 
             }
         }
-
 	}
+
+    #endregion
+    #region Private Functions/Methods
 
     private void AdvanceDialog()
     {
-        currentLine++;
+        mCurrentLine++;
 
-        if (currentLine >= dialogLines.Length)
+        if (mCurrentLine >= mDialogLines.Length)
         {
             dialogBox.SetActive(false);
 
             GameManager.instance.dialogActive = false;
 
-            if (shouldMarkQuest)
+            if (mShouldMarkQuest)
             {
-                shouldMarkQuest = false;
-                if (markQuestComplete)
+                mShouldMarkQuest = false;
+
+                if (mMarkQuestComplete)
                 {
-                    QuestManager.instance.MarkQuestComplete(questToMark);
+                    QuestManager.instance.MarkQuestComplete(mQuestToMark);
                 }
                 else
                 {
-                    QuestManager.instance.MarkQuestIncomplete(questToMark);
+                    QuestManager.instance.MarkQuestIncomplete(mQuestToMark);
                 }
             }
         }
@@ -92,105 +149,104 @@ public class DialogManager : MonoBehaviour {
         {
             CheckIfName();
 
-            dialogText.text = dialogLines[currentLine];
+            dialogText.text = mDialogLines[mCurrentLine];
         }
     }
+
+    private void CheckIfName()
+    {
+        if (mDialogLines[mCurrentLine].StartsWith("n-"))
+        {
+            nameText.text = mDialogLines[mCurrentLine].Replace("n-", "");
+            nameText.text = nameText.text == "Player" ? GameManager.instance.playerName : nameText.text;
+            mCurrentLine++;
+        }
+    }
+
+    private void PromptHelper()
+    {
+        dialogBox.SetActive(true);
+        promptArea.SetActive(true);
+    }
+
+    private void DismissDialog()
+    {
+        dialogBox.SetActive(false);
+        promptArea.SetActive(false);
+        mAdvanceDialogOnClick = true;
+    }
+
+    #endregion
+    #region Public Functions/Methods
 
     public void ShowDialog(string[] newLines, bool isPerson)
     {
-        dialogLines = newLines;
-
-        currentLine = 0;
+        mDialogLines = newLines;
+        mCurrentLine = 0;
 
         CheckIfName();
 
-        dialogText.text = dialogLines[currentLine];
+        dialogText.text = mDialogLines[mCurrentLine];
         dialogBox.SetActive(true);
-
-        justStarted = true;
-
+        mJustStarted = true;
         nameBox.SetActive(isPerson);
-
         GameManager.instance.dialogActive = true;
-    }
-
-    public void CheckIfName()
-    {
-        if(dialogLines[currentLine].StartsWith("n-"))
-        {
-            nameText.text = dialogLines[currentLine].Replace("n-", "");
-            nameText.text = nameText.text == "Player" ? GameManager.instance.playerName : nameText.text;
-            currentLine++;
-        }
     }
 
     public void ShouldActivateQuestAtEnd(string questName, bool markComplete)
     {
-        questToMark = questName;
-        markQuestComplete = markComplete;
-
-        shouldMarkQuest = true;
+        mQuestToMark = questName;
+        mMarkQuestComplete = markComplete;
+        mShouldMarkQuest = true;
     }
 
     public void Prompt(string message, Action yesAction, Action noAction,string yesString = "Yes",string noString = "No",string title= "Confirm?")
     {
-        advanceDialogOnClick = false;
+        mAdvanceDialogOnClick = false;
         dialogText.text = message;
         nameText.text = title;
         yesButtonText.text = yesString;
         noButtonText.text = noString;
-
-        this.yesAction = yesAction;
-        this.noAction = noAction;
+        mYesAction = yesAction;
+        mNoAction = noAction;
 
         //Note:This forces the prompt into the next frame, if you don't do this then you can't chain prompts.
         Invoke("PromptHelper", 0.01f);
-
     }
     
+    // WHY IS THIS FUNCTION DOUBLED AND EXACTLY THE SAME AS THE Prompt FUNCTION? NO NEED FOR THIS JUST USE Prompt
     public void PortPrompt(string message, Action yesAction, Action noAction, string yesString, string noString, string title = "Boat Captian")
     {
-        advanceDialogOnClick = false;
+        mAdvanceDialogOnClick = false;
         dialogText.text = message;
         nameText.text = title;
         yesButtonText.text = yesString;
         noButtonText.text = noString;
-
-        this.yesAction = yesAction;
-        this.noAction = noAction;
+        mYesAction = yesAction;
+        mNoAction = noAction;
 
         //Note:This forces the prompt into the next frame, if you don't do this then you can't chain prompts.
         Invoke("PromptHelper", 0.01f);
     }
 
-    private void  PromptHelper()
-    {
-        dialogBox.SetActive(true);
-        //GameManager.instance.dialogActive = true;
-        promptArea.SetActive(true);
-    }
-
-    public void DismissDialog()
-    {
-        dialogBox.SetActive(false);
-        //GameManager.instance.dialogActive = false;
-        promptArea.SetActive(false);
-        advanceDialogOnClick = true;
-    }
+    #endregion
+    #region Actions
 
     public void ExecuteNoAction()
     {
         var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = false;
-        noAction?.Invoke();
+        mNoAction?.Invoke();
         promptArea.SetActive(false);
         DismissDialog();
     }
 
     public void ExecuteYesAction()
     {
-        yesAction?.Invoke();
+        mYesAction?.Invoke();
         promptArea.SetActive(false);
         DismissDialog();
     }
+
+    #endregion
 }
