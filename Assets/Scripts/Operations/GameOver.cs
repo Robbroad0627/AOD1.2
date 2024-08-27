@@ -1,28 +1,35 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: GameOver.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 27, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//Bonehead Games
+public class GameOver : MonoBehaviour
+{
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-public class GameOver : MonoBehaviour {
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private string mainMenuScene;
+    [SerializeField] private string loadGameScene;
 
-    public string mainMenuScene;
-    public string loadGameScene;
+    #endregion
 
-	// Use this for initialization
-	void Start () {
-      //  AudioManager.instance.PlayBGM(4);
-
-        /* PlayerController.instance.gameObject.SetActive(false);
-        GameMenu.instance.gameObject.SetActive(false);
-         BattleManager.instance.gameObject.SetActive(false); */
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    //FUNCTIONS
+    #region Public Functions/Methods
 
     public void QuitToMain()
     {
@@ -40,10 +47,9 @@ public class GameOver : MonoBehaviour {
         Destroy(GameManager.instance.gameObject);
         Destroy(PlayerController.instance.gameObject);
         Destroy(GameMenu.instance.gameObject);
-       // Destroy(BattleManager.instance.gameObject);
 
         SceneManager.LoadScene(loadGameScene);
-
-
     }
+
+    #endregion
 }

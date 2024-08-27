@@ -6,7 +6,7 @@
  * Description:
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 26, 2024
+ * Date Last Modified: August 27, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
@@ -37,6 +37,7 @@ public class GameMenu : MonoBehaviour
 
     #endregion
 
+    //VARIABLES
     #region Inspector/Exposed Variables
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
