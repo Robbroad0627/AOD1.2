@@ -1,40 +1,63 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: InnUpstairsExit.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 27, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 
-//Bonehead Games
+public class PickupItem : MonoBehaviour
+{
+    //VARIABLES
+    #region Constant Variable Declarations and Initializations
 
-public class PickupItem : MonoBehaviour {
+    private const string PLAYER = "Player";
+    private const string INTERACT = "Fire1";
 
-    private bool canPickup;
+    #endregion
+    #region Private Variables
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(canPickup && Input.GetButtonDown("Fire1") && PlayerController.instance.canMove)
+    private bool mCanPickup;
+
+    #endregion
+
+    //FUNCTIONS
+    #region Implementation Functions/Methods
+
+    private void Update ()
+    {
+		if (mCanPickup && Input.GetButtonDown(INTERACT) && PlayerController.instance.canMove)
         {
             GameManager.instance.AddItem(GetComponent<Item>().GetName);
             Destroy(gameObject);
         }
 	}
 
+    #endregion
+    #region Physics Functions/MEthods
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if (other.CompareTag(PLAYER))
         {
-            canPickup = true;
+            mCanPickup = true;
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag(PLAYER))
         {
-            canPickup = false;
+            mCanPickup = false;
         }
     }
+
+    #endregion
 }
