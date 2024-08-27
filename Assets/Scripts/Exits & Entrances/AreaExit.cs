@@ -69,7 +69,7 @@ public class AreaExit : MonoBehaviour
 
                 UIFade.instance.FadeToBlack();
 
-                PlayerController.instance.areaTransitionName = areaTransitionName;
+                PlayerController.instance.SetAreaTransitionName(areaTransitionName);
             }
         }
     }
@@ -101,7 +101,7 @@ public class AreaExit : MonoBehaviour
 
                 UIFade.instance.FadeToBlack();
 
-                PlayerController.instance.areaTransitionName = areaTransitionName;
+                PlayerController.instance.SetAreaTransitionName(areaTransitionName);
                 mShouldRunAnimationBeforeFade = false;
             }
         }

@@ -95,7 +95,7 @@ public class BattleStarter : MonoBehaviour
 
     private void Update ()
     {
-		if (mIsPlayerInArea && PlayerController.instance.canMove)
+		if (mIsPlayerInArea && PlayerController.instance.GetCanMove)
         {
             if (Input.GetAxisRaw(LEFT_RIGHT) != 0 || Input.GetAxisRaw(UP_DOWN) != 0)
             {

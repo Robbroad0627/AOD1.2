@@ -94,7 +94,7 @@ public class PortController : MonoBehaviour
 
                 UIFade.instance.FadeToBlack();
 
-                PlayerController.instance.areaTransitionName = areaTransitionName;
+                PlayerController.instance.SetAreaTransitionName(areaTransitionName);
                 shouldRunAnimationBeforeFade = false;
             }
         }

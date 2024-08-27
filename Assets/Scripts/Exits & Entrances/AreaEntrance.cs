@@ -23,14 +23,8 @@ public class AreaEntrance : MonoBehaviour
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
     [SerializeField] private string transitionName = "";
-	[SerializeField] private RuntimeAnimatorController playerAnimatorOverride = null;
 	[SerializeField] private bool isPort = false;
 	[SerializeField] private PortController portController = null;
-
-    #endregion
-    #region Private Variable Declarations Only
-
-    private static RuntimeAnimatorController mOverridenAnimationController;
 
     #endregion
 
@@ -45,7 +39,7 @@ public class AreaEntrance : MonoBehaviour
     #region Initialization Methods/Functions
     private void Start ()
 	{
-		if (transitionName == PlayerController.instance.areaTransitionName)
+		if (transitionName == PlayerController.instance.GetAreaTransitionName)
         {
 			if (isPort && Boat.boatLeftPort)
 			{
@@ -59,23 +53,6 @@ public class AreaEntrance : MonoBehaviour
 
         UIFade.instance.FadeFromBlack();
         GameManager.instance.SetFadingBetweenAreas(false);
-
-		if (playerAnimatorOverride != null)
-        {
-			if (mOverridenAnimationController != null)
-			{
-				//store the default sprite and but only if we don't already have one
-				mOverridenAnimationController = PlayerController.instance.animationController;
-			}
-
-			//replace the player sprite
-			PlayerController.instance.animationController = playerAnimatorOverride;
-		}
-		else if (playerAnimatorOverride == null && mOverridenAnimationController != null)
-        {
-			//restore the sprite if the overide field is empty
-			PlayerController.instance.animationController = mOverridenAnimationController;
-		}
 	}
 
     #endregion
@@ -83,12 +60,12 @@ public class AreaEntrance : MonoBehaviour
 
     private void Update ()
 	{
-        if (transitionName == PlayerController.instance.areaTransitionName)
+        if (transitionName == PlayerController.instance.GetAreaTransitionName)
         {
 			if (!Boat.isPlayerOnBoat)
 			{
                 PlayerController.instance.transform.position = transform.position;
-				PlayerController.instance.areaTransitionName = null;
+				PlayerController.instance.SetAreaTransitionName(null);
 			}
         }
     }
