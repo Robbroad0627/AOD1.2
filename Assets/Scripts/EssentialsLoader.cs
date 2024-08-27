@@ -33,6 +33,7 @@ public class EssentialsLoader : MonoBehaviour
     //FUNCTIONS
     #region Initialization Functions/Methods
 
+#pragma warning disable IDE0051
     void Start ()
     {
 		if (UIFade.instance == null)
@@ -61,6 +62,7 @@ public class EssentialsLoader : MonoBehaviour
             BattleManager.instance = Instantiate(battleMan).GetComponent<BattleManager>();
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
 }

@@ -45,10 +45,7 @@ public class BattleTargetButton : MonoBehaviour
     //FUNCTIONS
     #region Buttons
 
-    public void Press()
-    {
-        BattleManager.instance.PlayerAttack(mMoveName, mTarget);
-    }
+    public void Press() => BattleManager.instance.PlayerAttack(mMoveName, mTarget);
 
     #endregion
 }

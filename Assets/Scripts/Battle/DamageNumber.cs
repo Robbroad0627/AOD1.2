@@ -33,11 +33,13 @@ public class DamageNumber : MonoBehaviour
     //FUNCTIONS
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update ()
     {
         Destroy(gameObject, lifetime);
         transform.position += new Vector3(0f, moveSpeed * Time.deltaTime, 0f);
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Public Functions/Methods

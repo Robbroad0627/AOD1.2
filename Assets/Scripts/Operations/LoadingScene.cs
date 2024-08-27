@@ -30,6 +30,7 @@ public class LoadingScene : MonoBehaviour
     //FUNCTIONS
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update ()
     {
 		if (waitToLoad > 0)
@@ -44,6 +45,7 @@ public class LoadingScene : MonoBehaviour
             }
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
 }

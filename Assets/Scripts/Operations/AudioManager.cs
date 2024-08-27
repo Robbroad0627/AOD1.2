@@ -62,15 +62,13 @@ public class AudioManager : MonoBehaviour
     //FUNCTIONS
     #region Initialization Methods/Functions
 
-    private void Awake()
-    {
-        Singleton();
-    }
+#pragma warning disable IDE0051
+    private void Awake() => Singleton();
+#pragma warning restore IDE0051
 
-    private void Start()
-    {
-        mBGMCurrentTrack = -1;
-    }
+#pragma warning disable IDE0051
+    private void Start() => mBGMCurrentTrack = -1;
+#pragma warning restore IDE0051
 
     #endregion
     #region Public Methods/Functions useable outside class

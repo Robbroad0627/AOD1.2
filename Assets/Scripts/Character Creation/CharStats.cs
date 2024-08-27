@@ -124,6 +124,7 @@ public class CharStats : MonoBehaviour
     //FUNCTIONS
     #region Initialization Functions/Methods
 
+#pragma warning disable IDE0051
     private void Start ()
     {
         expToNextLevel = new int[maxLevel];
@@ -134,10 +135,12 @@ public class CharStats : MonoBehaviour
             expToNextLevel[i] = Mathf.FloorToInt(expToNextLevel[i - 1] * 1.05f);
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update ()
     {
         // Remove before final compile
@@ -146,6 +149,7 @@ public class CharStats : MonoBehaviour
             AddExp(1000);
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Public Functions/Methods
@@ -198,7 +202,7 @@ public class CharStats : MonoBehaviour
         return false;
     }
 
-    public string[] GetAllowedMovesNames(BattleMove[] actionList, bool inBattle=true)
+    public string[] GetAllowedMovesNames(BattleMove[] actionList, bool inBattle = true)
     {
         List<string> allowedActionsList = new List<string>();
 

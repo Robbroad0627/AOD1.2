@@ -98,14 +98,14 @@ public class GameMenu : MonoBehaviour
     //FUNCTIONS
     #region Initialization Functions/Methods
 
-    private void Awake()
-    {
-        Singleton();
-    }
+#pragma warning disable IDE0051
+    private void Awake() => Singleton();
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update ()
     {
 		if (Input.GetButtonDown(MENU_BUTTON))
@@ -133,6 +133,7 @@ public class GameMenu : MonoBehaviour
             minimap.SetActive(true);
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Private Functions/Methods
@@ -203,10 +204,7 @@ public class GameMenu : MonoBehaviour
         statusImage.sprite = playerStats[selected].GetSprite;
     }
 
-    private void CloseItemCharChoice()
-    {
-        itemCharChoiceMenu.SetActive(false);
-    }
+    private void CloseItemCharChoice() => itemCharChoiceMenu.SetActive(false);
 
     #endregion
     #region Public Functions/Methods
@@ -318,10 +316,7 @@ public class GameMenu : MonoBehaviour
         QuestManager.instance.SaveQuestData();
     }
 
-    public void PlayButtonSound()
-    {
-        AudioManager.instance.PlaySFX(4);
-    }
+    public void PlayButtonSound() => AudioManager.instance.PlaySFX(4);
 
     public void QuitGame()
     {

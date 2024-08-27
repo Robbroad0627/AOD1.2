@@ -85,27 +85,19 @@ public class PlayerController : MonoBehaviour
     //FUNCTIONS
     #region Initialization Functions/Methods
 
-    private void Awake()
-    {
-        Singleton();
-    }
+#pragma warning disable IDE0051
+    private void Awake() => Singleton();
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update()
     {
         mScene = SceneManager.GetActiveScene();
 
-        if (canMove)
-        {
-            MyRigidbody.velocity = new Vector2(Input.GetAxisRaw(LEFT_RIGHT), Input.GetAxisRaw(UP_DOWN)).normalized * MoveSpeed;
-
-        }
-        else
-        {
-            MyRigidbody.velocity = Vector2.zero;
-        }
+        MyRigidbody.velocity = canMove ? new Vector2(Input.GetAxisRaw(LEFT_RIGHT), Input.GetAxisRaw(UP_DOWN)).normalized * MoveSpeed : Vector2.zero;
 
         MyAnimator.SetFloat("moveX", MyRigidbody.velocity.x);
         MyAnimator.SetFloat("moveY", MyRigidbody.velocity.y);
@@ -147,6 +139,7 @@ public class PlayerController : MonoBehaviour
             }
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Public Functions/Methods

@@ -45,6 +45,7 @@ public class AreaExit : MonoBehaviour
     //FUNCTIONS
     #region Physics Methods/Functions
 
+#pragma warning disable IDE0051
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -73,10 +74,12 @@ public class AreaExit : MonoBehaviour
             }
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Private Methods/Functions
 
+#pragma warning disable IDE0051
     private void Update ()
     {
 		if (mShouldLoadAfterFade)
@@ -106,6 +109,7 @@ public class AreaExit : MonoBehaviour
             }
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
 }

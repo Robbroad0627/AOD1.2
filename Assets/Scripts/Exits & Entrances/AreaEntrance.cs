@@ -24,7 +24,6 @@ public class AreaEntrance : MonoBehaviour
     // reference this script.
     [SerializeField] private string transitionName = "";
 	[SerializeField] private bool isPort = false;
-	[SerializeField] private PortController portController = null;
 
     #endregion
 
@@ -37,6 +36,8 @@ public class AreaEntrance : MonoBehaviour
 
     //FUNCTIONS
     #region Initialization Methods/Functions
+
+#pragma warning disable IDE0051
     private void Start ()
 	{
 		if (transitionName == PlayerController.instance.GetAreaTransitionName)
@@ -54,10 +55,12 @@ public class AreaEntrance : MonoBehaviour
         UIFade.instance.FadeFromBlack();
         GameManager.instance.SetFadingBetweenAreas(false);
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Private Methods/Functions
 
+#pragma warning disable IDE0051
     private void Update ()
 	{
         if (transitionName == PlayerController.instance.GetAreaTransitionName)
@@ -69,6 +72,7 @@ public class AreaEntrance : MonoBehaviour
 			}
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
 }
