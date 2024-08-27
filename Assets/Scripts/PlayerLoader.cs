@@ -1,37 +1,43 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: InnUpstairsExit.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 27, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 
-//Bonehead Games
+public class PlayerLoader : MonoBehaviour
+{
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-public class PlayerLoader : MonoBehaviour {
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private GameObject player = null;
 
-    public GameObject player;
+    #endregion
 
-	// Use this for initialization
-	void Awake () {
-		if(PlayerController.instance == null)
+    //FUNCTIONS
+    #region Initialization Functions/Methods
+
+#pragma warning disable IDE0051
+    void Awake ()
+    {
+		if (PlayerController.instance == null)
         {
             Instantiate(player);
-			//if(!GameManager.instance.dataLoadedOnce)
-   //         {
-			//	GameManager.instance.LoadData();
-   //         }
         }
 	}
+#pragma warning restore IDE0051
 
-    private void Start()
-    {
-        
-    }
-
-    private void OnValidate()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update () {
-		
-	}
+    #endregion
 }
