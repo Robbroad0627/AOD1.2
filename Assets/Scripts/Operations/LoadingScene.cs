@@ -1,30 +1,49 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: InnUpstairsExit.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 27, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//Bonehead Games
+public class LoadingScene : MonoBehaviour
+{
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-public class LoadingScene : MonoBehaviour {
-    public float waitToLoad;
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private float waitToLoad = 0.0f;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(waitToLoad > 0)
+    #endregion
+
+    //FUNCTIONS
+    #region Implementation Functions/Methods
+
+    private void Update ()
+    {
+		if (waitToLoad > 0)
         {
             waitToLoad -= Time.deltaTime;
-            if(waitToLoad <= 0)
+
+            if (waitToLoad <= 0)
             {
                 SceneManager.LoadScene(PlayerPrefs.GetString("Current_Scene"));
-
                 GameManager.instance.LoadData();
                 QuestManager.instance.LoadQuestData();
             }
         }
 	}
+
+    #endregion
 }
