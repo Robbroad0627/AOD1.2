@@ -1,25 +1,50 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: InnUpstairsExit.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 27, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 using UnityEngine.UI;
 
-//Bonehead Games
+public class ItemButton : MonoBehaviour
+{
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-public class ItemButton : MonoBehaviour {
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private Image buttonImage = null;
+    [SerializeField] private Text amountText = null;
+    [SerializeField] private int buttonValue = 0;
 
-    public Image buttonImage;
-    public Text amountText;
-    public int buttonValue;
+    #endregion
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    //GETTERS/SETTERS
+    #region Getters/Accessors
+
+    public int GetValue => buttonValue;
+    public Text GetAmount => amountText;
+    public Image GetImage => buttonImage;
+
+    #endregion
+    #region Setters/Mutators
+
+    public int SetValue(int amount) => buttonValue = amount;
+
+    #endregion
+
+    //FUNCTIONS
+    #region Public Functions/Methods
 
     public void Press()
     {
@@ -31,17 +56,19 @@ public class ItemButton : MonoBehaviour {
             }
         }
 
-        if(Shop.instance.shopMenu.activeInHierarchy)
+        if (Shop.instance.shopMenu.activeInHierarchy)
         {
-            if(Shop.instance.buyMenu.activeInHierarchy)
+            if (Shop.instance.buyMenu.activeInHierarchy)
             {
                 Shop.instance.SelectBuyItem(GameManager.instance.GetItemDetails(Shop.instance.itemsForSale[buttonValue]));
             }
 
-            if(Shop.instance.sellMenu.activeInHierarchy)
+            if (Shop.instance.sellMenu.activeInHierarchy)
             {
                 Shop.instance.SelectSellItem(GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[buttonValue]));
             }
         }
     }
+
+    #endregion
 }

@@ -217,18 +217,18 @@ public class GameMenu : MonoBehaviour
 
         for (int i = 0 ; i < itemButtons.Length ; i++)
         {
-            itemButtons[i].buttonValue = i;
+            itemButtons[i].SetValue(i);
 
             if (GameManager.instance.GetItemsHeld[i] != "")
             {
-                itemButtons[i].buttonImage.gameObject.SetActive(true);
-                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[i]).GetSprite;
-                itemButtons[i].amountText.text = GameManager.instance.GetNumberOfItems[i].ToString();
+                itemButtons[i].GetImage.gameObject.SetActive(true);
+                itemButtons[i].GetImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[i]).GetSprite;
+                itemButtons[i].GetAmount.text = GameManager.instance.GetNumberOfItems[i].ToString();
             }
             else
             {
-                itemButtons[i].buttonImage.gameObject.SetActive(false);
-                itemButtons[i].amountText.text = "";
+                itemButtons[i].GetImage.gameObject.SetActive(false);
+                itemButtons[i].GetAmount.text = "";
             }
         }
     }
