@@ -22,20 +22,22 @@ public class BattleManager : MonoBehaviour
     //SINGLETON
     #region Singleton
 
-    public static BattleManager instance;
+    private static BattleManager mInstance;
 
     private void Singleton()
     {
-        if (instance != null && instance != this)
+        if (mInstance != null && mInstance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            instance = this;
+            mInstance = this;
             DontDestroyOnLoad(this);
         }
     }
+
+    public static BattleManager Access => mInstance;
 
     #endregion
 
@@ -168,9 +170,9 @@ public class BattleManager : MonoBehaviour
 
     private void StartBattleMusic()
     {
-        mOutsideBattleBGM = AudioManager.instance.GetCurrentBackgroundMusic;
+        mOutsideBattleBGM = AudioManager.Access.GetCurrentBackgroundMusic;
 
-        AudioManager.instance.PlayBGM(0);
+        AudioManager.Access.PlayBGM(0);
     }
 
     private void NextTurn()
@@ -228,8 +230,8 @@ public class BattleManager : MonoBehaviour
 
     private void UpdateBattle()
     {
-        var allEnemiesDead = true;
-        var allPlayersDead = true;
+        bool allEnemiesDead = true;
+        bool allPlayersDead = true;
 
         for (int i = 0 ; i < mActiveBattlers.Count ; i++)
         {
@@ -304,9 +306,9 @@ public class BattleManager : MonoBehaviour
             }
         }
 
-        var selectedTarget = players[Random.Range(0, players.Count)];
-        var selectAttack = Random.Range(0, mActiveBattlers[mCurrentTurn].GetMovesAvailable.Length);
-        var movePower = 0;
+        int selectedTarget = players[Random.Range(0, players.Count)];
+        int selectAttack = Random.Range(0, mActiveBattlers[mCurrentTurn].GetMovesAvailable.Length);
+        int movePower = 0;
 
         for (int i = 0 ; i < movesList.Length ; i++)
         {
@@ -325,7 +327,7 @@ public class BattleManager : MonoBehaviour
     {
         float atkPwr = mActiveBattlers[mCurrentTurn].GetStrength + mActiveBattlers[mCurrentTurn].GetWeaponPower;
         float defPwr = mActiveBattlers[target].GetDefence + mActiveBattlers[target].GetArmorPower;
-        float damageCalc = ((atkPwr / defPwr) * movePower) * Random.Range(.9f, 1.1f);
+        float damageCalc = atkPwr / defPwr * movePower * Random.Range(.9f, 1.1f);
         int damageToGive = Mathf.RoundToInt(damageCalc);
 
         Debug.Log(mActiveBattlers[mCurrentTurn].GetCharName + " is dealing " + damageCalc + "(" + damageToGive + ") damage to " + mActiveBattlers[target].GetCharName);
@@ -370,11 +372,11 @@ public class BattleManager : MonoBehaviour
     {
         if (!mIsBattleActive)
         {
-            playerPrefabs[0] = GameManager.instance.GetCharacterStats[0].GetBattleCharacter;
-            playerPrefabs[0].SetCharName(GameManager.instance.GetCharacterStats[0].GetCharacterName);
+            playerPrefabs[0] = GameManager.Access.GetCharacterStats[0].GetBattleCharacter;
+            playerPrefabs[0].SetCharName(GameManager.Access.GetCharacterStats[0].GetCharacterName);
             mCanFlee = setCannotFlee;
             mIsBattleActive = true;
-            GameManager.instance.SetBattleActive(true);
+            GameManager.Access.SetBattleActive(true);
             transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
             battleScene.SetActive(true);
 
@@ -382,11 +384,11 @@ public class BattleManager : MonoBehaviour
 
             for (int i = 0; i < playerPositions.Length; i++)
             {
-                if (GameManager.instance.GetCharacterStats[i].gameObject.activeInHierarchy)
+                if (GameManager.Access.GetCharacterStats[i].gameObject.activeInHierarchy)
                 {
                     for (int j = 0; j < playerPrefabs.Length; j++)
                     {
-                        if (playerPrefabs[j].GetCharName == GameManager.instance.GetCharacterStats[i].GetCharacterName)
+                        if (playerPrefabs[j].GetCharName == GameManager.Access.GetCharacterStats[i].GetCharacterName)
                         {
                             BattleChar newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[i].rotation);
                             newPlayer.transform.parent = playerPositions[i];
@@ -406,7 +408,7 @@ public class BattleManager : MonoBehaviour
 
                             mActiveBattlers.Add(newPlayer);
 
-                            CharStats thePlayer = GameManager.instance.GetCharacterStats[i];
+                            CharStats thePlayer = GameManager.Access.GetCharacterStats[i];
 
                             mActiveBattlers[i].SetMovesAvailable(thePlayer.GetAllowedMovesNames(movesList));
                             mActiveBattlers[i].SetCurrentHP(thePlayer.GetCurrentHP);
@@ -426,7 +428,7 @@ public class BattleManager : MonoBehaviour
             {
                 if (enemiesToSpawn[i] != "")
                 {
-                    var found = false;
+                    bool found = false;
 
                     for (int j = 0; j < enemyPrefabs.Length; j++)
                     {
@@ -476,7 +478,7 @@ public class BattleManager : MonoBehaviour
 
     public void PlayerAttack(string moveName, int selectedTarget)
     {
-        var movePower = 0;
+        int movePower = 0;
 
         for (int i = 0; i < movesList.Length; i++)
         {
@@ -569,7 +571,7 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
-            var fleeSuccess = Random.Range(0, 100);
+            int fleeSuccess = Random.Range(0, 100);
 
             if (fleeSuccess < chanceToFlee)
             {
@@ -613,7 +615,7 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(.5f);
 
         UIFade.instance.FadeToBlack();
-        AudioManager.instance.PlayBGM(mOutsideBattleBGM);
+        AudioManager.Access.PlayBGM(mOutsideBattleBGM);
 
         yield return new WaitForSeconds(1.5f);
 
@@ -621,12 +623,12 @@ public class BattleManager : MonoBehaviour
         {
             if (mActiveBattlers[i].GetIsPlayer)
             {
-                for (int j = 0; j < GameManager.instance.GetCharacterStats.Length; j++)
+                for (int j = 0; j < GameManager.Access.GetCharacterStats.Length; j++)
                 {
-                    if (mActiveBattlers[i].GetCharName == GameManager.instance.GetCharacterStats[j].GetCharacterName)
+                    if (mActiveBattlers[i].GetCharName == GameManager.Access.GetCharacterStats[j].GetCharacterName)
                     {
-                        GameManager.instance.GetCharacterStats[j].SetCurrentHP(mActiveBattlers[i].GetCurrentHP);
-                        GameManager.instance.GetCharacterStats[j].SetCurrentMP(mActiveBattlers[i].GetCurrentMP);
+                        GameManager.Access.GetCharacterStats[j].SetCurrentHP(mActiveBattlers[i].GetCurrentHP);
+                        GameManager.Access.GetCharacterStats[j].SetCurrentMP(mActiveBattlers[i].GetCurrentMP);
                     }
                 }
             }
@@ -641,12 +643,12 @@ public class BattleManager : MonoBehaviour
 
         if (mIsFleeing)
         {
-            GameManager.instance.SetBattleActive(false);
+            GameManager.Access.SetBattleActive(false);
             mIsFleeing = false;
         }
         else
         {
-            BattleReward.instance.OpenRewardScreen(mRewardXP, mRewardItems);
+            BattleReward.Access.OpenRewardScreen(mRewardXP, mRewardItems);
         }
     }
 

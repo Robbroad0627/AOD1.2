@@ -33,20 +33,20 @@ public class GameOver : MonoBehaviour
 
     public void QuitToMain()
     {
-        Destroy(GameManager.instance.gameObject);
-        Destroy(PlayerController.instance.gameObject);
-        Destroy(GameMenu.instance.gameObject);
-        Destroy(AudioManager.instance.gameObject);
-        Destroy(BattleManager.instance.gameObject);
+        Destroy(GameManager.Access.gameObject);
+        Destroy(PlayerController.Access.gameObject);
+        Destroy(GameMenu.Access.gameObject);
+        Destroy(AudioManager.Access.gameObject);
+        Destroy(BattleManager.Access.gameObject);
 
         SceneManager.LoadScene(mainMenuScene);
     }
 
     public void LoadLastSave()
     {
-        Destroy(GameManager.instance.gameObject);
-        Destroy(PlayerController.instance.gameObject);
-        Destroy(GameMenu.instance.gameObject);
+        Destroy(GameManager.Access.gameObject);
+        Destroy(PlayerController.Access.gameObject);
+        Destroy(GameMenu.Access.gameObject);
 
         SceneManager.LoadScene(loadGameScene);
     }

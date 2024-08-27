@@ -206,7 +206,7 @@ public class CharStats : MonoBehaviour
     {
         List<string> allowedActionsList = new List<string>();
 
-        foreach (var action in actionList)
+        foreach (BattleMove action in actionList)
         {
             if (action.MoveAllowed(this))
             {

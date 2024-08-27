@@ -20,8 +20,8 @@ public class BattleStarter : MonoBehaviour
     #region Constant Variable Declarations and Initializations
 
     private const string PLAYER = "Player";
-    private const string LEFT_RIGHT = "Horizontal";
     private const string UP_DOWN = "Vertical";
+    private const string LEFT_RIGHT = "Horizontal";
 
     #endregion
     #region Inspector/Exposed Variables
@@ -102,7 +102,7 @@ public class BattleStarter : MonoBehaviour
 #pragma warning disable IDE0051
     private void Update ()
     {
-		if (mIsPlayerInArea && PlayerController.instance.GetCanMove)
+		if (mIsPlayerInArea && PlayerController.Access.GetCanMove)
         {
             if (Input.GetAxisRaw(LEFT_RIGHT) != 0 || Input.GetAxisRaw(UP_DOWN) != 0)
             {
@@ -128,18 +128,18 @@ public class BattleStarter : MonoBehaviour
 
         if (backgroundSprite != null)
         {
-            BattleManager.instance.SetBackgroundSprite(backgroundSprite);
+            BattleManager.Access.SetBackgroundSprite(backgroundSprite);
         }
 
-        GameManager.instance.SetBattleActive(true);
+        GameManager.Access.SetBattleActive(true);
         
         int selectedBattle = Random.Range(0, potentialBattles.Length);
-        BattleManager.instance.SetRewardItems(potentialBattles[selectedBattle].rewardItems);
-        BattleManager.instance.SetRewardXP(potentialBattles[selectedBattle].rewardXP);
+        BattleManager.Access.SetRewardItems(potentialBattles[selectedBattle].rewardItems);
+        BattleManager.Access.SetRewardXP(potentialBattles[selectedBattle].rewardXP);
 
         yield return new WaitForSeconds(1.5f);
 
-        BattleManager.instance.BattleStart(potentialBattles[selectedBattle].enemies, cannotFlee);
+        BattleManager.Access.BattleStart(potentialBattles[selectedBattle].enemies, cannotFlee);
         
         UIFade.instance.FadeFromBlack();
 
@@ -148,8 +148,8 @@ public class BattleStarter : MonoBehaviour
             gameObject.SetActive(false);
         }
 
-        BattleReward.instance.SetCompletesQuest(shouldCompleteQuest);
-        BattleReward.instance.SetQuestToComplete(QuestToComplete);
+        BattleReward.Access.SetCompletesQuest(shouldCompleteQuest);
+        BattleReward.Access.SetQuestToComplete(QuestToComplete);
     }
 
     #endregion

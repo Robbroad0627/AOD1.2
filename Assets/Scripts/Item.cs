@@ -85,7 +85,7 @@ public class Item : MonoBehaviour
 
     public void Use(int charToUseOn)
     {
-        CharStats selectedChar = GameManager.instance.GetCharacterStats[charToUseOn];
+        CharStats selectedChar = GameManager.Access.GetCharacterStats[charToUseOn];
 
         if (isItem)
         {
@@ -119,7 +119,7 @@ public class Item : MonoBehaviour
         {
             if (selectedChar.GetEquippedWeapon != "")
             {
-                GameManager.instance.AddItem(selectedChar.GetEquippedWeapon);
+                GameManager.Access.AddItem(selectedChar.GetEquippedWeapon);
             }
 
             selectedChar.SetEquippedWeapon(itemName);
@@ -131,7 +131,7 @@ public class Item : MonoBehaviour
             EquipArmour(selectedChar);
         }
 
-        GameManager.instance.RemoveItem(itemName);
+        GameManager.Access.RemoveItem(itemName);
     }
 
     #endregion
@@ -139,7 +139,7 @@ public class Item : MonoBehaviour
 
     private void EquipArmour(CharStats selectedChar)
     {
-        Item newArmor = GameManager.instance.GetItemDetails(itemName);
+        Item newArmor = GameManager.Access.GetItemDetails(itemName);
 
         string currentArmorKey = "";
 
@@ -179,8 +179,8 @@ public class Item : MonoBehaviour
 
         if (currentArmorKey != "")
         {
-            GameManager.instance.AddItem(currentArmorKey);
-            Item prevArmour = GameManager.instance.GetItemDetails(currentArmorKey);
+            GameManager.Access.AddItem(currentArmorKey);
+            Item prevArmour = GameManager.Access.GetItemDetails(currentArmorKey);
 
             if(prevArmour != null)
             {

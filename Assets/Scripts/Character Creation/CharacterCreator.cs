@@ -385,19 +385,19 @@ public class CharacterCreator : MonoBehaviour
 
     public void SaveCharacterButtonPressed()
     {
-        GameManager.instance.GetCharacterStats[0].SetCharacterName(nameField.text);
-        GameManager.instance.GetCharacterStats[0].SetSprite(mPlayerPortrait);
-        GameManager.instance.GetCharacterStats[0].SetStrength(mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength]);
-        GameManager.instance.GetCharacterStats[0].SetCurrentHP(mPlayerHP);
-        GameManager.instance.GetCharacterStats[0].SetMaxHP(mPlayerHP);
-        GameManager.instance.GetCharacterStats[0].SetCurrentMP(mPlayerMP);
-        GameManager.instance.GetCharacterStats[0].SetMaxMP(mPlayerMP);
-        GameManager.instance.GetCharacterStats[0].SetLevel(1);
-        GameManager.instance.GetCharacterStats[0].SetBattleCharacter(Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + mPlayerClass + "/" + mPlayerSex + mPlayerRace));
-        GameManager.instance.GetCharacterStats[0].GetBattleCharacter.SetIsPlayer(true);
-        GameManager.instance.GetCharacterStats[0].SetClass(mPlayerClass.ToString());
-        GameManager.instance.GetCharacterStats[0].SetSex(mPlayerSex);
-        GameManager.instance.GetCharacterStats[0].SetRace(mPlayerRace.ToString());
+        GameManager.Access.GetCharacterStats[0].SetCharacterName(nameField.text);
+        GameManager.Access.GetCharacterStats[0].SetSprite(mPlayerPortrait);
+        GameManager.Access.GetCharacterStats[0].SetStrength(mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength]);
+        GameManager.Access.GetCharacterStats[0].SetCurrentHP(mPlayerHP);
+        GameManager.Access.GetCharacterStats[0].SetMaxHP(mPlayerHP);
+        GameManager.Access.GetCharacterStats[0].SetCurrentMP(mPlayerMP);
+        GameManager.Access.GetCharacterStats[0].SetMaxMP(mPlayerMP);
+        GameManager.Access.GetCharacterStats[0].SetLevel(1);
+        GameManager.Access.GetCharacterStats[0].SetBattleCharacter(Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + mPlayerClass + "/" + mPlayerSex + mPlayerRace));
+        GameManager.Access.GetCharacterStats[0].GetBattleCharacter.SetIsPlayer(true);
+        GameManager.Access.GetCharacterStats[0].SetClass(mPlayerClass.ToString());
+        GameManager.Access.GetCharacterStats[0].SetSex(mPlayerSex);
+        GameManager.Access.GetCharacterStats[0].SetRace(mPlayerRace.ToString());
 
         Debug.Log("Prefabs/Players/PlayerOptions/" + mPlayerClass + "/" + mPlayerSex + mPlayerRace);
         SceneManager.LoadScene("Calimere");

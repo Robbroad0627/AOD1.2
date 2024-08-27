@@ -34,9 +34,9 @@ public class PickupItem : MonoBehaviour
 #pragma warning disable IDE0051
     private void Update ()
     {
-		if (mCanPickup && Input.GetButtonDown(INTERACT) && PlayerController.instance.GetCanMove)
+		if (mCanPickup && Input.GetButtonDown(INTERACT) && PlayerController.Access.GetCanMove)
         {
-            GameManager.instance.AddItem(GetComponent<Item>().GetName);
+            GameManager.Access.AddItem(GetComponent<Item>().GetName);
             Destroy(gameObject);
         }
 	}

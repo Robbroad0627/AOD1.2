@@ -51,18 +51,18 @@ public class BattleMagicSelect : MonoBehaviour
 
     public void Press()
     {
-        if (BattleManager.instance.GetActiveBattlers[BattleManager.instance.GetCurrentTurn].GetCurrentMP >= spellCost)
+        if (BattleManager.Access.GetActiveBattlers[BattleManager.Access.GetCurrentTurn].GetCurrentMP >= spellCost)
         {
-            BattleManager.instance.GetMagicMenu.SetActive(false);
-            BattleManager.instance.OpenTargetMenu(spellName);
-            BattleManager.instance.GetActiveBattlers[BattleManager.instance.GetCurrentTurn].SetCurrentMP(BattleManager.instance.GetActiveBattlers[BattleManager.instance.GetCurrentTurn].GetCurrentMP - spellCost);
+            BattleManager.Access.GetMagicMenu.SetActive(false);
+            BattleManager.Access.OpenTargetMenu(spellName);
+            BattleManager.Access.GetActiveBattlers[BattleManager.Access.GetCurrentTurn].SetCurrentMP(BattleManager.Access.GetActiveBattlers[BattleManager.Access.GetCurrentTurn].GetCurrentMP - spellCost);
         }
         else
         {
             //let player know there is not enough MP
-            BattleManager.instance.GetBattleNotice.SetNotificationText("Not Enough MP!");
-            BattleManager.instance.GetBattleNotice.Activate();
-            BattleManager.instance.GetMagicMenu.SetActive(false);
+            BattleManager.Access.GetBattleNotice.SetNotificationText("Not Enough MP!");
+            BattleManager.Access.GetBattleNotice.Activate();
+            BattleManager.Access.GetMagicMenu.SetActive(false);
         }
     }
 

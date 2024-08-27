@@ -19,20 +19,22 @@ public class BattleReward : MonoBehaviour
     //SINGLETON
     #region Singleton
 
-    public static BattleReward instance;
+    private static BattleReward mInstance;
 
     private void Singleton()
     {
-        if (instance != null && instance != this)
+        if (mInstance != null && mInstance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            instance = this;
+            mInstance = this;
             DontDestroyOnLoad(this);
         }
     }
+
+    public static BattleReward Access => mInstance;
 
     #endregion
 
@@ -117,21 +119,21 @@ public class BattleReward : MonoBehaviour
 
     public void CloseRewardScreen()
     {
-        for (int i = 0; i < GameManager.instance.GetCharacterStats.Length; i++)
+        for (int i = 0; i < GameManager.Access.GetCharacterStats.Length; i++)
         {
-            if(GameManager.instance.GetCharacterStats[i].gameObject.activeInHierarchy)
+            if(GameManager.Access.GetCharacterStats[i].gameObject.activeInHierarchy)
             {
-                GameManager.instance.GetCharacterStats[i].AddExp(mXPEarned);
+                GameManager.Access.GetCharacterStats[i].AddExp(mXPEarned);
             }
         }
 
         for (int i = 0; i < mRewardItems.Length; i++)
         {
-            GameManager.instance.AddItem(mRewardItems[i]);
+            GameManager.Access.AddItem(mRewardItems[i]);
         }
 
         rewardScreen.SetActive(false);
-        GameManager.instance.SetBattleActive(false);
+        GameManager.Access.SetBattleActive(false);
 
         if (mCompletesQuest)
         {

@@ -30,7 +30,7 @@ public class AttackEffect : MonoBehaviour
     #region Initialization Functions/Methods
 
 #pragma warning disable IDE0051
-    private void Start () => AudioManager.instance.PlaySFX(soundEffect);
+    private void Start () => AudioManager.Access.PlaySFX(soundEffect);
 #pragma warning restore IDE0051
 
     #endregion

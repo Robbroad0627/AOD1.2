@@ -32,7 +32,7 @@ public class PlayerLoader : MonoBehaviour
 #pragma warning disable IDE0051
     void Awake ()
     {
-		if (PlayerController.instance == null)
+		if (PlayerController.Access == null)
         {
             Instantiate(player);
         }
