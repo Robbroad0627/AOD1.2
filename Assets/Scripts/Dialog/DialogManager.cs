@@ -38,6 +38,12 @@ public class DialogManager : MonoBehaviour
     #endregion
 
     //VARIABLES
+    #region Constant Variable Declarations and Initializations
+
+    private const string NPC = "n-";
+    private const string PLAYER = "Player";
+    private const string INTERACT = "Fire1";
+    #endregion
     #region Inspector/Exposed Variables
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
@@ -101,7 +107,7 @@ public class DialogManager : MonoBehaviour
     {
         if (dialogBox.activeInHierarchy)
         {
-            if (Input.GetButtonUp("Fire1"))
+            if (Input.GetButtonUp(INTERACT))
             {
                 if (!mJustStarted)
                 {
@@ -155,10 +161,10 @@ public class DialogManager : MonoBehaviour
 
     private void CheckIfName()
     {
-        if (mDialogLines[mCurrentLine].StartsWith("n-"))
+        if (mDialogLines[mCurrentLine].StartsWith(NPC))
         {
-            nameText.text = mDialogLines[mCurrentLine].Replace("n-", "");
-            nameText.text = nameText.text == "Player" ? GameManager.instance.GetPlayerName : nameText.text;
+            nameText.text = mDialogLines[mCurrentLine].Replace(NPC, "");
+            nameText.text = nameText.text == PLAYER ? GameManager.instance.GetPlayerName : nameText.text;
             mCurrentLine++;
         }
     }

@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     //VARIABLES
     #region Constant Variable Declarations and Initializations
 
+    private const string PLAYER = "Player";
     private const string PLAYER_PREFERENCE_KEY = "!!!Special:Player";
 
     #endregion
@@ -106,7 +107,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (GameObject.Find("Player"))
+        if (GameObject.Find(PLAYER))
         {
             if (gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive || Boat.isPlayerOnBoat)
             {

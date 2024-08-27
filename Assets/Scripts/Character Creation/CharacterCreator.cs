@@ -25,8 +25,8 @@ public class CharacterCreator : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private Image portrait;
-    [SerializeField] private InputField nameField;
+    [SerializeField] private Image portrait = null;
+    [SerializeField] private InputField nameField = null;
 
     #endregion
     #region Private Variables

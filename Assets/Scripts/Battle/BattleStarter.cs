@@ -17,6 +17,13 @@ using System.Collections;
 public class BattleStarter : MonoBehaviour
 {
     //VARIABLES
+    #region Constant Variable Declarations and Initializations
+
+    private const string PLAYER = "Player";
+    private const string LEFT_RIGHT = "Horizontal";
+    private const string UP_DOWN = "Vertical";
+
+    #endregion
     #region Inspector/Exposed Variables
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
@@ -55,7 +62,7 @@ public class BattleStarter : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(PLAYER))
         {
             if (activateOnEnter)
             {
@@ -70,7 +77,7 @@ public class BattleStarter : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(PLAYER))
         {
             if (activateOnExit)
             {
@@ -90,7 +97,7 @@ public class BattleStarter : MonoBehaviour
     {
 		if (mIsPlayerInArea && PlayerController.instance.canMove)
         {
-            if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
+            if (Input.GetAxisRaw(LEFT_RIGHT) != 0 || Input.GetAxisRaw(UP_DOWN) != 0)
             {
                 mBattleCountdownTimer -= Time.deltaTime;
             }
