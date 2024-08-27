@@ -33,7 +33,7 @@ public class PickupItem : MonoBehaviour
 
     private void Update ()
     {
-		if (mCanPickup && Input.GetButtonDown(INTERACT) && PlayerController.instance.canMove)
+		if (mCanPickup && Input.GetButtonDown(INTERACT) && PlayerController.instance.GetCanMove)
         {
             GameManager.instance.AddItem(GetComponent<Item>().GetName);
             Destroy(gameObject);

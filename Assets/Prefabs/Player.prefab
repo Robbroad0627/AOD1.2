@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 212754941309248394}
   - component: {fileID: 50060663575902748}
   - component: {fileID: 3428331926719788560}
-  - component: {fileID: 114833591496082952}
   - component: {fileID: 95214761617523964}
+  - component: {fileID: 114833591496082952}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -123,25 +123,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.03, y: 1.79}
   m_Direction: 0
---- !u!114 &114833591496082952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1296156905420382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ac322bdc7868f24ca0592aa1d34473c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  theRB: {fileID: 50060663575902748}
-  moveSpeed: 6
-  boatSprite: {fileID: 3681446878935796169, guid: 76eeb79133085c2409ea03ce10d95806,
-    type: 3}
-  myAnim: {fileID: 95214761617523964}
-  areaTransitionName: 
-  canMove: 1
 --- !u!95 &95214761617523964
 Animator:
   serializedVersion: 3
@@ -161,3 +142,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114833591496082952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296156905420382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ac322bdc7868f24ca0592aa1d34473c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MySpriteRenderer: {fileID: 212754941309248394}
+  MyRigidbody: {fileID: 50060663575902748}
+  MoveSpeed: 6
+  TheBoat: {fileID: 1810604480516027641, guid: 550f5640aceaaf14181ff0fdef5ca5af, type: 3}
+  MyAnimator: {fileID: 95214761617523964}

@@ -102,7 +102,7 @@ public class Inn : MonoBehaviour
 
     private void Update ()
     {
-        if (canOpen && Input.GetButtonDown(INTERACT) && PlayerController.instance.canMove && !Shop.instance.shopMenu.activeInHierarchy)
+        if (canOpen && Input.GetButtonDown(INTERACT) && PlayerController.instance.GetCanMove && !Shop.instance.shopMenu.activeInHierarchy)
         {
             s_downstairsTransitionName = downstairsEntrance?.GetTransitionName;
             s_downstairsTransitionPosition = downstairsEntrance?.transform.position;
@@ -118,7 +118,7 @@ public class Inn : MonoBehaviour
     public static void WarpUpstairs()
     {
         GameManager.instance.SetCurrentGold(GameManager.instance.GetCurrentGold - s_goldCost);
-        PlayerController.instance.areaTransitionName = UPSTAIRS_SCENE_NAME;
+        PlayerController.instance.SetAreaTransitionName(UPSTAIRS_SCENE_NAME);
         SceneManager.LoadScene(UPSTAIRS_SCENE_NAME);
         isUpstairs = true;
     }

@@ -37,7 +37,7 @@ public class BoatCaptain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canOpen && Input.GetButtonDown("Fire1") && PlayerController.instance.canMove && !boatTripConfirmed)
+        if (canOpen && Input.GetButtonDown("Fire1") && PlayerController.instance.GetCanMove && !boatTripConfirmed)
         {
             GameManager.instance.ModalPromptBoatTrip(goldCost);
         }

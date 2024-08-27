@@ -111,11 +111,11 @@ public class GameManager : MonoBehaviour
         {
             if (gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive || Boat.isPlayerOnBoat)
             {
-                PlayerController.instance.canMove = false;
+                PlayerController.instance.SetCanMove(false);
             }
             else
             {
-                PlayerController.instance.canMove = true;
+                PlayerController.instance.SetCanMove(true);
             }
 
             #if UNITY_EDITOR
