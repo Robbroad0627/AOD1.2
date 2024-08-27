@@ -222,7 +222,7 @@ public class GameMenu : MonoBehaviour
             if (GameManager.instance.GetItemsHeld[i] != "")
             {
                 itemButtons[i].buttonImage.gameObject.SetActive(true);
-                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[i]).itemSprite;
+                itemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[i]).GetSprite;
                 itemButtons[i].amountText.text = GameManager.instance.GetNumberOfItems[i].ToString();
             }
             else
@@ -237,18 +237,18 @@ public class GameMenu : MonoBehaviour
     {
         activeItem = newItem;
 
-        if (activeItem.isItem)
+        if (activeItem.GetIsItem)
         {
             useButtonText.text = "Use";
         }
 
-        if (activeItem.isWeapon || activeItem.isArmour)
+        if (activeItem.GetIsWeapon || activeItem.GetIsArmor)
         {
             useButtonText.text = "Equip";
         }
 
-        itemName.text = activeItem.itemName;
-        itemDescription.text = activeItem.description;
+        itemName.text = activeItem.GetName;
+        itemDescription.text = activeItem.GetDescription;
     }
 
     #endregion
@@ -291,7 +291,7 @@ public class GameMenu : MonoBehaviour
     {
         if (activeItem != null)
         {
-            GameManager.instance.RemoveItem(activeItem.itemName);
+            GameManager.instance.RemoveItem(activeItem.GetName);
         }
     }
 

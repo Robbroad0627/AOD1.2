@@ -149,7 +149,7 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < referenceItems.Length; i++)
         {
-            if (referenceItems[i].itemName == itemToGrab)
+            if (referenceItems[i].GetName == itemToGrab)
             {
                 return referenceItems[i];
             }
@@ -215,7 +215,7 @@ public class GameManager : MonoBehaviour
 
             for (int i = 0; i < referenceItems.Length; i++)
             {
-                if (referenceItems[i].itemName == itemToAdd)
+                if (referenceItems[i].GetName == itemToAdd)
                 {
                     itemExists = true;
 
