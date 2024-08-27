@@ -37,6 +37,12 @@ public class GameMenu : MonoBehaviour
 
     #endregion
 
+    #region Inspector/Exposed Variables
+
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
     [SerializeField] private GameObject minimap;
     [SerializeField] private GameObject theMenu;
     [SerializeField] private GameObject[] windows;
@@ -61,8 +67,6 @@ public class GameMenu : MonoBehaviour
     [SerializeField] private Text statusExp;
     [SerializeField] private Image statusImage;
     [SerializeField] private ItemButton[] itemButtons;
-    [SerializeField] private string selectedItem;
-    [SerializeField] private Item activeItem;
     [SerializeField] private Text itemName;
     [SerializeField] private Text itemDescription;
     [SerializeField] private Text useButtonText;
@@ -71,14 +75,30 @@ public class GameMenu : MonoBehaviour
     [SerializeField] private Text goldText;
     [SerializeField] private string mainMenuName;
 
+    #endregion
+    #region Private Variables
+
     private CharStats[] playerStats;
+    private Item activeItem;
+
+    #endregion
+
+    //GETTERS/SETTERS
+    #region Getters/Accessors
 
     public GameObject GetTheMenu => theMenu;
+    #endregion
+
+    //FUNCTIONS
+    #region Initialization Functions/Methods
 
     private void Awake()
     {
         Singleton();
     }
+
+    #endregion
+    #region Implementation Functions/Methods
 
     private void Update ()
     {
@@ -108,7 +128,10 @@ public class GameMenu : MonoBehaviour
         }
 	}
 
-    public void UpdateMainStats()
+    #endregion
+    #region Private Functions/Methods
+
+    private void UpdateMainStats()
     {
         playerStats = GameManager.instance.GetCharacterStats;
 
@@ -135,28 +158,9 @@ public class GameMenu : MonoBehaviour
         goldText.text = GameManager.instance.GetCurrentGold.ToString() + "g";
     }
 
-    public void ToggleWindow(int windowNumber)
+    private void CloseMenu()
     {
-        UpdateMainStats();
-
-        for (int i = 0; i < windows.Length; i++)
-        {
-            if (i == windowNumber)
-            {
-                windows[i].SetActive(!windows[i].activeInHierarchy);
-            }
-            else
-            {
-                windows[i].SetActive(false);
-            }
-        }
-
-        itemCharChoiceMenu.SetActive(false);
-    }
-
-    public void CloseMenu()
-    {
-        for (int i = 0; i < windows.Length; i++)
+        for (int i = 0 ; i < windows.Length ; i++)
         {
             windows[i].SetActive(false);
         }
@@ -168,21 +172,7 @@ public class GameMenu : MonoBehaviour
         itemCharChoiceMenu.SetActive(false);
     }
 
-    public void OpenStatus()
-    {
-        UpdateMainStats();
-
-        //update the information that is shown
-        StatusChar(0);
-
-        for (int i = 0; i < statusButtons.Length; i++)
-        {
-            statusButtons[i].SetActive(playerStats[i].gameObject.activeInHierarchy);
-            statusButtons[i].GetComponentInChildren<Text>().text = playerStats[i].GetCharacterName;
-        }
-    }
-
-    public void StatusChar(int selected)
+    private void StatusChar(int selected)
     {
         statusName.text = playerStats[selected].GetCharacterName;
         statusHP.text = "" + playerStats[selected].GetCurrentHP + "/" + playerStats[selected].GetMaxHP;
@@ -207,11 +197,19 @@ public class GameMenu : MonoBehaviour
         statusImage.sprite = playerStats[selected].GetSprite;
     }
 
+    private void CloseItemCharChoice()
+    {
+        itemCharChoiceMenu.SetActive(false);
+    }
+
+    #endregion
+    #region Public Functions/Methods
+
     public void ShowItems()
     {
         GameManager.instance.SortItems();
 
-        for (int i = 0; i < itemButtons.Length; i++)
+        for (int i = 0 ; i < itemButtons.Length ; i++)
         {
             itemButtons[i].buttonValue = i;
 
@@ -247,6 +245,42 @@ public class GameMenu : MonoBehaviour
         itemDescription.text = activeItem.description;
     }
 
+    #endregion
+    #region Buttons
+
+    public void ToggleWindow(int windowNumber)
+    {
+        UpdateMainStats();
+
+        for (int i = 0; i < windows.Length; i++)
+        {
+            if (i == windowNumber)
+            {
+                windows[i].SetActive(!windows[i].activeInHierarchy);
+            }
+            else
+            {
+                windows[i].SetActive(false);
+            }
+        }
+
+        itemCharChoiceMenu.SetActive(false);
+    }
+
+    public void OpenStatus()
+    {
+        UpdateMainStats();
+
+        //update the information that is shown
+        StatusChar(0);
+
+        for (int i = 0; i < statusButtons.Length; i++)
+        {
+            statusButtons[i].SetActive(playerStats[i].gameObject.activeInHierarchy);
+            statusButtons[i].GetComponentInChildren<Text>().text = playerStats[i].GetCharacterName;
+        }
+    }
+
     public void DiscardItem()
     {
         if (activeItem != null)
@@ -264,11 +298,6 @@ public class GameMenu : MonoBehaviour
             itemCharChoiceNames[i].text = GameManager.instance.GetCharacterStats[i].GetCharacterName;
             itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.GetCharacterStats[i].gameObject.activeInHierarchy);
         }
-    }
-
-    public void CloseItemCharChoice()
-    {
-        itemCharChoiceMenu.SetActive(false);
     }
 
     public void UseItem(int selectChar)
@@ -297,4 +326,6 @@ public class GameMenu : MonoBehaviour
         Destroy(AudioManager.instance.gameObject);
         Destroy(gameObject);
     }
+
+    #endregion
 }
