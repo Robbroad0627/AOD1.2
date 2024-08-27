@@ -62,18 +62,18 @@ public class Shop : MonoBehaviour {
 
         for (int i = 0; i < buyItemButtons.Length; i++)
         {
-            buyItemButtons[i].buttonValue = i;
+            buyItemButtons[i].SetValue(i);
 
             if (itemsForSale[i] != "")
             {
-                buyItemButtons[i].buttonImage.gameObject.SetActive(true);
-                buyItemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(itemsForSale[i]).GetSprite;
-                buyItemButtons[i].amountText.text = "";
+                buyItemButtons[i].GetImage.gameObject.SetActive(true);
+                buyItemButtons[i].GetImage.sprite = GameManager.instance.GetItemDetails(itemsForSale[i]).GetSprite;
+                buyItemButtons[i].GetAmount.text = "";
             }
             else
             {
-                buyItemButtons[i].buttonImage.gameObject.SetActive(false);
-                buyItemButtons[i].amountText.text = "";
+                buyItemButtons[i].GetImage.gameObject.SetActive(false);
+                buyItemButtons[i].GetAmount.text = "";
             }
         }
     }
@@ -94,18 +94,18 @@ public class Shop : MonoBehaviour {
         GameManager.instance.SortItems();
         for (int i = 0; i < sellItemButtons.Length; i++)
         {
-            sellItemButtons[i].buttonValue = i;
+            sellItemButtons[i].SetValue(i);
 
             if (GameManager.instance.GetItemsHeld[i] != "")
             {
-                sellItemButtons[i].buttonImage.gameObject.SetActive(true);
-                sellItemButtons[i].buttonImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[i]).GetSprite;
-                sellItemButtons[i].amountText.text = GameManager.instance.GetNumberOfItems[i].ToString();
+                sellItemButtons[i].GetImage.gameObject.SetActive(true);
+                sellItemButtons[i].GetImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[i]).GetSprite;
+                sellItemButtons[i].GetAmount.text = GameManager.instance.GetNumberOfItems[i].ToString();
             }
             else
             {
-                sellItemButtons[i].buttonImage.gameObject.SetActive(false);
-                sellItemButtons[i].amountText.text = "";
+                sellItemButtons[i].GetImage.gameObject.SetActive(false);
+                sellItemButtons[i].GetAmount.text = "";
             }
         }
     }
