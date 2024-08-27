@@ -23,8 +23,8 @@ public class GameOver : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private string mainMenuScene;
-    [SerializeField] private string loadGameScene;
+    [SerializeField] private string mainMenuScene = null;
+    [SerializeField] private string loadGameScene = null;
 
     #endregion
 

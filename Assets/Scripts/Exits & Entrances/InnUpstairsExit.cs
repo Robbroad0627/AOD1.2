@@ -6,9 +6,9 @@ using UnityEngine.SceneManagement;
 public class InnUpstairsExit :MonoBehaviour
 {
     [HideInInspector]
-    public string areaToLoad => Inn.s_downstairsSceneName;
+    public string areaToLoad => Inn.GetDownstairsSceneName;
     [HideInInspector]
-    public string areaTransitionName => Inn.s_downstairsTransitionName;
+    public string areaTransitionName => Inn.GetDownstairsTransitionName;
 
     public float waitToLoad = 1f;
     private bool shouldLoadAfterFade;
@@ -24,7 +24,7 @@ public class InnUpstairsExit :MonoBehaviour
             {
                 shouldLoadAfterFade = false;
                 SceneManager.LoadScene(areaToLoad);
-                Inn.isUpstairs = false;
+                Inn.SetIsPlayerUpstairs(false);
             }
         }
     }
@@ -39,7 +39,7 @@ public class InnUpstairsExit :MonoBehaviour
                 Debug.Log("Area needs boat but GameManager.haveBoat == false");
                 return;
             }
-            PlayerController.instance.areaTransitionName = Inn.s_downstairsTransitionName;
+            //PlayerController.instance.areaTransitionName = Inn.s_downstairsTransitionName;
             this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
             shouldLoadAfterFade = true;
             GameManager.instance.SetFadingBetweenAreas(true);
