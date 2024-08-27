@@ -1,53 +1,54 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: InnUpstairsExit.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 27, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//Bonehead Games
-
 public class MainMenu : MonoBehaviour
 {
+    //VARIABLES
+    #region Inspector/Exposed Variables
 
-    public string newGameScene;
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private string newGameScene = null;
+    [SerializeField] private GameObject continueButton = null;
+    [SerializeField] private string loadGameScene = null;
+    [SerializeField] private string instructions = null;
+    [SerializeField] private string races = null;
+    [SerializeField] private string classes = null;
+    [SerializeField] private string dwarf = null;
+    [SerializeField] private string elf = null;
+    [SerializeField] private string halfElf = null;
+    [SerializeField] private string halfOrc = null;
+    [SerializeField] private string halfling = null;
+    [SerializeField] private string human = null;
+    [SerializeField] private string cleric = null;
+    [SerializeField] private string druid = null;
+    [SerializeField] private string fighter = null;
+    [SerializeField] private string magicUser = null;
+    [SerializeField] private string paladin = null;
+    [SerializeField] private string ranger = null;
+    [SerializeField] private string thief = null;
 
-    public GameObject continueButton;
+    #endregion
 
-    public string loadGameScene;
+    //FUNCTIONS
+    #region Initialization Functions/Methods
 
-    public string instructions;
-
-    public string races;
-
-    public string classes;
-
-    public string dwarf;
-
-    public string elf;
-
-    public string halfElf;
-
-    public string halfOrc;
-
-    public string halfling;
-
-    public string human;
-
-    public string cleric;
-
-    public string druid;
-
-    public string fighter;
-
-    public string magicUser;
-
-    public string paladin;
-
-    public string ranger;
-
-    public string thief;
-
-    // Use this for initialization
-    void Start()
+    private void Start()
     {
         if (PlayerPrefs.HasKey("Current_Scene"))
         {
@@ -59,7 +60,8 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-
+    #endregion
+    #region Public Functions/Methods
 
     public void Continue()
     {
@@ -81,9 +83,6 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-
-    //Customization Choices
-
     public void Races()
     {
         SceneManager.LoadScene("Races");
@@ -93,8 +92,6 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Classes");
     }
-
-    //Races
 
     public void Dwarf()
     {
@@ -125,8 +122,6 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("HalfElf");
     }
-
-    //Races
 
     public void Cleric()
     {
@@ -162,4 +157,6 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Thief");
     }
+
+    #endregion
 }
