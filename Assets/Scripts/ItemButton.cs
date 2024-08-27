@@ -23,7 +23,7 @@ public class ItemButton : MonoBehaviour {
 
     public void Press()
     {
-        if (GameMenu.instance.theMenu.activeInHierarchy)
+        if (GameMenu.instance.GetTheMenu.activeInHierarchy)
         {
             if (GameManager.instance.GetItemsHeld[buttonValue] != "")
             {
