@@ -20,20 +20,22 @@ public class GameMenu : MonoBehaviour
     //SINGLETON
     #region Singleton
 
-    public static GameMenu instance;
+    private static GameMenu mInstance;
 
     private void Singleton()
     {
-        if (instance != null && instance != this)
+        if (mInstance != null && mInstance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            instance = this;
+            mInstance = this;
             DontDestroyOnLoad(this);
         }
     }
+
+    public static GameMenu Access => mInstance;
 
     #endregion
 
@@ -118,13 +120,13 @@ public class GameMenu : MonoBehaviour
             {
                 theMenu.SetActive(true);
                 UpdateMainStats();
-                GameManager.instance.SetGameMenuOpen(true);
+                GameManager.Access.SetGameMenuOpen(true);
             }
 
-            AudioManager.instance.PlaySFX(5);
+            AudioManager.Access.PlaySFX(5);
         }
 
-        if (GameManager.instance.GetBattleActive)
+        if (GameManager.Access.GetBattleActive)
         {
             minimap.SetActive(false);
         }
@@ -140,7 +142,7 @@ public class GameMenu : MonoBehaviour
 
     private void UpdateMainStats()
     {
-        playerStats = GameManager.instance.GetCharacterStats;
+        playerStats = GameManager.Access.GetCharacterStats;
 
         for (int i = 0; i < playerStats.Length; i++)
         {
@@ -162,7 +164,7 @@ public class GameMenu : MonoBehaviour
             }
         }
 
-        goldText.text = GameManager.instance.GetCurrentGold.ToString() + "g";
+        goldText.text = GameManager.Access.GetCurrentGold.ToString() + "g";
     }
 
     private void CloseMenu()
@@ -174,7 +176,7 @@ public class GameMenu : MonoBehaviour
 
         theMenu.SetActive(false);
 
-        GameManager.instance.SetGameMenuOpen(false);
+        GameManager.Access.SetGameMenuOpen(false);
 
         itemCharChoiceMenu.SetActive(false);
     }
@@ -211,17 +213,17 @@ public class GameMenu : MonoBehaviour
 
     public void ShowItems()
     {
-        GameManager.instance.SortItems();
+        GameManager.Access.SortItems();
 
         for (int i = 0 ; i < itemButtons.Length ; i++)
         {
             itemButtons[i].SetValue(i);
 
-            if (GameManager.instance.GetItemsHeld[i] != "")
+            if (GameManager.Access.GetItemsHeld[i] != "")
             {
                 itemButtons[i].GetImage.gameObject.SetActive(true);
-                itemButtons[i].GetImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[i]).GetSprite;
-                itemButtons[i].GetAmount.text = GameManager.instance.GetNumberOfItems[i].ToString();
+                itemButtons[i].GetImage.sprite = GameManager.Access.GetItemDetails(GameManager.Access.GetItemsHeld[i]).GetSprite;
+                itemButtons[i].GetAmount.text = GameManager.Access.GetNumberOfItems[i].ToString();
             }
             else
             {
@@ -289,7 +291,7 @@ public class GameMenu : MonoBehaviour
     {
         if (activeItem != null)
         {
-            GameManager.instance.RemoveItem(activeItem.GetName);
+            GameManager.Access.RemoveItem(activeItem.GetName);
         }
     }
 
@@ -299,8 +301,8 @@ public class GameMenu : MonoBehaviour
 
         for (int i = 0; i < itemCharChoiceNames.Length; i++)
         {
-            itemCharChoiceNames[i].text = GameManager.instance.GetCharacterStats[i].GetCharacterName;
-            itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.instance.GetCharacterStats[i].gameObject.activeInHierarchy);
+            itemCharChoiceNames[i].text = GameManager.Access.GetCharacterStats[i].GetCharacterName;
+            itemCharChoiceNames[i].transform.parent.gameObject.SetActive(GameManager.Access.GetCharacterStats[i].gameObject.activeInHierarchy);
         }
     }
 
@@ -312,19 +314,19 @@ public class GameMenu : MonoBehaviour
 
     public void SaveGame()
     {
-        GameManager.instance.SaveData();
+        GameManager.Access.SaveData();
         QuestManager.instance.SaveQuestData();
     }
 
-    public void PlayButtonSound() => AudioManager.instance.PlaySFX(4);
+    public void PlayButtonSound() => AudioManager.Access.PlaySFX(4);
 
     public void QuitGame()
     {
         SceneManager.LoadScene(mainMenuName);
 
-        Destroy(GameManager.instance.gameObject);
-        Destroy(PlayerController.instance.gameObject);
-        Destroy(AudioManager.instance.gameObject);
+        Destroy(GameManager.Access.gameObject);
+        Destroy(PlayerController.Access.gameObject);
+        Destroy(AudioManager.Access.gameObject);
         Destroy(gameObject);
     }
 

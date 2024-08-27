@@ -18,20 +18,22 @@ public class AudioManager : MonoBehaviour
     //SINGLETON
     #region Singleton
 
-    public static AudioManager instance;
+    private static AudioManager mInstance;
 
     private void Singleton()
     {
-        if (instance != null && instance != this)
+        if (mInstance != null && mInstance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            instance = this;
+            mInstance = this;
             DontDestroyOnLoad(this);
         }
     }
+
+    public static AudioManager Access => mInstance;
 
     #endregion
 

@@ -109,13 +109,13 @@ public class Inn : MonoBehaviour
 #pragma warning disable IDE0051
     private void Update ()
     {
-        if (canOpen && Input.GetButtonDown(INTERACT) && PlayerController.instance.GetCanMove && !Shop.instance.shopMenu.activeInHierarchy)
+        if (canOpen && Input.GetButtonDown(INTERACT) && PlayerController.Access.GetCanMove && !Shop.instance.shopMenu.activeInHierarchy)
         {
             s_downstairsTransitionName = downstairsEntrance?.GetTransitionName;
             s_downstairsTransitionPosition = downstairsEntrance?.transform.position;
             s_downstairsSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
             s_goldCost = goldCost;
-            GameManager.instance.ModalPromptInn(goldCost);
+            GameManager.Access.ModalPromptInn(goldCost);
         }
 	}
 #pragma warning restore IDE0051
@@ -125,8 +125,8 @@ public class Inn : MonoBehaviour
 
     public static void WarpUpstairs()
     {
-        GameManager.instance.SetCurrentGold(GameManager.instance.GetCurrentGold - s_goldCost);
-        PlayerController.instance.SetAreaTransitionName(UPSTAIRS_SCENE_NAME);
+        GameManager.Access.SetCurrentGold(GameManager.Access.GetCurrentGold - s_goldCost);
+        PlayerController.Access.SetAreaTransitionName(UPSTAIRS_SCENE_NAME);
         SceneManager.LoadScene(UPSTAIRS_SCENE_NAME);
         isUpstairs = true;
     }

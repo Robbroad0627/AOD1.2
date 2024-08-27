@@ -61,7 +61,7 @@ public class Boat : MonoBehaviour
     {
         if (isPlayerOnBoat)
         {
-            PlayerController pc = PlayerController.instance;
+            PlayerController pc = PlayerController.Access;
 
             if (pc != null) 
             {

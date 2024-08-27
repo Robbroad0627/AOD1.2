@@ -19,20 +19,22 @@ public class GameManager : MonoBehaviour
     //SINGLETON
     #region Singleton
 
-    public static GameManager instance;
+    private static GameManager mInstance;
 
     private void Singleton()
     {
-        if (instance != null && instance != this)
+        if (mInstance != null && mInstance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            instance = this;
+            mInstance = this;
             DontDestroyOnLoad(this);
         }
     }
+
+    public static GameManager Access => mInstance;
 
     #endregion
 
@@ -89,29 +91,29 @@ public class GameManager : MonoBehaviour
     //FUNCTIONS
     #region Initialization Functions/Methods
 
+#pragma warning disable IDE0051
     private void Awake() => Singleton();
+#pragma warning restore IDE0051
 
-    private void Start()
-    {
-        instance = this;
-        DontDestroyOnLoad(gameObject);
-        SortItems();
-    }
+#pragma warning disable IDE0051
+    private void Start() => SortItems();
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update()
     {
         if (GameObject.Find(PLAYER))
         {
             if (gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive || Boat.isPlayerOnBoat)
             {
-                PlayerController.instance.SetCanMove(false);
+                PlayerController.Access.SetCanMove(false);
             }
             else
             {
-                PlayerController.instance.SetCanMove(true);
+                PlayerController.Access.SetCanMove(true);
             }
 
             #if UNITY_EDITOR
@@ -137,6 +139,8 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+#pragma warning restore IDE0051
 
     #endregion
     #region Public Functions/Methods
@@ -230,7 +234,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        GameMenu.instance.ShowItems();
+        GameMenu.Access.ShowItems();
     }
 
     public void RemoveItem(string itemToRemove)
@@ -258,7 +262,7 @@ public class GameManager : MonoBehaviour
                 itemsHeld[itemPosition] = "";
             }
 
-            GameMenu.instance.ShowItems();
+            GameMenu.Access.ShowItems();
         }
         else
         {
@@ -266,11 +270,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ModalPromptSaveGame() => DialogManager.instance.Prompt("Do you want to save the game now?", SaveData, null);
+    public void ModalPromptSaveGame() => DialogManager.Access.Prompt("Do you want to save the game now?", SaveData, null);
 
     public void ModalPromptBoatTrip(int goldCost)
     {
-        DialogManager dialogManager = DialogManager.instance;
+        DialogManager dialogManager = DialogManager.Access;
 
         if (currentGold >= goldCost)
         {
@@ -280,7 +284,7 @@ public class GameManager : MonoBehaviour
 
     public void ModalPromptInn(int goldCost)
     {
-        DialogManager dialogManager = DialogManager.instance;
+        DialogManager dialogManager = DialogManager.Access;
 
         if (currentGold >= goldCost)
         {
@@ -305,7 +309,7 @@ public class GameManager : MonoBehaviour
         else
         {
             StorePlayerScene(SceneManager.GetActiveScene().name);
-            StorePlayerPosition(PlayerController.instance.transform.position);
+            StorePlayerPosition(PlayerController.Access.transform.position);
         }
 
         CharStats playerCharacter = playerStats[0];
@@ -340,7 +344,7 @@ public class GameManager : MonoBehaviour
 
         questManager.isReady = false;
 
-        PlayerController playerCharacter = PlayerController.instance;
+        PlayerController playerCharacter = PlayerController.Access;
 
         if (playerCharacter == null)
         {
@@ -348,7 +352,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        PlayerController.instance.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
+        PlayerController.Access.transform.position = new Vector3(PlayerPrefs.GetFloat("Player_Position_x"), PlayerPrefs.GetFloat("Player_Position_y"), PlayerPrefs.GetFloat("Player_Position_z"));
 
         //Load the player
         LoadCharacterByName(playerStats[0], PLAYER_PREFERENCE_KEY);
@@ -384,13 +388,13 @@ public class GameManager : MonoBehaviour
     
     private void PortChoice()
     {
-        DialogManager dialogManager = DialogManager.instance;
+        DialogManager dialogManager = DialogManager.Access;
         BoatCaptain captian = FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = true;
-        var nextContinent = captian.nextContinent;
-        var preContinent = captian.previousContinent;
-        var nextAreatoLoad = captian.nextAreaToLoad;
-        var preAreatoLoad = captian.previousAreaToLoad;
+        string nextContinent = captian.nextContinent;
+        string preContinent = captian.previousContinent;
+        string nextAreatoLoad = captian.nextAreaToLoad;
+        string preAreatoLoad = captian.previousAreaToLoad;
         dialogManager.PortPrompt($"Where would you like to go?", NextPortChoice, PreviousPortChoice, $"{nextContinent} - {nextAreatoLoad}", $"{preContinent} - {preAreatoLoad}", "Boat Captian");
     }
 

@@ -20,20 +20,22 @@ public class DialogManager : MonoBehaviour
     //SINGLETON
     #region Singleton
 
-    public static DialogManager instance;
+    private static DialogManager mInstance;
 
     private void Singleton()
     {
-        if (instance != null && instance != this)
+        if (mInstance != null && mInstance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            instance = this;
+            mInstance = this;
             DontDestroyOnLoad(this);
         }
     }
+
+    public static DialogManager Access => mInstance;
 
     #endregion
 
@@ -138,7 +140,7 @@ public class DialogManager : MonoBehaviour
         {
             dialogBox.SetActive(false);
 
-            GameManager.instance.SetDialogActive(false);
+            GameManager.Access.SetDialogActive(false);
 
             if (mShouldMarkQuest)
             {
@@ -167,7 +169,7 @@ public class DialogManager : MonoBehaviour
         if (mDialogLines[mCurrentLine].StartsWith(NPC))
         {
             nameText.text = mDialogLines[mCurrentLine].Replace(NPC, "");
-            nameText.text = nameText.text == PLAYER ? GameManager.instance.GetPlayerName : nameText.text;
+            nameText.text = nameText.text == PLAYER ? GameManager.Access.GetPlayerName : nameText.text;
             mCurrentLine++;
         }
     }
@@ -199,7 +201,7 @@ public class DialogManager : MonoBehaviour
         dialogBox.SetActive(true);
         mJustStarted = true;
         nameBox.SetActive(isPerson);
-        GameManager.instance.SetDialogActive(true);
+        GameManager.Access.SetDialogActive(true);
     }
 
     public void ShouldActivateQuestAtEnd(string questName, bool markComplete)

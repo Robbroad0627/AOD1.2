@@ -74,7 +74,7 @@ public class InnUpstairsExit :MonoBehaviour
     {
         if (other.CompareTag(PLAYER))
         {
-            if (needBoat && !GameManager.instance.GetHasBoat)
+            if (needBoat && !GameManager.Access.GetHasBoat)
             {
                 //Cant use boat area without one.
                 Debug.Log("Area needs boat but GameManager.GetHasBoat == false");
@@ -83,7 +83,7 @@ public class InnUpstairsExit :MonoBehaviour
 
             enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
             mDoesLoadAfterFade = true;
-            GameManager.instance.SetFadingBetweenAreas(true);
+            GameManager.Access.SetFadingBetweenAreas(true);
 
             UIFade.instance.FadeToBlack();
         }

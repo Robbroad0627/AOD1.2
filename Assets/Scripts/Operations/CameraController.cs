@@ -42,7 +42,7 @@ public class CameraController : MonoBehaviour
 #pragma warning disable IDE0051
     private void Start ()
     {
-        PlayerController thePlayerController = PlayerController.instance;
+        PlayerController thePlayerController = PlayerController.Access;
 
         if (thePlayerController != null)
         {

@@ -81,7 +81,6 @@ public class QuestManager : MonoBehaviour {
     }
     internal string[] GetActiveButNotCompleteQuestsNames()
     {
-#warning HACK:There is no distinction between a quest that is active and one that is incomplete
         return GetActiveQuestsNames();
     }
 

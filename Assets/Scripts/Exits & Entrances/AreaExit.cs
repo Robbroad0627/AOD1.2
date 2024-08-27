@@ -50,13 +50,13 @@ public class AreaExit : MonoBehaviour
     {
         if (other.CompareTag(PLAYER))
         {
-            if (needBoat && !GameManager.instance.GetHasBoat)
+            if (needBoat && !GameManager.Access.GetHasBoat)
             {
                 //Cant use boat area without one.
                 Debug.Log("Area needs boat but GameManager.haveBoat == false");
                 return;
             }
-            else if (needBoat && GameManager.instance.GetHasBoat)
+            else if (needBoat && GameManager.Access.GetHasBoat)
             {
                 portController.PlayerEnterBoat(areaToLoad, areaTransitionName);                
                 //shouldRunAnimationBeforeFade = true;
@@ -66,11 +66,11 @@ public class AreaExit : MonoBehaviour
                 enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
                                     //SceneManager.LoadScene(areaToLoad);
                 mShouldLoadAfterFade = true;
-                GameManager.instance.SetFadingBetweenAreas(true);
+                GameManager.Access.SetFadingBetweenAreas(true);
 
                 UIFade.instance.FadeToBlack();
 
-                PlayerController.instance.SetAreaTransitionName(areaTransitionName);
+                PlayerController.Access.SetAreaTransitionName(areaTransitionName);
             }
         }
     }
@@ -100,11 +100,11 @@ public class AreaExit : MonoBehaviour
                 enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
                                     //SceneManager.LoadScene(areaToLoad);
                 mShouldLoadAfterFade = true;
-                GameManager.instance.SetFadingBetweenAreas(true);
+                GameManager.Access.SetFadingBetweenAreas(true);
 
                 UIFade.instance.FadeToBlack();
 
-                PlayerController.instance.SetAreaTransitionName(areaTransitionName);
+                PlayerController.Access.SetAreaTransitionName(areaTransitionName);
                 mShouldRunAnimationBeforeFade = false;
             }
         }

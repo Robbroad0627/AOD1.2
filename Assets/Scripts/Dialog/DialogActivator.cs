@@ -76,10 +76,10 @@ public class DialogActivator : MonoBehaviour
 #pragma warning disable IDE0051
     private void Update ()
     {
-		if (mCanActivate && Input.GetButtonDown(INTERACT) && !DialogManager.instance.GetDialogBox.activeInHierarchy)
+		if (mCanActivate && Input.GetButtonDown(INTERACT) && !DialogManager.Access.GetDialogBox.activeInHierarchy)
         {
-            DialogManager.instance.ShowDialog(lines, isPerson);
-            DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
+            DialogManager.Access.ShowDialog(lines, isPerson);
+            DialogManager.Access.ShouldActivateQuestAtEnd(questToMark, markComplete);
         }
 	}
 #pragma warning restore IDE0051

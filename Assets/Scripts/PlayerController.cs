@@ -19,20 +19,22 @@ public class PlayerController : MonoBehaviour
     //SINGLETON
     #region Singleton
 
-    public static PlayerController instance;
+    private static PlayerController mInstance;
 
     private void Singleton()
     {
-        if (instance != null && instance != this)
+        if (mInstance != null && mInstance != this)
         {
             Destroy(gameObject);
         }
         else
         {
-            instance = this;
+            mInstance = this;
             DontDestroyOnLoad(this);
         }
     }
+
+    public static PlayerController Access => mInstance;
 
     #endregion
 

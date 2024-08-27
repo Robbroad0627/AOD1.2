@@ -40,7 +40,7 @@ public class AreaEntrance : MonoBehaviour
 #pragma warning disable IDE0051
     private void Start ()
 	{
-		if (transitionName == PlayerController.instance.GetAreaTransitionName)
+		if (transitionName == PlayerController.Access.GetAreaTransitionName)
         {
 			if (isPort && Boat.boatLeftPort)
 			{
@@ -48,12 +48,12 @@ public class AreaEntrance : MonoBehaviour
 			}
 			else
 			{
-				PlayerController.instance.transform.position = transform.position;
+				PlayerController.Access.transform.position = transform.position;
             }
         }
 
         UIFade.instance.FadeFromBlack();
-        GameManager.instance.SetFadingBetweenAreas(false);
+        GameManager.Access.SetFadingBetweenAreas(false);
 	}
 #pragma warning restore IDE0051
 
@@ -63,12 +63,12 @@ public class AreaEntrance : MonoBehaviour
 #pragma warning disable IDE0051
     private void Update ()
 	{
-        if (transitionName == PlayerController.instance.GetAreaTransitionName)
+        if (transitionName == PlayerController.Access.GetAreaTransitionName)
         {
 			if (!Boat.isPlayerOnBoat)
 			{
-                PlayerController.instance.transform.position = transform.position;
-				PlayerController.instance.SetAreaTransitionName(null);
+                PlayerController.Access.transform.position = transform.position;
+				PlayerController.Access.SetAreaTransitionName(null);
 			}
         }
     }

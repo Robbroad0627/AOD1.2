@@ -41,25 +41,24 @@ public class EssentialsLoader : MonoBehaviour
             UIFade.instance = Instantiate(UIScreen).GetComponent<UIFade>();
         }
 
-        if (PlayerController.instance == null)
+        if (PlayerController.Access == null)
         {
-            PlayerController clone = Instantiate(player).GetComponent<PlayerController>();
-            PlayerController.instance = clone;
+            Instantiate(player).GetComponent<PlayerController>();
         }
 
-        if (GameManager.instance == null)
+        if (GameManager.Access == null)
         {
-            GameManager.instance = Instantiate(gameMan).GetComponent<GameManager>();
+            Instantiate(gameMan).GetComponent<GameManager>();
         }
 
-        if (AudioManager.instance == null)
+        if (AudioManager.Access == null)
         {
-            AudioManager.instance = Instantiate(audioMan).GetComponent<AudioManager>();
+            Instantiate(audioMan).GetComponent<AudioManager>();
         }
 
-        if (BattleManager.instance == null)
+        if (BattleManager.Access == null)
         {
-            BattleManager.instance = Instantiate(battleMan).GetComponent<BattleManager>();
+            Instantiate(battleMan).GetComponent<BattleManager>();
         }
 	}
 #pragma warning restore IDE0051

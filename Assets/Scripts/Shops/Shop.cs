@@ -42,15 +42,15 @@ public class Shop : MonoBehaviour {
         shopMenu.SetActive(true);
         OpenBuyMenu();
 
-        GameManager.instance.SetShopActive(true);
+        GameManager.Access.SetShopActive(true);
 
-        goldText.text = GameManager.instance.GetCurrentGold.ToString() + "g";
+        goldText.text = GameManager.Access.GetCurrentGold.ToString() + "g";
     }
 
     public void CloseShop()
     {
         shopMenu.SetActive(false);
-        GameManager.instance.SetShopActive(false);
+        GameManager.Access.SetShopActive(false);
     }
 
     public void OpenBuyMenu()
@@ -67,7 +67,7 @@ public class Shop : MonoBehaviour {
             if (itemsForSale[i] != "")
             {
                 buyItemButtons[i].GetImage.gameObject.SetActive(true);
-                buyItemButtons[i].GetImage.sprite = GameManager.instance.GetItemDetails(itemsForSale[i]).GetSprite;
+                buyItemButtons[i].GetImage.sprite = GameManager.Access.GetItemDetails(itemsForSale[i]).GetSprite;
                 buyItemButtons[i].GetAmount.text = "";
             }
             else
@@ -91,16 +91,16 @@ public class Shop : MonoBehaviour {
 
     private void ShowSellItems()
     {
-        GameManager.instance.SortItems();
+        GameManager.Access.SortItems();
         for (int i = 0; i < sellItemButtons.Length; i++)
         {
             sellItemButtons[i].SetValue(i);
 
-            if (GameManager.instance.GetItemsHeld[i] != "")
+            if (GameManager.Access.GetItemsHeld[i] != "")
             {
                 sellItemButtons[i].GetImage.gameObject.SetActive(true);
-                sellItemButtons[i].GetImage.sprite = GameManager.instance.GetItemDetails(GameManager.instance.GetItemsHeld[i]).GetSprite;
-                sellItemButtons[i].GetAmount.text = GameManager.instance.GetNumberOfItems[i].ToString();
+                sellItemButtons[i].GetImage.sprite = GameManager.Access.GetItemDetails(GameManager.Access.GetItemsHeld[i]).GetSprite;
+                sellItemButtons[i].GetAmount.text = GameManager.Access.GetNumberOfItems[i].ToString();
             }
             else
             {
@@ -130,27 +130,27 @@ public class Shop : MonoBehaviour {
     {
         if (selectedItem != null)
         {
-            if (GameManager.instance.GetCurrentGold >= selectedItem.GetValue)
+            if (GameManager.Access.GetCurrentGold >= selectedItem.GetValue)
             {
-                GameManager.instance.SetCurrentGold(GameManager.instance.GetCurrentGold - selectedItem.GetValue);
+                GameManager.Access.SetCurrentGold(GameManager.Access.GetCurrentGold - selectedItem.GetValue);
 
-                GameManager.instance.AddItem(selectedItem.GetName);
+                GameManager.Access.AddItem(selectedItem.GetName);
             }
         }
 
-        goldText.text = GameManager.instance.GetCurrentGold.ToString() + "g";
+        goldText.text = GameManager.Access.GetCurrentGold.ToString() + "g";
     }
 
     public void SellItem()
     {
         if(selectedItem != null)
         {
-            GameManager.instance.SetCurrentGold(GameManager.instance.GetCurrentGold + Mathf.FloorToInt(selectedItem.GetValue * .5f));
+            GameManager.Access.SetCurrentGold(GameManager.Access.GetCurrentGold + Mathf.FloorToInt(selectedItem.GetValue * .5f));
 
-            GameManager.instance.RemoveItem(selectedItem.GetName);
+            GameManager.Access.RemoveItem(selectedItem.GetName);
         }
 
-        goldText.text = GameManager.instance.GetCurrentGold.ToString() + "g";
+        goldText.text = GameManager.Access.GetCurrentGold.ToString() + "g";
 
         ShowSellItems();
     }
