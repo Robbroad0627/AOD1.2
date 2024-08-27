@@ -1,57 +1,94 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: GameMenu.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 26, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-//Bonehead Games
+public class GameMenu : MonoBehaviour
+{
+    //SINGLETON
+    #region Singleton
 
-public class GameMenu : MonoBehaviour {
-    public GameObject minimap;
-    public GameObject theMenu;
-    public GameObject[] windows;
+    public static GameMenu instance;
+
+    private void Singleton()
+    {
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+    }
+
+    #endregion
+
+    [SerializeField] private GameObject minimap;
+    [SerializeField] private GameObject theMenu;
+    [SerializeField] private GameObject[] windows;
+    [SerializeField] private Text[] nameText;
+    [SerializeField] private Text[] hpText;
+    [SerializeField] private Text[] mpText;
+    [SerializeField] private Text[] lvlText;
+    [SerializeField] private Text[] expText;
+    [SerializeField] private Slider[] expSlider;
+    [SerializeField] private Image[] charImage;
+    [SerializeField] private GameObject[] charStatHolder;
+    [SerializeField] private GameObject[] statusButtons;
+    [SerializeField] private Text statusName;
+    [SerializeField] private Text statusHP;
+    [SerializeField] private Text statusMP;
+    [SerializeField] private Text statusStr;
+    [SerializeField] private Text statusDef;
+    [SerializeField] private Text statusWpnEqpd;
+    [SerializeField] private Text statusWpnPwr;
+    [SerializeField] private Text statusArmrEqpd;
+    [SerializeField] private Text statusArmrPwr;
+    [SerializeField] private Text statusExp;
+    [SerializeField] private Image statusImage;
+    [SerializeField] private ItemButton[] itemButtons;
+    [SerializeField] private string selectedItem;
+    [SerializeField] private Item activeItem;
+    [SerializeField] private Text itemName;
+    [SerializeField] private Text itemDescription;
+    [SerializeField] private Text useButtonText;
+    [SerializeField] private GameObject itemCharChoiceMenu;
+    [SerializeField] private Text[] itemCharChoiceNames;
+    [SerializeField] private Text goldText;
+    [SerializeField] private string mainMenuName;
 
     private CharStats[] playerStats;
 
-    public Text[] nameText, hpText, mpText, lvlText, expText;
-    public Slider[] expSlider;
-    public Image[] charImage;
-    public GameObject[] charStatHolder;
+    public GameObject GetTheMenu => theMenu;
 
-    public GameObject[] statusButtons;
+    private void Awake()
+    {
+        Singleton();
+    }
 
-    public Text statusName, statusHP, statusMP, statusStr, statusDef, statusWpnEqpd, statusWpnPwr, statusArmrEqpd, statusArmrPwr, statusExp;
-    public Image statusImage;
-
-    public ItemButton[] itemButtons;
-    public string selectedItem;
-    public Item activeItem;
-    public Text itemName, itemDescription, useButtonText;
-
-    public GameObject itemCharChoiceMenu;
-    public Text[] itemCharChoiceNames;
-
-    public static GameMenu instance;
-    public Text goldText;
-
-    public string mainMenuName;
-
-    // Use this for initialization
-    void Start () {
-        instance = this;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetButtonDown("Fire2"))
+    private void Update ()
+    {
+		if (Input.GetButtonDown("Fire2"))
         {
-            if(theMenu.activeInHierarchy)
+            if (theMenu.activeInHierarchy)
             {
-                //theMenu.SetActive(false);
-                //GameManager.instance.gameMenuOpen = false;
-
                 CloseMenu();
-            } else
+            }
+            else
             {
                 theMenu.SetActive(true);
                 UpdateMainStats();
@@ -75,12 +112,11 @@ public class GameMenu : MonoBehaviour {
     {
         playerStats = GameManager.instance.GetCharacterStats;
 
-        for(int i = 0; i < playerStats.Length; i++)
+        for (int i = 0; i < playerStats.Length; i++)
         {
-            if(playerStats[i].gameObject.activeInHierarchy)
+            if (playerStats[i].gameObject.activeInHierarchy)
             {
                 charStatHolder[i].SetActive(true);
-
                 nameText[i].text = playerStats[i].GetCharacterName;
                 hpText[i].text = "HP: " + playerStats[i].GetCurrentHP + "/" + playerStats[i].GetMaxHP;
                 mpText[i].text = "MP: " + playerStats[i].GetCurrentMP + "/" + playerStats[i].GetMaxMP;
@@ -89,7 +125,8 @@ public class GameMenu : MonoBehaviour {
                 expSlider[i].maxValue = playerStats[i].GetXPToNextLevel[playerStats[i].GetLevel];
                 expSlider[i].value = playerStats[i].GetCurrentXP;
                 charImage[i].sprite = playerStats[i].GetSprite;
-            } else
+            }
+            else
             {
                 charStatHolder[i].SetActive(false);
             }
@@ -102,12 +139,13 @@ public class GameMenu : MonoBehaviour {
     {
         UpdateMainStats();
 
-        for(int i = 0; i < windows.Length; i++)
+        for (int i = 0; i < windows.Length; i++)
         {
-            if(i == windowNumber)
+            if (i == windowNumber)
             {
                 windows[i].SetActive(!windows[i].activeInHierarchy);
-            } else
+            }
+            else
             {
                 windows[i].SetActive(false);
             }
@@ -118,7 +156,7 @@ public class GameMenu : MonoBehaviour {
 
     public void CloseMenu()
     {
-        for(int i = 0; i < windows.Length; i++)
+        for (int i = 0; i < windows.Length; i++)
         {
             windows[i].SetActive(false);
         }
@@ -137,7 +175,7 @@ public class GameMenu : MonoBehaviour {
         //update the information that is shown
         StatusChar(0);
 
-        for(int i = 0; i < statusButtons.Length; i++)
+        for (int i = 0; i < statusButtons.Length; i++)
         {
             statusButtons[i].SetActive(playerStats[i].gameObject.activeInHierarchy);
             statusButtons[i].GetComponentInChildren<Text>().text = playerStats[i].GetCharacterName;
@@ -195,12 +233,12 @@ public class GameMenu : MonoBehaviour {
     {
         activeItem = newItem;
 
-        if(activeItem.isItem)
+        if (activeItem.isItem)
         {
             useButtonText.text = "Use";
         }
 
-        if(activeItem.isWeapon || activeItem.isArmour)
+        if (activeItem.isWeapon || activeItem.isArmour)
         {
             useButtonText.text = "Equip";
         }
@@ -211,7 +249,7 @@ public class GameMenu : MonoBehaviour {
 
     public void DiscardItem()
     {
-        if(activeItem != null)
+        if (activeItem != null)
         {
             GameManager.instance.RemoveItem(activeItem.itemName);
         }
