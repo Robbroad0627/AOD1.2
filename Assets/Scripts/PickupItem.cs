@@ -31,6 +31,7 @@ public class PickupItem : MonoBehaviour
     //FUNCTIONS
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update ()
     {
 		if (mCanPickup && Input.GetButtonDown(INTERACT) && PlayerController.instance.GetCanMove)
@@ -39,10 +40,12 @@ public class PickupItem : MonoBehaviour
             Destroy(gameObject);
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Physics Functions/MEthods
 
+#pragma warning disable IDE0051
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -50,7 +53,9 @@ public class PickupItem : MonoBehaviour
             mCanPickup = true;
         }
     }
+#pragma warning restore IDE0051
 
+#pragma warning disable IDE0051
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -58,6 +63,7 @@ public class PickupItem : MonoBehaviour
             mCanPickup = false;
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
 }

@@ -59,7 +59,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int[] numberOfItems = null;
     [SerializeField] private Item[] referenceItems = null;
     [SerializeField] private int currentGold = 0;
-    [SerializeField] private bool dataLoadedOnce = false;
     [SerializeField] private bool haveBoat = false;
 
     #endregion
@@ -90,10 +89,7 @@ public class GameManager : MonoBehaviour
     //FUNCTIONS
     #region Initialization Functions/Methods
 
-    private void Awake()
-    {
-        Singleton();
-    }
+    private void Awake() => Singleton();
 
     private void Start()
     {
@@ -270,14 +266,11 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ModalPromptSaveGame()
-    {
-        DialogManager.instance.Prompt("Do you want to save the game now?", SaveData, null);
-    }
+    public void ModalPromptSaveGame() => DialogManager.instance.Prompt("Do you want to save the game now?", SaveData, null);
 
     public void ModalPromptBoatTrip(int goldCost)
     {
-        var dialogManager = DialogManager.instance;
+        DialogManager dialogManager = DialogManager.instance;
 
         if (currentGold >= goldCost)
         {
@@ -287,7 +280,7 @@ public class GameManager : MonoBehaviour
 
     public void ModalPromptInn(int goldCost)
     {
-        var dialogManager = DialogManager.instance;
+        DialogManager dialogManager = DialogManager.instance;
 
         if (currentGold >= goldCost)
         {
@@ -315,7 +308,7 @@ public class GameManager : MonoBehaviour
             StorePlayerPosition(PlayerController.instance.transform.position);
         }
 
-        var playerCharacter = playerStats[0];
+        CharStats playerCharacter = playerStats[0];
 
         StoreCharacter(playerCharacter, PLAYER_PREFERENCE_KEY);
         SaveNonCustomCharacters();
@@ -328,7 +321,7 @@ public class GameManager : MonoBehaviour
         }
 
         //Store quests
-        var questManager = QuestManager.instance;
+        QuestManager questManager = QuestManager.instance;
         questManager.isReady = false;
         PlayerPrefs.SetString("QuestsAvailable", JsonUtility.ToJson(questManager.activeQuestNames));
         PlayerPrefs.SetString("QuestsComplete", JsonUtility.ToJson(questManager.completedQuestNames));
@@ -337,7 +330,7 @@ public class GameManager : MonoBehaviour
 
     public void LoadData()
     {
-        var questManager = QuestManager.instance;
+        QuestManager questManager = QuestManager.instance;
 
         if (questManager == null)
         {
@@ -346,9 +339,8 @@ public class GameManager : MonoBehaviour
         }
 
         questManager.isReady = false;
-        dataLoadedOnce = true;
 
-        var playerCharacter = PlayerController.instance;
+        PlayerController playerCharacter = PlayerController.instance;
 
         if (playerCharacter == null)
         {
@@ -383,7 +375,7 @@ public class GameManager : MonoBehaviour
 
     private void FullRestoreParty()
     {
-        foreach (var character in playerStats)
+        foreach (CharStats character in playerStats)
         {
             character.SetCurrentHP(character.GetMaxHP);
             character.SetCurrentMP(character.GetMaxMP);
@@ -392,8 +384,8 @@ public class GameManager : MonoBehaviour
     
     private void PortChoice()
     {
-        var dialogManager = DialogManager.instance;
-        var captian = FindObjectOfType<BoatCaptain>();
+        DialogManager dialogManager = DialogManager.instance;
+        BoatCaptain captian = FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = true;
         var nextContinent = captian.nextContinent;
         var preContinent = captian.previousContinent;
@@ -404,14 +396,14 @@ public class GameManager : MonoBehaviour
 
     private void NextPortChoice()
     {
-        var captian = FindObjectOfType<BoatCaptain>();
+        BoatCaptain captian = FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = false;
         captian.boatDestinationConfirmedNext = true;        
     }
 
     private void PreviousPortChoice()
     {
-        var captian = FindObjectOfType<BoatCaptain>();
+        BoatCaptain captian = FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = false;
         captian.boatDestinationConfirmedPre = true;
     }

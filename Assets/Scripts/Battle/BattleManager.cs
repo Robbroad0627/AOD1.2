@@ -86,7 +86,6 @@ public class BattleManager : MonoBehaviour
     private bool mIsFleeing;
     private bool mTurnWaiting;
     private bool mIsBattleActive;
-    private bool mIsBattlerReady;
     private int mRewardXP;
     private int mCurrentTurn;
     private int mOutsideBattleBGM;
@@ -115,11 +114,11 @@ public class BattleManager : MonoBehaviour
     //FUNCTIONS
     #region Initialization Methods/Functions
 
-    private void Awake()
-    {
-        Singleton();
-    }
+#pragma warning disable IDE0051
+    private void Awake() => Singleton();
+#pragma warning restore IDE0051
 
+#pragma warning disable IDE0051
     private void Start ()
     {
         mRewardXP = 0;
@@ -127,13 +126,14 @@ public class BattleManager : MonoBehaviour
         mCanFlee = false;
         mRewardItems = null;
         mTurnWaiting = false;
-        mIsBattlerReady = false;
         mActiveBattlers = new List<BattleChar>();
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Private Methods/Functions
 
+#pragma warning disable IDE0051
     private void Update ()
     {
 		if (Input.GetKeyDown(KeyCode.T))
@@ -164,6 +164,7 @@ public class BattleManager : MonoBehaviour
             }
         }
 	}
+#pragma warning restore IDE0051
 
     private void StartBattleMusic()
     {
@@ -324,7 +325,7 @@ public class BattleManager : MonoBehaviour
     {
         float atkPwr = mActiveBattlers[mCurrentTurn].GetStrength + mActiveBattlers[mCurrentTurn].GetWeaponPower;
         float defPwr = mActiveBattlers[target].GetDefence + mActiveBattlers[target].GetArmorPower;
-        float damageCalc = (atkPwr / defPwr) * movePower * Random.Range(.9f, 1.1f);
+        float damageCalc = ((atkPwr / defPwr) * movePower) * Random.Range(.9f, 1.1f);
         int damageToGive = Mathf.RoundToInt(damageCalc);
 
         Debug.Log(mActiveBattlers[mCurrentTurn].GetCharName + " is dealing " + damageCalc + "(" + damageToGive + ") damage to " + mActiveBattlers[target].GetCharName);
@@ -588,10 +589,7 @@ public class BattleManager : MonoBehaviour
     }
 
     [ContextMenu("Force End Battle")]
-    public void EndBattle()
-    {
-        StartCoroutine(EndBattleCo());
-    }
+    public void EndBattle() => StartCoroutine(EndBattleCo());
 
     #endregion
     #region Coroutines

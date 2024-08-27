@@ -34,7 +34,6 @@ public class BattleChar : MonoBehaviour
     [SerializeField] private int defence = 0;
     [SerializeField] private int wpnPower = 0;
     [SerializeField] private int armrPower = 0;
-    [SerializeField] private bool hasDied = false;
     [SerializeField] private SpriteRenderer theSprite = null;
     [SerializeField] private Sprite deadSprite = null;
     [SerializeField] private Sprite aliveSprite = null;
@@ -85,15 +84,18 @@ public class BattleChar : MonoBehaviour
     //FUNCTIONS
     #region Initialization Methods/Functions
 
+#pragma warning disable IDE0051
     private void Start()
     {
         mShouldFade = false;
         theSprite.sprite = aliveSprite;
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Private Methods/Functions
 
+#pragma warning disable IDE0051
     private void Update()
     {
         if (mShouldFade)
@@ -109,14 +111,12 @@ public class BattleChar : MonoBehaviour
             }
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Public Functions/Methods
 
-    public void EnemyFade()
-    {
-        mShouldFade = true;
-    }
+    public void EnemyFade() => mShouldFade = true;
 
     public static implicit operator BattleChar(CharStats v)
     {

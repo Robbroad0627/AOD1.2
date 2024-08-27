@@ -30,7 +30,6 @@ public class DialogActivator : MonoBehaviour
     // reference this script.
     [SerializeField] private string[] lines = null;
     [SerializeField] private bool isPerson = true;
-    [SerializeField] private bool shouldActivateQuest = false;
     [SerializeField] private string questToMark = "";
     [SerializeField] private bool markComplete = false;
 
@@ -44,14 +43,14 @@ public class DialogActivator : MonoBehaviour
     //FUNCTIONS
     #region Initialization Functions/Methods
 
-    private void Start ()
-    {
-        mCanActivate = false;
-	}
+#pragma warning disable IDE0051
+    private void Start () => mCanActivate = false;
+#pragma warning restore IDE0051
 
     #endregion
     #region Physics Functions/Methods
 
+#pragma warning disable IDE0051
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -59,7 +58,9 @@ public class DialogActivator : MonoBehaviour
             mCanActivate = true;
         }
     }
+#pragma warning restore IDE0051
 
+#pragma warning disable IDE0051
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -67,10 +68,12 @@ public class DialogActivator : MonoBehaviour
             mCanActivate = false;
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update ()
     {
 		if (mCanActivate && Input.GetButtonDown(INTERACT) && !DialogManager.instance.GetDialogBox.activeInHierarchy)
@@ -79,6 +82,7 @@ public class DialogActivator : MonoBehaviour
             DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
 }

@@ -59,11 +59,12 @@ public class Inn : MonoBehaviour
     //FUCNTIONS
     #region Initialization Functions/Methods
 
+#pragma warning disable IDE0051
     private void Start ()
     {
 		if (downstairsEntrance == null)
         {
-            var areaEntrance = FindObjectOfType<AreaEntrance>();
+            AreaEntrance areaEntrance = FindObjectOfType<AreaEntrance>();
 
             if (areaEntrance == null)
             {
@@ -77,10 +78,12 @@ public class Inn : MonoBehaviour
             s_downstairsTransitionName = areaEntrance.GetTransitionName;
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Physics Functions/Methods
 
+#pragma warning disable IDE0051
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -88,7 +91,9 @@ public class Inn : MonoBehaviour
             canOpen = true;
         }
     }
+#pragma warning restore IDE0051
 
+#pragma warning disable IDE0051
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -96,10 +101,12 @@ public class Inn : MonoBehaviour
             canOpen = false;
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update ()
     {
         if (canOpen && Input.GetButtonDown(INTERACT) && PlayerController.instance.GetCanMove && !Shop.instance.shopMenu.activeInHierarchy)
@@ -111,6 +118,7 @@ public class Inn : MonoBehaviour
             GameManager.instance.ModalPromptInn(goldCost);
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Public Functions/Methods

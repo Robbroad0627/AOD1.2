@@ -84,11 +84,11 @@ public class DialogManager : MonoBehaviour
     //FUNCTIONS
     #region Initialization Functions/Methods
 
-    private void Awake()
-    {
-        Singleton();
-    }
+#pragma warning disable IDE0051
+    private void Awake() => Singleton();
+#pragma warning restore IDE0051
 
+#pragma warning disable IDE0051
     private void Start()
     {
         mCurrentLine = 0;
@@ -99,10 +99,12 @@ public class DialogManager : MonoBehaviour
         mMarkQuestComplete = false;
         mAdvanceDialogOnClick = true;
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update ()
     {
         if (dialogBox.activeInHierarchy)
@@ -123,6 +125,7 @@ public class DialogManager : MonoBehaviour
             }
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Private Functions/Methods
@@ -240,7 +243,7 @@ public class DialogManager : MonoBehaviour
 
     public void ExecuteNoAction()
     {
-        var captian = BoatCaptain.FindObjectOfType<BoatCaptain>();
+        BoatCaptain captian = FindObjectOfType<BoatCaptain>();
         captian.boatTripConfirmed = false;
         mNoAction?.Invoke();
         promptArea.SetActive(false);

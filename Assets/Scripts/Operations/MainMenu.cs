@@ -23,7 +23,6 @@ public class MainMenu : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private string newGameScene = null;
     [SerializeField] private GameObject continueButton = null;
     [SerializeField] private string loadGameScene = null;
     [SerializeField] private string instructions = null;
@@ -63,100 +62,43 @@ public class MainMenu : MonoBehaviour
     #endregion
     #region Public Functions/Methods
 
-    public void Continue()
-    {
-        SceneManager.LoadScene(loadGameScene);
-    }
+    public void Continue() => SceneManager.LoadScene(loadGameScene);
 
-    public void NewGame()
-    {
-        SceneManager.LoadScene("CharCreation");
-    }
+    public void NewGame() => SceneManager.LoadScene("CharCreation");
 
-    public void Instructions()
-    {
-        SceneManager.LoadScene("Instructions");
-    }
+    public void Instructions() => SceneManager.LoadScene("Instructions");
 
-    public void Exit()
-    {
-        Application.Quit();
-    }
+    public void Exit() => Application.Quit();
 
-    public void Races()
-    {
-        SceneManager.LoadScene("Races");
-    }
+    public void Races() => SceneManager.LoadScene("Races");
 
-    public void Classes()
-    {
-        SceneManager.LoadScene("Classes");
-    }
+    public void Classes() => SceneManager.LoadScene("Classes");
 
-    public void Dwarf()
-    {
-        SceneManager.LoadScene("Dwarf");
-    }
+    public void Dwarf() => SceneManager.LoadScene("Dwarf");
 
-    public void Elf()
-    {
-        SceneManager.LoadScene("Elf");
-    }
+    public void Elf() => SceneManager.LoadScene("Elf");
 
-    public void Human()
-    {
-        SceneManager.LoadScene("Human");
-    }
+    public void Human() => SceneManager.LoadScene("Human");
 
-    public void Halfling()
-    {
-        SceneManager.LoadScene("Halfling");
-    }
+    public void Halfling() => SceneManager.LoadScene("Halfling");
 
-    public void HalfOrc()
-    {
-        SceneManager.LoadScene("HalfOrc");
-    }
+    public void HalfOrc() => SceneManager.LoadScene("HalfOrc");
 
-    public void HalfElf()
-    {
-        SceneManager.LoadScene("HalfElf");
-    }
+    public void HalfElf() => SceneManager.LoadScene("HalfElf");
 
-    public void Cleric()
-    {
-        SceneManager.LoadScene("Cleric");
-    }
+    public void Cleric() => SceneManager.LoadScene("Cleric");
 
-    public void Druid()
-    {
-        SceneManager.LoadScene("Druid");
-    }
+    public void Druid() => SceneManager.LoadScene("Druid");
 
-    public void Fighter()
-    {
-        SceneManager.LoadScene("Fighter");
-    }
+    public void Fighter() => SceneManager.LoadScene("Fighter");
 
-    public void MagicUser()
-    {
-        SceneManager.LoadScene("MagicUser");
-    }
+    public void MagicUser() => SceneManager.LoadScene("MagicUser");
 
-    public void Paladin()
-    {
-        SceneManager.LoadScene("Paladin");
-    }
+    public void Paladin() => SceneManager.LoadScene("Paladin");
 
-    public void Ranger()
-    {
-        SceneManager.LoadScene("Ranger");
-    }
+    public void Ranger() => SceneManager.LoadScene("Ranger");
 
-    public void Thief()
-    {
-        SceneManager.LoadScene("Thief");
-    }
+    public void Thief() => SceneManager.LoadScene("Thief");
 
     #endregion
 }

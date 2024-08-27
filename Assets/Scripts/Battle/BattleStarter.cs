@@ -51,15 +51,18 @@ public class BattleStarter : MonoBehaviour
     //FUNCTIONS
     #region Initialization Methods/Functions
 
+#pragma warning disable IDE0051
     private void Start ()
     {
         mIsPlayerInArea = false;
         mBattleCountdownTimer = Random.Range(timeBetweenBattles * .5f, timeBetweenBattles * 1.5f);
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Physics Functions/Methods
 
+#pragma warning disable IDE0051
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -74,7 +77,9 @@ public class BattleStarter : MonoBehaviour
             }
         }
     }
+#pragma warning restore IDE0051
 
+#pragma warning disable IDE0051
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -89,10 +94,12 @@ public class BattleStarter : MonoBehaviour
             }
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update ()
     {
 		if (mIsPlayerInArea && PlayerController.instance.GetCanMove)
@@ -110,6 +117,7 @@ public class BattleStarter : MonoBehaviour
             }
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Coroutines

@@ -36,22 +36,20 @@ public class InnUpstairsExit :MonoBehaviour
 
     private string mAreaToLoad;
     private bool mDoesLoadAfterFade;
-    private string mAreaTransitionName;
 
     #endregion
 
     //FUNCTIONS
     #region Initialization Functions/Methods
 
-    private void Start()
-    {
-        mAreaToLoad = Inn.GetDownstairsSceneName;
-        mAreaTransitionName = Inn.GetDownstairsTransitionName;
-    }
+#pragma warning disable IDE0051
+    private void Start() => mAreaToLoad = Inn.GetDownstairsSceneName;
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods
 
+#pragma warning disable IDE0051
     private void Update()
     {
         if (mDoesLoadAfterFade)
@@ -66,10 +64,12 @@ public class InnUpstairsExit :MonoBehaviour
             }
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Physics Functions/Methods
 
+#pragma warning disable IDE0051
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -88,6 +88,7 @@ public class InnUpstairsExit :MonoBehaviour
             UIFade.instance.FadeToBlack();
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
 }

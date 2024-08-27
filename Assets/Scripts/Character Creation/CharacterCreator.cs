@@ -37,7 +37,6 @@ public class CharacterCreator : MonoBehaviour
     private int mBaseValue;
     private string mPlayerSex;
     private Sprite mPlayerPortrait;
-    private int mNumberOfAttributes;
     private List<Sprite> mPortraitList;
     private CharacterAttributes.Races mPlayerRace;
     private CharacterAttributes.Classes mPlayerClass;
@@ -65,13 +64,14 @@ public class CharacterCreator : MonoBehaviour
     //FUNCTIONS
     #region Initialization Functions/Methods
 
+#pragma warning disable IDE0051
     private void Awake()
     {
         mIsMale = true;
         mBaseValue = 10;
-        mNumberOfAttributes = 6;
         nameField = GameObject.Find("nameText").GetComponent<InputField>();
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Public Functions/Methods

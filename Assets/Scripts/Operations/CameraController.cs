@@ -39,6 +39,7 @@ public class CameraController : MonoBehaviour
     //FUNCTIONS
     #region Initialization Functions/Methods
 
+#pragma warning disable IDE0051
     private void Start ()
     {
         PlayerController thePlayerController = PlayerController.instance;
@@ -60,10 +61,12 @@ public class CameraController : MonoBehaviour
             Debug.LogWarning("Camera can't find player this is normal on the main menu.");
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation functions/Methods
 
+#pragma warning disable IDE0051
     private void LateUpdate ()
     {
         Vector3 vector3 = new Vector3(target.position.x, target.position.y, transform.position.z);
@@ -72,6 +75,7 @@ public class CameraController : MonoBehaviour
         //keep the camera inside the bounds
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, mBottomLeftLimit.x, mTopRightLimit.x), Mathf.Clamp(transform.position.y, mBottomLeftLimit.y, mTopRightLimit.y), transform.position.z);
 	}
+#pragma warning restore IDE0051
 
     #endregion
 }

@@ -29,10 +29,9 @@ public class DestroyOverLifetime : MonoBehaviour
     //FUNCTIONS
     #region Implementation Functions/Methods
 
-    private void Update ()
-    {
-        Destroy(gameObject, lifetime);
-	}
+#pragma warning disable IDE0051
+    private void Update () => Destroy(gameObject, lifetime);
+#pragma warning restore IDE0051
 
     #endregion
 }

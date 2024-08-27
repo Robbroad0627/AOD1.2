@@ -43,6 +43,7 @@ public class BattleNotification : MonoBehaviour
     //FUNCTIONS
     #region Implementation Methods/Functions
 
+#pragma warning disable IDE0051
     void Update ()
     {
 		if(mAwakeCounter > 0)
@@ -55,6 +56,7 @@ public class BattleNotification : MonoBehaviour
             }
         }
 	}
+#pragma warning restore IDE0051
 
     #endregion
     #region Public Functions/Methods
