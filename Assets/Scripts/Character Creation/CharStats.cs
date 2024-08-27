@@ -24,26 +24,26 @@ public class CharStats : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private string charName="?";
-    [SerializeField] private BattleChar battleChar;
-    [SerializeField] private BattleMove.CharacterClass characterClass;
+    [SerializeField] private string charName = "?";
+    [SerializeField] private BattleChar battleChar = null;
+    [SerializeField] private BattleMove.CharacterClass characterClass = 0;
     [SerializeField] private int playerLevel = 1;
-    [SerializeField] private int currentEXP;
-    [SerializeField] private int[] expToNextLevel;
+    [SerializeField] private int currentEXP = 0;
+    [SerializeField] private int[] expToNextLevel = null;
     [SerializeField] private int maxLevel = 100;
     [SerializeField] private int baseEXP = 1000;
-    [SerializeField] private int currentHP;
+    [SerializeField] private int currentHP = 0;
     [SerializeField] private int maxHP = 100;
-    [SerializeField] private int currentMP;
+    [SerializeField] private int currentMP = 0;
     [SerializeField] private int maxMP = 30;
-    [SerializeField] private int[] mpLvlBonus;
-    [SerializeField] private int strength;
-    [SerializeField] private int defence;
-    [SerializeField] private int wpnPwr;
-    [SerializeField] private int armrPwr;
-    [SerializeField] private string equippedWpn;
-    [SerializeField] private string equippedArmr;
-    [SerializeField] private Sprite charIamge;
+    [SerializeField] private int[] mpLvlBonus = null;
+    [SerializeField] private int strength = 0;
+    [SerializeField] private int defence = 0;
+    [SerializeField] private int wpnPwr = 0;
+    [SerializeField] private int armrPwr = 0;
+    [SerializeField] private string equippedWpn = null;
+    [SerializeField] private string equippedArmr = null;
+    [SerializeField] private Sprite charIamge = null;
 
     #endregion
     #region Private Variables

@@ -38,6 +38,11 @@ public class GameMenu : MonoBehaviour
     #endregion
 
     //VARIABLES
+    #region Constant Variable Declarations and Initializations
+
+    private const string MENU_BUTTON = "Fire2";
+
+    #endregion
     #region Inspector/Exposed Variables
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
@@ -103,7 +108,7 @@ public class GameMenu : MonoBehaviour
 
     private void Update ()
     {
-		if (Input.GetButtonDown("Fire2"))
+		if (Input.GetButtonDown(MENU_BUTTON))
         {
             if (theMenu.activeInHierarchy)
             {

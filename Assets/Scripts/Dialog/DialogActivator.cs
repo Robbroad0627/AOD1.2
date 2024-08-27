@@ -16,6 +16,12 @@ using UnityEngine;
 public class DialogActivator : MonoBehaviour
 {
     //VARIABLES
+    #region Constant Variable Declarations and Initializations
+
+    private const string PLAYER = "Player";
+    private const string INTERACT = "Fire1";
+
+    #endregion
     #region Inspector/Exposed Variables
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
@@ -48,7 +54,7 @@ public class DialogActivator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(PLAYER))
         {
             mCanActivate = true;
         }
@@ -56,7 +62,7 @@ public class DialogActivator : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag(PLAYER))
         {
             mCanActivate = false;
         }
@@ -67,7 +73,7 @@ public class DialogActivator : MonoBehaviour
 
     private void Update ()
     {
-		if (mCanActivate && Input.GetButtonDown("Fire1") && !DialogManager.instance.GetDialogBox.activeInHierarchy)
+		if (mCanActivate && Input.GetButtonDown(INTERACT) && !DialogManager.instance.GetDialogBox.activeInHierarchy)
         {
             DialogManager.instance.ShowDialog(lines, isPerson);
             DialogManager.instance.ShouldActivateQuestAtEnd(questToMark, markComplete);
