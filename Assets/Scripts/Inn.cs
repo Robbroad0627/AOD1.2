@@ -1,46 +1,108 @@
-using System.Collections;
-using System.Collections.Generic;
+/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: Inn.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 27, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Inn : MonoBehaviour
 {
-    public bool canOpen;
-    public int goldCost = 1;
+    //VARIABLES
+    #region Constant Variable Declarations and Initializations
 
-    public AreaEntrance downstairsEntrance;
+    private const string PLAYER = "Player";
+    private const string INTERACT = "Fire1";
+    private const string UPSTAIRS_SCENE_NAME = "Inn Upper";
 
-    public static string s_downstairsTransitionName;
-    public static Vector3? s_downstairsTransitionPosition;
-    public static string s_downstairsSceneName;
-    public static int s_goldCost;
-    public static bool isUpstairs = false;
+    #endregion
+    #region Inspector/Exposed Variables
 
-    const string kUpstairsSceneName ="Inn Upper";
+    // Do NOT rename SerializeField Variables or Inspector exposed Variables
+    // unless you know what you are changing
+    // You will have to reenter all values in the inspector to ALL Objects that
+    // reference this script.
+    [SerializeField] private bool canOpen;
+    [SerializeField] private int goldCost = 1;
+    [SerializeField] private AreaEntrance downstairsEntrance;
+    [SerializeField] private static string s_downstairsTransitionName;
+    [SerializeField] private static Vector3? s_downstairsTransitionPosition;
+    [SerializeField] private static string s_downstairsSceneName;
+    [SerializeField] private static int s_goldCost;
+    [SerializeField] private static bool isUpstairs = false;
 
-    // Use this for initialization
-    void Start () {
-		if(null == downstairsEntrance)
+    #endregion
+
+    //GETTERS/SETTERS
+    #region Getters/Accessors
+
+    public static bool GetIsPlayerUpstairs => isUpstairs;
+    public static string GetDownstairsSceneName => s_downstairsSceneName;
+    public static Vector3? GetDownstairsLocation => s_downstairsTransitionPosition;
+    public static string GetDownstairsTransitionName => s_downstairsTransitionName;
+
+    #endregion
+    #region Setters/Mutators
+
+    public static bool SetIsPlayerUpstairs(bool yesNo) => isUpstairs = yesNo;
+
+    #endregion
+
+    //FUCNTIONS
+    #region Initialization Functions/Methods
+
+    private void Start ()
+    {
+		if (downstairsEntrance == null)
         {
-            var e = FindObjectOfType<AreaEntrance>();
-            if(null == e)
+            var areaEntrance = FindObjectOfType<AreaEntrance>();
+
+            if (areaEntrance == null)
             {
                 Debug.LogError("downstairsEntrance not set", this);
             }
             else
             {
-                Debug.LogWarning($"downstairsEntrance not set using first available entrance {e.GetTransitionName}", this);
+                Debug.LogWarning($"downstairsEntrance not set using first available entrance {areaEntrance.GetTransitionName}", this);
             }
-            s_downstairsTransitionName = e.GetTransitionName;
+
+            s_downstairsTransitionName = areaEntrance.GetTransitionName;
         }
 	}
-	
-	// Update is called once per frame
-	void Update () {
 
-        //canOpen = !DialogManager.instance.dialogActive && canOpen;
+    #endregion
+    #region Physics Functions/Methods
 
-        if (canOpen && Input.GetButtonDown("Fire1") && PlayerController.instance.canMove && !Shop.instance.shopMenu.activeInHierarchy)
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag(PLAYER))
+        {
+            canOpen = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag(PLAYER))
+        {
+            canOpen = false;
+        }
+    }
+
+    #endregion
+    #region Implementation Functions/Methods
+
+    private void Update ()
+    {
+        if (canOpen && Input.GetButtonDown(INTERACT) && PlayerController.instance.canMove && !Shop.instance.shopMenu.activeInHierarchy)
         {
             s_downstairsTransitionName = downstairsEntrance?.GetTransitionName;
             s_downstairsTransitionPosition = downstairsEntrance?.transform.position;
@@ -50,27 +112,16 @@ public class Inn : MonoBehaviour
         }
 	}
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.tag == "Player")
-        {
-            canOpen = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.tag == "Player")
-        {
-            canOpen = false;
-        }
-    }
+    #endregion
+    #region Public Functions/Methods
 
     public static void WarpUpstairs()
     {
         GameManager.instance.SetCurrentGold(GameManager.instance.GetCurrentGold - s_goldCost);
-        PlayerController.instance.areaTransitionName = "Inn-Upper";
-        SceneManager.LoadScene(kUpstairsSceneName);
+        PlayerController.instance.areaTransitionName = UPSTAIRS_SCENE_NAME;
+        SceneManager.LoadScene(UPSTAIRS_SCENE_NAME);
         isUpstairs = true;
     }
+
+    #endregion
 }

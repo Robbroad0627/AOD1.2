@@ -296,12 +296,12 @@ public class GameManager : MonoBehaviour
 
     public void SaveData()
     {
-        if (Inn.isUpstairs)
+        if (Inn.GetIsPlayerUpstairs)
         {
-            if (Inn.s_downstairsTransitionPosition != null)
+            if (Inn.GetDownstairsLocation != null)
             {
-                StorePlayerScene(Inn.s_downstairsSceneName);
-                StorePlayerPosition((Vector3)Inn.s_downstairsTransitionPosition);
+                StorePlayerScene(Inn.GetDownstairsSceneName);
+                StorePlayerPosition((Vector3)Inn.GetDownstairsLocation);
             }
             else
             {
@@ -420,7 +420,6 @@ public class GameManager : MonoBehaviour
         UIFade.instance.FadeToBlack();
         fadingBetweenAreas = false;
         Invoke("InnPostFade", 1.5f);
-
     }
 
     private void InnPostFade()

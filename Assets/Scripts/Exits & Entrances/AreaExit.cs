@@ -17,6 +17,11 @@ using UnityEngine.SceneManagement;
 public class AreaExit : MonoBehaviour
 {
     //VARIABLES
+    #region Constant Variable Declarations and Initializations
+
+    private const string PLAYER = "Player";
+
+    #endregion
     #region Inspector/Exposed Variables
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
@@ -42,7 +47,7 @@ public class AreaExit : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag(PLAYER))
         {
             if (needBoat && !GameManager.instance.GetHasBoat)
             {
