@@ -205,10 +205,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Bron
+  - Hello Izza el-Basha, your relative Naaif al-Zaida told us to come talk to you
+    about some missing children
+  - n- Izza el-Basha
+  - Yes, several children in the village have gone missing, including my son.
+  - n- Bron
+  - That is terrible
+  - n- Izza el-Basha
+  - My husband has been out looking for them for 5 days.
+  - I am certain they have all perished.
+  - n- Player
+  - How about we go looking as well.
+  - Do you know what direction your husband went?
+  - n- Izza el-Basha
+  - He said he was going to go towards the coast to the west of us.
+  - We will head off in that direction.
+  - n- Bawb
+  - How many children are missing?
+  - n- Izza el-Basha
+  - Right now there are 4 children missing.
+  - But over the last 3 years there have been 11 children missing.
+  - n- Bron
+  - Eleven children missing? Why isn't anything being done about it?
+  - The parents have been told the desert is a dangerous place.
+  - Or they have been told that their children wandered off to other towns.
+  - n- Bron
+  - If I had missing family members i would be searching everywhere and in every
+    town on the bloody continent.
+  - n- Izza el-Basha
+  - 'Randa el-Nasr calms the families down each time. '
+  - Ever since the grasslands started growing in from the coast things have gotten
+    quite strange.
+  - n- Bawb
+  - I think I want to hve a chat with this Randa fellow before we go out of town.
+  - It is a fellow right?
+  - n- Izza el-Basha
+  - Yes he is a male.
+  - n- Bawb
+  - Then I have some questions for him.
+  - n- Bron
+  - Lets go find the missing children and then we can talk to him.  I have an uneasy
+    feeling, and finding the children feels like the priority.
+  - We will talk to you when we have some answers.
+  - n- Izza el-Basha
+  - Thank you
+  - I hope to see again you real soon.
   isPerson: 1
-  shouldActivateQuest: 0
-  questToMark: 
+  questToMark: Missing Kids
   markComplete: 0
 --- !u!61 &100535592
 BoxCollider2D:
@@ -747,10 +792,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Randa el-Nasr
+  - Welcome to Fawab. It is so nice to have outsiders here.
+  - What news of the world can you tell me.
+  - n- Player
+  - Thank you for the welcome.
+  - Lets see, new of the world. Ashtir is shrinking, Larsu is infested with aggressive
+    snakes, and something seems foul everywhere we go.
+  - n- Randa el-Nasr
+  - That is not good
+  - n- Player
+  - No it is not.
+  - n- Randa el-Nasr
+  - Well I have pressing matters to attend to. Running a town is no easy task. Busy.
+    Busy . Busy.
+  - n- Player
+  - Good Bye
   isPerson: 1
-  shouldActivateQuest: 0
-  questToMark: 
+  questToMark: Randa
   markComplete: 0
 --- !u!61 &613889050
 BoxCollider2D:
@@ -901,9 +961,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Naaif al-Zaidi
+  - Welcome to Fawab
+  - n- Player
+  - Thank you
+  - n- Naaif al-Zaidi
+  - What brings you to our village?
+  - n- Player
+  - We are exploring the world and and some of the things we have discovered now
+    have us looking for answers.
+  - n- Naaif al-Zaidi
+  - What kind of answers are you looking for?
+  - n- Player
+  - We are trying to find out why the land of Ashtir is melting away.  Why Larsu
+    has more aggressive snakes than ever before.
+  - n- Bron
+  - We are trying to find out more about the Yuan-ti and all their legends.
+  - n- Bawb
+  - We are trying to discover why there is so serpent attacks here in Oluma.
+  - n- Naaif al-Zaidi
+  - With all these questions you are trying to answer, it is a miracle you have time
+    to eat or sleep.
+  - n- Player
+  - Yes, it is quite time consuming.
+  - n- Naaif al-Zaidi
+  - I do not know if I should be telling you this as you seem quite burdened, but
+    we too are not without our troubles here in Fawab.
+  - We seem to be missing some children from the village.
+  - n- Bron
+  - Tell us more
+  - n- Naaif al-Zaidi
+  - Maybe you should talk to Izza el-Basha.  Husband is out looking for the children
+    and as here closest living relative I give you persmission to talk to her.
+  - n- Player
+  - Thank you, we will go talk to her.
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &803090885
@@ -1124,12 +1217,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &883681266
@@ -1311,12 +1403,11 @@ MonoBehaviour:
     rewardItems:
     - Greater Potion of Healing
     - Greater Potion of Healing
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1018156684
@@ -1474,12 +1565,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1079386083
@@ -1730,12 +1820,11 @@ MonoBehaviour:
     rewardItems:
     - Throwing Axe
     - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1134884801
@@ -1872,12 +1961,11 @@ MonoBehaviour:
     rewardItems:
     - Throwing Axe
     - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1237235817
@@ -11695,7 +11783,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines: []
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &1273831502
@@ -11832,6 +11919,8 @@ Transform:
   - {fileID: 1273831500}
   - {fileID: 100535590}
   - {fileID: 613889048}
+  - {fileID: 1984358053}
+  - {fileID: 1328866383}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11950,12 +12039,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1297731736
@@ -11984,6 +12072,175 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 94.97936, y: 16.45219}
   m_EdgeRadius: 0
+--- !u!1 &1328866382
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1328866383}
+  - component: {fileID: 1328866387}
+  - component: {fileID: 1328866386}
+  - component: {fileID: 1328866385}
+  - component: {fileID: 1328866384}
+  m_Layer: 0
+  m_Name: Randa el-Nasr (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1328866383
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328866382}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 24.07, y: -4.44, z: 11.316841}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1275335879}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1328866384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328866382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n- Randa el-Nasr
+  - Welcome to Fawab. It is so nice to have outsiders here.
+  - What news of the world can you tell me.
+  - n- Player
+  - Thank you for the welcome.
+  - Lets see, new of the world. Ashtir is shrinking, Larsu is infested with aggressive
+    snakes, and something seems foul everywhere we go.
+  - n- Randa el-Nasr
+  - That is not good
+  - n- Player
+  - No it is not.
+  - n- Randa el-Nasr
+  - Well I have pressing matters to attend to. Running a town is no easy task. Busy.
+    Busy . Busy.
+  - n- Player
+  - Good Bye
+  isPerson: 1
+  questToMark: Randa
+  markComplete: 0
+--- !u!61 &1328866385
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328866382}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.09, y: 2.51}
+    newSize: {x: 1.09, y: 2.51}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.09, y: 2.51}
+  m_EdgeRadius: 0
+--- !u!61 &1328866386
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328866382}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.09, y: 2.51}
+    newSize: {x: 1.09, y: 2.51}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.09, y: 2.51}
+  m_EdgeRadius: 0
+--- !u!212 &1328866387
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328866382}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b4fd71ddb486f00488f9494ba0e9615a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.09, y: 2.51}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1336130410
 GameObject:
   m_ObjectHideFlags: 0
@@ -108765,12 +109022,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1530181326
@@ -108944,12 +109200,11 @@ MonoBehaviour:
     rewardItems:
     - Throwing Axe
     - Throwing Axe
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1703386654
@@ -109079,12 +109334,11 @@ MonoBehaviour:
     rewardItems:
     - Mana Potion
     - Ringmail
-  activateOnEnter: 0
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 0
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1720546779
@@ -109511,6 +109765,86 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1984358052
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1275335879}
+    m_Modifications:
+    - target: {fileID: 2434758651056572089, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_Name
+      value: IzzaQuestManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 1328866382}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.78826255
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.78157043
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.549363
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad1680edb5e536a4da50947749261935, type: 3}
+--- !u!4 &1984358053 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+    type: 3}
+  m_PrefabInstance: {fileID: 1984358052}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1998802101
 PrefabInstance:
   m_ObjectHideFlags: 0
