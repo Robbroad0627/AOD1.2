@@ -38,6 +38,7 @@ public class CharacterCreator : MonoBehaviour
     private string mPlayerSex;
     private Sprite mPlayerPortrait;
     private List<Sprite> mPortraitList;
+    private PortraitHandler mPortraits;
     private CharacterAttributes.Races mPlayerRace;
     private CharacterAttributes.Classes mPlayerClass;
     private Dictionary<CharacterAttributes.BaseAttributes, int> mPlayerAttributes;
@@ -70,6 +71,7 @@ public class CharacterCreator : MonoBehaviour
         mIsMale = true;
         mBaseValue = 10;
         nameField = GameObject.Find("nameText").GetComponent<InputField>();
+        mPortraits = GetComponent<PortraitHandler>();
     }
 #pragma warning restore IDE0051
 
@@ -86,7 +88,7 @@ public class CharacterCreator : MonoBehaviour
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 1;
-                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mDwarf : GetComponent<PortraitHandler>().fDwarf;
+                mPortraitList = mIsMale == true ? mPortraits.GetDwarfMale : mPortraits.GetDwarfFemale;
                 mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
 
@@ -94,7 +96,7 @@ public class CharacterCreator : MonoBehaviour
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Intelligence] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution] -= 1;
-                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mElf : GetComponent<PortraitHandler>().fElf;
+                mPortraitList = mIsMale == true ? mPortraits.GetElfMale : mPortraits.GetElfFemale;
                 mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
 
@@ -102,7 +104,7 @@ public class CharacterCreator : MonoBehaviour
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Wisdom] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 1;
-                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mHalf_Elf : GetComponent<PortraitHandler>().fHalf_Elf;
+                mPortraitList = mIsMale == true ? mPortraits.GetHalfElfMale : mPortraits.GetHalfElfFemale;
                 mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
 
@@ -110,7 +112,7 @@ public class CharacterCreator : MonoBehaviour
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Wisdom] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength] -= 1;
-                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mHalfling : GetComponent<PortraitHandler>().fHalfling;
+                mPortraitList = mIsMale == true ? mPortraits.GetHalflingMale : mPortraits.GetHalflingFemale;
                 mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
 
@@ -118,14 +120,14 @@ public class CharacterCreator : MonoBehaviour
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 2;
-                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mHalf_Orc : GetComponent<PortraitHandler>().fHalf_Orc;
+                mPortraitList = mIsMale == true ? mPortraits.GetHalfOrcMale : mPortraits.GetHalfOrcFemale;
                 mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
 
             case CharacterAttributes.Races.Human:
                 int ran = Random.Range(0, System.Enum.GetValues(typeof(CharacterAttributes.BaseAttributes)).Length);
                 mPlayerAttributes[(CharacterAttributes.BaseAttributes)ran] += 2;
-                mPortraitList = mIsMale == true ? GetComponent<PortraitHandler>().mHuman : GetComponent<PortraitHandler>().fHuman;
+                mPortraitList = mIsMale == true ? mPortraits.GetHumanMale : mPortraits.GetHumanFemale;
                 mPlayerSex = mIsMale == true ? "M" : "F";
                 break;
 
