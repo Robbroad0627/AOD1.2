@@ -544,14 +544,14 @@ public class BattleManager : MonoBehaviour
             {
                 magicButtons[i].gameObject.SetActive(true);
                 magicButtons[i].SetSpellName(mActiveBattlers[mCurrentTurn].GetListOfAttacks[i]);
-                magicButtons[i].GetNameText.text = magicButtons[i].GetSpellName;
+                magicButtons[i].GetSpellNameText.text = magicButtons[i].GetSpellName;
 
                 for (int j = 0; j < movesList.Length; j++)
                 {
                     if (movesList[j].moveName == magicButtons[i].GetSpellName)
                     {
                         magicButtons[i].SetSpellCost(movesList[j].moveCost);
-                        magicButtons[i].GetCostText.text = magicButtons[i].GetSpellCost.ToString();
+                        magicButtons[i].GetSpellCostText.text = magicButtons[i].GetSpellCost.ToString();
                     }
                 }
             }
