@@ -170,9 +170,9 @@ public class BattleManager : MonoBehaviour
 
     private void StartBattleMusic()
     {
-        mOutsideBattleBGM = AudioManager.Access.GetCurrentBackgroundMusic;
+        mOutsideBattleBGM = AudioManager.Access.GetMusicCurrentTrack;
 
-        AudioManager.Access.PlayBGM(0);
+        AudioManager.Access.PlayMusic(0);
     }
 
     private void NextTurn()
@@ -615,7 +615,7 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(.5f);
 
         UIFade.instance.FadeToBlack();
-        AudioManager.Access.PlayBGM(mOutsideBattleBGM);
+        AudioManager.Access.PlayMusic(mOutsideBattleBGM);
 
         yield return new WaitForSeconds(1.5f);
 

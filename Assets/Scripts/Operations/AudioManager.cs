@@ -12,6 +12,7 @@
  ****************************************************************************************/
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class AudioManager : MonoBehaviour
 {
@@ -44,20 +45,22 @@ public class AudioManager : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private AudioSource[] sfx = null;
-    [SerializeField] private AudioSource[] bgm = null;
+    [FormerlySerializedAs("sfx")]
+    [SerializeField] private AudioSource[] SoundFXList = null;
+    [FormerlySerializedAs("bgm")]
+    [SerializeField] private AudioSource[] MusicList = null;
 
     #endregion
     #region Private Variables
 
-    private int mBGMCurrentTrack;
+    private int mMusicCurrentTrack;
 
     #endregion
 
     //GETTERS/SETTERS
     #region Getters/Accessors
 
-    public int GetCurrentBackgroundMusic => mBGMCurrentTrack;
+    public int GetMusicCurrentTrack => mMusicCurrentTrack;
 
     #endregion
 
@@ -69,47 +72,49 @@ public class AudioManager : MonoBehaviour
 #pragma warning restore IDE0051
 
 #pragma warning disable IDE0051
-    private void Start() => mBGMCurrentTrack = -1;
+    private void Start() => InitializeVariables();
 #pragma warning restore IDE0051
+
+    private void InitializeVariables() => mMusicCurrentTrack = -1;
 
     #endregion
     #region Public Methods/Functions useable outside class
 
-    public void PlaySFX(int soundToPlay)
+    public void PlaySoundFX(int soundToPlay)
     {
-        if (soundToPlay < sfx.Length)
+        if (soundToPlay < SoundFXList.Length)
         {
-            sfx[soundToPlay].Play();
+            SoundFXList[soundToPlay].Play();
         }
     }
 
-    public void PlayBGM(int musicToPlay)
+    public void PlayMusic(int musicToPlay)
     {
-        mBGMCurrentTrack = musicToPlay;
+        mMusicCurrentTrack = musicToPlay;
 
-        if ((musicToPlay < 0) || (musicToPlay > bgm.Length))
+        if ((musicToPlay < 0) || (musicToPlay > MusicList.Length))
         {
             Debug.LogWarning("Requested track does not exist, or restoring to state where no BGM, halting BGM.",this);
             StopMusic();
             return;
         }
         
-        if (!bgm[musicToPlay].isPlaying)
+        if (!MusicList[musicToPlay].isPlaying)
         {
             StopMusic();
 
-            if (musicToPlay < bgm.Length)
+            if (musicToPlay < MusicList.Length)
             {
-                bgm[musicToPlay].Play();
+                MusicList[musicToPlay].Play();
             }
         }
     }
 
     public void StopMusic()
     {
-        for(int i = 0; i < bgm.Length; i++)
+        for (int i = 0; i < MusicList.Length; i++)
         {
-            bgm[i].Stop();
+            MusicList[i].Stop();
         }
     }
 

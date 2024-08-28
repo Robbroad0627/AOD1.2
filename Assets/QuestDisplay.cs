@@ -1,11 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: InnUpstairsExit.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 27, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
+using UnityEngine.UI;
 
 public class QuestDisplay : MonoBehaviour
 {
-    public UnityEngine.UI.Text[] questTitleText;
-    // Start is called before the first frame update
+    [SerializeField] private Text[] questTitleText;
+
     void Start()
     {
         QuestManager.onQuestsUpdated.Add(UpdateQuests);
@@ -19,25 +31,20 @@ public class QuestDisplay : MonoBehaviour
 
     public void UpdateQuests()
     {
-        if(null == QuestManager.instance)
-        {
-            Debug.LogWarning("Requested update to quest display but quest manager was not born yet", this);
-            return;
-        }
-        Debug.Log("Quest display updated");
-        string[] nl = QuestManager.instance.GetActiveButNotCompleteQuestsNames();
+        string[] questNames = QuestManager.instance.GetActiveButNotCompleteQuestsNames();
 
         int textIndex = 0;
-        foreach( var s in nl)
+
+        foreach ( string quest in questNames)
         {
-            if(textIndex>=questTitleText.Length)
+            if (textIndex >= questTitleText.Length)
             {
                 Debug.Log("Out of space to show quest titles,truncating",this);
                 break;
             }
             else
             {
-                questTitleText[textIndex].text = s;
+                questTitleText[textIndex].text = quest;
                 textIndex++;
             }
         }

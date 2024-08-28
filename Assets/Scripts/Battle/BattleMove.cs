@@ -14,7 +14,7 @@
 using System;
 using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class BattleMove
 {
     public enum CharacterClass
@@ -34,7 +34,7 @@ public class BattleMove
         OverrideDefaultLevelForClass
     }
 
-    [System.Serializable]
+    [Serializable]
     public class MoveFilter
     {
         public CharacterClass characterClass;

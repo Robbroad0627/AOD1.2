@@ -3,7 +3,7 @@
  * Script: AttackEffect.cs
  * Date Created: 
  * Created By: Rob Broad
- * Description: Plays a sound effect
+ * Description: Used in all Attack and Spell Prefabs
  * **************************************************************************************
  * Modified By: Jeff Moreau
  * Date Last Modified: August 23, 2024
@@ -12,6 +12,7 @@
  ****************************************************************************************/
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class AttackEffect : MonoBehaviour
 {
@@ -21,8 +22,10 @@ public class AttackEffect : MonoBehaviour
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
-    [SerializeField] private int soundEffect = 0;
-    [SerializeField] private float effectLength = 0.0f;
+    [FormerlySerializedAs("soundEffect")]
+    [SerializeField] private int SoundToPlay = 0;
+    [FormerlySerializedAs("effectLength")]
+    [SerializeField] private float AnimationDuration = 1.75f;
 
     #endregion
 
@@ -30,14 +33,14 @@ public class AttackEffect : MonoBehaviour
     #region Initialization Functions/Methods
 
 #pragma warning disable IDE0051
-    private void Start () => AudioManager.Access.PlaySFX(soundEffect);
+    private void Start () => AudioManager.Access.PlaySoundFX(SoundToPlay);
 #pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods
 
 #pragma warning disable IDE0051
-    private void Update () => Destroy(gameObject, effectLength);
+    private void Update () => Destroy(gameObject, AnimationDuration);
 #pragma warning restore IDE0051
 
     #endregion

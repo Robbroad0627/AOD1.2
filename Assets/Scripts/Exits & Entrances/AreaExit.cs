@@ -3,7 +3,7 @@
  * Script: AreaExit.cs
  * Date Created: 
  * Created By: Rob Broad
- * Description:
+ * Description: Used in all Area Exit Prefabs
  * **************************************************************************************
  * Modified By: Jeff Moreau
  * Date Last Modified: August 23, 2024
@@ -12,6 +12,7 @@
  ****************************************************************************************/
 
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.SceneManagement;
 
 public class AreaExit : MonoBehaviour
@@ -28,11 +29,16 @@ public class AreaExit : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private string areaToLoad = "";
-    [SerializeField] private string areaTransitionName = "";
-    [SerializeField] private float waitToLoad = 1f;
-    [SerializeField] private bool needBoat = false;
-    [SerializeField] private PortController portController = null;
+    [FormerlySerializedAs("areaToLoad")]
+    [SerializeField] private string SceneToLoad = "";
+    [FormerlySerializedAs("areaTransitionName")]
+    [SerializeField] private string EntranceSpawnPointName = "";
+    [FormerlySerializedAs("waitToLoad")]
+    [SerializeField] private float WaitToLoadDuration = 1.0f;
+    [FormerlySerializedAs("needBoat")]
+    [SerializeField] private bool PlayerNeedsBoat = false;
+    [FormerlySerializedAs("portController")]
+    [SerializeField] private PortController ThePortController = null;
 
     #endregion
     #region Private Variable Declarations Only
@@ -43,6 +49,19 @@ public class AreaExit : MonoBehaviour
     #endregion
 
     //FUNCTIONS
+    #region Initialization Functions/Methods
+
+#pragma warning disable IDE0051
+    private void Start() => InitializeVariables();
+#pragma warning restore IDE0051
+
+    private void InitializeVariables()
+    {
+        mShouldLoadAfterFade = false;
+        mShouldRunAnimationBeforeFade = false;
+    }
+
+    #endregion
     #region Physics Methods/Functions
 
 #pragma warning disable IDE0051
@@ -50,27 +69,22 @@ public class AreaExit : MonoBehaviour
     {
         if (other.CompareTag(PLAYER))
         {
-            if (needBoat && !GameManager.Access.GetHasBoat)
+            if (PlayerNeedsBoat && !GameManager.Access.GetHasBoat)
             {
-                //Cant use boat area without one.
-                Debug.Log("Area needs boat but GameManager.haveBoat == false");
+                Debug.Log("Area needs a Boat but Player does not have one.");
                 return;
             }
-            else if (needBoat && GameManager.Access.GetHasBoat)
+            else if (PlayerNeedsBoat && GameManager.Access.GetHasBoat)
             {
-                portController.PlayerEnterBoat(areaToLoad, areaTransitionName);                
-                //shouldRunAnimationBeforeFade = true;
+                ThePortController.PlayerEnterBoat(SceneToLoad, EntranceSpawnPointName);                
             }
-            else if (!needBoat)
+            else if (!PlayerNeedsBoat)
             {
-                enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
-                                    //SceneManager.LoadScene(areaToLoad);
+                enabled = true;
                 mShouldLoadAfterFade = true;
                 GameManager.Access.SetFadingBetweenAreas(true);
-
                 UIFade.instance.FadeToBlack();
-
-                PlayerController.Access.SetAreaTransitionName(areaTransitionName);
+                PlayerController.Access.SetAreaTransitionName(EntranceSpawnPointName);
             }
         }
     }
@@ -84,12 +98,12 @@ public class AreaExit : MonoBehaviour
     {
 		if (mShouldLoadAfterFade)
         {
-            waitToLoad -= Time.deltaTime;
+            WaitToLoadDuration -= Time.deltaTime;
 
-            if (waitToLoad <= 0)
+            if (WaitToLoadDuration <= 0)
             {
                 mShouldLoadAfterFade = false;
-                SceneManager.LoadScene(areaToLoad);
+                SceneManager.LoadScene(SceneToLoad);
             }
         }
 
@@ -97,14 +111,11 @@ public class AreaExit : MonoBehaviour
         {
             if (Boat.boatLeftPort)
             {
-                enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
-                                    //SceneManager.LoadScene(areaToLoad);
+                enabled = true;
                 mShouldLoadAfterFade = true;
                 GameManager.Access.SetFadingBetweenAreas(true);
-
                 UIFade.instance.FadeToBlack();
-
-                PlayerController.Access.SetAreaTransitionName(areaTransitionName);
+                PlayerController.Access.SetAreaTransitionName(EntranceSpawnPointName);
                 mShouldRunAnimationBeforeFade = false;
             }
         }

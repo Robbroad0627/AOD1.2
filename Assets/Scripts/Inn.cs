@@ -72,10 +72,10 @@ public class Inn : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning($"downstairsEntrance not set using first available entrance {areaEntrance.GetTransitionName}", this);
+                Debug.LogWarning($"downstairsEntrance not set using first available entrance {areaEntrance.GetSpawnPointName}", this);
             }
 
-            s_downstairsTransitionName = areaEntrance.GetTransitionName;
+            s_downstairsTransitionName = areaEntrance.GetSpawnPointName;
         }
 	}
 #pragma warning restore IDE0051
@@ -111,7 +111,7 @@ public class Inn : MonoBehaviour
     {
         if (canOpen && Input.GetButtonDown(INTERACT) && PlayerController.Access.GetCanMove && !Shop.instance.shopMenu.activeInHierarchy)
         {
-            s_downstairsTransitionName = downstairsEntrance?.GetTransitionName;
+            s_downstairsTransitionName = downstairsEntrance?.GetSpawnPointName;
             s_downstairsTransitionPosition = downstairsEntrance?.transform.position;
             s_downstairsSceneName = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
             s_goldCost = goldCost;

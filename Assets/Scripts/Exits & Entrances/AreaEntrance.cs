@@ -3,7 +3,7 @@
  * Script: AreaEntrance.cs
  * Date Created: 
  * Created By: Rob Broad
- * Description:
+ * Description: Used in all Area Entrance Prefabs
  * **************************************************************************************
  * Modified By: Jeff Moreau
  * Date Last Modified: August 23, 2024
@@ -12,6 +12,7 @@
  ****************************************************************************************/
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class AreaEntrance : MonoBehaviour
 {
@@ -22,15 +23,17 @@ public class AreaEntrance : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private string transitionName = "";
-	[SerializeField] private bool isPort = false;
+    [FormerlySerializedAs("transitionName")]
+    [SerializeField] private string SpawnPointName = "";
+    [FormerlySerializedAs("isPort")]
+    [SerializeField] private bool IsAPort = false;
 
     #endregion
 
     //GETTERS/SETTERS
     #region Getters/Accessors
 
-    public string GetTransitionName => transitionName;
+    public string GetSpawnPointName => SpawnPointName;
 
     #endregion
 
@@ -40,9 +43,9 @@ public class AreaEntrance : MonoBehaviour
 #pragma warning disable IDE0051
     private void Start ()
 	{
-		if (transitionName == PlayerController.Access.GetAreaTransitionName)
+		if (PlayerController.Access.GetAreaTransitionName == SpawnPointName)
         {
-			if (isPort && Boat.boatLeftPort)
+			if (IsAPort && Boat.boatLeftPort)
 			{
 				Boat.isEnteringPort = true;
 			}
@@ -63,7 +66,7 @@ public class AreaEntrance : MonoBehaviour
 #pragma warning disable IDE0051
     private void Update ()
 	{
-        if (transitionName == PlayerController.Access.GetAreaTransitionName)
+        if (PlayerController.Access.GetAreaTransitionName == SpawnPointName)
         {
 			if (!Boat.isPlayerOnBoat)
 			{
