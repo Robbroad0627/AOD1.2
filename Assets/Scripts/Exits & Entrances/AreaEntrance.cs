@@ -31,14 +31,14 @@ public class AreaEntrance : MonoBehaviour
     #endregion
 
     //GETTERS/SETTERS
-    #region Public Getters/Accessors for Outside of Class use
+    #region Public Getters/Accessors for use Outside of this Class Only
 
     public string GetSpawnPointName => SpawnPointName;
 
     #endregion
 
     //FUNCTIONS
-    #region Private Initialization Functions/Methods used in Class Only 
+    #region Private Initialization Functions/Methods used in this Class Only 
 
 #pragma warning disable IDE0051
     private void Start ()
@@ -61,7 +61,7 @@ public class AreaEntrance : MonoBehaviour
 #pragma warning restore IDE0051
 
     #endregion
-    #region Private Implementation Functions/Methods used in Class Only
+    #region Private Implementation Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
     private void Update ()
