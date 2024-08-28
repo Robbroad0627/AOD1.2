@@ -11,14 +11,13 @@
  * Known Bugs: 
  ****************************************************************************************/
 
-using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 public class BattleChar : MonoBehaviour
 {
     //VARIABLES
-    #region Inspector/Exposed Variables
+    #region Private Variables/Fields Exposed to Inspector for Editing
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
@@ -52,7 +51,7 @@ public class BattleChar : MonoBehaviour
     [SerializeField] private float DeathFadeSpeed = 1.0f;
 
     #endregion
-    #region Private Variable Declarations Only
+    #region Private Variables/Fields used in this Class Only
 
     private int mCurrentHP;
     private int mCurrentMP;
@@ -61,7 +60,7 @@ public class BattleChar : MonoBehaviour
     #endregion
 
     //GETTERS/SETTERS
-    #region Getters/Accessors
+    #region Public Getters/Accessors for use Outside of this Class Only
 
     public string GetName => Name;
     public int GetMaxHP => MaximumHP;
@@ -79,7 +78,7 @@ public class BattleChar : MonoBehaviour
     public SpriteRenderer GetSpriteRenderer => MySpriteRenderer;
 
     #endregion
-    #region Setters/Mutators
+    #region Public Setters/Mutators for use Outside of this Class Only
 
     public string SetName(string name) => Name = name;
     public int SetMaxMP(int amount) => MaximumMP = amount;
@@ -90,13 +89,14 @@ public class BattleChar : MonoBehaviour
     public int SetCurrentHP(int amount) => mCurrentHP = amount;
     public int SetCurrentMP(int amount) => mCurrentMP = amount;
     public int SetArmorPower(int amount) => ArmorPower = amount;
+    public bool SetShouldFade(bool yesNo) => mShouldFade = yesNo;
     public int SetWeaponPower(int amount) => WeaponPower = amount;
     public string[] SetListOfAttacks(string[] moves) => ListOfAttacks = moves;
 
     #endregion
 
     //FUNCTIONS
-    #region Initialization Methods/Functions
+    #region Private Initialization Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
     private void Start() => InitializeVariables();
@@ -111,7 +111,7 @@ public class BattleChar : MonoBehaviour
     }
 
     #endregion
-    #region Implementation Private Methods/Functions
+    #region Private Implementation Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
     private void Update()
@@ -130,16 +130,6 @@ public class BattleChar : MonoBehaviour
         }
     }
 #pragma warning restore IDE0051
-
-    #endregion
-    #region Public Functions/Methods
-
-    public void EnemyFade() => mShouldFade = true;
-
-    public static implicit operator BattleChar(CharStats v)
-    {
-        throw new NotImplementedException();
-    }
 
     #endregion
 }

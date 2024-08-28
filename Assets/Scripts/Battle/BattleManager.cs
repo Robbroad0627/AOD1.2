@@ -257,7 +257,7 @@ public class BattleManager : MonoBehaviour
                 }
                 else
                 {
-                    mActiveBattlers[i].EnemyFade();
+                    mActiveBattlers[i].SetShouldFade(true);
                 }
             }
             else

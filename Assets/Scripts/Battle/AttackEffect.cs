@@ -17,7 +17,7 @@ using UnityEngine.Serialization;
 public class AttackEffect : MonoBehaviour
 {
     //VARIABLES
-    #region Inspector/Exposed Variables
+    #region Private Variables/Fields Exposed to Inspector for Editing
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
@@ -30,14 +30,14 @@ public class AttackEffect : MonoBehaviour
     #endregion
 
     //FUNCTIONS
-    #region Initialization Functions/Methods
+    #region Private Initialization Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
     private void Start () => AudioManager.Access.PlaySoundFX(SoundToPlay);
 #pragma warning restore IDE0051
 
     #endregion
-    #region Implementation Functions/Methods
+    #region Private Implementation Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
     private void Update () => Destroy(gameObject, AnimationDuration);

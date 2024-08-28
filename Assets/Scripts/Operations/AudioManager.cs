@@ -17,7 +17,7 @@ using UnityEngine.Serialization;
 public class AudioManager : MonoBehaviour
 {
     //SINGLETON
-    #region Singleton
+    #region Singleton - this Class has One and Only One Instance
 
     private static AudioManager mInstance;
 
@@ -39,7 +39,7 @@ public class AudioManager : MonoBehaviour
     #endregion
 
     //VARIABLES
-    #region Inspector/Exposed Variables
+    #region Private Variables/Fields Exposed to Inspector for Editing
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
@@ -51,21 +51,21 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource[] MusicList = null;
 
     #endregion
-    #region Private Variables
+    #region Private Variables/Fields used in this Class Only
 
     private int mMusicCurrentTrack;
 
     #endregion
 
     //GETTERS/SETTERS
-    #region Getters/Accessors
+    #region Public Getters/Accessors for use Outside of this Class Only
 
     public int GetMusicCurrentTrack => mMusicCurrentTrack;
 
     #endregion
 
     //FUNCTIONS
-    #region Initialization Methods/Functions
+    #region Private Initialization Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
     private void Awake() => Singleton();
@@ -78,7 +78,7 @@ public class AudioManager : MonoBehaviour
     private void InitializeVariables() => mMusicCurrentTrack = -1;
 
     #endregion
-    #region Public Methods/Functions useable outside class
+    #region Public Functions/Methods for use Outside of this Class
 
     public void PlaySoundFX(int soundToPlay)
     {
