@@ -17,7 +17,7 @@ using UnityEngine.Serialization;
 public class AreaEntrance : MonoBehaviour
 {
     //VARIABLES
-    #region Inspector/Exposed Variables
+    #region Private Variables/Fields Exposed to Inspector for Editing
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
@@ -31,14 +31,14 @@ public class AreaEntrance : MonoBehaviour
     #endregion
 
     //GETTERS/SETTERS
-    #region Getters/Accessors
+    #region Public Getters/Accessors for Outside of Class use
 
     public string GetSpawnPointName => SpawnPointName;
 
     #endregion
 
     //FUNCTIONS
-    #region Initialization Methods/Functions
+    #region Private Initialization Functions/Methods used in Class Only 
 
 #pragma warning disable IDE0051
     private void Start ()
@@ -61,7 +61,7 @@ public class AreaEntrance : MonoBehaviour
 #pragma warning restore IDE0051
 
     #endregion
-    #region Implementation Private Methods/Functions
+    #region Private Implementation Functions/Methods used in Class Only
 
 #pragma warning disable IDE0051
     private void Update ()

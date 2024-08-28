@@ -18,12 +18,12 @@ using UnityEngine.SceneManagement;
 public class AreaExit : MonoBehaviour
 {
     //VARIABLES
-    #region Constant Variable Declarations and Initializations
+    #region Private Constant Variables/Fields used in Class Only
 
     private const string PLAYER = "Player";
 
     #endregion
-    #region Inspector/Exposed Variables
+    #region Private Variables/Fields Exposed to Inspector for Editing
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
@@ -41,7 +41,7 @@ public class AreaExit : MonoBehaviour
     [SerializeField] private PortController ThePortController = null;
 
     #endregion
-    #region Private Variable Declarations Only
+    #region Private Variables/Fields used in Class Only
 
     private bool mShouldLoadAfterFade;
     private bool mShouldRunAnimationBeforeFade;
@@ -49,7 +49,7 @@ public class AreaExit : MonoBehaviour
     #endregion
 
     //FUNCTIONS
-    #region Initialization Functions/Methods
+    #region Private Initialization Functions/Methods used in Class Only
 
 #pragma warning disable IDE0051
     private void Start() => InitializeVariables();
@@ -62,7 +62,7 @@ public class AreaExit : MonoBehaviour
     }
 
     #endregion
-    #region Physics Methods/Functions
+    #region Private Physics Functions/Methods used in Class Only
 
 #pragma warning disable IDE0051
     private void OnTriggerEnter2D(Collider2D other)
@@ -91,7 +91,7 @@ public class AreaExit : MonoBehaviour
 #pragma warning restore IDE0051
 
     #endregion
-    #region Implementation Private Methods/Functions
+    #region Private Implementation Functions/Methods used in Class Only
 
 #pragma warning disable IDE0051
     private void Update ()
