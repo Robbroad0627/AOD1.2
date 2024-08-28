@@ -3,10 +3,10 @@
  * Script: BattleChar.cs
  * Date Created: 
  * Created By: Rob Broad
- * Description:
+ * Description: Used in Resources/Prefabs/Players to give initial stats
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 23, 2024
+ * Date Last Modified: August 28, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/

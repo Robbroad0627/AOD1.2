@@ -6,7 +6,7 @@
  * Description: Used in all Area Exit Prefabs
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 23, 2024
+ * Date Last Modified: August 28, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
