@@ -147,7 +147,7 @@ public class BattleManager : MonoBehaviour
         {
             if (mTurnWaiting)
             {
-                if (mActiveBattlers[mCurrentTurn].GetIsPlayer)
+                if (mActiveBattlers[mCurrentTurn].GetIsAPlayer)
                 {
                     uiButtonsHolder.SetActive(true);
                 }
@@ -177,7 +177,7 @@ public class BattleManager : MonoBehaviour
 
     private void NextTurn()
     {
-        if (mActiveBattlers[mCurrentTurn].GetIsPlayer)
+        if (mActiveBattlers[mCurrentTurn].GetIsAPlayer)
         {
             Vector3 playerpos = new Vector3(mActiveBattlers[mCurrentTurn].gameObject.transform.position.x + 1.5f,
                                             mActiveBattlers[mCurrentTurn].gameObject.transform.position.y,
@@ -203,7 +203,7 @@ public class BattleManager : MonoBehaviour
             mCurrentTurn = 0;
         }
 
-        if (mActiveBattlers[mCurrentTurn].GetIsPlayer)
+        if (mActiveBattlers[mCurrentTurn].GetIsAPlayer)
         {
             Vector3 playerpos = new Vector3(mActiveBattlers[mCurrentTurn].gameObject.transform.position.x - 1.5f,
                                             mActiveBattlers[mCurrentTurn].gameObject.transform.position.y,
@@ -243,9 +243,9 @@ public class BattleManager : MonoBehaviour
             if (mActiveBattlers[i].GetCurrentHP == 0)
             {
                 //Handle dead battler
-                if (mActiveBattlers[i].GetIsPlayer)
+                if (mActiveBattlers[i].GetIsAPlayer)
                 {
-                    mActiveBattlers[i].GetSprite.sprite = mActiveBattlers[i].GetDeadSprite;
+                    mActiveBattlers[i].GetSpriteRenderer.sprite = mActiveBattlers[i].GetDeadSprite;
                 }
                 else
                 {
@@ -254,11 +254,11 @@ public class BattleManager : MonoBehaviour
             }
             else
             {
-                if (mActiveBattlers[i].GetIsPlayer)
+                if (mActiveBattlers[i].GetIsAPlayer)
                 {
                     allPlayersDead = false;
 
-                    mActiveBattlers[i].GetSprite.sprite = mActiveBattlers[i].GetAliveSprite;
+                    mActiveBattlers[i].GetSpriteRenderer.sprite = mActiveBattlers[i].GetAliveSprite;
                 }
                 else
                 {
@@ -300,19 +300,19 @@ public class BattleManager : MonoBehaviour
 
         for (int i = 0 ; i < mActiveBattlers.Count ; i++)
         {
-            if (mActiveBattlers[i].GetIsPlayer && mActiveBattlers[i].GetCurrentHP > 0)
+            if (mActiveBattlers[i].GetIsAPlayer && mActiveBattlers[i].GetCurrentHP > 0)
             {
                 players.Add(i);
             }
         }
 
         int selectedTarget = players[Random.Range(0, players.Count)];
-        int selectAttack = Random.Range(0, mActiveBattlers[mCurrentTurn].GetMovesAvailable.Length);
+        int selectAttack = Random.Range(0, mActiveBattlers[mCurrentTurn].GetListOfAttacks.Length);
         int movePower = 0;
 
         for (int i = 0 ; i < movesList.Length ; i++)
         {
-            if (movesList[i].moveName == mActiveBattlers[mCurrentTurn].GetMovesAvailable[selectAttack])
+            if (movesList[i].moveName == mActiveBattlers[mCurrentTurn].GetListOfAttacks[selectAttack])
             {
                 Instantiate(movesList[i].theEffect, mActiveBattlers[selectedTarget].transform.position, mActiveBattlers[selectedTarget].transform.rotation);
                 movePower = movesList[i].movePower;
@@ -330,7 +330,7 @@ public class BattleManager : MonoBehaviour
         float damageCalc = atkPwr / defPwr * movePower * Random.Range(.9f, 1.1f);
         int damageToGive = Mathf.RoundToInt(damageCalc);
 
-        Debug.Log(mActiveBattlers[mCurrentTurn].GetCharName + " is dealing " + damageCalc + "(" + damageToGive + ") damage to " + mActiveBattlers[target].GetCharName);
+        Debug.Log(mActiveBattlers[mCurrentTurn].GetName + " is dealing " + damageCalc + "(" + damageToGive + ") damage to " + mActiveBattlers[target].GetName);
 
         mActiveBattlers[target].SetCurrentHP(mActiveBattlers[target].GetCurrentHP - damageToGive);
 
@@ -344,12 +344,12 @@ public class BattleManager : MonoBehaviour
         {
             if (mActiveBattlers.Count > i)
             {
-                if (mActiveBattlers[i].GetIsPlayer)
+                if (mActiveBattlers[i].GetIsAPlayer)
                 {
                     BattleChar playerData = mActiveBattlers[i];
 
                     playerName[i].gameObject.SetActive(true);
-                    playerName[i].text = playerData.GetCharName;
+                    playerName[i].text = playerData.GetName;
                     playerHP[i].text = Mathf.Clamp(playerData.GetCurrentHP, 0, int.MaxValue) + "/" + playerData.GetMaxHP;
                     playerMP[i].text = Mathf.Clamp(playerData.GetCurrentMP, 0, int.MaxValue) + "/" + playerData.GetMaxMP;
                 }
@@ -373,7 +373,7 @@ public class BattleManager : MonoBehaviour
         if (!mIsBattleActive)
         {
             playerPrefabs[0] = GameManager.Access.GetCharacterStats[0].GetBattleCharacter;
-            playerPrefabs[0].SetCharName(GameManager.Access.GetCharacterStats[0].GetCharacterName);
+            playerPrefabs[0].SetName(GameManager.Access.GetCharacterStats[0].GetCharacterName);
             mCanFlee = setCannotFlee;
             mIsBattleActive = true;
             GameManager.Access.SetBattleActive(true);
@@ -388,7 +388,7 @@ public class BattleManager : MonoBehaviour
                 {
                     for (int j = 0; j < playerPrefabs.Length; j++)
                     {
-                        if (playerPrefabs[j].GetCharName == GameManager.Access.GetCharacterStats[i].GetCharacterName)
+                        if (playerPrefabs[j].GetName == GameManager.Access.GetCharacterStats[i].GetCharacterName)
                         {
                             BattleChar newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[i].rotation);
                             newPlayer.transform.parent = playerPositions[i];
@@ -410,7 +410,7 @@ public class BattleManager : MonoBehaviour
 
                             CharStats thePlayer = GameManager.Access.GetCharacterStats[i];
 
-                            mActiveBattlers[i].SetMovesAvailable(thePlayer.GetAllowedMovesNames(movesList));
+                            mActiveBattlers[i].SetListOfAttacks(thePlayer.GetAllowedMovesNames(movesList));
                             mActiveBattlers[i].SetCurrentHP(thePlayer.GetCurrentHP);
                             mActiveBattlers[i].SetMaxHP(thePlayer.GetMaxHP);
                             mActiveBattlers[i].SetCurrentMP(thePlayer.GetCurrentMP);
@@ -432,7 +432,7 @@ public class BattleManager : MonoBehaviour
 
                     for (int j = 0; j < enemyPrefabs.Length; j++)
                     {
-                        if (enemyPrefabs[j].GetCharName == enemiesToSpawn[i].Trim())
+                        if (enemyPrefabs[j].GetName == enemiesToSpawn[i].Trim())
                         {
                             BattleChar newEnemy = Instantiate(enemyPrefabs[j], enemyPositions[i].position, enemyPositions[i].rotation);
                             newEnemy.transform.parent = enemyPositions[i];
@@ -453,7 +453,7 @@ public class BattleManager : MonoBehaviour
             mTurnWaiting = true;
             mCurrentTurn = Random.Range(0, mActiveBattlers.Count);
 
-            if (mActiveBattlers[mCurrentTurn].GetIsPlayer)
+            if (mActiveBattlers[mCurrentTurn].GetIsAPlayer)
             {
                 Vector3 playerpos = new Vector3(mActiveBattlers[mCurrentTurn].gameObject.transform.position.x - 1.5f,
                                                 mActiveBattlers[mCurrentTurn].gameObject.transform.position.y,
@@ -506,7 +506,7 @@ public class BattleManager : MonoBehaviour
 
         for (int i = 0; i < mActiveBattlers.Count; i++)
         {
-            if (!mActiveBattlers[i].GetIsPlayer)
+            if (!mActiveBattlers[i].GetIsAPlayer)
             {
                 Enemies.Add(i);
             }
@@ -519,7 +519,7 @@ public class BattleManager : MonoBehaviour
                 targetButtons[i].gameObject.SetActive(true);
                 targetButtons[i].SetMoveName(moveName);
                 targetButtons[i].SetTarget(Enemies[i]);
-                targetButtons[i].SetTargetName(mActiveBattlers[Enemies[i]].GetCharName);
+                targetButtons[i].SetTargetName(mActiveBattlers[Enemies[i]].GetName);
             }
             else
             {
@@ -530,7 +530,7 @@ public class BattleManager : MonoBehaviour
 
     public void OpenMagicMenu()
     {
-        if (mActiveBattlers[mCurrentTurn].GetMovesAvailable.Length < 1)
+        if (mActiveBattlers[mCurrentTurn].GetListOfAttacks.Length < 1)
         {
             Debug.LogError("Prevented spell menu softlock add a close button and/or disable spells if move list is empty");
             return;
@@ -540,10 +540,10 @@ public class BattleManager : MonoBehaviour
 
         for (int i = 0; i < magicButtons.Length; i++)
         {
-            if (mActiveBattlers[mCurrentTurn].GetMovesAvailable.Length > i)
+            if (mActiveBattlers[mCurrentTurn].GetListOfAttacks.Length > i)
             {
                 magicButtons[i].gameObject.SetActive(true);
-                magicButtons[i].SetSpellName(mActiveBattlers[mCurrentTurn].GetMovesAvailable[i]);
+                magicButtons[i].SetSpellName(mActiveBattlers[mCurrentTurn].GetListOfAttacks[i]);
                 magicButtons[i].GetNameText.text = magicButtons[i].GetSpellName;
 
                 for (int j = 0; j < movesList.Length; j++)
@@ -621,11 +621,11 @@ public class BattleManager : MonoBehaviour
 
         for (int i = 0; i < mActiveBattlers.Count; i++)
         {
-            if (mActiveBattlers[i].GetIsPlayer)
+            if (mActiveBattlers[i].GetIsAPlayer)
             {
                 for (int j = 0; j < GameManager.Access.GetCharacterStats.Length; j++)
                 {
-                    if (mActiveBattlers[i].GetCharName == GameManager.Access.GetCharacterStats[j].GetCharacterName)
+                    if (mActiveBattlers[i].GetName == GameManager.Access.GetCharacterStats[j].GetCharacterName)
                     {
                         GameManager.Access.GetCharacterStats[j].SetCurrentHP(mActiveBattlers[i].GetCurrentHP);
                         GameManager.Access.GetCharacterStats[j].SetCurrentMP(mActiveBattlers[i].GetCurrentMP);
