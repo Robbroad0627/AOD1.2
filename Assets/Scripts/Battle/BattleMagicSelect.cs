@@ -3,7 +3,7 @@
  * Script: BattleMagicSelect.cs
  * Date Created: 
  * Created By: Rob Broad
- * Description: Used in BattleManager/MagicMenu/SpellButtons to set spells available
+ * Description: Used in BattleManager Prefab under MagicMenu/SpellButtons to set spells available
  * **************************************************************************************
  * Modified By: Jeff Moreau
  * Date Last Modified: August 23, 2024

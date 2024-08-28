@@ -3,7 +3,7 @@
  * Script: BattleManager.cs
  * Date Created: 
  * Created By: Rob Broad
- * Description:
+ * Description: Used in BattleManager Prefab
  * **************************************************************************************
  * Modified By: Jeff Moreau
  * Date Last Modified: August 26, 2024
@@ -16,6 +16,7 @@ using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class BattleManager : MonoBehaviour
 {
@@ -50,17 +51,24 @@ public class BattleManager : MonoBehaviour
     // reference this script.
     [Space(10)]
     [Header("SCENE INFO >======================---")]
-    [SerializeField] private SpriteRenderer backgroundSpriteRenderer = null;
-    [SerializeField] private GameObject battleScene = null;
-    [SerializeField] private GameObject uiButtonsHolder = null;
+    [FormerlySerializedAs("backgroundSpriteRenderer")]
+    [SerializeField] private SpriteRenderer BackgroundSpriteRenderer = null;
+    [FormerlySerializedAs("battleScene")]
+    [SerializeField] private GameObject BattleScene = null;
+    [FormerlySerializedAs("uiButtonsHolder")]
+    [SerializeField] private GameObject MenuCanvas = null;
     [Space(10)]
     [Header("TARGETING MENU >======================---")]
-    [SerializeField] private GameObject targetMenu = null;
-    [SerializeField] private BattleTargetButton[] targetButtons = null;
+    [FormerlySerializedAs("targetMenu")]
+    [SerializeField] private GameObject TargetCanvas = null;
+    [FormerlySerializedAs("targetButtons")]
+    [SerializeField] private BattleTargetButton[] EnemyTargetButtons = null;
     [Space(10)]
     [Header("MAGIC MENU >======================---")]
-    [SerializeField] private GameObject magicMenu = null;
-    [SerializeField] private BattleMagicSelect[] magicButtons = null;
+    [FormerlySerializedAs("magicMenu")]
+    [SerializeField] private GameObject MagicCanvas = null;
+    [FormerlySerializedAs("magicButtons")]
+    [SerializeField] private BattleMagicSelect[] PlayerSpellButtons = null;
     [Space(10)]
     [Header("PLAYER INFO >======================---")]
     [SerializeField] private Text[] playerName = null;
@@ -100,7 +108,7 @@ public class BattleManager : MonoBehaviour
     #region Getters/Accessors
 
     public int GetCurrentTurn => mCurrentTurn;
-    public GameObject GetMagicMenu => magicMenu;
+    public GameObject GetMagicMenu => MagicCanvas;
     public BattleNotification GetBattleNotice => battleNotice;
     public List<BattleChar> GetActiveBattlers => mActiveBattlers;
 
@@ -109,7 +117,7 @@ public class BattleManager : MonoBehaviour
 
     public int SetRewardXP(int amount) => mRewardXP = amount;
     public string[] SetRewardItems(string[] newItems) => mRewardItems = newItems;
-    public Sprite SetBackgroundSprite(Sprite newSprite) => backgroundSpriteRenderer.sprite = newSprite;
+    public Sprite SetBackgroundSprite(Sprite newSprite) => BackgroundSpriteRenderer.sprite = newSprite;
 
     #endregion
 
@@ -149,11 +157,11 @@ public class BattleManager : MonoBehaviour
             {
                 if (mActiveBattlers[mCurrentTurn].GetIsAPlayer)
                 {
-                    uiButtonsHolder.SetActive(true);
+                    MenuCanvas.SetActive(true);
                 }
                 else
                 {
-                    uiButtonsHolder.SetActive(false);
+                    MenuCanvas.SetActive(false);
 
                     //enemy should attack
                     StartCoroutine(EnemyMoveCo());
@@ -378,7 +386,7 @@ public class BattleManager : MonoBehaviour
             mIsBattleActive = true;
             GameManager.Access.SetBattleActive(true);
             transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
-            battleScene.SetActive(true);
+            BattleScene.SetActive(true);
 
             StartBattleMusic();
 
@@ -492,15 +500,15 @@ public class BattleManager : MonoBehaviour
         Instantiate(enemyAttackEffect, mActiveBattlers[mCurrentTurn].transform.position, mActiveBattlers[mCurrentTurn].transform.rotation);
         DealDamage(selectedTarget, movePower);
 
-        uiButtonsHolder.SetActive(false);
-        targetMenu.SetActive(false);
+        MenuCanvas.SetActive(false);
+        TargetCanvas.SetActive(false);
 
         NextTurn();
     }
 
     public void OpenTargetMenu(string moveName)
     {
-        targetMenu.SetActive(true);
+        TargetCanvas.SetActive(true);
 
         List<int> Enemies = new List<int>();
 
@@ -512,18 +520,18 @@ public class BattleManager : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < targetButtons.Length; i++)
+        for (int i = 0; i < EnemyTargetButtons.Length; i++)
         {
             if (Enemies.Count > i && mActiveBattlers[Enemies[i]].GetCurrentHP > 0)
             {
-                targetButtons[i].gameObject.SetActive(true);
-                targetButtons[i].SetMoveName(moveName);
-                targetButtons[i].SetTarget(Enemies[i]);
-                targetButtons[i].SetTargetName(mActiveBattlers[Enemies[i]].GetName);
+                EnemyTargetButtons[i].gameObject.SetActive(true);
+                EnemyTargetButtons[i].SetMoveName(moveName);
+                EnemyTargetButtons[i].SetTarget(Enemies[i]);
+                EnemyTargetButtons[i].SetTargetName(mActiveBattlers[Enemies[i]].GetName);
             }
             else
             {
-                targetButtons[i].gameObject.SetActive(false);
+                EnemyTargetButtons[i].gameObject.SetActive(false);
             }
         }
     }
@@ -536,28 +544,28 @@ public class BattleManager : MonoBehaviour
             return;
         }
 
-        magicMenu.SetActive(true);
+        MagicCanvas.SetActive(true);
 
-        for (int i = 0; i < magicButtons.Length; i++)
+        for (int i = 0; i < PlayerSpellButtons.Length; i++)
         {
             if (mActiveBattlers[mCurrentTurn].GetListOfAttacks.Length > i)
             {
-                magicButtons[i].gameObject.SetActive(true);
-                magicButtons[i].SetSpellName(mActiveBattlers[mCurrentTurn].GetListOfAttacks[i]);
-                magicButtons[i].GetSpellNameText.text = magicButtons[i].GetSpellName;
+                PlayerSpellButtons[i].gameObject.SetActive(true);
+                PlayerSpellButtons[i].SetSpellName(mActiveBattlers[mCurrentTurn].GetListOfAttacks[i]);
+                PlayerSpellButtons[i].GetSpellNameText.text = PlayerSpellButtons[i].GetSpellName;
 
                 for (int j = 0; j < movesList.Length; j++)
                 {
-                    if (movesList[j].moveName == magicButtons[i].GetSpellName)
+                    if (movesList[j].moveName == PlayerSpellButtons[i].GetSpellName)
                     {
-                        magicButtons[i].SetSpellCost(movesList[j].moveCost);
-                        magicButtons[i].GetSpellCostText.text = magicButtons[i].GetSpellCost.ToString();
+                        PlayerSpellButtons[i].SetSpellCost(movesList[j].moveCost);
+                        PlayerSpellButtons[i].GetSpellCostText.text = PlayerSpellButtons[i].GetSpellCost.ToString();
                     }
                 }
             }
             else
             {
-                magicButtons[i].gameObject.SetActive(false);
+                PlayerSpellButtons[i].gameObject.SetActive(false);
             }
         }
     }
@@ -608,9 +616,9 @@ public class BattleManager : MonoBehaviour
     private IEnumerator EndBattleCo()
     {
         mIsBattleActive = false;
-        uiButtonsHolder.SetActive(false);
-        targetMenu.SetActive(false);
-        magicMenu.SetActive(false);
+        MenuCanvas.SetActive(false);
+        TargetCanvas.SetActive(false);
+        MagicCanvas.SetActive(false);
 
         yield return new WaitForSeconds(.5f);
 
@@ -637,7 +645,7 @@ public class BattleManager : MonoBehaviour
         }
 
         UIFade.instance.FadeFromBlack();
-        battleScene.SetActive(false);
+        BattleScene.SetActive(false);
         mActiveBattlers.Clear();
         mCurrentTurn = 0;
 
@@ -657,7 +665,7 @@ public class BattleManager : MonoBehaviour
         mIsBattleActive = false;
         UIFade.instance.FadeToBlack();
         yield return new WaitForSeconds(1.5f);
-        battleScene.SetActive(false);
+        BattleScene.SetActive(false);
         SceneManager.LoadScene(gameOverScene);
     }
 
