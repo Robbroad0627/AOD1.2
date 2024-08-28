@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 146857552}
   - component: {fileID: 146857551}
   m_Layer: 0
-  m_Name: Sister
+  m_Name: Tessa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,39 +224,38 @@ MonoBehaviour:
   lines:
   - n-Tessa
   - 'Hello '
-  - n-Player
+  - n- Player
   - Hello Tessa
   - n-Tessa
   - I know you are bored here and want to go off and explore the world like adventurers
     of old in the stories.
   - But it is dangerous out there
-  - n-Player
+  - n- Player
   - I just can't stand not having been any where or not having done anything exciting.
   - n-Tessa
   - Well take your friends with you to help keep you safe.
-  - n-Player
+  - n- Player
   - That is a very smart idea.
   - n-Tessa
   - I have lots of smart ideas, it is just that no one ever listens to me.
-  - n-Player
+  - n- Player
   - Well they should.
   - n-Tessa
   - Makesure you by the shop to buy weapons and armor before you leave
-  - n-Player
+  - n- Player
   - Another great idea Tessa!
   - n-Tessa
   - I know.  I told you I have lots of them.
-  - n-Player
+  - n- Player
   - Just don't go growing up on me while I am gone.
   - n-Tessa
   - Be safe.
   - I am going to miss you
-  - n-Player
+  - n- Player
   - Bye
   - n-Tessa
   - Bye
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &146857551
@@ -351,20 +350,19 @@ MonoBehaviour:
   - Heading outside of town this way you will encounter slimes, lots and lots of
     slime.  They are fairly easy to kill thus making them very good for practice
     and honing your skills.
-  - n-Player
+  - n- Player
   - Thanks for the advice.  We appreciate it.
   - n-Gordon
   - Also, roads are safer than walking across the grasslands and open spaces.
   - And, healing potions are your best friend.
-  - n-Player
+  - n- Player
   - We will buy some as soon as we can.
   - n-Gordon
   - Good luck out there.  Hope to talk to you again before you head out into the
     world.
-  - n-Player
+  - n- Player
   - Thanks
   isPerson: 1
-  shouldActivateQuest: 1
   questToMark: Advice
   markComplete: 0
 --- !u!61 &229440745
@@ -6984,16 +6982,15 @@ MonoBehaviour:
   lines:
   - n-Betru
   - Oh my goodness you did it
-  - n-Player
+  - n- Player
   - Yes we did
   - n-Betru
   - Hopefully you are all healthy after that.
-  - n-Player
+  - n- Player
   - It wasn't as easy as we thought it would be, but we learned from it
   - n-Betru
   - Thank you so much for helping protect the village.  I wish you well on your journey
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: Kill the slime
   markComplete: 0
 --- !u!212 &562785093
@@ -7795,14 +7792,13 @@ MonoBehaviour:
   lines:
   - n- Samson
   - Enjoy your shopping
-  - n-Player
+  - n- Player
   - Thanks, we will.
   - n- Samson
   - Good luck out in the world.
-  - n-Player
+  - n- Player
   - Thank's Sampson
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: First Blood
   markComplete: 0
 --- !u!61 &959666261
@@ -8482,12 +8478,11 @@ MonoBehaviour:
     - Leather Armor
     - Potion of Healing
     - Potion of Healing
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 10
-  deactivateAfterStarting: 1
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 1
+  deactivateAfterStarting: 1
   shouldCompleteQuest: 1
   QuestToComplete: Kill the slime
 --- !u!61 &1105297208
@@ -9119,28 +9114,27 @@ MonoBehaviour:
     lookvery similar
   - The guys who thought of it made a fortune selling the plans to everyone who wanted
     a store.  They even sold them the materials at discount.
-  - n-Player
+  - n- Player
   - That is a smart idea.
   - n- Samson
   - Just behind me is the store, each store has a limited stock, but you can sell
     anythng you want to them and as much as you want.
   - It is a great way of making money and clearing up space in your inventory.
   - 'But, they won''t sell to you or buy from you until you have won a battle.  '
-  - n-Player
+  - n- Player
   - Thanks for the tip.  I appreciate it.
   - n- Samson
   - Good luck out there.  I wish I had the courage when I was younger to go off and
     see the world.  I have only ventured as far far as Altir.
   - Remember where you came from, when you are rich and famous.
-  - n-Player
+  - n- Player
   - Thank you Samson, and good luck to you as well.
   - n- Samson
   - Come back after you have some kills and they will gladly sell to you.
   - Bye
-  - n-Player
+  - n- Player
   - Bye
   isPerson: 1
-  shouldActivateQuest: 1
   questToMark: First Blood
   markComplete: 0
 --- !u!212 &1170343856
@@ -9322,7 +9316,6 @@ MonoBehaviour:
   lines:
   - Calimere
   isPerson: 0
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &1204819432
@@ -29143,18 +29136,17 @@ MonoBehaviour:
   - I really wish the water wasn't so shallow so that we could have a dock here in
     Calimere
   - Instead we have to go all the way to Tearle
-  - n-Player
+  - n- Player
   - That would be nice, but there really isn't much we can do to change that.
   - n- Nick
   - I don't know, Sampson says the water has been rising  each year, so maybe in
     time it will be deep enough here for a dock.
-  - n-Player
+  - n- Player
   - That is interesting.
   - Have a great day.
   - n- Nick
   - You too
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &1475608339
@@ -30045,16 +30037,15 @@ MonoBehaviour:
   lines:
   - n-Gordon
   - Glad you took my advice
-  - n-Player
+  - n- Player
   - We would llike to thank you for the advice, it was very helpful.
   - n-Gordon
   - You are very welome.
   - Good luck on your adventuring.  I will leave you to your business now.
   - Until we meet again.
-  - n-Player
+  - n- Player
   - Goodbye.
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: Advice
   markComplete: 0
 --- !u!61 &1632882388
@@ -30298,7 +30289,6 @@ MonoBehaviour:
   - n-Player
   - Bye.
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &1711327026
@@ -30517,7 +30507,7 @@ MonoBehaviour:
   lines:
   - n-Betru
   - Friends, before heading out of town could you do me a favor?
-  - n-Player
+  - n- Player
   - Sure, what is it?
   - n-Betru
   - On the east side of town there are some nasty green slimes that have been making
@@ -30525,10 +30515,9 @@ MonoBehaviour:
   - There is a is a pack of 6 slimes that are very aggressive
   - Could you go kill them so the village will be safe.  I know one of them swallowed
     a gold ring you could sell for lots of money.
-  - n-Player
+  - n- Player
   - No problem we could use the practice.
   isPerson: 1
-  shouldActivateQuest: 1
   questToMark: Kill the slime
   markComplete: 0
 --- !u!212 &1804993895

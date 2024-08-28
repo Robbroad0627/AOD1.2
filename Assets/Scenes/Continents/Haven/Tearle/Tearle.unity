@@ -159,7 +159,7 @@ Transform:
   - {fileID: 773267405}
   - {fileID: 1231919651}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &92973091
 GameObject:
@@ -191,7 +191,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &92973093
 MonoBehaviour:
@@ -6970,12 +6970,11 @@ Transform:
   m_Children:
   - {fileID: 1226971551}
   - {fileID: 685953242}
-  - {fileID: 1281651197}
   - {fileID: 570964769}
   - {fileID: 317936343}
   - {fileID: 277366751}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &268992062
 PrefabInstance:
@@ -7173,7 +7172,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 251994253}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &277366752
 MonoBehaviour:
@@ -7190,15 +7189,14 @@ MonoBehaviour:
   lines:
   - n- Lan
   - Histachi....  Snakes....  Gone
-  - n-Player
+  - n- Player
   - Hello
   - n- Lan
   - Gone...   Disappeared...  Stella
-  - n-Player
+  - n- Player
   - We don't understand
   - Gone...
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &277366753
@@ -7490,7 +7488,7 @@ Transform:
   m_LocalScale: {x: 0.35, y: 0.35, z: 0.35}
   m_Children: []
   m_Father: {fileID: 251994253}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &317936344
 MonoBehaviour:
@@ -7508,21 +7506,20 @@ MonoBehaviour:
   - n-Eloise
   - Welcome to Tearle the shipping hub of  Haven
   - Although there is not much shipping these days.
-  - n-Player
+  - n- Player
   - Thank you for the welcome.
   - n-Jesup
   - Beware of the guy in the  the southwest corner fo town.  He has frightened a
     lot of people with his crazy ramblings.
-  - n-Player
+  - n- Player
   - Maybe we should have a chat with him.
   - n-Jesup
   - You can try but I doubt you will get anywhere with him.
   - Good luck with your conversation.
   - Bye.
-  - n-Player
+  - n- Player
   - Goodbye
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &317936345
@@ -26819,7 +26816,7 @@ Transform:
   - {fileID: 186402725}
   - {fileID: 403443816}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &554025708
 PrefabInstance:
@@ -32908,7 +32905,7 @@ Transform:
   m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children: []
   m_Father: {fileID: 251994253}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &570964770
 MonoBehaviour:
@@ -32925,34 +32922,33 @@ MonoBehaviour:
   lines:
   - n-Jesup
   - Hello
-  - n-Player
+  - n- Player
   - Hello
   - n-Jesup
   - Sorry if the shops are not up to our normal standards, but we haven't had a boat
     land in weeks.
   - It is hard on the entire country since we have the only port.
   - If boats don't start arriving soon, I think people are going to panic.
-  - n-Player
+  - n- Player
   - Why hasn't there been any boats?
   - n-Jesup
   - There is a massive whirlpool at teh mouth of the cove that has destroyed 3 boats
     with supplies coming in.
   - That also means we can not ship our produce and goods out.
   - That must be quite the strain on Ashtir whom we ship produce to every week.
-  - n-Player
+  - n- Player
   - That is definitely not good.
   - n-Jesup
   - And now we have a crazy guy, babbling about making the citizens scared.
-  - n-Player
+  - n- Player
   - Not sure what we can do but we will look around and see if there is something
     we can do.
   - n-Jesup
   - Then I definitely won't keep you.  Good luck
   - Goodbye
-  - n-Player
+  - n- Player
   - Bye.
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &570964771
@@ -33090,7 +33086,7 @@ Transform:
   - {fileID: 100470395}
   - {fileID: 247831943}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &685953241
 GameObject:
@@ -33261,7 +33257,7 @@ Transform:
   - {fileID: 741455639}
   - {fileID: 1339427261}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &773267405 stripped
 Transform:
@@ -33524,37 +33520,36 @@ MonoBehaviour:
   lines:
   - n- Allister
   - Oh my, there's my baby.  You rescued her.
-  - n-Player
+  - n- Player
   - It was not easy, but we survived.
   - n- Allister
   - You people are magnificent.  I am sure there are lots of people out there that
     could use your help.
   - Are you up to seeing the world and putting things right?
-  - n-Player
+  - n- Player
   - I believe we are.
   - n- Allister
   - Excellent!.  It will be weeks before word gets around that boats can travel here
     again. But that will be after the whirlpool dies down, that could take months...hopefully
     only months and not years.  But I have an idea.....
-  - n-Player
+  - n- Player
   - ???
   - n- Allister
   - Yes, I have a brilliant idea.  I will teleport you to the island nation of Ashtir.
   - There have been reports of strange things there and you may just be the help
     they need.
-  - n-Player
+  - n- Player
   - Ummm isn't it really cold there?
   - n-Allister
   - No need to thank me.  I will get you there in just a few minutes
-  - n-Player
+  - n- Player
   - You really don't have to do this
   - n-Allister
   - Can you pick up that water ruin?
   - it is on the ground right there.
-  - n-Bron
+  - n- Bron
   - It looks pretty...
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: Elemental
   markComplete: 1
 --- !u!212 &1040827297
@@ -34321,8 +34316,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 251994253}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1281651198
 MonoBehaviour:
@@ -34483,7 +34478,7 @@ Transform:
   - {fileID: 1480362144}
   - {fileID: 469177636}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1335640705
 PrefabInstance:
@@ -54101,31 +54096,31 @@ MonoBehaviour:
   lines:
   - n- Allister
   - How do you do fair travellers?
-  - n-Player
+  - n- Player
   - We are good, and yourself?
   - n- Allister
   - I am not good.  You see that whirloll blocking th entrance to the harbor?
-  - n-Player
+  - n- Player
   - Yes
   - n- Allister
   - Well it is being caused by my pet water elemental.
   - She is trappped in the catacombs under my tower and by a fire elemental.
   - The battles and ruckus have shaken my tower, and now it is in shambles. Even
     that hack Jaru wouldn't live here.
-  - n-Player
+  - n- Player
   - Why in heaven's name woud you have a pet water elemental.
   - n- Allister
   - I do experiments on exotic creatures to better understand their nature.
   - The fire elemental got out of his pen, he chased me out of the catacombs.
   - And now I am too scared to go back down there and even more scared for my baby.
-  - n-Bron
+  - n- Bron
   - You experiment on creatures?
   - n- Allister
   - Yes, how do you think we know that fire kills trolls? Someone like myself  experimented
     and then shared that information with adventureres like yourself.
-  - n-Bron
+  - n- Bron
   - We are going down there to rescue the water elemental.
-  - n-Bawb
+  - n- Bawb
   - Wait just a second. You want us to go down there and battle a fire elemental,
     and who knows what else.
   - What else is down there?
@@ -54134,20 +54129,20 @@ MonoBehaviour:
     up crew.
   - A few other creatures. I am sure mighty adventurers like yourself can handle
     anything down there.
-  - n-Bawb
+  - n- Bawb
   - I really think we should just mind our business, and go have some pints at the
     tavern and reflect on the road that has gotten us here.
-  - n-Bron
+  - n- Bron
   - We are rescuing the water elemental.
-  - n-Bawb
+  - n- Bawb
   - We are not
-  - n-Bron
+  - n- Bron
   - We are rescuing the water elemental. Did my words go over your head?
-  - n-Player
+  - n- Player
   - I guess we are going to rescue the water elemental.
   - n- Allister
   - 'Oh marvelous.  '
-  - n-Bron
+  - n- Bron
   - You better hope she is unscathed or you will deal with me.
   - n- Allister
   - Then you might want to hurry to rescue her.
@@ -54157,7 +54152,6 @@ MonoBehaviour:
   - Sounds good.
   - Bye
   isPerson: 1
-  shouldActivateQuest: 1
   questToMark: Elemental
   markComplete: 0
 --- !u!212 &1557916077

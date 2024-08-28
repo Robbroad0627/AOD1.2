@@ -584,7 +584,6 @@ MonoBehaviour:
   - n- Cualli
   - Goodbye.
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!1 &369844994
@@ -893,7 +892,6 @@ MonoBehaviour:
   - n- Player
   - Goodbye
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!1 &443266261
@@ -1067,7 +1065,6 @@ MonoBehaviour:
   - n- Teyaton
   - Goodbye
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!4 &459657166 stripped
@@ -122741,7 +122738,7 @@ MonoBehaviour:
     the children to fetch water is a bunch of bright colorful snakes.
   - The children are attracted to the bright colors and are bit and die.  We have
     lost a handful of children so far.
-  - n-Player
+  - n- Player
   - 'That is not right.  '
   - ....
   - You say to the north near a pond.  I think this is something we need to check
@@ -122754,7 +122751,6 @@ MonoBehaviour:
   - n- Tlaltia
   - Good luck
   isPerson: 1
-  shouldActivateQuest: 1
   questToMark: It Had To Be Snakes
   markComplete: 0
 --- !u!1001 &1934965533
@@ -122947,7 +122943,8 @@ MonoBehaviour:
   - Thank you for the welcome.
   - n- Tepin
   - All these snake attacks have been so bad.  Is it like that every where?
-  - n- Player from what we are hearing it is the same everywhere in your land.
+  - 'n- Player '
+  - From what we are hearing it is the same everywhere in your land.
   - n- Tepin
   - That is terrible.
   - n- Player
@@ -122957,7 +122954,6 @@ MonoBehaviour:
   - n- Player
   - Thank you.  Goodbye.
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &1965684618
@@ -123099,7 +123095,6 @@ MonoBehaviour:
   - n- Player
   - You as well.
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: It Had To Be Snakes
   markComplete: 0
 --- !u!61 &2018037407

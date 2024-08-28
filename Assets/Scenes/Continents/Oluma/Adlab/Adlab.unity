@@ -194,7 +194,6 @@ MonoBehaviour:
   - Let us pray you never need help
   - Good Bye
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!114 &59677217
@@ -344,11 +343,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115458779}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.480652, y: 24.99, z: 4.0936875}
+  m_LocalPosition: {x: 40.648262, y: -0.60629463, z: 12.549362}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
-  m_Father: {fileID: 1533868858}
-  m_RootOrder: 1
+  m_Father: {fileID: 228621584}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &115458781
 MonoBehaviour:
@@ -378,39 +377,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - n-Izzat al-Hallal
+  - n- Izzat al-Hallal
   - Ah you have returned, I knew you could do it.
-  - n-Player
+  - n- Player
   - Yes we have returned.
-  - n-Izzat al-Hallal
+  - n- Izzat al-Hallal
   - Good., And you all survived
-  - n-Player
+  - n- Player
   - Yes we survived
-  - n-Bron
+  - n- Bron
   - They were horrible
-  - n-Izzat al-Hallal
+  - n- Izzat al-Hallal
   - The important things is you killed them and returned alive
-  - n-Player
+  - n- Player
   - Yes we made
-  - n-Izzat al-Hallal
+  - n- Izzat al-Hallal
   - That is most excelelnt
   - I have pressing matters to attend to.  Have a great day
-  - 'n-Player '
+  - n- Player
   - You mentioned proper compensation
-  - n-Izzat al-Hallal
+  - n- Izzat al-Hallal
   - What?
   - Helping our fine village is not compensation enough for you?
   - You have our gratitude
   - ...
   - It is really quite mercenary of you to expect some sort of payment.  Especially
     without a written contract.
-  - n-Bawb
+  - n- Bawb
   - You know what?  It might be best if you run off to your pressing matters
-  - n-Bron
+  - n- Bron
   - 'Yes.  Run along. '
   - Now!
   isPerson: 1
-  shouldActivateQuest: 1
   questToMark: Sting of the Tail
   markComplete: 0
 --- !u!61 &115458783
@@ -516,6 +514,92 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &228621583
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1533868858}
+    m_Modifications:
+    - target: {fileID: 2434758651056572089, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_Name
+      value: QuestManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 115458779}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: questToCheck
+      value: Sting of the Tail
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.167612
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25.596294
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.455675
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ad1680edb5e536a4da50947749261935, type: 3}
+--- !u!4 &228621584 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+    type: 3}
+  m_PrefabInstance: {fileID: 228621583}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &231923203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -687,7 +771,6 @@ MonoBehaviour:
   - n-Player
   - Good Bye
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &259159170
@@ -1569,7 +1652,7 @@ PrefabInstance:
     - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
@@ -1659,11 +1742,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791662616}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.76065, y: 24.397865, z: 4.0936875}
+  m_LocalPosition: {x: 59.92826, y: -1.1984291, z: 12.549362}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
-  m_Father: {fileID: 1533868858}
-  m_RootOrder: 3
+  m_Father: {fileID: 1749809999}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &791662618
 MonoBehaviour:
@@ -1717,7 +1800,6 @@ MonoBehaviour:
   - Good Bye
   - ...  And Good Luck
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: Djin
   markComplete: 0
 --- !u!114 &791662619
@@ -2400,33 +2482,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - n-Izzat al-Hallal
+  - n- Izzat al-Hallal
   - Awe strangers welcome to Adlab
-  - n-Player
+  - n- Player
   - Thank you for the warm welcome
-  - n-Izzat al-Hallal
+  - n- Izzat al-Hallal
   - I have been praying that brave souls would come to help us out and my prayers
     have been answered
-  - n-Player
+  - n- Player
   - ....
-  - n-Bron
+  - n- Bron
   - What are you talking about?
-  - n-Izzat al-Hallal
+  - n- Izzat al-Hallal
   - We have some rather large scorpions just south of the town and they are quite
     venomous.
   - I am worried that one of our fine people may get stung and die
-  - n-Player
+  - n- Player
   - And you want us to risk our lives to rid you of the scorpions.
-  - n-Izzat al-Hallal
+  - n- Izzat al-Hallal
   - Be assured you will be compensated for your work.
   - ...
   - Now please go take care fo this for us.
-  - 'n-Player '
+  - n- Player
   - We will see what we can do
-  - n-Izzat al-Hallal
+  - n- Izzat al-Hallal
   - Yes. Yes. please hurry
   isPerson: 1
-  shouldActivateQuest: 1
   questToMark: Sting of the Tail
   markComplete: 0
 --- !u!61 &1237243137
@@ -97920,6 +98001,206 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1353360170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1353360171}
+  - component: {fileID: 1353360176}
+  - component: {fileID: 1353360175}
+  - component: {fileID: 1353360174}
+  - component: {fileID: 1353360173}
+  - component: {fileID: 1353360172}
+  m_Layer: 0
+  m_Name: Izzat al-Hallal (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1353360171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353360170}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 40.648262, y: -0.60629463, z: 12.549362}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1749809999}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1353360172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353360170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1353360170}
+  questToCheck: Sting of the Tail
+  activeIfComplete: 1
+--- !u!114 &1353360173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353360170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n- Izzat al-Hallal
+  - Ah you have returned, I knew you could do it.
+  - n- Player
+  - Yes we have returned.
+  - n- Izzat al-Hallal
+  - Good., And you all survived
+  - n- Player
+  - Yes we survived
+  - n- Bron
+  - They were horrible
+  - n- Izzat al-Hallal
+  - The important things is you killed them and returned alive
+  - n- Player
+  - Yes we made
+  - n- Izzat al-Hallal
+  - That is most excelelnt
+  - I have pressing matters to attend to.  Have a great day
+  - n- Player
+  - You mentioned proper compensation
+  - n- Izzat al-Hallal
+  - What?
+  - Helping our fine village is not compensation enough for you?
+  - You have our gratitude
+  - ...
+  - It is really quite mercenary of you to expect some sort of payment.  Especially
+    without a written contract.
+  - n- Bawb
+  - You know what?  It might be best if you run off to your pressing matters
+  - n- Bron
+  - 'Yes.  Run along. '
+  - Now!
+  isPerson: 1
+  questToMark: Sting of the Tail
+  markComplete: 0
+--- !u!61 &1353360174
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353360170}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.06, y: 2.5}
+    newSize: {x: 1.06, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.06, y: 2.5}
+  m_EdgeRadius: 0
+--- !u!61 &1353360175
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353360170}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.06, y: 2.5}
+    newSize: {x: 1.06, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.06, y: 2.5}
+  m_EdgeRadius: 0
+--- !u!212 &1353360176
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353360170}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6b761eac847f37d46bc18a16f84d5b01, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.06, y: 2.5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1389109434
 GameObject:
   m_ObjectHideFlags: 0
@@ -104704,9 +104985,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1237243135}
-  - {fileID: 115458780}
+  - {fileID: 228621584}
   - {fileID: 1975293408}
-  - {fileID: 791662617}
+  - {fileID: 1749809999}
   - {fileID: 259159168}
   - {fileID: 59677215}
   - {fileID: 2045366047}
@@ -104725,6 +105006,92 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4389018930797044, guid: 64d2c8884948e1d4d82cda544b880100,
     type: 3}
   m_PrefabInstance: {fileID: 1405505429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1749809998
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1533868858}
+    m_Modifications:
+    - target: {fileID: 2434758651056572089, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_Name
+      value: QuestManagement (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 791662616}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: questToCheck
+      value: Djin
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.167612
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 25.596294
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.455675
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ad1680edb5e536a4da50947749261935, type: 3}
+--- !u!4 &1749809999 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+    type: 3}
+  m_PrefabInstance: {fileID: 1749809998}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1773766435
 GameObject:
@@ -104972,14 +105339,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - n-Ilhaam el-Sarah
+  - n- Ilhaam el-Sarah
   - Please help me.
   - My family was set upon by a nasty Djin and no one here is willing to help.
   - These so called men are too scared to go out and rescue them.
-  - n-Player
+  - n- Player
   - That is terrible.
   - Tell us what happened and we will see what we can do.
-  - n-Ilhaam el-Sarah
+  - n- Ilhaam el-Sarah
   - We were travelling through the sands with our wares to sell and we stopped for
     the night.
   - A stranger approached our encampment.
@@ -104995,23 +105362,22 @@ MonoBehaviour:
   - I was so worried he would chase me and catch em and make me disappear too.
   - ...
   - I am sure he made my sister disappear too.
-  - n-Player
+  - n- Player
   - Where abouts did this happen.
-  - n-Ilhaam el-Sarah
+  - n- Ilhaam el-Sarah
   - We were close to the new Oasis, that everyone is calling Karwiya
   - It is so odd, we have seen small oasis pop up before, but never anything like
     this.  This one is massive.
-  - 'n-Player '
+  - n- Player
   - We will head out that way and see what we can find.
-  - n-Ilhaam el-Sarah
+  - n- Ilhaam el-Sarah
   - Thank you.  It is so nice to meet brave people unlike the sheep of this village
   - I will await your return
-  - n-Player
+  - n- Player
   - Good Bye
-  - n-Ilhaam el-Sarah
+  - n- Ilhaam el-Sarah
   - See you soon
   isPerson: 1
-  shouldActivateQuest: 1
   questToMark: Djin
   markComplete: 0
 --- !u!61 &1975293410
@@ -105326,7 +105692,7 @@ PrefabInstance:
     - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9023170970101229433, guid: 254e4a634b6f74e459e8f29d3a8a25fa,
         type: 3}
