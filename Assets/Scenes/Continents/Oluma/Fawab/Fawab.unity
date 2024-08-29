@@ -187,11 +187,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100535589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.576958, y: 5.7, z: 11.316841}
+  m_LocalPosition: {x: 16.365221, y: 6.4815702, z: 23.866203}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
-  m_Father: {fileID: 1275335879}
-  m_RootOrder: 2
+  m_Father: {fileID: 1984358053}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &100535591
 MonoBehaviour:
@@ -454,6 +454,11 @@ PrefabInstance:
       propertyPath: transitionName
       value: Fawab-2
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SpawnPointName
+      value: Fawab-2
+      objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -462,6 +467,16 @@ PrefabInstance:
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
+      value: Fawab Shop-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: Fawab Shop
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: EntranceSpawnPointName
       value: Fawab Shop-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -774,11 +789,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 613889047}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.07, y: -4.44, z: 11.316841}
+  m_LocalPosition: {x: 49.581306, y: -8.525608, z: 12.549363}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
-  m_Father: {fileID: 1275335879}
-  m_RootOrder: 3
+  m_Father: {fileID: 1914699330}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &613889049
 MonoBehaviour:
@@ -1694,6 +1709,11 @@ PrefabInstance:
       propertyPath: transitionName
       value: Fawab-3
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SpawnPointName
+      value: Fawab-3
+      objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -1702,6 +1722,16 @@ PrefabInstance:
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
+      value: Fawab Inn-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: Fawab Inn
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: EntranceSpawnPointName
       value: Fawab Inn-1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -11763,11 +11793,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1273831499}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.276958, y: -4.2328224, z: 11.316841}
+  m_LocalPosition: {x: 12.065221, y: -3.451252, z: 23.866203}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
-  m_Father: {fileID: 1275335879}
-  m_RootOrder: 1
+  m_Father: {fileID: 1846127257}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1273831501
 MonoBehaviour:
@@ -11781,7 +11811,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lines: []
+  lines:
+  - n- Ameen al-Zaidi
+  - Welcome to Fawab
+  - n- Player
+  - Thank you for the welcome.  How are you today.
+  - n- Ameen al-Zaidi
+  - I am good. Thank you for asking.
+  - n- Player
+  - What can you tell me about this region of Oluma
+  - n- Ameen al-Zaidi
+  - Nothing exciting ever happens around here.  People just want to get away from
+    Fawab and maybe got to Sililah.
+  - n- Player
+  - Finally a peaceful town
+  - n- Ameen al-Zaidi
+  - Pretty boring place
+  - If anything exciting was going on around here I would know it.
+  - As cousin to the Caliph I am expercted to keep eye out of unusual activity.
+  - Your arrival in town might be the most exciting thing to happen here in the last
+    two years.
+  - n- Player
+  - Excellent to here.
+  - Have a great day
+  - n- Ameen al-Zaidi
+  - You too. Good Bye
   isPerson: 1
   questToMark: 
   markComplete: 0
@@ -11916,11 +11970,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 803090883}
-  - {fileID: 1273831500}
-  - {fileID: 100535590}
-  - {fileID: 613889048}
   - {fileID: 1984358053}
-  - {fileID: 1328866383}
+  - {fileID: 1914699330}
+  - {fileID: 1846127257}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12100,11 +12152,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328866382}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.07, y: -4.44, z: 11.316841}
+  m_LocalPosition: {x: 49.581306, y: 19.09, z: 12.549363}
   m_LocalScale: {x: 0.7, y: 0.7, z: 1}
   m_Children: []
-  m_Father: {fileID: 1275335879}
-  m_RootOrder: 5
+  m_Father: {fileID: 1914699330}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1328866384
 MonoBehaviour:
@@ -12120,24 +12172,121 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - n- Randa el-Nasr
-  - Welcome to Fawab. It is so nice to have outsiders here.
-  - What news of the world can you tell me.
+  - What are you doing out here.
+  - I already told you I was too busy to be chatting with you.
   - n- Player
-  - Thank you for the welcome.
-  - Lets see, new of the world. Ashtir is shrinking, Larsu is infested with aggressive
-    snakes, and something seems foul everywhere we go.
+  - We would like a few wrds with you none the less.
+  - So would you like to do this the easy, civil way or do you wanna make Bawb angry
+    and take your chances with an irate dwarf?
   - n- Randa el-Nasr
-  - That is not good
-  - n- Player
-  - No it is not.
+  - Be quick about it, what do you want.
+  - n- Bron
+  - Tell us about these bags you hve given to the children
   - n- Randa el-Nasr
-  - Well I have pressing matters to attend to. Running a town is no easy task. Busy.
-    Busy . Busy.
+  - You want to know about worthless trinkets I give out to the children. You really
+    are wasting my time.
+  - n- Bron
+  - What is it you say to the parents when their children go missing?
+  - That they must have wandered off?
+  - The desert is a dangerous place?
+  - That they probably ran away to another village?
+  - n- Randa el-Nasr
+  - I do not know what you are insuating, but I really do not have time for your
+    foolish nonsense.
   - n- Player
-  - Good Bye
+  - Okay, we tried to ask nicely.
+  - He is all yours Bawb. Try not to break him before you get the answers this time.
+  - n- Randa el-Nasr
+  - Just stay away from me.
+  - n- Bawb
+  - The good lady asked you about those bags and you did not answer her.
+  - So I am going to suggest you think for a second and answer her honestly or I
+    am going to get angry.
+  - n- Randa el-Nasr
+  - You cannot touch me I run Fawab.  I am vital to the economy of Oluma.
+  - The Caliph has said any foreigner harming a sovereign citizen of Oluma will be
+    behaded
+  - n- Bawb
+  - I am willing to risk it.
+  - Besides there are no witnesses out here.
+  - So tell the nice lady about the bags.
+  - n- Randa el-Nasr
+  - 'There is nothing to tell. A client gives them to me. '
+  - She said to give them to less fortunate children.
+  - n- Bron
+  - I know there is more to the story, so you might as well spill the beans before
+    Bawb there beats it out of you.
+  - The last time he did it, I had to cast prestidigiation one each of us, twice
+    on Bawb. We also had to heal the poor guy three times before he confessed.
+  - n- Randa el-Nasr
+  - Ok....  I give out the bag and someone comes and nabs the child.  Most of the
+    families barely have enough food on the table so there is less burden on the
+    family if someone steals off with kid in the night.
+  - I am doing those families a service.
+  - n- Bawb
+  - My senses tell me there is more to this. Spilled th beans before I start spilling
+    blood.
+  - n- Randa el-Nasr
+  - Ok. I watched this scaly man sneak into town one night about 2 years ago a day
+    after I gave a kid the bag.
+  - He blew some kind of powder in the kids face, and then picked the kid up and
+    carried him out of town.
+  - n- Bawb
+  - There's more. Weasels like this guy never say everything.
+  - Out with it.
+  - n- Randa el-Nasr
+  - Okay but you have to promise not to hurt me.
+  - n- Player
+  - Done
+  - n- Randa el-Nasr
+  - Not good enough. I want Bawb to promise not to hurt me.
+  - .....
+  - ......
+  - Done. I won't hurt you.
+  - n- Randa el-Nasr
+  - I followed them out of town.
+  - When they got to a clearing a couple other scaly men each had a child with them.
+  - They woke the children up. Then poured an elixir down their throats.
+  - The children dropped to the ground convulsing, and after a coule minutes they
+    stood up.
+  - They had blank stares and obediently followed the scaly men.
+  - As I turn to leave a beautiful woman stepped out and handed me a bag of gems
+    and told me she needed more children
+  - I was about to say something but something looked off about her. Her body was
+    slightly swaying as she continued to speak
+  - ....
+  - When I wok up on the ground a while later I still had the bag of gems. It was
+    worth more than I make in 10 years.
+  - In the bag was a note, it said "More children or join the ones you have seen
+    tonight"
+  - ...
+  - So ever since then I have been handing out the bags.
+  - Every so often my supplier hands me a bag of gems with the bags and I deliver
+    the bags on my trade route.
+  - Now that I have the money I have expanded my operation and have a cargo ship.
+    I recently sent bags to Larsu, Mandu, and Haven.
+  - n- Bron
+  - You sent bags to Haven.
+  - I am going to kill him.
+  - n- Randa el-Nasr
+  - You promised not to hurt me.
+  - n- Player
+  - That we did.
+  - Unfortunately for you the good people in Fawab have ot made such a promise.
+  - I read that you people like to stone people to death for vicious crimes.
+  - I bet aiding in the abduction of countless childre will be considered pretty
+    vicious.
+  - n- Randa el-Nasr
+  - You.. You can't do that.
+  - The will put me to death.
+  - n- Player
+  - We are counting on it.
+  - If he tries to flee you may do anything you need to restrain him Bawb as long
+    as the people in Fawab get to deliver their justice.
+  - Lets go.
   isPerson: 1
   questToMark: Randa
-  markComplete: 0
+  markComplete: 1
 --- !u!61 &1328866385
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -108737,6 +108886,11 @@ PrefabInstance:
       propertyPath: transitionName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SpawnPointName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -108747,6 +108901,16 @@ PrefabInstance:
       propertyPath: areaTransitionName
       value: Oluma-3
       objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: EntranceSpawnPointName
+      value: Oluma-3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64d2c8884948e1d4d82cda544b880100, type: 3}
 --- !u!4 &1428108878 stripped
@@ -108755,6 +108919,180 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1428108877}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1430876366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1430876367}
+  - component: {fileID: 1430876371}
+  - component: {fileID: 1430876370}
+  - component: {fileID: 1430876369}
+  - component: {fileID: 1430876368}
+  m_Layer: 0
+  m_Name: Ameen al-Hamid (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1430876367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430876366}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.065221, y: -3.451252, z: 23.866203}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1846127257}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1430876368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430876366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n- Player
+  - I thought you said nothing exciting happens around here.
+  - n- Ameen al-Zaidi
+  - Thats right
+  - n- Player
+  - What about Randa el-Nasr helping in the abduction of many children
+  - n- Ameen al-Zaidi
+  - Where did you hear such a foolish thing
+  - n- Player
+  - He confessed it to us.
+  - n- Ameen al-Zaidi
+  - I must get word to the Caliph immediately.
+  - I will need a written statement as well.
+  - ...
+  - Why is this the first I am hearing of missing children.
+  - n- Player
+  - Yep, if anything exciting was going on around here you would  be the first to
+    know.
+  - Have a great day
+  - n- Ameen al-Zaidi
+  - Hmmph
+  isPerson: 1
+  questToMark: 
+  markComplete: 0
+--- !u!61 &1430876369
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430876366}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.04, y: 2.48}
+    newSize: {x: 1.04, y: 2.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 2.48}
+  m_EdgeRadius: 0
+--- !u!61 &1430876370
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430876366}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.04, y: 2.48}
+    newSize: {x: 1.04, y: 2.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.04, y: 2.48}
+  m_EdgeRadius: 0
+--- !u!212 &1430876371
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430876366}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 7c58e7263ba37bc48b9ccd2ed635df56, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.04, y: 2.48}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &1448271835
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108851,6 +109189,11 @@ PrefabInstance:
       propertyPath: transitionName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SpawnPointName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -108859,6 +109202,16 @@ PrefabInstance:
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
+      value: Oluma-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: EntranceSpawnPointName
       value: Oluma-3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -109055,6 +109408,219 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 94.97936, y: 16.45219}
   m_EdgeRadius: 0
+--- !u!1 &1596869400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1596869401}
+  - component: {fileID: 1596869405}
+  - component: {fileID: 1596869404}
+  - component: {fileID: 1596869403}
+  - component: {fileID: 1596869402}
+  m_Layer: 0
+  m_Name: Izza el-Basha (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1596869401
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596869400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.365221, y: 6.4815702, z: 23.866203}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1984358053}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1596869402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596869400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n- Bron
+  - We have some very bad news for you.
+  - n- Izza el-Basha
+  - I do not know how much more I can take.
+  - n- Bron
+  - Randa el-Nasr gave children the bags in many places
+  - n- Izza el-Basha
+  - Yes. I told you he gave the children the bags.
+  - He did to target children for abductions.
+  - n- Player
+  - We don't know if they are charmed or have some way of being traced.
+  - But he is the one who set into motion all of the missing children, nit just here
+    but all over Oluma.
+  - n- Izza el-Basha
+  - He is a monster.
+  - n- Player
+  - He watched a child get taken. He watched them get turned into a mindless obedient
+    follower.
+  - n- Izza el-Basha
+  - I feel sick
+  - Again what are you not telling me.
+  - n- Bron
+  - He profited off of it time and time again.
+  - n- Izza el-Basha
+  - I am certain he wil be put to death for his crimes.
+  - n- Player
+  - Oh my beloved Amel
+  - n- Player
+  - So Randa el-Nasr what of the mayor and his disappearance.
+  - n- Randa el-Nasr
+  - He got his nose in my business so I had him dragged off into the night. He was
+    then killed and put in a shallow grave.
+  - n- Izza el-Basha
+  - And my husband?  What happend to my husband.
+  - n- Randa el-Nasr
+  - He got to close to dicovering what was going on.  I followed him, then alerted
+    the scaly men to him.
+  - They made very short work of him
+  - n- Bawb
+  - Are you sure I can't just end him right here and now?
+  - n- Izza el-Basha
+  - You would be put to death for it, unless he attacked you first.
+  - Then it would still be iffy if you were among the living
+  - n- Player
+  - So what will your people do.
+  - n- Izza el-Basha
+  - He will be put to death.
+  - And for many of us the grieving can begin
+  - n- Player
+  - Then we will leave it you.
+  - We are so sorry for you loss
+  - n- Izza el-Basha
+  - It is devastating but from the pit of despair I am in there is only one way to
+    go and that is up.
+  - n- Bawb
+  - You are an amazing and brave woman.
+  - n- Player
+  - Good Bye
+  - n- Izza el-Basha
+  - Good Bye
+  isPerson: 1
+  questToMark: Randa
+  markComplete: 1
+--- !u!61 &1596869403
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596869400}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.13, y: 2.49}
+    newSize: {x: 1.13, y: 2.49}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.13, y: 2.49}
+  m_EdgeRadius: 0
+--- !u!61 &1596869404
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596869400}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.13, y: 2.49}
+    newSize: {x: 1.13, y: 2.49}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.13, y: 2.49}
+  m_EdgeRadius: 0
+--- !u!212 &1596869405
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596869400}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e9d3b64c682524648a580492e4f58694, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.13, y: 2.49}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1666963347
 GameObject:
   m_ObjectHideFlags: 0
@@ -109092,6 +109658,231 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1701339325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1701339326}
+  - component: {fileID: 1701339330}
+  - component: {fileID: 1701339329}
+  - component: {fileID: 1701339328}
+  - component: {fileID: 1701339327}
+  m_Layer: 0
+  m_Name: Izza el-Basha (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1701339326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701339325}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.365221, y: 6.4815702, z: 23.866203}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1984358053}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1701339327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701339325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e6a8b9af8285d42a07c9396cc0a2ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - n- Bron
+  - Do you recognize this bag?
+  - n- Izza el-Basha
+  - Yes, several children in the village have bags similar to this.  Why?
+  - n- Bron
+  - We came across a palce to the west of here. It was very bizarre.
+  - n- Izza el-Basha
+  - Do tell.
+  - Wha aren't you telling me?
+  - n- Player
+  - There was a circle with several small braziers, a lot of discarded clothing,
+    and a lot of blood.
+  - we were attacked here by Yuan Ti Hsitachi.
+  - n- Izza el-Basha
+  - What are Yuan Ti what evers?
+  - n- Player
+  - Yuan Ti Hsitachi are half man half snake creatures.
+  - n- Izza el-Basha
+  - How horrible. They sound disgusting.
+  - Again what are you not telling me.
+  - n- Bron
+  - We are still working through things but we think your child has been abducted
+    by the Yuan Ti Histachi and those who contol them.
+  - There was a lot of blood there and while it looks like there was some sort of
+    ritual, there was also a struggle.
+  - In the grass there was a massive blood stain about the size of a man.
+  - n- Izza el-Basha
+  - Oh my beloved Amel
+  - n- Player
+  - That is what we are thinking as well.
+  - We are sorry for your loss.  The Hsitachi probably ambushed him and six on one
+    would be too much for anyone.
+  - n- Bawb
+  - You said several children have bags like this in town.
+  - 'Where did the get them? '
+  - n- Izza el-Basha
+  - Randa el-Nasr gave them to many of the children in towm
+  - n- Izza el-Basha
+  - When I think of it, every child that has gone missing had a bag like that.
+  - n- Bron
+  - Bawb, I think we are ready for yout talk with Randa el-Nasr now
+  - n- Bawb
+  - That  is exactly what I was thinking.
+  - Izza el-Basha what does this Randa do for a living? He mentioned running the
+    town.
+  - n- Izza el-Basha
+  - He has filled in for our mayor since he went missing,
+  - He is also an importer and exporter. He has dealings around the world and has
+    travelled quite extensively.
+  - n- Player
+  - Has he always been a generous man?
+  - n- Izza el-Basha
+  - Never, it has only been in the last couiple of years that he took to giving out
+    gifts.
+  - We all thought it was out of guilt for swindling us for all these years
+  - n- Player
+  - I am not liking the sound of this.
+  - Do you know where we can find him?
+  - n- Izza el-Basha
+  - Normally he would be in his office, but just before you walked into town I saw
+    him head out of town northwards.
+  - He was in quite a hurry.
+  - n- Bawb
+  - This Randa what ever and I are going to have a serious discussion.
+  - n- Player
+  - Again we are sorry for your loss.
+  - Is there anything else we can do for you?
+  - n- Izza el-Basha
+  - Bring who ever did this to my husband and son to justice
+  - n- Player
+  - That you can rest assure of.
+  - Good bye.
+  isPerson: 1
+  questToMark: Missing Kids
+  markComplete: 0
+--- !u!61 &1701339328
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701339325}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.13, y: 2.49}
+    newSize: {x: 1.13, y: 2.49}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.13, y: 2.49}
+  m_EdgeRadius: 0
+--- !u!61 &1701339329
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701339325}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.13, y: 2.49}
+    newSize: {x: 1.13, y: 2.49}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.13, y: 2.49}
+  m_EdgeRadius: 0
+--- !u!212 &1701339330
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701339325}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -76193021
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e9d3b64c682524648a580492e4f58694, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.13, y: 2.49}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1703386651
 GameObject:
   m_ObjectHideFlags: 0
@@ -109381,6 +110172,101 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1846127256
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1275335879}
+    m_Modifications:
+    - target: {fileID: 2434758651056572089, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_Name
+      value: AmeenQuestManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 1273831499}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: questToCheck
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: questToCheck
+      value: Randa
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 1430876366}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.78826255
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.78157043
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.549363
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ad1680edb5e536a4da50947749261935, type: 3}
+--- !u!4 &1846127257 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+    type: 3}
+  m_PrefabInstance: {fileID: 1846127256}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1858921661
 GameObject:
   m_ObjectHideFlags: 0
@@ -109588,6 +110474,97 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1914699329
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1275335879}
+    m_Modifications:
+    - target: {fileID: 2434758651056572089, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_Name
+      value: RandaQuestManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 1328866382}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: questToCheck
+      value: Missing Kids
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: activeIfComplete
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -25.511305
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.0856075
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.232522
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ad1680edb5e536a4da50947749261935, type: 3}
+--- !u!4 &1914699330 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
+    type: 3}
+  m_PrefabInstance: {fileID: 1914699329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1984204434
 GameObject:
   m_ObjectHideFlags: 0
@@ -109781,7 +110758,22 @@ PrefabInstance:
         type: 3}
       propertyPath: objectToActivate
       value: 
-      objectReference: {fileID: 1328866382}
+      objectReference: {fileID: 100535589}
+    - target: {fileID: 3396086268215027108, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: questToCheck
+      value: Missing Kids
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: questToCheck
+      value: Missing Kids
+      objectReference: {fileID: 0}
+    - target: {fileID: 7674558882601807372, guid: ad1680edb5e536a4da50947749261935,
+        type: 3}
+      propertyPath: objectToActivate
+      value: 
+      objectReference: {fileID: 1701339325}
     - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -109820,7 +110812,7 @@ PrefabInstance:
     - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7680724069663783707, guid: ad1680edb5e536a4da50947749261935,
         type: 3}
@@ -109845,6 +110837,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1984358052}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1984358054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2434758651056572089, guid: ad1680edb5e536a4da50947749261935,
+    type: 3}
+  m_PrefabInstance: {fileID: 1984358052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1984358055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984358054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8266f983900a58445b273089c1e15b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToActivate: {fileID: 1596869400}
+  questToCheck: Randa
+  activeIfComplete: 1
 --- !u!1001 &1998802101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109941,6 +110954,11 @@ PrefabInstance:
       propertyPath: transitionName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SpawnPointName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -109949,6 +110967,16 @@ PrefabInstance:
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
+      value: Oluma-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: EntranceSpawnPointName
       value: Oluma-3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -110217,6 +111245,11 @@ PrefabInstance:
       propertyPath: transitionName
       value: Fawab-1
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SpawnPointName
+      value: Fawab-1
+      objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -110225,6 +111258,16 @@ PrefabInstance:
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
+      value: Oluma-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: EntranceSpawnPointName
       value: Oluma-3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -110331,6 +111374,11 @@ PrefabInstance:
       propertyPath: transitionName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114295336372111500, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SpawnPointName
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaToLoad
@@ -110339,6 +111387,16 @@ PrefabInstance:
     - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
         type: 3}
       propertyPath: areaTransitionName
+      value: Oluma-3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: SceneToLoad
+      value: Oluma
+      objectReference: {fileID: 0}
+    - target: {fileID: 114882825115530484, guid: 64d2c8884948e1d4d82cda544b880100,
+        type: 3}
+      propertyPath: EntranceSpawnPointName
       value: Oluma-3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
