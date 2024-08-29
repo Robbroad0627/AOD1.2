@@ -123,7 +123,7 @@ public class GameMenu : MonoBehaviour
                 GameManager.Access.SetGameMenuOpen(true);
             }
 
-            AudioManager.Access.PlaySFX(5);
+            AudioManager.Access.PlaySoundFX(5);
         }
 
         if (GameManager.Access.GetBattleActive)
@@ -318,7 +318,7 @@ public class GameMenu : MonoBehaviour
         QuestManager.instance.SaveQuestData();
     }
 
-    public void PlayButtonSound() => AudioManager.Access.PlaySFX(4);
+    public void PlayButtonSound() => AudioManager.Access.PlaySoundFX(4);
 
     public void QuitGame()
     {

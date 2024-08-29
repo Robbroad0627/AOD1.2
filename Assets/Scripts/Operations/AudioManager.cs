@@ -6,17 +6,18 @@
  * Description: Deals with Audio for the Game
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 26, 2024
+ * Date Last Modified: August 28, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
 
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class AudioManager : MonoBehaviour
 {
     //SINGLETON
-    #region Singleton
+    #region Singleton - this Class has One and Only One Instance
 
     private static AudioManager mInstance;
 
@@ -38,78 +39,82 @@ public class AudioManager : MonoBehaviour
     #endregion
 
     //VARIABLES
-    #region Inspector/Exposed Variables
+    #region Private Variables/Fields Exposed to Inspector for Editing
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private AudioSource[] sfx = null;
-    [SerializeField] private AudioSource[] bgm = null;
+    [FormerlySerializedAs("sfx")]
+    [SerializeField] private AudioSource[] SoundFXList = null;
+    [FormerlySerializedAs("bgm")]
+    [SerializeField] private AudioSource[] MusicList = null;
 
     #endregion
-    #region Private Variables
+    #region Private Variables/Fields used in this Class Only
 
-    private int mBGMCurrentTrack;
+    private int mMusicCurrentTrack;
 
     #endregion
 
     //GETTERS/SETTERS
-    #region Getters/Accessors
+    #region Public Getters/Accessors for use Outside of this Class Only
 
-    public int GetCurrentBackgroundMusic => mBGMCurrentTrack;
+    public int GetMusicCurrentTrack => mMusicCurrentTrack;
 
     #endregion
 
     //FUNCTIONS
-    #region Initialization Methods/Functions
+    #region Private Initialization Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
     private void Awake() => Singleton();
 #pragma warning restore IDE0051
 
 #pragma warning disable IDE0051
-    private void Start() => mBGMCurrentTrack = -1;
+    private void Start() => InitializeVariables();
 #pragma warning restore IDE0051
 
-    #endregion
-    #region Public Methods/Functions useable outside class
+    private void InitializeVariables() => mMusicCurrentTrack = -1;
 
-    public void PlaySFX(int soundToPlay)
+    #endregion
+    #region Public Functions/Methods for use Outside of this Class
+
+    public void PlaySoundFX(int soundToPlay)
     {
-        if (soundToPlay < sfx.Length)
+        if (soundToPlay < SoundFXList.Length)
         {
-            sfx[soundToPlay].Play();
+            SoundFXList[soundToPlay].Play();
         }
     }
 
-    public void PlayBGM(int musicToPlay)
+    public void PlayMusic(int musicToPlay)
     {
-        mBGMCurrentTrack = musicToPlay;
+        mMusicCurrentTrack = musicToPlay;
 
-        if ((musicToPlay < 0) || (musicToPlay > bgm.Length))
+        if ((musicToPlay < 0) || (musicToPlay > MusicList.Length))
         {
             Debug.LogWarning("Requested track does not exist, or restoring to state where no BGM, halting BGM.",this);
             StopMusic();
             return;
         }
         
-        if (!bgm[musicToPlay].isPlaying)
+        if (!MusicList[musicToPlay].isPlaying)
         {
             StopMusic();
 
-            if (musicToPlay < bgm.Length)
+            if (musicToPlay < MusicList.Length)
             {
-                bgm[musicToPlay].Play();
+                MusicList[musicToPlay].Play();
             }
         }
     }
 
     public void StopMusic()
     {
-        for(int i = 0; i < bgm.Length; i++)
+        for (int i = 0; i < MusicList.Length; i++)
         {
-            bgm[i].Stop();
+            MusicList[i].Stop();
         }
     }
 

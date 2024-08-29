@@ -396,7 +396,7 @@ public class CharacterCreator : MonoBehaviour
         GameManager.Access.GetCharacterStats[0].SetMaxMP(mPlayerMP);
         GameManager.Access.GetCharacterStats[0].SetLevel(1);
         GameManager.Access.GetCharacterStats[0].SetBattleCharacter(Resources.Load<BattleChar>("Prefabs/Players/PlayerOptions/" + mPlayerClass + "/" + mPlayerSex + mPlayerRace));
-        GameManager.Access.GetCharacterStats[0].GetBattleCharacter.SetIsPlayer(true);
+        GameManager.Access.GetCharacterStats[0].GetBattleCharacter.SetIsAPlayer(true);
         GameManager.Access.GetCharacterStats[0].SetClass(mPlayerClass.ToString());
         GameManager.Access.GetCharacterStats[0].SetSex(mPlayerSex);
         GameManager.Access.GetCharacterStats[0].SetRace(mPlayerRace.ToString());

@@ -6,7 +6,7 @@
  * Description:
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 23, 2024
+ * Date Last Modified: August 28, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
@@ -14,7 +14,7 @@
 using System;
 using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class BattleMove
 {
     public enum CharacterClass
@@ -34,7 +34,7 @@ public class BattleMove
         OverrideDefaultLevelForClass
     }
 
-    [System.Serializable]
+    [Serializable]
     public class MoveFilter
     {
         public CharacterClass characterClass;
