@@ -931,12 +931,11 @@ MonoBehaviour:
     - Potion of Healing
     - Short Sword
     - Hand Axe
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &371997343
@@ -1079,34 +1078,33 @@ MonoBehaviour:
   lines:
   - n-Betsy
   - You don't want to go out there.
-  - n-Player
+  - n- Player
   - Why is that
   - n-Betsy
   - The whole area is plagued by Giant Wasps.
   - I bet it was that old fool Jaru.
-  - n-Player
+  - n- Player
   - ....
   - n-Betsy
   - I heard we was great at one point in time, but he was old back when I was a kid,
     and I have never seen him do anything good.
-  - n-Player
+  - n- Player
   - I think me and my frieds should have a chat with him.
   - n-Betsy
   - Be prepared to be underwhelmed.
-  - n-Player
+  - n- Player
   - I am not making any judgements before I meet him, but thanks for the warnig.
   - n-Betsy
   - Well, I think you are a fool too, if you are going out there.
-  - n-Player
+  - n- Player
   - Probably
   - n-Betsy
   - Hope you survive
-  - n-Player
+  - n- Player
   - We are a pretty tough lot.   Have a great day,  Bye.
   - n-Betsy
   - Goodbye.
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &452995846
@@ -8608,23 +8606,22 @@ MonoBehaviour:
   lines:
   - n-Hugo
   - Hi!  I'm Hugo.  Welcome to Altir
-  - n-Player
+  - n- Player
   - 'Hi Hugo. '
   - n-Hugo
   - Are you here to see Wizard Jaru?
-  - n-Player
+  - n- Player
   - Sorry kid, never heard of him.  Is he a big deal or something?
   - n-Hugo
   - Big Deal?  Why he is the greatest wizard in the world.
-  - n-Player
+  - n- Player
   - We might just have to meet him then.
   - Hope you have a good day.
   - n-Hugo
   - You too.  Bye
-  - n-Player
+  - n- Player
   - Bye
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &596477705
@@ -9331,7 +9328,6 @@ MonoBehaviour:
   lines:
   - Altir
   isPerson: 0
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &1204819432
@@ -9500,27 +9496,26 @@ MonoBehaviour:
   lines:
   - n-Doran
   - How are you today?
-  - n-Player
+  - n- Player
   - Good and you?
   - n-Doran
   - Pretty good , but a little worried.
-  - n-Player
+  - n- Player
   - What has you worried?
   - n-Doran
   - Haven't you heard about the crazy man that showed up in Tearle?
   - They say that type of craziness is contaigous.
-  - n-Player
+  - n- Player
   - We haven't heard about a crazy person in Tearle
   - But I wouldn't worry about craziness spreading, unless it is an illness.
   - n-Doran
   - I will try and worry less.
   - Thank you for reassuring me.
-  - n-Player
+  - n- Player
   - Glad to help
   - n-Doran
   - Good bye.
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &1207603936
@@ -29754,12 +29749,11 @@ MonoBehaviour:
     - Potion of Healing
     - Mana Potion
     - Mana Potion
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1627754745
@@ -29837,25 +29831,24 @@ MonoBehaviour:
   lines:
   - n-Jaru
   - Hello travellers.
-  - n-Player
+  - n- Player
   - Hello wizard!
   - n-Jaru
   - Did you see a band of goblins fleeing as you approached?
-  - n-Player
+  - n- Player
   - We did not.
   - n-Jaru
   - Blast it, they attacked me and took my spellbook.
   - And a wizard without a spell book is just a regular person.
-  - n-Player
+  - n- Player
   - That is horrible.
   - Alright it is settled we will bring these goblins to a swift end.
   - n-Jaru
   - Thank you so much.  If they they are not here by the town they are probably to
     the south.
-  - n-Player
+  - n- Player
   - Hopefully we can get a your book to you soon.
   isPerson: 1
-  shouldActivateQuest: 1
   questToMark: Spellbook
   markComplete: 0
 --- !u!61 &1664381494
@@ -30041,12 +30034,11 @@ MonoBehaviour:
     rewardXP: 75
     rewardItems:
     - Potion of Healing
-  activateOnEnter: 1
-  activateOnStay: 1
-  activateOnExit: 0
   timeBetweenBattles: 7
-  deactivateAfterStarting: 0
+  activateOnEnter: 1
+  activateOnExit: 0
   cannotFlee: 0
+  deactivateAfterStarting: 0
   shouldCompleteQuest: 0
   QuestToComplete: 
 --- !u!61 &1666292587
@@ -30110,31 +30102,30 @@ MonoBehaviour:
   lines:
   - n-Jaru
   - You did it!
-  - n-Player
+  - n- Player
   - We have retrieved your book
   - n-Jaru
   - You fine people are my heroes.
-  - n-Player
+  - n- Player
   - Please be carefule with this, and try to remain in town or have people with you
     when travelling.
   - n-Jaru
   - I thank you so much.
   - There is a strange man in Tearle.  He just wandered into town one day babbling
     away.
-  - n-Player
+  - n- Player
   - That is horrible.
   - n-Jaru
   - From what I have heard he has people worried.
-  - n-Player
+  - n- Player
   - If we make it there we will see what we can find out.
   - n-Jaru
   - Again, thank you for retreiving my spellbook, I will never be able to thank you
     enough.
   - Here is an empty spellbook, you can give it to a magic-user or sell it in a shop
-  - n-Player
+  - n- Player
   - We were glad to help.  Have a great day.
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: Spellbook
   markComplete: 0
 --- !u!61 &1668270559

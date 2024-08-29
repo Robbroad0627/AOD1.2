@@ -418,7 +418,6 @@ MonoBehaviour:
   - n- Player
   - Goodbye for now.
   isPerson: 1
-  shouldActivateQuest: 1
   questToMark: They Can Fly
   markComplete: 0
 --- !u!61 &78592616
@@ -871,7 +870,6 @@ MonoBehaviour:
   - n- Player
   - Goodbye
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!1001 &213206669
@@ -2145,7 +2143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - n-Centenen
+  - n- Centenen
   - Hello welcome to Takala, I am Centenen, my wife is Teluc and is our Village Elder
   - n- Player
   - Hello Centenen
@@ -2164,10 +2162,9 @@ MonoBehaviour:
   - It surely must be the case.
   - I need to pray to Coatl and make an offering.
   - Goodbye
-  - n-Player
+  - n- Player
   - Goodbye
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &728718492
@@ -2629,7 +2626,6 @@ MonoBehaviour:
   - n- Player
   - Goodbye for now.
   isPerson: 1
-  shouldActivateQuest: 1
   questToMark: They Can Fly
   markComplete: 0
 --- !u!61 &1081112040
@@ -123441,7 +123437,6 @@ MonoBehaviour:
   - n- Player
   - Goodbye
   isPerson: 1
-  shouldActivateQuest: 0
   questToMark: 
   markComplete: 0
 --- !u!61 &1936110799
