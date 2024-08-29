@@ -3,15 +3,16 @@
  * Script: BattleNotification.cs
  * Date Created: 
  * Created By: Rob Broad
- * Description:
+ * Description: Used in BattleManager Prefab BattleScene/Canvas/BattleNotification adds information to the battle screen
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 26, 2024
+ * Date Last Modified: August 29, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
 
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class BattleNotification : MonoBehaviour
@@ -23,8 +24,10 @@ public class BattleNotification : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private float awakeTime = 2.0f;
-    [SerializeField] private Text theText = null;
+    [FormerlySerializedAs("awakeTime")]
+    [SerializeField] private float OnScreenDuration = 2.0f;
+    [FormerlySerializedAs("theText")]
+    [SerializeField] private Text NotificationText = null;
 
     #endregion
     #region Private Variables/Fields used in this Class Only
@@ -36,11 +39,20 @@ public class BattleNotification : MonoBehaviour
     //GETTERS/SETTERS
     #region Public Setters/Mutators for use Outside of this Class Only
 
-    public string SetNotificationText(string newText) => theText.text = newText;
+    public string SetNotificationText(string newText) => NotificationText.text = newText;
 
     #endregion
 
     //FUNCTIONS
+    #region Private Initialization Functions/Methods used in this Class Only
+
+#pragma warning disable IDE0051
+    private void Start() => InitializeVariables();
+#pragma warning restore IDE0051
+
+    private void InitializeVariables() => mAwakeCounter = 0;
+
+    #endregion
     #region Private Implementation Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
@@ -64,7 +76,7 @@ public class BattleNotification : MonoBehaviour
     public void Activate()
     {
         gameObject.SetActive(true);
-        mAwakeCounter = awakeTime;
+        mAwakeCounter = OnScreenDuration;
     }
 
     #endregion

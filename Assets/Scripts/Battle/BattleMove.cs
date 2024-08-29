@@ -3,7 +3,7 @@
  * Script: BattleMove.cs
  * Date Created: 
  * Created By: Rob Broad
- * Description:
+ * Description: Used in BattleManager Prefab under List Of Attacks
  * **************************************************************************************
  * Modified By: Jeff Moreau
  * Date Last Modified: August 28, 2024
@@ -53,45 +53,34 @@ public class BattleMove
     [UnityEngine.Serialization.FormerlySerializedAs("prerequisite")]
     public MoveFilter[] classSpecificFilter;
 
-
-    public bool MoveAllowedOutsideBattle(CharStats character)
-    {
-        return MoveAllowed(character) && allowOutsideBattle;
-    }
-
     public bool MoveAllowed(CharStats character)
     {
-        int? lvl = MinLevelForClass(character.GetClass);
-#pragma warning disable CS0162 // Unreachable code detected
-        switch (filterAction)
+        if (moveName != "Slash")
         {
-            case MoveFilterMode.DisallowMoveForClassIfNotListed:
-                return lvl != null && character.GetLevel >= lvl;
-                break;
+            int? lvl = MinLevelForClass(character.GetClass);
+            switch (filterAction)
+            {
+                case MoveFilterMode.DisallowMoveForClassIfNotListed:
+                    return lvl != null && character.GetLevel >= lvl;
 
-            case MoveFilterMode.OverrideDefaultLevelForClass:
-                return lvl == null? character.GetLevel >= defaultMinimumLevel : character.GetLevel >= lvl;
-                break;
+                case MoveFilterMode.OverrideDefaultLevelForClass:
+                    return lvl == null ? character.GetLevel >= defaultMinimumLevel : character.GetLevel >= lvl;
+            }
         }
-#pragma warning restore CS0162 // Unreachable code detected
+
         return false;
-        
     }
 
     private int? MinLevelForClass(CharacterClass characterClass)
     {
-        foreach(var f in classSpecificFilter)
+        foreach (MoveFilter attack in classSpecificFilter)
         {
-            if(f.characterClass == characterClass)
+            if (attack.characterClass == characterClass)
             {
-                return f.minimumLevel;
+                return attack.minimumLevel;
             }
         }
-        return null;
-    }
 
-    internal void Apply(CharStats charStats)
-    {
-        throw new NotImplementedException();
+        return null;
     }
 }
