@@ -1,9 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: UIHandler.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 29, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 using UnityEngine.UI;
-
-//Bonehead Games
 
 public class UIHandler : MonoBehaviour
 {
@@ -22,14 +31,10 @@ public class UIHandler : MonoBehaviour
     public Text acValue;
     public Text sexText;
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
         myCharCreator = GetComponent<CharacterCreator>();
         myCharCreator.InitCharacterCreator();
-
         UpdateUI();
     }
 
@@ -39,13 +44,15 @@ public class UIHandler : MonoBehaviour
         classText.text = myCharCreator.GetPlayerClass.ToString();
         myCharCreator.CheckRace();
         myCharCreator.CheckClass();
-        if (myCharCreator.GetIsMale)
-            sexText.text = "Male";
-        else
-            sexText.text = "Female";
 
-    
-       
+        if (myCharCreator.GetIsMale)
+        {
+            sexText.text = "Male";
+        }
+        else
+        {
+            sexText.text = "Female";
+        }
 
         strValue.text = myCharCreator.GetPlayerAttributes[CharacterAttributes.BaseAttributes.Strength].ToString();
         dexValue.text = myCharCreator.GetPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity].ToString();
@@ -55,8 +62,6 @@ public class UIHandler : MonoBehaviour
         chaValue.text = myCharCreator.GetPlayerAttributes[CharacterAttributes.BaseAttributes.Charisma].ToString();
         hpValue.text = myCharCreator.GetPlayerHP.ToString();
         mpValue.text = myCharCreator.GetPlayerMP.ToString();
-
-
     }
 
     public void NextRaceClicked()
