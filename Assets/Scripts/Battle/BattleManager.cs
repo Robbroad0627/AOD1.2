@@ -6,7 +6,7 @@
  * Description: Used in BattleManager Prefab
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 26, 2024
+ * Date Last Modified: August 28, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
@@ -14,14 +14,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.Serialization;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 
 public class BattleManager : MonoBehaviour
 {
     //SINGLETON
-    #region Singleton
+    #region Singleton - this Class has One and Only One Instance
 
     private static BattleManager mInstance;
 
@@ -43,7 +43,7 @@ public class BattleManager : MonoBehaviour
     #endregion
 
     //VARIABLES
-    #region Inspector/Exposed Variables
+    #region Private Variables/Fields Exposed to Inspector for Editing
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
@@ -71,49 +71,62 @@ public class BattleManager : MonoBehaviour
     [SerializeField] private BattleMagicSelect[] PlayerSpellButtons = null;
     [Space(10)]
     [Header("PLAYER INFO >======================---")]
-    [SerializeField] private Text[] playerName = null;
-    [SerializeField] private Text[] playerHP = null;
-    [SerializeField] private Text[] playerMP = null;
-    [SerializeField] private BattleChar[] playerPrefabs = null;
-    [SerializeField] private Transform[] playerPositions = null;
+    [FormerlySerializedAs("playerName")]
+    [SerializeField] private Text[] PlayersNameText = null;
+    [FormerlySerializedAs("playerHP")]
+    [SerializeField] private Text[] PlayersHPText = null;
+    [FormerlySerializedAs("playerMP")]
+    [SerializeField] private Text[] PlayersMPText = null;
+    [FormerlySerializedAs("playerPrefabs")]
+    [SerializeField] private BattleChar[] PlayerCharacters = null;
+    [FormerlySerializedAs("playerPositions")]
+    [SerializeField] private Transform[] PlayerCharacterPositions = null;
     [Space(10)]
     [Header("ENEMY INFO >======================---")]
-    [SerializeField] private BattleChar[] enemyPrefabs = null;
-    [SerializeField] private Transform[] enemyPositions = null;
-    [SerializeField] private GameObject enemyAttackEffect = null;
+    [FormerlySerializedAs("enemyPrefabs")]
+    [SerializeField] private BattleChar[] Enemies = null;
+    [FormerlySerializedAs("enemyPositions")]
+    [SerializeField] private Transform[] EnemyPositions = null;
+    [FormerlySerializedAs("enemyAttackEffect")]
+    [SerializeField] private GameObject EnemyAttackEffect = null;
     [Space(10)]
     [Header("BATTLE DATA >======================---")]
-    [SerializeField] private BattleNotification battleNotice = null;
-    [SerializeField] private int chanceToFlee = 35;
-    [SerializeField] private string gameOverScene = "";
-    [SerializeField] private BattleMove[] movesList = null;
-    [SerializeField] private DamageNumber theDamageNumber = null;
+    [FormerlySerializedAs("battleNotice")]
+    [SerializeField] private BattleNotification BattleNotice = null;
+    [FormerlySerializedAs("chanceToFlee")]
+    [SerializeField] private int FleeChance = 35;
+    [FormerlySerializedAs("gameOverScene")]
+    [SerializeField] private string GameOverSceneName = "";
+    [FormerlySerializedAs("movesList")]
+    [SerializeField] private BattleMove[] ListOfAttacks = null;
+    [FormerlySerializedAs("theDamageNumber")]
+    [SerializeField] private DamageNumber DamageNumberDisplay = null;
 
     #endregion
-    #region Private Variable Declarations Only
+    #region Private Variables/Fields used in this Class Only
 
     private bool mCanFlee;
+    private int mRewardXP;
     private bool mIsFleeing;
+    private int mBattleMusic;
+    private int mCurrentTurn;
     private bool mTurnWaiting;
     private bool mIsBattleActive;
-    private int mRewardXP;
-    private int mCurrentTurn;
-    private int mOutsideBattleBGM;
     private string[] mRewardItems;
     private List<BattleChar> mActiveBattlers;
 
     #endregion
 
     //GETTERS/SETTERS
-    #region Getters/Accessors
+    #region Public Getters/Accessors for use Outside of this Class Only
 
     public int GetCurrentTurn => mCurrentTurn;
     public GameObject GetMagicMenu => MagicCanvas;
-    public BattleNotification GetBattleNotice => battleNotice;
+    public BattleNotification GetBattleNotice => BattleNotice;
     public List<BattleChar> GetActiveBattlers => mActiveBattlers;
 
     #endregion
-    #region Setters/Mutators
+    #region Public Setters/Mutators for use Outside of this Class Only
 
     public int SetRewardXP(int amount) => mRewardXP = amount;
     public string[] SetRewardItems(string[] newItems) => mRewardItems = newItems;
@@ -122,30 +135,36 @@ public class BattleManager : MonoBehaviour
     #endregion
 
     //FUNCTIONS
-    #region Initialization Methods/Functions
+    #region Private Initialization Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
     private void Awake() => Singleton();
 #pragma warning restore IDE0051
 
 #pragma warning disable IDE0051
-    private void Start ()
+    private void Start() => InitializeVariables();
+#pragma warning restore IDE0051
+
+    private void InitializeVariables()
     {
         mRewardXP = 0;
         mCurrentTurn = 0;
+        mBattleMusic = 0;
         mCanFlee = false;
+        mIsFleeing = false;
         mRewardItems = null;
         mTurnWaiting = false;
+        mIsBattleActive = false;
         mActiveBattlers = new List<BattleChar>();
     }
-#pragma warning restore IDE0051
 
     #endregion
-    #region Implementation Private Methods/Functions
+    #region Private Implementation Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
     private void Update ()
     {
+        // for testing should be removed before compilation
 		if (Input.GetKeyDown(KeyCode.T))
         {
             BattleStart(new string[] { "Eyeball"}, false);
@@ -162,12 +181,11 @@ public class BattleManager : MonoBehaviour
                 else
                 {
                     MenuCanvas.SetActive(false);
-
-                    //enemy should attack
                     StartCoroutine(EnemyMoveCo());
                 }
             }
 
+            // for testing should be removed before compilation
             if (Input.GetKeyDown(KeyCode.N))
             {
                 NextTurn();
@@ -178,8 +196,7 @@ public class BattleManager : MonoBehaviour
 
     private void StartBattleMusic()
     {
-        mOutsideBattleBGM = AudioManager.Access.GetMusicCurrentTrack;
-
+        mBattleMusic = AudioManager.Access.GetMusicCurrentTrack;
         AudioManager.Access.PlayMusic(0);
     }
 
@@ -318,16 +335,16 @@ public class BattleManager : MonoBehaviour
         int selectAttack = Random.Range(0, mActiveBattlers[mCurrentTurn].GetListOfAttacks.Length);
         int movePower = 0;
 
-        for (int i = 0 ; i < movesList.Length ; i++)
+        for (int i = 0 ; i < ListOfAttacks.Length ; i++)
         {
-            if (movesList[i].moveName == mActiveBattlers[mCurrentTurn].GetListOfAttacks[selectAttack])
+            if (ListOfAttacks[i].moveName == mActiveBattlers[mCurrentTurn].GetListOfAttacks[selectAttack])
             {
-                Instantiate(movesList[i].theEffect, mActiveBattlers[selectedTarget].transform.position, mActiveBattlers[selectedTarget].transform.rotation);
-                movePower = movesList[i].movePower;
+                Instantiate(ListOfAttacks[i].theEffect, mActiveBattlers[selectedTarget].transform.position, mActiveBattlers[selectedTarget].transform.rotation);
+                movePower = ListOfAttacks[i].movePower;
             }
         }
 
-        Instantiate(enemyAttackEffect, mActiveBattlers[mCurrentTurn].transform.position, mActiveBattlers[mCurrentTurn].transform.rotation);
+        Instantiate(EnemyAttackEffect, mActiveBattlers[mCurrentTurn].transform.position, mActiveBattlers[mCurrentTurn].transform.rotation);
         DealDamage(selectedTarget, movePower);
     }
 
@@ -342,13 +359,13 @@ public class BattleManager : MonoBehaviour
 
         mActiveBattlers[target].SetCurrentHP(mActiveBattlers[target].GetCurrentHP - damageToGive);
 
-        Instantiate(theDamageNumber, mActiveBattlers[target].transform.position, Quaternion.identity).SetDamage(damageToGive);
+        Instantiate(DamageNumberDisplay, mActiveBattlers[target].transform.position, Quaternion.identity).SetDamage(damageToGive);
         UpdateUIStats();
     }
 
     private void UpdateUIStats()
     {
-        for (int i = 0 ; i < playerName.Length ; i++)
+        for (int i = 0 ; i < PlayersNameText.Length ; i++)
         {
             if (mActiveBattlers.Count > i)
             {
@@ -356,33 +373,33 @@ public class BattleManager : MonoBehaviour
                 {
                     BattleChar playerData = mActiveBattlers[i];
 
-                    playerName[i].gameObject.SetActive(true);
-                    playerName[i].text = playerData.GetName;
-                    playerHP[i].text = Mathf.Clamp(playerData.GetCurrentHP, 0, int.MaxValue) + "/" + playerData.GetMaxHP;
-                    playerMP[i].text = Mathf.Clamp(playerData.GetCurrentMP, 0, int.MaxValue) + "/" + playerData.GetMaxMP;
+                    PlayersNameText[i].gameObject.SetActive(true);
+                    PlayersNameText[i].text = playerData.GetName;
+                    PlayersHPText[i].text = Mathf.Clamp(playerData.GetCurrentHP, 0, int.MaxValue) + "/" + playerData.GetMaxHP;
+                    PlayersMPText[i].text = Mathf.Clamp(playerData.GetCurrentMP, 0, int.MaxValue) + "/" + playerData.GetMaxMP;
                 }
                 else
                 {
-                    playerName[i].gameObject.SetActive(false);
+                    PlayersNameText[i].gameObject.SetActive(false);
                 }
             }
             else
             {
-                playerName[i].gameObject.SetActive(false);
+                PlayersNameText[i].gameObject.SetActive(false);
             }
         }
     }
 
     #endregion
-    #region Public Functions/Methods
+    #region Public Functions/Methods for use Outside of this Class
 
-    public void BattleStart(string[] enemiesToSpawn, bool setCannotFlee)
+    public void BattleStart(string[] enemiesToSpawn, bool setFlee)
     {
         if (!mIsBattleActive)
         {
-            playerPrefabs[0] = GameManager.Access.GetCharacterStats[0].GetBattleCharacter;
-            playerPrefabs[0].SetName(GameManager.Access.GetCharacterStats[0].GetCharacterName);
-            mCanFlee = setCannotFlee;
+            PlayerCharacters[0] = GameManager.Access.GetCharacterStats[0].GetBattleCharacter;
+            PlayerCharacters[0].SetName(GameManager.Access.GetCharacterStats[0].GetCharacterName);
+            mCanFlee = setFlee;
             mIsBattleActive = true;
             GameManager.Access.SetBattleActive(true);
             transform.position = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, transform.position.z);
@@ -390,16 +407,16 @@ public class BattleManager : MonoBehaviour
 
             StartBattleMusic();
 
-            for (int i = 0; i < playerPositions.Length; i++)
+            for (int i = 0; i < PlayerCharacterPositions.Length; i++)
             {
                 if (GameManager.Access.GetCharacterStats[i].gameObject.activeInHierarchy)
                 {
-                    for (int j = 0; j < playerPrefabs.Length; j++)
+                    for (int j = 0; j < PlayerCharacters.Length; j++)
                     {
-                        if (playerPrefabs[j].GetName == GameManager.Access.GetCharacterStats[i].GetCharacterName)
+                        if (PlayerCharacters[j].GetName == GameManager.Access.GetCharacterStats[i].GetCharacterName)
                         {
-                            BattleChar newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[i].rotation);
-                            newPlayer.transform.parent = playerPositions[i];
+                            BattleChar newPlayer = Instantiate(PlayerCharacters[j], PlayerCharacterPositions[i].position, PlayerCharacterPositions[i].rotation);
+                            newPlayer.transform.parent = PlayerCharacterPositions[i];
 
                             if (i == 0)
                             {
@@ -418,7 +435,7 @@ public class BattleManager : MonoBehaviour
 
                             CharStats thePlayer = GameManager.Access.GetCharacterStats[i];
 
-                            mActiveBattlers[i].SetListOfAttacks(thePlayer.GetAllowedMovesNames(movesList));
+                            mActiveBattlers[i].SetListOfAttacks(thePlayer.GetAllowedMovesNames(ListOfAttacks));
                             mActiveBattlers[i].SetCurrentHP(thePlayer.GetCurrentHP);
                             mActiveBattlers[i].SetMaxHP(thePlayer.GetMaxHP);
                             mActiveBattlers[i].SetCurrentMP(thePlayer.GetCurrentMP);
@@ -438,12 +455,12 @@ public class BattleManager : MonoBehaviour
                 {
                     bool found = false;
 
-                    for (int j = 0; j < enemyPrefabs.Length; j++)
+                    for (int j = 0; j < Enemies.Length; j++)
                     {
-                        if (enemyPrefabs[j].GetName == enemiesToSpawn[i].Trim())
+                        if (Enemies[j].GetName == enemiesToSpawn[i].Trim())
                         {
-                            BattleChar newEnemy = Instantiate(enemyPrefabs[j], enemyPositions[i].position, enemyPositions[i].rotation);
-                            newEnemy.transform.parent = enemyPositions[i];
+                            BattleChar newEnemy = Instantiate(Enemies[j], EnemyPositions[i].position, EnemyPositions[i].rotation);
+                            newEnemy.transform.parent = EnemyPositions[i];
                             mActiveBattlers.Add(newEnemy);
                             found = true;
                             break;
@@ -488,16 +505,16 @@ public class BattleManager : MonoBehaviour
     {
         int movePower = 0;
 
-        for (int i = 0; i < movesList.Length; i++)
+        for (int i = 0; i < ListOfAttacks.Length; i++)
         {
-            if (movesList[i].moveName == moveName)
+            if (ListOfAttacks[i].moveName == moveName)
             {
-                Instantiate(movesList[i].theEffect, mActiveBattlers[selectedTarget].transform.position, mActiveBattlers[selectedTarget].transform.rotation);
-                movePower = movesList[i].movePower;
+                Instantiate(ListOfAttacks[i].theEffect, mActiveBattlers[selectedTarget].transform.position, mActiveBattlers[selectedTarget].transform.rotation);
+                movePower = ListOfAttacks[i].movePower;
             }
         }
 
-        Instantiate(enemyAttackEffect, mActiveBattlers[mCurrentTurn].transform.position, mActiveBattlers[mCurrentTurn].transform.rotation);
+        Instantiate(EnemyAttackEffect, mActiveBattlers[mCurrentTurn].transform.position, mActiveBattlers[mCurrentTurn].transform.rotation);
         DealDamage(selectedTarget, movePower);
 
         MenuCanvas.SetActive(false);
@@ -554,11 +571,11 @@ public class BattleManager : MonoBehaviour
                 PlayerSpellButtons[i].SetSpellName(mActiveBattlers[mCurrentTurn].GetListOfAttacks[i]);
                 PlayerSpellButtons[i].GetSpellNameText.text = PlayerSpellButtons[i].GetSpellName;
 
-                for (int j = 0; j < movesList.Length; j++)
+                for (int j = 0; j < ListOfAttacks.Length; j++)
                 {
-                    if (movesList[j].moveName == PlayerSpellButtons[i].GetSpellName)
+                    if (ListOfAttacks[j].moveName == PlayerSpellButtons[i].GetSpellName)
                     {
-                        PlayerSpellButtons[i].SetSpellCost(movesList[j].moveCost);
+                        PlayerSpellButtons[i].SetSpellCost(ListOfAttacks[j].moveCost);
                         PlayerSpellButtons[i].GetSpellCostText.text = PlayerSpellButtons[i].GetSpellCost.ToString();
                     }
                 }
@@ -574,14 +591,14 @@ public class BattleManager : MonoBehaviour
     {
         if (mCanFlee)
         {
-            battleNotice.SetNotificationText("Can not flee this battle!");
-            battleNotice.Activate();
+            BattleNotice.SetNotificationText("Can not flee this battle!");
+            BattleNotice.Activate();
         }
         else
         {
             int fleeSuccess = Random.Range(0, 100);
 
-            if (fleeSuccess < chanceToFlee)
+            if (fleeSuccess < FleeChance)
             {
                 //end the battle
                 //battleActive = false;
@@ -592,17 +609,14 @@ public class BattleManager : MonoBehaviour
             else
             {
                 NextTurn();
-                battleNotice.SetNotificationText("Couldn't escape!");
-                battleNotice.Activate();
+                BattleNotice.SetNotificationText("Couldn't escape!");
+                BattleNotice.Activate();
             }
         }
     }
 
-    [ContextMenu("Force End Battle")]
-    public void EndBattle() => StartCoroutine(EndBattleCo());
-
     #endregion
-    #region Coroutines
+    #region Private Coroutines continue until done without interuption
 
     private IEnumerator EnemyMoveCo()
     {
@@ -623,7 +637,7 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(.5f);
 
         UIFade.instance.FadeToBlack();
-        AudioManager.Access.PlayMusic(mOutsideBattleBGM);
+        AudioManager.Access.PlayMusic(mBattleMusic);
 
         yield return new WaitForSeconds(1.5f);
 
@@ -666,8 +680,14 @@ public class BattleManager : MonoBehaviour
         UIFade.instance.FadeToBlack();
         yield return new WaitForSeconds(1.5f);
         BattleScene.SetActive(false);
-        SceneManager.LoadScene(gameOverScene);
+        SceneManager.LoadScene(GameOverSceneName);
     }
+
+    #endregion
+    #region Cheating Stuff
+
+    [ContextMenu("Force End Battle")]
+    public void EndBattle() => StartCoroutine(EndBattleCo());
 
     #endregion
 }
