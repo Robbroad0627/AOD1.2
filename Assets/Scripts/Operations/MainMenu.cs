@@ -1,6 +1,6 @@
 ﻿/****************************************************************************************
  * Copyright: Bonehead Games
- * Script: InnUpstairsExit.cs
+ * Script: MainMenu.cs
  * Date Created: 
  * Created By: Rob Broad
  * Description:

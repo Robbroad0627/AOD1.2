@@ -1,62 +1,63 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: QuestManager.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 29, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
+using System;
 using UnityEngine;
+using System.Collections.Generic;
 
-//Bonehead Games
-
-public class QuestManager : MonoBehaviour {
+public class QuestManager : MonoBehaviour
+{
+    public static QuestManager instance;
+    public static HashSet<Action> onQuestsUpdated = new HashSet<Action>();
 
     public string[] questMarkerNames = new string[0];
     public bool[] questMarkersComplete = new bool[0];
 
-    public static QuestManager instance;
-
-    public static HashSet<Action> onQuestsUpdated = new HashSet<Action>();
-
-	// Use this for initialization
-	void Start () {
-        instance = this;
-
-        questMarkersComplete = new bool[questMarkerNames.Length];
-	}
-
-    public string[] activeQuestNames => questMarkerNames;
-
     internal bool isReady;
 
-    /// <summary>
-    /// HACK this value must be set after activeQuestNames
-    /// </summary>
+    public string[] activeQuestNames => questMarkerNames;
     public string[] completedQuestNames
     {
         get
         {
             List<string> l = new List<string>();
-            for(int i=0;i<questMarkersComplete.Length;i++)
+            for (int i = 0; i < questMarkersComplete.Length; i++)
             {
-                if(questMarkersComplete[i])
+                if (questMarkersComplete[i])
                 {
                     l.Add(questMarkerNames[i]);
                 }
             }
+
             return l.ToArray();
         }
 
         set
         {
-            if(null == questMarkerNames) 
+            if (questMarkerNames == null) 
             {
                 questMarkerNames = new string[0];
                 Debug.LogWarning("There was no quest marker array so I initialized it to empty");
                 return;
             }
+
             questMarkersComplete = new bool[questMarkerNames.Length];
-            foreach(string s in value)
+
+            foreach (string s in value)
             {
-                for (int i = 0;i< questMarkerNames.Length;i++)
+                for (int i = 0; i < questMarkerNames.Length; i++)
                 {
-                    if(questMarkerNames[i]==s)
+                    if (questMarkerNames[i] == s)
                     {
                         questMarkersComplete[i] = true;
                     }
@@ -65,28 +66,35 @@ public class QuestManager : MonoBehaviour {
         }
     }
 
+	void Start ()
+    {
+        instance = this;
+        questMarkersComplete = new bool[questMarkerNames.Length];
+	}
 
-    //HACK: Rob designed this it should definitely wrap a Quest object instead of just being loose like this, but too late to change it.
     private string[] GetActiveQuestsNames()
     {
         List<string> q = new List<string>(questMarkerNames.Length);
-        for(int i=0;i<questMarkerNames.Length;i++)
+
+        for (int i = 0; i < questMarkerNames.Length; i++)
         {
-            if(!questMarkersComplete[i])
+            if (!questMarkersComplete[i])
             {
                 q.Add(questMarkerNames[i]);
             }
         }
+
         return q.ToArray();
     }
+
     internal string[] GetActiveButNotCompleteQuestsNames()
     {
         return GetActiveQuestsNames();
     }
 
-    // Update is called once per frame
-    void Update () {
-		if(Input.GetKeyDown(KeyCode.Q))
+    void Update ()
+    {
+		if (Input.GetKeyDown(KeyCode.Q))
         {
 #if UNITY_EDITOR
             //debug cheats
@@ -97,12 +105,12 @@ public class QuestManager : MonoBehaviour {
 #endif
         }
 
-        if(Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown(KeyCode.O))
         {
             SaveQuestData();
         }
 
-        if(Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             LoadQuestData();
         }
@@ -110,21 +118,20 @@ public class QuestManager : MonoBehaviour {
 
     public int GetQuestNumber(string questToFind)
     {
-        for(int i = 0; i < questMarkerNames.Length; i++)
+        for (int i = 0; i < questMarkerNames.Length; i++)
         {
-            if(questMarkerNames[i] == questToFind)
+            if (questMarkerNames[i] == questToFind)
             {
                 return i;
             }
         }
 
-        //Debug.LogError("Quest " + questToFind + " does not exist");
         return -1;
     }
 
     public bool CheckIfComplete(string questToCheck)
     {
-        if(GetQuestNumber(questToCheck) >= 0)
+        if (GetQuestNumber(questToCheck) >= 0)
         {
             return questMarkersComplete[GetQuestNumber(questToCheck)];
         }
@@ -135,40 +142,40 @@ public class QuestManager : MonoBehaviour {
     public void MarkQuestComplete(string questToMark)
     {
         int i = GetQuestNumber(questToMark);
+
         if (i < 0)
         {
             Debug.LogWarning($"Quest \"{questToMark}\" cannot be marked complete because it was not started.");
             return;
         }
-        questMarkersComplete[i] = true;
 
+        questMarkersComplete[i] = true;
         UpdateLocalQuestObjects();
     }
 
     public void MarkQuestIncomplete(string questToMark)
     {
         int i = GetQuestNumber(questToMark);
+
         if (i < 0)
         {
             Debug.LogError($"Quest {questToMark} cannot be marked incomplete. Because it is not registered.");
             return;
         }
-        questMarkersComplete[GetQuestNumber(questToMark)] = false;
 
+        questMarkersComplete[GetQuestNumber(questToMark)] = false;
         UpdateLocalQuestObjects();
     }
 
     public void UpdateLocalQuestObjects()
     {
-        //HACK and also the global ones
-        foreach(var q in onQuestsUpdated) { q.Invoke(); }
-
+        foreach (var q in onQuestsUpdated) { q.Invoke(); }
 
         QuestObjectActivator[] questObjects = FindObjectsOfType<QuestObjectActivator>();
 
-        if(questObjects.Length > 0)
+        if (questObjects.Length > 0)
         {
-            for(int i = 0; i < questObjects.Length; i++)
+            for (int i = 0; i < questObjects.Length; i++)
             {
                 questObjects[i].CheckCompletion();
             }
@@ -177,12 +184,13 @@ public class QuestManager : MonoBehaviour {
 
     public void SaveQuestData()
     {
-        for(int i = 0; i < questMarkerNames.Length; i++)
+        for (int i = 0; i < questMarkerNames.Length; i++)
         {
-            if(questMarkersComplete[i])
+            if (questMarkersComplete[i])
             {
                 PlayerPrefs.SetInt("QuestMarker_" + questMarkerNames[i], 1);
-            } else
+            }
+            else
             {
                 PlayerPrefs.SetInt("QuestMarker_" + questMarkerNames[i], 0);
             }
@@ -191,18 +199,20 @@ public class QuestManager : MonoBehaviour {
 
     public void LoadQuestData()
     {
-        for(int i = 0; i < questMarkerNames.Length; i++)
+        for (int i = 0; i < questMarkerNames.Length; i++)
         {
             int valueToSet = 0;
-            if(PlayerPrefs.HasKey("QuestMarker_" + questMarkerNames[i]))
+
+            if (PlayerPrefs.HasKey("QuestMarker_" + questMarkerNames[i]))
             {
                 valueToSet = PlayerPrefs.GetInt("QuestMarker_" + questMarkerNames[i]);
             }
 
-            if(valueToSet == 0)
+            if (valueToSet == 0)
             {
                 questMarkersComplete[i] = false;
-            } else
+            }
+            else
             {
                 questMarkersComplete[i] = true;
             }

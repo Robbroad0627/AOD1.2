@@ -1,27 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: QuestMarker.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 29, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 
-//Bonehead Games
-
-public class QuestMarker : MonoBehaviour {
+public class QuestMarker : MonoBehaviour
+{
 
     public string questToMark;
     public bool markComplete;
-
     public bool markOnEnter;
     private bool canMark;
-
     public bool deactivateOnMarking;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(canMark && Input.GetButtonDown("Fire1"))
+	void Update ()
+    {
+		if (canMark && Input.GetButtonDown("Fire1"))
         {
             canMark = false;
             MarkQuest();
@@ -30,10 +33,11 @@ public class QuestMarker : MonoBehaviour {
 
     public void MarkQuest()
     {
-        if(markComplete)
+        if (markComplete)
         {
             QuestManager.instance.MarkQuestComplete(questToMark);
-        } else
+        }
+        else
         {
             QuestManager.instance.MarkQuestIncomplete(questToMark);
         }
@@ -43,8 +47,7 @@ public class QuestMarker : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             if (markOnEnter)
             {
@@ -59,7 +62,7 @@ public class QuestMarker : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
             canMark = false;
         }

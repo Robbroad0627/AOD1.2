@@ -1,37 +1,43 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: Shop.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 29, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 using UnityEngine.UI;
 
-//Bonehead Games
-
-public class Shop : MonoBehaviour {
+public class Shop : MonoBehaviour
+{
 
     public static Shop instance;
 
     public GameObject shopMenu;
     public GameObject buyMenu;
     public GameObject sellMenu;
-
     public Text goldText;
-
     public string[] itemsForSale;
-
     public ItemButton[] buyItemButtons;
     public ItemButton[] sellItemButtons;
-
     public Item selectedItem;
     public Text buyItemName, buyItemDescription, buyItemValue;
     public Text sellItemName, sellItemDescription, sellItemValue;
 
-	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         instance = this;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		if(Input.GetKeyDown(KeyCode.K) && !shopMenu.activeInHierarchy)
+	void Update ()
+    {
+		if (Input.GetKeyDown(KeyCode.K) && !shopMenu.activeInHierarchy)
         {
             OpenShop();
         }
@@ -41,9 +47,7 @@ public class Shop : MonoBehaviour {
     {
         shopMenu.SetActive(true);
         OpenBuyMenu();
-
         GameManager.Access.SetShopActive(true);
-
         goldText.text = GameManager.Access.GetCurrentGold.ToString() + "g";
     }
 
@@ -56,7 +60,6 @@ public class Shop : MonoBehaviour {
     public void OpenBuyMenu()
     {
         buyItemButtons[0].Press();
-
         buyMenu.SetActive(true);
         sellMenu.SetActive(false);
 
@@ -81,12 +84,9 @@ public class Shop : MonoBehaviour {
     public void OpenSellMenu()
     {
         sellItemButtons[0].Press();
-
         buyMenu.SetActive(false);
         sellMenu.SetActive(true);
-
         ShowSellItems();
-        
     }
 
     private void ShowSellItems()

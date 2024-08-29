@@ -1,37 +1,43 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: UIFade.cs
+ * Date Created: 
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: August 29, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
 using UnityEngine.UI;
 
-//Bonehead Games
-
-public class UIFade : MonoBehaviour {
-
+public class UIFade : MonoBehaviour
+{
     public static UIFade instance;
 
     public Image fadeScreen;
     public float fadeOutSpeed;
     public float fadeInSpeed;
-
     public bool shouldFadeToBlack;
     public bool shouldFadeFromBlack;
 
-	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         instance = this;
-
         DontDestroyOnLoad(gameObject);
-
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 
         if (shouldFadeToBlack)
         {
             fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeOutSpeed * Time.deltaTime));
 
-            if(Mathf.Approximately(fadeScreen.color.a, 1f))
+            if (Mathf.Approximately(fadeScreen.color.a, 1f))
             {
                 shouldFadeToBlack = false;
             }
@@ -52,7 +58,6 @@ public class UIFade : MonoBehaviour {
     {
         shouldFadeToBlack = true;
         shouldFadeFromBlack = false;
-
     }
 
     public void FadeFromBlack()
