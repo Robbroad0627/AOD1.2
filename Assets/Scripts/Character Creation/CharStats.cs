@@ -195,14 +195,13 @@ public class CharStats : MonoBehaviour
         if (character.currentMP >= action.moveCost)
         {
             character.currentMP -= action.moveCost;
-            action.Apply(this);
             return true;
         }
 
         return false;
     }
 
-    public string[] GetAllowedMovesNames(BattleMove[] actionList, bool inBattle = true)
+    public string[] GetAllowedMovesNames(BattleMove[] actionList)
     {
         List<string> allowedActionsList = new List<string>();
 

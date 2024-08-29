@@ -6,9 +6,9 @@
  * Description:
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 27, 2024
+ * Date Last Modified: August 29, 2024
  * TODO: Variables should NEVER be public
- * Known Bugs: 
+ * Known Bugs: This really should be a ScriptableObject
  ****************************************************************************************/
 
 using UnityEngine;
