@@ -52,6 +52,8 @@ public class GameMenu : MonoBehaviour
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
     [SerializeField] private GameObject minimap;
+    [SerializeField] private GameObject questList;
+    [SerializeField] private Text[] questTextList;
     [SerializeField] private GameObject theMenu;
     [SerializeField] private GameObject[] windows;
     [SerializeField] private Text[] nameText;
@@ -104,6 +106,26 @@ public class GameMenu : MonoBehaviour
     private void Awake() => Singleton();
 #pragma warning restore IDE0051
 
+    private void Start()
+    {
+        for (int i = 0 ; i < questTextList.Length ; i++)
+        {
+            questTextList[i].text = "";
+        }
+
+        for (int i = 0 ; i < QuestManager.instance.GetActiveQuestsNames().Length ; i++)
+        {
+            for (int j = 0; j < questTextList.Length; j++)
+            {
+                if (questTextList[j].text == "")
+                {
+                    questTextList[j].text = QuestManager.instance.GetActiveQuestsNames()[i];
+                    break;
+                }
+            }
+        }
+    }
+
     #endregion
     #region Implementation Functions/Methods
 
@@ -126,15 +148,44 @@ public class GameMenu : MonoBehaviour
             AudioManager.Access.PlaySoundFX(5);
         }
 
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            if (questList.activeInHierarchy)
+            {
+                questList.SetActive(false);
+            }
+            else
+            {
+                questList.SetActive(true);
+            }
+        }
+
         if (GameManager.Access.GetBattleActive)
         {
             minimap.SetActive(false);
+
+            if (questList.activeInHierarchy)
+            {
+                questList.SetActive(false);
+            }
         }
         else
         {
             minimap.SetActive(true);
         }
-	}
+
+        for (int i = 0 ; i < QuestManager.instance.GetActiveQuestsNames().Length ; i++)
+        {
+            for (int j = 0 ; j < questTextList.Length ; j++)
+            {
+                if (questTextList[j].text == "")
+                {
+                    questTextList[j].text = QuestManager.instance.GetActiveQuestsNames()[i];
+                    break;
+                }
+            }
+        }
+    }
 #pragma warning restore IDE0051
 
     #endregion
