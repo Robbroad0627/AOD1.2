@@ -1,7 +1,7 @@
 ﻿/****************************************************************************************
  * Copyright: Bonehead Games
  * Script: BattleMagicSelect.cs
- * Date Created: 
+ * Date Created: November 11, 2020
  * Created By: Rob Broad
  * Description: Used in BattleManager Prefab under MagicMenu/SpellButtons to set spells available
  * **************************************************************************************

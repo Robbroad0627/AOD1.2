@@ -1,7 +1,7 @@
 ﻿/****************************************************************************************
  * Copyright: Bonehead Games
  * Script: CharStats.cs
- * Date Created: 
+ * Date Created: November 11, 2020
  * Created By: Rob Broad
  * Description:
  * **************************************************************************************
