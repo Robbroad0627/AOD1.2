@@ -6,9 +6,9 @@
  * Description: Used in BattleManager Prefab under List Of Attacks
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 28, 2024
+ * Date Last Modified: September 3, 2024
  * TODO: Variables should NEVER be public
- * Known Bugs: 
+ * Known Bugs: This needs a complete rewrite
  ****************************************************************************************/
 
 using System;
@@ -58,6 +58,7 @@ public class BattleMove
         if (moveName != "Slash")
         {
             int? lvl = MinLevelForClass(character.GetClass);
+
             switch (filterAction)
             {
                 case MoveFilterMode.DisallowMoveForClassIfNotListed:
