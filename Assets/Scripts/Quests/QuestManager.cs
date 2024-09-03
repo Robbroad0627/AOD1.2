@@ -72,7 +72,7 @@ public class QuestManager : MonoBehaviour
         questMarkersComplete = new bool[questMarkerNames.Length];
 	}
 
-    private string[] GetActiveQuestsNames()
+    public string[] GetActiveQuestsNames()
     {
         List<string> q = new List<string>(questMarkerNames.Length);
 

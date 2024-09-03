@@ -6,7 +6,7 @@
  * Description:
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 29, 2024
+ * Date Last Modified: September 3, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
@@ -45,14 +45,7 @@ public class UIHandler : MonoBehaviour
         myCharCreator.CheckRace();
         myCharCreator.CheckClass();
 
-        if (myCharCreator.GetIsMale)
-        {
-            sexText.text = "Male";
-        }
-        else
-        {
-            sexText.text = "Female";
-        }
+        sexText.text = myCharCreator.GetIsMale ? "Male" : "Female";
 
         strValue.text = myCharCreator.GetPlayerAttributes[CharacterAttributes.BaseAttributes.Strength].ToString();
         dexValue.text = myCharCreator.GetPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity].ToString();
