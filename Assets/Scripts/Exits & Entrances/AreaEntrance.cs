@@ -1,7 +1,7 @@
 ﻿/****************************************************************************************
  * Copyright: Bonehead Games
  * Script: AreaEntrance.cs
- * Date Created: 
+ * Date Created: November 11, 2020
  * Created By: Rob Broad
  * Description: Used in all Area Entrance Prefabs
  * **************************************************************************************
