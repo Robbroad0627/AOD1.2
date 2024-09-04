@@ -107,7 +107,7 @@ public class GameManager : MonoBehaviour
     {
         if (GameObject.Find(PLAYER))
         {
-            if (gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive || Boat.mIsPlayerOnBoat)
+            if (gameMenuOpen || dialogActive || fadingBetweenAreas || shopActive || battleActive)
             {
                 PlayerController.Access.SetCanMove(false);
             }

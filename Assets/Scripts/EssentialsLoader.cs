@@ -27,6 +27,7 @@ public class EssentialsLoader : MonoBehaviour
     [SerializeField] private GameObject gameMan = null;
     [SerializeField] private GameObject audioMan = null;
     [SerializeField] private GameObject battleMan = null;
+    [SerializeField] private GameObject boatMan = null;
 
     #endregion
 
@@ -60,7 +61,13 @@ public class EssentialsLoader : MonoBehaviour
         {
             Instantiate(battleMan).GetComponent<BattleManager>();
         }
-	}
+
+        if (Boat.Access == null)
+        {
+            Instantiate(boatMan).GetComponent<Boat>();
+            Boat.Access.gameObject.SetActive(false);
+        }
+    }
 #pragma warning restore IDE0051
 
     #endregion

@@ -109,7 +109,7 @@ public class AreaExit : MonoBehaviour
 
         if (mShouldRunAnimationBeforeFade)
         {
-            if (Boat.mHasLeftPort)
+            if (Boat.Access.GetHasLeftPort)
             {
                 enabled = true;
                 mShouldLoadAfterFade = true;

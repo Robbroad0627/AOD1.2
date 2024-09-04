@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour
 
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, mBottomLeftLimit.x, mTopRightLimit.x), Mathf.Clamp(transform.position.y, mBottomLeftLimit.y, mTopRightLimit.y), transform.position.z);
 
-        if (Boat.mIsPlayerOnBoat)
+        if (Boat.Access.GetIsPlayerOnboard)
         {
             MySpriteRenderer.enabled = false;
             GetComponent<Collider2D>().enabled = false;
@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(temp.x, temp.y, 0.0f);
         }
 
-        if (mScene != null && mScene.name == WORLD_MAP && Boat.mIsPlayerOnBoat) 
+        if (mScene != null && mScene.name == WORLD_MAP && Boat.Access.GetIsPlayerOnboard) 
         {
             if (mWorldBoat == null)
             {

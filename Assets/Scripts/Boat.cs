@@ -57,8 +57,6 @@ public class Boat : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private SpriteRenderer MyRenderer = null;
-    [SerializeField] private Collider2D MyCollider = null;
     [SerializeField] private Animator MyAnimator = null;
 
     #endregion
@@ -67,7 +65,7 @@ public class Boat : MonoBehaviour
     private bool mHasLeftPort;
     private bool mIsLeavingPort;
     private bool mIsEnteringPort;
-    private bool mIsPlayerOnBoat;
+    private bool mIsPlayerOnboard;
     private Direction mDirection;
 
     #endregion
@@ -87,19 +85,24 @@ public class Boat : MonoBehaviour
         mHasLeftPort = false;
         mIsLeavingPort = false;
         mIsEnteringPort = false;
-        mIsPlayerOnBoat = false;
+        mIsPlayerOnboard = false;
         mDirection = Direction.Left;
     }
 
+    public bool GetHasLeftPort => mHasLeftPort;
+    public bool GetIsPlayerOnboard => mIsPlayerOnboard;
+
+    public void SetIsLeavingPort(bool yesNo) => mIsLeavingPort = yesNo;
+    public void SetIsEnteringPort(bool yesNo) => mIsEnteringPort = yesNo;
+    public void SetIsPlayerOnboard(bool yesNo) => mIsPlayerOnboard = yesNo;
+
     private void Update()
     {
-        if (mIsPlayerOnBoat)
+        if (mIsPlayerOnboard)
         {
-            PlayerController pc = PlayerController.Access;
-
-            if (pc != null) 
+            if (PlayerController.Access != null) 
             {
-                pc.transform.position = transform.position;
+                PlayerController.Access.transform.position = transform.position;
             }
         }
 
@@ -111,8 +114,8 @@ public class Boat : MonoBehaviour
             {
                 case 0: //opposite myDirection.Left
                     MyAnimator.SetBool("RightDir", true);
-                    MyAnimator.SetBool("LeftDir", false);
                     MyAnimator.SetBool("UpDir", false);
+                    MyAnimator.SetBool("LeftDir", false);
                     MyAnimator.SetBool("DownDir", false);
                     break;
 
@@ -133,8 +136,8 @@ public class Boat : MonoBehaviour
                 case 3: //opposite myDirection.Down
                     MyAnimator.SetBool("UpDir", true);
                     MyAnimator.SetBool("LeftDir", false);
-                    MyAnimator.SetBool("RightDir", false);
                     MyAnimator.SetBool("DownDir", false);
+                    MyAnimator.SetBool("RightDir", false);
                     break;
 
                 default:
@@ -156,9 +159,9 @@ public class Boat : MonoBehaviour
             {
                 case 0: //myDirection.Left
                     MyAnimator.SetBool("LeftDir", true);
-                    MyAnimator.SetBool("RightDir", false);
                     MyAnimator.SetBool("UpDir", false);
                     MyAnimator.SetBool("DownDir", false);
+                    MyAnimator.SetBool("RightDir", false);
                     break;
 
                 case 1: //myDirection.Right
@@ -177,9 +180,9 @@ public class Boat : MonoBehaviour
 
                 case 3: //myDirection.Down
                     MyAnimator.SetBool("DownDir", true);
+                    MyAnimator.SetBool("UpDir", false);
                     MyAnimator.SetBool("LeftDir", false);
                     MyAnimator.SetBool("RightDir", false);
-                    MyAnimator.SetBool("UpDir", false);
                     break;
 
                 default:
@@ -207,8 +210,8 @@ public class Boat : MonoBehaviour
         if (mIsEnteringPort && collision.gameObject.name == "DockedSpot")
         {
             transform.position = collision.transform.position;
-            mIsEnteringPort = false;
             mHasLeftPort = false;
+            mIsEnteringPort = false;
             PortController.boatIsDocked = true;
         }
     }

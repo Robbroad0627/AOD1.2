@@ -13,7 +13,7 @@ public class PortController : MonoBehaviour
     public Transform dockedSpot;
     public Transform portEntrance;
     public float waitToLoad = 1f;
-    public Boat.Direction direction;
+    public Direction direction;
     public float disembarkTimer;
     public static bool boatIsDocked = false;
     public static bool boatIsLeaving = false;
@@ -36,15 +36,14 @@ public class PortController : MonoBehaviour
         if (Boat.Access == null) 
         {
             boatController = Instantiate(boat).GetComponent<Boat>();
-            //Boat.Access = boatController;
         }
 
-        if (!Boat.mHasLeftPort) 
+        if (!Boat.Access.GetHasLeftPort) 
         {
             boatController.gameObject.transform.SetParent(dockedSpot, false);
             boatController.PortDirection(direction);
         }
-        else if (Boat.mHasLeftPort)
+        else if (Boat.Access.GetHasLeftPort)
         {
             boatController.gameObject.transform.SetParent(portEntrance, false);
             boatController.PortDirection(direction);
@@ -53,7 +52,7 @@ public class PortController : MonoBehaviour
 
     void Update()
     {
-        if (Boat.mIsPlayerOnBoat || GameManager.Access.GetHasBoat)
+        if (Boat.Access.GetIsPlayerOnboard || GameManager.Access.GetHasBoat)
         {
             boatCaptain.SetActive(false);
             portAreaExit.SetActive(true);
@@ -76,7 +75,7 @@ public class PortController : MonoBehaviour
 
         if (shouldRunAnimationBeforeFade)
         {
-            if (Boat.mHasLeftPort)
+            if (Boat.Access.GetHasLeftPort)
             {
                 enabled = true;
                 shouldLoadAfterFade = true;
@@ -107,19 +106,18 @@ public class PortController : MonoBehaviour
 
     public void PlayerEnterBoat(string toLoad, string transitionName)
     {
-        Boat.mIsPlayerOnBoat = true;
-        Boat.mIsLeavingPort = true;
+        Boat.Access.SetIsPlayerOnboard(true);
+        Boat.Access.SetIsLeavingPort(true);
         shouldRunAnimationBeforeFade = true;
         areaToLoad = toLoad;
         areaTransitionName = transitionName;
-        
     }
 
     public void PlayerExitBoat() 
     {
         boatCaptainController.boatDestinationConfirmedNext = false;
         boatCaptainController.boatDestinationConfirmedPre = false;
-        Boat.mIsPlayerOnBoat = false;
+        Boat.Access.SetIsPlayerOnboard(false);
         boatIsDocked = false;
     }
 }
