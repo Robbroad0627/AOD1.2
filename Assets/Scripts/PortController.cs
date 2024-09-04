@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,56 +12,48 @@ public class PortController : MonoBehaviour
     public GameObject boatCaptain;
     public Transform dockedSpot;
     public Transform portEntrance;
+    public float waitToLoad = 1f;
+    public Boat.Direction direction;
+    public float disembarkTimer;
+    public static bool boatIsDocked = false;
+    public static bool boatIsLeaving = false;
 
     private string areaToLoad;
     private string areaTransitionName;
-
-    public float waitToLoad = 1f;
-
-    public Boat.Direction direction;
-
-    public float disembarkTimer;
-
     private Boat boatController;
     private BoatCaptain boatCaptainController;
     private AreaExit areaExitController;
     private AreaEntrance areaEntranceController;
-
     private bool shouldLoadAfterFade;
     private bool shouldRunAnimationBeforeFade;
 
-    public static bool boatIsDocked = false;
-    public static bool boatIsLeaving = false;
-
-    // Start is called before the first frame update
     void Start()
     {
         areaExitController = portAreaExit.GetComponent<AreaExit>();
         areaEntranceController = portAreaEntrance.GetComponent<AreaEntrance>();
         boatCaptainController = boatCaptain.GetComponent<BoatCaptain>();
 
-        if (Boat.instance == null) 
+        if (Boat.Access == null) 
         {
             boatController = Instantiate(boat).GetComponent<Boat>();
-            Boat.instance = boatController;
+            //Boat.Access = boatController;
         }
 
-        if (!Boat.boatLeftPort) 
+        if (!Boat.mHasLeftPort) 
         {
             boatController.gameObject.transform.SetParent(dockedSpot, false);
             boatController.PortDirection(direction);
         }
-        else if (Boat.boatLeftPort)
+        else if (Boat.mHasLeftPort)
         {
             boatController.gameObject.transform.SetParent(portEntrance, false);
             boatController.PortDirection(direction);
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Boat.isPlayerOnBoat || GameManager.Access.GetHasBoat)
+        if (Boat.mIsPlayerOnBoat || GameManager.Access.GetHasBoat)
         {
             boatCaptain.SetActive(false);
             portAreaExit.SetActive(true);
@@ -85,15 +76,12 @@ public class PortController : MonoBehaviour
 
         if (shouldRunAnimationBeforeFade)
         {
-            if (Boat.boatLeftPort)
+            if (Boat.mHasLeftPort)
             {
-                this.enabled = true;//Be sure we are enabled or we won't get updates and the next scene will never load.
-                                    //SceneManager.LoadScene(areaToLoad);
+                enabled = true;
                 shouldLoadAfterFade = true;
                 GameManager.Access.SetFadingBetweenAreas(true);
-
                 UIFade.instance.FadeToBlack();
-
                 PlayerController.Access.SetAreaTransitionName(areaTransitionName);
                 shouldRunAnimationBeforeFade = false;
             }
@@ -103,6 +91,7 @@ public class PortController : MonoBehaviour
         {
             boatController.gameObject.transform.SetParent(dockedSpot, false);
             disembarkTimer -= Time.deltaTime;
+
             if (disembarkTimer <= 0)
             {
                 PlayerExitBoat();
@@ -118,8 +107,8 @@ public class PortController : MonoBehaviour
 
     public void PlayerEnterBoat(string toLoad, string transitionName)
     {
-        Boat.isPlayerOnBoat = true;
-        Boat.isLeavingPort = true;
+        Boat.mIsPlayerOnBoat = true;
+        Boat.mIsLeavingPort = true;
         shouldRunAnimationBeforeFade = true;
         areaToLoad = toLoad;
         areaTransitionName = transitionName;
@@ -130,7 +119,7 @@ public class PortController : MonoBehaviour
     {
         boatCaptainController.boatDestinationConfirmedNext = false;
         boatCaptainController.boatDestinationConfirmedPre = false;
-        Boat.isPlayerOnBoat = false;
+        Boat.mIsPlayerOnBoat = false;
         boatIsDocked = false;
     }
 }

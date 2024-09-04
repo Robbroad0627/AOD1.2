@@ -45,9 +45,9 @@ public class AreaEntrance : MonoBehaviour
 	{
 		if (PlayerController.Access.GetAreaTransitionName == SpawnPointName)
         {
-			if (IsAPort && Boat.boatLeftPort)
+			if (IsAPort && Boat.mHasLeftPort)
 			{
-				Boat.isEnteringPort = true;
+				Boat.mIsEnteringPort = true;
 			}
 			else
 			{
@@ -68,7 +68,7 @@ public class AreaEntrance : MonoBehaviour
 	{
         if (PlayerController.Access.GetAreaTransitionName == SpawnPointName)
         {
-			if (!Boat.isPlayerOnBoat)
+			if (!Boat.mIsPlayerOnBoat)
 			{
                 PlayerController.Access.transform.position = transform.position;
 				PlayerController.Access.SetAreaTransitionName(null);

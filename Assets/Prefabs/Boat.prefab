@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2262023874308909331}
   - component: {fileID: 3330277244146075837}
   - component: {fileID: 3330277244146075834}
-  - component: {fileID: 529756661}
   - component: {fileID: 2733370733762716489}
+  - component: {fileID: 529756661}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Untagged
@@ -133,18 +133,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.1}
   m_EdgeRadius: 0
---- !u!114 &529756661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1810604480516027641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13159e4a2fa95d44b814c59557064cd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &2733370733762716489
 Animator:
   serializedVersion: 3
@@ -164,3 +152,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &529756661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810604480516027641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13159e4a2fa95d44b814c59557064cd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -25,7 +25,7 @@ public class BattleManager : MonoBehaviour
 
     private static BattleManager mInstance;
 
-    private void Singleton()
+    private void InitializeSingleton()
     {
         if (mInstance != null && mInstance != this)
         {
@@ -138,7 +138,7 @@ public class BattleManager : MonoBehaviour
     #region Private Initialization Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
-    private void Awake() => Singleton();
+    private void Awake() => InitializeSingleton();
 #pragma warning restore IDE0051
 
 #pragma warning disable IDE0051

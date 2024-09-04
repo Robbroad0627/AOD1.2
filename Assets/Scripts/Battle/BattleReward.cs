@@ -21,7 +21,7 @@ public class BattleReward : MonoBehaviour
 
     private static BattleReward mInstance;
 
-    private void Singleton()
+    private void InitializeSingleton()
     {
         if (mInstance != null && mInstance != this)
         {
@@ -71,7 +71,7 @@ public class BattleReward : MonoBehaviour
     #region Private Initialization Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
-    private void Awake () => Singleton();
+    private void Awake () => InitializeSingleton();
 #pragma warning restore IDE0051
 
 #pragma warning disable IDE0051
