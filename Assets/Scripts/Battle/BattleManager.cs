@@ -6,7 +6,7 @@
  * Description: Used in BattleManager Prefab
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 28, 2024
+ * Date Last Modified: September 9, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
@@ -105,11 +105,11 @@ public class BattleManager : MonoBehaviour
     #endregion
     #region Private Variables/Fields used in this Class Only
 
-    private bool mCanFlee;
     private int mRewardXP;
-    private bool mIsFleeing;
-    private int mBattleMusic;
     private int mCurrentTurn;
+    private int mBattleMusic;
+    private bool mCanFlee;
+    private bool mIsFleeing;
     private bool mTurnWaiting;
     private bool mIsBattleActive;
     private string[] mRewardItems;
@@ -137,13 +137,13 @@ public class BattleManager : MonoBehaviour
     //FUNCTIONS
     #region Private Initialization Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Awake() => Singleton();
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Start() => InitializeVariables();
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     private void InitializeVariables()
     {
@@ -161,7 +161,7 @@ public class BattleManager : MonoBehaviour
     #endregion
     #region Private Implementation Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Update ()
     {
         // for testing should be removed before compilation
@@ -192,7 +192,7 @@ public class BattleManager : MonoBehaviour
             }
         }
 	}
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     private void StartBattleMusic()
     {

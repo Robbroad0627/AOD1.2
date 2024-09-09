@@ -17,7 +17,7 @@ using UnityEngine.UI;
 public class DamageNumber : MonoBehaviour 
 {
     //VARIABLES
-    #region Inspector/Exposed Variables
+    #region Private Variables/Fields Exposed to Inspector for Editing
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
@@ -31,18 +31,18 @@ public class DamageNumber : MonoBehaviour
     #endregion
 
     //FUNCTIONS
-    #region Implementation Functions/Methods
+    #region Private Implementation Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Update ()
     {
         Destroy(gameObject, lifetime);
         transform.position += new Vector3(0f, moveSpeed * Time.deltaTime, 0f);
 	}
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
-    #region Public Functions/Methods
+    #region Public Functions/Methods for use Outside of this Class
 
     public void SetDamage(int damageAmount)
     {

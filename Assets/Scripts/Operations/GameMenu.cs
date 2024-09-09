@@ -14,6 +14,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class GameMenu : MonoBehaviour
 {
@@ -51,9 +52,12 @@ public class GameMenu : MonoBehaviour
     // unless you know what you are changing
     // You will have to reenter all values in the inspector to ALL Objects that
     // reference this script.
-    [SerializeField] private GameObject minimap;
-    [SerializeField] private GameObject questList;
-    [SerializeField] private Text[] questTextList;
+    [FormerlySerializedAs("minimap")]
+    [SerializeField] private GameObject TheMinimap;
+    [FormerlySerializedAs("questList")]
+    [SerializeField] private GameObject TheQuestListDisplay;
+    [FormerlySerializedAs("questTextList")]
+    [SerializeField] private Text[] QuestTextList;
     [SerializeField] private GameObject theMenu;
     [SerializeField] private GameObject[] windows;
     [SerializeField] private Text[] nameText;
@@ -88,8 +92,8 @@ public class GameMenu : MonoBehaviour
     #endregion
     #region Private Variables
 
-    private CharStats[] playerStats;
-    private Item activeItem;
+    private Item mActiveItem;
+    private CharStats[] mPlayerStats;
 
     #endregion
 
@@ -106,25 +110,27 @@ public class GameMenu : MonoBehaviour
     private void Awake() => Singleton();
 #pragma warning restore IDE0051
 
+#pragma warning disable IDE0051
     private void Start()
     {
-        for (int i = 0 ; i < questTextList.Length ; i++)
+        for (int i = 0 ; i < QuestTextList.Length ; i++)
         {
-            questTextList[i].text = "";
+            QuestTextList[i].text = "";
         }
 
         for (int i = 0 ; i < QuestManager.instance.GetActiveQuestsNames().Length ; i++)
         {
-            for (int j = 0; j < questTextList.Length; j++)
+            for (int j = 0; j < QuestTextList.Length; j++)
             {
-                if (questTextList[j].text == "")
+                if (QuestTextList[j].text == "")
                 {
-                    questTextList[j].text = QuestManager.instance.GetActiveQuestsNames()[i];
+                    QuestTextList[j].text = QuestManager.instance.GetActiveQuestsNames()[i];
                     break;
                 }
             }
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods
@@ -150,37 +156,37 @@ public class GameMenu : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            if (questList.activeInHierarchy)
+            if (TheQuestListDisplay.activeInHierarchy)
             {
-                questList.SetActive(false);
+                TheQuestListDisplay.SetActive(false);
             }
             else
             {
-                questList.SetActive(true);
+                TheQuestListDisplay.SetActive(true);
             }
         }
 
         if (GameManager.Access.GetBattleActive)
         {
-            minimap.SetActive(false);
+            TheMinimap.SetActive(false);
 
-            if (questList.activeInHierarchy)
+            if (TheQuestListDisplay.activeInHierarchy)
             {
-                questList.SetActive(false);
+                TheQuestListDisplay.SetActive(false);
             }
         }
         else
         {
-            minimap.SetActive(true);
+            TheMinimap.SetActive(true);
         }
 
         for (int i = 0 ; i < QuestManager.instance.GetActiveQuestsNames().Length ; i++)
         {
-            for (int j = 0 ; j < questTextList.Length ; j++)
+            for (int j = 0 ; j < QuestTextList.Length ; j++)
             {
-                if (questTextList[j].text == "")
+                if (QuestTextList[j].text == "")
                 {
-                    questTextList[j].text = QuestManager.instance.GetActiveQuestsNames()[i];
+                    QuestTextList[j].text = QuestManager.instance.GetActiveQuestsNames()[i];
                     break;
                 }
             }
@@ -193,21 +199,21 @@ public class GameMenu : MonoBehaviour
 
     private void UpdateMainStats()
     {
-        playerStats = GameManager.Access.GetCharacterStats;
+        mPlayerStats = GameManager.Access.GetCharacterStats;
 
-        for (int i = 0; i < playerStats.Length; i++)
+        for (int i = 0; i < mPlayerStats.Length; i++)
         {
-            if (playerStats[i].gameObject.activeInHierarchy)
+            if (mPlayerStats[i].gameObject.activeInHierarchy)
             {
                 charStatHolder[i].SetActive(true);
-                nameText[i].text = playerStats[i].GetCharacterName;
-                hpText[i].text = "HP: " + playerStats[i].GetCurrentHP + "/" + playerStats[i].GetMaxHP;
-                mpText[i].text = "MP: " + playerStats[i].GetCurrentMP + "/" + playerStats[i].GetMaxMP;
-                lvlText[i].text = "Lvl: " + playerStats[i].GetLevel;
-                expText[i].text = "" + playerStats[i].GetCurrentXP + "/" + playerStats[i].GetXPToNextLevel[playerStats[i].GetLevel];
-                expSlider[i].maxValue = playerStats[i].GetXPToNextLevel[playerStats[i].GetLevel];
-                expSlider[i].value = playerStats[i].GetCurrentXP;
-                charImage[i].sprite = playerStats[i].GetSprite;
+                nameText[i].text = mPlayerStats[i].GetCharacterName;
+                hpText[i].text = "HP: " + mPlayerStats[i].GetCurrentHP + "/" + mPlayerStats[i].GetMaxHP;
+                mpText[i].text = "MP: " + mPlayerStats[i].GetCurrentMP + "/" + mPlayerStats[i].GetMaxMP;
+                lvlText[i].text = "Lvl: " + mPlayerStats[i].GetLevel;
+                expText[i].text = "" + mPlayerStats[i].GetCurrentXP + "/" + mPlayerStats[i].GetXPToNextLevel[mPlayerStats[i].GetLevel];
+                expSlider[i].maxValue = mPlayerStats[i].GetXPToNextLevel[mPlayerStats[i].GetLevel];
+                expSlider[i].value = mPlayerStats[i].GetCurrentXP;
+                charImage[i].sprite = mPlayerStats[i].GetSprite;
             }
             else
             {
@@ -234,27 +240,27 @@ public class GameMenu : MonoBehaviour
 
     private void StatusChar(int selected)
     {
-        statusName.text = playerStats[selected].GetCharacterName;
-        statusHP.text = "" + playerStats[selected].GetCurrentHP + "/" + playerStats[selected].GetMaxHP;
-        statusMP.text = "" + playerStats[selected].GetCurrentMP + "/" + playerStats[selected].GetMaxMP;
-        statusStr.text = playerStats[selected].GetStrength.ToString();
-        statusDef.text = playerStats[selected].GetDefence.ToString();
+        statusName.text = mPlayerStats[selected].GetCharacterName;
+        statusHP.text = "" + mPlayerStats[selected].GetCurrentHP + "/" + mPlayerStats[selected].GetMaxHP;
+        statusMP.text = "" + mPlayerStats[selected].GetCurrentMP + "/" + mPlayerStats[selected].GetMaxMP;
+        statusStr.text = mPlayerStats[selected].GetStrength.ToString();
+        statusDef.text = mPlayerStats[selected].GetDefence.ToString();
 
-        if (playerStats[selected].GetEquippedWeapon != "")
+        if (mPlayerStats[selected].GetEquippedWeapon != "")
         {
-            statusWpnEqpd.text = playerStats[selected].GetEquippedWeapon;
+            statusWpnEqpd.text = mPlayerStats[selected].GetEquippedWeapon;
         }
 
-        statusWpnPwr.text = playerStats[selected].GetWeaponPower.ToString();
+        statusWpnPwr.text = mPlayerStats[selected].GetWeaponPower.ToString();
 
-        if (playerStats[selected].GetEquippedArmor != "")
+        if (mPlayerStats[selected].GetEquippedArmor != "")
         {
-            statusArmrEqpd.text = playerStats[selected].GetEquippedArmor;
+            statusArmrEqpd.text = mPlayerStats[selected].GetEquippedArmor;
         }
 
-        statusArmrPwr.text = playerStats[selected].GetArmorPower.ToString();
-        statusExp.text = (playerStats[selected].GetXPToNextLevel[playerStats[selected].GetLevel] - playerStats[selected].GetCurrentXP).ToString();
-        statusImage.sprite = playerStats[selected].GetSprite;
+        statusArmrPwr.text = mPlayerStats[selected].GetArmorPower.ToString();
+        statusExp.text = (mPlayerStats[selected].GetXPToNextLevel[mPlayerStats[selected].GetLevel] - mPlayerStats[selected].GetCurrentXP).ToString();
+        statusImage.sprite = mPlayerStats[selected].GetSprite;
     }
 
     private void CloseItemCharChoice() => itemCharChoiceMenu.SetActive(false);
@@ -286,20 +292,20 @@ public class GameMenu : MonoBehaviour
 
     public void SelectItem(Item newItem)
     {
-        activeItem = newItem;
+        mActiveItem = newItem;
 
-        if (activeItem.GetIsItem)
+        if (mActiveItem.GetIsItem)
         {
             useButtonText.text = "Use";
         }
 
-        if (activeItem.GetIsWeapon || activeItem.GetIsArmor)
+        if (mActiveItem.GetIsWeapon || mActiveItem.GetIsArmor)
         {
             useButtonText.text = "Equip";
         }
 
-        itemName.text = activeItem.GetName;
-        itemDescription.text = activeItem.GetDescription;
+        itemName.text = mActiveItem.GetName;
+        itemDescription.text = mActiveItem.GetDescription;
     }
 
     #endregion
@@ -333,16 +339,16 @@ public class GameMenu : MonoBehaviour
 
         for (int i = 0; i < statusButtons.Length; i++)
         {
-            statusButtons[i].SetActive(playerStats[i].gameObject.activeInHierarchy);
-            statusButtons[i].GetComponentInChildren<Text>().text = playerStats[i].GetCharacterName;
+            statusButtons[i].SetActive(mPlayerStats[i].gameObject.activeInHierarchy);
+            statusButtons[i].GetComponentInChildren<Text>().text = mPlayerStats[i].GetCharacterName;
         }
     }
 
     public void DiscardItem()
     {
-        if (activeItem != null)
+        if (mActiveItem != null)
         {
-            GameManager.Access.RemoveItem(activeItem.GetName);
+            GameManager.Access.RemoveItem(mActiveItem.GetName);
         }
     }
 
@@ -359,7 +365,7 @@ public class GameMenu : MonoBehaviour
 
     public void UseItem(int selectChar)
     {
-        activeItem.Use(selectChar);
+        mActiveItem.Use(selectChar);
         CloseItemCharChoice();
     }
 

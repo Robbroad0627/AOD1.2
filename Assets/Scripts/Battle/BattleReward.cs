@@ -70,11 +70,11 @@ public class BattleReward : MonoBehaviour
     //FUNCTIONS
     #region Private Initialization Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Awake () => Singleton();
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Start()
     {
         mXPEarned = 0;
@@ -82,12 +82,12 @@ public class BattleReward : MonoBehaviour
         mQuestToComplete = "";
         mCompletesQuest = false;
     }
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
     #region Private Implementation Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Update ()
     {
         // For testing only remove before game is published
@@ -96,7 +96,7 @@ public class BattleReward : MonoBehaviour
             OpenRewardScreen(54, new string[] { "Short sword", "Leather Armor" });
         }
 	}
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
     #region Public Functions/Methods for use Outside of this Class

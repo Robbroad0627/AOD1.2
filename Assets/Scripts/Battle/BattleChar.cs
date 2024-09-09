@@ -98,9 +98,9 @@ public class BattleChar : MonoBehaviour
     //FUNCTIONS
     #region Private Initialization Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Start() => InitializeVariables();
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     private void InitializeVariables()
     {
@@ -113,7 +113,7 @@ public class BattleChar : MonoBehaviour
     #endregion
     #region Private Implementation Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Update()
     {
         if (mShouldFade)
@@ -129,7 +129,7 @@ public class BattleChar : MonoBehaviour
             }
         }
     }
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
 }

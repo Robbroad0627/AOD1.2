@@ -46,10 +46,14 @@ public class CharacterAttributes : MonoBehaviour
         Thief
     };
 
-    public enum Vitals
+    public enum CharacterClass
     {
-        HP,
-        MP,
-        AC
-    };
+        Cleric,
+        Druid,
+        Fighter,
+        MagicUser,
+        Paladin,
+        Ranger,
+        Thief
+    }
 }

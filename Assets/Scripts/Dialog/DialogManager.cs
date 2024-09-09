@@ -45,6 +45,7 @@ public class DialogManager : MonoBehaviour
     private const string NPC = "n-";
     private const string PLAYER = "Player";
     private const string INTERACT = "Fire1";
+
     #endregion
     #region Inspector/Exposed Variables
 
