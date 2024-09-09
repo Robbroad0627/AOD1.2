@@ -1,10 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿/****************************************************************************************
+ * Copyright: Bonehead Games
+ * Script: BoatCaptain.cs
+ * Date Created: November 11, 2020
+ * Created By: Rob Broad
+ * Description:
+ * **************************************************************************************
+ * Modified By: Jeff Moreau
+ * Date Last Modified: September 9, 2024
+ * TODO: Variables should NEVER be public
+ * Known Bugs: 
+ ****************************************************************************************/
+
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
-//Bonehead Games
-
 
 public class BoatCaptain : MonoBehaviour
 {
@@ -15,11 +22,8 @@ public class BoatCaptain : MonoBehaviour
     public string nextContinent;
     public string previousContinent;
     public int goldCost = 1;
-
     public float waitToLoad = 1f;
-
     public PortController portController;
-
     public bool canOpen;
     public bool boatTripConfirmed;
     public bool boatDestinationConfirmedNext;
@@ -28,13 +32,6 @@ public class BoatCaptain : MonoBehaviour
     private bool shouldLoadAfterFade;
     private bool shouldRunAnimationBeforeFade;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (canOpen && Input.GetButtonDown("Fire1") && PlayerController.Access.GetCanMove && !boatTripConfirmed)
@@ -50,11 +47,6 @@ public class BoatCaptain : MonoBehaviour
         {
             portController.PlayerEnterBoat(previousAreaToLoad, previousAreaTransitionName);
         }
-
-        //if (!boatDestinationConfirmedNext || !boatDestinationConfirmedPre) 
-        //{
-        //    this.gameObject.SetActive(true);
-        //}
     }
 
     private void OnTriggerEnter2D(Collider2D other)

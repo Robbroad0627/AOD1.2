@@ -6,7 +6,7 @@
  * Description: Used in BattleManager Prefab
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 28, 2024
+ * Date Last Modified: September 9, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
@@ -105,11 +105,11 @@ public class BattleManager : MonoBehaviour
     #endregion
     #region Private Variables/Fields used in this Class Only
 
-    private bool mCanFlee;
     private int mRewardXP;
-    private bool mIsFleeing;
-    private int mBattleMusic;
     private int mCurrentTurn;
+    private int mBattleMusic;
+    private bool mCanFlee;
+    private bool mIsFleeing;
     private bool mTurnWaiting;
     private bool mIsBattleActive;
     private string[] mRewardItems;

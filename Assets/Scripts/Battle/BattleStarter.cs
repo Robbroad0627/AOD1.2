@@ -3,10 +3,10 @@
  * Script: BattleStarter.cs
  * Date Created: November 11, 2020
  * Created By: Rob Broad
- * Description:
+ * Description: Used in BattleZone Prefab
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 26, 2024
+ * Date Last Modified: September 9, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
@@ -17,14 +17,14 @@ using System.Collections;
 public class BattleStarter : MonoBehaviour
 {
     //VARIABLES
-    #region Constant Variable Declarations and Initializations
+    #region Private Constant Variables/Fields used in this Class Only
 
     private const string PLAYER = "Player";
     private const string UP_DOWN = "Vertical";
     private const string LEFT_RIGHT = "Horizontal";
 
     #endregion
-    #region Inspector/Exposed Variables
+    #region Private Variables/Fields Exposed to Inspector for Editing
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
@@ -41,7 +41,7 @@ public class BattleStarter : MonoBehaviour
     [SerializeField] private string QuestToComplete = "";
 
     #endregion
-    #region Private Variables
+    #region Private Variables/Fields used in this Class Only
 
     private bool mIsPlayerInArea;
     private float mBattleCountdownTimer;
@@ -49,7 +49,7 @@ public class BattleStarter : MonoBehaviour
     #endregion
 
     //FUNCTIONS
-    #region Initialization Methods/Functions
+    #region Private Initialization Functions/Methods used in this Class Only 
 
 #pragma warning disable IDE0051
     private void Start ()
@@ -60,7 +60,7 @@ public class BattleStarter : MonoBehaviour
 #pragma warning restore IDE0051
 
     #endregion
-    #region Physics Functions/Methods
+    #region Private Physics Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
     private void OnTriggerEnter2D(Collider2D other)
@@ -97,7 +97,7 @@ public class BattleStarter : MonoBehaviour
 #pragma warning restore IDE0051
 
     #endregion
-    #region Implementation Functions/Methods
+    #region Private Implementation Functions/Methods used in this Class Only
 
 #pragma warning disable IDE0051
     private void Update ()

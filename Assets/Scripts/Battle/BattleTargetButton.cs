@@ -3,10 +3,10 @@
  * Script: BattleTargetButton.cs
  * Date Created: November 11, 2020
  * Created By: Rob Broad
- * Description:
+ * Description: Used in BattleManager Prefab under Canvas/Target Menu/buttons
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: August 26, 2024
+ * Date Last Modified: September 9, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
@@ -17,7 +17,7 @@ using UnityEngine.UI;
 public class BattleTargetButton : MonoBehaviour
 {
     //VARIABLES
-    #region Inspector/Exposed Variables
+    #region Private Variables/Fields Exposed to Inspector for Editing
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
@@ -26,15 +26,15 @@ public class BattleTargetButton : MonoBehaviour
     [SerializeField] private Text targetName;
 
     #endregion
-    #region Private Variables
+    #region Private Variables/Fields used in this Class Only
 
-    private string mMoveName;
     private int mTarget;
+    private string mMoveName;
 
     #endregion
 
     //GETTERS/SETTERS
-    #region Setters/Mutators
+    #region Public Setters/Mutators for use Outside of this Class Only
 
     public int SetTarget(int target) => mTarget = target;
     public string SetMoveName(string name) => mMoveName = name;
@@ -43,7 +43,7 @@ public class BattleTargetButton : MonoBehaviour
     #endregion
 
     //FUNCTIONS
-    #region Buttons
+    #region Public Functions/Methods for use with Buttons
 
     public void Press() => BattleManager.Access.PlayerAttack(mMoveName, mTarget);
 
