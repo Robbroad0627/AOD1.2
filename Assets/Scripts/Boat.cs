@@ -13,16 +13,16 @@
 
 using UnityEngine;
 
+public enum Direction
+{
+    Left,
+    Right,
+    Up,
+    Down
+}
+
 public class Boat : MonoBehaviour
 {
-    public enum Direction
-    {
-        Left,
-        Right,
-        Up,
-        Down
-    } 
-
     public static Boat instance;
 
     public static bool isPlayerOnBoat = false;

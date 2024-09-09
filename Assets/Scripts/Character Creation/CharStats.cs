@@ -18,7 +18,7 @@ using System.Collections.Generic;
 public class CharStats : MonoBehaviour
 {
     //VARIABLES
-    #region Inspector/Exposed Variables
+    #region Private Variables/Fields Exposed to Inspector for Editing
 
     // Do NOT rename SerializeField Variables or Inspector exposed Variables
     // unless you know what you are changing
@@ -26,7 +26,7 @@ public class CharStats : MonoBehaviour
     // reference this script.
     [SerializeField] private string charName = "?";
     [SerializeField] private BattleChar battleChar = null;
-    [SerializeField] private BattleMove.CharacterClass characterClass = 0;
+    [SerializeField] private CharacterAttributes.CharacterClass characterClass = 0;
     [SerializeField] private int playerLevel = 1;
     [SerializeField] private int currentEXP = 0;
     [SerializeField] private int[] expToNextLevel = null;
@@ -46,7 +46,7 @@ public class CharStats : MonoBehaviour
     [SerializeField] private Sprite charIamge = null;
 
     #endregion
-    #region Private Variables
+    #region Private Variables/Fields used in this Class Only
 
     private string mSex;
     private string mRace;
@@ -61,7 +61,7 @@ public class CharStats : MonoBehaviour
     #endregion
 
     //GETTERS/SETTERS
-    #region Getters/Accessors
+    #region Public Getters/Accessors for use Outside of this Class Only
 
     public int GetMaxHP => maxHP;
     public int GetMaxMP => maxMP;
@@ -88,10 +88,10 @@ public class CharStats : MonoBehaviour
     public string GetEquippedHandArmor => mEquippedHandArmr;
     public string GetEquippedFootArmor => mEquippedFeetArmr;
     public string GetEquippedOtherArmor => mEquippedOtherArmr;
-    public BattleMove.CharacterClass GetClass => characterClass;
+    public CharacterAttributes.CharacterClass GetClass => characterClass;
 
     #endregion
-    #region Setters/Mutators
+    #region Public Setters/Mutators for use Outside of this Class Only
 
     public int SetMaxHP(int hp) => maxHP = hp;
     public int SetMaxMP(int mp) => maxMP = mp;
@@ -117,14 +117,14 @@ public class CharStats : MonoBehaviour
     public string SetEquippedFootArmor(string newFootArmor) => mEquippedFeetArmr = newFootArmor;
     public string SetEquippedHandArmor(string newHandArmor) => mEquippedHandArmr = newHandArmor;
     public BattleChar SetBattleCharacter(BattleChar newBattleChar) => battleChar = newBattleChar;
-    public BattleMove.CharacterClass SetClass(string newClass) => characterClass = (BattleMove.CharacterClass)Enum.Parse(typeof(BattleMove.CharacterClass), newClass, true);
+    public CharacterAttributes.CharacterClass SetClass(string newClass) => characterClass = (CharacterAttributes.CharacterClass)Enum.Parse(typeof(CharacterAttributes.CharacterClass), newClass, true);
 
     #endregion
 
     //FUNCTIONS
-    #region Initialization Functions/Methods
+    #region Private Initialization Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Start ()
     {
         expToNextLevel = new int[maxLevel];
@@ -135,12 +135,12 @@ public class CharStats : MonoBehaviour
             expToNextLevel[i] = Mathf.FloorToInt(expToNextLevel[i - 1] * 1.05f);
         }
 	}
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
-    #region Implementation Functions/Methods
+    #region Private Implementation Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Update ()
     {
         // Remove before final compile
@@ -149,10 +149,10 @@ public class CharStats : MonoBehaviour
             AddExp(1000);
         }
 	}
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
-    #region Public Functions/Methods
+    #region Public Functions/Methods for use Outside of this Class
 
     public void AddExp(int expToAdd)
     {

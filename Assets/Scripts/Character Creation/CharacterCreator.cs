@@ -3,7 +3,7 @@
  * Script: CharacterCreator.cs
  * Date Created: November 11, 2020
  * Created By: Rob Broad
- * Description:
+ * Description: Used in CharCreation Prefab under Character
  * **************************************************************************************
  * Modified By: Jeff Moreau
  * Date Last Modified: September 9, 2024
@@ -65,7 +65,7 @@ public class CharacterCreator : MonoBehaviour
     //FUNCTIONS
     #region Private Initialization Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Awake()
     {
         mIsMale = true;
@@ -73,7 +73,7 @@ public class CharacterCreator : MonoBehaviour
         nameField = GameObject.Find("nameText").GetComponent<InputField>();
         mPortraits = GetComponent<PortraitHandler>();
     }
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
     #region Public Functions/Methods for use Outside of this Class

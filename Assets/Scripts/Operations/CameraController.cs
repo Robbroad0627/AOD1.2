@@ -39,7 +39,7 @@ public class CameraController : MonoBehaviour
     //FUNCTIONS
     #region Private Initialization Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Start ()
     {
         PlayerController thePlayerController = PlayerController.Access;
@@ -61,12 +61,12 @@ public class CameraController : MonoBehaviour
             Debug.LogWarning("Camera can't find player this is normal on the main menu.");
         }
 	}
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
     #region Private Implementation Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void LateUpdate ()
     {
         Vector3 vector3 = new Vector3(target.position.x, target.position.y, transform.position.z);
@@ -77,7 +77,7 @@ public class CameraController : MonoBehaviour
                                          Mathf.Clamp(transform.position.y, mBottomLeftLimit.y, mTopRightLimit.y),
                                          transform.position.z);
 	}
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
 }

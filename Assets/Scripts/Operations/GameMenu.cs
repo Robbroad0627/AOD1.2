@@ -92,8 +92,8 @@ public class GameMenu : MonoBehaviour
     #endregion
     #region Private Variables
 
-    private CharStats[] mPlayerStats;
     private Item mActiveItem;
+    private CharStats[] mPlayerStats;
 
     #endregion
 
@@ -110,6 +110,7 @@ public class GameMenu : MonoBehaviour
     private void Awake() => Singleton();
 #pragma warning restore IDE0051
 
+#pragma warning disable IDE0051
     private void Start()
     {
         for (int i = 0 ; i < QuestTextList.Length ; i++)
@@ -129,6 +130,7 @@ public class GameMenu : MonoBehaviour
             }
         }
     }
+#pragma warning restore IDE0051
 
     #endregion
     #region Implementation Functions/Methods

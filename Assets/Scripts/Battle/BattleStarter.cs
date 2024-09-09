@@ -51,18 +51,18 @@ public class BattleStarter : MonoBehaviour
     //FUNCTIONS
     #region Private Initialization Functions/Methods used in this Class Only 
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Start ()
     {
         mIsPlayerInArea = false;
         mBattleCountdownTimer = Random.Range(timeBetweenBattles * .5f, timeBetweenBattles * 1.5f);
 	}
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
     #region Private Physics Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -77,9 +77,9 @@ public class BattleStarter : MonoBehaviour
             }
         }
     }
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -94,12 +94,12 @@ public class BattleStarter : MonoBehaviour
             }
         }
     }
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
     #region Private Implementation Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Update ()
     {
 		if (mIsPlayerInArea && PlayerController.Access.GetCanMove)
@@ -117,7 +117,7 @@ public class BattleStarter : MonoBehaviour
             }
         }
 	}
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
     #region Coroutines

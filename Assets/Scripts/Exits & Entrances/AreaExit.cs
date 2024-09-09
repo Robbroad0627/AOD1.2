@@ -51,9 +51,9 @@ public class AreaExit : MonoBehaviour
     //FUNCTIONS
     #region Private Initialization Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Start() => InitializeVariables();
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     private void InitializeVariables()
     {
@@ -64,7 +64,7 @@ public class AreaExit : MonoBehaviour
     #endregion
     #region Private Physics Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag(PLAYER))
@@ -88,7 +88,7 @@ public class AreaExit : MonoBehaviour
             }
         }
     }
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
     #region Private Implementation Functions/Methods used in this Class Only

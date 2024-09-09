@@ -32,16 +32,16 @@ public class AttackEffect : MonoBehaviour
     //FUNCTIONS
     #region Private Initialization Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Start () => AudioManager.Access.PlaySoundFX(SoundToPlay);
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
     #region Private Implementation Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Update () => Destroy(gameObject, AnimationDuration);
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
 }

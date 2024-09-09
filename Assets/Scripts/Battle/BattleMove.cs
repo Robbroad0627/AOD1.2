@@ -13,31 +13,21 @@
 
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
+
+public enum MoveFilterMode
+{
+    DisallowMoveForClassIfNotListed,
+    OverrideDefaultLevelForClass
+}
 
 [Serializable]
 public class BattleMove
 {
-    public enum CharacterClass
-    {
-        Cleric,
-        Druid,
-        Fighter,
-        MagicUser,
-        Paladin,
-        Ranger,
-        Thief
-    }
-
-    public enum MoveFilterMode
-    {
-        DisallowMoveForClassIfNotListed,
-        OverrideDefaultLevelForClass
-    }
-
     [Serializable]
     public class MoveFilter
     {
-        public CharacterClass characterClass;
+        public CharacterAttributes.CharacterClass characterClass;
         public int minimumLevel;
     }
 
@@ -50,29 +40,29 @@ public class BattleMove
     [Header("Move Filter")]
     public MoveFilterMode filterAction;
     public int defaultMinimumLevel = 0;
-    [UnityEngine.Serialization.FormerlySerializedAs("prerequisite")]
+    [FormerlySerializedAs("prerequisite")]
     public MoveFilter[] classSpecificFilter;
 
     public bool MoveAllowed(CharStats character)
     {
         if (moveName != "Slash")
         {
-            int? lvl = MinLevelForClass(character.GetClass);
+            int? level = MinLevelForClass(character.GetClass);
 
             switch (filterAction)
             {
                 case MoveFilterMode.DisallowMoveForClassIfNotListed:
-                    return lvl != null && character.GetLevel >= lvl;
+                    return level != null && character.GetLevel >= level;
 
                 case MoveFilterMode.OverrideDefaultLevelForClass:
-                    return lvl == null ? character.GetLevel >= defaultMinimumLevel : character.GetLevel >= lvl;
+                    return level == null ? character.GetLevel >= defaultMinimumLevel : character.GetLevel >= level;
             }
         }
 
         return false;
     }
 
-    private int? MinLevelForClass(CharacterClass characterClass)
+    private int? MinLevelForClass(CharacterAttributes.CharacterClass characterClass)
     {
         foreach (MoveFilter attack in classSpecificFilter)
         {

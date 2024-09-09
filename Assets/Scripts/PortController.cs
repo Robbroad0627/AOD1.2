@@ -1,9 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//Bonehead Games
 
 public class PortController : MonoBehaviour
 {
@@ -19,7 +17,7 @@ public class PortController : MonoBehaviour
 
     public float waitToLoad = 1f;
 
-    public Boat.Direction direction;
+    public Direction direction;
 
     public float disembarkTimer;
 

@@ -137,13 +137,13 @@ public class BattleManager : MonoBehaviour
     //FUNCTIONS
     #region Private Initialization Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Awake() => Singleton();
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Start() => InitializeVariables();
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     private void InitializeVariables()
     {
@@ -161,7 +161,7 @@ public class BattleManager : MonoBehaviour
     #endregion
     #region Private Implementation Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Update ()
     {
         // for testing should be removed before compilation
@@ -192,7 +192,7 @@ public class BattleManager : MonoBehaviour
             }
         }
 	}
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     private void StartBattleMusic()
     {

@@ -12,8 +12,8 @@
  ****************************************************************************************/
 
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
+using UnityEngine.Serialization;
 
 public class BattleNotification : MonoBehaviour
 {
@@ -46,29 +46,29 @@ public class BattleNotification : MonoBehaviour
     //FUNCTIONS
     #region Private Initialization Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     private void Start() => InitializeVariables();
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     private void InitializeVariables() => mAwakeCounter = 0;
 
     #endregion
     #region Private Implementation Functions/Methods used in this Class Only
 
-#pragma warning disable IDE0051
+    #pragma warning disable IDE0051
     void Update ()
     {
-		if(mAwakeCounter > 0)
+		if (mAwakeCounter > 0)
         {
             mAwakeCounter -= Time.deltaTime;
 
-            if(mAwakeCounter <= 0)
+            if (mAwakeCounter <= 0)
             {
                 gameObject.SetActive(false);
             }
         }
 	}
-#pragma warning restore IDE0051
+    #pragma warning restore IDE0051
 
     #endregion
     #region Public Functions/Methods for use Outside of this Class
