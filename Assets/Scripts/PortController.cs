@@ -39,10 +39,9 @@ public class PortController : MonoBehaviour
         areaEntranceController = portAreaEntrance.GetComponent<AreaEntrance>();
         boatCaptainController = boatCaptain.GetComponent<BoatCaptain>();
 
-        if (Boat.instance == null) 
+        if (Boat.Access == null) 
         {
-            boatController = Instantiate(boat).GetComponent<Boat>();
-            Boat.instance = boatController;
+            Instantiate(boat).GetComponent<Boat>();
         }
 
         if (!Boat.boatLeftPort) 

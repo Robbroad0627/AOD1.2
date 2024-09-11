@@ -6,7 +6,7 @@
  * Description:
  * **************************************************************************************
  * Modified By: Jeff Moreau
- * Date Last Modified: September 9, 2024
+ * Date Last Modified: September 11, 2024
  * TODO: Variables should NEVER be public
  * Known Bugs: 
  ****************************************************************************************/
@@ -23,7 +23,27 @@ public enum Direction
 
 public class Boat : MonoBehaviour
 {
-    public static Boat instance;
+    //SINGLETON
+    #region Singleton - this Class has One and Only One Instance
+
+    private static Boat mInstance;
+
+    private void InitializeSingleton()
+    {
+        if (mInstance != null && mInstance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            mInstance = this;
+            DontDestroyOnLoad(this);
+        }
+    }
+
+    public static Boat Access => mInstance;
+
+    #endregion
 
     public static bool isPlayerOnBoat = false;
     public static bool isEnteringPort = false;
@@ -35,22 +55,9 @@ public class Boat : MonoBehaviour
     private SpriteRenderer myRenderer;
     private Direction myDirection;
 
-    void Start()
+    private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            if (instance != this)
-            {
-                Destroy(gameObject);
-            }
-        }
-
-        DontDestroyOnLoad(gameObject);
-
+        InitializeSingleton();
         myAnim = GetComponent<Animator>();
         myCollider = GetComponent<Collider2D>();
         myRenderer = GetComponent<SpriteRenderer>();
