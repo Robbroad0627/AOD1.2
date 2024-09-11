@@ -66,14 +66,14 @@ public class DialogManager : MonoBehaviour
     #region Private Variables
 
     private int mCurrentLine;
-    private Action mNoAction;
     private bool mJustStarted;
-    private Action mYesAction;
-    private string mQuestToMark;
-    private string[] mDialogLines;
     private bool mShouldMarkQuest;
     private bool mMarkQuestComplete;
     private bool mAdvanceDialogOnClick;
+    private string mQuestToMark;
+    private string[] mDialogLines;
+    private Action mNoAction;
+    private Action mYesAction;
 
     #endregion
 

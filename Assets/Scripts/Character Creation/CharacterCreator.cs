@@ -88,47 +88,47 @@ public class CharacterCreator : MonoBehaviour
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 1;
-                mPortraitList = mIsMale == true ? mPortraits.GetDwarfMale : mPortraits.GetDwarfFemale;
-                mPlayerSex = mIsMale == true ? "M" : "F";
+                mPortraitList = mIsMale ? mPortraits.GetDwarfMale : mPortraits.GetDwarfFemale;
+                mPlayerSex = mIsMale ? "M" : "F";
                 break;
 
             case CharacterAttributes.Races.Elf:
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Intelligence] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution] -= 1;
-                mPortraitList = mIsMale == true ? mPortraits.GetElfMale : mPortraits.GetElfFemale;
-                mPlayerSex = mIsMale == true ? "M" : "F";
+                mPortraitList = mIsMale ? mPortraits.GetElfMale : mPortraits.GetElfFemale;
+                mPlayerSex = mIsMale ? "M" : "F";
                 break;
 
             case CharacterAttributes.Races.HalfElf:
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Wisdom] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 1;
-                mPortraitList = mIsMale == true ? mPortraits.GetHalfElfMale : mPortraits.GetHalfElfFemale;
-                mPlayerSex = mIsMale == true ? "M" : "F";
+                mPortraitList = mIsMale ? mPortraits.GetHalfElfMale : mPortraits.GetHalfElfFemale;
+                mPlayerSex = mIsMale ? "M" : "F";
                 break;
 
             case CharacterAttributes.Races.Halfling:
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Dexterity] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Wisdom] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength] -= 1;
-                mPortraitList = mIsMale == true ? mPortraits.GetHalflingMale : mPortraits.GetHalflingFemale;
-                mPlayerSex = mIsMale == true ? "M" : "F";
+                mPortraitList = mIsMale ? mPortraits.GetHalflingMale : mPortraits.GetHalflingFemale;
+                mPlayerSex = mIsMale ? "M" : "F";
                 break;
 
             case CharacterAttributes.Races.HalfOrc:
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Constitution] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Strength] += 1;
                 mPlayerAttributes[CharacterAttributes.BaseAttributes.Charisma] -= 2;
-                mPortraitList = mIsMale == true ? mPortraits.GetHalfOrcMale : mPortraits.GetHalfOrcFemale;
-                mPlayerSex = mIsMale == true ? "M" : "F";
+                mPortraitList = mIsMale ? mPortraits.GetHalfOrcMale : mPortraits.GetHalfOrcFemale;
+                mPlayerSex = mIsMale ? "M" : "F";
                 break;
 
             case CharacterAttributes.Races.Human:
                 int ran = Random.Range(0, System.Enum.GetValues(typeof(CharacterAttributes.BaseAttributes)).Length);
                 mPlayerAttributes[(CharacterAttributes.BaseAttributes)ran] += 2;
-                mPortraitList = mIsMale == true ? mPortraits.GetHumanMale : mPortraits.GetHumanFemale;
-                mPlayerSex = mIsMale == true ? "M" : "F";
+                mPortraitList = mIsMale ? mPortraits.GetHumanMale : mPortraits.GetHumanFemale;
+                mPlayerSex = mIsMale ? "M" : "F";
                 break;
 
             default:
