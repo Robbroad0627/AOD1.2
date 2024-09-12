@@ -118,13 +118,13 @@ public class GameMenu : MonoBehaviour
             QuestTextList[i].text = "";
         }
 
-        for (int i = 0 ; i < QuestManager.instance.GetActiveQuestsNames().Length ; i++)
+        for (int i = 0 ; i < QuestManager.instance.GetActiveQuests.Count ; i++)
         {
             for (int j = 0; j < QuestTextList.Length; j++)
             {
                 if (QuestTextList[j].text == "")
                 {
-                    QuestTextList[j].text = QuestManager.instance.GetActiveQuestsNames()[i];
+                    QuestTextList[j].text = QuestManager.instance.GetActiveQuests[i];
                     break;
                 }
             }
@@ -179,23 +179,31 @@ public class GameMenu : MonoBehaviour
         {
             TheMinimap.SetActive(true);
         }
-
-        for (int i = 0 ; i < QuestManager.instance.GetActiveQuestsNames().Length ; i++)
-        {
-            for (int j = 0 ; j < QuestTextList.Length ; j++)
-            {
-                if (QuestTextList[j].text == "")
-                {
-                    QuestTextList[j].text = QuestManager.instance.GetActiveQuestsNames()[i];
-                    break;
-                }
-            }
-        }
     }
 #pragma warning restore IDE0051
 
     #endregion
     #region Private Functions/Methods
+
+    public void UpdateQuestList()
+    {
+        for (int i = 0 ; i < QuestTextList.Length ; i++)
+        {
+            QuestTextList[i].text = "";
+        }
+
+        for (int i = 0 ; i < QuestManager.instance.GetActiveQuests.Count ; i++)
+        {
+            for (int j = 0 ; j < QuestTextList.Length ; j++)
+            {
+                if (QuestTextList[j].text == "")
+                {
+                    QuestTextList[j].text = QuestManager.instance.GetActiveQuests[i];
+                    break;
+                }
+            }
+        }
+    }
 
     private void UpdateMainStats()
     {

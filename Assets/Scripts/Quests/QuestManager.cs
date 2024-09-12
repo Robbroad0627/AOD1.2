@@ -23,6 +23,10 @@ public class QuestManager : MonoBehaviour
     public string[] questMarkerNames = new string[0];
     public bool[] questMarkersComplete = new bool[0];
 
+    private List<string> mActiveQuests;
+
+    public List<string> GetActiveQuests => mActiveQuests;
+
     internal bool isReady;
 
     public string[] activeQuestNames => questMarkerNames;
@@ -70,6 +74,7 @@ public class QuestManager : MonoBehaviour
     {
         instance = this;
         questMarkersComplete = new bool[questMarkerNames.Length];
+        mActiveQuests = new List<string>();
 	}
 
     public string[] GetActiveQuestsNames()
@@ -150,7 +155,22 @@ public class QuestManager : MonoBehaviour
         }
 
         questMarkersComplete[i] = true;
+        mActiveQuests.Remove(questToMark);
+        GameMenu.Access.UpdateQuestList();
         UpdateLocalQuestObjects();
+    }
+
+    public void ActivateQuest(string questName)
+    {
+        if (mActiveQuests.Contains(questName))
+        {
+            return;
+        }
+        else
+        {
+            mActiveQuests.Add(questName);
+            GameMenu.Access.UpdateQuestList();
+        }
     }
 
     public void MarkQuestIncomplete(string questToMark)
