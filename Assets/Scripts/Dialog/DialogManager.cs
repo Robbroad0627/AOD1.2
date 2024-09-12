@@ -12,6 +12,7 @@
  ****************************************************************************************/
 
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -74,6 +75,7 @@ public class DialogManager : MonoBehaviour
     private string[] mDialogLines;
     private Action mNoAction;
     private Action mYesAction;
+    private List<string> mCurrentActiveQuests;
 
     #endregion
 
@@ -207,6 +209,7 @@ public class DialogManager : MonoBehaviour
 
     public void ShouldActivateQuestAtEnd(string questName, bool markComplete)
     {
+        QuestManager.instance.ActivateQuest(questName);
         mQuestToMark = questName;
         mMarkQuestComplete = markComplete;
         mShouldMarkQuest = true;
